@@ -1,0 +1,62 @@
+[
+  {
+    "mangle": "http_body_is_final",
+    "c++": "http_body_is_final(const http_parser *)",
+    "go": "(*HttpParser).HttpBodyIsFinal"
+  },
+  {
+    "mangle": "http_errno_description",
+    "c++": "http_errno_description(enum http_errno)",
+    "go": "Enum httpErrno.HttpErrnoDescription"
+  },
+  {
+    "mangle": "http_errno_name",
+    "c++": "http_errno_name(enum http_errno)",
+    "go": "Enum httpErrno.HttpErrnoName"
+  },
+  {
+    "mangle": "http_method_str",
+    "c++": "http_method_str(enum http_method)",
+    "go": "Enum httpMethod.HttpMethodStr"
+  },
+  {
+    "mangle": "http_parser_execute",
+    "c++": "http_parser_execute(http_parser *, const http_parser_settings *, const char *, size_t)",
+    "go": "(*HttpParser).HttpParserExecute"
+  },
+  {
+    "mangle": "http_parser_init",
+    "c++": "http_parser_init(http_parser *, enum http_parser_type)",
+    "go": "(*HttpParser).HttpParserInit"
+  },
+  {
+    "mangle": "http_parser_parse_url",
+    "c++": "http_parser_parse_url(const char *, size_t, int, struct http_parser_url *)",
+    "go": "HttpParserParseUrl"
+  },
+  {
+    "mangle": "http_parser_pause",
+    "c++": "http_parser_pause(http_parser *, int)",
+    "go": "(*HttpParser).HttpParserPause"
+  },
+  {
+    "mangle": "http_parser_settings_init",
+    "c++": "http_parser_settings_init(http_parser_settings *)",
+    "go": "(*HttpParserSettings).HttpParserSettingsInit"
+  },
+  {
+    "mangle": "http_parser_url_init",
+    "c++": "http_parser_url_init(struct http_parser_url *)",
+    "go": "(*Struct httpParserUrl).HttpParserUrlInit"
+  },
+  {
+    "mangle": "http_parser_version",
+    "c++": "http_parser_version()",
+    "go": "HttpParserVersion"
+  },
+  {
+    "mangle": "http_should_keep_alive",
+    "c++": "http_should_keep_alive(const http_parser *)",
+    "go": "(*HttpParser).HttpShouldKeepAlive"
+  }
+]

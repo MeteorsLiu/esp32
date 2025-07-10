@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "esp_spiffs_check",
+    "c++": "esp_spiffs_check(const char *)",
+    "go": "EspSpiffsCheck"
+  },
+  {
+    "mangle": "esp_spiffs_format",
+    "c++": "esp_spiffs_format(const char *)",
+    "go": "EspSpiffsFormat"
+  },
+  {
+    "mangle": "esp_spiffs_gc",
+    "c++": "esp_spiffs_gc(const char *, size_t)",
+    "go": "EspSpiffsGc"
+  },
+  {
+    "mangle": "esp_spiffs_info",
+    "c++": "esp_spiffs_info(const char *, size_t *, size_t *)",
+    "go": "EspSpiffsInfo"
+  },
+  {
+    "mangle": "esp_spiffs_mounted",
+    "c++": "esp_spiffs_mounted(const char *)",
+    "go": "EspSpiffsMounted"
+  },
+  {
+    "mangle": "esp_vfs_spiffs_register",
+    "c++": "esp_vfs_spiffs_register(const esp_vfs_spiffs_conf_t *)",
+    "go": "(*EspVfsSpiffsConfT).EspVfsSpiffsRegister"
+  },
+  {
+    "mangle": "esp_vfs_spiffs_unregister",
+    "c++": "esp_vfs_spiffs_unregister(const char *)",
+    "go": "EspVfsSpiffsUnregister"
+  },
+  {
+    "mangle": "spiffs_api_lock",
+    "c++": "spiffs_api_lock(struct spiffs_t *)",
+    "go": "(*Struct spiffsT).SpiffsApiLock"
+  },
+  {
+    "mangle": "spiffs_api_unlock",
+    "c++": "spiffs_api_unlock(struct spiffs_t *)",
+    "go": "(*Struct spiffsT).SpiffsApiUnlock"
+  }
+]

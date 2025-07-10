@@ -1,0 +1,37 @@
+[
+  {
+    "mangle": "wl_erase_range",
+    "c++": "wl_erase_range(wl_handle_t, size_t, size_t)",
+    "go": "WlHandleT.WlEraseRange"
+  },
+  {
+    "mangle": "wl_mount",
+    "c++": "wl_mount(const esp_partition_t *, wl_handle_t *)",
+    "go": "WlMount"
+  },
+  {
+    "mangle": "wl_read",
+    "c++": "wl_read(wl_handle_t, size_t, void *, size_t)",
+    "go": "WlHandleT.WlRead"
+  },
+  {
+    "mangle": "wl_sector_size",
+    "c++": "wl_sector_size(wl_handle_t)",
+    "go": "WlHandleT.WlSectorSize"
+  },
+  {
+    "mangle": "wl_size",
+    "c++": "wl_size(wl_handle_t)",
+    "go": "WlHandleT.WlSize"
+  },
+  {
+    "mangle": "wl_unmount",
+    "c++": "wl_unmount(wl_handle_t)",
+    "go": "WlHandleT.WlUnmount"
+  },
+  {
+    "mangle": "wl_write",
+    "c++": "wl_write(wl_handle_t, size_t, const void *, size_t)",
+    "go": "WlHandleT.WlWrite"
+  }
+]

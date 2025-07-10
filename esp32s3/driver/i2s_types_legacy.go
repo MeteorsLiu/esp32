@@ -1,0 +1,166 @@
+package driver
+
+import (
+	"github.com/goplus/lib/c"
+	_ "unsafe"
+)
+
+type I2sBitsPerSampleT c.Int
+
+const (
+	I2S_BITS_PER_SAMPLE_8BIT  I2sBitsPerSampleT = 8
+	I2S_BITS_PER_SAMPLE_16BIT I2sBitsPerSampleT = 16
+	I2S_BITS_PER_SAMPLE_24BIT I2sBitsPerSampleT = 24
+	I2S_BITS_PER_SAMPLE_32BIT I2sBitsPerSampleT = 32
+)
+
+type I2sBitsPerChanT c.Int
+
+const (
+	I2S_BITS_PER_CHAN_DEFAULT I2sBitsPerChanT = 0
+	I2S_BITS_PER_CHAN_8BIT    I2sBitsPerChanT = 8
+	I2S_BITS_PER_CHAN_16BIT   I2sBitsPerChanT = 16
+	I2S_BITS_PER_CHAN_24BIT   I2sBitsPerChanT = 24
+	I2S_BITS_PER_CHAN_32BIT   I2sBitsPerChanT = 32
+)
+
+type I2sChannelT c.Int
+
+const (
+	I2S_CHANNEL_MONO    I2sChannelT = 1
+	I2S_CHANNEL_STEREO  I2sChannelT = 2
+	I2S_TDM_ACTIVE_CH0  I2sChannelT = 65536
+	I2S_TDM_ACTIVE_CH1  I2sChannelT = 131072
+	I2S_TDM_ACTIVE_CH2  I2sChannelT = 262144
+	I2S_TDM_ACTIVE_CH3  I2sChannelT = 524288
+	I2S_TDM_ACTIVE_CH4  I2sChannelT = 1048576
+	I2S_TDM_ACTIVE_CH5  I2sChannelT = 2097152
+	I2S_TDM_ACTIVE_CH6  I2sChannelT = 4194304
+	I2S_TDM_ACTIVE_CH7  I2sChannelT = 8388608
+	I2S_TDM_ACTIVE_CH8  I2sChannelT = 16777216
+	I2S_TDM_ACTIVE_CH9  I2sChannelT = 33554432
+	I2S_TDM_ACTIVE_CH10 I2sChannelT = 67108864
+	I2S_TDM_ACTIVE_CH11 I2sChannelT = 134217728
+	I2S_TDM_ACTIVE_CH12 I2sChannelT = 268435456
+	I2S_TDM_ACTIVE_CH13 I2sChannelT = 536870912
+	I2S_TDM_ACTIVE_CH14 I2sChannelT = 1073741824
+	I2S_TDM_ACTIVE_CH15 I2sChannelT = -2147483648
+)
+
+type I2sCommFormatT c.Int
+
+const (
+	I2S_COMM_FORMAT_STAND_I2S       I2sCommFormatT = 1
+	I2S_COMM_FORMAT_STAND_MSB       I2sCommFormatT = 2
+	I2S_COMM_FORMAT_STAND_PCM_SHORT I2sCommFormatT = 4
+	I2S_COMM_FORMAT_STAND_PCM_LONG  I2sCommFormatT = 12
+	I2S_COMM_FORMAT_STAND_MAX       I2sCommFormatT = 13
+	I2S_COMM_FORMAT_I2S             I2sCommFormatT = 1
+	I2S_COMM_FORMAT_I2S_MSB         I2sCommFormatT = 1
+	I2S_COMM_FORMAT_I2S_LSB         I2sCommFormatT = 2
+	I2S_COMM_FORMAT_PCM             I2sCommFormatT = 4
+	I2S_COMM_FORMAT_PCM_SHORT       I2sCommFormatT = 4
+	I2S_COMM_FORMAT_PCM_LONG        I2sCommFormatT = 8
+)
+
+type I2sChannelFmtT c.Int
+
+const (
+	I2S_CHANNEL_FMT_RIGHT_LEFT I2sChannelFmtT = 0
+	I2S_CHANNEL_FMT_ALL_RIGHT  I2sChannelFmtT = 1
+	I2S_CHANNEL_FMT_ALL_LEFT   I2sChannelFmtT = 2
+	I2S_CHANNEL_FMT_ONLY_RIGHT I2sChannelFmtT = 3
+	I2S_CHANNEL_FMT_ONLY_LEFT  I2sChannelFmtT = 4
+	I2S_CHANNEL_FMT_MULTIPLE   I2sChannelFmtT = 5
+)
+
+type I2sModeT c.Int
+
+const (
+	I2S_MODE_MASTER I2sModeT = 1
+	I2S_MODE_SLAVE  I2sModeT = 2
+	I2S_MODE_TX     I2sModeT = 4
+	I2S_MODE_RX     I2sModeT = 8
+	I2S_MODE_PDM    I2sModeT = 64
+)
+
+type I2sEventTypeT c.Int
+
+const (
+	I2S_EVENT_DMA_ERROR I2sEventTypeT = 0
+	I2S_EVENT_TX_DONE   I2sEventTypeT = 1
+	I2S_EVENT_RX_DONE   I2sEventTypeT = 2
+	I2S_EVENT_TX_Q_OVF  I2sEventTypeT = 3
+	I2S_EVENT_RX_Q_OVF  I2sEventTypeT = 4
+)
+
+/**
+ * @brief Event structure used in I2S event queue
+ */
+
+type I2sEventT struct {
+	Type I2sEventTypeT
+	Size c.SizeT
+}
+
+/**
+ * @brief I2S GPIO pins configuration
+ */
+
+type I2sPinConfigT struct {
+	MckIoNum   c.Int
+	BckIoNum   c.Int
+	WsIoNum    c.Int
+	DataOutNum c.Int
+	DataInNum  c.Int
+}
+
+/**
+ * @brief I2S PCM configuration
+ *
+ */
+
+type I2sPcmCfgT struct {
+	PcmType I2sPcmCompressT
+}
+
+/**
+ * @brief I2S PDM up-sample rate configuration
+ * @note  TX PDM can only be set to the following two up-sampling rate configurations:
+ *        1: fp = 960, fs = sample_rate / 100, in this case, Fpdm = 128*48000
+ *        2: fp = 960, fs = 480, in this case, Fpdm = 128*Fpcm = 128*sample_rate
+ *        If the pdm receiver do not care the pdm serial clock, it's recommended set Fpdm = 128*48000.
+ *        Otherwise, the second configuration should be applied.
+ */
+
+type I2sPdmTxUpsampleCfgT struct {
+	SampleRate c.Int
+	Fp         c.Int
+	Fs         c.Int
+}
+
+/**
+ * @brief I2S driver configuration parameters
+ *
+ */
+
+type I2sDriverConfigT struct {
+	Mode                I2sModeT
+	SampleRate          c.Uint32T
+	BitsPerSample       I2sBitsPerSampleT
+	ChannelFormat       I2sChannelFmtT
+	CommunicationFormat I2sCommFormatT
+	IntrAllocFlags      c.Int
+	UseApll             bool
+	TxDescAutoClear     bool
+	FixedMclk           c.Int
+	MclkMultiple        I2sMclkMultipleT
+	BitsPerChan         I2sBitsPerChanT
+	ChanMask            I2sChannelT
+	TotalChan           c.Uint32T
+	LeftAlign           bool
+	BigEdin             bool
+	BitOrderMsb         bool
+	SkipMsk             bool
+}
+type I2sConfigT I2sDriverConfigT

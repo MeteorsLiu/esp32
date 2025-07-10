@@ -1,0 +1,587 @@
+[
+  {
+    "mangle": "esp_config_data_cache_mode",
+    "c++": "esp_config_data_cache_mode()",
+    "go": "EspConfigDataCacheMode"
+  },
+  {
+    "mangle": "esp_config_instruction_cache_mode",
+    "c++": "esp_config_instruction_cache_mode()",
+    "go": "EspConfigInstructionCacheMode"
+  },
+  {
+    "mangle": "esp_enable_cache_wrap",
+    "c++": "esp_enable_cache_wrap(bool, bool)",
+    "go": "EspEnableCacheWrap"
+  },
+  {
+    "mangle": "esp_flash_app_disable_os_functions",
+    "c++": "esp_flash_app_disable_os_functions(esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashAppDisableOsFunctions"
+  },
+  {
+    "mangle": "esp_flash_app_disable_protect",
+    "c++": "esp_flash_app_disable_protect(bool)",
+    "go": "EspFlashAppDisableProtect"
+  },
+  {
+    "mangle": "esp_flash_app_enable_os_functions",
+    "c++": "esp_flash_app_enable_os_functions(esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashAppEnableOsFunctions"
+  },
+  {
+    "mangle": "esp_flash_app_init",
+    "c++": "esp_flash_app_init()",
+    "go": "EspFlashAppInit"
+  },
+  {
+    "mangle": "esp_flash_chip_driver_initialized",
+    "c++": "esp_flash_chip_driver_initialized(const esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashChipDriverInitialized"
+  },
+  {
+    "mangle": "esp_flash_deinit_os_functions",
+    "c++": "esp_flash_deinit_os_functions(esp_flash_t *, spi_bus_lock_dev_handle_t *)",
+    "go": "(*EspFlashT).EspFlashDeinitOsFunctions"
+  },
+  {
+    "mangle": "esp_flash_erase_chip",
+    "c++": "esp_flash_erase_chip(esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashEraseChip"
+  },
+  {
+    "mangle": "esp_flash_erase_region",
+    "c++": "esp_flash_erase_region(esp_flash_t *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).EspFlashEraseRegion"
+  },
+  {
+    "mangle": "esp_flash_get_chip_write_protect",
+    "c++": "esp_flash_get_chip_write_protect(esp_flash_t *, bool *)",
+    "go": "(*EspFlashT).EspFlashGetChipWriteProtect"
+  },
+  {
+    "mangle": "esp_flash_get_physical_size",
+    "c++": "esp_flash_get_physical_size(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).EspFlashGetPhysicalSize"
+  },
+  {
+    "mangle": "esp_flash_get_protectable_regions",
+    "c++": "esp_flash_get_protectable_regions(const esp_flash_t *, const esp_flash_region_t **, uint32_t *)",
+    "go": "(*EspFlashT).EspFlashGetProtectableRegions"
+  },
+  {
+    "mangle": "esp_flash_get_protected_region",
+    "c++": "esp_flash_get_protected_region(esp_flash_t *, const esp_flash_region_t *, bool *)",
+    "go": "(*EspFlashT).EspFlashGetProtectedRegion"
+  },
+  {
+    "mangle": "esp_flash_get_size",
+    "c++": "esp_flash_get_size(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).EspFlashGetSize"
+  },
+  {
+    "mangle": "esp_flash_init",
+    "c++": "esp_flash_init(esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashInit"
+  },
+  {
+    "mangle": "esp_flash_init_default_chip",
+    "c++": "esp_flash_init_default_chip()",
+    "go": "EspFlashInitDefaultChip"
+  },
+  {
+    "mangle": "esp_flash_init_main",
+    "c++": "esp_flash_init_main(esp_flash_t *)",
+    "go": "(*EspFlashT).EspFlashInitMain"
+  },
+  {
+    "mangle": "esp_flash_init_main_bus_lock",
+    "c++": "esp_flash_init_main_bus_lock()",
+    "go": "EspFlashInitMainBusLock"
+  },
+  {
+    "mangle": "esp_flash_init_os_functions",
+    "c++": "esp_flash_init_os_functions(esp_flash_t *, int, spi_bus_lock_dev_handle_t)",
+    "go": "(*EspFlashT).EspFlashInitOsFunctions"
+  },
+  {
+    "mangle": "esp_flash_read",
+    "c++": "esp_flash_read(esp_flash_t *, void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).EspFlashRead"
+  },
+  {
+    "mangle": "esp_flash_read_encrypted",
+    "c++": "esp_flash_read_encrypted(esp_flash_t *, uint32_t, void *, uint32_t)",
+    "go": "(*EspFlashT).EspFlashReadEncrypted"
+  },
+  {
+    "mangle": "esp_flash_read_id",
+    "c++": "esp_flash_read_id(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).EspFlashReadId"
+  },
+  {
+    "mangle": "esp_flash_read_unique_chip_id",
+    "c++": "esp_flash_read_unique_chip_id(esp_flash_t *, uint64_t *)",
+    "go": "(*EspFlashT).EspFlashReadUniqueChipId"
+  },
+  {
+    "mangle": "esp_flash_set_chip_write_protect",
+    "c++": "esp_flash_set_chip_write_protect(esp_flash_t *, bool)",
+    "go": "(*EspFlashT).EspFlashSetChipWriteProtect"
+  },
+  {
+    "mangle": "esp_flash_set_dangerous_write_protection",
+    "c++": "esp_flash_set_dangerous_write_protection(esp_flash_t *, const bool)",
+    "go": "(*EspFlashT).EspFlashSetDangerousWriteProtection"
+  },
+  {
+    "mangle": "esp_flash_set_protected_region",
+    "c++": "esp_flash_set_protected_region(esp_flash_t *, const esp_flash_region_t *, bool)",
+    "go": "(*EspFlashT).EspFlashSetProtectedRegion"
+  },
+  {
+    "mangle": "esp_flash_write",
+    "c++": "esp_flash_write(esp_flash_t *, const void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).EspFlashWrite"
+  },
+  {
+    "mangle": "esp_flash_write_encrypted",
+    "c++": "esp_flash_write_encrypted(esp_flash_t *, uint32_t, const void *, uint32_t)",
+    "go": "(*EspFlashT).EspFlashWriteEncrypted"
+  },
+  {
+    "mangle": "esp_mspi_32bit_address_flash_feature_check",
+    "c++": "esp_mspi_32bit_address_flash_feature_check()",
+    "go": "EspMspi32bitAddressFlashFeatureCheck"
+  },
+  {
+    "mangle": "esp_mspi_get_io",
+    "c++": "esp_mspi_get_io(esp_mspi_io_t)",
+    "go": "EspMspiIoT.EspMspiGetIo"
+  },
+  {
+    "mangle": "esp_mspi_pin_init",
+    "c++": "esp_mspi_pin_init()",
+    "go": "EspMspiPinInit"
+  },
+  {
+    "mangle": "esp_mspi_pin_reserve",
+    "c++": "esp_mspi_pin_reserve()",
+    "go": "EspMspiPinReserve"
+  },
+  {
+    "mangle": "memspi_host_erase_block",
+    "c++": "memspi_host_erase_block(spi_flash_host_inst_t *, uint32_t)",
+    "go": "MemspiHostEraseBlock"
+  },
+  {
+    "mangle": "memspi_host_erase_chip",
+    "c++": "memspi_host_erase_chip(spi_flash_host_inst_t *)",
+    "go": "MemspiHostEraseChip"
+  },
+  {
+    "mangle": "memspi_host_erase_sector",
+    "c++": "memspi_host_erase_sector(spi_flash_host_inst_t *, uint32_t)",
+    "go": "MemspiHostEraseSector"
+  },
+  {
+    "mangle": "memspi_host_flush_cache",
+    "c++": "memspi_host_flush_cache(spi_flash_host_inst_t *, uint32_t, uint32_t)",
+    "go": "MemspiHostFlushCache"
+  },
+  {
+    "mangle": "memspi_host_init_pointers",
+    "c++": "memspi_host_init_pointers(memspi_host_inst_t *, const memspi_host_config_t *)",
+    "go": "(*MemspiHostInstT).MemspiHostInitPointers"
+  },
+  {
+    "mangle": "memspi_host_program_page",
+    "c++": "memspi_host_program_page(spi_flash_host_inst_t *, const void *, uint32_t, uint32_t)",
+    "go": "MemspiHostProgramPage"
+  },
+  {
+    "mangle": "memspi_host_read",
+    "c++": "memspi_host_read(spi_flash_host_inst_t *, void *, uint32_t, uint32_t)",
+    "go": "MemspiHostRead"
+  },
+  {
+    "mangle": "memspi_host_read_data_slicer",
+    "c++": "memspi_host_read_data_slicer(spi_flash_host_inst_t *, uint32_t, uint32_t, uint32_t *, uint32_t)",
+    "go": "MemspiHostReadDataSlicer"
+  },
+  {
+    "mangle": "memspi_host_read_id_hs",
+    "c++": "memspi_host_read_id_hs(spi_flash_host_inst_t *, uint32_t *)",
+    "go": "MemspiHostReadIdHs"
+  },
+  {
+    "mangle": "memspi_host_read_status_hs",
+    "c++": "memspi_host_read_status_hs(spi_flash_host_inst_t *, uint8_t *)",
+    "go": "MemspiHostReadStatusHs"
+  },
+  {
+    "mangle": "memspi_host_set_write_protect",
+    "c++": "memspi_host_set_write_protect(spi_flash_host_inst_t *, bool)",
+    "go": "MemspiHostSetWriteProtect"
+  },
+  {
+    "mangle": "memspi_host_write_data_slicer",
+    "c++": "memspi_host_write_data_slicer(spi_flash_host_inst_t *, uint32_t, uint32_t, uint32_t *, uint32_t)",
+    "go": "MemspiHostWriteDataSlicer"
+  },
+  {
+    "mangle": "spi_bus_add_flash_device",
+    "c++": "spi_bus_add_flash_device(esp_flash_t **, const esp_flash_spi_device_config_t *)",
+    "go": "SpiBusAddFlashDevice"
+  },
+  {
+    "mangle": "spi_bus_remove_flash_device",
+    "c++": "spi_bus_remove_flash_device(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiBusRemoveFlashDevice"
+  },
+  {
+    "mangle": "spi_flash_brownout_need_reset",
+    "c++": "spi_flash_brownout_need_reset()",
+    "go": "SpiFlashBrownoutNeedReset"
+  },
+  {
+    "mangle": "spi_flash_cache2phys",
+    "c++": "spi_flash_cache2phys(const void *)",
+    "go": "SpiFlashCache2phys"
+  },
+  {
+    "mangle": "spi_flash_cache_enabled",
+    "c++": "spi_flash_cache_enabled()",
+    "go": "SpiFlashCacheEnabled"
+  },
+  {
+    "mangle": "spi_flash_check_and_flush_cache",
+    "c++": "spi_flash_check_and_flush_cache(size_t, size_t)",
+    "go": "SpiFlashCheckAndFlushCache"
+  },
+  {
+    "mangle": "spi_flash_chip_gd_get_io_mode",
+    "c++": "spi_flash_chip_gd_get_io_mode(esp_flash_t *, esp_flash_io_mode_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGdGetIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_gd_probe",
+    "c++": "spi_flash_chip_gd_probe(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGdProbe"
+  },
+  {
+    "mangle": "spi_flash_chip_gd_set_io_mode",
+    "c++": "spi_flash_chip_gd_set_io_mode(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGdSetIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_config_host_io_mode",
+    "c++": "spi_flash_chip_generic_config_host_io_mode(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericConfigHostIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_detect_size",
+    "c++": "spi_flash_chip_generic_detect_size(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericDetectSize"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_erase_block",
+    "c++": "spi_flash_chip_generic_erase_block(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericEraseBlock"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_erase_chip",
+    "c++": "spi_flash_chip_generic_erase_chip(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericEraseChip"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_erase_sector",
+    "c++": "spi_flash_chip_generic_erase_sector(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericEraseSector"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_get_io_mode",
+    "c++": "spi_flash_chip_generic_get_io_mode(esp_flash_t *, esp_flash_io_mode_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericGetIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_get_write_protect",
+    "c++": "spi_flash_chip_generic_get_write_protect(esp_flash_t *, bool *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericGetWriteProtect"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_page_program",
+    "c++": "spi_flash_chip_generic_page_program(esp_flash_t *, const void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericPageProgram"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_probe",
+    "c++": "spi_flash_chip_generic_probe(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericProbe"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_read",
+    "c++": "spi_flash_chip_generic_read(esp_flash_t *, void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericRead"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_read_reg",
+    "c++": "spi_flash_chip_generic_read_reg(esp_flash_t *, spi_flash_register_t, uint32_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericReadReg"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_read_unique_id",
+    "c++": "spi_flash_chip_generic_read_unique_id(esp_flash_t *, uint64_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericReadUniqueId"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_read_unique_id_none",
+    "c++": "spi_flash_chip_generic_read_unique_id_none(esp_flash_t *, uint64_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericReadUniqueIdNone"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_reset",
+    "c++": "spi_flash_chip_generic_reset(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericReset"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_set_io_mode",
+    "c++": "spi_flash_chip_generic_set_io_mode(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericSetIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_set_write_protect",
+    "c++": "spi_flash_chip_generic_set_write_protect(esp_flash_t *, bool)",
+    "go": "(*EspFlashT).SpiFlashChipGenericSetWriteProtect"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_suspend_cmd_conf",
+    "c++": "spi_flash_chip_generic_suspend_cmd_conf(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipGenericSuspendCmdConf"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_wait_idle",
+    "c++": "spi_flash_chip_generic_wait_idle(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericWaitIdle"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_write",
+    "c++": "spi_flash_chip_generic_write(esp_flash_t *, const void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericWrite"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_write_encrypted",
+    "c++": "spi_flash_chip_generic_write_encrypted(esp_flash_t *, const void *, uint32_t, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericWriteEncrypted"
+  },
+  {
+    "mangle": "spi_flash_chip_generic_yield",
+    "c++": "spi_flash_chip_generic_yield(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipGenericYield"
+  },
+  {
+    "mangle": "spi_flash_chip_issi_get_io_mode",
+    "c++": "spi_flash_chip_issi_get_io_mode(esp_flash_t *, esp_flash_io_mode_t *)",
+    "go": "(*EspFlashT).SpiFlashChipIssiGetIoMode"
+  },
+  {
+    "mangle": "spi_flash_chip_issi_probe",
+    "c++": "spi_flash_chip_issi_probe(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashChipIssiProbe"
+  },
+  {
+    "mangle": "spi_flash_chip_issi_set_io_mode",
+    "c++": "spi_flash_chip_issi_set_io_mode(esp_flash_t *)",
+    "go": "(*EspFlashT).SpiFlashChipIssiSetIoMode"
+  },
+  {
+    "mangle": "spi_flash_common_read_status_16b_rdsr_rdsr2",
+    "c++": "spi_flash_common_read_status_16b_rdsr_rdsr2(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).SpiFlashCommonReadStatus16bRdsrRdsr2"
+  },
+  {
+    "mangle": "spi_flash_common_read_status_8b_rdsr",
+    "c++": "spi_flash_common_read_status_8b_rdsr(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).SpiFlashCommonReadStatus8bRdsr"
+  },
+  {
+    "mangle": "spi_flash_common_read_status_8b_rdsr2",
+    "c++": "spi_flash_common_read_status_8b_rdsr2(esp_flash_t *, uint32_t *)",
+    "go": "(*EspFlashT).SpiFlashCommonReadStatus8bRdsr2"
+  },
+  {
+    "mangle": "spi_flash_common_set_io_mode",
+    "c++": "spi_flash_common_set_io_mode(esp_flash_t *, esp_flash_wrsr_func_t, esp_flash_rdsr_func_t, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashCommonSetIoMode"
+  },
+  {
+    "mangle": "spi_flash_common_write_status_16b_wrsr",
+    "c++": "spi_flash_common_write_status_16b_wrsr(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashCommonWriteStatus16bWrsr"
+  },
+  {
+    "mangle": "spi_flash_common_write_status_8b_wrsr",
+    "c++": "spi_flash_common_write_status_8b_wrsr(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashCommonWriteStatus8bWrsr"
+  },
+  {
+    "mangle": "spi_flash_common_write_status_8b_wrsr2",
+    "c++": "spi_flash_common_write_status_8b_wrsr2(esp_flash_t *, uint32_t)",
+    "go": "(*EspFlashT).SpiFlashCommonWriteStatus8bWrsr2"
+  },
+  {
+    "mangle": "spi_flash_disable_cache",
+    "c++": "spi_flash_disable_cache(uint32_t, uint32_t *)",
+    "go": "SpiFlashDisableCache"
+  },
+  {
+    "mangle": "spi_flash_disable_interrupts_caches_and_other_cpu",
+    "c++": "spi_flash_disable_interrupts_caches_and_other_cpu()",
+    "go": "SpiFlashDisableInterruptsCachesAndOtherCpu"
+  },
+  {
+    "mangle": "spi_flash_disable_interrupts_caches_and_other_cpu_no_os",
+    "c++": "spi_flash_disable_interrupts_caches_and_other_cpu_no_os()",
+    "go": "SpiFlashDisableInterruptsCachesAndOtherCpuNoOs"
+  },
+  {
+    "mangle": "spi_flash_enable_cache",
+    "c++": "spi_flash_enable_cache(uint32_t)",
+    "go": "SpiFlashEnableCache"
+  },
+  {
+    "mangle": "spi_flash_enable_high_performance_mode",
+    "c++": "spi_flash_enable_high_performance_mode()",
+    "go": "SpiFlashEnableHighPerformanceMode"
+  },
+  {
+    "mangle": "spi_flash_enable_interrupts_caches_and_other_cpu",
+    "c++": "spi_flash_enable_interrupts_caches_and_other_cpu()",
+    "go": "SpiFlashEnableInterruptsCachesAndOtherCpu"
+  },
+  {
+    "mangle": "spi_flash_enable_interrupts_caches_no_os",
+    "c++": "spi_flash_enable_interrupts_caches_no_os()",
+    "go": "SpiFlashEnableInterruptsCachesNoOs"
+  },
+  {
+    "mangle": "spi_flash_guard_get",
+    "c++": "spi_flash_guard_get()",
+    "go": "SpiFlashGuardGet"
+  },
+  {
+    "mangle": "spi_flash_guard_set",
+    "c++": "spi_flash_guard_set(const spi_flash_guard_funcs_t *)",
+    "go": "(*SpiFlashGuardFuncsT).SpiFlashGuardSet"
+  },
+  {
+    "mangle": "spi_flash_hpm_dummy_adjust",
+    "c++": "spi_flash_hpm_dummy_adjust()",
+    "go": "SpiFlashHpmDummyAdjust"
+  },
+  {
+    "mangle": "spi_flash_hpm_get_dummy",
+    "c++": "spi_flash_hpm_get_dummy()",
+    "go": "SpiFlashHpmGetDummy"
+  },
+  {
+    "mangle": "spi_flash_init_chip_state",
+    "c++": "spi_flash_init_chip_state()",
+    "go": "SpiFlashInitChipState"
+  },
+  {
+    "mangle": "spi_flash_init_lock",
+    "c++": "spi_flash_init_lock()",
+    "go": "SpiFlashInitLock"
+  },
+  {
+    "mangle": "spi_flash_mmap",
+    "c++": "spi_flash_mmap(size_t, size_t, spi_flash_mmap_memory_t, const void **, spi_flash_mmap_handle_t *)",
+    "go": "SpiFlashMmap"
+  },
+  {
+    "mangle": "spi_flash_mmap_dump",
+    "c++": "spi_flash_mmap_dump()",
+    "go": "SpiFlashMmapDump"
+  },
+  {
+    "mangle": "spi_flash_mmap_get_free_pages",
+    "c++": "spi_flash_mmap_get_free_pages(spi_flash_mmap_memory_t)",
+    "go": "SpiFlashMmapMemoryT.SpiFlashMmapGetFreePages"
+  },
+  {
+    "mangle": "spi_flash_mmap_pages",
+    "c++": "spi_flash_mmap_pages(const int *, size_t, spi_flash_mmap_memory_t, const void **, spi_flash_mmap_handle_t *)",
+    "go": "SpiFlashMmapPages"
+  },
+  {
+    "mangle": "spi_flash_munmap",
+    "c++": "spi_flash_munmap(spi_flash_mmap_handle_t)",
+    "go": "SpiFlashMmapHandleT.SpiFlashMunmap"
+  },
+  {
+    "mangle": "spi_flash_needs_reset_check",
+    "c++": "spi_flash_needs_reset_check()",
+    "go": "SpiFlashNeedsResetCheck"
+  },
+  {
+    "mangle": "spi_flash_op_lock",
+    "c++": "spi_flash_op_lock()",
+    "go": "SpiFlashOpLock"
+  },
+  {
+    "mangle": "spi_flash_op_unlock",
+    "c++": "spi_flash_op_unlock()",
+    "go": "SpiFlashOpUnlock"
+  },
+  {
+    "mangle": "spi_flash_phys2cache",
+    "c++": "spi_flash_phys2cache(size_t, spi_flash_mmap_memory_t)",
+    "go": "SpiFlashPhys2cache"
+  },
+  {
+    "mangle": "spi_flash_restore_cache",
+    "c++": "spi_flash_restore_cache(uint32_t, uint32_t)",
+    "go": "SpiFlashRestoreCache"
+  },
+  {
+    "mangle": "spi_flash_set_erasing_flag",
+    "c++": "spi_flash_set_erasing_flag(bool)",
+    "go": "SpiFlashSetErasingFlag"
+  },
+  {
+    "mangle": "spi_flash_set_rom_required_regs",
+    "c++": "spi_flash_set_rom_required_regs()",
+    "go": "SpiFlashSetRomRequiredRegs"
+  },
+  {
+    "mangle": "spi_flash_support_wrap_size",
+    "c++": "spi_flash_support_wrap_size(uint32_t)",
+    "go": "SpiFlashSupportWrapSize"
+  },
+  {
+    "mangle": "spi_flash_timing_is_tuned",
+    "c++": "spi_flash_timing_is_tuned()",
+    "go": "SpiFlashTimingIsTuned"
+  },
+  {
+    "mangle": "spi_flash_wrap_disable",
+    "c++": "spi_flash_wrap_disable()",
+    "go": "SpiFlashWrapDisable"
+  },
+  {
+    "mangle": "spi_flash_wrap_enable",
+    "c++": "spi_flash_wrap_enable(spi_flash_wrap_size_t)",
+    "go": "SpiFlashWrapSizeT.SpiFlashWrapEnable"
+  },
+  {
+    "mangle": "spi_flash_wrap_probe",
+    "c++": "spi_flash_wrap_probe()",
+    "go": "SpiFlashWrapProbe"
+  },
+  {
+    "mangle": "spi_timing_get_flash_timing_param",
+    "c++": "spi_timing_get_flash_timing_param(spi_flash_hal_timing_config_t *)",
+    "go": "SpiTimingGetFlashTimingParam"
+  }
+]

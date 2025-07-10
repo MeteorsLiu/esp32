@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "esp_app_get_description",
+    "c++": "esp_app_get_description()",
+    "go": "EspAppGetDescription"
+  },
+  {
+    "mangle": "esp_app_get_elf_sha256",
+    "c++": "esp_app_get_elf_sha256(char *, size_t)",
+    "go": "EspAppGetElfSha256"
+  }
+]

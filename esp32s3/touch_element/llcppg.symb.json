@@ -1,0 +1,297 @@
+[
+  {
+    "mangle": "button_enable_wakeup_calibration",
+    "c++": "button_enable_wakeup_calibration(te_button_handle_t, _Bool)",
+    "go": "ButtonEnableWakeupCalibration"
+  },
+  {
+    "mangle": "is_button_object_handle",
+    "c++": "is_button_object_handle(touch_elem_handle_t)",
+    "go": "IsButtonObjectHandle"
+  },
+  {
+    "mangle": "is_matrix_object_handle",
+    "c++": "is_matrix_object_handle(touch_elem_handle_t)",
+    "go": "IsMatrixObjectHandle"
+  },
+  {
+    "mangle": "is_slider_object_handle",
+    "c++": "is_slider_object_handle(touch_elem_handle_t)",
+    "go": "IsSliderObjectHandle"
+  },
+  {
+    "mangle": "matrix_enable_wakeup_calibration",
+    "c++": "matrix_enable_wakeup_calibration(te_matrix_handle_t, _Bool)",
+    "go": "MatrixEnableWakeupCalibration"
+  },
+  {
+    "mangle": "slider_enable_wakeup_calibration",
+    "c++": "slider_enable_wakeup_calibration(te_slider_handle_t, _Bool)",
+    "go": "SliderEnableWakeupCalibration"
+  },
+  {
+    "mangle": "te_dev_deinit",
+    "c++": "te_dev_deinit(te_dev_t **, uint8_t)",
+    "go": "TeDevDeinit"
+  },
+  {
+    "mangle": "te_dev_init",
+    "c++": "te_dev_init(te_dev_t **, uint8_t, te_dev_type_t, const touch_pad_t *, const float *, float)",
+    "go": "TeDevInit"
+  },
+  {
+    "mangle": "te_dev_set_threshold",
+    "c++": "te_dev_set_threshold(te_dev_t *)",
+    "go": "(*TeDevT).TeDevSetThreshold"
+  },
+  {
+    "mangle": "te_event_give",
+    "c++": "te_event_give(touch_elem_message_t)",
+    "go": "TouchElemMessageT.TeEventGive"
+  },
+  {
+    "mangle": "te_get_sleep_channel",
+    "c++": "te_get_sleep_channel()",
+    "go": "TeGetSleepChannel"
+  },
+  {
+    "mangle": "te_get_timer_period",
+    "c++": "te_get_timer_period()",
+    "go": "TeGetTimerPeriod"
+  },
+  {
+    "mangle": "te_is_touch_dsleep_wakeup",
+    "c++": "te_is_touch_dsleep_wakeup()",
+    "go": "TeIsTouchDsleepWakeup"
+  },
+  {
+    "mangle": "te_object_check_channel",
+    "c++": "te_object_check_channel(const touch_pad_t *, uint8_t)",
+    "go": "TeObjectCheckChannel"
+  },
+  {
+    "mangle": "te_object_method_register",
+    "c++": "te_object_method_register(te_object_methods_t *, te_class_type_t)",
+    "go": "(*TeObjectMethodsT).TeObjectMethodRegister"
+  },
+  {
+    "mangle": "te_object_method_unregister",
+    "c++": "te_object_method_unregister(te_class_type_t)",
+    "go": "TeClassTypeT.TeObjectMethodUnregister"
+  },
+  {
+    "mangle": "te_read_smooth_signal",
+    "c++": "te_read_smooth_signal(touch_pad_t)",
+    "go": "TeReadSmoothSignal"
+  },
+  {
+    "mangle": "te_system_check_state",
+    "c++": "te_system_check_state()",
+    "go": "TeSystemCheckState"
+  },
+  {
+    "mangle": "touch_button_create",
+    "c++": "touch_button_create(const touch_button_config_t *, touch_button_handle_t *)",
+    "go": "(*TouchButtonConfigT).TouchButtonCreate"
+  },
+  {
+    "mangle": "touch_button_delete",
+    "c++": "touch_button_delete(touch_button_handle_t)",
+    "go": "TouchButtonDelete"
+  },
+  {
+    "mangle": "touch_button_get_message",
+    "c++": "touch_button_get_message(const touch_elem_message_t *)",
+    "go": "(*TouchElemMessageT).TouchButtonGetMessage"
+  },
+  {
+    "mangle": "touch_button_install",
+    "c++": "touch_button_install(const touch_button_global_config_t *)",
+    "go": "(*TouchButtonGlobalConfigT).TouchButtonInstall"
+  },
+  {
+    "mangle": "touch_button_set_callback",
+    "c++": "touch_button_set_callback(touch_button_handle_t, touch_button_callback_t)",
+    "go": "TouchButtonSetCallback"
+  },
+  {
+    "mangle": "touch_button_set_dispatch_method",
+    "c++": "touch_button_set_dispatch_method(touch_button_handle_t, touch_elem_dispatch_t)",
+    "go": "TouchButtonSetDispatchMethod"
+  },
+  {
+    "mangle": "touch_button_set_longpress",
+    "c++": "touch_button_set_longpress(touch_button_handle_t, uint32_t)",
+    "go": "TouchButtonSetLongpress"
+  },
+  {
+    "mangle": "touch_button_subscribe_event",
+    "c++": "touch_button_subscribe_event(touch_button_handle_t, uint32_t, void *)",
+    "go": "TouchButtonSubscribeEvent"
+  },
+  {
+    "mangle": "touch_button_uninstall",
+    "c++": "touch_button_uninstall()",
+    "go": "TouchButtonUninstall"
+  },
+  {
+    "mangle": "touch_element_disable_deep_sleep",
+    "c++": "touch_element_disable_deep_sleep()",
+    "go": "TouchElementDisableDeepSleep"
+  },
+  {
+    "mangle": "touch_element_disable_light_sleep",
+    "c++": "touch_element_disable_light_sleep()",
+    "go": "TouchElementDisableLightSleep"
+  },
+  {
+    "mangle": "touch_element_enable_deep_sleep",
+    "c++": "touch_element_enable_deep_sleep(touch_elem_handle_t, const touch_elem_sleep_config_t *)",
+    "go": "TouchElementEnableDeepSleep"
+  },
+  {
+    "mangle": "touch_element_enable_light_sleep",
+    "c++": "touch_element_enable_light_sleep(const touch_elem_sleep_config_t *)",
+    "go": "(*TouchElemSleepConfigT).TouchElementEnableLightSleep"
+  },
+  {
+    "mangle": "touch_element_install",
+    "c++": "touch_element_install(const touch_elem_global_config_t *)",
+    "go": "(*TouchElemGlobalConfigT).TouchElementInstall"
+  },
+  {
+    "mangle": "touch_element_message_receive",
+    "c++": "touch_element_message_receive(touch_elem_message_t *, uint32_t)",
+    "go": "(*TouchElemMessageT).TouchElementMessageReceive"
+  },
+  {
+    "mangle": "touch_element_sleep_enable_wakeup_calibration",
+    "c++": "touch_element_sleep_enable_wakeup_calibration(touch_elem_handle_t, _Bool)",
+    "go": "TouchElementSleepEnableWakeupCalibration"
+  },
+  {
+    "mangle": "touch_element_start",
+    "c++": "touch_element_start()",
+    "go": "TouchElementStart"
+  },
+  {
+    "mangle": "touch_element_stop",
+    "c++": "touch_element_stop()",
+    "go": "TouchElementStop"
+  },
+  {
+    "mangle": "touch_element_uninstall",
+    "c++": "touch_element_uninstall()",
+    "go": "TouchElementUninstall"
+  },
+  {
+    "mangle": "touch_element_waterproof_add",
+    "c++": "touch_element_waterproof_add(touch_elem_handle_t)",
+    "go": "TouchElementWaterproofAdd"
+  },
+  {
+    "mangle": "touch_element_waterproof_install",
+    "c++": "touch_element_waterproof_install(const touch_elem_waterproof_config_t *)",
+    "go": "(*TouchElemWaterproofConfigT).TouchElementWaterproofInstall"
+  },
+  {
+    "mangle": "touch_element_waterproof_remove",
+    "c++": "touch_element_waterproof_remove(touch_elem_handle_t)",
+    "go": "TouchElementWaterproofRemove"
+  },
+  {
+    "mangle": "touch_element_waterproof_uninstall",
+    "c++": "touch_element_waterproof_uninstall()",
+    "go": "TouchElementWaterproofUninstall"
+  },
+  {
+    "mangle": "touch_matrix_create",
+    "c++": "touch_matrix_create(const touch_matrix_config_t *, touch_matrix_handle_t *)",
+    "go": "(*TouchMatrixConfigT).TouchMatrixCreate"
+  },
+  {
+    "mangle": "touch_matrix_delete",
+    "c++": "touch_matrix_delete(touch_matrix_handle_t)",
+    "go": "TouchMatrixDelete"
+  },
+  {
+    "mangle": "touch_matrix_get_message",
+    "c++": "touch_matrix_get_message(const touch_elem_message_t *)",
+    "go": "(*TouchElemMessageT).TouchMatrixGetMessage"
+  },
+  {
+    "mangle": "touch_matrix_install",
+    "c++": "touch_matrix_install(const touch_matrix_global_config_t *)",
+    "go": "(*TouchMatrixGlobalConfigT).TouchMatrixInstall"
+  },
+  {
+    "mangle": "touch_matrix_set_callback",
+    "c++": "touch_matrix_set_callback(touch_matrix_handle_t, touch_matrix_callback_t)",
+    "go": "TouchMatrixSetCallback"
+  },
+  {
+    "mangle": "touch_matrix_set_dispatch_method",
+    "c++": "touch_matrix_set_dispatch_method(touch_matrix_handle_t, touch_elem_dispatch_t)",
+    "go": "TouchMatrixSetDispatchMethod"
+  },
+  {
+    "mangle": "touch_matrix_set_longpress",
+    "c++": "touch_matrix_set_longpress(touch_matrix_handle_t, uint32_t)",
+    "go": "TouchMatrixSetLongpress"
+  },
+  {
+    "mangle": "touch_matrix_subscribe_event",
+    "c++": "touch_matrix_subscribe_event(touch_matrix_handle_t, uint32_t, void *)",
+    "go": "TouchMatrixSubscribeEvent"
+  },
+  {
+    "mangle": "touch_matrix_uninstall",
+    "c++": "touch_matrix_uninstall()",
+    "go": "TouchMatrixUninstall"
+  },
+  {
+    "mangle": "touch_slider_create",
+    "c++": "touch_slider_create(const touch_slider_config_t *, touch_slider_handle_t *)",
+    "go": "(*TouchSliderConfigT).TouchSliderCreate"
+  },
+  {
+    "mangle": "touch_slider_delete",
+    "c++": "touch_slider_delete(touch_slider_handle_t)",
+    "go": "TouchSliderDelete"
+  },
+  {
+    "mangle": "touch_slider_get_message",
+    "c++": "touch_slider_get_message(const touch_elem_message_t *)",
+    "go": "(*TouchElemMessageT).TouchSliderGetMessage"
+  },
+  {
+    "mangle": "touch_slider_install",
+    "c++": "touch_slider_install(const touch_slider_global_config_t *)",
+    "go": "(*TouchSliderGlobalConfigT).TouchSliderInstall"
+  },
+  {
+    "mangle": "touch_slider_set_callback",
+    "c++": "touch_slider_set_callback(touch_slider_handle_t, touch_slider_callback_t)",
+    "go": "TouchSliderSetCallback"
+  },
+  {
+    "mangle": "touch_slider_set_dispatch_method",
+    "c++": "touch_slider_set_dispatch_method(touch_slider_handle_t, touch_elem_dispatch_t)",
+    "go": "TouchSliderSetDispatchMethod"
+  },
+  {
+    "mangle": "touch_slider_subscribe_event",
+    "c++": "touch_slider_subscribe_event(touch_slider_handle_t, uint32_t, void *)",
+    "go": "TouchSliderSubscribeEvent"
+  },
+  {
+    "mangle": "touch_slider_uninstall",
+    "c++": "touch_slider_uninstall()",
+    "go": "TouchSliderUninstall"
+  },
+  {
+    "mangle": "waterproof_check_mask_handle",
+    "c++": "waterproof_check_mask_handle(touch_elem_handle_t)",
+    "go": "WaterproofCheckMaskHandle"
+  }
+]

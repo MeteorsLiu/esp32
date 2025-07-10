@@ -1,0 +1,17 @@
+[
+  {
+    "mangle": "esp_dport_access_read_buffer",
+    "c++": "esp_dport_access_read_buffer(uint32_t *, uint32_t, uint32_t)",
+    "go": "EspDportAccessReadBuffer"
+  },
+  {
+    "mangle": "lldesc_get_received_len",
+    "c++": "lldesc_get_received_len(lldesc_t *, lldesc_t **)",
+    "go": "LldescGetReceivedLen"
+  },
+  {
+    "mangle": "lldesc_setup_link_constrained",
+    "c++": "lldesc_setup_link_constrained(lldesc_t *, const void *, int, int, bool)",
+    "go": "LldescSetupLinkConstrained"
+  }
+]

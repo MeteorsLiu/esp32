@@ -1,0 +1,122 @@
+[
+  {
+    "mangle": "rmt_alloc_encoder_mem",
+    "c++": "rmt_alloc_encoder_mem(size_t)",
+    "go": "RmtAllocEncoderMem"
+  },
+  {
+    "mangle": "rmt_apply_carrier",
+    "c++": "rmt_apply_carrier(rmt_channel_handle_t, const rmt_carrier_config_t *)",
+    "go": "RmtApplyCarrier"
+  },
+  {
+    "mangle": "rmt_bytes_encoder_update_config",
+    "c++": "rmt_bytes_encoder_update_config(rmt_encoder_handle_t, const rmt_bytes_encoder_config_t *)",
+    "go": "RmtBytesEncoderUpdateConfig"
+  },
+  {
+    "mangle": "rmt_del_channel",
+    "c++": "rmt_del_channel(rmt_channel_handle_t)",
+    "go": "RmtDelChannel"
+  },
+  {
+    "mangle": "rmt_del_encoder",
+    "c++": "rmt_del_encoder(rmt_encoder_handle_t)",
+    "go": "RmtDelEncoder"
+  },
+  {
+    "mangle": "rmt_del_sync_manager",
+    "c++": "rmt_del_sync_manager(rmt_sync_manager_handle_t)",
+    "go": "RmtDelSyncManager"
+  },
+  {
+    "mangle": "rmt_disable",
+    "c++": "rmt_disable(rmt_channel_handle_t)",
+    "go": "RmtDisable"
+  },
+  {
+    "mangle": "rmt_enable",
+    "c++": "rmt_enable(rmt_channel_handle_t)",
+    "go": "RmtEnable"
+  },
+  {
+    "mangle": "rmt_encoder_reset",
+    "c++": "rmt_encoder_reset(rmt_encoder_handle_t)",
+    "go": "RmtEncoderReset"
+  },
+  {
+    "mangle": "rmt_get_channel_id",
+    "c++": "rmt_get_channel_id(rmt_channel_handle_t, int *)",
+    "go": "RmtGetChannelId"
+  },
+  {
+    "mangle": "rmt_get_channel_resolution",
+    "c++": "rmt_get_channel_resolution(rmt_channel_handle_t, uint32_t *)",
+    "go": "RmtGetChannelResolution"
+  },
+  {
+    "mangle": "rmt_new_bytes_encoder",
+    "c++": "rmt_new_bytes_encoder(const rmt_bytes_encoder_config_t *, rmt_encoder_handle_t *)",
+    "go": "(*RmtBytesEncoderConfigT).RmtNewBytesEncoder"
+  },
+  {
+    "mangle": "rmt_new_copy_encoder",
+    "c++": "rmt_new_copy_encoder(const rmt_copy_encoder_config_t *, rmt_encoder_handle_t *)",
+    "go": "(*RmtCopyEncoderConfigT).RmtNewCopyEncoder"
+  },
+  {
+    "mangle": "rmt_new_rx_channel",
+    "c++": "rmt_new_rx_channel(const rmt_rx_channel_config_t *, rmt_channel_handle_t *)",
+    "go": "(*RmtRxChannelConfigT).RmtNewRxChannel"
+  },
+  {
+    "mangle": "rmt_new_simple_encoder",
+    "c++": "rmt_new_simple_encoder(const rmt_simple_encoder_config_t *, rmt_encoder_handle_t *)",
+    "go": "(*RmtSimpleEncoderConfigT).RmtNewSimpleEncoder"
+  },
+  {
+    "mangle": "rmt_new_sync_manager",
+    "c++": "rmt_new_sync_manager(const rmt_sync_manager_config_t *, rmt_sync_manager_handle_t *)",
+    "go": "(*RmtSyncManagerConfigT).RmtNewSyncManager"
+  },
+  {
+    "mangle": "rmt_new_tx_channel",
+    "c++": "rmt_new_tx_channel(const rmt_tx_channel_config_t *, rmt_channel_handle_t *)",
+    "go": "(*RmtTxChannelConfigT).RmtNewTxChannel"
+  },
+  {
+    "mangle": "rmt_receive",
+    "c++": "rmt_receive(rmt_channel_handle_t, void *, size_t, const rmt_receive_config_t *)",
+    "go": "RmtReceive"
+  },
+  {
+    "mangle": "rmt_rx_register_event_callbacks",
+    "c++": "rmt_rx_register_event_callbacks(rmt_channel_handle_t, const rmt_rx_event_callbacks_t *, void *)",
+    "go": "RmtRxRegisterEventCallbacks"
+  },
+  {
+    "mangle": "rmt_sync_reset",
+    "c++": "rmt_sync_reset(rmt_sync_manager_handle_t)",
+    "go": "RmtSyncReset"
+  },
+  {
+    "mangle": "rmt_transmit",
+    "c++": "rmt_transmit(rmt_channel_handle_t, rmt_encoder_handle_t, const void *, size_t, const rmt_transmit_config_t *)",
+    "go": "RmtTransmit"
+  },
+  {
+    "mangle": "rmt_tx_register_event_callbacks",
+    "c++": "rmt_tx_register_event_callbacks(rmt_channel_handle_t, const rmt_tx_event_callbacks_t *, void *)",
+    "go": "RmtTxRegisterEventCallbacks"
+  },
+  {
+    "mangle": "rmt_tx_switch_gpio",
+    "c++": "rmt_tx_switch_gpio(rmt_channel_handle_t, gpio_num_t, bool)",
+    "go": "RmtTxSwitchGpio"
+  },
+  {
+    "mangle": "rmt_tx_wait_all_done",
+    "c++": "rmt_tx_wait_all_done(rmt_channel_handle_t, int)",
+    "go": "RmtTxWaitAllDone"
+  }
+]

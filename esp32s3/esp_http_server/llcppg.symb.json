@@ -1,0 +1,202 @@
+[
+  {
+    "mangle": "httpd_get_client_list",
+    "c++": "httpd_get_client_list(httpd_handle_t, size_t *, int *)",
+    "go": "HttpdGetClientList"
+  },
+  {
+    "mangle": "httpd_get_global_transport_ctx",
+    "c++": "httpd_get_global_transport_ctx(httpd_handle_t)",
+    "go": "HttpdGetGlobalTransportCtx"
+  },
+  {
+    "mangle": "httpd_get_global_user_ctx",
+    "c++": "httpd_get_global_user_ctx(httpd_handle_t)",
+    "go": "HttpdGetGlobalUserCtx"
+  },
+  {
+    "mangle": "httpd_query_key_value",
+    "c++": "httpd_query_key_value(const char *, const char *, char *, size_t)",
+    "go": "HttpdQueryKeyValue"
+  },
+  {
+    "mangle": "httpd_queue_work",
+    "c++": "httpd_queue_work(httpd_handle_t, httpd_work_fn_t, void *)",
+    "go": "HttpdQueueWork"
+  },
+  {
+    "mangle": "httpd_register_err_handler",
+    "c++": "httpd_register_err_handler(httpd_handle_t, httpd_err_code_t, httpd_err_handler_func_t)",
+    "go": "HttpdRegisterErrHandler"
+  },
+  {
+    "mangle": "httpd_register_uri_handler",
+    "c++": "httpd_register_uri_handler(httpd_handle_t, const httpd_uri_t *)",
+    "go": "HttpdRegisterUriHandler"
+  },
+  {
+    "mangle": "httpd_req_async_handler_begin",
+    "c++": "httpd_req_async_handler_begin(httpd_req_t *, httpd_req_t **)",
+    "go": "(*HttpdReqT).HttpdReqAsyncHandlerBegin"
+  },
+  {
+    "mangle": "httpd_req_async_handler_complete",
+    "c++": "httpd_req_async_handler_complete(httpd_req_t *)",
+    "go": "(*HttpdReqT).HttpdReqAsyncHandlerComplete"
+  },
+  {
+    "mangle": "httpd_req_get_cookie_val",
+    "c++": "httpd_req_get_cookie_val(httpd_req_t *, const char *, char *, size_t *)",
+    "go": "(*HttpdReqT).HttpdReqGetCookieVal"
+  },
+  {
+    "mangle": "httpd_req_get_hdr_value_len",
+    "c++": "httpd_req_get_hdr_value_len(httpd_req_t *, const char *)",
+    "go": "(*HttpdReqT).HttpdReqGetHdrValueLen"
+  },
+  {
+    "mangle": "httpd_req_get_hdr_value_str",
+    "c++": "httpd_req_get_hdr_value_str(httpd_req_t *, const char *, char *, size_t)",
+    "go": "(*HttpdReqT).HttpdReqGetHdrValueStr"
+  },
+  {
+    "mangle": "httpd_req_get_url_query_len",
+    "c++": "httpd_req_get_url_query_len(httpd_req_t *)",
+    "go": "(*HttpdReqT).HttpdReqGetUrlQueryLen"
+  },
+  {
+    "mangle": "httpd_req_get_url_query_str",
+    "c++": "httpd_req_get_url_query_str(httpd_req_t *, char *, size_t)",
+    "go": "(*HttpdReqT).HttpdReqGetUrlQueryStr"
+  },
+  {
+    "mangle": "httpd_req_recv",
+    "c++": "httpd_req_recv(httpd_req_t *, char *, size_t)",
+    "go": "(*HttpdReqT).HttpdReqRecv"
+  },
+  {
+    "mangle": "httpd_req_to_sockfd",
+    "c++": "httpd_req_to_sockfd(httpd_req_t *)",
+    "go": "(*HttpdReqT).HttpdReqToSockfd"
+  },
+  {
+    "mangle": "httpd_resp_send",
+    "c++": "httpd_resp_send(httpd_req_t *, const char *, ssize_t)",
+    "go": "(*HttpdReqT).HttpdRespSend"
+  },
+  {
+    "mangle": "httpd_resp_send_chunk",
+    "c++": "httpd_resp_send_chunk(httpd_req_t *, const char *, ssize_t)",
+    "go": "(*HttpdReqT).HttpdRespSendChunk"
+  },
+  {
+    "mangle": "httpd_resp_send_custom_err",
+    "c++": "httpd_resp_send_custom_err(httpd_req_t *, const char *, const char *)",
+    "go": "(*HttpdReqT).HttpdRespSendCustomErr"
+  },
+  {
+    "mangle": "httpd_resp_send_err",
+    "c++": "httpd_resp_send_err(httpd_req_t *, httpd_err_code_t, const char *)",
+    "go": "(*HttpdReqT).HttpdRespSendErr"
+  },
+  {
+    "mangle": "httpd_resp_set_hdr",
+    "c++": "httpd_resp_set_hdr(httpd_req_t *, const char *, const char *)",
+    "go": "(*HttpdReqT).HttpdRespSetHdr"
+  },
+  {
+    "mangle": "httpd_resp_set_status",
+    "c++": "httpd_resp_set_status(httpd_req_t *, const char *)",
+    "go": "(*HttpdReqT).HttpdRespSetStatus"
+  },
+  {
+    "mangle": "httpd_resp_set_type",
+    "c++": "httpd_resp_set_type(httpd_req_t *, const char *)",
+    "go": "(*HttpdReqT).HttpdRespSetType"
+  },
+  {
+    "mangle": "httpd_send",
+    "c++": "httpd_send(httpd_req_t *, const char *, size_t)",
+    "go": "(*HttpdReqT).HttpdSend"
+  },
+  {
+    "mangle": "httpd_sess_get_ctx",
+    "c++": "httpd_sess_get_ctx(httpd_handle_t, int)",
+    "go": "HttpdSessGetCtx"
+  },
+  {
+    "mangle": "httpd_sess_get_transport_ctx",
+    "c++": "httpd_sess_get_transport_ctx(httpd_handle_t, int)",
+    "go": "HttpdSessGetTransportCtx"
+  },
+  {
+    "mangle": "httpd_sess_set_ctx",
+    "c++": "httpd_sess_set_ctx(httpd_handle_t, int, void *, httpd_free_ctx_fn_t)",
+    "go": "HttpdSessSetCtx"
+  },
+  {
+    "mangle": "httpd_sess_set_pending_override",
+    "c++": "httpd_sess_set_pending_override(httpd_handle_t, int, httpd_pending_func_t)",
+    "go": "HttpdSessSetPendingOverride"
+  },
+  {
+    "mangle": "httpd_sess_set_recv_override",
+    "c++": "httpd_sess_set_recv_override(httpd_handle_t, int, httpd_recv_func_t)",
+    "go": "HttpdSessSetRecvOverride"
+  },
+  {
+    "mangle": "httpd_sess_set_send_override",
+    "c++": "httpd_sess_set_send_override(httpd_handle_t, int, httpd_send_func_t)",
+    "go": "HttpdSessSetSendOverride"
+  },
+  {
+    "mangle": "httpd_sess_set_transport_ctx",
+    "c++": "httpd_sess_set_transport_ctx(httpd_handle_t, int, void *, httpd_free_ctx_fn_t)",
+    "go": "HttpdSessSetTransportCtx"
+  },
+  {
+    "mangle": "httpd_sess_trigger_close",
+    "c++": "httpd_sess_trigger_close(httpd_handle_t, int)",
+    "go": "HttpdSessTriggerClose"
+  },
+  {
+    "mangle": "httpd_sess_update_lru_counter",
+    "c++": "httpd_sess_update_lru_counter(httpd_handle_t, int)",
+    "go": "HttpdSessUpdateLruCounter"
+  },
+  {
+    "mangle": "httpd_socket_recv",
+    "c++": "httpd_socket_recv(httpd_handle_t, int, char *, size_t, int)",
+    "go": "HttpdSocketRecv"
+  },
+  {
+    "mangle": "httpd_socket_send",
+    "c++": "httpd_socket_send(httpd_handle_t, int, const char *, size_t, int)",
+    "go": "HttpdSocketSend"
+  },
+  {
+    "mangle": "httpd_start",
+    "c++": "httpd_start(httpd_handle_t *, const httpd_config_t *)",
+    "go": "HttpdStart"
+  },
+  {
+    "mangle": "httpd_stop",
+    "c++": "httpd_stop(httpd_handle_t)",
+    "go": "HttpdStop"
+  },
+  {
+    "mangle": "httpd_unregister_uri",
+    "c++": "httpd_unregister_uri(httpd_handle_t, const char *)",
+    "go": "HttpdUnregisterUri"
+  },
+  {
+    "mangle": "httpd_unregister_uri_handler",
+    "c++": "httpd_unregister_uri_handler(httpd_handle_t, const char *, httpd_method_t)",
+    "go": "HttpdUnregisterUriHandler"
+  },
+  {
+    "mangle": "httpd_uri_match_wildcard",
+    "c++": "httpd_uri_match_wildcard(const char *, const char *, size_t)",
+    "go": "HttpdUriMatchWildcard"
+  }
+]

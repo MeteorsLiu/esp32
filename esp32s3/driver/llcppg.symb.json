@@ -1,0 +1,1602 @@
+[
+  {
+    "mangle": "adc1_config_channel_atten",
+    "c++": "adc1_config_channel_atten(adc1_channel_t, adc_atten_t)",
+    "go": "Adc1ChannelT.Adc1ConfigChannelAtten"
+  },
+  {
+    "mangle": "adc1_config_width",
+    "c++": "adc1_config_width(adc_bits_width_t)",
+    "go": "AdcBitsWidthT.Adc1ConfigWidth"
+  },
+  {
+    "mangle": "adc1_dma_mode_acquire",
+    "c++": "adc1_dma_mode_acquire()",
+    "go": "Adc1DmaModeAcquire"
+  },
+  {
+    "mangle": "adc1_get_raw",
+    "c++": "adc1_get_raw(adc1_channel_t)",
+    "go": "Adc1ChannelT.Adc1GetRaw"
+  },
+  {
+    "mangle": "adc1_lock_release",
+    "c++": "adc1_lock_release()",
+    "go": "Adc1LockRelease"
+  },
+  {
+    "mangle": "adc1_pad_get_io_num",
+    "c++": "adc1_pad_get_io_num(adc1_channel_t, gpio_num_t *)",
+    "go": "Adc1ChannelT.Adc1PadGetIoNum"
+  },
+  {
+    "mangle": "adc1_rtc_mode_acquire",
+    "c++": "adc1_rtc_mode_acquire()",
+    "go": "Adc1RtcModeAcquire"
+  },
+  {
+    "mangle": "adc1_ulp_enable",
+    "c++": "adc1_ulp_enable()",
+    "go": "Adc1UlpEnable"
+  },
+  {
+    "mangle": "adc2_config_channel_atten",
+    "c++": "adc2_config_channel_atten(adc2_channel_t, adc_atten_t)",
+    "go": "Adc2ChannelT.Adc2ConfigChannelAtten"
+  },
+  {
+    "mangle": "adc2_get_raw",
+    "c++": "adc2_get_raw(adc2_channel_t, adc_bits_width_t, int *)",
+    "go": "Adc2ChannelT.Adc2GetRaw"
+  },
+  {
+    "mangle": "adc2_pad_get_io_num",
+    "c++": "adc2_pad_get_io_num(adc2_channel_t, gpio_num_t *)",
+    "go": "Adc2ChannelT.Adc2PadGetIoNum"
+  },
+  {
+    "mangle": "adc_digi_controller_configure",
+    "c++": "adc_digi_controller_configure(const adc_digi_configuration_t *)",
+    "go": "(*AdcDigiConfigurationT).AdcDigiControllerConfigure"
+  },
+  {
+    "mangle": "adc_digi_deinitialize",
+    "c++": "adc_digi_deinitialize()",
+    "go": "AdcDigiDeinitialize"
+  },
+  {
+    "mangle": "adc_digi_initialize",
+    "c++": "adc_digi_initialize(const adc_digi_init_config_t *)",
+    "go": "(*AdcDigiInitConfigT).AdcDigiInitialize"
+  },
+  {
+    "mangle": "adc_digi_read_bytes",
+    "c++": "adc_digi_read_bytes(uint8_t *, uint32_t, uint32_t *, uint32_t)",
+    "go": "AdcDigiReadBytes"
+  },
+  {
+    "mangle": "adc_digi_start",
+    "c++": "adc_digi_start()",
+    "go": "AdcDigiStart"
+  },
+  {
+    "mangle": "adc_digi_stop",
+    "c++": "adc_digi_stop()",
+    "go": "AdcDigiStop"
+  },
+  {
+    "mangle": "adc_set_clk_div",
+    "c++": "adc_set_clk_div(uint8_t)",
+    "go": "AdcSetClkDiv"
+  },
+  {
+    "mangle": "adc_set_data_inv",
+    "c++": "adc_set_data_inv(adc_unit_t, bool)",
+    "go": "AdcSetDataInv"
+  },
+  {
+    "mangle": "adc_set_data_width",
+    "c++": "adc_set_data_width(adc_unit_t, adc_bits_width_t)",
+    "go": "AdcSetDataWidth"
+  },
+  {
+    "mangle": "adc_vref_to_gpio",
+    "c++": "adc_vref_to_gpio(adc_unit_t, gpio_num_t)",
+    "go": "AdcVrefToGpio"
+  },
+  {
+    "mangle": "i2c_cmd_link_create",
+    "c++": "i2c_cmd_link_create()",
+    "go": "I2cCmdLinkCreate"
+  },
+  {
+    "mangle": "i2c_cmd_link_create_static",
+    "c++": "i2c_cmd_link_create_static(uint8_t *, uint32_t)",
+    "go": "I2cCmdLinkCreateStatic"
+  },
+  {
+    "mangle": "i2c_cmd_link_delete",
+    "c++": "i2c_cmd_link_delete(i2c_cmd_handle_t)",
+    "go": "I2cCmdLinkDelete"
+  },
+  {
+    "mangle": "i2c_cmd_link_delete_static",
+    "c++": "i2c_cmd_link_delete_static(i2c_cmd_handle_t)",
+    "go": "I2cCmdLinkDeleteStatic"
+  },
+  {
+    "mangle": "i2c_driver_delete",
+    "c++": "i2c_driver_delete(i2c_port_t)",
+    "go": "I2cDriverDelete"
+  },
+  {
+    "mangle": "i2c_driver_install",
+    "c++": "i2c_driver_install(i2c_port_t, i2c_mode_t, size_t, size_t, int)",
+    "go": "I2cDriverInstall"
+  },
+  {
+    "mangle": "i2c_filter_disable",
+    "c++": "i2c_filter_disable(i2c_port_t)",
+    "go": "I2cFilterDisable"
+  },
+  {
+    "mangle": "i2c_filter_enable",
+    "c++": "i2c_filter_enable(i2c_port_t, uint8_t)",
+    "go": "I2cFilterEnable"
+  },
+  {
+    "mangle": "i2c_get_data_mode",
+    "c++": "i2c_get_data_mode(i2c_port_t, i2c_trans_mode_t *, i2c_trans_mode_t *)",
+    "go": "I2cGetDataMode"
+  },
+  {
+    "mangle": "i2c_get_data_timing",
+    "c++": "i2c_get_data_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetDataTiming"
+  },
+  {
+    "mangle": "i2c_get_period",
+    "c++": "i2c_get_period(i2c_port_t, int *, int *)",
+    "go": "I2cGetPeriod"
+  },
+  {
+    "mangle": "i2c_get_start_timing",
+    "c++": "i2c_get_start_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetStartTiming"
+  },
+  {
+    "mangle": "i2c_get_stop_timing",
+    "c++": "i2c_get_stop_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetStopTiming"
+  },
+  {
+    "mangle": "i2c_get_timeout",
+    "c++": "i2c_get_timeout(i2c_port_t, int *)",
+    "go": "I2cGetTimeout"
+  },
+  {
+    "mangle": "i2c_master_cmd_begin",
+    "c++": "i2c_master_cmd_begin(i2c_port_t, i2c_cmd_handle_t, TickType_t)",
+    "go": "I2cMasterCmdBegin"
+  },
+  {
+    "mangle": "i2c_master_read",
+    "c++": "i2c_master_read(i2c_cmd_handle_t, uint8_t *, size_t, i2c_ack_type_t)",
+    "go": "I2cMasterRead"
+  },
+  {
+    "mangle": "i2c_master_read_byte",
+    "c++": "i2c_master_read_byte(i2c_cmd_handle_t, uint8_t *, i2c_ack_type_t)",
+    "go": "I2cMasterReadByte"
+  },
+  {
+    "mangle": "i2c_master_read_from_device",
+    "c++": "i2c_master_read_from_device(i2c_port_t, uint8_t, uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterReadFromDevice"
+  },
+  {
+    "mangle": "i2c_master_start",
+    "c++": "i2c_master_start(i2c_cmd_handle_t)",
+    "go": "I2cMasterStart"
+  },
+  {
+    "mangle": "i2c_master_stop",
+    "c++": "i2c_master_stop(i2c_cmd_handle_t)",
+    "go": "I2cMasterStop"
+  },
+  {
+    "mangle": "i2c_master_write",
+    "c++": "i2c_master_write(i2c_cmd_handle_t, const uint8_t *, size_t, bool)",
+    "go": "I2cMasterWrite"
+  },
+  {
+    "mangle": "i2c_master_write_byte",
+    "c++": "i2c_master_write_byte(i2c_cmd_handle_t, uint8_t, bool)",
+    "go": "I2cMasterWriteByte"
+  },
+  {
+    "mangle": "i2c_master_write_read_device",
+    "c++": "i2c_master_write_read_device(i2c_port_t, uint8_t, const uint8_t *, size_t, uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterWriteReadDevice"
+  },
+  {
+    "mangle": "i2c_master_write_to_device",
+    "c++": "i2c_master_write_to_device(i2c_port_t, uint8_t, const uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterWriteToDevice"
+  },
+  {
+    "mangle": "i2c_param_config",
+    "c++": "i2c_param_config(i2c_port_t, const i2c_config_t *)",
+    "go": "I2cParamConfig"
+  },
+  {
+    "mangle": "i2c_reset_rx_fifo",
+    "c++": "i2c_reset_rx_fifo(i2c_port_t)",
+    "go": "I2cResetRxFifo"
+  },
+  {
+    "mangle": "i2c_reset_tx_fifo",
+    "c++": "i2c_reset_tx_fifo(i2c_port_t)",
+    "go": "I2cResetTxFifo"
+  },
+  {
+    "mangle": "i2c_set_data_mode",
+    "c++": "i2c_set_data_mode(i2c_port_t, i2c_trans_mode_t, i2c_trans_mode_t)",
+    "go": "I2cSetDataMode"
+  },
+  {
+    "mangle": "i2c_set_data_timing",
+    "c++": "i2c_set_data_timing(i2c_port_t, int, int)",
+    "go": "I2cSetDataTiming"
+  },
+  {
+    "mangle": "i2c_set_period",
+    "c++": "i2c_set_period(i2c_port_t, int, int)",
+    "go": "I2cSetPeriod"
+  },
+  {
+    "mangle": "i2c_set_pin",
+    "c++": "i2c_set_pin(i2c_port_t, int, int, bool, bool, i2c_mode_t)",
+    "go": "I2cSetPin"
+  },
+  {
+    "mangle": "i2c_set_start_timing",
+    "c++": "i2c_set_start_timing(i2c_port_t, int, int)",
+    "go": "I2cSetStartTiming"
+  },
+  {
+    "mangle": "i2c_set_stop_timing",
+    "c++": "i2c_set_stop_timing(i2c_port_t, int, int)",
+    "go": "I2cSetStopTiming"
+  },
+  {
+    "mangle": "i2c_set_timeout",
+    "c++": "i2c_set_timeout(i2c_port_t, int)",
+    "go": "I2cSetTimeout"
+  },
+  {
+    "mangle": "i2c_slave_read_buffer",
+    "c++": "i2c_slave_read_buffer(i2c_port_t, uint8_t *, size_t, TickType_t)",
+    "go": "I2cSlaveReadBuffer"
+  },
+  {
+    "mangle": "i2c_slave_write_buffer",
+    "c++": "i2c_slave_write_buffer(i2c_port_t, const uint8_t *, int, TickType_t)",
+    "go": "I2cSlaveWriteBuffer"
+  },
+  {
+    "mangle": "i2s_driver_install",
+    "c++": "i2s_driver_install(i2s_port_t, const i2s_config_t *, int, void *)",
+    "go": "I2sDriverInstall"
+  },
+  {
+    "mangle": "i2s_driver_uninstall",
+    "c++": "i2s_driver_uninstall(i2s_port_t)",
+    "go": "I2sDriverUninstall"
+  },
+  {
+    "mangle": "i2s_get_clk",
+    "c++": "i2s_get_clk(i2s_port_t)",
+    "go": "I2sGetClk"
+  },
+  {
+    "mangle": "i2s_pcm_config",
+    "c++": "i2s_pcm_config(i2s_port_t, const i2s_pcm_cfg_t *)",
+    "go": "I2sPcmConfig"
+  },
+  {
+    "mangle": "i2s_read",
+    "c++": "i2s_read(i2s_port_t, void *, size_t, size_t *, TickType_t)",
+    "go": "I2sRead"
+  },
+  {
+    "mangle": "i2s_set_clk",
+    "c++": "i2s_set_clk(i2s_port_t, uint32_t, uint32_t, i2s_channel_t)",
+    "go": "I2sSetClk"
+  },
+  {
+    "mangle": "i2s_set_pdm_rx_down_sample",
+    "c++": "i2s_set_pdm_rx_down_sample(i2s_port_t, i2s_pdm_dsr_t)",
+    "go": "I2sSetPdmRxDownSample"
+  },
+  {
+    "mangle": "i2s_set_pdm_tx_up_sample",
+    "c++": "i2s_set_pdm_tx_up_sample(i2s_port_t, const i2s_pdm_tx_upsample_cfg_t *)",
+    "go": "I2sSetPdmTxUpSample"
+  },
+  {
+    "mangle": "i2s_set_pin",
+    "c++": "i2s_set_pin(i2s_port_t, const i2s_pin_config_t *)",
+    "go": "I2sSetPin"
+  },
+  {
+    "mangle": "i2s_set_sample_rates",
+    "c++": "i2s_set_sample_rates(i2s_port_t, uint32_t)",
+    "go": "I2sSetSampleRates"
+  },
+  {
+    "mangle": "i2s_start",
+    "c++": "i2s_start(i2s_port_t)",
+    "go": "I2sStart"
+  },
+  {
+    "mangle": "i2s_stop",
+    "c++": "i2s_stop(i2s_port_t)",
+    "go": "I2sStop"
+  },
+  {
+    "mangle": "i2s_write",
+    "c++": "i2s_write(i2s_port_t, const void *, size_t, size_t *, TickType_t)",
+    "go": "I2sWrite"
+  },
+  {
+    "mangle": "i2s_write_expand",
+    "c++": "i2s_write_expand(i2s_port_t, const void *, size_t, size_t, size_t, size_t *, TickType_t)",
+    "go": "I2sWriteExpand"
+  },
+  {
+    "mangle": "i2s_zero_dma_buffer",
+    "c++": "i2s_zero_dma_buffer(i2s_port_t)",
+    "go": "I2sZeroDmaBuffer"
+  },
+  {
+    "mangle": "mcpwm_capture_disable_channel",
+    "c++": "mcpwm_capture_disable_channel(mcpwm_unit_t, mcpwm_capture_channel_id_t)",
+    "go": "McpwmUnitT.McpwmCaptureDisableChannel"
+  },
+  {
+    "mangle": "mcpwm_capture_enable_channel",
+    "c++": "mcpwm_capture_enable_channel(mcpwm_unit_t, mcpwm_capture_channel_id_t, const mcpwm_capture_config_t *)",
+    "go": "McpwmUnitT.McpwmCaptureEnableChannel"
+  },
+  {
+    "mangle": "mcpwm_capture_get_resolution",
+    "c++": "mcpwm_capture_get_resolution(mcpwm_unit_t)",
+    "go": "McpwmUnitT.McpwmCaptureGetResolution"
+  },
+  {
+    "mangle": "mcpwm_capture_signal_get_edge",
+    "c++": "mcpwm_capture_signal_get_edge(mcpwm_unit_t, mcpwm_capture_signal_t)",
+    "go": "McpwmUnitT.McpwmCaptureSignalGetEdge"
+  },
+  {
+    "mangle": "mcpwm_capture_signal_get_value",
+    "c++": "mcpwm_capture_signal_get_value(mcpwm_unit_t, mcpwm_capture_signal_t)",
+    "go": "McpwmUnitT.McpwmCaptureSignalGetValue"
+  },
+  {
+    "mangle": "mcpwm_carrier_disable",
+    "c++": "mcpwm_carrier_disable(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmCarrierDisable"
+  },
+  {
+    "mangle": "mcpwm_carrier_enable",
+    "c++": "mcpwm_carrier_enable(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmCarrierEnable"
+  },
+  {
+    "mangle": "mcpwm_carrier_init",
+    "c++": "mcpwm_carrier_init(mcpwm_unit_t, mcpwm_timer_t, const mcpwm_carrier_config_t *)",
+    "go": "McpwmUnitT.McpwmCarrierInit"
+  },
+  {
+    "mangle": "mcpwm_carrier_oneshot_mode_enable",
+    "c++": "mcpwm_carrier_oneshot_mode_enable(mcpwm_unit_t, mcpwm_timer_t, uint8_t)",
+    "go": "McpwmUnitT.McpwmCarrierOneshotModeEnable"
+  },
+  {
+    "mangle": "mcpwm_carrier_output_invert",
+    "c++": "mcpwm_carrier_output_invert(mcpwm_unit_t, mcpwm_timer_t, mcpwm_carrier_out_ivt_t)",
+    "go": "McpwmUnitT.McpwmCarrierOutputInvert"
+  },
+  {
+    "mangle": "mcpwm_carrier_set_duty_cycle",
+    "c++": "mcpwm_carrier_set_duty_cycle(mcpwm_unit_t, mcpwm_timer_t, uint8_t)",
+    "go": "McpwmUnitT.McpwmCarrierSetDutyCycle"
+  },
+  {
+    "mangle": "mcpwm_carrier_set_period",
+    "c++": "mcpwm_carrier_set_period(mcpwm_unit_t, mcpwm_timer_t, uint8_t)",
+    "go": "McpwmUnitT.McpwmCarrierSetPeriod"
+  },
+  {
+    "mangle": "mcpwm_deadtime_disable",
+    "c++": "mcpwm_deadtime_disable(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmDeadtimeDisable"
+  },
+  {
+    "mangle": "mcpwm_deadtime_enable",
+    "c++": "mcpwm_deadtime_enable(mcpwm_unit_t, mcpwm_timer_t, mcpwm_deadtime_type_t, uint32_t, uint32_t)",
+    "go": "McpwmUnitT.McpwmDeadtimeEnable"
+  },
+  {
+    "mangle": "mcpwm_fault_deinit",
+    "c++": "mcpwm_fault_deinit(mcpwm_unit_t, mcpwm_fault_signal_t)",
+    "go": "McpwmUnitT.McpwmFaultDeinit"
+  },
+  {
+    "mangle": "mcpwm_fault_init",
+    "c++": "mcpwm_fault_init(mcpwm_unit_t, mcpwm_fault_input_level_t, mcpwm_fault_signal_t)",
+    "go": "McpwmUnitT.McpwmFaultInit"
+  },
+  {
+    "mangle": "mcpwm_fault_set_cyc_mode",
+    "c++": "mcpwm_fault_set_cyc_mode(mcpwm_unit_t, mcpwm_timer_t, mcpwm_fault_signal_t, mcpwm_output_action_t, mcpwm_output_action_t)",
+    "go": "McpwmUnitT.McpwmFaultSetCycMode"
+  },
+  {
+    "mangle": "mcpwm_fault_set_oneshot_mode",
+    "c++": "mcpwm_fault_set_oneshot_mode(mcpwm_unit_t, mcpwm_timer_t, mcpwm_fault_signal_t, mcpwm_output_action_t, mcpwm_output_action_t)",
+    "go": "McpwmUnitT.McpwmFaultSetOneshotMode"
+  },
+  {
+    "mangle": "mcpwm_get_duty",
+    "c++": "mcpwm_get_duty(mcpwm_unit_t, mcpwm_timer_t, mcpwm_operator_t)",
+    "go": "McpwmUnitT.McpwmGetDuty"
+  },
+  {
+    "mangle": "mcpwm_get_duty_in_us",
+    "c++": "mcpwm_get_duty_in_us(mcpwm_unit_t, mcpwm_timer_t, mcpwm_operator_t)",
+    "go": "McpwmUnitT.McpwmGetDutyInUs"
+  },
+  {
+    "mangle": "mcpwm_get_frequency",
+    "c++": "mcpwm_get_frequency(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmGetFrequency"
+  },
+  {
+    "mangle": "mcpwm_gpio_init",
+    "c++": "mcpwm_gpio_init(mcpwm_unit_t, mcpwm_io_signals_t, int)",
+    "go": "McpwmUnitT.McpwmGpioInit"
+  },
+  {
+    "mangle": "mcpwm_group_set_resolution",
+    "c++": "mcpwm_group_set_resolution(mcpwm_unit_t, unsigned long)",
+    "go": "McpwmUnitT.McpwmGroupSetResolution"
+  },
+  {
+    "mangle": "mcpwm_init",
+    "c++": "mcpwm_init(mcpwm_unit_t, mcpwm_timer_t, const mcpwm_config_t *)",
+    "go": "McpwmUnitT.McpwmInit"
+  },
+  {
+    "mangle": "mcpwm_set_duty",
+    "c++": "mcpwm_set_duty(mcpwm_unit_t, mcpwm_timer_t, mcpwm_generator_t, float)",
+    "go": "McpwmUnitT.McpwmSetDuty"
+  },
+  {
+    "mangle": "mcpwm_set_duty_in_us",
+    "c++": "mcpwm_set_duty_in_us(mcpwm_unit_t, mcpwm_timer_t, mcpwm_generator_t, uint32_t)",
+    "go": "McpwmUnitT.McpwmSetDutyInUs"
+  },
+  {
+    "mangle": "mcpwm_set_duty_type",
+    "c++": "mcpwm_set_duty_type(mcpwm_unit_t, mcpwm_timer_t, mcpwm_generator_t, mcpwm_duty_type_t)",
+    "go": "McpwmUnitT.McpwmSetDutyType"
+  },
+  {
+    "mangle": "mcpwm_set_frequency",
+    "c++": "mcpwm_set_frequency(mcpwm_unit_t, mcpwm_timer_t, uint32_t)",
+    "go": "McpwmUnitT.McpwmSetFrequency"
+  },
+  {
+    "mangle": "mcpwm_set_pin",
+    "c++": "mcpwm_set_pin(mcpwm_unit_t, const mcpwm_pin_config_t *)",
+    "go": "McpwmUnitT.McpwmSetPin"
+  },
+  {
+    "mangle": "mcpwm_set_signal_high",
+    "c++": "mcpwm_set_signal_high(mcpwm_unit_t, mcpwm_timer_t, mcpwm_generator_t)",
+    "go": "McpwmUnitT.McpwmSetSignalHigh"
+  },
+  {
+    "mangle": "mcpwm_set_signal_low",
+    "c++": "mcpwm_set_signal_low(mcpwm_unit_t, mcpwm_timer_t, mcpwm_generator_t)",
+    "go": "McpwmUnitT.McpwmSetSignalLow"
+  },
+  {
+    "mangle": "mcpwm_set_timer_sync_output",
+    "c++": "mcpwm_set_timer_sync_output(mcpwm_unit_t, mcpwm_timer_t, mcpwm_timer_sync_trigger_t)",
+    "go": "McpwmUnitT.McpwmSetTimerSyncOutput"
+  },
+  {
+    "mangle": "mcpwm_start",
+    "c++": "mcpwm_start(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmStart"
+  },
+  {
+    "mangle": "mcpwm_stop",
+    "c++": "mcpwm_stop(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmStop"
+  },
+  {
+    "mangle": "mcpwm_sync_configure",
+    "c++": "mcpwm_sync_configure(mcpwm_unit_t, mcpwm_timer_t, const mcpwm_sync_config_t *)",
+    "go": "McpwmUnitT.McpwmSyncConfigure"
+  },
+  {
+    "mangle": "mcpwm_sync_disable",
+    "c++": "mcpwm_sync_disable(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmSyncDisable"
+  },
+  {
+    "mangle": "mcpwm_sync_invert_gpio_synchro",
+    "c++": "mcpwm_sync_invert_gpio_synchro(mcpwm_unit_t, mcpwm_sync_signal_t, bool)",
+    "go": "McpwmUnitT.McpwmSyncInvertGpioSynchro"
+  },
+  {
+    "mangle": "mcpwm_timer_set_resolution",
+    "c++": "mcpwm_timer_set_resolution(mcpwm_unit_t, mcpwm_timer_t, unsigned long)",
+    "go": "McpwmUnitT.McpwmTimerSetResolution"
+  },
+  {
+    "mangle": "mcpwm_timer_trigger_soft_sync",
+    "c++": "mcpwm_timer_trigger_soft_sync(mcpwm_unit_t, mcpwm_timer_t)",
+    "go": "McpwmUnitT.McpwmTimerTriggerSoftSync"
+  },
+  {
+    "mangle": "pcnt_counter_clear",
+    "c++": "pcnt_counter_clear(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntCounterClear"
+  },
+  {
+    "mangle": "pcnt_counter_pause",
+    "c++": "pcnt_counter_pause(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntCounterPause"
+  },
+  {
+    "mangle": "pcnt_counter_resume",
+    "c++": "pcnt_counter_resume(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntCounterResume"
+  },
+  {
+    "mangle": "pcnt_event_disable",
+    "c++": "pcnt_event_disable(pcnt_unit_t, pcnt_evt_type_t)",
+    "go": "PcntUnitT.PcntEventDisable"
+  },
+  {
+    "mangle": "pcnt_event_enable",
+    "c++": "pcnt_event_enable(pcnt_unit_t, pcnt_evt_type_t)",
+    "go": "PcntUnitT.PcntEventEnable"
+  },
+  {
+    "mangle": "pcnt_filter_disable",
+    "c++": "pcnt_filter_disable(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntFilterDisable"
+  },
+  {
+    "mangle": "pcnt_filter_enable",
+    "c++": "pcnt_filter_enable(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntFilterEnable"
+  },
+  {
+    "mangle": "pcnt_get_counter_value",
+    "c++": "pcnt_get_counter_value(pcnt_unit_t, int16_t *)",
+    "go": "PcntUnitT.PcntGetCounterValue"
+  },
+  {
+    "mangle": "pcnt_get_event_status",
+    "c++": "pcnt_get_event_status(pcnt_unit_t, uint32_t *)",
+    "go": "PcntUnitT.PcntGetEventStatus"
+  },
+  {
+    "mangle": "pcnt_get_event_value",
+    "c++": "pcnt_get_event_value(pcnt_unit_t, pcnt_evt_type_t, int16_t *)",
+    "go": "PcntUnitT.PcntGetEventValue"
+  },
+  {
+    "mangle": "pcnt_get_filter_value",
+    "c++": "pcnt_get_filter_value(pcnt_unit_t, uint16_t *)",
+    "go": "PcntUnitT.PcntGetFilterValue"
+  },
+  {
+    "mangle": "pcnt_intr_disable",
+    "c++": "pcnt_intr_disable(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntIntrDisable"
+  },
+  {
+    "mangle": "pcnt_intr_enable",
+    "c++": "pcnt_intr_enable(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntIntrEnable"
+  },
+  {
+    "mangle": "pcnt_isr_handler_add",
+    "c++": "pcnt_isr_handler_add(pcnt_unit_t, void (*)(void *), void *)",
+    "go": "PcntUnitT.PcntIsrHandlerAdd"
+  },
+  {
+    "mangle": "pcnt_isr_handler_remove",
+    "c++": "pcnt_isr_handler_remove(pcnt_unit_t)",
+    "go": "PcntUnitT.PcntIsrHandlerRemove"
+  },
+  {
+    "mangle": "pcnt_isr_register",
+    "c++": "pcnt_isr_register(void (*)(void *), void *, int, pcnt_isr_handle_t *)",
+    "go": "PcntIsrRegister"
+  },
+  {
+    "mangle": "pcnt_isr_service_install",
+    "c++": "pcnt_isr_service_install(int)",
+    "go": "PcntIsrServiceInstall"
+  },
+  {
+    "mangle": "pcnt_isr_service_uninstall",
+    "c++": "pcnt_isr_service_uninstall()",
+    "go": "PcntIsrServiceUninstall"
+  },
+  {
+    "mangle": "pcnt_isr_unregister",
+    "c++": "pcnt_isr_unregister(pcnt_isr_handle_t)",
+    "go": "PcntIsrUnregister"
+  },
+  {
+    "mangle": "pcnt_set_event_value",
+    "c++": "pcnt_set_event_value(pcnt_unit_t, pcnt_evt_type_t, int16_t)",
+    "go": "PcntUnitT.PcntSetEventValue"
+  },
+  {
+    "mangle": "pcnt_set_filter_value",
+    "c++": "pcnt_set_filter_value(pcnt_unit_t, uint16_t)",
+    "go": "PcntUnitT.PcntSetFilterValue"
+  },
+  {
+    "mangle": "pcnt_set_mode",
+    "c++": "pcnt_set_mode(pcnt_unit_t, pcnt_channel_t, pcnt_count_mode_t, pcnt_count_mode_t, pcnt_ctrl_mode_t, pcnt_ctrl_mode_t)",
+    "go": "PcntUnitT.PcntSetMode"
+  },
+  {
+    "mangle": "pcnt_set_pin",
+    "c++": "pcnt_set_pin(pcnt_unit_t, pcnt_channel_t, int, int)",
+    "go": "PcntUnitT.PcntSetPin"
+  },
+  {
+    "mangle": "pcnt_unit_config",
+    "c++": "pcnt_unit_config(const pcnt_config_t *)",
+    "go": "(*PcntConfigT).PcntUnitConfig"
+  },
+  {
+    "mangle": "rmt_add_channel_to_group",
+    "c++": "rmt_add_channel_to_group(rmt_channel_t)",
+    "go": "RmtChannelT.RmtAddChannelToGroup"
+  },
+  {
+    "mangle": "rmt_config",
+    "c++": "rmt_config(const rmt_config_t *)",
+    "go": "(*RmtConfigT).RmtConfig"
+  },
+  {
+    "mangle": "rmt_driver_install",
+    "c++": "rmt_driver_install(rmt_channel_t, size_t, int)",
+    "go": "RmtChannelT.RmtDriverInstall"
+  },
+  {
+    "mangle": "rmt_driver_uninstall",
+    "c++": "rmt_driver_uninstall(rmt_channel_t)",
+    "go": "RmtChannelT.RmtDriverUninstall"
+  },
+  {
+    "mangle": "rmt_enable_tx_loop_autostop",
+    "c++": "rmt_enable_tx_loop_autostop(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtEnableTxLoopAutostop"
+  },
+  {
+    "mangle": "rmt_fill_tx_items",
+    "c++": "rmt_fill_tx_items(rmt_channel_t, const rmt_item32_t *, uint16_t, uint16_t)",
+    "go": "RmtChannelT.RmtFillTxItems"
+  },
+  {
+    "mangle": "rmt_get_channel_status",
+    "c++": "rmt_get_channel_status(rmt_channel_status_result_t *)",
+    "go": "(*RmtChannelStatusResultT).RmtGetChannelStatus"
+  },
+  {
+    "mangle": "rmt_get_clk_div",
+    "c++": "rmt_get_clk_div(rmt_channel_t, uint8_t *)",
+    "go": "RmtChannelT.RmtGetClkDiv"
+  },
+  {
+    "mangle": "rmt_get_counter_clock",
+    "c++": "rmt_get_counter_clock(rmt_channel_t, uint32_t *)",
+    "go": "RmtChannelT.RmtGetCounterClock"
+  },
+  {
+    "mangle": "rmt_get_idle_level",
+    "c++": "rmt_get_idle_level(rmt_channel_t, bool *, rmt_idle_level_t *)",
+    "go": "RmtChannelT.RmtGetIdleLevel"
+  },
+  {
+    "mangle": "rmt_get_mem_block_num",
+    "c++": "rmt_get_mem_block_num(rmt_channel_t, uint8_t *)",
+    "go": "RmtChannelT.RmtGetMemBlockNum"
+  },
+  {
+    "mangle": "rmt_get_mem_pd",
+    "c++": "rmt_get_mem_pd(rmt_channel_t, bool *)",
+    "go": "RmtChannelT.RmtGetMemPd"
+  },
+  {
+    "mangle": "rmt_get_memory_owner",
+    "c++": "rmt_get_memory_owner(rmt_channel_t, rmt_mem_owner_t *)",
+    "go": "RmtChannelT.RmtGetMemoryOwner"
+  },
+  {
+    "mangle": "rmt_get_ringbuf_handle",
+    "c++": "rmt_get_ringbuf_handle(rmt_channel_t, RingbufHandle_t *)",
+    "go": "RmtChannelT.RmtGetRingbufHandle"
+  },
+  {
+    "mangle": "rmt_get_rx_idle_thresh",
+    "c++": "rmt_get_rx_idle_thresh(rmt_channel_t, uint16_t *)",
+    "go": "RmtChannelT.RmtGetRxIdleThresh"
+  },
+  {
+    "mangle": "rmt_get_source_clk",
+    "c++": "rmt_get_source_clk(rmt_channel_t, rmt_source_clk_t *)",
+    "go": "RmtChannelT.RmtGetSourceClk"
+  },
+  {
+    "mangle": "rmt_get_status",
+    "c++": "rmt_get_status(rmt_channel_t, uint32_t *)",
+    "go": "RmtChannelT.RmtGetStatus"
+  },
+  {
+    "mangle": "rmt_get_tx_loop_mode",
+    "c++": "rmt_get_tx_loop_mode(rmt_channel_t, bool *)",
+    "go": "RmtChannelT.RmtGetTxLoopMode"
+  },
+  {
+    "mangle": "rmt_isr_deregister",
+    "c++": "rmt_isr_deregister(rmt_isr_handle_t)",
+    "go": "RmtIsrDeregister"
+  },
+  {
+    "mangle": "rmt_isr_register",
+    "c++": "rmt_isr_register(void (*)(void *), void *, int, rmt_isr_handle_t *)",
+    "go": "RmtIsrRegister"
+  },
+  {
+    "mangle": "rmt_register_tx_end_callback",
+    "c++": "rmt_register_tx_end_callback(rmt_tx_end_fn_t, void *)",
+    "go": "RmtRegisterTxEndCallback"
+  },
+  {
+    "mangle": "rmt_remove_channel_from_group",
+    "c++": "rmt_remove_channel_from_group(rmt_channel_t)",
+    "go": "RmtChannelT.RmtRemoveChannelFromGroup"
+  },
+  {
+    "mangle": "rmt_rx_memory_reset",
+    "c++": "rmt_rx_memory_reset(rmt_channel_t)",
+    "go": "RmtChannelT.RmtRxMemoryReset"
+  },
+  {
+    "mangle": "rmt_rx_start",
+    "c++": "rmt_rx_start(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtRxStart"
+  },
+  {
+    "mangle": "rmt_rx_stop",
+    "c++": "rmt_rx_stop(rmt_channel_t)",
+    "go": "RmtChannelT.RmtRxStop"
+  },
+  {
+    "mangle": "rmt_set_clk_div",
+    "c++": "rmt_set_clk_div(rmt_channel_t, uint8_t)",
+    "go": "RmtChannelT.RmtSetClkDiv"
+  },
+  {
+    "mangle": "rmt_set_err_intr_en",
+    "c++": "rmt_set_err_intr_en(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtSetErrIntrEn"
+  },
+  {
+    "mangle": "rmt_set_gpio",
+    "c++": "rmt_set_gpio(rmt_channel_t, rmt_mode_t, gpio_num_t, bool)",
+    "go": "RmtChannelT.RmtSetGpio"
+  },
+  {
+    "mangle": "rmt_set_idle_level",
+    "c++": "rmt_set_idle_level(rmt_channel_t, bool, rmt_idle_level_t)",
+    "go": "RmtChannelT.RmtSetIdleLevel"
+  },
+  {
+    "mangle": "rmt_set_mem_block_num",
+    "c++": "rmt_set_mem_block_num(rmt_channel_t, uint8_t)",
+    "go": "RmtChannelT.RmtSetMemBlockNum"
+  },
+  {
+    "mangle": "rmt_set_mem_pd",
+    "c++": "rmt_set_mem_pd(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtSetMemPd"
+  },
+  {
+    "mangle": "rmt_set_memory_owner",
+    "c++": "rmt_set_memory_owner(rmt_channel_t, rmt_mem_owner_t)",
+    "go": "RmtChannelT.RmtSetMemoryOwner"
+  },
+  {
+    "mangle": "rmt_set_rx_filter",
+    "c++": "rmt_set_rx_filter(rmt_channel_t, bool, uint8_t)",
+    "go": "RmtChannelT.RmtSetRxFilter"
+  },
+  {
+    "mangle": "rmt_set_rx_idle_thresh",
+    "c++": "rmt_set_rx_idle_thresh(rmt_channel_t, uint16_t)",
+    "go": "RmtChannelT.RmtSetRxIdleThresh"
+  },
+  {
+    "mangle": "rmt_set_rx_intr_en",
+    "c++": "rmt_set_rx_intr_en(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtSetRxIntrEn"
+  },
+  {
+    "mangle": "rmt_set_rx_thr_intr_en",
+    "c++": "rmt_set_rx_thr_intr_en(rmt_channel_t, bool, uint16_t)",
+    "go": "RmtChannelT.RmtSetRxThrIntrEn"
+  },
+  {
+    "mangle": "rmt_set_source_clk",
+    "c++": "rmt_set_source_clk(rmt_channel_t, rmt_source_clk_t)",
+    "go": "RmtChannelT.RmtSetSourceClk"
+  },
+  {
+    "mangle": "rmt_set_tx_carrier",
+    "c++": "rmt_set_tx_carrier(rmt_channel_t, bool, uint16_t, uint16_t, rmt_carrier_level_t)",
+    "go": "RmtChannelT.RmtSetTxCarrier"
+  },
+  {
+    "mangle": "rmt_set_tx_intr_en",
+    "c++": "rmt_set_tx_intr_en(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtSetTxIntrEn"
+  },
+  {
+    "mangle": "rmt_set_tx_loop_count",
+    "c++": "rmt_set_tx_loop_count(rmt_channel_t, uint32_t)",
+    "go": "RmtChannelT.RmtSetTxLoopCount"
+  },
+  {
+    "mangle": "rmt_set_tx_loop_mode",
+    "c++": "rmt_set_tx_loop_mode(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtSetTxLoopMode"
+  },
+  {
+    "mangle": "rmt_set_tx_thr_intr_en",
+    "c++": "rmt_set_tx_thr_intr_en(rmt_channel_t, bool, uint16_t)",
+    "go": "RmtChannelT.RmtSetTxThrIntrEn"
+  },
+  {
+    "mangle": "rmt_translator_get_context",
+    "c++": "rmt_translator_get_context(const size_t *, void **)",
+    "go": "RmtTranslatorGetContext"
+  },
+  {
+    "mangle": "rmt_translator_init",
+    "c++": "rmt_translator_init(rmt_channel_t, sample_to_rmt_t)",
+    "go": "RmtChannelT.RmtTranslatorInit"
+  },
+  {
+    "mangle": "rmt_translator_set_context",
+    "c++": "rmt_translator_set_context(rmt_channel_t, void *)",
+    "go": "RmtChannelT.RmtTranslatorSetContext"
+  },
+  {
+    "mangle": "rmt_tx_memory_reset",
+    "c++": "rmt_tx_memory_reset(rmt_channel_t)",
+    "go": "RmtChannelT.RmtTxMemoryReset"
+  },
+  {
+    "mangle": "rmt_tx_start",
+    "c++": "rmt_tx_start(rmt_channel_t, bool)",
+    "go": "RmtChannelT.RmtTxStart"
+  },
+  {
+    "mangle": "rmt_tx_stop",
+    "c++": "rmt_tx_stop(rmt_channel_t)",
+    "go": "RmtChannelT.RmtTxStop"
+  },
+  {
+    "mangle": "rmt_wait_tx_done",
+    "c++": "rmt_wait_tx_done(rmt_channel_t, TickType_t)",
+    "go": "RmtChannelT.RmtWaitTxDone"
+  },
+  {
+    "mangle": "rmt_write_items",
+    "c++": "rmt_write_items(rmt_channel_t, const rmt_item32_t *, int, bool)",
+    "go": "RmtChannelT.RmtWriteItems"
+  },
+  {
+    "mangle": "rmt_write_sample",
+    "c++": "rmt_write_sample(rmt_channel_t, const uint8_t *, size_t, bool)",
+    "go": "RmtChannelT.RmtWriteSample"
+  },
+  {
+    "mangle": "sigmadelta_config",
+    "c++": "sigmadelta_config(const sigmadelta_config_t *)",
+    "go": "(*SigmadeltaConfigT).SigmadeltaConfig"
+  },
+  {
+    "mangle": "sigmadelta_set_duty",
+    "c++": "sigmadelta_set_duty(sigmadelta_channel_t, int8_t)",
+    "go": "SigmadeltaChannelT.SigmadeltaSetDuty"
+  },
+  {
+    "mangle": "sigmadelta_set_pin",
+    "c++": "sigmadelta_set_pin(sigmadelta_channel_t, gpio_num_t)",
+    "go": "SigmadeltaChannelT.SigmadeltaSetPin"
+  },
+  {
+    "mangle": "sigmadelta_set_prescale",
+    "c++": "sigmadelta_set_prescale(sigmadelta_channel_t, uint8_t)",
+    "go": "SigmadeltaChannelT.SigmadeltaSetPrescale"
+  },
+  {
+    "mangle": "temp_sensor_get_config",
+    "c++": "temp_sensor_get_config(temp_sensor_config_t *)",
+    "go": "(*TempSensorConfigT).TempSensorGetConfig"
+  },
+  {
+    "mangle": "temp_sensor_read_celsius",
+    "c++": "temp_sensor_read_celsius(float *)",
+    "go": "TempSensorReadCelsius"
+  },
+  {
+    "mangle": "temp_sensor_read_raw",
+    "c++": "temp_sensor_read_raw(uint32_t *)",
+    "go": "TempSensorReadRaw"
+  },
+  {
+    "mangle": "temp_sensor_set_config",
+    "c++": "temp_sensor_set_config(temp_sensor_config_t)",
+    "go": "TempSensorConfigT.TempSensorSetConfig"
+  },
+  {
+    "mangle": "temp_sensor_start",
+    "c++": "temp_sensor_start()",
+    "go": "TempSensorStart"
+  },
+  {
+    "mangle": "temp_sensor_stop",
+    "c++": "temp_sensor_stop()",
+    "go": "TempSensorStop"
+  },
+  {
+    "mangle": "timer_deinit",
+    "c++": "timer_deinit(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerDeinit"
+  },
+  {
+    "mangle": "timer_disable_intr",
+    "c++": "timer_disable_intr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerDisableIntr"
+  },
+  {
+    "mangle": "timer_enable_intr",
+    "c++": "timer_enable_intr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerEnableIntr"
+  },
+  {
+    "mangle": "timer_get_alarm_value",
+    "c++": "timer_get_alarm_value(timer_group_t, timer_idx_t, uint64_t *)",
+    "go": "TimerGroupT.TimerGetAlarmValue"
+  },
+  {
+    "mangle": "timer_get_config",
+    "c++": "timer_get_config(timer_group_t, timer_idx_t, timer_config_t *)",
+    "go": "TimerGroupT.TimerGetConfig"
+  },
+  {
+    "mangle": "timer_get_counter_time_sec",
+    "c++": "timer_get_counter_time_sec(timer_group_t, timer_idx_t, double *)",
+    "go": "TimerGroupT.TimerGetCounterTimeSec"
+  },
+  {
+    "mangle": "timer_get_counter_value",
+    "c++": "timer_get_counter_value(timer_group_t, timer_idx_t, uint64_t *)",
+    "go": "TimerGroupT.TimerGetCounterValue"
+  },
+  {
+    "mangle": "timer_group_clr_intr_status_in_isr",
+    "c++": "timer_group_clr_intr_status_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupClrIntrStatusInIsr"
+  },
+  {
+    "mangle": "timer_group_enable_alarm_in_isr",
+    "c++": "timer_group_enable_alarm_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupEnableAlarmInIsr"
+  },
+  {
+    "mangle": "timer_group_get_auto_reload_in_isr",
+    "c++": "timer_group_get_auto_reload_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupGetAutoReloadInIsr"
+  },
+  {
+    "mangle": "timer_group_get_counter_value_in_isr",
+    "c++": "timer_group_get_counter_value_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupGetCounterValueInIsr"
+  },
+  {
+    "mangle": "timer_group_get_intr_status_in_isr",
+    "c++": "timer_group_get_intr_status_in_isr(timer_group_t)",
+    "go": "TimerGroupT.TimerGroupGetIntrStatusInIsr"
+  },
+  {
+    "mangle": "timer_group_intr_disable",
+    "c++": "timer_group_intr_disable(timer_group_t, timer_intr_t)",
+    "go": "TimerGroupT.TimerGroupIntrDisable"
+  },
+  {
+    "mangle": "timer_group_intr_enable",
+    "c++": "timer_group_intr_enable(timer_group_t, timer_intr_t)",
+    "go": "TimerGroupT.TimerGroupIntrEnable"
+  },
+  {
+    "mangle": "timer_group_set_alarm_value_in_isr",
+    "c++": "timer_group_set_alarm_value_in_isr(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerGroupSetAlarmValueInIsr"
+  },
+  {
+    "mangle": "timer_group_set_counter_enable_in_isr",
+    "c++": "timer_group_set_counter_enable_in_isr(timer_group_t, timer_idx_t, timer_start_t)",
+    "go": "TimerGroupT.TimerGroupSetCounterEnableInIsr"
+  },
+  {
+    "mangle": "timer_init",
+    "c++": "timer_init(timer_group_t, timer_idx_t, const timer_config_t *)",
+    "go": "TimerGroupT.TimerInit"
+  },
+  {
+    "mangle": "timer_isr_callback_add",
+    "c++": "timer_isr_callback_add(timer_group_t, timer_idx_t, timer_isr_t, void *, int)",
+    "go": "TimerGroupT.TimerIsrCallbackAdd"
+  },
+  {
+    "mangle": "timer_isr_callback_remove",
+    "c++": "timer_isr_callback_remove(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerIsrCallbackRemove"
+  },
+  {
+    "mangle": "timer_isr_register",
+    "c++": "timer_isr_register(timer_group_t, timer_idx_t, void (*)(void *), void *, int, timer_isr_handle_t *)",
+    "go": "TimerGroupT.TimerIsrRegister"
+  },
+  {
+    "mangle": "timer_pause",
+    "c++": "timer_pause(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerPause"
+  },
+  {
+    "mangle": "timer_set_alarm",
+    "c++": "timer_set_alarm(timer_group_t, timer_idx_t, timer_alarm_t)",
+    "go": "TimerGroupT.TimerSetAlarm"
+  },
+  {
+    "mangle": "timer_set_alarm_value",
+    "c++": "timer_set_alarm_value(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerSetAlarmValue"
+  },
+  {
+    "mangle": "timer_set_auto_reload",
+    "c++": "timer_set_auto_reload(timer_group_t, timer_idx_t, timer_autoreload_t)",
+    "go": "TimerGroupT.TimerSetAutoReload"
+  },
+  {
+    "mangle": "timer_set_counter_mode",
+    "c++": "timer_set_counter_mode(timer_group_t, timer_idx_t, timer_count_dir_t)",
+    "go": "TimerGroupT.TimerSetCounterMode"
+  },
+  {
+    "mangle": "timer_set_counter_value",
+    "c++": "timer_set_counter_value(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerSetCounterValue"
+  },
+  {
+    "mangle": "timer_set_divider",
+    "c++": "timer_set_divider(timer_group_t, timer_idx_t, uint32_t)",
+    "go": "TimerGroupT.TimerSetDivider"
+  },
+  {
+    "mangle": "timer_start",
+    "c++": "timer_start(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerStart"
+  },
+  {
+    "mangle": "touch_pad_clear_channel_mask",
+    "c++": "touch_pad_clear_channel_mask(uint16_t)",
+    "go": "TouchPadClearChannelMask"
+  },
+  {
+    "mangle": "touch_pad_clear_status",
+    "c++": "touch_pad_clear_status()",
+    "go": "TouchPadClearStatus"
+  },
+  {
+    "mangle": "touch_pad_config",
+    "c++": "touch_pad_config(touch_pad_t)",
+    "go": "TouchPadConfig"
+  },
+  {
+    "mangle": "touch_pad_deinit",
+    "c++": "touch_pad_deinit()",
+    "go": "TouchPadDeinit"
+  },
+  {
+    "mangle": "touch_pad_denoise_disable",
+    "c++": "touch_pad_denoise_disable()",
+    "go": "TouchPadDenoiseDisable"
+  },
+  {
+    "mangle": "touch_pad_denoise_enable",
+    "c++": "touch_pad_denoise_enable()",
+    "go": "TouchPadDenoiseEnable"
+  },
+  {
+    "mangle": "touch_pad_denoise_get_config",
+    "c++": "touch_pad_denoise_get_config(touch_pad_denoise_t *)",
+    "go": "TouchPadDenoiseGetConfig"
+  },
+  {
+    "mangle": "touch_pad_denoise_read_data",
+    "c++": "touch_pad_denoise_read_data(uint32_t *)",
+    "go": "TouchPadDenoiseReadData"
+  },
+  {
+    "mangle": "touch_pad_denoise_set_config",
+    "c++": "touch_pad_denoise_set_config(const touch_pad_denoise_t *)",
+    "go": "TouchPadDenoiseSetConfig"
+  },
+  {
+    "mangle": "touch_pad_filter_disable",
+    "c++": "touch_pad_filter_disable()",
+    "go": "TouchPadFilterDisable"
+  },
+  {
+    "mangle": "touch_pad_filter_enable",
+    "c++": "touch_pad_filter_enable()",
+    "go": "TouchPadFilterEnable"
+  },
+  {
+    "mangle": "touch_pad_filter_get_config",
+    "c++": "touch_pad_filter_get_config(touch_filter_config_t *)",
+    "go": "TouchPadFilterGetConfig"
+  },
+  {
+    "mangle": "touch_pad_filter_read_smooth",
+    "c++": "touch_pad_filter_read_smooth(touch_pad_t, uint32_t *)",
+    "go": "TouchPadFilterReadSmooth"
+  },
+  {
+    "mangle": "touch_pad_filter_set_config",
+    "c++": "touch_pad_filter_set_config(const touch_filter_config_t *)",
+    "go": "TouchPadFilterSetConfig"
+  },
+  {
+    "mangle": "touch_pad_fsm_start",
+    "c++": "touch_pad_fsm_start()",
+    "go": "TouchPadFsmStart"
+  },
+  {
+    "mangle": "touch_pad_fsm_stop",
+    "c++": "touch_pad_fsm_stop()",
+    "go": "TouchPadFsmStop"
+  },
+  {
+    "mangle": "touch_pad_get_channel_mask",
+    "c++": "touch_pad_get_channel_mask(uint16_t *)",
+    "go": "TouchPadGetChannelMask"
+  },
+  {
+    "mangle": "touch_pad_get_charge_discharge_times",
+    "c++": "touch_pad_get_charge_discharge_times(uint16_t *)",
+    "go": "TouchPadGetChargeDischargeTimes"
+  },
+  {
+    "mangle": "touch_pad_get_cnt_mode",
+    "c++": "touch_pad_get_cnt_mode(touch_pad_t, touch_cnt_slope_t *, touch_tie_opt_t *)",
+    "go": "TouchPadGetCntMode"
+  },
+  {
+    "mangle": "touch_pad_get_current_meas_channel",
+    "c++": "touch_pad_get_current_meas_channel()",
+    "go": "TouchPadGetCurrentMeasChannel"
+  },
+  {
+    "mangle": "touch_pad_get_fsm_mode",
+    "c++": "touch_pad_get_fsm_mode(touch_fsm_mode_t *)",
+    "go": "TouchPadGetFsmMode"
+  },
+  {
+    "mangle": "touch_pad_get_idle_channel_connect",
+    "c++": "touch_pad_get_idle_channel_connect(touch_pad_conn_type_t *)",
+    "go": "TouchPadGetIdleChannelConnect"
+  },
+  {
+    "mangle": "touch_pad_get_meas_time",
+    "c++": "touch_pad_get_meas_time(uint16_t *, uint16_t *)",
+    "go": "TouchPadGetMeasTime"
+  },
+  {
+    "mangle": "touch_pad_get_measurement_interval",
+    "c++": "touch_pad_get_measurement_interval(uint16_t *)",
+    "go": "TouchPadGetMeasurementInterval"
+  },
+  {
+    "mangle": "touch_pad_get_status",
+    "c++": "touch_pad_get_status()",
+    "go": "TouchPadGetStatus"
+  },
+  {
+    "mangle": "touch_pad_get_thresh",
+    "c++": "touch_pad_get_thresh(touch_pad_t, uint32_t *)",
+    "go": "TouchPadGetThresh"
+  },
+  {
+    "mangle": "touch_pad_get_voltage",
+    "c++": "touch_pad_get_voltage(touch_high_volt_t *, touch_low_volt_t *, touch_volt_atten_t *)",
+    "go": "TouchPadGetVoltage"
+  },
+  {
+    "mangle": "touch_pad_get_wakeup_status",
+    "c++": "touch_pad_get_wakeup_status(touch_pad_t *)",
+    "go": "TouchPadGetWakeupStatus"
+  },
+  {
+    "mangle": "touch_pad_init",
+    "c++": "touch_pad_init()",
+    "go": "TouchPadInit"
+  },
+  {
+    "mangle": "touch_pad_intr_clear",
+    "c++": "touch_pad_intr_clear(touch_pad_intr_mask_t)",
+    "go": "TouchPadIntrClear"
+  },
+  {
+    "mangle": "touch_pad_intr_disable",
+    "c++": "touch_pad_intr_disable(touch_pad_intr_mask_t)",
+    "go": "TouchPadIntrDisable"
+  },
+  {
+    "mangle": "touch_pad_intr_enable",
+    "c++": "touch_pad_intr_enable(touch_pad_intr_mask_t)",
+    "go": "TouchPadIntrEnable"
+  },
+  {
+    "mangle": "touch_pad_io_init",
+    "c++": "touch_pad_io_init(touch_pad_t)",
+    "go": "TouchPadIoInit"
+  },
+  {
+    "mangle": "touch_pad_isr_deregister",
+    "c++": "touch_pad_isr_deregister(void (*)(void *), void *)",
+    "go": "TouchPadIsrDeregister"
+  },
+  {
+    "mangle": "touch_pad_isr_register",
+    "c++": "touch_pad_isr_register(intr_handler_t, void *, touch_pad_intr_mask_t)",
+    "go": "TouchPadIsrRegister"
+  },
+  {
+    "mangle": "touch_pad_meas_is_done",
+    "c++": "touch_pad_meas_is_done()",
+    "go": "TouchPadMeasIsDone"
+  },
+  {
+    "mangle": "touch_pad_proximity_enable",
+    "c++": "touch_pad_proximity_enable(touch_pad_t, bool)",
+    "go": "TouchPadProximityEnable"
+  },
+  {
+    "mangle": "touch_pad_proximity_get_count",
+    "c++": "touch_pad_proximity_get_count(touch_pad_t, uint32_t *)",
+    "go": "TouchPadProximityGetCount"
+  },
+  {
+    "mangle": "touch_pad_proximity_get_data",
+    "c++": "touch_pad_proximity_get_data(touch_pad_t, uint32_t *)",
+    "go": "TouchPadProximityGetData"
+  },
+  {
+    "mangle": "touch_pad_proximity_set_count",
+    "c++": "touch_pad_proximity_set_count(touch_pad_t, uint32_t)",
+    "go": "TouchPadProximitySetCount"
+  },
+  {
+    "mangle": "touch_pad_read_benchmark",
+    "c++": "touch_pad_read_benchmark(touch_pad_t, uint32_t *)",
+    "go": "TouchPadReadBenchmark"
+  },
+  {
+    "mangle": "touch_pad_read_intr_status_mask",
+    "c++": "touch_pad_read_intr_status_mask()",
+    "go": "TouchPadReadIntrStatusMask"
+  },
+  {
+    "mangle": "touch_pad_read_raw_data",
+    "c++": "touch_pad_read_raw_data(touch_pad_t, uint32_t *)",
+    "go": "TouchPadReadRawData"
+  },
+  {
+    "mangle": "touch_pad_reset",
+    "c++": "touch_pad_reset()",
+    "go": "TouchPadReset"
+  },
+  {
+    "mangle": "touch_pad_reset_benchmark",
+    "c++": "touch_pad_reset_benchmark(touch_pad_t)",
+    "go": "TouchPadResetBenchmark"
+  },
+  {
+    "mangle": "touch_pad_set_channel_mask",
+    "c++": "touch_pad_set_channel_mask(uint16_t)",
+    "go": "TouchPadSetChannelMask"
+  },
+  {
+    "mangle": "touch_pad_set_charge_discharge_times",
+    "c++": "touch_pad_set_charge_discharge_times(uint16_t)",
+    "go": "TouchPadSetChargeDischargeTimes"
+  },
+  {
+    "mangle": "touch_pad_set_cnt_mode",
+    "c++": "touch_pad_set_cnt_mode(touch_pad_t, touch_cnt_slope_t, touch_tie_opt_t)",
+    "go": "TouchPadSetCntMode"
+  },
+  {
+    "mangle": "touch_pad_set_fsm_mode",
+    "c++": "touch_pad_set_fsm_mode(touch_fsm_mode_t)",
+    "go": "TouchPadSetFsmMode"
+  },
+  {
+    "mangle": "touch_pad_set_idle_channel_connect",
+    "c++": "touch_pad_set_idle_channel_connect(touch_pad_conn_type_t)",
+    "go": "TouchPadSetIdleChannelConnect"
+  },
+  {
+    "mangle": "touch_pad_set_meas_time",
+    "c++": "touch_pad_set_meas_time(uint16_t, uint16_t)",
+    "go": "TouchPadSetMeasTime"
+  },
+  {
+    "mangle": "touch_pad_set_measurement_interval",
+    "c++": "touch_pad_set_measurement_interval(uint16_t)",
+    "go": "TouchPadSetMeasurementInterval"
+  },
+  {
+    "mangle": "touch_pad_set_thresh",
+    "c++": "touch_pad_set_thresh(touch_pad_t, uint32_t)",
+    "go": "TouchPadSetThresh"
+  },
+  {
+    "mangle": "touch_pad_set_voltage",
+    "c++": "touch_pad_set_voltage(touch_high_volt_t, touch_low_volt_t, touch_volt_atten_t)",
+    "go": "TouchPadSetVoltage"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_enable",
+    "c++": "touch_pad_sleep_channel_enable(touch_pad_t, bool)",
+    "go": "TouchPadSleepChannelEnable"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_enable_proximity",
+    "c++": "touch_pad_sleep_channel_enable_proximity(touch_pad_t, bool)",
+    "go": "TouchPadSleepChannelEnableProximity"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_get_info",
+    "c++": "touch_pad_sleep_channel_get_info(touch_pad_sleep_channel_t *)",
+    "go": "TouchPadSleepChannelGetInfo"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_read_benchmark",
+    "c++": "touch_pad_sleep_channel_read_benchmark(touch_pad_t, uint32_t *)",
+    "go": "TouchPadSleepChannelReadBenchmark"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_read_data",
+    "c++": "touch_pad_sleep_channel_read_data(touch_pad_t, uint32_t *)",
+    "go": "TouchPadSleepChannelReadData"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_read_proximity_cnt",
+    "c++": "touch_pad_sleep_channel_read_proximity_cnt(touch_pad_t, uint32_t *)",
+    "go": "TouchPadSleepChannelReadProximityCnt"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_read_smooth",
+    "c++": "touch_pad_sleep_channel_read_smooth(touch_pad_t, uint32_t *)",
+    "go": "TouchPadSleepChannelReadSmooth"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_reset_benchmark",
+    "c++": "touch_pad_sleep_channel_reset_benchmark()",
+    "go": "TouchPadSleepChannelResetBenchmark"
+  },
+  {
+    "mangle": "touch_pad_sleep_channel_set_work_time",
+    "c++": "touch_pad_sleep_channel_set_work_time(uint16_t, uint16_t)",
+    "go": "TouchPadSleepChannelSetWorkTime"
+  },
+  {
+    "mangle": "touch_pad_sleep_get_threshold",
+    "c++": "touch_pad_sleep_get_threshold(touch_pad_t, uint32_t *)",
+    "go": "TouchPadSleepGetThreshold"
+  },
+  {
+    "mangle": "touch_pad_sleep_set_threshold",
+    "c++": "touch_pad_sleep_set_threshold(touch_pad_t, uint32_t)",
+    "go": "TouchPadSleepSetThreshold"
+  },
+  {
+    "mangle": "touch_pad_sw_start",
+    "c++": "touch_pad_sw_start()",
+    "go": "TouchPadSwStart"
+  },
+  {
+    "mangle": "touch_pad_timeout_resume",
+    "c++": "touch_pad_timeout_resume()",
+    "go": "TouchPadTimeoutResume"
+  },
+  {
+    "mangle": "touch_pad_timeout_set",
+    "c++": "touch_pad_timeout_set(bool, uint32_t)",
+    "go": "TouchPadTimeoutSet"
+  },
+  {
+    "mangle": "touch_pad_waterproof_disable",
+    "c++": "touch_pad_waterproof_disable()",
+    "go": "TouchPadWaterproofDisable"
+  },
+  {
+    "mangle": "touch_pad_waterproof_enable",
+    "c++": "touch_pad_waterproof_enable()",
+    "go": "TouchPadWaterproofEnable"
+  },
+  {
+    "mangle": "touch_pad_waterproof_get_config",
+    "c++": "touch_pad_waterproof_get_config(touch_pad_waterproof_t *)",
+    "go": "TouchPadWaterproofGetConfig"
+  },
+  {
+    "mangle": "touch_pad_waterproof_set_config",
+    "c++": "touch_pad_waterproof_set_config(const touch_pad_waterproof_t *)",
+    "go": "TouchPadWaterproofSetConfig"
+  },
+  {
+    "mangle": "twai_clear_receive_queue",
+    "c++": "twai_clear_receive_queue()",
+    "go": "TwaiClearReceiveQueue"
+  },
+  {
+    "mangle": "twai_clear_receive_queue_v2",
+    "c++": "twai_clear_receive_queue_v2(twai_handle_t)",
+    "go": "TwaiClearReceiveQueueV2"
+  },
+  {
+    "mangle": "twai_clear_transmit_queue",
+    "c++": "twai_clear_transmit_queue()",
+    "go": "TwaiClearTransmitQueue"
+  },
+  {
+    "mangle": "twai_clear_transmit_queue_v2",
+    "c++": "twai_clear_transmit_queue_v2(twai_handle_t)",
+    "go": "TwaiClearTransmitQueueV2"
+  },
+  {
+    "mangle": "twai_driver_install",
+    "c++": "twai_driver_install(const twai_general_config_t *, const twai_timing_config_t *, const twai_filter_config_t *)",
+    "go": "(*TwaiGeneralConfigT).TwaiDriverInstall"
+  },
+  {
+    "mangle": "twai_driver_install_v2",
+    "c++": "twai_driver_install_v2(const twai_general_config_t *, const twai_timing_config_t *, const twai_filter_config_t *, twai_handle_t *)",
+    "go": "(*TwaiGeneralConfigT).TwaiDriverInstallV2"
+  },
+  {
+    "mangle": "twai_driver_uninstall",
+    "c++": "twai_driver_uninstall()",
+    "go": "TwaiDriverUninstall"
+  },
+  {
+    "mangle": "twai_driver_uninstall_v2",
+    "c++": "twai_driver_uninstall_v2(twai_handle_t)",
+    "go": "TwaiDriverUninstallV2"
+  },
+  {
+    "mangle": "twai_get_status_info",
+    "c++": "twai_get_status_info(twai_status_info_t *)",
+    "go": "(*TwaiStatusInfoT).TwaiGetStatusInfo"
+  },
+  {
+    "mangle": "twai_get_status_info_v2",
+    "c++": "twai_get_status_info_v2(twai_handle_t, twai_status_info_t *)",
+    "go": "TwaiGetStatusInfoV2"
+  },
+  {
+    "mangle": "twai_initiate_recovery",
+    "c++": "twai_initiate_recovery()",
+    "go": "TwaiInitiateRecovery"
+  },
+  {
+    "mangle": "twai_initiate_recovery_v2",
+    "c++": "twai_initiate_recovery_v2(twai_handle_t)",
+    "go": "TwaiInitiateRecoveryV2"
+  },
+  {
+    "mangle": "twai_read_alerts",
+    "c++": "twai_read_alerts(uint32_t *, TickType_t)",
+    "go": "TwaiReadAlerts"
+  },
+  {
+    "mangle": "twai_read_alerts_v2",
+    "c++": "twai_read_alerts_v2(twai_handle_t, uint32_t *, TickType_t)",
+    "go": "TwaiReadAlertsV2"
+  },
+  {
+    "mangle": "twai_receive",
+    "c++": "twai_receive(twai_message_t *, TickType_t)",
+    "go": "TwaiReceive"
+  },
+  {
+    "mangle": "twai_receive_v2",
+    "c++": "twai_receive_v2(twai_handle_t, twai_message_t *, TickType_t)",
+    "go": "TwaiReceiveV2"
+  },
+  {
+    "mangle": "twai_reconfigure_alerts",
+    "c++": "twai_reconfigure_alerts(uint32_t, uint32_t *)",
+    "go": "TwaiReconfigureAlerts"
+  },
+  {
+    "mangle": "twai_reconfigure_alerts_v2",
+    "c++": "twai_reconfigure_alerts_v2(twai_handle_t, uint32_t, uint32_t *)",
+    "go": "TwaiReconfigureAlertsV2"
+  },
+  {
+    "mangle": "twai_start",
+    "c++": "twai_start()",
+    "go": "TwaiStart"
+  },
+  {
+    "mangle": "twai_start_v2",
+    "c++": "twai_start_v2(twai_handle_t)",
+    "go": "TwaiStartV2"
+  },
+  {
+    "mangle": "twai_stop",
+    "c++": "twai_stop()",
+    "go": "TwaiStop"
+  },
+  {
+    "mangle": "twai_stop_v2",
+    "c++": "twai_stop_v2(twai_handle_t)",
+    "go": "TwaiStopV2"
+  },
+  {
+    "mangle": "twai_transmit",
+    "c++": "twai_transmit(const twai_message_t *, TickType_t)",
+    "go": "TwaiTransmit"
+  },
+  {
+    "mangle": "twai_transmit_v2",
+    "c++": "twai_transmit_v2(twai_handle_t, const twai_message_t *, TickType_t)",
+    "go": "TwaiTransmitV2"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "mangle": "sd_pwr_ctrl_set_io_voltage",
+    "c++": "sd_pwr_ctrl_set_io_voltage(sd_pwr_ctrl_handle_t, int)",
+    "go": "SdPwrCtrlSetIoVoltage"
+  },
+  {
+    "mangle": "sdmmc_allocate_aligned_buf",
+    "c++": "sdmmc_allocate_aligned_buf(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcAllocateAlignedBuf"
+  },
+  {
+    "mangle": "sdmmc_can_discard",
+    "c++": "sdmmc_can_discard(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcCanDiscard"
+  },
+  {
+    "mangle": "sdmmc_can_trim",
+    "c++": "sdmmc_can_trim(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcCanTrim"
+  },
+  {
+    "mangle": "sdmmc_card_init",
+    "c++": "sdmmc_card_init(const sdmmc_host_t *, sdmmc_card_t *)",
+    "go": "(*SdmmcHostT).SdmmcCardInit"
+  },
+  {
+    "mangle": "sdmmc_card_print_info",
+    "c++": "sdmmc_card_print_info(FILE *, const sdmmc_card_t *)",
+    "go": "SdmmcCardPrintInfo"
+  },
+  {
+    "mangle": "sdmmc_check_scr",
+    "c++": "sdmmc_check_scr(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcCheckScr"
+  },
+  {
+    "mangle": "sdmmc_decode_cid",
+    "c++": "sdmmc_decode_cid(uint32_t *, sdmmc_cid_t *)",
+    "go": "SdmmcResponseT.SdmmcDecodeCid"
+  },
+  {
+    "mangle": "sdmmc_decode_csd",
+    "c++": "sdmmc_decode_csd(uint32_t *, sdmmc_csd_t *)",
+    "go": "SdmmcResponseT.SdmmcDecodeCsd"
+  },
+  {
+    "mangle": "sdmmc_decode_scr",
+    "c++": "sdmmc_decode_scr(uint32_t *, sdmmc_scr_t *)",
+    "go": "SdmmcDecodeScr"
+  },
+  {
+    "mangle": "sdmmc_decode_ssr",
+    "c++": "sdmmc_decode_ssr(uint32_t *, sdmmc_ssr_t *)",
+    "go": "SdmmcDecodeSsr"
+  },
+  {
+    "mangle": "sdmmc_do_timing_tuning",
+    "c++": "sdmmc_do_timing_tuning(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcDoTimingTuning"
+  },
+  {
+    "mangle": "sdmmc_enable_hs_mode_and_check",
+    "c++": "sdmmc_enable_hs_mode_and_check(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcEnableHsModeAndCheck"
+  },
+  {
+    "mangle": "sdmmc_enter_higher_speed_mode",
+    "c++": "sdmmc_enter_higher_speed_mode(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcEnterHigherSpeedMode"
+  },
+  {
+    "mangle": "sdmmc_erase_sectors",
+    "c++": "sdmmc_erase_sectors(sdmmc_card_t *, size_t, size_t, sdmmc_erase_arg_t)",
+    "go": "(*SdmmcCardT).SdmmcEraseSectors"
+  },
+  {
+    "mangle": "sdmmc_fix_host_flags",
+    "c++": "sdmmc_fix_host_flags(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcFixHostFlags"
+  },
+  {
+    "mangle": "sdmmc_flip_byte_order",
+    "c++": "sdmmc_flip_byte_order(uint32_t *, size_t)",
+    "go": "SdmmcFlipByteOrder"
+  },
+  {
+    "mangle": "sdmmc_full_erase",
+    "c++": "sdmmc_full_erase(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcFullErase"
+  },
+  {
+    "mangle": "sdmmc_get_erase_timeout_ms",
+    "c++": "sdmmc_get_erase_timeout_ms(const sdmmc_card_t *, int, size_t)",
+    "go": "(*SdmmcCardT).SdmmcGetEraseTimeoutMs"
+  },
+  {
+    "mangle": "sdmmc_get_status",
+    "c++": "sdmmc_get_status(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcGetStatus"
+  },
+  {
+    "mangle": "sdmmc_init_card_hs_mode",
+    "c++": "sdmmc_init_card_hs_mode(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitCardHsMode"
+  },
+  {
+    "mangle": "sdmmc_init_cid",
+    "c++": "sdmmc_init_cid(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitCid"
+  },
+  {
+    "mangle": "sdmmc_init_csd",
+    "c++": "sdmmc_init_csd(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitCsd"
+  },
+  {
+    "mangle": "sdmmc_init_host_bus_width",
+    "c++": "sdmmc_init_host_bus_width(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitHostBusWidth"
+  },
+  {
+    "mangle": "sdmmc_init_host_frequency",
+    "c++": "sdmmc_init_host_frequency(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitHostFrequency"
+  },
+  {
+    "mangle": "sdmmc_init_io",
+    "c++": "sdmmc_init_io(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitIo"
+  },
+  {
+    "mangle": "sdmmc_init_io_bus_width",
+    "c++": "sdmmc_init_io_bus_width(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitIoBusWidth"
+  },
+  {
+    "mangle": "sdmmc_init_mmc_bus_width",
+    "c++": "sdmmc_init_mmc_bus_width(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitMmcBusWidth"
+  },
+  {
+    "mangle": "sdmmc_init_mmc_check_ext_csd",
+    "c++": "sdmmc_init_mmc_check_ext_csd(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitMmcCheckExtCsd"
+  },
+  {
+    "mangle": "sdmmc_init_mmc_decode_cid",
+    "c++": "sdmmc_init_mmc_decode_cid(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitMmcDecodeCid"
+  },
+  {
+    "mangle": "sdmmc_init_mmc_read_ext_csd",
+    "c++": "sdmmc_init_mmc_read_ext_csd(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitMmcReadExtCsd"
+  },
+  {
+    "mangle": "sdmmc_init_ocr",
+    "c++": "sdmmc_init_ocr(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitOcr"
+  },
+  {
+    "mangle": "sdmmc_init_rca",
+    "c++": "sdmmc_init_rca(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitRca"
+  },
+  {
+    "mangle": "sdmmc_init_sd_blocklen",
+    "c++": "sdmmc_init_sd_blocklen(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdBlocklen"
+  },
+  {
+    "mangle": "sdmmc_init_sd_bus_width",
+    "c++": "sdmmc_init_sd_bus_width(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdBusWidth"
+  },
+  {
+    "mangle": "sdmmc_init_sd_current_limit",
+    "c++": "sdmmc_init_sd_current_limit(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdCurrentLimit"
+  },
+  {
+    "mangle": "sdmmc_init_sd_driver_strength",
+    "c++": "sdmmc_init_sd_driver_strength(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdDriverStrength"
+  },
+  {
+    "mangle": "sdmmc_init_sd_if_cond",
+    "c++": "sdmmc_init_sd_if_cond(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdIfCond"
+  },
+  {
+    "mangle": "sdmmc_init_sd_scr",
+    "c++": "sdmmc_init_sd_scr(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdScr"
+  },
+  {
+    "mangle": "sdmmc_init_sd_ssr",
+    "c++": "sdmmc_init_sd_ssr(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdSsr"
+  },
+  {
+    "mangle": "sdmmc_init_sd_timing_tuning",
+    "c++": "sdmmc_init_sd_timing_tuning(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdTimingTuning"
+  },
+  {
+    "mangle": "sdmmc_init_sd_uhs1",
+    "c++": "sdmmc_init_sd_uhs1(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdUhs1"
+  },
+  {
+    "mangle": "sdmmc_init_sd_wait_data_ready",
+    "c++": "sdmmc_init_sd_wait_data_ready(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSdWaitDataReady"
+  },
+  {
+    "mangle": "sdmmc_init_select_card",
+    "c++": "sdmmc_init_select_card(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSelectCard"
+  },
+  {
+    "mangle": "sdmmc_init_spi_crc",
+    "c++": "sdmmc_init_spi_crc(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcInitSpiCrc"
+  },
+  {
+    "mangle": "sdmmc_io_enable_hs_mode",
+    "c++": "sdmmc_io_enable_hs_mode(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoEnableHsMode"
+  },
+  {
+    "mangle": "sdmmc_io_enable_int",
+    "c++": "sdmmc_io_enable_int(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoEnableInt"
+  },
+  {
+    "mangle": "sdmmc_io_get_cis_data",
+    "c++": "sdmmc_io_get_cis_data(sdmmc_card_t *, uint8_t *, size_t, size_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoGetCisData"
+  },
+  {
+    "mangle": "sdmmc_io_init_check_card_cap",
+    "c++": "sdmmc_io_init_check_card_cap(sdmmc_card_t *, uint8_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoInitCheckCardCap"
+  },
+  {
+    "mangle": "sdmmc_io_init_read_card_cap",
+    "c++": "sdmmc_io_init_read_card_cap(sdmmc_card_t *, uint8_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoInitReadCardCap"
+  },
+  {
+    "mangle": "sdmmc_io_print_cis_info",
+    "c++": "sdmmc_io_print_cis_info(uint8_t *, size_t, FILE *)",
+    "go": "SdmmcIoPrintCisInfo"
+  },
+  {
+    "mangle": "sdmmc_io_read_blocks",
+    "c++": "sdmmc_io_read_blocks(sdmmc_card_t *, uint32_t, uint32_t, void *, size_t)",
+    "go": "(*SdmmcCardT).SdmmcIoReadBlocks"
+  },
+  {
+    "mangle": "sdmmc_io_read_byte",
+    "c++": "sdmmc_io_read_byte(sdmmc_card_t *, uint32_t, uint32_t, uint8_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoReadByte"
+  },
+  {
+    "mangle": "sdmmc_io_read_bytes",
+    "c++": "sdmmc_io_read_bytes(sdmmc_card_t *, uint32_t, uint32_t, void *, size_t)",
+    "go": "(*SdmmcCardT).SdmmcIoReadBytes"
+  },
+  {
+    "mangle": "sdmmc_io_reset",
+    "c++": "sdmmc_io_reset(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoReset"
+  },
+  {
+    "mangle": "sdmmc_io_rw_direct",
+    "c++": "sdmmc_io_rw_direct(sdmmc_card_t *, int, uint32_t, uint32_t, uint8_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoRwDirect"
+  },
+  {
+    "mangle": "sdmmc_io_rw_extended",
+    "c++": "sdmmc_io_rw_extended(sdmmc_card_t *, int, uint32_t, int, void *, size_t)",
+    "go": "(*SdmmcCardT).SdmmcIoRwExtended"
+  },
+  {
+    "mangle": "sdmmc_io_send_op_cond",
+    "c++": "sdmmc_io_send_op_cond(sdmmc_card_t *, uint32_t, uint32_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoSendOpCond"
+  },
+  {
+    "mangle": "sdmmc_io_wait_int",
+    "c++": "sdmmc_io_wait_int(sdmmc_card_t *, TickType_t)",
+    "go": "(*SdmmcCardT).SdmmcIoWaitInt"
+  },
+  {
+    "mangle": "sdmmc_io_write_blocks",
+    "c++": "sdmmc_io_write_blocks(sdmmc_card_t *, uint32_t, uint32_t, const void *, size_t)",
+    "go": "(*SdmmcCardT).SdmmcIoWriteBlocks"
+  },
+  {
+    "mangle": "sdmmc_io_write_byte",
+    "c++": "sdmmc_io_write_byte(sdmmc_card_t *, uint32_t, uint32_t, uint8_t, uint8_t *)",
+    "go": "(*SdmmcCardT).SdmmcIoWriteByte"
+  },
+  {
+    "mangle": "sdmmc_io_write_bytes",
+    "c++": "sdmmc_io_write_bytes(sdmmc_card_t *, uint32_t, uint32_t, const void *, size_t)",
+    "go": "(*SdmmcCardT).SdmmcIoWriteBytes"
+  },
+  {
+    "mangle": "sdmmc_mmc_can_sanitize",
+    "c++": "sdmmc_mmc_can_sanitize(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcMmcCanSanitize"
+  },
+  {
+    "mangle": "sdmmc_mmc_decode_cid",
+    "c++": "sdmmc_mmc_decode_cid(int, uint32_t *, sdmmc_cid_t *)",
+    "go": "SdmmcMmcDecodeCid"
+  },
+  {
+    "mangle": "sdmmc_mmc_decode_csd",
+    "c++": "sdmmc_mmc_decode_csd(uint32_t *, sdmmc_csd_t *)",
+    "go": "SdmmcResponseT.SdmmcMmcDecodeCsd"
+  },
+  {
+    "mangle": "sdmmc_mmc_enable_hs_mode",
+    "c++": "sdmmc_mmc_enable_hs_mode(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcMmcEnableHsMode"
+  },
+  {
+    "mangle": "sdmmc_mmc_get_erase_timeout_ms",
+    "c++": "sdmmc_mmc_get_erase_timeout_ms(const sdmmc_card_t *, int, size_t)",
+    "go": "(*SdmmcCardT).SdmmcMmcGetEraseTimeoutMs"
+  },
+  {
+    "mangle": "sdmmc_mmc_sanitize",
+    "c++": "sdmmc_mmc_sanitize(sdmmc_card_t *, uint32_t)",
+    "go": "(*SdmmcCardT).SdmmcMmcSanitize"
+  },
+  {
+    "mangle": "sdmmc_mmc_send_ext_csd_data",
+    "c++": "sdmmc_mmc_send_ext_csd_data(sdmmc_card_t *, void *, size_t, size_t)",
+    "go": "(*SdmmcCardT).SdmmcMmcSendExtCsdData"
+  },
+  {
+    "mangle": "sdmmc_mmc_switch",
+    "c++": "sdmmc_mmc_switch(sdmmc_card_t *, uint8_t, uint8_t, uint8_t)",
+    "go": "(*SdmmcCardT).SdmmcMmcSwitch"
+  },
+  {
+    "mangle": "sdmmc_read_sectors",
+    "c++": "sdmmc_read_sectors(sdmmc_card_t *, void *, size_t, size_t)",
+    "go": "(*SdmmcCardT).SdmmcReadSectors"
+  },
+  {
+    "mangle": "sdmmc_read_sectors_dma",
+    "c++": "sdmmc_read_sectors_dma(sdmmc_card_t *, void *, size_t, size_t, size_t)",
+    "go": "(*SdmmcCardT).SdmmcReadSectorsDma"
+  },
+  {
+    "mangle": "sdmmc_sd_get_erase_timeout_ms",
+    "c++": "sdmmc_sd_get_erase_timeout_ms(const sdmmc_card_t *, int, size_t)",
+    "go": "(*SdmmcCardT).SdmmcSdGetEraseTimeoutMs"
+  },
+  {
+    "mangle": "sdmmc_select_current_limit",
+    "c++": "sdmmc_select_current_limit(sdmmc_card_t *, sdmmc_current_limit_t)",
+    "go": "(*SdmmcCardT).SdmmcSelectCurrentLimit"
+  },
+  {
+    "mangle": "sdmmc_select_driver_strength",
+    "c++": "sdmmc_select_driver_strength(sdmmc_card_t *, sdmmc_driver_strength_t)",
+    "go": "(*SdmmcCardT).SdmmcSelectDriverStrength"
+  },
+  {
+    "mangle": "sdmmc_send_app_cmd",
+    "c++": "sdmmc_send_app_cmd(sdmmc_card_t *, sdmmc_command_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendAppCmd"
+  },
+  {
+    "mangle": "sdmmc_send_cmd",
+    "c++": "sdmmc_send_cmd(sdmmc_card_t *, sdmmc_command_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmd"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_all_send_cid",
+    "c++": "sdmmc_send_cmd_all_send_cid(sdmmc_card_t *, sdmmc_response_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdAllSendCid"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_crc_on_off",
+    "c++": "sdmmc_send_cmd_crc_on_off(sdmmc_card_t *, bool)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdCrcOnOff"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_go_idle_state",
+    "c++": "sdmmc_send_cmd_go_idle_state(sdmmc_card_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdGoIdleState"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_num_of_written_blocks",
+    "c++": "sdmmc_send_cmd_num_of_written_blocks(sdmmc_card_t *, size_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdNumOfWrittenBlocks"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_read_ocr",
+    "c++": "sdmmc_send_cmd_read_ocr(sdmmc_card_t *, uint32_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdReadOcr"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_select_card",
+    "c++": "sdmmc_send_cmd_select_card(sdmmc_card_t *, uint32_t)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSelectCard"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_cid",
+    "c++": "sdmmc_send_cmd_send_cid(sdmmc_card_t *, sdmmc_cid_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendCid"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_csd",
+    "c++": "sdmmc_send_cmd_send_csd(sdmmc_card_t *, sdmmc_csd_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendCsd"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_if_cond",
+    "c++": "sdmmc_send_cmd_send_if_cond(sdmmc_card_t *, uint32_t)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendIfCond"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_op_cond",
+    "c++": "sdmmc_send_cmd_send_op_cond(sdmmc_card_t *, uint32_t, uint32_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendOpCond"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_scr",
+    "c++": "sdmmc_send_cmd_send_scr(sdmmc_card_t *, sdmmc_scr_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendScr"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_send_status",
+    "c++": "sdmmc_send_cmd_send_status(sdmmc_card_t *, uint32_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSendStatus"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_set_blocklen",
+    "c++": "sdmmc_send_cmd_set_blocklen(sdmmc_card_t *, sdmmc_csd_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSetBlocklen"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_set_bus_width",
+    "c++": "sdmmc_send_cmd_set_bus_width(sdmmc_card_t *, int)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSetBusWidth"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_set_relative_addr",
+    "c++": "sdmmc_send_cmd_set_relative_addr(sdmmc_card_t *, uint16_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSetRelativeAddr"
+  },
+  {
+    "mangle": "sdmmc_send_cmd_switch_func",
+    "c++": "sdmmc_send_cmd_switch_func(sdmmc_card_t *, uint32_t, uint32_t, uint32_t, sdmmc_switch_func_rsp_t *)",
+    "go": "(*SdmmcCardT).SdmmcSendCmdSwitchFunc"
+  },
+  {
+    "mangle": "sdmmc_wait_for_idle",
+    "c++": "sdmmc_wait_for_idle(sdmmc_card_t *, uint32_t)",
+    "go": "(*SdmmcCardT).SdmmcWaitForIdle"
+  },
+  {
+    "mangle": "sdmmc_write_sectors",
+    "c++": "sdmmc_write_sectors(sdmmc_card_t *, const void *, size_t, size_t)",
+    "go": "(*SdmmcCardT).SdmmcWriteSectors"
+  },
+  {
+    "mangle": "sdmmc_write_sectors_dma",
+    "c++": "sdmmc_write_sectors_dma(sdmmc_card_t *, const void *, size_t, size_t, size_t)",
+    "go": "(*SdmmcCardT).SdmmcWriteSectorsDma"
+  }
+]

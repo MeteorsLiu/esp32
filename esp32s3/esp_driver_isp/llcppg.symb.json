@@ -1,0 +1,362 @@
+[
+  {
+    "mangle": "esp_isp_ae_controller_disable",
+    "c++": "esp_isp_ae_controller_disable(isp_ae_ctlr_t)",
+    "go": "EspIspAeControllerDisable"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_enable",
+    "c++": "esp_isp_ae_controller_enable(isp_ae_ctlr_t)",
+    "go": "EspIspAeControllerEnable"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_get_oneshot_statistics",
+    "c++": "esp_isp_ae_controller_get_oneshot_statistics(isp_ae_ctlr_t, int, isp_ae_result_t *)",
+    "go": "EspIspAeControllerGetOneshotStatistics"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_set_env_detector",
+    "c++": "esp_isp_ae_controller_set_env_detector(isp_ae_ctlr_t, const esp_isp_ae_env_config_t *)",
+    "go": "EspIspAeControllerSetEnvDetector"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_set_env_detector_threshold",
+    "c++": "esp_isp_ae_controller_set_env_detector_threshold(isp_ae_ctlr_t, const esp_isp_ae_env_thresh_t *)",
+    "go": "EspIspAeControllerSetEnvDetectorThreshold"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_start_continuous_statistics",
+    "c++": "esp_isp_ae_controller_start_continuous_statistics(isp_ae_ctlr_t)",
+    "go": "EspIspAeControllerStartContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_ae_controller_stop_continuous_statistics",
+    "c++": "esp_isp_ae_controller_stop_continuous_statistics(isp_ae_ctlr_t)",
+    "go": "EspIspAeControllerStopContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_ae_env_detector_register_event_callbacks",
+    "c++": "esp_isp_ae_env_detector_register_event_callbacks(isp_ae_ctlr_t, const esp_isp_ae_env_detector_evt_cbs_t *, void *)",
+    "go": "EspIspAeEnvDetectorRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_isp_ae_isr",
+    "c++": "esp_isp_ae_isr(isp_proc_handle_t, uint32_t)",
+    "go": "EspIspAeIsr"
+  },
+  {
+    "mangle": "esp_isp_af_controller_disable",
+    "c++": "esp_isp_af_controller_disable(isp_af_ctlr_t)",
+    "go": "EspIspAfControllerDisable"
+  },
+  {
+    "mangle": "esp_isp_af_controller_enable",
+    "c++": "esp_isp_af_controller_enable(isp_af_ctlr_t)",
+    "go": "EspIspAfControllerEnable"
+  },
+  {
+    "mangle": "esp_isp_af_controller_get_oneshot_statistics",
+    "c++": "esp_isp_af_controller_get_oneshot_statistics(isp_af_ctlr_t, int, isp_af_result_t *)",
+    "go": "EspIspAfControllerGetOneshotStatistics"
+  },
+  {
+    "mangle": "esp_isp_af_controller_set_env_detector",
+    "c++": "esp_isp_af_controller_set_env_detector(isp_af_ctlr_t, const esp_isp_af_env_config_t *)",
+    "go": "EspIspAfControllerSetEnvDetector"
+  },
+  {
+    "mangle": "esp_isp_af_controller_set_env_detector_threshold",
+    "c++": "esp_isp_af_controller_set_env_detector_threshold(isp_af_ctlr_t, int, int)",
+    "go": "EspIspAfControllerSetEnvDetectorThreshold"
+  },
+  {
+    "mangle": "esp_isp_af_controller_start_continuous_statistics",
+    "c++": "esp_isp_af_controller_start_continuous_statistics(isp_af_ctlr_t)",
+    "go": "EspIspAfControllerStartContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_af_controller_stop_continuous_statistics",
+    "c++": "esp_isp_af_controller_stop_continuous_statistics(isp_af_ctlr_t)",
+    "go": "EspIspAfControllerStopContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_af_env_detector_register_event_callbacks",
+    "c++": "esp_isp_af_env_detector_register_event_callbacks(isp_af_ctlr_t, const esp_isp_af_env_detector_evt_cbs_t *, void *)",
+    "go": "EspIspAfEnvDetectorRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_isp_af_isr",
+    "c++": "esp_isp_af_isr(isp_proc_handle_t, uint32_t)",
+    "go": "EspIspAfIsr"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_disable",
+    "c++": "esp_isp_awb_controller_disable(isp_awb_ctlr_t)",
+    "go": "EspIspAwbControllerDisable"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_enable",
+    "c++": "esp_isp_awb_controller_enable(isp_awb_ctlr_t)",
+    "go": "EspIspAwbControllerEnable"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_get_oneshot_statistics",
+    "c++": "esp_isp_awb_controller_get_oneshot_statistics(isp_awb_ctlr_t, int, isp_awb_stat_result_t *)",
+    "go": "EspIspAwbControllerGetOneshotStatistics"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_reconfig",
+    "c++": "esp_isp_awb_controller_reconfig(isp_awb_ctlr_t, const esp_isp_awb_config_t *)",
+    "go": "EspIspAwbControllerReconfig"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_start_continuous_statistics",
+    "c++": "esp_isp_awb_controller_start_continuous_statistics(isp_awb_ctlr_t)",
+    "go": "EspIspAwbControllerStartContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_awb_controller_stop_continuous_statistics",
+    "c++": "esp_isp_awb_controller_stop_continuous_statistics(isp_awb_ctlr_t)",
+    "go": "EspIspAwbControllerStopContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_awb_isr",
+    "c++": "esp_isp_awb_isr(isp_proc_handle_t, uint32_t)",
+    "go": "EspIspAwbIsr"
+  },
+  {
+    "mangle": "esp_isp_awb_register_event_callbacks",
+    "c++": "esp_isp_awb_register_event_callbacks(isp_awb_ctlr_t, const esp_isp_awb_cbs_t *, void *)",
+    "go": "EspIspAwbRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_isp_bf_configure",
+    "c++": "esp_isp_bf_configure(isp_proc_handle_t, const esp_isp_bf_config_t *)",
+    "go": "EspIspBfConfigure"
+  },
+  {
+    "mangle": "esp_isp_bf_disable",
+    "c++": "esp_isp_bf_disable(isp_proc_handle_t)",
+    "go": "EspIspBfDisable"
+  },
+  {
+    "mangle": "esp_isp_bf_enable",
+    "c++": "esp_isp_bf_enable(isp_proc_handle_t)",
+    "go": "EspIspBfEnable"
+  },
+  {
+    "mangle": "esp_isp_ccm_configure",
+    "c++": "esp_isp_ccm_configure(isp_proc_handle_t, const esp_isp_ccm_config_t *)",
+    "go": "EspIspCcmConfigure"
+  },
+  {
+    "mangle": "esp_isp_ccm_disable",
+    "c++": "esp_isp_ccm_disable(isp_proc_handle_t)",
+    "go": "EspIspCcmDisable"
+  },
+  {
+    "mangle": "esp_isp_ccm_enable",
+    "c++": "esp_isp_ccm_enable(isp_proc_handle_t)",
+    "go": "EspIspCcmEnable"
+  },
+  {
+    "mangle": "esp_isp_color_configure",
+    "c++": "esp_isp_color_configure(isp_proc_handle_t, const esp_isp_color_config_t *)",
+    "go": "EspIspColorConfigure"
+  },
+  {
+    "mangle": "esp_isp_color_disable",
+    "c++": "esp_isp_color_disable(isp_proc_handle_t)",
+    "go": "EspIspColorDisable"
+  },
+  {
+    "mangle": "esp_isp_color_enable",
+    "c++": "esp_isp_color_enable(isp_proc_handle_t)",
+    "go": "EspIspColorEnable"
+  },
+  {
+    "mangle": "esp_isp_del_ae_controller",
+    "c++": "esp_isp_del_ae_controller(isp_ae_ctlr_t)",
+    "go": "EspIspDelAeController"
+  },
+  {
+    "mangle": "esp_isp_del_af_controller",
+    "c++": "esp_isp_del_af_controller(isp_af_ctlr_t)",
+    "go": "EspIspDelAfController"
+  },
+  {
+    "mangle": "esp_isp_del_awb_controller",
+    "c++": "esp_isp_del_awb_controller(isp_awb_ctlr_t)",
+    "go": "EspIspDelAwbController"
+  },
+  {
+    "mangle": "esp_isp_del_hist_controller",
+    "c++": "esp_isp_del_hist_controller(isp_hist_ctlr_t)",
+    "go": "EspIspDelHistController"
+  },
+  {
+    "mangle": "esp_isp_del_processor",
+    "c++": "esp_isp_del_processor(isp_proc_handle_t)",
+    "go": "EspIspDelProcessor"
+  },
+  {
+    "mangle": "esp_isp_demosaic_configure",
+    "c++": "esp_isp_demosaic_configure(isp_proc_handle_t, const esp_isp_demosaic_config_t *)",
+    "go": "EspIspDemosaicConfigure"
+  },
+  {
+    "mangle": "esp_isp_demosaic_disable",
+    "c++": "esp_isp_demosaic_disable(isp_proc_handle_t)",
+    "go": "EspIspDemosaicDisable"
+  },
+  {
+    "mangle": "esp_isp_demosaic_enable",
+    "c++": "esp_isp_demosaic_enable(isp_proc_handle_t)",
+    "go": "EspIspDemosaicEnable"
+  },
+  {
+    "mangle": "esp_isp_deregister_isr",
+    "c++": "esp_isp_deregister_isr(isp_proc_handle_t, isp_submodule_t)",
+    "go": "EspIspDeregisterIsr"
+  },
+  {
+    "mangle": "esp_isp_disable",
+    "c++": "esp_isp_disable(isp_proc_handle_t)",
+    "go": "EspIspDisable"
+  },
+  {
+    "mangle": "esp_isp_enable",
+    "c++": "esp_isp_enable(isp_proc_handle_t)",
+    "go": "EspIspEnable"
+  },
+  {
+    "mangle": "esp_isp_gamma_configure",
+    "c++": "esp_isp_gamma_configure(isp_proc_handle_t, color_component_t, const isp_gamma_curve_points_t *)",
+    "go": "EspIspGammaConfigure"
+  },
+  {
+    "mangle": "esp_isp_gamma_disable",
+    "c++": "esp_isp_gamma_disable(isp_proc_handle_t)",
+    "go": "EspIspGammaDisable"
+  },
+  {
+    "mangle": "esp_isp_gamma_enable",
+    "c++": "esp_isp_gamma_enable(isp_proc_handle_t)",
+    "go": "EspIspGammaEnable"
+  },
+  {
+    "mangle": "esp_isp_gamma_fill_curve_points",
+    "c++": "esp_isp_gamma_fill_curve_points(uint32_t (*)(uint32_t), isp_gamma_curve_points_t *)",
+    "go": "EspIspGammaFillCurvePoints"
+  },
+  {
+    "mangle": "esp_isp_hist_controller_disable",
+    "c++": "esp_isp_hist_controller_disable(isp_hist_ctlr_t)",
+    "go": "EspIspHistControllerDisable"
+  },
+  {
+    "mangle": "esp_isp_hist_controller_enable",
+    "c++": "esp_isp_hist_controller_enable(isp_hist_ctlr_t)",
+    "go": "EspIspHistControllerEnable"
+  },
+  {
+    "mangle": "esp_isp_hist_controller_get_oneshot_statistics",
+    "c++": "esp_isp_hist_controller_get_oneshot_statistics(isp_hist_ctlr_t, int, isp_hist_result_t *)",
+    "go": "EspIspHistControllerGetOneshotStatistics"
+  },
+  {
+    "mangle": "esp_isp_hist_controller_start_continuous_statistics",
+    "c++": "esp_isp_hist_controller_start_continuous_statistics(isp_hist_ctlr_t)",
+    "go": "EspIspHistControllerStartContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_hist_controller_stop_continuous_statistics",
+    "c++": "esp_isp_hist_controller_stop_continuous_statistics(isp_hist_ctlr_t)",
+    "go": "EspIspHistControllerStopContinuousStatistics"
+  },
+  {
+    "mangle": "esp_isp_hist_isr",
+    "c++": "esp_isp_hist_isr(isp_proc_handle_t, uint32_t)",
+    "go": "EspIspHistIsr"
+  },
+  {
+    "mangle": "esp_isp_hist_register_event_callbacks",
+    "c++": "esp_isp_hist_register_event_callbacks(isp_hist_ctlr_t, const esp_isp_hist_cbs_t *, void *)",
+    "go": "EspIspHistRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_isp_lsc_allocate_gain_array",
+    "c++": "esp_isp_lsc_allocate_gain_array(isp_proc_handle_t, esp_isp_lsc_gain_array_t *, size_t *)",
+    "go": "EspIspLscAllocateGainArray"
+  },
+  {
+    "mangle": "esp_isp_lsc_configure",
+    "c++": "esp_isp_lsc_configure(isp_proc_handle_t, const esp_isp_lsc_config_t *)",
+    "go": "EspIspLscConfigure"
+  },
+  {
+    "mangle": "esp_isp_lsc_disable",
+    "c++": "esp_isp_lsc_disable(isp_proc_handle_t)",
+    "go": "EspIspLscDisable"
+  },
+  {
+    "mangle": "esp_isp_lsc_enable",
+    "c++": "esp_isp_lsc_enable(isp_proc_handle_t)",
+    "go": "EspIspLscEnable"
+  },
+  {
+    "mangle": "esp_isp_new_ae_controller",
+    "c++": "esp_isp_new_ae_controller(isp_proc_handle_t, const esp_isp_ae_config_t *, isp_ae_ctlr_t *)",
+    "go": "EspIspNewAeController"
+  },
+  {
+    "mangle": "esp_isp_new_af_controller",
+    "c++": "esp_isp_new_af_controller(isp_proc_handle_t, const esp_isp_af_config_t *, isp_af_ctlr_t *)",
+    "go": "EspIspNewAfController"
+  },
+  {
+    "mangle": "esp_isp_new_awb_controller",
+    "c++": "esp_isp_new_awb_controller(isp_proc_handle_t, const esp_isp_awb_config_t *, isp_awb_ctlr_t *)",
+    "go": "EspIspNewAwbController"
+  },
+  {
+    "mangle": "esp_isp_new_hist_controller",
+    "c++": "esp_isp_new_hist_controller(isp_proc_handle_t, const esp_isp_hist_config_t *, isp_hist_ctlr_t *)",
+    "go": "EspIspNewHistController"
+  },
+  {
+    "mangle": "esp_isp_new_processor",
+    "c++": "esp_isp_new_processor(const esp_isp_processor_cfg_t *, isp_proc_handle_t *)",
+    "go": "(*EspIspProcessorCfgT).EspIspNewProcessor"
+  },
+  {
+    "mangle": "esp_isp_register_event_callbacks",
+    "c++": "esp_isp_register_event_callbacks(isp_proc_handle_t, const esp_isp_evt_cbs_t *, void *)",
+    "go": "EspIspRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_isp_register_isr",
+    "c++": "esp_isp_register_isr(isp_proc_handle_t, isp_submodule_t)",
+    "go": "EspIspRegisterIsr"
+  },
+  {
+    "mangle": "esp_isp_sharpen_configure",
+    "c++": "esp_isp_sharpen_configure(isp_proc_handle_t, const esp_isp_sharpen_config_t *)",
+    "go": "EspIspSharpenConfigure"
+  },
+  {
+    "mangle": "esp_isp_sharpen_disable",
+    "c++": "esp_isp_sharpen_disable(isp_proc_handle_t)",
+    "go": "EspIspSharpenDisable"
+  },
+  {
+    "mangle": "esp_isp_sharpen_enable",
+    "c++": "esp_isp_sharpen_enable(isp_proc_handle_t)",
+    "go": "EspIspSharpenEnable"
+  },
+  {
+    "mangle": "esp_isp_sharpen_isr",
+    "c++": "esp_isp_sharpen_isr(isp_proc_handle_t, uint32_t)",
+    "go": "EspIspSharpenIsr"
+  }
+]

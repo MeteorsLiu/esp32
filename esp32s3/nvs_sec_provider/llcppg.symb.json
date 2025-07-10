@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "nvs_sec_provider_deregister",
+    "c++": "nvs_sec_provider_deregister(nvs_sec_scheme_t *)",
+    "go": "NvsSecProviderDeregister"
+  },
+  {
+    "mangle": "nvs_sec_provider_register_hmac",
+    "c++": "nvs_sec_provider_register_hmac(const nvs_sec_config_hmac_t *, nvs_sec_scheme_t **)",
+    "go": "(*NvsSecConfigHmacT).NvsSecProviderRegisterHmac"
+  }
+]

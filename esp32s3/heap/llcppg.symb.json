@@ -1,0 +1,372 @@
+[
+  {
+    "mangle": "block_absorb_post_hook",
+    "c++": "block_absorb_post_hook(void *, size_t, bool)",
+    "go": "BlockAbsorbPostHook"
+  },
+  {
+    "mangle": "heap_caps_add_region",
+    "c++": "heap_caps_add_region(intptr_t, intptr_t)",
+    "go": "HeapCapsAddRegion"
+  },
+  {
+    "mangle": "heap_caps_add_region_with_caps",
+    "c++": "heap_caps_add_region_with_caps(const uint32_t *, intptr_t, intptr_t)",
+    "go": "HeapCapsAddRegionWithCaps"
+  },
+  {
+    "mangle": "heap_caps_aligned_alloc",
+    "c++": "heap_caps_aligned_alloc(size_t, size_t, uint32_t)",
+    "go": "HeapCapsAlignedAlloc"
+  },
+  {
+    "mangle": "heap_caps_aligned_calloc",
+    "c++": "heap_caps_aligned_calloc(size_t, size_t, size_t, uint32_t)",
+    "go": "HeapCapsAlignedCalloc"
+  },
+  {
+    "mangle": "heap_caps_aligned_free",
+    "c++": "heap_caps_aligned_free(void *)",
+    "go": "HeapCapsAlignedFree"
+  },
+  {
+    "mangle": "heap_caps_calloc",
+    "c++": "heap_caps_calloc(size_t, size_t, uint32_t)",
+    "go": "HeapCapsCalloc"
+  },
+  {
+    "mangle": "heap_caps_calloc_prefer",
+    "c++": "heap_caps_calloc_prefer(size_t, size_t, size_t, ...)",
+    "go": "HeapCapsCallocPrefer"
+  },
+  {
+    "mangle": "heap_caps_check_integrity",
+    "c++": "heap_caps_check_integrity(uint32_t, bool)",
+    "go": "HeapCapsCheckIntegrity"
+  },
+  {
+    "mangle": "heap_caps_check_integrity_addr",
+    "c++": "heap_caps_check_integrity_addr(intptr_t, bool)",
+    "go": "HeapCapsCheckIntegrityAddr"
+  },
+  {
+    "mangle": "heap_caps_check_integrity_all",
+    "c++": "heap_caps_check_integrity_all(bool)",
+    "go": "HeapCapsCheckIntegrityAll"
+  },
+  {
+    "mangle": "heap_caps_dump",
+    "c++": "heap_caps_dump(uint32_t)",
+    "go": "HeapCapsDump"
+  },
+  {
+    "mangle": "heap_caps_dump_all",
+    "c++": "heap_caps_dump_all()",
+    "go": "HeapCapsDumpAll"
+  },
+  {
+    "mangle": "heap_caps_enable_nonos_stack_heaps",
+    "c++": "heap_caps_enable_nonos_stack_heaps()",
+    "go": "HeapCapsEnableNonosStackHeaps"
+  },
+  {
+    "mangle": "heap_caps_free",
+    "c++": "heap_caps_free(void *)",
+    "go": "HeapCapsFree"
+  },
+  {
+    "mangle": "heap_caps_get_allocated_size",
+    "c++": "heap_caps_get_allocated_size(void *)",
+    "go": "HeapCapsGetAllocatedSize"
+  },
+  {
+    "mangle": "heap_caps_get_free_size",
+    "c++": "heap_caps_get_free_size(uint32_t)",
+    "go": "HeapCapsGetFreeSize"
+  },
+  {
+    "mangle": "heap_caps_get_info",
+    "c++": "heap_caps_get_info(multi_heap_info_t *, uint32_t)",
+    "go": "(*MultiHeapInfoT).HeapCapsGetInfo"
+  },
+  {
+    "mangle": "heap_caps_get_largest_free_block",
+    "c++": "heap_caps_get_largest_free_block(uint32_t)",
+    "go": "HeapCapsGetLargestFreeBlock"
+  },
+  {
+    "mangle": "heap_caps_get_minimum_free_size",
+    "c++": "heap_caps_get_minimum_free_size(uint32_t)",
+    "go": "HeapCapsGetMinimumFreeSize"
+  },
+  {
+    "mangle": "heap_caps_get_total_size",
+    "c++": "heap_caps_get_total_size(uint32_t)",
+    "go": "HeapCapsGetTotalSize"
+  },
+  {
+    "mangle": "heap_caps_init",
+    "c++": "heap_caps_init()",
+    "go": "HeapCapsInit"
+  },
+  {
+    "mangle": "heap_caps_malloc",
+    "c++": "heap_caps_malloc(size_t, uint32_t)",
+    "go": "HeapCapsMalloc"
+  },
+  {
+    "mangle": "heap_caps_malloc_extmem_enable",
+    "c++": "heap_caps_malloc_extmem_enable(size_t)",
+    "go": "HeapCapsMallocExtmemEnable"
+  },
+  {
+    "mangle": "heap_caps_malloc_prefer",
+    "c++": "heap_caps_malloc_prefer(size_t, size_t, ...)",
+    "go": "HeapCapsMallocPrefer"
+  },
+  {
+    "mangle": "heap_caps_monitor_local_minimum_free_size_start",
+    "c++": "heap_caps_monitor_local_minimum_free_size_start()",
+    "go": "HeapCapsMonitorLocalMinimumFreeSizeStart"
+  },
+  {
+    "mangle": "heap_caps_monitor_local_minimum_free_size_stop",
+    "c++": "heap_caps_monitor_local_minimum_free_size_stop()",
+    "go": "HeapCapsMonitorLocalMinimumFreeSizeStop"
+  },
+  {
+    "mangle": "heap_caps_print_heap_info",
+    "c++": "heap_caps_print_heap_info(uint32_t)",
+    "go": "HeapCapsPrintHeapInfo"
+  },
+  {
+    "mangle": "heap_caps_realloc",
+    "c++": "heap_caps_realloc(void *, size_t, uint32_t)",
+    "go": "HeapCapsRealloc"
+  },
+  {
+    "mangle": "heap_caps_realloc_prefer",
+    "c++": "heap_caps_realloc_prefer(void *, size_t, size_t, ...)",
+    "go": "HeapCapsReallocPrefer"
+  },
+  {
+    "mangle": "heap_caps_register_failed_alloc_callback",
+    "c++": "heap_caps_register_failed_alloc_callback(esp_alloc_failed_hook_t)",
+    "go": "HeapCapsRegisterFailedAllocCallback"
+  },
+  {
+    "mangle": "heap_caps_walk",
+    "c++": "heap_caps_walk(uint32_t, heap_caps_walker_cb_t, void *)",
+    "go": "HeapCapsWalk"
+  },
+  {
+    "mangle": "heap_caps_walk_all",
+    "c++": "heap_caps_walk_all(heap_caps_walker_cb_t, void *)",
+    "go": "HeapCapsWalkAll"
+  },
+  {
+    "mangle": "multi_heap_aligned_alloc",
+    "c++": "multi_heap_aligned_alloc(multi_heap_handle_t, size_t, size_t)",
+    "go": "MultiHeapAlignedAlloc"
+  },
+  {
+    "mangle": "multi_heap_aligned_alloc_offs",
+    "c++": "multi_heap_aligned_alloc_offs(multi_heap_handle_t, size_t, size_t, size_t)",
+    "go": "MultiHeapAlignedAllocOffs"
+  },
+  {
+    "mangle": "multi_heap_aligned_free",
+    "c++": "multi_heap_aligned_free(multi_heap_handle_t, void *)",
+    "go": "MultiHeapAlignedFree"
+  },
+  {
+    "mangle": "multi_heap_check",
+    "c++": "multi_heap_check(multi_heap_handle_t, bool)",
+    "go": "MultiHeapCheck"
+  },
+  {
+    "mangle": "multi_heap_dump",
+    "c++": "multi_heap_dump(multi_heap_handle_t)",
+    "go": "MultiHeapDump"
+  },
+  {
+    "mangle": "multi_heap_free",
+    "c++": "multi_heap_free(multi_heap_handle_t, void *)",
+    "go": "MultiHeapFree"
+  },
+  {
+    "mangle": "multi_heap_free_size",
+    "c++": "multi_heap_free_size(multi_heap_handle_t)",
+    "go": "MultiHeapFreeSize"
+  },
+  {
+    "mangle": "multi_heap_get_allocated_size",
+    "c++": "multi_heap_get_allocated_size(multi_heap_handle_t, void *)",
+    "go": "MultiHeapGetAllocatedSize"
+  },
+  {
+    "mangle": "multi_heap_get_info",
+    "c++": "multi_heap_get_info(multi_heap_handle_t, multi_heap_info_t *)",
+    "go": "MultiHeapGetInfo"
+  },
+  {
+    "mangle": "multi_heap_malloc",
+    "c++": "multi_heap_malloc(multi_heap_handle_t, size_t)",
+    "go": "MultiHeapMalloc"
+  },
+  {
+    "mangle": "multi_heap_minimum_free_size",
+    "c++": "multi_heap_minimum_free_size(multi_heap_handle_t)",
+    "go": "MultiHeapMinimumFreeSize"
+  },
+  {
+    "mangle": "multi_heap_realloc",
+    "c++": "multi_heap_realloc(multi_heap_handle_t, void *, size_t)",
+    "go": "MultiHeapRealloc"
+  },
+  {
+    "mangle": "multi_heap_register",
+    "c++": "multi_heap_register(void *, size_t)",
+    "go": "MultiHeapRegister"
+  },
+  {
+    "mangle": "multi_heap_reset_minimum_free_bytes",
+    "c++": "multi_heap_reset_minimum_free_bytes(multi_heap_handle_t)",
+    "go": "MultiHeapResetMinimumFreeBytes"
+  },
+  {
+    "mangle": "multi_heap_restore_minimum_free_bytes",
+    "c++": "multi_heap_restore_minimum_free_bytes(multi_heap_handle_t, const size_t)",
+    "go": "MultiHeapRestoreMinimumFreeBytes"
+  },
+  {
+    "mangle": "multi_heap_set_lock",
+    "c++": "multi_heap_set_lock(multi_heap_handle_t, void *)",
+    "go": "MultiHeapSetLock"
+  },
+  {
+    "mangle": "multi_heap_walk",
+    "c++": "multi_heap_walk(multi_heap_handle_t, multi_heap_walker_cb_t, void *)",
+    "go": "MultiHeapWalk"
+  },
+  {
+    "mangle": "soc_get_available_memory_region_max_count",
+    "c++": "soc_get_available_memory_region_max_count()",
+    "go": "SocGetAvailableMemoryRegionMaxCount"
+  },
+  {
+    "mangle": "soc_get_available_memory_regions",
+    "c++": "soc_get_available_memory_regions(soc_memory_region_t *)",
+    "go": "(*SocMemoryRegionT).SocGetAvailableMemoryRegions"
+  },
+  {
+    "mangle": "tlsf_add_pool",
+    "c++": "tlsf_add_pool(tlsf_t, void *, size_t)",
+    "go": "TlsfAddPool"
+  },
+  {
+    "mangle": "tlsf_alloc_overhead",
+    "c++": "tlsf_alloc_overhead()",
+    "go": "TlsfAllocOverhead"
+  },
+  {
+    "mangle": "tlsf_block_size",
+    "c++": "tlsf_block_size(void *)",
+    "go": "TlsfBlockSize"
+  },
+  {
+    "mangle": "tlsf_check",
+    "c++": "tlsf_check(tlsf_t)",
+    "go": "TlsfCheck"
+  },
+  {
+    "mangle": "tlsf_check_hook",
+    "c++": "tlsf_check_hook(void *, size_t, bool)",
+    "go": "TlsfCheckHook"
+  },
+  {
+    "mangle": "tlsf_check_pool",
+    "c++": "tlsf_check_pool(pool_t)",
+    "go": "TlsfCheckPool"
+  },
+  {
+    "mangle": "tlsf_create",
+    "c++": "tlsf_create(void *, size_t)",
+    "go": "TlsfCreate"
+  },
+  {
+    "mangle": "tlsf_create_with_pool",
+    "c++": "tlsf_create_with_pool(void *, size_t, size_t)",
+    "go": "TlsfCreateWithPool"
+  },
+  {
+    "mangle": "tlsf_destroy",
+    "c++": "tlsf_destroy(tlsf_t)",
+    "go": "TlsfDestroy"
+  },
+  {
+    "mangle": "tlsf_find_containing_block",
+    "c++": "tlsf_find_containing_block(pool_t, void *)",
+    "go": "TlsfFindContainingBlock"
+  },
+  {
+    "mangle": "tlsf_fit_size",
+    "c++": "tlsf_fit_size(tlsf_t, size_t)",
+    "go": "TlsfFitSize"
+  },
+  {
+    "mangle": "tlsf_free",
+    "c++": "tlsf_free(tlsf_t, void *)",
+    "go": "TlsfFree"
+  },
+  {
+    "mangle": "tlsf_get_pool",
+    "c++": "tlsf_get_pool(tlsf_t)",
+    "go": "TlsfGetPool"
+  },
+  {
+    "mangle": "tlsf_malloc",
+    "c++": "tlsf_malloc(tlsf_t, size_t)",
+    "go": "TlsfMalloc"
+  },
+  {
+    "mangle": "tlsf_malloc_addr",
+    "c++": "tlsf_malloc_addr(tlsf_t, size_t, void *)",
+    "go": "TlsfMallocAddr"
+  },
+  {
+    "mangle": "tlsf_memalign",
+    "c++": "tlsf_memalign(tlsf_t, size_t, size_t)",
+    "go": "TlsfMemalign"
+  },
+  {
+    "mangle": "tlsf_memalign_offs",
+    "c++": "tlsf_memalign_offs(tlsf_t, size_t, size_t, size_t)",
+    "go": "TlsfMemalignOffs"
+  },
+  {
+    "mangle": "tlsf_pool_overhead",
+    "c++": "tlsf_pool_overhead()",
+    "go": "TlsfPoolOverhead"
+  },
+  {
+    "mangle": "tlsf_realloc",
+    "c++": "tlsf_realloc(tlsf_t, void *, size_t)",
+    "go": "TlsfRealloc"
+  },
+  {
+    "mangle": "tlsf_remove_pool",
+    "c++": "tlsf_remove_pool(tlsf_t, pool_t)",
+    "go": "TlsfRemovePool"
+  },
+  {
+    "mangle": "tlsf_size",
+    "c++": "tlsf_size(tlsf_t)",
+    "go": "TlsfSize"
+  },
+  {
+    "mangle": "tlsf_walk_pool",
+    "c++": "tlsf_walk_pool(pool_t, tlsf_walker, void *)",
+    "go": "TlsfWalkPool"
+  }
+]

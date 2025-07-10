@@ -1,0 +1,222 @@
+[
+  {
+    "mangle": "ant_dft_cfg",
+    "c++": "ant_dft_cfg(bool)",
+    "go": "AntDftCfg"
+  },
+  {
+    "mangle": "ant_rx_cfg",
+    "c++": "ant_rx_cfg(bool, uint8_t, uint8_t)",
+    "go": "AntRxCfg"
+  },
+  {
+    "mangle": "ant_tx_cfg",
+    "c++": "ant_tx_cfg(uint8_t)",
+    "go": "AntTxCfg"
+  },
+  {
+    "mangle": "bt_bb_v2_init_cmplx",
+    "c++": "bt_bb_v2_init_cmplx(int)",
+    "go": "BtBbV2InitCmplx"
+  },
+  {
+    "mangle": "esp_btbb_disable",
+    "c++": "esp_btbb_disable()",
+    "go": "EspBtbbDisable"
+  },
+  {
+    "mangle": "esp_btbb_enable",
+    "c++": "esp_btbb_enable()",
+    "go": "EspBtbbEnable"
+  },
+  {
+    "mangle": "esp_phy_common_clock_disable",
+    "c++": "esp_phy_common_clock_disable()",
+    "go": "EspPhyCommonClockDisable"
+  },
+  {
+    "mangle": "esp_phy_common_clock_enable",
+    "c++": "esp_phy_common_clock_enable()",
+    "go": "EspPhyCommonClockEnable"
+  },
+  {
+    "mangle": "esp_phy_disable",
+    "c++": "esp_phy_disable(esp_phy_modem_t)",
+    "go": "EspPhyModemT.EspPhyDisable"
+  },
+  {
+    "mangle": "esp_phy_enable",
+    "c++": "esp_phy_enable(esp_phy_modem_t)",
+    "go": "EspPhyModemT.EspPhyEnable"
+  },
+  {
+    "mangle": "esp_phy_erase_cal_data_in_nvs",
+    "c++": "esp_phy_erase_cal_data_in_nvs()",
+    "go": "EspPhyEraseCalDataInNvs"
+  },
+  {
+    "mangle": "esp_phy_get_ant",
+    "c++": "esp_phy_get_ant(esp_phy_ant_config_t *)",
+    "go": "(*EspPhyAntConfigT).EspPhyGetAnt"
+  },
+  {
+    "mangle": "esp_phy_get_ant_gpio",
+    "c++": "esp_phy_get_ant_gpio(esp_phy_ant_gpio_config_t *)",
+    "go": "(*EspPhyAntGpioConfigT).EspPhyGetAntGpio"
+  },
+  {
+    "mangle": "esp_phy_get_init_data",
+    "c++": "esp_phy_get_init_data()",
+    "go": "EspPhyGetInitData"
+  },
+  {
+    "mangle": "esp_phy_load_cal_and_init",
+    "c++": "esp_phy_load_cal_and_init()",
+    "go": "EspPhyLoadCalAndInit"
+  },
+  {
+    "mangle": "esp_phy_load_cal_data_from_nvs",
+    "c++": "esp_phy_load_cal_data_from_nvs(esp_phy_calibration_data_t *)",
+    "go": "(*EspPhyCalibrationDataT).EspPhyLoadCalDataFromNvs"
+  },
+  {
+    "mangle": "esp_phy_modem_deinit",
+    "c++": "esp_phy_modem_deinit()",
+    "go": "EspPhyModemDeinit"
+  },
+  {
+    "mangle": "esp_phy_modem_init",
+    "c++": "esp_phy_modem_init()",
+    "go": "EspPhyModemInit"
+  },
+  {
+    "mangle": "esp_phy_release_init_data",
+    "c++": "esp_phy_release_init_data(const esp_phy_init_data_t *)",
+    "go": "(*EspPhyInitDataT).EspPhyReleaseInitData"
+  },
+  {
+    "mangle": "esp_phy_set_ant",
+    "c++": "esp_phy_set_ant(esp_phy_ant_config_t *)",
+    "go": "(*EspPhyAntConfigT).EspPhySetAnt"
+  },
+  {
+    "mangle": "esp_phy_set_ant_gpio",
+    "c++": "esp_phy_set_ant_gpio(esp_phy_ant_gpio_config_t *)",
+    "go": "(*EspPhyAntGpioConfigT).EspPhySetAntGpio"
+  },
+  {
+    "mangle": "esp_phy_store_cal_data_to_nvs",
+    "c++": "esp_phy_store_cal_data_to_nvs(const esp_phy_calibration_data_t *)",
+    "go": "(*EspPhyCalibrationDataT).EspPhyStoreCalDataToNvs"
+  },
+  {
+    "mangle": "esp_phy_update_country_info",
+    "c++": "esp_phy_update_country_info(const char *)",
+    "go": "EspPhyUpdateCountryInfo"
+  },
+  {
+    "mangle": "esp_wifi_bt_power_domain_off",
+    "c++": "esp_wifi_bt_power_domain_off()",
+    "go": "EspWifiBtPowerDomainOff"
+  },
+  {
+    "mangle": "esp_wifi_bt_power_domain_on",
+    "c++": "esp_wifi_bt_power_domain_on()",
+    "go": "EspWifiBtPowerDomainOn"
+  },
+  {
+    "mangle": "get_phy_version_str",
+    "c++": "get_phy_version_str()",
+    "go": "GetPhyVersionStr"
+  },
+  {
+    "mangle": "phy_ant_clr_update_flag",
+    "c++": "phy_ant_clr_update_flag()",
+    "go": "PhyAntClrUpdateFlag"
+  },
+  {
+    "mangle": "phy_ant_need_update",
+    "c++": "phy_ant_need_update()",
+    "go": "PhyAntNeedUpdate"
+  },
+  {
+    "mangle": "phy_ant_update",
+    "c++": "phy_ant_update()",
+    "go": "PhyAntUpdate"
+  },
+  {
+    "mangle": "phy_bbpll_en_usb",
+    "c++": "phy_bbpll_en_usb(bool)",
+    "go": "PhyBbpllEnUsb"
+  },
+  {
+    "mangle": "phy_close_rf",
+    "c++": "phy_close_rf()",
+    "go": "PhyCloseRf"
+  },
+  {
+    "mangle": "phy_clr_modem_flag",
+    "c++": "phy_clr_modem_flag(esp_phy_modem_t)",
+    "go": "EspPhyModemT.PhyClrModemFlag"
+  },
+  {
+    "mangle": "phy_dig_reg_backup",
+    "c++": "phy_dig_reg_backup(bool, uint32_t *)",
+    "go": "PhyDigRegBackup"
+  },
+  {
+    "mangle": "phy_get_lock",
+    "c++": "phy_get_lock()",
+    "go": "PhyGetLock"
+  },
+  {
+    "mangle": "phy_get_modem_flag",
+    "c++": "phy_get_modem_flag()",
+    "go": "PhyGetModemFlag"
+  },
+  {
+    "mangle": "phy_get_rf_cal_version",
+    "c++": "phy_get_rf_cal_version()",
+    "go": "PhyGetRfCalVersion"
+  },
+  {
+    "mangle": "phy_init_param_set",
+    "c++": "phy_init_param_set(uint8_t)",
+    "go": "PhyInitParamSet"
+  },
+  {
+    "mangle": "phy_set_modem_flag",
+    "c++": "phy_set_modem_flag(esp_phy_modem_t)",
+    "go": "EspPhyModemT.PhySetModemFlag"
+  },
+  {
+    "mangle": "phy_track_pll",
+    "c++": "phy_track_pll()",
+    "go": "PhyTrackPll"
+  },
+  {
+    "mangle": "phy_track_pll_deinit",
+    "c++": "phy_track_pll_deinit()",
+    "go": "PhyTrackPllDeinit"
+  },
+  {
+    "mangle": "phy_track_pll_init",
+    "c++": "phy_track_pll_init()",
+    "go": "PhyTrackPllInit"
+  },
+  {
+    "mangle": "phy_wakeup_init",
+    "c++": "phy_wakeup_init()",
+    "go": "PhyWakeupInit"
+  },
+  {
+    "mangle": "phy_xpd_tsens",
+    "c++": "phy_xpd_tsens()",
+    "go": "PhyXpdTsens"
+  },
+  {
+    "mangle": "register_chipv7_phy",
+    "c++": "register_chipv7_phy(const esp_phy_init_data_t *, esp_phy_calibration_data_t *, esp_phy_calibration_mode_t)",
+    "go": "(*EspPhyInitDataT).RegisterChipv7Phy"
+  }
+]

@@ -1,0 +1,9 @@
+package soc
+
+import _ "unsafe"
+
+const TOUCH_PAD_NUM10_GPIO_NUM = 10
+const TOUCH_PAD_NUM11_GPIO_NUM = 11
+const TOUCH_PAD_NUM12_GPIO_NUM = 12
+const TOUCH_PAD_NUM13_GPIO_NUM = 13
+const TOUCH_PAD_NUM14_GPIO_NUM = 14
