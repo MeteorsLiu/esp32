@@ -31,7 +31,7 @@
   },
   {
     "mangle": "i2c_master_execute_defined_operations",
-    "c++": "i2c_master_execute_defined_operations(i2c_master_dev_handle_t, i2c_operation_job_t *, size_t, int)",
+    "c++": "i2c_master_execute_defined_operations(i2c_master_dev_handle_t, i2c_operation_job_t *, int, int)",
     "go": "I2cMasterExecuteDefinedOperations"
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "mangle": "i2c_master_multi_buffer_transmit",
-    "c++": "i2c_master_multi_buffer_transmit(i2c_master_dev_handle_t, i2c_master_transmit_multi_buffer_info_t *, size_t, int)",
+    "c++": "i2c_master_multi_buffer_transmit(i2c_master_dev_handle_t, i2c_master_transmit_multi_buffer_info_t *, int, int)",
     "go": "I2cMasterMultiBufferTransmit"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "mangle": "i2c_master_receive",
-    "c++": "i2c_master_receive(i2c_master_dev_handle_t, uint8_t *, size_t, int)",
+    "c++": "i2c_master_receive(i2c_master_dev_handle_t, uint8_t *, int, int)",
     "go": "I2cMasterReceive"
   },
   {
@@ -61,12 +61,12 @@
   },
   {
     "mangle": "i2c_master_transmit",
-    "c++": "i2c_master_transmit(i2c_master_dev_handle_t, const uint8_t *, size_t, int)",
+    "c++": "i2c_master_transmit(i2c_master_dev_handle_t, const uint8_t *, int, int)",
     "go": "I2cMasterTransmit"
   },
   {
     "mangle": "i2c_master_transmit_receive",
-    "c++": "i2c_master_transmit_receive(i2c_master_dev_handle_t, const uint8_t *, size_t, uint8_t *, size_t, int)",
+    "c++": "i2c_master_transmit_receive(i2c_master_dev_handle_t, const uint8_t *, int, uint8_t *, int, int)",
     "go": "I2cMasterTransmitReceive"
   },
   {
@@ -81,12 +81,12 @@
   },
   {
     "mangle": "i2c_slave_read_ram",
-    "c++": "i2c_slave_read_ram(i2c_slave_dev_handle_t, uint8_t, uint8_t *, size_t)",
+    "c++": "i2c_slave_read_ram(i2c_slave_dev_handle_t, uint8_t, uint8_t *, int)",
     "go": "I2cSlaveReadRam"
   },
   {
     "mangle": "i2c_slave_receive",
-    "c++": "i2c_slave_receive(i2c_slave_dev_handle_t, uint8_t *, size_t)",
+    "c++": "i2c_slave_receive(i2c_slave_dev_handle_t, uint8_t *, int)",
     "go": "I2cSlaveReceive"
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "mangle": "i2c_slave_write_ram",
-    "c++": "i2c_slave_write_ram(i2c_slave_dev_handle_t, uint8_t, const uint8_t *, size_t)",
+    "c++": "i2c_slave_write_ram(i2c_slave_dev_handle_t, uint8_t, const uint8_t *, int)",
     "go": "I2cSlaveWriteRam"
   }
 ]

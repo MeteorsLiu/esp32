@@ -16,7 +16,7 @@
   },
   {
     "mangle": "esp_timer_dump",
-    "c++": "esp_timer_dump(FILE *)",
+    "c++": "esp_timer_dump(int *)",
     "go": "EspTimerDump"
   },
   {

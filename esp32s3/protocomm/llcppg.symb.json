@@ -96,7 +96,7 @@
   },
   {
     "mangle": "protocomm_req_handle",
-    "c++": "protocomm_req_handle(protocomm_t *, const char *, uint32_t, const uint8_t *, ssize_t, uint8_t **, ssize_t *)",
+    "c++": "protocomm_req_handle(protocomm_t *, const char *, uint32_t, const uint8_t *, int, uint8_t **, int *)",
     "go": "(*ProtocommT).ProtocommReqHandle"
   },
   {

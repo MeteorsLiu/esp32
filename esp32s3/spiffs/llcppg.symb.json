@@ -11,12 +11,12 @@
   },
   {
     "mangle": "esp_spiffs_gc",
-    "c++": "esp_spiffs_gc(const char *, size_t)",
+    "c++": "esp_spiffs_gc(const char *, int)",
     "go": "EspSpiffsGc"
   },
   {
     "mangle": "esp_spiffs_info",
-    "c++": "esp_spiffs_info(const char *, size_t *, size_t *)",
+    "c++": "esp_spiffs_info(const char *, int *, int *)",
     "go": "EspSpiffsInfo"
   },
   {

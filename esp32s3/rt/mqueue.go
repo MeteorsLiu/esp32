@@ -95,5 +95,9 @@ func MqTimedsend(mqdes MqdT, msg_ptr *c.Char, msg_len c.SizeT, msg_prio c.Uint, 
 //go:linkname MqUnlink C.mq_unlink
 func MqUnlink(name *c.Char) c.Int
 
+/* Added by Espressif - specified but not implemented functions, return ENOSYS */
+//go:linkname MqNotify C.mq_notify
+func MqNotify(MqdT, *Sigevent) c.Int
+
 //go:linkname MqSetattr C.mq_setattr
 func MqSetattr(MqdT, *MqAttr, *MqAttr) c.Int

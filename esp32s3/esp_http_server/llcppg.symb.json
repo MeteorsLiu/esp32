@@ -81,12 +81,12 @@
   },
   {
     "mangle": "httpd_resp_send",
-    "c++": "httpd_resp_send(httpd_req_t *, const char *, ssize_t)",
+    "c++": "httpd_resp_send(httpd_req_t *, const char *, int)",
     "go": "(*HttpdReqT).HttpdRespSend"
   },
   {
     "mangle": "httpd_resp_send_chunk",
-    "c++": "httpd_resp_send_chunk(httpd_req_t *, const char *, ssize_t)",
+    "c++": "httpd_resp_send_chunk(httpd_req_t *, const char *, int)",
     "go": "(*HttpdReqT).HttpdRespSendChunk"
   },
   {

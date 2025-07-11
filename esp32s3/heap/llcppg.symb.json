@@ -166,12 +166,12 @@
   },
   {
     "mangle": "multi_heap_aligned_alloc",
-    "c++": "multi_heap_aligned_alloc(multi_heap_handle_t, size_t, size_t)",
+    "c++": "multi_heap_aligned_alloc(multi_heap_handle_t, int, int)",
     "go": "MultiHeapAlignedAlloc"
   },
   {
     "mangle": "multi_heap_aligned_alloc_offs",
-    "c++": "multi_heap_aligned_alloc_offs(multi_heap_handle_t, size_t, size_t, size_t)",
+    "c++": "multi_heap_aligned_alloc_offs(multi_heap_handle_t, int, int, int)",
     "go": "MultiHeapAlignedAllocOffs"
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "mangle": "multi_heap_malloc",
-    "c++": "multi_heap_malloc(multi_heap_handle_t, size_t)",
+    "c++": "multi_heap_malloc(multi_heap_handle_t, int)",
     "go": "MultiHeapMalloc"
   },
   {
@@ -221,12 +221,12 @@
   },
   {
     "mangle": "multi_heap_realloc",
-    "c++": "multi_heap_realloc(multi_heap_handle_t, void *, size_t)",
+    "c++": "multi_heap_realloc(multi_heap_handle_t, void *, int)",
     "go": "MultiHeapRealloc"
   },
   {
     "mangle": "multi_heap_register",
-    "c++": "multi_heap_register(void *, size_t)",
+    "c++": "multi_heap_register(void *, int)",
     "go": "MultiHeapRegister"
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "mangle": "multi_heap_restore_minimum_free_bytes",
-    "c++": "multi_heap_restore_minimum_free_bytes(multi_heap_handle_t, const size_t)",
+    "c++": "multi_heap_restore_minimum_free_bytes(multi_heap_handle_t, const int)",
     "go": "MultiHeapRestoreMinimumFreeBytes"
   },
   {

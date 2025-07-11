@@ -1,12 +1,12 @@
 [
   {
     "mangle": "jpeg_alloc_decoder_mem",
-    "c++": "jpeg_alloc_decoder_mem(size_t, const jpeg_decode_memory_alloc_cfg_t *, size_t *)",
+    "c++": "jpeg_alloc_decoder_mem(int, const jpeg_decode_memory_alloc_cfg_t *, int *)",
     "go": "JpegAllocDecoderMem"
   },
   {
     "mangle": "jpeg_alloc_encoder_mem",
-    "c++": "jpeg_alloc_encoder_mem(size_t, const jpeg_encode_memory_alloc_cfg_t *, size_t *)",
+    "c++": "jpeg_alloc_encoder_mem(int, const jpeg_encode_memory_alloc_cfg_t *, int *)",
     "go": "JpegAllocEncoderMem"
   },
   {

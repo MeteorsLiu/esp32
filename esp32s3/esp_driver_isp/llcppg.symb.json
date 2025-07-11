@@ -286,7 +286,7 @@
   },
   {
     "mangle": "esp_isp_lsc_allocate_gain_array",
-    "c++": "esp_isp_lsc_allocate_gain_array(isp_proc_handle_t, esp_isp_lsc_gain_array_t *, size_t *)",
+    "c++": "esp_isp_lsc_allocate_gain_array(isp_proc_handle_t, esp_isp_lsc_gain_array_t *, int *)",
     "go": "EspIspLscAllocateGainArray"
   },
   {

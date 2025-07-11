@@ -6,7 +6,7 @@
   },
   {
     "mangle": "esp_hid_cod_minor_print",
-    "c++": "esp_hid_cod_minor_print(uint8_t, FILE *)",
+    "c++": "esp_hid_cod_minor_print(uint8_t, int *)",
     "go": "EspHidCodMinorPrint"
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "mangle": "esp_hidh_dev_dump",
-    "c++": "esp_hidh_dev_dump(esp_hidh_dev_t *, FILE *)",
+    "c++": "esp_hidh_dev_dump(esp_hidh_dev_t *, int *)",
     "go": "(*EspHidhDevT).EspHidhDevDump"
   },
   {

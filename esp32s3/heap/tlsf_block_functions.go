@@ -5,7 +5,7 @@ import (
 	_ "unsafe"
 )
 
-type TlsfptrT c.Int
+type TlsfptrT PtrdiffT
 
 type BlockHeaderT struct {
 	PrevPhysBlock *BlockHeaderT

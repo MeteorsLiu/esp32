@@ -21,7 +21,7 @@
   },
   {
     "mangle": "esp_cam_ctlr_get_frame_buffer_len",
-    "c++": "esp_cam_ctlr_get_frame_buffer_len(esp_cam_ctlr_handle_t, size_t *)",
+    "c++": "esp_cam_ctlr_get_frame_buffer_len(esp_cam_ctlr_handle_t, int *)",
     "go": "EspCamCtlrGetFrameBufferLen"
   },
   {
