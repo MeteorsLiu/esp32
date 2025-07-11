@@ -1,0 +1,87 @@
+[
+  {
+    "mangle": "dac_continuous_del_channels",
+    "c++": "dac_continuous_del_channels(dac_continuous_handle_t)",
+    "go": "DacContinuousDelChannels"
+  },
+  {
+    "mangle": "dac_continuous_disable",
+    "c++": "dac_continuous_disable(dac_continuous_handle_t)",
+    "go": "DacContinuousDisable"
+  },
+  {
+    "mangle": "dac_continuous_enable",
+    "c++": "dac_continuous_enable(dac_continuous_handle_t)",
+    "go": "DacContinuousEnable"
+  },
+  {
+    "mangle": "dac_continuous_new_channels",
+    "c++": "dac_continuous_new_channels(const dac_continuous_config_t *, dac_continuous_handle_t *)",
+    "go": "(*DacContinuousConfigT).DacContinuousNewChannels"
+  },
+  {
+    "mangle": "dac_continuous_register_event_callback",
+    "c++": "dac_continuous_register_event_callback(dac_continuous_handle_t, const dac_event_callbacks_t *, void *)",
+    "go": "DacContinuousRegisterEventCallback"
+  },
+  {
+    "mangle": "dac_continuous_start_async_writing",
+    "c++": "dac_continuous_start_async_writing(dac_continuous_handle_t)",
+    "go": "DacContinuousStartAsyncWriting"
+  },
+  {
+    "mangle": "dac_continuous_stop_async_writing",
+    "c++": "dac_continuous_stop_async_writing(dac_continuous_handle_t)",
+    "go": "DacContinuousStopAsyncWriting"
+  },
+  {
+    "mangle": "dac_continuous_write",
+    "c++": "dac_continuous_write(dac_continuous_handle_t, uint8_t *, size_t, size_t *, int)",
+    "go": "DacContinuousWrite"
+  },
+  {
+    "mangle": "dac_continuous_write_asynchronously",
+    "c++": "dac_continuous_write_asynchronously(dac_continuous_handle_t, uint8_t *, size_t, const uint8_t *, size_t, size_t *)",
+    "go": "DacContinuousWriteAsynchronously"
+  },
+  {
+    "mangle": "dac_continuous_write_cyclically",
+    "c++": "dac_continuous_write_cyclically(dac_continuous_handle_t, uint8_t *, size_t, size_t *)",
+    "go": "DacContinuousWriteCyclically"
+  },
+  {
+    "mangle": "dac_cosine_del_channel",
+    "c++": "dac_cosine_del_channel(dac_cosine_handle_t)",
+    "go": "DacCosineDelChannel"
+  },
+  {
+    "mangle": "dac_cosine_new_channel",
+    "c++": "dac_cosine_new_channel(const dac_cosine_config_t *, dac_cosine_handle_t *)",
+    "go": "(*DacCosineConfigT).DacCosineNewChannel"
+  },
+  {
+    "mangle": "dac_cosine_start",
+    "c++": "dac_cosine_start(dac_cosine_handle_t)",
+    "go": "DacCosineStart"
+  },
+  {
+    "mangle": "dac_cosine_stop",
+    "c++": "dac_cosine_stop(dac_cosine_handle_t)",
+    "go": "DacCosineStop"
+  },
+  {
+    "mangle": "dac_oneshot_del_channel",
+    "c++": "dac_oneshot_del_channel(dac_oneshot_handle_t)",
+    "go": "DacOneshotDelChannel"
+  },
+  {
+    "mangle": "dac_oneshot_new_channel",
+    "c++": "dac_oneshot_new_channel(const dac_oneshot_config_t *, dac_oneshot_handle_t *)",
+    "go": "(*DacOneshotConfigT).DacOneshotNewChannel"
+  },
+  {
+    "mangle": "dac_oneshot_output_voltage",
+    "c++": "dac_oneshot_output_voltage(dac_oneshot_handle_t, uint8_t)",
+    "go": "DacOneshotOutputVoltage"
+  }
+]

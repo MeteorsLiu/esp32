@@ -1,0 +1,462 @@
+[
+  {
+    "mangle": "esp_ip4addr_aton",
+    "c++": "esp_ip4addr_aton(const char *)",
+    "go": "EspIp4addrAton"
+  },
+  {
+    "mangle": "esp_ip4addr_ntoa",
+    "c++": "esp_ip4addr_ntoa(const esp_ip4_addr_t *, char *, int)",
+    "go": "(*EspIp4AddrT).EspIp4addrNtoa"
+  },
+  {
+    "mangle": "esp_netif_action_add_ip6_address",
+    "c++": "esp_netif_action_add_ip6_address(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionAddIp6Address"
+  },
+  {
+    "mangle": "esp_netif_action_connected",
+    "c++": "esp_netif_action_connected(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionConnected"
+  },
+  {
+    "mangle": "esp_netif_action_disconnected",
+    "c++": "esp_netif_action_disconnected(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionDisconnected"
+  },
+  {
+    "mangle": "esp_netif_action_got_ip",
+    "c++": "esp_netif_action_got_ip(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionGotIp"
+  },
+  {
+    "mangle": "esp_netif_action_join_ip6_multicast_group",
+    "c++": "esp_netif_action_join_ip6_multicast_group(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionJoinIp6MulticastGroup"
+  },
+  {
+    "mangle": "esp_netif_action_leave_ip6_multicast_group",
+    "c++": "esp_netif_action_leave_ip6_multicast_group(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionLeaveIp6MulticastGroup"
+  },
+  {
+    "mangle": "esp_netif_action_remove_ip6_address",
+    "c++": "esp_netif_action_remove_ip6_address(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionRemoveIp6Address"
+  },
+  {
+    "mangle": "esp_netif_action_start",
+    "c++": "esp_netif_action_start(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionStart"
+  },
+  {
+    "mangle": "esp_netif_action_stop",
+    "c++": "esp_netif_action_stop(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspNetifActionStop"
+  },
+  {
+    "mangle": "esp_netif_add_ip6_address",
+    "c++": "esp_netif_add_ip6_address(esp_netif_t *, const esp_ip6_addr_t, bool)",
+    "go": "(*EspNetifT).EspNetifAddIp6Address"
+  },
+  {
+    "mangle": "esp_netif_attach",
+    "c++": "esp_netif_attach(esp_netif_t *, esp_netif_iodriver_handle)",
+    "go": "(*EspNetifT).EspNetifAttach"
+  },
+  {
+    "mangle": "esp_netif_create_ip6_linklocal",
+    "c++": "esp_netif_create_ip6_linklocal(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifCreateIp6Linklocal"
+  },
+  {
+    "mangle": "esp_netif_deinit",
+    "c++": "esp_netif_deinit()",
+    "go": "EspNetifDeinit"
+  },
+  {
+    "mangle": "esp_netif_destroy",
+    "c++": "esp_netif_destroy(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifDestroy"
+  },
+  {
+    "mangle": "esp_netif_dhcpc_get_status",
+    "c++": "esp_netif_dhcpc_get_status(esp_netif_t *, esp_netif_dhcp_status_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpcGetStatus"
+  },
+  {
+    "mangle": "esp_netif_dhcpc_option",
+    "c++": "esp_netif_dhcpc_option(esp_netif_t *, esp_netif_dhcp_option_mode_t, esp_netif_dhcp_option_id_t, void *, uint32_t)",
+    "go": "(*EspNetifT).EspNetifDhcpcOption"
+  },
+  {
+    "mangle": "esp_netif_dhcpc_start",
+    "c++": "esp_netif_dhcpc_start(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpcStart"
+  },
+  {
+    "mangle": "esp_netif_dhcpc_stop",
+    "c++": "esp_netif_dhcpc_stop(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpcStop"
+  },
+  {
+    "mangle": "esp_netif_dhcps_get_clients_by_mac",
+    "c++": "esp_netif_dhcps_get_clients_by_mac(esp_netif_t *, int, esp_netif_pair_mac_ip_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpsGetClientsByMac"
+  },
+  {
+    "mangle": "esp_netif_dhcps_get_status",
+    "c++": "esp_netif_dhcps_get_status(esp_netif_t *, esp_netif_dhcp_status_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpsGetStatus"
+  },
+  {
+    "mangle": "esp_netif_dhcps_option",
+    "c++": "esp_netif_dhcps_option(esp_netif_t *, esp_netif_dhcp_option_mode_t, esp_netif_dhcp_option_id_t, void *, uint32_t)",
+    "go": "(*EspNetifT).EspNetifDhcpsOption"
+  },
+  {
+    "mangle": "esp_netif_dhcps_start",
+    "c++": "esp_netif_dhcps_start(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpsStart"
+  },
+  {
+    "mangle": "esp_netif_dhcps_stop",
+    "c++": "esp_netif_dhcps_stop(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifDhcpsStop"
+  },
+  {
+    "mangle": "esp_netif_find_if",
+    "c++": "esp_netif_find_if(esp_netif_find_predicate_t, void *)",
+    "go": "EspNetifFindIf"
+  },
+  {
+    "mangle": "esp_netif_free_rx_buffer",
+    "c++": "esp_netif_free_rx_buffer(void *, void *)",
+    "go": "EspNetifFreeRxBuffer"
+  },
+  {
+    "mangle": "esp_netif_get_all_ip6",
+    "c++": "esp_netif_get_all_ip6(esp_netif_t *, esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifGetAllIp6"
+  },
+  {
+    "mangle": "esp_netif_get_all_preferred_ip6",
+    "c++": "esp_netif_get_all_preferred_ip6(esp_netif_t *, esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifGetAllPreferredIp6"
+  },
+  {
+    "mangle": "esp_netif_get_default_netif",
+    "c++": "esp_netif_get_default_netif()",
+    "go": "EspNetifGetDefaultNetif"
+  },
+  {
+    "mangle": "esp_netif_get_desc",
+    "c++": "esp_netif_get_desc(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetDesc"
+  },
+  {
+    "mangle": "esp_netif_get_dns_info",
+    "c++": "esp_netif_get_dns_info(esp_netif_t *, esp_netif_dns_type_t, esp_netif_dns_info_t *)",
+    "go": "(*EspNetifT).EspNetifGetDnsInfo"
+  },
+  {
+    "mangle": "esp_netif_get_event_id",
+    "c++": "esp_netif_get_event_id(esp_netif_t *, esp_netif_ip_event_type_t)",
+    "go": "(*EspNetifT).EspNetifGetEventId"
+  },
+  {
+    "mangle": "esp_netif_get_flags",
+    "c++": "esp_netif_get_flags(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetFlags"
+  },
+  {
+    "mangle": "esp_netif_get_handle_from_ifkey",
+    "c++": "esp_netif_get_handle_from_ifkey(const char *)",
+    "go": "EspNetifGetHandleFromIfkey"
+  },
+  {
+    "mangle": "esp_netif_get_handle_from_netif_impl",
+    "c++": "esp_netif_get_handle_from_netif_impl(void *)",
+    "go": "EspNetifGetHandleFromNetifImpl"
+  },
+  {
+    "mangle": "esp_netif_get_hostname",
+    "c++": "esp_netif_get_hostname(esp_netif_t *, const char **)",
+    "go": "(*EspNetifT).EspNetifGetHostname"
+  },
+  {
+    "mangle": "esp_netif_get_ifkey",
+    "c++": "esp_netif_get_ifkey(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetIfkey"
+  },
+  {
+    "mangle": "esp_netif_get_io_driver",
+    "c++": "esp_netif_get_io_driver(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetIoDriver"
+  },
+  {
+    "mangle": "esp_netif_get_ip6_global",
+    "c++": "esp_netif_get_ip6_global(esp_netif_t *, esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifGetIp6Global"
+  },
+  {
+    "mangle": "esp_netif_get_ip6_linklocal",
+    "c++": "esp_netif_get_ip6_linklocal(esp_netif_t *, esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifGetIp6Linklocal"
+  },
+  {
+    "mangle": "esp_netif_get_ip_info",
+    "c++": "esp_netif_get_ip_info(esp_netif_t *, esp_netif_ip_info_t *)",
+    "go": "(*EspNetifT).EspNetifGetIpInfo"
+  },
+  {
+    "mangle": "esp_netif_get_mac",
+    "c++": "esp_netif_get_mac(esp_netif_t *, uint8_t *)",
+    "go": "(*EspNetifT).EspNetifGetMac"
+  },
+  {
+    "mangle": "esp_netif_get_netif_impl",
+    "c++": "esp_netif_get_netif_impl(int *)",
+    "go": "EspNetifGetNetifImpl"
+  },
+  {
+    "mangle": "esp_netif_get_netif_impl_index",
+    "c++": "esp_netif_get_netif_impl_index(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetNetifImplIndex"
+  },
+  {
+    "mangle": "esp_netif_get_netif_impl_name",
+    "c++": "esp_netif_get_netif_impl_name(esp_netif_t *, char *)",
+    "go": "(*EspNetifT).EspNetifGetNetifImplName"
+  },
+  {
+    "mangle": "esp_netif_get_nr_of_ifs",
+    "c++": "esp_netif_get_nr_of_ifs()",
+    "go": "EspNetifGetNrOfIfs"
+  },
+  {
+    "mangle": "esp_netif_get_old_ip_info",
+    "c++": "esp_netif_get_old_ip_info(esp_netif_t *, esp_netif_ip_info_t *)",
+    "go": "(*EspNetifT).EspNetifGetOldIpInfo"
+  },
+  {
+    "mangle": "esp_netif_get_route_prio",
+    "c++": "esp_netif_get_route_prio(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifGetRoutePrio"
+  },
+  {
+    "mangle": "esp_netif_init",
+    "c++": "esp_netif_init()",
+    "go": "EspNetifInit"
+  },
+  {
+    "mangle": "esp_netif_ip6_get_addr_type",
+    "c++": "esp_netif_ip6_get_addr_type(esp_ip6_addr_t *)",
+    "go": "(*EspIp6AddrT).EspNetifIp6GetAddrType"
+  },
+  {
+    "mangle": "esp_netif_is_netif_up",
+    "c++": "esp_netif_is_netif_up(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifIsNetifUp"
+  },
+  {
+    "mangle": "esp_netif_join_ip6_multicast_group",
+    "c++": "esp_netif_join_ip6_multicast_group(esp_netif_t *, const esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifJoinIp6MulticastGroup"
+  },
+  {
+    "mangle": "esp_netif_leave_ip6_multicast_group",
+    "c++": "esp_netif_leave_ip6_multicast_group(esp_netif_t *, const esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifLeaveIp6MulticastGroup"
+  },
+  {
+    "mangle": "esp_netif_napt_disable",
+    "c++": "esp_netif_napt_disable(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifNaptDisable"
+  },
+  {
+    "mangle": "esp_netif_napt_enable",
+    "c++": "esp_netif_napt_enable(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifNaptEnable"
+  },
+  {
+    "mangle": "esp_netif_netstack_buf_free",
+    "c++": "esp_netif_netstack_buf_free(void *)",
+    "go": "EspNetifNetstackBufFree"
+  },
+  {
+    "mangle": "esp_netif_netstack_buf_ref",
+    "c++": "esp_netif_netstack_buf_ref(void *)",
+    "go": "EspNetifNetstackBufRef"
+  },
+  {
+    "mangle": "esp_netif_new",
+    "c++": "esp_netif_new(const esp_netif_config_t *)",
+    "go": "(*EspNetifConfigT).EspNetifNew"
+  },
+  {
+    "mangle": "esp_netif_next",
+    "c++": "esp_netif_next(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifNext"
+  },
+  {
+    "mangle": "esp_netif_next_unsafe",
+    "c++": "esp_netif_next_unsafe(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifNextUnsafe"
+  },
+  {
+    "mangle": "esp_netif_ppp_set_auth",
+    "c++": "esp_netif_ppp_set_auth(int *, esp_netif_auth_type_t, const char *, const char *)",
+    "go": "EspNetifPppSetAuth"
+  },
+  {
+    "mangle": "esp_netif_receive",
+    "c++": "esp_netif_receive(esp_netif_t *, void *, int, void *)",
+    "go": "(*EspNetifT).EspNetifReceive"
+  },
+  {
+    "mangle": "esp_netif_remove_ip6_address",
+    "c++": "esp_netif_remove_ip6_address(esp_netif_t *, const esp_ip6_addr_t *)",
+    "go": "(*EspNetifT).EspNetifRemoveIp6Address"
+  },
+  {
+    "mangle": "esp_netif_set_default_netif",
+    "c++": "esp_netif_set_default_netif(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifSetDefaultNetif"
+  },
+  {
+    "mangle": "esp_netif_set_dns_info",
+    "c++": "esp_netif_set_dns_info(esp_netif_t *, esp_netif_dns_type_t, esp_netif_dns_info_t *)",
+    "go": "(*EspNetifT).EspNetifSetDnsInfo"
+  },
+  {
+    "mangle": "esp_netif_set_driver_config",
+    "c++": "esp_netif_set_driver_config(esp_netif_t *, const esp_netif_driver_ifconfig_t *)",
+    "go": "(*EspNetifT).EspNetifSetDriverConfig"
+  },
+  {
+    "mangle": "esp_netif_set_hostname",
+    "c++": "esp_netif_set_hostname(esp_netif_t *, const char *)",
+    "go": "(*EspNetifT).EspNetifSetHostname"
+  },
+  {
+    "mangle": "esp_netif_set_ip4_addr",
+    "c++": "esp_netif_set_ip4_addr(esp_ip4_addr_t *, uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "(*EspIp4AddrT).EspNetifSetIp4Addr"
+  },
+  {
+    "mangle": "esp_netif_set_ip_info",
+    "c++": "esp_netif_set_ip_info(esp_netif_t *, const esp_netif_ip_info_t *)",
+    "go": "(*EspNetifT).EspNetifSetIpInfo"
+  },
+  {
+    "mangle": "esp_netif_set_link_speed",
+    "c++": "esp_netif_set_link_speed(int *, int)",
+    "go": "EspNetifSetLinkSpeed"
+  },
+  {
+    "mangle": "esp_netif_set_mac",
+    "c++": "esp_netif_set_mac(esp_netif_t *, uint8_t *)",
+    "go": "(*EspNetifT).EspNetifSetMac"
+  },
+  {
+    "mangle": "esp_netif_set_old_ip_info",
+    "c++": "esp_netif_set_old_ip_info(esp_netif_t *, const esp_netif_ip_info_t *)",
+    "go": "(*EspNetifT).EspNetifSetOldIpInfo"
+  },
+  {
+    "mangle": "esp_netif_sntp_deinit",
+    "c++": "esp_netif_sntp_deinit()",
+    "go": "EspNetifSntpDeinit"
+  },
+  {
+    "mangle": "esp_netif_sntp_init",
+    "c++": "esp_netif_sntp_init(const esp_sntp_config_t *)",
+    "go": "(*EspSntpConfigT).EspNetifSntpInit"
+  },
+  {
+    "mangle": "esp_netif_sntp_reachability",
+    "c++": "esp_netif_sntp_reachability(unsigned int, unsigned int *)",
+    "go": "EspNetifSntpReachability"
+  },
+  {
+    "mangle": "esp_netif_sntp_start",
+    "c++": "esp_netif_sntp_start()",
+    "go": "EspNetifSntpStart"
+  },
+  {
+    "mangle": "esp_netif_sntp_sync_wait",
+    "c++": "esp_netif_sntp_sync_wait(TickType_t)",
+    "go": "EspNetifSntpSyncWait"
+  },
+  {
+    "mangle": "esp_netif_str_to_ip4",
+    "c++": "esp_netif_str_to_ip4(const char *, esp_ip4_addr_t *)",
+    "go": "EspNetifStrToIp4"
+  },
+  {
+    "mangle": "esp_netif_str_to_ip6",
+    "c++": "esp_netif_str_to_ip6(const char *, esp_ip6_addr_t *)",
+    "go": "EspNetifStrToIp6"
+  },
+  {
+    "mangle": "esp_netif_tcpip_exec",
+    "c++": "esp_netif_tcpip_exec(esp_netif_callback_fn, void *)",
+    "go": "EspNetifTcpipExec"
+  },
+  {
+    "mangle": "esp_netif_transmit",
+    "c++": "esp_netif_transmit(int *, void *, int)",
+    "go": "EspNetifTransmit"
+  },
+  {
+    "mangle": "esp_netif_transmit_wrap",
+    "c++": "esp_netif_transmit_wrap(int *, void *, int, void *)",
+    "go": "EspNetifTransmitWrap"
+  },
+  {
+    "mangle": "esp_netif_tx_rx_event_disable",
+    "c++": "esp_netif_tx_rx_event_disable(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifTxRxEventDisable"
+  },
+  {
+    "mangle": "esp_netif_tx_rx_event_enable",
+    "c++": "esp_netif_tx_rx_event_enable(esp_netif_t *)",
+    "go": "(*EspNetifT).EspNetifTxRxEventEnable"
+  },
+  {
+    "mangle": "esp_pbuf_allocate",
+    "c++": "esp_pbuf_allocate(esp_netif_t *, void *, size_t, void *)",
+    "go": "(*EspNetifT).EspPbufAllocate"
+  },
+  {
+    "mangle": "ethernetif_init",
+    "c++": "ethernetif_init(struct netif *)",
+    "go": "EthernetifInit"
+  },
+  {
+    "mangle": "ethernetif_input",
+    "c++": "ethernetif_input(void *, void *, size_t, void *)",
+    "go": "EthernetifInput"
+  },
+  {
+    "mangle": "wlanif_init_ap",
+    "c++": "wlanif_init_ap(struct netif *)",
+    "go": "WlanifInitAp"
+  },
+  {
+    "mangle": "wlanif_init_nan",
+    "c++": "wlanif_init_nan(struct netif *)",
+    "go": "WlanifInitNan"
+  },
+  {
+    "mangle": "wlanif_init_sta",
+    "c++": "wlanif_init_sta(struct netif *)",
+    "go": "WlanifInitSta"
+  },
+  {
+    "mangle": "wlanif_input",
+    "c++": "wlanif_input(void *, void *, size_t, void *)",
+    "go": "WlanifInput"
+  }
+]

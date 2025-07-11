@@ -1,0 +1,10 @@
+package soc
+
+import _ "unsafe"
+
+const FRC_TIMER_LOAD_VALUE_S = 0
+const FRC_TIMER_COUNT_S = 0
+const FRC_TIMER_PRESCALER = 0x00000007
+const FRC_TIMER_PRESCALER_S = 1
+const FRC_TIMER_ALARM = 0xFFFFFFFF
+const FRC_TIMER_ALARM_S = 0

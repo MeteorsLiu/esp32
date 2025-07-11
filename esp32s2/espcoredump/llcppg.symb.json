@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "esp_core_dump_image_erase",
+    "c++": "esp_core_dump_image_erase()",
+    "go": "EspCoreDumpImageErase"
+  },
+  {
+    "mangle": "esp_core_dump_image_get",
+    "c++": "esp_core_dump_image_get(size_t *, size_t *)",
+    "go": "EspCoreDumpImageGet"
+  }
+]
