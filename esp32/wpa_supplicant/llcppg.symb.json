@@ -1,0 +1,357 @@
+[
+  {
+    "mangle": "esp_eap_client_clear_ca_cert",
+    "c++": "esp_eap_client_clear_ca_cert()",
+    "go": "EspEapClientClearCaCert"
+  },
+  {
+    "mangle": "esp_eap_client_clear_certificate_and_key",
+    "c++": "esp_eap_client_clear_certificate_and_key()",
+    "go": "EspEapClientClearCertificateAndKey"
+  },
+  {
+    "mangle": "esp_eap_client_clear_identity",
+    "c++": "esp_eap_client_clear_identity()",
+    "go": "EspEapClientClearIdentity"
+  },
+  {
+    "mangle": "esp_eap_client_clear_new_password",
+    "c++": "esp_eap_client_clear_new_password()",
+    "go": "EspEapClientClearNewPassword"
+  },
+  {
+    "mangle": "esp_eap_client_clear_password",
+    "c++": "esp_eap_client_clear_password()",
+    "go": "EspEapClientClearPassword"
+  },
+  {
+    "mangle": "esp_eap_client_clear_username",
+    "c++": "esp_eap_client_clear_username()",
+    "go": "EspEapClientClearUsername"
+  },
+  {
+    "mangle": "esp_eap_client_get_disable_time_check",
+    "c++": "esp_eap_client_get_disable_time_check(bool *)",
+    "go": "EspEapClientGetDisableTimeCheck"
+  },
+  {
+    "mangle": "esp_eap_client_set_ca_cert",
+    "c++": "esp_eap_client_set_ca_cert(const unsigned char *, int)",
+    "go": "EspEapClientSetCaCert"
+  },
+  {
+    "mangle": "esp_eap_client_set_certificate_and_key",
+    "c++": "esp_eap_client_set_certificate_and_key(const unsigned char *, int, const unsigned char *, int, const unsigned char *, int)",
+    "go": "EspEapClientSetCertificateAndKey"
+  },
+  {
+    "mangle": "esp_eap_client_set_disable_time_check",
+    "c++": "esp_eap_client_set_disable_time_check(bool)",
+    "go": "EspEapClientSetDisableTimeCheck"
+  },
+  {
+    "mangle": "esp_eap_client_set_domain_name",
+    "c++": "esp_eap_client_set_domain_name(const char *)",
+    "go": "EspEapClientSetDomainName"
+  },
+  {
+    "mangle": "esp_eap_client_set_fast_params",
+    "c++": "esp_eap_client_set_fast_params(esp_eap_fast_config)",
+    "go": "EspEapFastConfig.EspEapClientSetFastParams"
+  },
+  {
+    "mangle": "esp_eap_client_set_identity",
+    "c++": "esp_eap_client_set_identity(const unsigned char *, int)",
+    "go": "EspEapClientSetIdentity"
+  },
+  {
+    "mangle": "esp_eap_client_set_new_password",
+    "c++": "esp_eap_client_set_new_password(const unsigned char *, int)",
+    "go": "EspEapClientSetNewPassword"
+  },
+  {
+    "mangle": "esp_eap_client_set_pac_file",
+    "c++": "esp_eap_client_set_pac_file(const unsigned char *, int)",
+    "go": "EspEapClientSetPacFile"
+  },
+  {
+    "mangle": "esp_eap_client_set_password",
+    "c++": "esp_eap_client_set_password(const unsigned char *, int)",
+    "go": "EspEapClientSetPassword"
+  },
+  {
+    "mangle": "esp_eap_client_set_suiteb_192bit_certification",
+    "c++": "esp_eap_client_set_suiteb_192bit_certification(bool)",
+    "go": "EspEapClientSetSuiteb192bitCertification"
+  },
+  {
+    "mangle": "esp_eap_client_set_ttls_phase2_method",
+    "c++": "esp_eap_client_set_ttls_phase2_method(esp_eap_ttls_phase2_types)",
+    "go": "EspEapTtlsPhase2Types.EspEapClientSetTtlsPhase2Method"
+  },
+  {
+    "mangle": "esp_eap_client_set_username",
+    "c++": "esp_eap_client_set_username(const unsigned char *, int)",
+    "go": "EspEapClientSetUsername"
+  },
+  {
+    "mangle": "esp_eap_client_use_default_cert_bundle",
+    "c++": "esp_eap_client_use_default_cert_bundle(bool)",
+    "go": "EspEapClientUseDefaultCertBundle"
+  },
+  {
+    "mangle": "esp_rrm_is_rrm_supported_connection",
+    "c++": "esp_rrm_is_rrm_supported_connection()",
+    "go": "EspRrmIsRrmSupportedConnection"
+  },
+  {
+    "mangle": "esp_rrm_send_neighbor_rep_request",
+    "c++": "esp_rrm_send_neighbor_rep_request(neighbor_rep_request_cb, void *)",
+    "go": "EspRrmSendNeighborRepRequest"
+  },
+  {
+    "mangle": "esp_rrm_send_neighbor_report_request",
+    "c++": "esp_rrm_send_neighbor_report_request()",
+    "go": "EspRrmSendNeighborReportRequest"
+  },
+  {
+    "mangle": "esp_supplicant_deinit",
+    "c++": "esp_supplicant_deinit()",
+    "go": "EspSupplicantDeinit"
+  },
+  {
+    "mangle": "esp_supplicant_disable_pmk_caching",
+    "c++": "esp_supplicant_disable_pmk_caching(bool)",
+    "go": "EspSupplicantDisablePmkCaching"
+  },
+  {
+    "mangle": "esp_supplicant_init",
+    "c++": "esp_supplicant_init()",
+    "go": "EspSupplicantInit"
+  },
+  {
+    "mangle": "esp_supplicant_str_to_mac",
+    "c++": "esp_supplicant_str_to_mac(const char *, uint8_t *)",
+    "go": "EspSupplicantStrToMac"
+  },
+  {
+    "mangle": "esp_wifi_sta_enterprise_disable",
+    "c++": "esp_wifi_sta_enterprise_disable()",
+    "go": "EspWifiStaEnterpriseDisable"
+  },
+  {
+    "mangle": "esp_wifi_sta_enterprise_enable",
+    "c++": "esp_wifi_sta_enterprise_enable()",
+    "go": "EspWifiStaEnterpriseEnable"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_ca_cert",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_ca_cert()",
+    "go": "EspWifiStaWpa2EntClearCaCert"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_cert_key",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_cert_key()",
+    "go": "EspWifiStaWpa2EntClearCertKey"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_identity",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_identity()",
+    "go": "EspWifiStaWpa2EntClearIdentity"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_new_password",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_new_password()",
+    "go": "EspWifiStaWpa2EntClearNewPassword"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_password",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_password()",
+    "go": "EspWifiStaWpa2EntClearPassword"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_clear_username",
+    "c++": "esp_wifi_sta_wpa2_ent_clear_username()",
+    "go": "EspWifiStaWpa2EntClearUsername"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_disable",
+    "c++": "esp_wifi_sta_wpa2_ent_disable()",
+    "go": "EspWifiStaWpa2EntDisable"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_enable",
+    "c++": "esp_wifi_sta_wpa2_ent_enable()",
+    "go": "EspWifiStaWpa2EntEnable"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_get_disable_time_check",
+    "c++": "esp_wifi_sta_wpa2_ent_get_disable_time_check(bool *)",
+    "go": "EspWifiStaWpa2EntGetDisableTimeCheck"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_ca_cert",
+    "c++": "esp_wifi_sta_wpa2_ent_set_ca_cert(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetCaCert"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_cert_key",
+    "c++": "esp_wifi_sta_wpa2_ent_set_cert_key(const unsigned char *, int, const unsigned char *, int, const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetCertKey"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_disable_time_check",
+    "c++": "esp_wifi_sta_wpa2_ent_set_disable_time_check(bool)",
+    "go": "EspWifiStaWpa2EntSetDisableTimeCheck"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_fast_phase1_params",
+    "c++": "esp_wifi_sta_wpa2_ent_set_fast_phase1_params(esp_eap_fast_config)",
+    "go": "EspEapFastConfig.EspWifiStaWpa2EntSetFastPhase1Params"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_identity",
+    "c++": "esp_wifi_sta_wpa2_ent_set_identity(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetIdentity"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_new_password",
+    "c++": "esp_wifi_sta_wpa2_ent_set_new_password(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetNewPassword"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_pac_file",
+    "c++": "esp_wifi_sta_wpa2_ent_set_pac_file(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetPacFile"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_password",
+    "c++": "esp_wifi_sta_wpa2_ent_set_password(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetPassword"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_ttls_phase2_method",
+    "c++": "esp_wifi_sta_wpa2_ent_set_ttls_phase2_method(esp_eap_ttls_phase2_types)",
+    "go": "EspEapTtlsPhase2Types.EspWifiStaWpa2EntSetTtlsPhase2Method"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_ent_set_username",
+    "c++": "esp_wifi_sta_wpa2_ent_set_username(const unsigned char *, int)",
+    "go": "EspWifiStaWpa2EntSetUsername"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_set_suiteb_192bit_certification",
+    "c++": "esp_wifi_sta_wpa2_set_suiteb_192bit_certification(bool)",
+    "go": "EspWifiStaWpa2SetSuiteb192bitCertification"
+  },
+  {
+    "mangle": "esp_wifi_sta_wpa2_use_default_cert_bundle",
+    "c++": "esp_wifi_sta_wpa2_use_default_cert_bundle(bool)",
+    "go": "EspWifiStaWpa2UseDefaultCertBundle"
+  },
+  {
+    "mangle": "esp_wifi_wps_disable",
+    "c++": "esp_wifi_wps_disable()",
+    "go": "EspWifiWpsDisable"
+  },
+  {
+    "mangle": "esp_wifi_wps_enable",
+    "c++": "esp_wifi_wps_enable(const esp_wps_config_t *)",
+    "go": "(*EspWpsConfigT).EspWifiWpsEnable"
+  },
+  {
+    "mangle": "esp_wifi_wps_start",
+    "c++": "esp_wifi_wps_start(int)",
+    "go": "EspWifiWpsStart"
+  },
+  {
+    "mangle": "esp_wnm_is_btm_supported_connection",
+    "c++": "esp_wnm_is_btm_supported_connection()",
+    "go": "EspWnmIsBtmSupportedConnection"
+  },
+  {
+    "mangle": "esp_wnm_send_bss_transition_mgmt_query",
+    "c++": "esp_wnm_send_bss_transition_mgmt_query(enum btm_query_reason, const char *, int)",
+    "go": "Enum btmQueryReason.EspWnmSendBssTransitionMgmtQuery"
+  },
+  {
+    "mangle": "os_get_random",
+    "c++": "os_get_random(unsigned char *, size_t)",
+    "go": "OsGetRandom"
+  },
+  {
+    "mangle": "os_get_time",
+    "c++": "os_get_time(struct os_time *)",
+    "go": "(*Struct osTime).OsGetTime"
+  },
+  {
+    "mangle": "os_gmtime",
+    "c++": "os_gmtime(os_time_t, struct os_tm *)",
+    "go": "OsTimeT.OsGmtime"
+  },
+  {
+    "mangle": "os_mktime",
+    "c++": "os_mktime(int, int, int, int, int, int, os_time_t *)",
+    "go": "OsMktime"
+  },
+  {
+    "mangle": "os_random",
+    "c++": "os_random()",
+    "go": "OsRandom"
+  },
+  {
+    "mangle": "os_sleep",
+    "c++": "os_sleep(os_time_t, os_time_t)",
+    "go": "OsTimeT.OsSleep"
+  },
+  {
+    "mangle": "wpabuf_alloc",
+    "c++": "wpabuf_alloc(int)",
+    "go": "WpabufAlloc"
+  },
+  {
+    "mangle": "wpabuf_alloc_copy",
+    "c++": "wpabuf_alloc_copy(const void *, int)",
+    "go": "WpabufAllocCopy"
+  },
+  {
+    "mangle": "wpabuf_alloc_ext_data",
+    "c++": "wpabuf_alloc_ext_data(int *, int)",
+    "go": "WpabufAllocExtData"
+  },
+  {
+    "mangle": "wpabuf_clear_free",
+    "c++": "wpabuf_clear_free(struct wpabuf *)",
+    "go": "(*Struct wpabuf).WpabufClearFree"
+  },
+  {
+    "mangle": "wpabuf_concat",
+    "c++": "wpabuf_concat(struct wpabuf *, struct wpabuf *)",
+    "go": "(*Struct wpabuf).WpabufConcat"
+  },
+  {
+    "mangle": "wpabuf_dup",
+    "c++": "wpabuf_dup(const struct wpabuf *)",
+    "go": "(*Struct wpabuf).WpabufDup"
+  },
+  {
+    "mangle": "wpabuf_free",
+    "c++": "wpabuf_free(struct wpabuf *)",
+    "go": "(*Struct wpabuf).WpabufFree"
+  },
+  {
+    "mangle": "wpabuf_put",
+    "c++": "wpabuf_put(struct wpabuf *, int)",
+    "go": "(*Struct wpabuf).WpabufPut"
+  },
+  {
+    "mangle": "wpabuf_resize",
+    "c++": "wpabuf_resize(struct wpabuf **, int)",
+    "go": "WpabufResize"
+  },
+  {
+    "mangle": "wpabuf_zeropad",
+    "c++": "wpabuf_zeropad(struct wpabuf *, int)",
+    "go": "(*Struct wpabuf).WpabufZeropad"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "mangle": "emac_esp_del_dma",
+    "c++": "emac_esp_del_dma(emac_esp_dma_handle_t)",
+    "go": "EmacEspDelDma"
+  },
+  {
+    "mangle": "emac_esp_dma_alloc_recv_buf",
+    "c++": "emac_esp_dma_alloc_recv_buf(emac_esp_dma_handle_t, uint32_t *)",
+    "go": "EmacEspDmaAllocRecvBuf"
+  },
+  {
+    "mangle": "emac_esp_dma_clear_tdes0_ctrl_bits",
+    "c++": "emac_esp_dma_clear_tdes0_ctrl_bits(emac_esp_dma_handle_t, uint32_t)",
+    "go": "EmacEspDmaClearTdes0CtrlBits"
+  },
+  {
+    "mangle": "emac_esp_dma_flush_recv_frame",
+    "c++": "emac_esp_dma_flush_recv_frame(emac_esp_dma_handle_t)",
+    "go": "EmacEspDmaFlushRecvFrame"
+  },
+  {
+    "mangle": "emac_esp_dma_get_remain_frames",
+    "c++": "emac_esp_dma_get_remain_frames(emac_esp_dma_handle_t, uint32_t *, uint32_t *)",
+    "go": "EmacEspDmaGetRemainFrames"
+  },
+  {
+    "mangle": "emac_esp_dma_receive_frame",
+    "c++": "emac_esp_dma_receive_frame(emac_esp_dma_handle_t, uint8_t *, uint32_t)",
+    "go": "EmacEspDmaReceiveFrame"
+  },
+  {
+    "mangle": "emac_esp_dma_reset",
+    "c++": "emac_esp_dma_reset(emac_esp_dma_handle_t)",
+    "go": "EmacEspDmaReset"
+  },
+  {
+    "mangle": "emac_esp_dma_set_tdes0_ctrl_bits",
+    "c++": "emac_esp_dma_set_tdes0_ctrl_bits(emac_esp_dma_handle_t, uint32_t)",
+    "go": "EmacEspDmaSetTdes0CtrlBits"
+  },
+  {
+    "mangle": "emac_esp_dma_transmit_frame",
+    "c++": "emac_esp_dma_transmit_frame(emac_esp_dma_handle_t, uint8_t *, uint32_t)",
+    "go": "EmacEspDmaTransmitFrame"
+  },
+  {
+    "mangle": "emac_esp_dma_transmit_multiple_buf_frame",
+    "c++": "emac_esp_dma_transmit_multiple_buf_frame(emac_esp_dma_handle_t, uint8_t **, uint32_t *, uint32_t)",
+    "go": "EmacEspDmaTransmitMultipleBufFrame"
+  },
+  {
+    "mangle": "emac_esp_gpio_deinit_all",
+    "c++": "emac_esp_gpio_deinit_all()",
+    "go": "EmacEspGpioDeinitAll"
+  },
+  {
+    "mangle": "emac_esp_gpio_init_smi",
+    "c++": "emac_esp_gpio_init_smi(const emac_esp_smi_gpio_config_t *)",
+    "go": "(*EmacEspSmiGpioConfigT).EmacEspGpioInitSmi"
+  },
+  {
+    "mangle": "emac_esp_gpio_matrix_init_mii",
+    "c++": "emac_esp_gpio_matrix_init_mii(const eth_mac_mii_gpio_config_t *)",
+    "go": "(*EthMacMiiGpioConfigT).EmacEspGpioMatrixInitMii"
+  },
+  {
+    "mangle": "emac_esp_iomux_init_mii",
+    "c++": "emac_esp_iomux_init_mii(const eth_mac_mii_gpio_config_t *)",
+    "go": "(*EthMacMiiGpioConfigT).EmacEspIomuxInitMii"
+  },
+  {
+    "mangle": "emac_esp_iomux_init_rmii",
+    "c++": "emac_esp_iomux_init_rmii(const eth_mac_rmii_gpio_config_t *)",
+    "go": "(*EthMacRmiiGpioConfigT).EmacEspIomuxInitRmii"
+  },
+  {
+    "mangle": "emac_esp_iomux_mii_init_rx_er",
+    "c++": "emac_esp_iomux_mii_init_rx_er(int)",
+    "go": "EmacEspIomuxMiiInitRxEr"
+  },
+  {
+    "mangle": "emac_esp_iomux_mii_init_tx_er",
+    "c++": "emac_esp_iomux_mii_init_tx_er(int)",
+    "go": "EmacEspIomuxMiiInitTxEr"
+  },
+  {
+    "mangle": "emac_esp_iomux_rmii_clk_input",
+    "c++": "emac_esp_iomux_rmii_clk_input(int)",
+    "go": "EmacEspIomuxRmiiClkInput"
+  },
+  {
+    "mangle": "emac_esp_iomux_rmii_clk_ouput",
+    "c++": "emac_esp_iomux_rmii_clk_ouput(int)",
+    "go": "EmacEspIomuxRmiiClkOuput"
+  },
+  {
+    "mangle": "emac_esp_iomux_rmii_init_rx_er",
+    "c++": "emac_esp_iomux_rmii_init_rx_er(int)",
+    "go": "EmacEspIomuxRmiiInitRxEr"
+  },
+  {
+    "mangle": "emac_esp_iomux_rmii_init_tx_er",
+    "c++": "emac_esp_iomux_rmii_init_tx_er(int)",
+    "go": "EmacEspIomuxRmiiInitTxEr"
+  },
+  {
+    "mangle": "emac_esp_new_dma",
+    "c++": "emac_esp_new_dma(const emac_esp_dma_config_t *, emac_esp_dma_handle_t *)",
+    "go": "(*EmacEspDmaConfigT).EmacEspNewDma"
+  },
+  {
+    "mangle": "esp_eth_decrease_reference",
+    "c++": "esp_eth_decrease_reference(esp_eth_handle_t)",
+    "go": "EspEthDecreaseReference"
+  },
+  {
+    "mangle": "esp_eth_del_netif_glue",
+    "c++": "esp_eth_del_netif_glue(esp_eth_netif_glue_handle_t)",
+    "go": "EspEthDelNetifGlue"
+  },
+  {
+    "mangle": "esp_eth_driver_install",
+    "c++": "esp_eth_driver_install(const esp_eth_config_t *, esp_eth_handle_t *)",
+    "go": "(*EspEthConfigT).EspEthDriverInstall"
+  },
+  {
+    "mangle": "esp_eth_driver_uninstall",
+    "c++": "esp_eth_driver_uninstall(esp_eth_handle_t)",
+    "go": "EspEthDriverUninstall"
+  },
+  {
+    "mangle": "esp_eth_get_mac_instance",
+    "c++": "esp_eth_get_mac_instance(esp_eth_handle_t, esp_eth_mac_t **)",
+    "go": "EspEthGetMacInstance"
+  },
+  {
+    "mangle": "esp_eth_get_phy_instance",
+    "c++": "esp_eth_get_phy_instance(esp_eth_handle_t, esp_eth_phy_t **)",
+    "go": "EspEthGetPhyInstance"
+  },
+  {
+    "mangle": "esp_eth_increase_reference",
+    "c++": "esp_eth_increase_reference(esp_eth_handle_t)",
+    "go": "EspEthIncreaseReference"
+  },
+  {
+    "mangle": "esp_eth_ioctl",
+    "c++": "esp_eth_ioctl(esp_eth_handle_t, esp_eth_io_cmd_t, void *)",
+    "go": "EspEthIoctl"
+  },
+  {
+    "mangle": "esp_eth_mac_new_esp32",
+    "c++": "esp_eth_mac_new_esp32(const eth_esp32_emac_config_t *, const eth_mac_config_t *)",
+    "go": "(*EthEsp32EmacConfigT).EspEthMacNewEsp32"
+  },
+  {
+    "mangle": "esp_eth_new_netif_glue",
+    "c++": "esp_eth_new_netif_glue(esp_eth_handle_t)",
+    "go": "EspEthNewNetifGlue"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_advertise_pause_ability",
+    "c++": "esp_eth_phy_802_3_advertise_pause_ability(phy_802_3_t *, uint32_t)",
+    "go": "(*Phy8023T).EspEthPhy8023AdvertisePauseAbility"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_autonego_ctrl",
+    "c++": "esp_eth_phy_802_3_autonego_ctrl(phy_802_3_t *, eth_phy_autoneg_cmd_t, bool *)",
+    "go": "(*Phy8023T).EspEthPhy8023AutonegoCtrl"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_basic_phy_deinit",
+    "c++": "esp_eth_phy_802_3_basic_phy_deinit(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023BasicPhyDeinit"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_basic_phy_init",
+    "c++": "esp_eth_phy_802_3_basic_phy_init(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023BasicPhyInit"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_deinit",
+    "c++": "esp_eth_phy_802_3_deinit(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023Deinit"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_del",
+    "c++": "esp_eth_phy_802_3_del(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023Del"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_detect_phy_addr",
+    "c++": "esp_eth_phy_802_3_detect_phy_addr(esp_eth_mediator_t *, int *)",
+    "go": "(*EspEthMediatorT).EspEthPhy8023DetectPhyAddr"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_get_addr",
+    "c++": "esp_eth_phy_802_3_get_addr(phy_802_3_t *, uint32_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023GetAddr"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_get_mmd_addr",
+    "c++": "esp_eth_phy_802_3_get_mmd_addr(phy_802_3_t *, uint8_t, uint16_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023GetMmdAddr"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_init",
+    "c++": "esp_eth_phy_802_3_init(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023Init"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_loopback",
+    "c++": "esp_eth_phy_802_3_loopback(phy_802_3_t *, bool)",
+    "go": "(*Phy8023T).EspEthPhy8023Loopback"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_obj_config_init",
+    "c++": "esp_eth_phy_802_3_obj_config_init(phy_802_3_t *, const eth_phy_config_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023ObjConfigInit"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_pwrctl",
+    "c++": "esp_eth_phy_802_3_pwrctl(phy_802_3_t *, bool)",
+    "go": "(*Phy8023T).EspEthPhy8023Pwrctl"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_read_manufac_info",
+    "c++": "esp_eth_phy_802_3_read_manufac_info(phy_802_3_t *, uint8_t *, uint8_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023ReadManufacInfo"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_read_mmd_data",
+    "c++": "esp_eth_phy_802_3_read_mmd_data(phy_802_3_t *, uint8_t, esp_eth_phy_802_3_mmd_func_t, uint32_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023ReadMmdData"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_read_mmd_register",
+    "c++": "esp_eth_phy_802_3_read_mmd_register(phy_802_3_t *, uint8_t, uint16_t, uint32_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023ReadMmdRegister"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_read_oui",
+    "c++": "esp_eth_phy_802_3_read_oui(phy_802_3_t *, uint32_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023ReadOui"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_reset",
+    "c++": "esp_eth_phy_802_3_reset(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023Reset"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_reset_hw",
+    "c++": "esp_eth_phy_802_3_reset_hw(phy_802_3_t *, uint32_t)",
+    "go": "(*Phy8023T).EspEthPhy8023ResetHw"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_addr",
+    "c++": "esp_eth_phy_802_3_set_addr(phy_802_3_t *, uint32_t)",
+    "go": "(*Phy8023T).EspEthPhy8023SetAddr"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_duplex",
+    "c++": "esp_eth_phy_802_3_set_duplex(phy_802_3_t *, eth_duplex_t)",
+    "go": "(*Phy8023T).EspEthPhy8023SetDuplex"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_link",
+    "c++": "esp_eth_phy_802_3_set_link(phy_802_3_t *, eth_link_t)",
+    "go": "(*Phy8023T).EspEthPhy8023SetLink"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_mediator",
+    "c++": "esp_eth_phy_802_3_set_mediator(phy_802_3_t *, esp_eth_mediator_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023SetMediator"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_mmd_addr",
+    "c++": "esp_eth_phy_802_3_set_mmd_addr(phy_802_3_t *, uint8_t, uint16_t)",
+    "go": "(*Phy8023T).EspEthPhy8023SetMmdAddr"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_set_speed",
+    "c++": "esp_eth_phy_802_3_set_speed(phy_802_3_t *, eth_speed_t)",
+    "go": "(*Phy8023T).EspEthPhy8023SetSpeed"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_updt_link_dup_spd",
+    "c++": "esp_eth_phy_802_3_updt_link_dup_spd(phy_802_3_t *)",
+    "go": "(*Phy8023T).EspEthPhy8023UpdtLinkDupSpd"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_write_mmd_data",
+    "c++": "esp_eth_phy_802_3_write_mmd_data(phy_802_3_t *, uint8_t, esp_eth_phy_802_3_mmd_func_t, uint32_t)",
+    "go": "(*Phy8023T).EspEthPhy8023WriteMmdData"
+  },
+  {
+    "mangle": "esp_eth_phy_802_3_write_mmd_register",
+    "c++": "esp_eth_phy_802_3_write_mmd_register(phy_802_3_t *, uint8_t, uint16_t, uint32_t)",
+    "go": "(*Phy8023T).EspEthPhy8023WriteMmdRegister"
+  },
+  {
+    "mangle": "esp_eth_phy_new_dp83848",
+    "c++": "esp_eth_phy_new_dp83848(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewDp83848"
+  },
+  {
+    "mangle": "esp_eth_phy_new_generic",
+    "c++": "esp_eth_phy_new_generic(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewGeneric"
+  },
+  {
+    "mangle": "esp_eth_phy_new_ip101",
+    "c++": "esp_eth_phy_new_ip101(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewIp101"
+  },
+  {
+    "mangle": "esp_eth_phy_new_ksz80xx",
+    "c++": "esp_eth_phy_new_ksz80xx(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewKsz80xx"
+  },
+  {
+    "mangle": "esp_eth_phy_new_lan87xx",
+    "c++": "esp_eth_phy_new_lan87xx(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewLan87xx"
+  },
+  {
+    "mangle": "esp_eth_phy_new_rtl8201",
+    "c++": "esp_eth_phy_new_rtl8201(const eth_phy_config_t *)",
+    "go": "(*EthPhyConfigT).EspEthPhyNewRtl8201"
+  },
+  {
+    "mangle": "esp_eth_start",
+    "c++": "esp_eth_start(esp_eth_handle_t)",
+    "go": "EspEthStart"
+  },
+  {
+    "mangle": "esp_eth_stop",
+    "c++": "esp_eth_stop(esp_eth_handle_t)",
+    "go": "EspEthStop"
+  },
+  {
+    "mangle": "esp_eth_transmit",
+    "c++": "esp_eth_transmit(esp_eth_handle_t, void *, size_t)",
+    "go": "EspEthTransmit"
+  },
+  {
+    "mangle": "esp_eth_transmit_vargs",
+    "c++": "esp_eth_transmit_vargs(esp_eth_handle_t, uint32_t, ...)",
+    "go": "EspEthTransmitVargs"
+  },
+  {
+    "mangle": "esp_eth_update_input_path",
+    "c++": "esp_eth_update_input_path(esp_eth_handle_t, esp_err_t (*)(esp_eth_handle_t, uint8_t *, uint32_t, void *), void *)",
+    "go": "EspEthUpdateInputPath"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "mangle": "esp_coex_common_env_is_chip_wrapper",
+    "c++": "esp_coex_common_env_is_chip_wrapper()",
+    "go": "EspCoexCommonEnvIsChipWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_int_disable_wrapper",
+    "c++": "esp_coex_common_int_disable_wrapper(void *)",
+    "go": "EspCoexCommonIntDisableWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_int_restore_wrapper",
+    "c++": "esp_coex_common_int_restore_wrapper(void *, uint32_t)",
+    "go": "EspCoexCommonIntRestoreWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_malloc_internal_wrapper",
+    "c++": "esp_coex_common_malloc_internal_wrapper(int)",
+    "go": "EspCoexCommonMallocInternalWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_create_wrapper",
+    "c++": "esp_coex_common_semphr_create_wrapper(uint32_t, uint32_t)",
+    "go": "EspCoexCommonSemphrCreateWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_delete_wrapper",
+    "c++": "esp_coex_common_semphr_delete_wrapper(void *)",
+    "go": "EspCoexCommonSemphrDeleteWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_give_wrapper",
+    "c++": "esp_coex_common_semphr_give_wrapper(void *)",
+    "go": "EspCoexCommonSemphrGiveWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_take_wrapper",
+    "c++": "esp_coex_common_semphr_take_wrapper(void *, uint32_t)",
+    "go": "EspCoexCommonSemphrTakeWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_spin_lock_create_wrapper",
+    "c++": "esp_coex_common_spin_lock_create_wrapper()",
+    "go": "EspCoexCommonSpinLockCreateWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_task_yield_from_isr_wrapper",
+    "c++": "esp_coex_common_task_yield_from_isr_wrapper()",
+    "go": "EspCoexCommonTaskYieldFromIsrWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_arm_us_wrapper",
+    "c++": "esp_coex_common_timer_arm_us_wrapper(void *, uint32_t, bool)",
+    "go": "EspCoexCommonTimerArmUsWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_disarm_wrapper",
+    "c++": "esp_coex_common_timer_disarm_wrapper(void *)",
+    "go": "EspCoexCommonTimerDisarmWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_done_wrapper",
+    "c++": "esp_coex_common_timer_done_wrapper(void *)",
+    "go": "EspCoexCommonTimerDoneWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_setfn_wrapper",
+    "c++": "esp_coex_common_timer_setfn_wrapper(void *, void *, void *)",
+    "go": "EspCoexCommonTimerSetfnWrapper"
+  }
+]

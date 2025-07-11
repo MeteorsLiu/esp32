@@ -1,0 +1,372 @@
+[
+  {
+    "mangle": "bootloader_clock_configure",
+    "c++": "bootloader_clock_configure()",
+    "go": "BootloaderClockConfigure"
+  },
+  {
+    "mangle": "bootloader_clock_get_rated_freq_mhz",
+    "c++": "bootloader_clock_get_rated_freq_mhz()",
+    "go": "BootloaderClockGetRatedFreqMhz"
+  },
+  {
+    "mangle": "bootloader_common_check_chip_validity",
+    "c++": "bootloader_common_check_chip_validity(const esp_image_header_t *, esp_image_type)",
+    "go": "(*EspImageHeaderT).BootloaderCommonCheckChipValidity"
+  },
+  {
+    "mangle": "bootloader_common_check_long_hold_gpio",
+    "c++": "bootloader_common_check_long_hold_gpio(uint32_t, uint32_t)",
+    "go": "BootloaderCommonCheckLongHoldGpio"
+  },
+  {
+    "mangle": "bootloader_common_check_long_hold_gpio_level",
+    "c++": "bootloader_common_check_long_hold_gpio_level(uint32_t, uint32_t, bool)",
+    "go": "BootloaderCommonCheckLongHoldGpioLevel"
+  },
+  {
+    "mangle": "bootloader_common_erase_part_type_data",
+    "c++": "bootloader_common_erase_part_type_data(const char *, bool)",
+    "go": "BootloaderCommonErasePartTypeData"
+  },
+  {
+    "mangle": "bootloader_common_get_active_otadata",
+    "c++": "bootloader_common_get_active_otadata(esp_ota_select_entry_t *)",
+    "go": "(*EspOtaSelectEntryT).BootloaderCommonGetActiveOtadata"
+  },
+  {
+    "mangle": "bootloader_common_get_chip_ver_pkg",
+    "c++": "bootloader_common_get_chip_ver_pkg()",
+    "go": "BootloaderCommonGetChipVerPkg"
+  },
+  {
+    "mangle": "bootloader_common_get_sha256_of_partition",
+    "c++": "bootloader_common_get_sha256_of_partition(uint32_t, uint32_t, int, uint8_t *)",
+    "go": "BootloaderCommonGetSha256OfPartition"
+  },
+  {
+    "mangle": "bootloader_common_label_search",
+    "c++": "bootloader_common_label_search(const char *, char *)",
+    "go": "BootloaderCommonLabelSearch"
+  },
+  {
+    "mangle": "bootloader_common_ota_select_crc",
+    "c++": "bootloader_common_ota_select_crc(const esp_ota_select_entry_t *)",
+    "go": "(*EspOtaSelectEntryT).BootloaderCommonOtaSelectCrc"
+  },
+  {
+    "mangle": "bootloader_common_ota_select_invalid",
+    "c++": "bootloader_common_ota_select_invalid(const esp_ota_select_entry_t *)",
+    "go": "(*EspOtaSelectEntryT).BootloaderCommonOtaSelectInvalid"
+  },
+  {
+    "mangle": "bootloader_common_ota_select_valid",
+    "c++": "bootloader_common_ota_select_valid(const esp_ota_select_entry_t *)",
+    "go": "(*EspOtaSelectEntryT).BootloaderCommonOtaSelectValid"
+  },
+  {
+    "mangle": "bootloader_common_read_otadata",
+    "c++": "bootloader_common_read_otadata(const esp_partition_pos_t *, esp_ota_select_entry_t *)",
+    "go": "(*EspPartitionPosT).BootloaderCommonReadOtadata"
+  },
+  {
+    "mangle": "bootloader_common_select_otadata",
+    "c++": "bootloader_common_select_otadata(const esp_ota_select_entry_t *, bool *, bool)",
+    "go": "(*EspOtaSelectEntryT).BootloaderCommonSelectOtadata"
+  },
+  {
+    "mangle": "bootloader_common_vddsdio_configure",
+    "c++": "bootloader_common_vddsdio_configure()",
+    "go": "BootloaderCommonVddsdioConfigure"
+  },
+  {
+    "mangle": "bootloader_configure_spi_pins",
+    "c++": "bootloader_configure_spi_pins(int)",
+    "go": "BootloaderConfigureSpiPins"
+  },
+  {
+    "mangle": "bootloader_enable_qio_mode",
+    "c++": "bootloader_enable_qio_mode()",
+    "go": "BootloaderEnableQioMode"
+  },
+  {
+    "mangle": "bootloader_enable_wp",
+    "c++": "bootloader_enable_wp()",
+    "go": "BootloaderEnableWp"
+  },
+  {
+    "mangle": "bootloader_execute_flash_command",
+    "c++": "bootloader_execute_flash_command(uint8_t, uint32_t, uint8_t, uint8_t)",
+    "go": "BootloaderExecuteFlashCommand"
+  },
+  {
+    "mangle": "bootloader_fill_random",
+    "c++": "bootloader_fill_random(void *, size_t)",
+    "go": "BootloaderFillRandom"
+  },
+  {
+    "mangle": "bootloader_flash_clock_config",
+    "c++": "bootloader_flash_clock_config(const esp_image_header_t *)",
+    "go": "(*EspImageHeaderT).BootloaderFlashClockConfig"
+  },
+  {
+    "mangle": "bootloader_flash_cs_timing_config",
+    "c++": "bootloader_flash_cs_timing_config()",
+    "go": "BootloaderFlashCsTimingConfig"
+  },
+  {
+    "mangle": "bootloader_flash_dummy_config",
+    "c++": "bootloader_flash_dummy_config(const esp_image_header_t *)",
+    "go": "(*EspImageHeaderT).BootloaderFlashDummyConfig"
+  },
+  {
+    "mangle": "bootloader_flash_erase_range",
+    "c++": "bootloader_flash_erase_range(uint32_t, uint32_t)",
+    "go": "BootloaderFlashEraseRange"
+  },
+  {
+    "mangle": "bootloader_flash_erase_sector",
+    "c++": "bootloader_flash_erase_sector(size_t)",
+    "go": "BootloaderFlashEraseSector"
+  },
+  {
+    "mangle": "bootloader_flash_get_spi_mode",
+    "c++": "bootloader_flash_get_spi_mode()",
+    "go": "BootloaderFlashGetSpiMode"
+  },
+  {
+    "mangle": "bootloader_flash_get_wp_pin",
+    "c++": "bootloader_flash_get_wp_pin()",
+    "go": "BootloaderFlashGetWpPin"
+  },
+  {
+    "mangle": "bootloader_flash_gpio_config",
+    "c++": "bootloader_flash_gpio_config(const esp_image_header_t *)",
+    "go": "(*EspImageHeaderT).BootloaderFlashGpioConfig"
+  },
+  {
+    "mangle": "bootloader_flash_is_octal_mode_enabled",
+    "c++": "bootloader_flash_is_octal_mode_enabled()",
+    "go": "BootloaderFlashIsOctalModeEnabled"
+  },
+  {
+    "mangle": "bootloader_flash_read",
+    "c++": "bootloader_flash_read(size_t, void *, size_t, bool)",
+    "go": "BootloaderFlashRead"
+  },
+  {
+    "mangle": "bootloader_flash_read_sfdp",
+    "c++": "bootloader_flash_read_sfdp(uint32_t, unsigned int)",
+    "go": "BootloaderFlashReadSfdp"
+  },
+  {
+    "mangle": "bootloader_flash_reset_chip",
+    "c++": "bootloader_flash_reset_chip()",
+    "go": "BootloaderFlashResetChip"
+  },
+  {
+    "mangle": "bootloader_flash_unlock",
+    "c++": "bootloader_flash_unlock()",
+    "go": "BootloaderFlashUnlock"
+  },
+  {
+    "mangle": "bootloader_flash_update_id",
+    "c++": "bootloader_flash_update_id()",
+    "go": "BootloaderFlashUpdateId"
+  },
+  {
+    "mangle": "bootloader_flash_update_size",
+    "c++": "bootloader_flash_update_size(uint32_t)",
+    "go": "BootloaderFlashUpdateSize"
+  },
+  {
+    "mangle": "bootloader_flash_write",
+    "c++": "bootloader_flash_write(size_t, void *, size_t, bool)",
+    "go": "BootloaderFlashWrite"
+  },
+  {
+    "mangle": "bootloader_flash_xmc_startup",
+    "c++": "bootloader_flash_xmc_startup()",
+    "go": "BootloaderFlashXmcStartup"
+  },
+  {
+    "mangle": "bootloader_init_mem",
+    "c++": "bootloader_init_mem()",
+    "go": "BootloaderInitMem"
+  },
+  {
+    "mangle": "bootloader_init_spi_flash",
+    "c++": "bootloader_init_spi_flash()",
+    "go": "BootloaderInitSpiFlash"
+  },
+  {
+    "mangle": "bootloader_load_image",
+    "c++": "bootloader_load_image(const esp_partition_pos_t *, esp_image_metadata_t *)",
+    "go": "(*EspPartitionPosT).BootloaderLoadImage"
+  },
+  {
+    "mangle": "bootloader_load_image_no_verify",
+    "c++": "bootloader_load_image_no_verify(const esp_partition_pos_t *, esp_image_metadata_t *)",
+    "go": "(*EspPartitionPosT).BootloaderLoadImageNoVerify"
+  },
+  {
+    "mangle": "bootloader_mmap",
+    "c++": "bootloader_mmap(uint32_t, uint32_t)",
+    "go": "BootloaderMmap"
+  },
+  {
+    "mangle": "bootloader_mmap_get_free_pages",
+    "c++": "bootloader_mmap_get_free_pages()",
+    "go": "BootloaderMmapGetFreePages"
+  },
+  {
+    "mangle": "bootloader_munmap",
+    "c++": "bootloader_munmap(const void *)",
+    "go": "BootloaderMunmap"
+  },
+  {
+    "mangle": "bootloader_random_disable",
+    "c++": "bootloader_random_disable()",
+    "go": "BootloaderRandomDisable"
+  },
+  {
+    "mangle": "bootloader_random_enable",
+    "c++": "bootloader_random_enable()",
+    "go": "BootloaderRandomEnable"
+  },
+  {
+    "mangle": "bootloader_read_flash_id",
+    "c++": "bootloader_read_flash_id()",
+    "go": "BootloaderReadFlashId"
+  },
+  {
+    "mangle": "bootloader_read_status_16b_rdsr_rdsr2",
+    "c++": "bootloader_read_status_16b_rdsr_rdsr2()",
+    "go": "BootloaderReadStatus16bRdsrRdsr2"
+  },
+  {
+    "mangle": "bootloader_read_status_8b_rdsr",
+    "c++": "bootloader_read_status_8b_rdsr()",
+    "go": "BootloaderReadStatus8bRdsr"
+  },
+  {
+    "mangle": "bootloader_read_status_8b_rdsr2",
+    "c++": "bootloader_read_status_8b_rdsr2()",
+    "go": "BootloaderReadStatus8bRdsr2"
+  },
+  {
+    "mangle": "bootloader_read_status_8b_rdsr3",
+    "c++": "bootloader_read_status_8b_rdsr3()",
+    "go": "BootloaderReadStatus8bRdsr3"
+  },
+  {
+    "mangle": "bootloader_read_status_8b_xmc25qu64a",
+    "c++": "bootloader_read_status_8b_xmc25qu64a()",
+    "go": "BootloaderReadStatus8bXmc25qu64a"
+  },
+  {
+    "mangle": "bootloader_spi_flash_reset",
+    "c++": "bootloader_spi_flash_reset()",
+    "go": "BootloaderSpiFlashReset"
+  },
+  {
+    "mangle": "bootloader_write_status_16b_wrsr",
+    "c++": "bootloader_write_status_16b_wrsr(unsigned int)",
+    "go": "BootloaderWriteStatus16bWrsr"
+  },
+  {
+    "mangle": "bootloader_write_status_8b_wrsr",
+    "c++": "bootloader_write_status_8b_wrsr(unsigned int)",
+    "go": "BootloaderWriteStatus8bWrsr"
+  },
+  {
+    "mangle": "bootloader_write_status_8b_wrsr2",
+    "c++": "bootloader_write_status_8b_wrsr2(unsigned int)",
+    "go": "BootloaderWriteStatus8bWrsr2"
+  },
+  {
+    "mangle": "bootloader_write_status_8b_wrsr3",
+    "c++": "bootloader_write_status_8b_wrsr3(unsigned int)",
+    "go": "BootloaderWriteStatus8bWrsr3"
+  },
+  {
+    "mangle": "bootloader_write_status_8b_xmc25qu64a",
+    "c++": "bootloader_write_status_8b_xmc25qu64a(unsigned int)",
+    "go": "BootloaderWriteStatus8bXmc25qu64a"
+  },
+  {
+    "mangle": "esp_flash_encryption_cfg_verify_release_mode",
+    "c++": "esp_flash_encryption_cfg_verify_release_mode()",
+    "go": "EspFlashEncryptionCfgVerifyReleaseMode"
+  },
+  {
+    "mangle": "esp_flash_encryption_enabled",
+    "c++": "esp_flash_encryption_enabled()",
+    "go": "EspFlashEncryptionEnabled"
+  },
+  {
+    "mangle": "esp_flash_encryption_init_checks",
+    "c++": "esp_flash_encryption_init_checks()",
+    "go": "EspFlashEncryptionInitChecks"
+  },
+  {
+    "mangle": "esp_flash_encryption_set_release_mode",
+    "c++": "esp_flash_encryption_set_release_mode()",
+    "go": "EspFlashEncryptionSetReleaseMode"
+  },
+  {
+    "mangle": "esp_flash_write_protect_crypt_cnt",
+    "c++": "esp_flash_write_protect_crypt_cnt()",
+    "go": "EspFlashWriteProtectCryptCnt"
+  },
+  {
+    "mangle": "esp_get_flash_encryption_mode",
+    "c++": "esp_get_flash_encryption_mode()",
+    "go": "EspGetFlashEncryptionMode"
+  },
+  {
+    "mangle": "esp_image_get_flash_size",
+    "c++": "esp_image_get_flash_size(esp_image_flash_size_t)",
+    "go": "EspImageFlashSizeT.EspImageGetFlashSize"
+  },
+  {
+    "mangle": "esp_image_get_metadata",
+    "c++": "esp_image_get_metadata(const esp_partition_pos_t *, esp_image_metadata_t *)",
+    "go": "(*EspPartitionPosT).EspImageGetMetadata"
+  },
+  {
+    "mangle": "esp_image_verify",
+    "c++": "esp_image_verify(esp_image_load_mode_t, const esp_partition_pos_t *, esp_image_metadata_t *)",
+    "go": "EspImageLoadModeT.EspImageVerify"
+  },
+  {
+    "mangle": "esp_image_verify_bootloader",
+    "c++": "esp_image_verify_bootloader(uint32_t *)",
+    "go": "EspImageVerifyBootloader"
+  },
+  {
+    "mangle": "esp_image_verify_bootloader_data",
+    "c++": "esp_image_verify_bootloader_data(esp_image_metadata_t *)",
+    "go": "(*EspImageMetadataT).EspImageVerifyBootloaderData"
+  },
+  {
+    "mangle": "esp_partition_table_verify",
+    "c++": "esp_partition_table_verify(const esp_partition_info_t *, bool, int *)",
+    "go": "(*EspPartitionInfoT).EspPartitionTableVerify"
+  },
+  {
+    "mangle": "esp_secure_boot_cfg_verify_release_mode",
+    "c++": "esp_secure_boot_cfg_verify_release_mode()",
+    "go": "EspSecureBootCfgVerifyReleaseMode"
+  },
+  {
+    "mangle": "esp_secure_boot_enable_secure_features",
+    "c++": "esp_secure_boot_enable_secure_features()",
+    "go": "EspSecureBootEnableSecureFeatures"
+  },
+  {
+    "mangle": "esp_secure_boot_init_checks",
+    "c++": "esp_secure_boot_init_checks()",
+    "go": "EspSecureBootInitChecks"
+  }
+]

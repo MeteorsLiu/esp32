@@ -1,0 +1,87 @@
+[
+  {
+    "mangle": "sdmmc_host_deinit",
+    "c++": "sdmmc_host_deinit()",
+    "go": "SdmmcHostDeinit"
+  },
+  {
+    "mangle": "sdmmc_host_deinit_slot",
+    "c++": "sdmmc_host_deinit_slot(int)",
+    "go": "SdmmcHostDeinitSlot"
+  },
+  {
+    "mangle": "sdmmc_host_do_transaction",
+    "c++": "sdmmc_host_do_transaction(int, sdmmc_command_t *)",
+    "go": "SdmmcHostDoTransaction"
+  },
+  {
+    "mangle": "sdmmc_host_get_dma_info",
+    "c++": "sdmmc_host_get_dma_info(int, esp_dma_mem_info_t *)",
+    "go": "SdmmcHostGetDmaInfo"
+  },
+  {
+    "mangle": "sdmmc_host_get_real_freq",
+    "c++": "sdmmc_host_get_real_freq(int, int *)",
+    "go": "SdmmcHostGetRealFreq"
+  },
+  {
+    "mangle": "sdmmc_host_get_slot_width",
+    "c++": "sdmmc_host_get_slot_width(int)",
+    "go": "SdmmcHostGetSlotWidth"
+  },
+  {
+    "mangle": "sdmmc_host_get_state",
+    "c++": "sdmmc_host_get_state(sdmmc_host_state_t *)",
+    "go": "(*SdmmcHostStateT).SdmmcHostGetState"
+  },
+  {
+    "mangle": "sdmmc_host_init",
+    "c++": "sdmmc_host_init()",
+    "go": "SdmmcHostInit"
+  },
+  {
+    "mangle": "sdmmc_host_init_slot",
+    "c++": "sdmmc_host_init_slot(int, const sdmmc_slot_config_t *)",
+    "go": "SdmmcHostInitSlot"
+  },
+  {
+    "mangle": "sdmmc_host_io_int_enable",
+    "c++": "sdmmc_host_io_int_enable(int)",
+    "go": "SdmmcHostIoIntEnable"
+  },
+  {
+    "mangle": "sdmmc_host_io_int_wait",
+    "c++": "sdmmc_host_io_int_wait(int, TickType_t)",
+    "go": "SdmmcHostIoIntWait"
+  },
+  {
+    "mangle": "sdmmc_host_is_slot_set_to_uhs1",
+    "c++": "sdmmc_host_is_slot_set_to_uhs1(int, bool *)",
+    "go": "SdmmcHostIsSlotSetToUhs1"
+  },
+  {
+    "mangle": "sdmmc_host_set_bus_ddr_mode",
+    "c++": "sdmmc_host_set_bus_ddr_mode(int, bool)",
+    "go": "SdmmcHostSetBusDdrMode"
+  },
+  {
+    "mangle": "sdmmc_host_set_bus_width",
+    "c++": "sdmmc_host_set_bus_width(int, size_t)",
+    "go": "SdmmcHostSetBusWidth"
+  },
+  {
+    "mangle": "sdmmc_host_set_card_clk",
+    "c++": "sdmmc_host_set_card_clk(int, uint32_t)",
+    "go": "SdmmcHostSetCardClk"
+  },
+  {
+    "mangle": "sdmmc_host_set_cclk_always_on",
+    "c++": "sdmmc_host_set_cclk_always_on(int, bool)",
+    "go": "SdmmcHostSetCclkAlwaysOn"
+  },
+  {
+    "mangle": "sdmmc_host_set_input_delay",
+    "c++": "sdmmc_host_set_input_delay(int, sdmmc_delay_phase_t)",
+    "go": "SdmmcHostSetInputDelay"
+  }
+]

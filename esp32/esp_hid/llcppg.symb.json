@@ -1,0 +1,312 @@
+[
+  {
+    "mangle": "esp_hid_cod_major_str",
+    "c++": "esp_hid_cod_major_str(uint8_t)",
+    "go": "EspHidCodMajorStr"
+  },
+  {
+    "mangle": "esp_hid_cod_minor_print",
+    "c++": "esp_hid_cod_minor_print(uint8_t, int *)",
+    "go": "EspHidCodMinorPrint"
+  },
+  {
+    "mangle": "esp_hid_disconnect_reason_str",
+    "c++": "esp_hid_disconnect_reason_str(esp_hid_transport_t, int)",
+    "go": "EspHidTransportT.EspHidDisconnectReasonStr"
+  },
+  {
+    "mangle": "esp_hid_free_report_map",
+    "c++": "esp_hid_free_report_map(esp_hid_report_map_t *)",
+    "go": "(*EspHidReportMapT).EspHidFreeReportMap"
+  },
+  {
+    "mangle": "esp_hid_parse_report_map",
+    "c++": "esp_hid_parse_report_map(const uint8_t *, size_t)",
+    "go": "EspHidParseReportMap"
+  },
+  {
+    "mangle": "esp_hid_protocol_mode_str",
+    "c++": "esp_hid_protocol_mode_str(uint8_t)",
+    "go": "EspHidProtocolModeStr"
+  },
+  {
+    "mangle": "esp_hid_report_type_str",
+    "c++": "esp_hid_report_type_str(uint8_t)",
+    "go": "EspHidReportTypeStr"
+  },
+  {
+    "mangle": "esp_hid_usage_from_appearance",
+    "c++": "esp_hid_usage_from_appearance(uint16_t)",
+    "go": "EspHidUsageFromAppearance"
+  },
+  {
+    "mangle": "esp_hid_usage_from_cod",
+    "c++": "esp_hid_usage_from_cod(uint32_t)",
+    "go": "EspHidUsageFromCod"
+  },
+  {
+    "mangle": "esp_hid_usage_str",
+    "c++": "esp_hid_usage_str(esp_hid_usage_t)",
+    "go": "EspHidUsageT.EspHidUsageStr"
+  },
+  {
+    "mangle": "esp_hidd_dev_battery_set",
+    "c++": "esp_hidd_dev_battery_set(esp_hidd_dev_t *, uint8_t)",
+    "go": "(*EspHiddDevT).EspHiddDevBatterySet"
+  },
+  {
+    "mangle": "esp_hidd_dev_connected",
+    "c++": "esp_hidd_dev_connected(esp_hidd_dev_t *)",
+    "go": "(*EspHiddDevT).EspHiddDevConnected"
+  },
+  {
+    "mangle": "esp_hidd_dev_deinit",
+    "c++": "esp_hidd_dev_deinit(esp_hidd_dev_t *)",
+    "go": "(*EspHiddDevT).EspHiddDevDeinit"
+  },
+  {
+    "mangle": "esp_hidd_dev_event_handler_register",
+    "c++": "esp_hidd_dev_event_handler_register(esp_hidd_dev_t *, esp_event_handler_t, esp_hidd_event_t)",
+    "go": "(*EspHiddDevT).EspHiddDevEventHandlerRegister"
+  },
+  {
+    "mangle": "esp_hidd_dev_event_handler_unregister",
+    "c++": "esp_hidd_dev_event_handler_unregister(esp_hidd_dev_t *, esp_event_handler_t, esp_hidd_event_t)",
+    "go": "(*EspHiddDevT).EspHiddDevEventHandlerUnregister"
+  },
+  {
+    "mangle": "esp_hidd_dev_feature_set",
+    "c++": "esp_hidd_dev_feature_set(esp_hidd_dev_t *, size_t, size_t, uint8_t *, size_t)",
+    "go": "(*EspHiddDevT).EspHiddDevFeatureSet"
+  },
+  {
+    "mangle": "esp_hidd_dev_init",
+    "c++": "esp_hidd_dev_init(const esp_hid_device_config_t *, esp_hid_transport_t, esp_event_handler_t, esp_hidd_dev_t **)",
+    "go": "(*EspHidDeviceConfigT).EspHiddDevInit"
+  },
+  {
+    "mangle": "esp_hidd_dev_input_set",
+    "c++": "esp_hidd_dev_input_set(esp_hidd_dev_t *, size_t, size_t, uint8_t *, size_t)",
+    "go": "(*EspHiddDevT).EspHiddDevInputSet"
+  },
+  {
+    "mangle": "esp_hidd_dev_transport_get",
+    "c++": "esp_hidd_dev_transport_get(esp_hidd_dev_t *)",
+    "go": "(*EspHiddDevT).EspHiddDevTransportGet"
+  },
+  {
+    "mangle": "esp_hidd_process_event_data_handler",
+    "c++": "esp_hidd_process_event_data_handler(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspHiddProcessEventDataHandler"
+  },
+  {
+    "mangle": "esp_hidh_deinit",
+    "c++": "esp_hidh_deinit()",
+    "go": "EspHidhDeinit"
+  },
+  {
+    "mangle": "esp_hidh_dev_bda_get",
+    "c++": "esp_hidh_dev_bda_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevBdaGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_close",
+    "c++": "esp_hidh_dev_close(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevClose"
+  },
+  {
+    "mangle": "esp_hidh_dev_config_get",
+    "c++": "esp_hidh_dev_config_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevConfigGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_dump",
+    "c++": "esp_hidh_dev_dump(esp_hidh_dev_t *, int *)",
+    "go": "(*EspHidhDevT).EspHidhDevDump"
+  },
+  {
+    "mangle": "esp_hidh_dev_exists",
+    "c++": "esp_hidh_dev_exists(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevExists"
+  },
+  {
+    "mangle": "esp_hidh_dev_feature_get",
+    "c++": "esp_hidh_dev_feature_get(esp_hidh_dev_t *, size_t, size_t, size_t, uint8_t *, size_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevFeatureGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_feature_set",
+    "c++": "esp_hidh_dev_feature_set(esp_hidh_dev_t *, size_t, size_t, uint8_t *, size_t)",
+    "go": "(*EspHidhDevT).EspHidhDevFeatureSet"
+  },
+  {
+    "mangle": "esp_hidh_dev_free",
+    "c++": "esp_hidh_dev_free(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevFree"
+  },
+  {
+    "mangle": "esp_hidh_dev_free_inner",
+    "c++": "esp_hidh_dev_free_inner(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevFreeInner"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_idle",
+    "c++": "esp_hidh_dev_get_idle(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevGetIdle"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_input_report_by_id_and_proto",
+    "c++": "esp_hidh_dev_get_input_report_by_id_and_proto(esp_hidh_dev_t *, size_t, int)",
+    "go": "(*EspHidhDevT).EspHidhDevGetInputReportByIdAndProto"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_input_report_by_len_and_proto",
+    "c++": "esp_hidh_dev_get_input_report_by_len_and_proto(esp_hidh_dev_t *, size_t, int)",
+    "go": "(*EspHidhDevT).EspHidhDevGetInputReportByLenAndProto"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_input_report_by_proto_and_data",
+    "c++": "esp_hidh_dev_get_input_report_by_proto_and_data(esp_hidh_dev_t *, int, size_t, const uint8_t *, bool *)",
+    "go": "(*EspHidhDevT).EspHidhDevGetInputReportByProtoAndData"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_protocol",
+    "c++": "esp_hidh_dev_get_protocol(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevGetProtocol"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_report",
+    "c++": "esp_hidh_dev_get_report(esp_hidh_dev_t *, size_t, size_t, int, size_t)",
+    "go": "(*EspHidhDevT).EspHidhDevGetReport"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_report_by_handle",
+    "c++": "esp_hidh_dev_get_report_by_handle(esp_hidh_dev_t *, uint16_t)",
+    "go": "(*EspHidhDevT).EspHidhDevGetReportByHandle"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_report_by_id_and_type",
+    "c++": "esp_hidh_dev_get_report_by_id_and_type(esp_hidh_dev_t *, size_t, size_t, int)",
+    "go": "(*EspHidhDevT).EspHidhDevGetReportByIdAndType"
+  },
+  {
+    "mangle": "esp_hidh_dev_get_report_by_id_type_proto",
+    "c++": "esp_hidh_dev_get_report_by_id_type_proto(esp_hidh_dev_t *, size_t, size_t, int, uint8_t)",
+    "go": "(*EspHidhDevT).EspHidhDevGetReportByIdTypeProto"
+  },
+  {
+    "mangle": "esp_hidh_dev_lock",
+    "c++": "esp_hidh_dev_lock(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevLock"
+  },
+  {
+    "mangle": "esp_hidh_dev_malloc",
+    "c++": "esp_hidh_dev_malloc()",
+    "go": "EspHidhDevMalloc"
+  },
+  {
+    "mangle": "esp_hidh_dev_manufacturer_get",
+    "c++": "esp_hidh_dev_manufacturer_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevManufacturerGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_name_get",
+    "c++": "esp_hidh_dev_name_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevNameGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_output_set",
+    "c++": "esp_hidh_dev_output_set(esp_hidh_dev_t *, size_t, size_t, uint8_t *, size_t)",
+    "go": "(*EspHidhDevT).EspHidhDevOutputSet"
+  },
+  {
+    "mangle": "esp_hidh_dev_product_id_get",
+    "c++": "esp_hidh_dev_product_id_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevProductIdGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_report_maps_get",
+    "c++": "esp_hidh_dev_report_maps_get(esp_hidh_dev_t *, size_t *, esp_hid_raw_report_map_t **)",
+    "go": "(*EspHidhDevT).EspHidhDevReportMapsGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_reports_get",
+    "c++": "esp_hidh_dev_reports_get(esp_hidh_dev_t *, size_t *, esp_hid_report_item_t **)",
+    "go": "(*EspHidhDevT).EspHidhDevReportsGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_send",
+    "c++": "esp_hidh_dev_send(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevSend"
+  },
+  {
+    "mangle": "esp_hidh_dev_serial_get",
+    "c++": "esp_hidh_dev_serial_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevSerialGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_set_idle",
+    "c++": "esp_hidh_dev_set_idle(esp_hidh_dev_t *, uint8_t)",
+    "go": "(*EspHidhDevT).EspHidhDevSetIdle"
+  },
+  {
+    "mangle": "esp_hidh_dev_set_protocol",
+    "c++": "esp_hidh_dev_set_protocol(esp_hidh_dev_t *, uint8_t)",
+    "go": "(*EspHidhDevT).EspHidhDevSetProtocol"
+  },
+  {
+    "mangle": "esp_hidh_dev_set_report",
+    "c++": "esp_hidh_dev_set_report(esp_hidh_dev_t *, size_t, size_t, int, uint8_t *, size_t)",
+    "go": "(*EspHidhDevT).EspHidhDevSetReport"
+  },
+  {
+    "mangle": "esp_hidh_dev_transport_get",
+    "c++": "esp_hidh_dev_transport_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevTransportGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_unlock",
+    "c++": "esp_hidh_dev_unlock(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevUnlock"
+  },
+  {
+    "mangle": "esp_hidh_dev_usage_get",
+    "c++": "esp_hidh_dev_usage_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevUsageGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_vendor_id_get",
+    "c++": "esp_hidh_dev_vendor_id_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevVendorIdGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_version_get",
+    "c++": "esp_hidh_dev_version_get(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevVersionGet"
+  },
+  {
+    "mangle": "esp_hidh_dev_wait",
+    "c++": "esp_hidh_dev_wait(esp_hidh_dev_t *)",
+    "go": "(*EspHidhDevT).EspHidhDevWait"
+  },
+  {
+    "mangle": "esp_hidh_get_event_loop",
+    "c++": "esp_hidh_get_event_loop()",
+    "go": "EspHidhGetEventLoop"
+  },
+  {
+    "mangle": "esp_hidh_init",
+    "c++": "esp_hidh_init(const esp_hidh_config_t *)",
+    "go": "(*EspHidhConfigT).EspHidhInit"
+  },
+  {
+    "mangle": "esp_hidh_postprocess_event_handler",
+    "c++": "esp_hidh_postprocess_event_handler(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspHidhPostprocessEventHandler"
+  },
+  {
+    "mangle": "esp_hidh_preprocess_event_handler",
+    "c++": "esp_hidh_preprocess_event_handler(void *, esp_event_base_t, int32_t, void *)",
+    "go": "EspHidhPreprocessEventHandler"
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "mangle": "esp_rom_gpio_connect_out_signal",
+    "c++": "esp_rom_gpio_connect_out_signal(uint32_t, uint32_t, bool, bool)",
+    "go": "EspRomGpioConnectOutSignal"
+  },
+  {
+    "mangle": "esp_rom_install_channel_putc",
+    "c++": "esp_rom_install_channel_putc(int, void (*)(char))",
+    "go": "EspRomInstallChannelPutc"
+  },
+  {
+    "mangle": "esp_rom_output_putc",
+    "c++": "esp_rom_output_putc(char)",
+    "go": "EspRomOutputPutc"
+  },
+  {
+    "mangle": "esp_rom_output_to_channels",
+    "c++": "esp_rom_output_to_channels(char)",
+    "go": "EspRomOutputToChannels"
+  },
+  {
+    "mangle": "esp_rom_output_tx_wait_idle",
+    "c++": "esp_rom_output_tx_wait_idle(uint8_t)",
+    "go": "EspRomOutputTxWaitIdle"
+  },
+  {
+    "mangle": "esp_rom_set_cpu_ticks_per_us",
+    "c++": "esp_rom_set_cpu_ticks_per_us(uint32_t)",
+    "go": "EspRomSetCpuTicksPerUs"
+  },
+  {
+    "mangle": "esp_rom_spiflash_clear_bp",
+    "c++": "esp_rom_spiflash_clear_bp()",
+    "go": "EspRomSpiflashClearBp"
+  },
+  {
+    "mangle": "esp_rom_spiflash_config_readmode",
+    "c++": "esp_rom_spiflash_config_readmode(esp_rom_spiflash_read_mode_t)",
+    "go": "EspRomSpiflashReadModeT.EspRomSpiflashConfigReadmode"
+  },
+  {
+    "mangle": "esp_rom_spiflash_erase_area",
+    "c++": "esp_rom_spiflash_erase_area(uint32_t, uint32_t)",
+    "go": "EspRomSpiflashEraseArea"
+  },
+  {
+    "mangle": "esp_rom_spiflash_erase_block",
+    "c++": "esp_rom_spiflash_erase_block(uint32_t)",
+    "go": "EspRomSpiflashEraseBlock"
+  },
+  {
+    "mangle": "esp_rom_spiflash_erase_chip",
+    "c++": "esp_rom_spiflash_erase_chip()",
+    "go": "EspRomSpiflashEraseChip"
+  },
+  {
+    "mangle": "esp_rom_spiflash_erase_sector",
+    "c++": "esp_rom_spiflash_erase_sector(uint32_t)",
+    "go": "EspRomSpiflashEraseSector"
+  },
+  {
+    "mangle": "esp_rom_spiflash_lock",
+    "c++": "esp_rom_spiflash_lock()",
+    "go": "EspRomSpiflashLock"
+  },
+  {
+    "mangle": "esp_rom_spiflash_prepare_encrypted_data",
+    "c++": "esp_rom_spiflash_prepare_encrypted_data(uint32_t, uint32_t *)",
+    "go": "EspRomSpiflashPrepareEncryptedData"
+  },
+  {
+    "mangle": "esp_rom_spiflash_read",
+    "c++": "esp_rom_spiflash_read(uint32_t, uint32_t *, int32_t)",
+    "go": "EspRomSpiflashRead"
+  },
+  {
+    "mangle": "esp_rom_spiflash_read_status",
+    "c++": "esp_rom_spiflash_read_status(esp_rom_spiflash_chip_t *, uint32_t *)",
+    "go": "(*EspRomSpiflashChipT).EspRomSpiflashReadStatus"
+  },
+  {
+    "mangle": "esp_rom_spiflash_read_statushigh",
+    "c++": "esp_rom_spiflash_read_statushigh(esp_rom_spiflash_chip_t *, uint32_t *)",
+    "go": "(*EspRomSpiflashChipT).EspRomSpiflashReadStatushigh"
+  },
+  {
+    "mangle": "esp_rom_spiflash_read_user_cmd",
+    "c++": "esp_rom_spiflash_read_user_cmd(uint32_t *, uint8_t)",
+    "go": "EspRomSpiflashReadUserCmd"
+  },
+  {
+    "mangle": "esp_rom_spiflash_unlock",
+    "c++": "esp_rom_spiflash_unlock()",
+    "go": "EspRomSpiflashUnlock"
+  },
+  {
+    "mangle": "esp_rom_spiflash_wait_idle",
+    "c++": "esp_rom_spiflash_wait_idle(esp_rom_spiflash_chip_t *)",
+    "go": "(*EspRomSpiflashChipT).EspRomSpiflashWaitIdle"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write",
+    "c++": "esp_rom_spiflash_write(uint32_t, const uint32_t *, int32_t)",
+    "go": "EspRomSpiflashWrite"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_disable",
+    "c++": "esp_rom_spiflash_write_disable()",
+    "go": "EspRomSpiflashWriteDisable"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_encrypted",
+    "c++": "esp_rom_spiflash_write_encrypted(uint32_t, uint32_t *, uint32_t)",
+    "go": "EspRomSpiflashWriteEncrypted"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_encrypted_disable",
+    "c++": "esp_rom_spiflash_write_encrypted_disable()",
+    "go": "EspRomSpiflashWriteEncryptedDisable"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_encrypted_enable",
+    "c++": "esp_rom_spiflash_write_encrypted_enable()",
+    "go": "EspRomSpiflashWriteEncryptedEnable"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_status",
+    "c++": "esp_rom_spiflash_write_status(esp_rom_spiflash_chip_t *, uint32_t)",
+    "go": "(*EspRomSpiflashChipT).EspRomSpiflashWriteStatus"
+  },
+  {
+    "mangle": "esp_rom_vprintf",
+    "c++": "esp_rom_vprintf(const char *, va_list)",
+    "go": "EspRomVprintf"
+  },
+  {
+    "mangle": "ets_install_putc1",
+    "c++": "ets_install_putc1(void (*)(char))",
+    "go": "EtsInstallPutc1"
+  },
+  {
+    "mangle": "ets_install_putc2",
+    "c++": "ets_install_putc2(void (*)(char))",
+    "go": "EtsInstallPutc2"
+  }
+]
