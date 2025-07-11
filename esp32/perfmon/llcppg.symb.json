@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "xtensa_perfmon_dump",
+    "c++": "xtensa_perfmon_dump()",
+    "go": "XtensaPerfmonDump"
+  },
+  {
+    "mangle": "xtensa_perfmon_exec",
+    "c++": "xtensa_perfmon_exec(const xtensa_perfmon_config_t *)",
+    "go": "(*XtensaPerfmonConfigT).XtensaPerfmonExec"
+  },
+  {
+    "mangle": "xtensa_perfmon_init",
+    "c++": "xtensa_perfmon_init(int, uint16_t, uint16_t, int, int)",
+    "go": "XtensaPerfmonInit"
+  },
+  {
+    "mangle": "xtensa_perfmon_overflow",
+    "c++": "xtensa_perfmon_overflow(int)",
+    "go": "XtensaPerfmonOverflow"
+  },
+  {
+    "mangle": "xtensa_perfmon_reset",
+    "c++": "xtensa_perfmon_reset(int)",
+    "go": "XtensaPerfmonReset"
+  },
+  {
+    "mangle": "xtensa_perfmon_start",
+    "c++": "xtensa_perfmon_start()",
+    "go": "XtensaPerfmonStart"
+  },
+  {
+    "mangle": "xtensa_perfmon_stop",
+    "c++": "xtensa_perfmon_stop()",
+    "go": "XtensaPerfmonStop"
+  },
+  {
+    "mangle": "xtensa_perfmon_value",
+    "c++": "xtensa_perfmon_value(int)",
+    "go": "XtensaPerfmonValue"
+  },
+  {
+    "mangle": "xtensa_perfmon_view_cb",
+    "c++": "xtensa_perfmon_view_cb(void *, uint32_t, uint32_t, uint32_t)",
+    "go": "XtensaPerfmonViewCb"
+  }
+]

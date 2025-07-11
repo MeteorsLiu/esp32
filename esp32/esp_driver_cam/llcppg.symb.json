@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "esp_cam_ctlr_del",
+    "c++": "esp_cam_ctlr_del(esp_cam_ctlr_handle_t)",
+    "go": "EspCamCtlrDel"
+  },
+  {
+    "mangle": "esp_cam_ctlr_disable",
+    "c++": "esp_cam_ctlr_disable(esp_cam_ctlr_handle_t)",
+    "go": "EspCamCtlrDisable"
+  },
+  {
+    "mangle": "esp_cam_ctlr_enable",
+    "c++": "esp_cam_ctlr_enable(esp_cam_ctlr_handle_t)",
+    "go": "EspCamCtlrEnable"
+  },
+  {
+    "mangle": "esp_cam_ctlr_get_frame_buffer",
+    "c++": "esp_cam_ctlr_get_frame_buffer(esp_cam_ctlr_handle_t, uint32_t, const void **, ...)",
+    "go": "EspCamCtlrGetFrameBuffer"
+  },
+  {
+    "mangle": "esp_cam_ctlr_get_frame_buffer_len",
+    "c++": "esp_cam_ctlr_get_frame_buffer_len(esp_cam_ctlr_handle_t, int *)",
+    "go": "EspCamCtlrGetFrameBufferLen"
+  },
+  {
+    "mangle": "esp_cam_ctlr_receive",
+    "c++": "esp_cam_ctlr_receive(esp_cam_ctlr_handle_t, esp_cam_ctlr_trans_t *, uint32_t)",
+    "go": "EspCamCtlrReceive"
+  },
+  {
+    "mangle": "esp_cam_ctlr_register_event_callbacks",
+    "c++": "esp_cam_ctlr_register_event_callbacks(esp_cam_ctlr_handle_t, const esp_cam_ctlr_evt_cbs_t *, void *)",
+    "go": "EspCamCtlrRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_cam_ctlr_start",
+    "c++": "esp_cam_ctlr_start(esp_cam_ctlr_handle_t)",
+    "go": "EspCamCtlrStart"
+  },
+  {
+    "mangle": "esp_cam_ctlr_stop",
+    "c++": "esp_cam_ctlr_stop(esp_cam_ctlr_handle_t)",
+    "go": "EspCamCtlrStop"
+  }
+]

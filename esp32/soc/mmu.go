@@ -1,0 +1,10 @@
+package soc
+
+import _ "unsafe"
+
+const SOC_MMU_REGIONS_COUNT = 4
+const SOC_MMU_PAGES_PER_REGION = 64
+const SOC_MMU_IROM0_PAGES_START = 64
+const SOC_MMU_IROM0_PAGES_END = 256
+const SOC_MMU_DROM0_PAGES_START = 0
+const SOC_MMU_DROM0_PAGES_END = 64

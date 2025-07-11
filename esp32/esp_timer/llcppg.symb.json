@@ -1,0 +1,102 @@
+[
+  {
+    "mangle": "esp_timer_create",
+    "c++": "esp_timer_create(const esp_timer_create_args_t *, esp_timer_handle_t *)",
+    "go": "(*EspTimerCreateArgsT).EspTimerCreate"
+  },
+  {
+    "mangle": "esp_timer_deinit",
+    "c++": "esp_timer_deinit()",
+    "go": "EspTimerDeinit"
+  },
+  {
+    "mangle": "esp_timer_delete",
+    "c++": "esp_timer_delete(esp_timer_handle_t)",
+    "go": "EspTimerDelete"
+  },
+  {
+    "mangle": "esp_timer_dump",
+    "c++": "esp_timer_dump(int *)",
+    "go": "EspTimerDump"
+  },
+  {
+    "mangle": "esp_timer_early_init",
+    "c++": "esp_timer_early_init()",
+    "go": "EspTimerEarlyInit"
+  },
+  {
+    "mangle": "esp_timer_get_expiry_time",
+    "c++": "esp_timer_get_expiry_time(esp_timer_handle_t, uint64_t *)",
+    "go": "EspTimerGetExpiryTime"
+  },
+  {
+    "mangle": "esp_timer_get_next_alarm",
+    "c++": "esp_timer_get_next_alarm()",
+    "go": "EspTimerGetNextAlarm"
+  },
+  {
+    "mangle": "esp_timer_get_next_alarm_for_wake_up",
+    "c++": "esp_timer_get_next_alarm_for_wake_up()",
+    "go": "EspTimerGetNextAlarmForWakeUp"
+  },
+  {
+    "mangle": "esp_timer_get_period",
+    "c++": "esp_timer_get_period(esp_timer_handle_t, uint64_t *)",
+    "go": "EspTimerGetPeriod"
+  },
+  {
+    "mangle": "esp_timer_get_time",
+    "c++": "esp_timer_get_time()",
+    "go": "EspTimerGetTime"
+  },
+  {
+    "mangle": "esp_timer_init",
+    "c++": "esp_timer_init()",
+    "go": "EspTimerInit"
+  },
+  {
+    "mangle": "esp_timer_is_active",
+    "c++": "esp_timer_is_active(esp_timer_handle_t)",
+    "go": "EspTimerIsActive"
+  },
+  {
+    "mangle": "esp_timer_private_advance",
+    "c++": "esp_timer_private_advance(int64_t)",
+    "go": "EspTimerPrivateAdvance"
+  },
+  {
+    "mangle": "esp_timer_private_lock",
+    "c++": "esp_timer_private_lock()",
+    "go": "EspTimerPrivateLock"
+  },
+  {
+    "mangle": "esp_timer_private_set",
+    "c++": "esp_timer_private_set(uint64_t)",
+    "go": "EspTimerPrivateSet"
+  },
+  {
+    "mangle": "esp_timer_private_unlock",
+    "c++": "esp_timer_private_unlock()",
+    "go": "EspTimerPrivateUnlock"
+  },
+  {
+    "mangle": "esp_timer_restart",
+    "c++": "esp_timer_restart(esp_timer_handle_t, uint64_t)",
+    "go": "EspTimerRestart"
+  },
+  {
+    "mangle": "esp_timer_start_once",
+    "c++": "esp_timer_start_once(esp_timer_handle_t, uint64_t)",
+    "go": "EspTimerStartOnce"
+  },
+  {
+    "mangle": "esp_timer_start_periodic",
+    "c++": "esp_timer_start_periodic(esp_timer_handle_t, uint64_t)",
+    "go": "EspTimerStartPeriodic"
+  },
+  {
+    "mangle": "esp_timer_stop",
+    "c++": "esp_timer_stop(esp_timer_handle_t)",
+    "go": "EspTimerStop"
+  }
+]

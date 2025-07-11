@@ -1,0 +1,97 @@
+[
+  {
+    "mangle": "i2c_del_master_bus",
+    "c++": "i2c_del_master_bus(i2c_master_bus_handle_t)",
+    "go": "I2cDelMasterBus"
+  },
+  {
+    "mangle": "i2c_del_slave_device",
+    "c++": "i2c_del_slave_device(i2c_slave_dev_handle_t)",
+    "go": "I2cDelSlaveDevice"
+  },
+  {
+    "mangle": "i2c_master_bus_add_device",
+    "c++": "i2c_master_bus_add_device(i2c_master_bus_handle_t, const i2c_device_config_t *, i2c_master_dev_handle_t *)",
+    "go": "I2cMasterBusAddDevice"
+  },
+  {
+    "mangle": "i2c_master_bus_reset",
+    "c++": "i2c_master_bus_reset(i2c_master_bus_handle_t)",
+    "go": "I2cMasterBusReset"
+  },
+  {
+    "mangle": "i2c_master_bus_rm_device",
+    "c++": "i2c_master_bus_rm_device(i2c_master_dev_handle_t)",
+    "go": "I2cMasterBusRmDevice"
+  },
+  {
+    "mangle": "i2c_master_bus_wait_all_done",
+    "c++": "i2c_master_bus_wait_all_done(i2c_master_bus_handle_t, int)",
+    "go": "I2cMasterBusWaitAllDone"
+  },
+  {
+    "mangle": "i2c_master_execute_defined_operations",
+    "c++": "i2c_master_execute_defined_operations(i2c_master_dev_handle_t, i2c_operation_job_t *, int, int)",
+    "go": "I2cMasterExecuteDefinedOperations"
+  },
+  {
+    "mangle": "i2c_master_get_bus_handle",
+    "c++": "i2c_master_get_bus_handle(i2c_port_num_t, i2c_master_bus_handle_t *)",
+    "go": "I2cPortNumT.I2cMasterGetBusHandle"
+  },
+  {
+    "mangle": "i2c_master_multi_buffer_transmit",
+    "c++": "i2c_master_multi_buffer_transmit(i2c_master_dev_handle_t, i2c_master_transmit_multi_buffer_info_t *, int, int)",
+    "go": "I2cMasterMultiBufferTransmit"
+  },
+  {
+    "mangle": "i2c_master_probe",
+    "c++": "i2c_master_probe(i2c_master_bus_handle_t, uint16_t, int)",
+    "go": "I2cMasterProbe"
+  },
+  {
+    "mangle": "i2c_master_receive",
+    "c++": "i2c_master_receive(i2c_master_dev_handle_t, uint8_t *, int, int)",
+    "go": "I2cMasterReceive"
+  },
+  {
+    "mangle": "i2c_master_register_event_callbacks",
+    "c++": "i2c_master_register_event_callbacks(i2c_master_dev_handle_t, const i2c_master_event_callbacks_t *, void *)",
+    "go": "I2cMasterRegisterEventCallbacks"
+  },
+  {
+    "mangle": "i2c_master_transmit",
+    "c++": "i2c_master_transmit(i2c_master_dev_handle_t, const uint8_t *, int, int)",
+    "go": "I2cMasterTransmit"
+  },
+  {
+    "mangle": "i2c_master_transmit_receive",
+    "c++": "i2c_master_transmit_receive(i2c_master_dev_handle_t, const uint8_t *, int, uint8_t *, int, int)",
+    "go": "I2cMasterTransmitReceive"
+  },
+  {
+    "mangle": "i2c_new_master_bus",
+    "c++": "i2c_new_master_bus(const i2c_master_bus_config_t *, i2c_master_bus_handle_t *)",
+    "go": "(*I2cMasterBusConfigT).I2cNewMasterBus"
+  },
+  {
+    "mangle": "i2c_new_slave_device",
+    "c++": "i2c_new_slave_device(const i2c_slave_config_t *, i2c_slave_dev_handle_t *)",
+    "go": "(*I2cSlaveConfigT).I2cNewSlaveDevice"
+  },
+  {
+    "mangle": "i2c_slave_receive",
+    "c++": "i2c_slave_receive(i2c_slave_dev_handle_t, uint8_t *, int)",
+    "go": "I2cSlaveReceive"
+  },
+  {
+    "mangle": "i2c_slave_register_event_callbacks",
+    "c++": "i2c_slave_register_event_callbacks(i2c_slave_dev_handle_t, const i2c_slave_event_callbacks_t *, void *)",
+    "go": "I2cSlaveRegisterEventCallbacks"
+  },
+  {
+    "mangle": "i2c_slave_transmit",
+    "c++": "i2c_slave_transmit(i2c_slave_dev_handle_t, const uint8_t *, int, int)",
+    "go": "I2cSlaveTransmit"
+  }
+]

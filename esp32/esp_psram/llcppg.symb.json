@@ -1,0 +1,102 @@
+[
+  {
+    "mangle": "esp_himem_alloc",
+    "c++": "esp_himem_alloc(size_t, esp_himem_handle_t *)",
+    "go": "EspHimemAlloc"
+  },
+  {
+    "mangle": "esp_himem_alloc_map_range",
+    "c++": "esp_himem_alloc_map_range(size_t, esp_himem_rangehandle_t *)",
+    "go": "EspHimemAllocMapRange"
+  },
+  {
+    "mangle": "esp_himem_free",
+    "c++": "esp_himem_free(esp_himem_handle_t)",
+    "go": "EspHimemFree"
+  },
+  {
+    "mangle": "esp_himem_free_map_range",
+    "c++": "esp_himem_free_map_range(esp_himem_rangehandle_t)",
+    "go": "EspHimemFreeMapRange"
+  },
+  {
+    "mangle": "esp_himem_get_free_size",
+    "c++": "esp_himem_get_free_size()",
+    "go": "EspHimemGetFreeSize"
+  },
+  {
+    "mangle": "esp_himem_get_phys_size",
+    "c++": "esp_himem_get_phys_size()",
+    "go": "EspHimemGetPhysSize"
+  },
+  {
+    "mangle": "esp_himem_map",
+    "c++": "esp_himem_map(esp_himem_handle_t, esp_himem_rangehandle_t, size_t, size_t, size_t, int, void **)",
+    "go": "EspHimemMap"
+  },
+  {
+    "mangle": "esp_himem_reserved_area_size",
+    "c++": "esp_himem_reserved_area_size()",
+    "go": "EspHimemReservedAreaSize"
+  },
+  {
+    "mangle": "esp_himem_unmap",
+    "c++": "esp_himem_unmap(esp_himem_rangehandle_t, void *, size_t)",
+    "go": "EspHimemUnmap"
+  },
+  {
+    "mangle": "esp_psram_bss_init",
+    "c++": "esp_psram_bss_init()",
+    "go": "EspPsramBssInit"
+  },
+  {
+    "mangle": "esp_psram_check_ptr_addr",
+    "c++": "esp_psram_check_ptr_addr(const void *)",
+    "go": "EspPsramCheckPtrAddr"
+  },
+  {
+    "mangle": "esp_psram_extram_add_to_heap_allocator",
+    "c++": "esp_psram_extram_add_to_heap_allocator()",
+    "go": "EspPsramExtramAddToHeapAllocator"
+  },
+  {
+    "mangle": "esp_psram_extram_reserve_dma_pool",
+    "c++": "esp_psram_extram_reserve_dma_pool(size_t)",
+    "go": "EspPsramExtramReserveDmaPool"
+  },
+  {
+    "mangle": "esp_psram_extram_test",
+    "c++": "esp_psram_extram_test()",
+    "go": "EspPsramExtramTest"
+  },
+  {
+    "mangle": "esp_psram_extram_writeback_cache",
+    "c++": "esp_psram_extram_writeback_cache()",
+    "go": "EspPsramExtramWritebackCache"
+  },
+  {
+    "mangle": "esp_psram_get_heap_size_to_protect",
+    "c++": "esp_psram_get_heap_size_to_protect()",
+    "go": "EspPsramGetHeapSizeToProtect"
+  },
+  {
+    "mangle": "esp_psram_get_size",
+    "c++": "esp_psram_get_size()",
+    "go": "EspPsramGetSize"
+  },
+  {
+    "mangle": "esp_psram_init",
+    "c++": "esp_psram_init()",
+    "go": "EspPsramInit"
+  },
+  {
+    "mangle": "esp_psram_io_get_cs_io",
+    "c++": "esp_psram_io_get_cs_io()",
+    "go": "EspPsramIoGetCsIo"
+  },
+  {
+    "mangle": "esp_psram_is_initialized",
+    "c++": "esp_psram_is_initialized()",
+    "go": "EspPsramIsInitialized"
+  }
+]
