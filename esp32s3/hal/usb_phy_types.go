@@ -17,8 +17,9 @@ const (
 type UsbPhyControllerT c.Int
 
 const (
-	USB_PHY_CTRL_OTG UsbPhyControllerT = 0
-	USB_PHY_CTRL_MAX UsbPhyControllerT = 1
+	USB_PHY_CTRL_OTG         UsbPhyControllerT = 0
+	USB_PHY_CTRL_SERIAL_JTAG UsbPhyControllerT = 1
+	USB_PHY_CTRL_MAX         UsbPhyControllerT = 2
 )
 
 type UsbOtgModeT c.Int

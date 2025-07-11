@@ -6,7 +6,7 @@
   },
   {
     "mangle": "esp_lcd_i80_alloc_draw_buffer",
-    "c++": "esp_lcd_i80_alloc_draw_buffer(esp_lcd_panel_io_handle_t, size_t, uint32_t)",
+    "c++": "esp_lcd_i80_alloc_draw_buffer(esp_lcd_panel_io_handle_t, int, uint32_t)",
     "go": "EspLcdI80AllocDrawBuffer"
   },
   {

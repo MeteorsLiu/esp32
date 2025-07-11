@@ -5,358 +5,100 @@ import (
 	_ "unsafe"
 )
 
-const X__WORDSIZE = 64
-const X__has_safe_buffers = 1
-const X__DARWIN_ONLY_64_BIT_INO_T = 1
-const X__DARWIN_ONLY_UNIX_CONFORMANCE = 1
-const X__DARWIN_ONLY_VERS_1050 = 1
-const X__DARWIN_UNIX03 = 1
-const X__DARWIN_64_BIT_INO_T = 1
-const X__DARWIN_VERS_1050 = 1
-const X__DARWIN_NON_CANCELABLE = 0
-const X__DARWIN_SUF_EXTSN = "$DARWIN_EXTSN"
-const X__STDC_WANT_LIB_EXT1__ = 1
-const X__DARWIN_NO_LONG_LONG = 0
-const X_DARWIN_FEATURE_64_BIT_INODE = 1
-const X_DARWIN_FEATURE_ONLY_64_BIT_INODE = 1
-const X_DARWIN_FEATURE_ONLY_VERS_1050 = 1
-const X_DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE = 1
-const X_DARWIN_FEATURE_UNIX_CONFORMANCE = 3
-const X__has_ptrcheck = 0
-const X__PTHREAD_SIZE__ = 8176
-const X__PTHREAD_ATTR_SIZE__ = 56
-const X__PTHREAD_MUTEXATTR_SIZE__ = 8
-const X__PTHREAD_MUTEX_SIZE__ = 56
-const X__PTHREAD_CONDATTR_SIZE__ = 8
-const X__PTHREAD_COND_SIZE__ = 40
-const X__PTHREAD_ONCE_SIZE__ = 8
-const X__PTHREAD_RWLOCK_SIZE__ = 192
-const X__PTHREAD_RWLOCKATTR_SIZE__ = 16
-const INT8_MAX = 127
-const INT16_MAX = 32767
-const INT32_MAX = 2147483647
-const UINT8_MAX = 255
-const UINT16_MAX = 65535
-const X__API_TO_BE_DEPRECATED = 100000
-const X__API_TO_BE_DEPRECATED_MACOS = 100000
-const X__API_TO_BE_DEPRECATED_IOS = 100000
-const X__API_TO_BE_DEPRECATED_MACCATALYST = 100000
-const X__API_TO_BE_DEPRECATED_WATCHOS = 100000
-const X__API_TO_BE_DEPRECATED_TVOS = 100000
-const X__API_TO_BE_DEPRECATED_DRIVERKIT = 100000
-const X__API_TO_BE_DEPRECATED_VISIONOS = 100000
-const X__MAC_10_0 = 1000
-const X__MAC_10_1 = 1010
-const X__MAC_10_2 = 1020
-const X__MAC_10_3 = 1030
-const X__MAC_10_4 = 1040
-const X__MAC_10_5 = 1050
-const X__MAC_10_6 = 1060
-const X__MAC_10_7 = 1070
-const X__MAC_10_8 = 1080
-const X__MAC_10_9 = 1090
-const X__MAC_10_10 = 101000
-const X__MAC_10_10_2 = 101002
-const X__MAC_10_10_3 = 101003
-const X__MAC_10_11 = 101100
-const X__MAC_10_11_2 = 101102
-const X__MAC_10_11_3 = 101103
-const X__MAC_10_11_4 = 101104
-const X__MAC_10_12 = 101200
-const X__MAC_10_12_1 = 101201
-const X__MAC_10_12_2 = 101202
-const X__MAC_10_12_4 = 101204
-const X__MAC_10_13 = 101300
-const X__MAC_10_13_1 = 101301
-const X__MAC_10_13_2 = 101302
-const X__MAC_10_13_4 = 101304
-const X__MAC_10_14 = 101400
-const X__MAC_10_14_1 = 101401
-const X__MAC_10_14_4 = 101404
-const X__MAC_10_14_5 = 101405
-const X__MAC_10_14_6 = 101406
-const X__MAC_10_15 = 101500
-const X__MAC_10_15_1 = 101501
-const X__MAC_10_15_4 = 101504
-const X__MAC_10_16 = 101600
-const X__MAC_11_0 = 110000
-const X__MAC_11_1 = 110100
-const X__MAC_11_3 = 110300
-const X__MAC_11_4 = 110400
-const X__MAC_11_5 = 110500
-const X__MAC_11_6 = 110600
-const X__MAC_12_0 = 120000
-const X__MAC_12_1 = 120100
-const X__MAC_12_2 = 120200
-const X__MAC_12_3 = 120300
-const X__MAC_12_4 = 120400
-const X__MAC_12_5 = 120500
-const X__MAC_12_6 = 120600
-const X__MAC_12_7 = 120700
-const X__MAC_13_0 = 130000
-const X__MAC_13_1 = 130100
-const X__MAC_13_2 = 130200
-const X__MAC_13_3 = 130300
-const X__MAC_13_4 = 130400
-const X__MAC_13_5 = 130500
-const X__MAC_13_6 = 130600
-const X__MAC_14_0 = 140000
-const X__MAC_14_1 = 140100
-const X__MAC_14_2 = 140200
-const X__MAC_14_3 = 140300
-const X__MAC_14_4 = 140400
-const X__IPHONE_2_0 = 20000
-const X__IPHONE_2_1 = 20100
-const X__IPHONE_2_2 = 20200
-const X__IPHONE_3_0 = 30000
-const X__IPHONE_3_1 = 30100
-const X__IPHONE_3_2 = 30200
-const X__IPHONE_4_0 = 40000
-const X__IPHONE_4_1 = 40100
-const X__IPHONE_4_2 = 40200
-const X__IPHONE_4_3 = 40300
-const X__IPHONE_5_0 = 50000
-const X__IPHONE_5_1 = 50100
-const X__IPHONE_6_0 = 60000
-const X__IPHONE_6_1 = 60100
-const X__IPHONE_7_0 = 70000
-const X__IPHONE_7_1 = 70100
-const X__IPHONE_8_0 = 80000
-const X__IPHONE_8_1 = 80100
-const X__IPHONE_8_2 = 80200
-const X__IPHONE_8_3 = 80300
-const X__IPHONE_8_4 = 80400
-const X__IPHONE_9_0 = 90000
-const X__IPHONE_9_1 = 90100
-const X__IPHONE_9_2 = 90200
-const X__IPHONE_9_3 = 90300
-const X__IPHONE_10_0 = 100000
-const X__IPHONE_10_1 = 100100
-const X__IPHONE_10_2 = 100200
-const X__IPHONE_10_3 = 100300
-const X__IPHONE_11_0 = 110000
-const X__IPHONE_11_1 = 110100
-const X__IPHONE_11_2 = 110200
-const X__IPHONE_11_3 = 110300
-const X__IPHONE_11_4 = 110400
-const X__IPHONE_12_0 = 120000
-const X__IPHONE_12_1 = 120100
-const X__IPHONE_12_2 = 120200
-const X__IPHONE_12_3 = 120300
-const X__IPHONE_12_4 = 120400
-const X__IPHONE_13_0 = 130000
-const X__IPHONE_13_1 = 130100
-const X__IPHONE_13_2 = 130200
-const X__IPHONE_13_3 = 130300
-const X__IPHONE_13_4 = 130400
-const X__IPHONE_13_5 = 130500
-const X__IPHONE_13_6 = 130600
-const X__IPHONE_13_7 = 130700
-const X__IPHONE_14_0 = 140000
-const X__IPHONE_14_1 = 140100
-const X__IPHONE_14_2 = 140200
-const X__IPHONE_14_3 = 140300
-const X__IPHONE_14_5 = 140500
-const X__IPHONE_14_4 = 140400
-const X__IPHONE_14_6 = 140600
-const X__IPHONE_14_7 = 140700
-const X__IPHONE_14_8 = 140800
-const X__IPHONE_15_0 = 150000
-const X__IPHONE_15_1 = 150100
-const X__IPHONE_15_2 = 150200
-const X__IPHONE_15_3 = 150300
-const X__IPHONE_15_4 = 150400
-const X__IPHONE_15_5 = 150500
-const X__IPHONE_15_6 = 150600
-const X__IPHONE_15_7 = 150700
-const X__IPHONE_15_8 = 150800
-const X__IPHONE_16_0 = 160000
-const X__IPHONE_16_1 = 160100
-const X__IPHONE_16_2 = 160200
-const X__IPHONE_16_3 = 160300
-const X__IPHONE_16_4 = 160400
-const X__IPHONE_16_5 = 160500
-const X__IPHONE_16_6 = 160600
-const X__IPHONE_16_7 = 160700
-const X__IPHONE_17_0 = 170000
-const X__IPHONE_17_1 = 170100
-const X__IPHONE_17_2 = 170200
-const X__IPHONE_17_3 = 170300
-const X__IPHONE_17_4 = 170400
-const X__WATCHOS_1_0 = 10000
-const X__WATCHOS_2_0 = 20000
-const X__WATCHOS_2_1 = 20100
-const X__WATCHOS_2_2 = 20200
-const X__WATCHOS_3_0 = 30000
-const X__WATCHOS_3_1 = 30100
-const X__WATCHOS_3_1_1 = 30101
-const X__WATCHOS_3_2 = 30200
-const X__WATCHOS_4_0 = 40000
-const X__WATCHOS_4_1 = 40100
-const X__WATCHOS_4_2 = 40200
-const X__WATCHOS_4_3 = 40300
-const X__WATCHOS_5_0 = 50000
-const X__WATCHOS_5_1 = 50100
-const X__WATCHOS_5_2 = 50200
-const X__WATCHOS_5_3 = 50300
-const X__WATCHOS_6_0 = 60000
-const X__WATCHOS_6_1 = 60100
-const X__WATCHOS_6_2 = 60200
-const X__WATCHOS_7_0 = 70000
-const X__WATCHOS_7_1 = 70100
-const X__WATCHOS_7_2 = 70200
-const X__WATCHOS_7_3 = 70300
-const X__WATCHOS_7_4 = 70400
-const X__WATCHOS_7_5 = 70500
-const X__WATCHOS_7_6 = 70600
-const X__WATCHOS_8_0 = 80000
-const X__WATCHOS_8_1 = 80100
-const X__WATCHOS_8_3 = 80300
-const X__WATCHOS_8_4 = 80400
-const X__WATCHOS_8_5 = 80500
-const X__WATCHOS_8_6 = 80600
-const X__WATCHOS_8_7 = 80700
-const X__WATCHOS_8_8 = 80800
-const X__WATCHOS_9_0 = 90000
-const X__WATCHOS_9_1 = 90100
-const X__WATCHOS_9_2 = 90200
-const X__WATCHOS_9_3 = 90300
-const X__WATCHOS_9_4 = 90400
-const X__WATCHOS_9_5 = 90500
-const X__WATCHOS_9_6 = 90600
-const X__WATCHOS_10_0 = 100000
-const X__WATCHOS_10_1 = 100100
-const X__WATCHOS_10_2 = 100200
-const X__WATCHOS_10_3 = 100300
-const X__WATCHOS_10_4 = 100400
-const X__TVOS_9_0 = 90000
-const X__TVOS_9_1 = 90100
-const X__TVOS_9_2 = 90200
-const X__TVOS_10_0 = 100000
-const X__TVOS_10_0_1 = 100001
-const X__TVOS_10_1 = 100100
-const X__TVOS_10_2 = 100200
-const X__TVOS_11_0 = 110000
-const X__TVOS_11_1 = 110100
-const X__TVOS_11_2 = 110200
-const X__TVOS_11_3 = 110300
-const X__TVOS_11_4 = 110400
-const X__TVOS_12_0 = 120000
-const X__TVOS_12_1 = 120100
-const X__TVOS_12_2 = 120200
-const X__TVOS_12_3 = 120300
-const X__TVOS_12_4 = 120400
-const X__TVOS_13_0 = 130000
-const X__TVOS_13_2 = 130200
-const X__TVOS_13_3 = 130300
-const X__TVOS_13_4 = 130400
-const X__TVOS_14_0 = 140000
-const X__TVOS_14_1 = 140100
-const X__TVOS_14_2 = 140200
-const X__TVOS_14_3 = 140300
-const X__TVOS_14_5 = 140500
-const X__TVOS_14_6 = 140600
-const X__TVOS_14_7 = 140700
-const X__TVOS_15_0 = 150000
-const X__TVOS_15_1 = 150100
-const X__TVOS_15_2 = 150200
-const X__TVOS_15_3 = 150300
-const X__TVOS_15_4 = 150400
-const X__TVOS_15_5 = 150500
-const X__TVOS_15_6 = 150600
-const X__TVOS_16_0 = 160000
-const X__TVOS_16_1 = 160100
-const X__TVOS_16_2 = 160200
-const X__TVOS_16_3 = 160300
-const X__TVOS_16_4 = 160400
-const X__TVOS_16_5 = 160500
-const X__TVOS_16_6 = 160600
-const X__TVOS_17_0 = 170000
-const X__TVOS_17_1 = 170100
-const X__TVOS_17_2 = 170200
-const X__TVOS_17_3 = 170300
-const X__TVOS_17_4 = 170400
-const X__BRIDGEOS_2_0 = 20000
-const X__BRIDGEOS_3_0 = 30000
-const X__BRIDGEOS_3_1 = 30100
-const X__BRIDGEOS_3_4 = 30400
-const X__BRIDGEOS_4_0 = 40000
-const X__BRIDGEOS_4_1 = 40100
-const X__BRIDGEOS_5_0 = 50000
-const X__BRIDGEOS_5_1 = 50100
-const X__BRIDGEOS_5_3 = 50300
-const X__BRIDGEOS_6_0 = 60000
-const X__BRIDGEOS_6_2 = 60200
-const X__BRIDGEOS_6_4 = 60400
-const X__BRIDGEOS_6_5 = 60500
-const X__BRIDGEOS_6_6 = 60600
-const X__BRIDGEOS_7_0 = 70000
-const X__BRIDGEOS_7_1 = 70100
-const X__BRIDGEOS_7_2 = 70200
-const X__BRIDGEOS_7_3 = 70300
-const X__BRIDGEOS_7_4 = 70400
-const X__BRIDGEOS_7_6 = 70600
-const X__BRIDGEOS_8_0 = 80000
-const X__BRIDGEOS_8_1 = 80100
-const X__BRIDGEOS_8_2 = 80200
-const X__BRIDGEOS_8_3 = 80300
-const X__BRIDGEOS_8_4 = 80400
-const X__DRIVERKIT_19_0 = 190000
-const X__DRIVERKIT_20_0 = 200000
-const X__DRIVERKIT_21_0 = 210000
-const X__DRIVERKIT_22_0 = 220000
-const X__DRIVERKIT_22_4 = 220400
-const X__DRIVERKIT_22_5 = 220500
-const X__DRIVERKIT_22_6 = 220600
-const X__DRIVERKIT_23_0 = 230000
-const X__DRIVERKIT_23_1 = 230100
-const X__DRIVERKIT_23_2 = 230200
-const X__DRIVERKIT_23_3 = 230300
-const X__DRIVERKIT_23_4 = 230400
-const X__VISIONOS_1_0 = 10000
-const X__VISIONOS_1_1 = 10100
-const X__ENABLE_LEGACY_MAC_AVAILABILITY = 1
-const X_FORTIFY_SOURCE = 2
-const RENAME_SECLUDE = 0x00000001
-const RENAME_SWAP = 0x00000002
-const RENAME_EXCL = 0x00000004
-const RENAME_RESERVED1 = 0x00000008
-const RENAME_NOFOLLOW_ANY = 0x00000010
-const SEEK_SET = 0
-const SEEK_CUR = 1
-const SEEK_END = 2
-const SEEK_HOLE = 3
-const SEEK_DATA = 4
-const X__SLBF = 0x0001
-const X__SNBF = 0x0002
-const X__SRD = 0x0004
-const X__SWR = 0x0008
-const X__SRW = 0x0010
-const X__SEOF = 0x0020
-const X__SERR = 0x0040
-const X__SMBF = 0x0080
-const X__SAPP = 0x0100
-const X__SSTR = 0x0200
-const X__SOPT = 0x0400
-const X__SNPT = 0x0800
-const X__SOFF = 0x1000
-const X__SMOD = 0x2000
-const X__SALC = 0x4000
-const X__SIGN = 0x8000
-const X_IOFBF = 0
-const X_IOLBF = 1
-const X_IONBF = 2
-const BUFSIZ = 1024
-const FOPEN_MAX = 20
-const FILENAME_MAX = 1024
-const P_tmpdir = "/var/tmp/"
-const L_tmpnam = 1024
-const TMP_MAX = 308915776
-const L_ctermid = 1024
-const X_USE_FORTIFY_LEVEL = 2
-const X__bool_true_false_are_defined = 1
-const True = 1
-const False = 0
+const X_NEWLIB_VERSION_H__ = 1
+const X_NEWLIB_VERSION = "4.3.0"
+const X__NEWLIB__ = 4
+const X__NEWLIB_MINOR__ = 3
+const X__NEWLIB_PATCHLEVEL__ = 0
+const X_DEFAULT_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_ATFILE_SOURCE = 1
+const X__ATFILE_VISIBLE = 1
+const X__BSD_VISIBLE = 1
+const X__GNU_VISIBLE = 0
+const X__ISO_C_VISIBLE = 2011
+const X__LARGEFILE_VISIBLE = 0
+const X__MISC_VISIBLE = 1
+const X__POSIX_VISIBLE = 200809
+const X__SVID_VISIBLE = 1
+const X__XSI_VISIBLE = 0
+const X__SSP_FORTIFY_LEVEL = 0
+const X_POSIX_THREADS = 1
+const X_POSIX_TIMEOUTS = 1
+const X_POSIX_TIMERS = 1
+const X_UNIX98_THREAD_MUTEX_ATTRIBUTES = 1
+const X__have_longlong64 = 1
+const X__have_long32 = 1
+const X___int8_t_defined = 1
+const X___int16_t_defined = 1
+const X___int32_t_defined = 1
+const X___int64_t_defined = 1
+const X___int_least8_t_defined = 1
+const X___int_least16_t_defined = 1
+const X___int_least32_t_defined = 1
+const X___int_least64_t_defined = 1
+const X__INT8 = "hh"
+const X__INT16 = "h"
+const X__INT64 = "ll"
+const X__FAST8 = "hh"
+const X__FAST16 = "h"
+const X__FAST64 = "ll"
+const X__LEAST8 = "hh"
+const X__LEAST16 = "h"
+const X__LEAST64 = "ll"
+const X__int8_t_defined = 1
+const X__int16_t_defined = 1
+const X__int32_t_defined = 1
+const X__int64_t_defined = 1
+const X__int_least8_t_defined = 1
+const X__int_least16_t_defined = 1
+const X__int_least32_t_defined = 1
+const X__int_least64_t_defined = 1
+const X__int_fast8_t_defined = 1
+const X__int_fast16_t_defined = 1
+const X__int_fast32_t_defined = 1
+const X__int_fast64_t_defined = 1
+const X__NEWLIB_H__ = 1
+const X_ATEXIT_DYNAMIC_ALLOC = 1
+const X_FSEEK_OPTIMIZATION = 1
+const X_FVWRITE_IN_STREAMIO = 1
+const X_HAVE_INITFINI_ARRAY = 1
+const X_HAVE_LONG_DOUBLE = 1
+const X_ICONV_ENABLED = 1
+const X_LDBL_EQ_DBL = 1
+const X_MB_LEN_MAX = 1
+const X_NANO_MALLOC = 1
+const X_REENT_CHECK_VERIFY = 1
+const X_RETARGETABLE_LOCKING = 1
+const X_UNBUF_STREAM_OPT = 1
+const X_WANT_IO_C99_FORMATS = 1
+const X_WANT_IO_LONG_LONG = 1
+const X_WANT_IO_POS_ARGS = 1
+const X_WANT_REENT_BACKWARD_BINARY_COMPAT = 1
+const X_WANT_REENT_SMALL = 1
+const X_WANT_USE_GDTOA = 1
+const X__OBSOLETE_MATH_DEFAULT = 1
+const X__BUFSIZ__ = 128
+const X__RAND_MAX = 0x7fffffff
+const X__GNUCLIKE_ASM = 3
+const X__GNUCLIKE___TYPEOF = 1
+const X__GNUCLIKE___SECTION = 1
+const X__GNUCLIKE_CTOR_SECTION_HANDLING = 1
+const X__GNUCLIKE_BUILTIN_CONSTANT_P = 1
+const X__GNUCLIKE_BUILTIN_VARARGS = 1
+const X__GNUCLIKE_BUILTIN_STDARG = 1
+const X__GNUCLIKE_BUILTIN_VAALIST = 1
+const X__GNUC_VA_LIST_COMPATIBILITY = 1
+const X__GNUCLIKE_BUILTIN_NEXT_ARG = 1
+const X__GNUCLIKE_BUILTIN_MEMCPY = 1
+const X__CC_SUPPORTS_INLINE = 1
+const X__CC_SUPPORTS___INLINE = 1
+const X__CC_SUPPORTS___INLINE__ = 1
+const X__CC_SUPPORTS___FUNC__ = 1
+const X__CC_SUPPORTS_WARNING = 1
+const X__CC_SUPPORTS_VARADIC_XXX = 1
+const X__CC_SUPPORTS_DYNAMIC_ARRAY_INIT = 1
+const X_NULL = 0
 const CONFIG_SOC_MPU_MIN_REGION_SIZE = 0x20000000
 const CONFIG_SOC_MPU_REGIONS_MAX_NUM = 8
 const CONFIG_SOC_ADC_SUPPORTED = 1
@@ -1266,200 +1008,43 @@ const CONFIG_WL_SECTOR_SIZE = 4096
 const CONFIG_WIFI_PROV_SCAN_MAX_ENTRIES = 16
 const CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT = 30
 const CONFIG_WIFI_PROV_STA_ALL_CHANNEL_SCAN = 1
-const X__DARWIN_NSIG = 32
-const X_ARM_SIGNAL_ = 1
-const SIGHUP = 1
-const SIGINT = 2
-const SIGQUIT = 3
-const SIGILL = 4
-const SIGTRAP = 5
-const SIGABRT = 6
-const SIGEMT = 7
-const SIGFPE = 8
-const SIGKILL = 9
-const SIGBUS = 10
-const SIGSEGV = 11
-const SIGSYS = 12
-const SIGPIPE = 13
-const SIGALRM = 14
-const SIGTERM = 15
-const SIGURG = 16
-const SIGSTOP = 17
-const SIGTSTP = 18
-const SIGCONT = 19
-const SIGCHLD = 20
-const SIGTTIN = 21
-const SIGTTOU = 22
-const SIGIO = 23
-const SIGXCPU = 24
-const SIGXFSZ = 25
-const SIGVTALRM = 26
-const SIGPROF = 27
-const SIGWINCH = 28
-const SIGINFO = 29
-const SIGUSR1 = 30
-const SIGUSR2 = 31
-const X__DARWIN_OPAQUE_ARM_THREAD_STATE64 = 0
-const SIGEV_NONE = 0
-const SIGEV_SIGNAL = 1
-const SIGEV_THREAD = 3
-const ILL_NOOP = 0
-const ILL_ILLOPC = 1
-const ILL_ILLTRP = 2
-const ILL_PRVOPC = 3
-const ILL_ILLOPN = 4
-const ILL_ILLADR = 5
-const ILL_PRVREG = 6
-const ILL_COPROC = 7
-const ILL_BADSTK = 8
-const FPE_NOOP = 0
-const FPE_FLTDIV = 1
-const FPE_FLTOVF = 2
-const FPE_FLTUND = 3
-const FPE_FLTRES = 4
-const FPE_FLTINV = 5
-const FPE_FLTSUB = 6
-const FPE_INTDIV = 7
-const FPE_INTOVF = 8
-const SEGV_NOOP = 0
-const SEGV_MAPERR = 1
-const SEGV_ACCERR = 2
-const BUS_NOOP = 0
-const BUS_ADRALN = 1
-const BUS_ADRERR = 2
-const BUS_OBJERR = 3
-const TRAP_BRKPT = 1
-const TRAP_TRACE = 2
-const CLD_NOOP = 0
-const CLD_EXITED = 1
-const CLD_KILLED = 2
-const CLD_DUMPED = 3
-const CLD_TRAPPED = 4
-const CLD_STOPPED = 5
-const CLD_CONTINUED = 6
-const POLL_IN = 1
-const POLL_OUT = 2
-const POLL_MSG = 3
-const POLL_ERR = 4
-const POLL_PRI = 5
-const POLL_HUP = 6
-const SA_ONSTACK = 0x0001
-const SA_RESTART = 0x0002
-const SA_RESETHAND = 0x0004
-const SA_NOCLDSTOP = 0x0008
-const SA_NODEFER = 0x0010
-const SA_NOCLDWAIT = 0x0020
-const SA_SIGINFO = 0x0040
-const SA_USERTRAMP = 0x0100
-const SA_64REGSET = 0x0200
-const SIG_BLOCK = 1
-const SIG_UNBLOCK = 2
-const SIG_SETMASK = 3
-const SI_USER = 0x10001
-const SI_QUEUE = 0x10002
-const SI_TIMER = 0x10003
-const SI_ASYNCIO = 0x10004
-const SI_MESGQ = 0x10005
-const SS_ONSTACK = 0x0001
-const SS_DISABLE = 0x0004
-const MINSIGSTKSZ = 32768
-const SIGSTKSZ = 131072
-const PRIO_PROCESS = 0
-const PRIO_PGRP = 1
-const PRIO_USER = 2
-const PRIO_DARWIN_THREAD = 3
-const PRIO_DARWIN_PROCESS = 4
-const PRIO_MAX = 20
-const PRIO_DARWIN_BG = 0x1000
-const PRIO_DARWIN_NONUI = 0x1001
-const RUSAGE_SELF = 0
-const RUSAGE_INFO_V0 = 0
-const RUSAGE_INFO_V1 = 1
-const RUSAGE_INFO_V2 = 2
-const RUSAGE_INFO_V3 = 3
-const RUSAGE_INFO_V4 = 4
-const RUSAGE_INFO_V5 = 5
-const RUSAGE_INFO_V6 = 6
-const RU_PROC_RUNS_RESLIDE = 0x00000001
-const RLIMIT_CPU = 0
-const RLIMIT_FSIZE = 1
-const RLIMIT_DATA = 2
-const RLIMIT_STACK = 3
-const RLIMIT_CORE = 4
-const RLIMIT_AS = 5
-const RLIMIT_MEMLOCK = 6
-const RLIMIT_NPROC = 7
-const RLIMIT_NOFILE = 8
-const RLIM_NLIMITS = 9
-const X_RLIMIT_POSIX_FLAG = 0x1000
-const RLIMIT_WAKEUPS_MONITOR = 0x1
-const RLIMIT_CPU_USAGE_MONITOR = 0x2
-const RLIMIT_THREAD_CPULIMITS = 0x3
-const RLIMIT_FOOTPRINT_INTERVAL = 0x4
-const WAKEMON_ENABLE = 0x01
-const WAKEMON_DISABLE = 0x02
-const WAKEMON_GET_PARAMS = 0x04
-const WAKEMON_SET_DEFAULTS = 0x08
-const WAKEMON_MAKE_FATAL = 0x10
-const CPUMON_MAKE_FATAL = 0x1000
-const FOOTPRINT_INTERVAL_RESET = 0x1
-const IOPOL_TYPE_DISK = 0
-const IOPOL_TYPE_VFS_ATIME_UPDATES = 2
-const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES = 3
-const IOPOL_TYPE_VFS_STATFS_NO_DATA_VOLUME = 4
-const IOPOL_TYPE_VFS_TRIGGER_RESOLVE = 5
-const IOPOL_TYPE_VFS_IGNORE_CONTENT_PROTECTION = 6
-const IOPOL_TYPE_VFS_IGNORE_PERMISSIONS = 7
-const IOPOL_TYPE_VFS_SKIP_MTIME_UPDATE = 8
-const IOPOL_TYPE_VFS_ALLOW_LOW_SPACE_WRITES = 9
-const IOPOL_TYPE_VFS_DISALLOW_RW_FOR_O_EVTONLY = 10
-const IOPOL_SCOPE_PROCESS = 0
-const IOPOL_SCOPE_THREAD = 1
-const IOPOL_SCOPE_DARWIN_BG = 2
-const IOPOL_DEFAULT = 0
-const IOPOL_IMPORTANT = 1
-const IOPOL_PASSIVE = 2
-const IOPOL_THROTTLE = 3
-const IOPOL_UTILITY = 4
-const IOPOL_STANDARD = 5
-const IOPOL_ATIME_UPDATES_DEFAULT = 0
-const IOPOL_ATIME_UPDATES_OFF = 1
-const IOPOL_MATERIALIZE_DATALESS_FILES_DEFAULT = 0
-const IOPOL_MATERIALIZE_DATALESS_FILES_OFF = 1
-const IOPOL_MATERIALIZE_DATALESS_FILES_ON = 2
-const IOPOL_VFS_STATFS_NO_DATA_VOLUME_DEFAULT = 0
-const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME = 1
-const IOPOL_VFS_TRIGGER_RESOLVE_DEFAULT = 0
-const IOPOL_VFS_TRIGGER_RESOLVE_OFF = 1
-const IOPOL_VFS_CONTENT_PROTECTION_DEFAULT = 0
-const IOPOL_VFS_CONTENT_PROTECTION_IGNORE = 1
-const IOPOL_VFS_IGNORE_PERMISSIONS_OFF = 0
-const IOPOL_VFS_IGNORE_PERMISSIONS_ON = 1
-const IOPOL_VFS_SKIP_MTIME_UPDATE_OFF = 0
-const IOPOL_VFS_SKIP_MTIME_UPDATE_ON = 1
-const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_OFF = 0
-const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_ON = 1
-const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_DEFAULT = 0
-const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_ON = 1
-const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_DEFAULT = 0
-const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_ON = 1
-const WNOHANG = 0x00000001
-const WUNTRACED = 0x00000002
-const WCOREFLAG = 0200
-const X_WSTOPPED = 0177
-const WEXITED = 0x00000004
-const WSTOPPED = 0x00000008
-const WCONTINUED = 0x00000010
-const WNOWAIT = 0x00000020
-const WAIT_MYPGRP = 0
-const X_QUAD_HIGHWORD = 1
-const X_QUAD_LOWWORD = 0
-const X__DARWIN_LITTLE_ENDIAN = 1234
-const X__DARWIN_BIG_ENDIAN = 4321
-const X__DARWIN_PDP_ENDIAN = 3412
+const X_ATEXIT_SIZE = 32
+const X_REENT_EMERGENCY_SIZE = 25
+const X_REENT_ASCTIME_SIZE = 26
+const X_REENT_SIGNAL_SIZE = 24
 const EXIT_FAILURE = 1
 const EXIT_SUCCESS = 0
-const RAND_MAX = 0x7fffffff
+const X__SLBF = 0x0001
+const X__SNBF = 0x0002
+const X__SRD = 0x0004
+const X__SWR = 0x0008
+const X__SRW = 0x0010
+const X__SEOF = 0x0020
+const X__SERR = 0x0040
+const X__SMBF = 0x0080
+const X__SAPP = 0x0100
+const X__SSTR = 0x0200
+const X__SOPT = 0x0400
+const X__SNPT = 0x0800
+const X__SOFF = 0x1000
+const X__SORD = 0x2000
+const X__SL64 = 0x8000
+const X__SNLK = 0x0001
+const X__SWID = 0x2000
+const X_IOFBF = 0
+const X_IOLBF = 1
+const X_IONBF = 2
+const FOPEN_MAX = 20
+const FILENAME_MAX = 1024
+const P_tmpdir = "/tmp"
+const SEEK_SET = 0
+const SEEK_CUR = 1
+const SEEK_END = 2
+const TMP_MAX = 26
+const L_ctermid = 16
+const X__bool_true_false_are_defined = 1
+const True = 1
+const False = 0
 const ESP_OK = 0
 const ESP_ERR_NO_MEM = 0x101
 const ESP_ERR_INVALID_ARG = 0x102
@@ -1479,24 +1064,7 @@ const ESP_ERR_MESH_BASE = 0x4000
 const ESP_ERR_FLASH_BASE = 0x6000
 const ESP_ERR_HW_CRYPTO_BASE = 0xc000
 const ESP_ERR_MEMPROT_BASE = 0xd000
-const X__ASSERT_FUNC = "??"
 
-type IntLeast8T c.Int8T
-type IntLeast16T c.Int16T
-type IntLeast32T c.Int32T
-type IntLeast64T c.Int64T
-type UintLeast8T c.Uint8T
-type UintLeast16T c.Uint16T
-type UintLeast32T c.Uint32T
-type UintLeast64T c.Uint64T
-type IntFast8T c.Int8T
-type IntFast16T c.Int16T
-type IntFast32T c.Int32T
-type IntFast64T c.Int64T
-type UintFast8T c.Uint8T
-type UintFast16T c.Uint16T
-type UintFast32T c.Uint32T
-type UintFast64T c.Uint64T
 type X__int8T c.Char
 type X__uint8T c.Char
 type X__int16T int16
@@ -1505,131 +1073,138 @@ type X__int32T c.Int
 type X__uint32T c.Uint
 type X__int64T c.LongLong
 type X__uint64T c.UlongLong
-type X__darwinIntptrT c.Long
-type X__darwinNaturalT c.Uint
-type X__darwinCtRuneT c.Int
+type X__intLeast8T c.Char
+type X__uintLeast8T c.Char
+type X__intLeast16T int16
+type X__uintLeast16T uint16
+type X__intLeast32T c.Int
+type X__uintLeast32T c.Uint
+type X__intLeast64T c.LongLong
+type X__uintLeast64T c.UlongLong
+type X__intmaxT c.LongLong
+type X__uintmaxT c.UlongLong
+type X__intptrT c.Int
+type X__uintptrT c.Uint
+type IntLeast8T X__intLeast8T
+type UintLeast8T X__uintLeast8T
+type IntLeast16T X__intLeast16T
+type UintLeast16T X__uintLeast16T
+type IntLeast32T X__intLeast32T
+type UintLeast32T X__uintLeast32T
+type IntLeast64T X__intLeast64T
+type UintLeast64T X__uintLeast64T
+type IntFast8T c.Char
+type UintFast8T c.Char
+type IntFast16T int16
+type UintFast16T uint16
+type IntFast32T c.Int
+type UintFast32T c.Uint
+type IntFast64T c.LongLong
+type UintFast64T c.UlongLong
+type PtrdiffT c.Int
+type WcharT c.Int
 
-type X__mbstateT struct {
-	X__mbstate8 [128]c.Char
+type MaxAlignT struct {
+	X__clangMaxAlignNonce1 c.LongLong
+	X__clangMaxAlignNonce2 c.Double
 }
-type X__darwinMbstateT X__mbstateT
-type X__darwinPtrdiffT c.Long
-type X__darwinSizeT c.Ulong
-type X__darwinVaList c.Pointer
-type X__darwinWcharT c.Int
-type X__darwinRuneT X__darwinWcharT
-type X__darwinWintT c.Int
-type X__darwinClockT c.Ulong
-type X__darwinSocklenT X__uint32T
-type X__darwinSsizeT c.Long
-type X__darwinTimeT c.Long
-type X__darwinBlkcntT X__int64T
-type X__darwinBlksizeT X__int32T
-type X__darwinDevT X__int32T
-type X__darwinFsblkcntT c.Uint
-type X__darwinFsfilcntT c.Uint
-type X__darwinGidT X__uint32T
-type X__darwinIdT X__uint32T
-type X__darwinIno64T X__uint64T
-type X__darwinInoT X__darwinIno64T
-type X__darwinMachPortNameT X__darwinNaturalT
-type X__darwinMachPortT X__darwinMachPortNameT
-type X__darwinModeT X__uint16T
-type X__darwinOffT X__int64T
-type X__darwinPidT X__int32T
-type X__darwinSigsetT X__uint32T
-type X__darwinSusecondsT X__int32T
-type X__darwinUidT X__uint32T
-type X__darwinUsecondsT X__uint32T
-type X__darwinUuidT [16]c.Char
-type X__darwinUuidStringT [37]c.Char
+type X__gnucVaList c.Pointer
+type WintT c.Uint
+type X__blkcntT c.Long
+type X__blksizeT c.Long
+type X__fsblkcntT X__uint64T
+type X__fsfilcntT X__uint32T
+type X_offT c.Long
+type X__pidT c.Int
+type X__devT int16
+type X__uidT uint16
+type X__gidT uint16
+type X__idT X__uint32T
+type X__inoT uint16
+type X__modeT X__uint32T
+type X_off64T c.LongLong
+type X__offT X_offT
+type X__loffT X_off64T
+type X__keyT c.Long
+type X_fposT c.Long
+type X__sizeT c.Uint
+type X_ssizeT c.Int
+type X__ssizeT X_ssizeT
 
-type X__darwinPthreadHandlerRec struct {
-	X__routine c.Pointer
-	X__arg     c.Pointer
-	X__next    *X__darwinPthreadHandlerRec
+type X_mbstateT struct {
+	X__count c.Int
+	X__value struct {
+		X__wch WintT
+	}
 }
+type X_iconvT c.Pointer
+type X__clockT c.Ulong
+type X__timeT X__intLeast64T
+type X__clockidT c.Ulong
+type X__daddrT c.Long
+type X__timerT c.Ulong
+type X__saFamilyT X__uint8T
+type X__socklenT X__uint32T
+type X__nlItem c.Int
+type X__nlinkT uint16
+type X__susecondsT c.Long
+type X__usecondsT c.Ulong
+type X__vaList c.Pointer
+type X__ULong c.Ulong
 
-type X_opaquePthreadAttrT struct {
-	X__sig    c.Long
-	X__opaque [56]c.Char
+type X__lock struct {
+	Unused [8]uint8
 }
+type X_LOCKT *X__lock
+type X_lockT X_LOCKT
+type X_flockT X_LOCKT
 
-type X_opaquePthreadCondT struct {
-	X__sig    c.Long
-	X__opaque [40]c.Char
-}
-
-type X_opaquePthreadCondattrT struct {
-	X__sig    c.Long
-	X__opaque [8]c.Char
-}
-
-type X_opaquePthreadMutexT struct {
-	X__sig    c.Long
-	X__opaque [56]c.Char
+type X_reent struct {
+	Unused [8]uint8
 }
 
-type X_opaquePthreadMutexattrT struct {
-	X__sig    c.Long
-	X__opaque [8]c.Char
+type X__localeT struct {
+	Unused [8]uint8
 }
 
-type X_opaquePthreadOnceT struct {
-	X__sig    c.Long
-	X__opaque [8]c.Char
+type X_Bigint struct {
+	X_next   *X_Bigint
+	X_k      c.Int
+	X_maxwds c.Int
+	X_sign   c.Int
+	X_wds    c.Int
+	X_x      [1]X__ULong
 }
 
-type X_opaquePthreadRwlockT struct {
-	X__sig    c.Long
-	X__opaque [192]c.Char
+type X__tm struct {
+	X__tmSec   c.Int
+	X__tmMin   c.Int
+	X__tmHour  c.Int
+	X__tmMday  c.Int
+	X__tmMon   c.Int
+	X__tmYear  c.Int
+	X__tmWday  c.Int
+	X__tmYday  c.Int
+	X__tmIsdst c.Int
 }
 
-type X_opaquePthreadRwlockattrT struct {
-	X__sig    c.Long
-	X__opaque [16]c.Char
+type X_onExitArgs struct {
+	X_fnargs    [32]c.Pointer
+	X_dsoHandle [32]c.Pointer
+	X_fntypes   X__ULong
+	X_isCxa     X__ULong
 }
 
-type X_opaquePthreadT struct {
-	X__sig          c.Long
-	X__cleanupStack *X__darwinPthreadHandlerRec
-	X__opaque       [8176]c.Char
+type X_atexit struct {
+	X_next          *X_atexit
+	X_ind           c.Int
+	X_fns           [32]c.Pointer
+	X_onExitArgsPtr *X_onExitArgs
 }
-type X__darwinPthreadAttrT X_opaquePthreadAttrT
-type X__darwinPthreadCondT X_opaquePthreadCondT
-type X__darwinPthreadCondattrT X_opaquePthreadCondattrT
-type X__darwinPthreadKeyT c.Ulong
-type X__darwinPthreadMutexT X_opaquePthreadMutexT
-type X__darwinPthreadMutexattrT X_opaquePthreadMutexattrT
-type X__darwinPthreadOnceT X_opaquePthreadOnceT
-type X__darwinPthreadRwlockT X_opaquePthreadRwlockT
-type X__darwinPthreadRwlockattrT X_opaquePthreadRwlockattrT
-type X__darwinPthreadT *X_opaquePthreadT
-type UInt8T c.Char
-type UInt16T uint16
-type UInt32T c.Uint
-type UInt64T c.UlongLong
-type RegisterT c.Int64T
-type UserAddrT UInt64T
-type UserSizeT UInt64T
-type UserSsizeT c.Int64T
-type UserLongT c.Int64T
-type UserUlongT UInt64T
-type UserTimeT c.Int64T
-type UserOffT c.Int64T
-type SyscallArgT UInt64T
-type X__darwinNlItem c.Int
-type X__darwinWctransT c.Int
-type X__darwinWctypeT X__uint32T
-type FposT X__darwinOffT
 
 type X__sbuf struct {
 	X_base *c.Char
 	X_size c.Int
-}
-
-type X__sFILEX struct {
-	Unused [8]uint8
 }
 
 type X__sFILE struct {
@@ -1640,480 +1215,59 @@ type X__sFILE struct {
 	X_file    int16
 	X_bf      X__sbuf
 	X_lbfsize c.Int
+	X_data    *X_reent
 	X_cookie  c.Pointer
-	X_close   c.Pointer
 	X_read    c.Pointer
-	X_seek    c.Pointer
 	X_write   c.Pointer
+	X_seek    c.Pointer
+	X_close   c.Pointer
 	X_ub      X__sbuf
-	X_extra   *X__sFILEX
+	X_up      *c.Char
 	X_ur      c.Int
 	X_ubuf    [3]c.Char
 	X_nbuf    [1]c.Char
 	X_lb      X__sbuf
 	X_blksize c.Int
-	X_offset  FposT
+	X_offset  X_offT
+	X_lock    X_flockT
+	X_mbstate X_mbstateT
+	X_flags2  c.Int
 }
-type OffT X__darwinOffT
-type IdtypeT c.Int
+type X__FILE X__sFILE
 
-const (
-	P_ALL  IdtypeT = 0
-	P_PID  IdtypeT = 1
-	P_PGID IdtypeT = 2
-)
-
-type PidT X__darwinPidT
-type IdT X__darwinIdT
-type SigAtomicT c.Int
-
-type X__darwinArmExceptionState struct {
-	X__exception X__uint32T
-	X__fsr       X__uint32T
-	X__far       X__uint32T
+type X_glue struct {
+	X_next  *X_glue
+	X_niobs c.Int
+	X_iobs  *X__FILE
 }
 
-type X__darwinArmExceptionState64 struct {
-	X__far       X__uint64T
-	X__esr       X__uint32T
-	X__exception X__uint32T
+type X_rand48 struct {
+	X_seed     [3]uint16
+	X_mult     [3]uint16
+	X_add      uint16
+	X_randNext c.UlongLong
 }
 
-type X__darwinArmThreadState struct {
-	X__r    [13]X__uint32T
-	X__sp   X__uint32T
-	X__lr   X__uint32T
-	X__pc   X__uint32T
-	X__cpsr X__uint32T
+type X_mprec struct {
+	X_result   *X_Bigint
+	X_resultK  c.Int
+	X_p5s      *X_Bigint
+	X_freelist **X_Bigint
 }
 
-type X__darwinArmThreadState64 struct {
-	X__x    [29]X__uint64T
-	X__fp   X__uint64T
-	X__lr   X__uint64T
-	X__sp   X__uint64T
-	X__pc   X__uint64T
-	X__cpsr X__uint32T
-	X__pad  X__uint32T
+type X_miscReent struct {
+	X_strtokLast     *c.Char
+	X_mblenState     X_mbstateT
+	X_wctombState    X_mbstateT
+	X_mbtowcState    X_mbstateT
+	X_l64aBuf        [8]c.Char
+	X_getdateErr     c.Int
+	X_mbrlenState    X_mbstateT
+	X_mbrtowcState   X_mbstateT
+	X_mbsrtowcsState X_mbstateT
+	X_wcrtombState   X_mbstateT
+	X_wcsrtombsState X_mbstateT
 }
-
-type X__darwinArmVfpState struct {
-	X__r     [64]X__uint32T
-	X__fpscr X__uint32T
-}
-
-type X__darwinArmNeonState64 struct {
-	X__v    [32]X__uint128T
-	X__fpsr X__uint32T
-	X__fpcr X__uint32T
-}
-
-type X__uint128T struct {
-	Unused [8]uint8
-}
-
-type X__darwinArmNeonState struct {
-	X__v    [16]X__uint128T
-	X__fpsr X__uint32T
-	X__fpcr X__uint32T
-}
-
-type X__armPageinState struct {
-	X__pageinError c.Int
-}
-
-type X__armLegacyDebugState struct {
-	X__bvr [16]X__uint32T
-	X__bcr [16]X__uint32T
-	X__wvr [16]X__uint32T
-	X__wcr [16]X__uint32T
-}
-
-type X__darwinArmDebugState32 struct {
-	X__bvr      [16]X__uint32T
-	X__bcr      [16]X__uint32T
-	X__wvr      [16]X__uint32T
-	X__wcr      [16]X__uint32T
-	X__mdscrEl1 X__uint64T
-}
-
-type X__darwinArmDebugState64 struct {
-	X__bvr      [16]X__uint64T
-	X__bcr      [16]X__uint64T
-	X__wvr      [16]X__uint64T
-	X__wcr      [16]X__uint64T
-	X__mdscrEl1 X__uint64T
-}
-
-type X__darwinArmCpmuState64 struct {
-	X__ctrs [16]X__uint64T
-}
-
-type X__darwinMcontext32 struct {
-	X__es X__darwinArmExceptionState
-	X__ss X__darwinArmThreadState
-	X__fs X__darwinArmVfpState
-}
-
-type X__darwinMcontext64 struct {
-	X__es X__darwinArmExceptionState64
-	X__ss X__darwinArmThreadState64
-	X__ns X__darwinArmNeonState64
-}
-type McontextT *X__darwinMcontext64
-type PthreadAttrT X__darwinPthreadAttrT
-
-type X__darwinSigaltstack struct {
-	SsSp    c.Pointer
-	SsSize  X__darwinSizeT
-	SsFlags c.Int
-}
-type StackT X__darwinSigaltstack
-
-type X__darwinUcontext struct {
-	UcOnstack  c.Int
-	UcSigmask  X__darwinSigsetT
-	UcStack    X__darwinSigaltstack
-	UcLink     *X__darwinUcontext
-	UcMcsize   X__darwinSizeT
-	UcMcontext *X__darwinMcontext64
-}
-type UcontextT X__darwinUcontext
-type SigsetT X__darwinSigsetT
-type UidT X__darwinUidT
-
-type Sigval struct {
-	SivalPtr c.Pointer
-}
-
-type Sigevent struct {
-	SigevNotify           c.Int
-	SigevSigno            c.Int
-	SigevValue            Sigval
-	SigevNotifyFunction   c.Pointer
-	SigevNotifyAttributes *PthreadAttrT
-}
-
-type X__siginfo struct {
-	SiSigno  c.Int
-	SiErrno  c.Int
-	SiCode   c.Int
-	SiPid    PidT
-	SiUid    UidT
-	SiStatus c.Int
-	SiAddr   c.Pointer
-	SiValue  Sigval
-	SiBand   c.Long
-	X__pad   [7]c.Ulong
-}
-type SiginfoT X__siginfo
-
-type X__sigactionU struct {
-	X__saHandler c.Pointer
-}
-
-type X__sigaction struct {
-	X__sigactionU X__sigactionU
-	SaTramp       c.Pointer
-	SaMask        SigsetT
-	SaFlags       c.Int
-}
-
-type Sigaction struct {
-	X__sigactionU X__sigactionU
-	SaMask        SigsetT
-	SaFlags       c.Int
-}
-
-// llgo:type C
-type SigT func(c.Int)
-
-type Sigvec struct {
-	SvHandler c.Pointer
-	SvMask    c.Int
-	SvFlags   c.Int
-}
-
-type Sigstack struct {
-	SsSp      *c.Char
-	SsOnstack c.Int
-}
-
-type Timeval struct {
-	TvSec  X__darwinTimeT
-	TvUsec X__darwinSusecondsT
-}
-type RlimT X__uint64T
-
-type Rusage struct {
-	RuUtime    Timeval
-	RuStime    Timeval
-	RuMaxrss   c.Long
-	RuIxrss    c.Long
-	RuIdrss    c.Long
-	RuIsrss    c.Long
-	RuMinflt   c.Long
-	RuMajflt   c.Long
-	RuNswap    c.Long
-	RuInblock  c.Long
-	RuOublock  c.Long
-	RuMsgsnd   c.Long
-	RuMsgrcv   c.Long
-	RuNsignals c.Long
-	RuNvcsw    c.Long
-	RuNivcsw   c.Long
-}
-type RusageInfoT c.Pointer
-
-type RusageInfoV0 struct {
-	RiUuid             [16]c.Uint8T
-	RiUserTime         c.Uint64T
-	RiSystemTime       c.Uint64T
-	RiPkgIdleWkups     c.Uint64T
-	RiInterruptWkups   c.Uint64T
-	RiPageins          c.Uint64T
-	RiWiredSize        c.Uint64T
-	RiResidentSize     c.Uint64T
-	RiPhysFootprint    c.Uint64T
-	RiProcStartAbstime c.Uint64T
-	RiProcExitAbstime  c.Uint64T
-}
-
-type RusageInfoV1 struct {
-	RiUuid                [16]c.Uint8T
-	RiUserTime            c.Uint64T
-	RiSystemTime          c.Uint64T
-	RiPkgIdleWkups        c.Uint64T
-	RiInterruptWkups      c.Uint64T
-	RiPageins             c.Uint64T
-	RiWiredSize           c.Uint64T
-	RiResidentSize        c.Uint64T
-	RiPhysFootprint       c.Uint64T
-	RiProcStartAbstime    c.Uint64T
-	RiProcExitAbstime     c.Uint64T
-	RiChildUserTime       c.Uint64T
-	RiChildSystemTime     c.Uint64T
-	RiChildPkgIdleWkups   c.Uint64T
-	RiChildInterruptWkups c.Uint64T
-	RiChildPageins        c.Uint64T
-	RiChildElapsedAbstime c.Uint64T
-}
-
-type RusageInfoV2 struct {
-	RiUuid                [16]c.Uint8T
-	RiUserTime            c.Uint64T
-	RiSystemTime          c.Uint64T
-	RiPkgIdleWkups        c.Uint64T
-	RiInterruptWkups      c.Uint64T
-	RiPageins             c.Uint64T
-	RiWiredSize           c.Uint64T
-	RiResidentSize        c.Uint64T
-	RiPhysFootprint       c.Uint64T
-	RiProcStartAbstime    c.Uint64T
-	RiProcExitAbstime     c.Uint64T
-	RiChildUserTime       c.Uint64T
-	RiChildSystemTime     c.Uint64T
-	RiChildPkgIdleWkups   c.Uint64T
-	RiChildInterruptWkups c.Uint64T
-	RiChildPageins        c.Uint64T
-	RiChildElapsedAbstime c.Uint64T
-	RiDiskioBytesread     c.Uint64T
-	RiDiskioByteswritten  c.Uint64T
-}
-
-type RusageInfoV3 struct {
-	RiUuid                      [16]c.Uint8T
-	RiUserTime                  c.Uint64T
-	RiSystemTime                c.Uint64T
-	RiPkgIdleWkups              c.Uint64T
-	RiInterruptWkups            c.Uint64T
-	RiPageins                   c.Uint64T
-	RiWiredSize                 c.Uint64T
-	RiResidentSize              c.Uint64T
-	RiPhysFootprint             c.Uint64T
-	RiProcStartAbstime          c.Uint64T
-	RiProcExitAbstime           c.Uint64T
-	RiChildUserTime             c.Uint64T
-	RiChildSystemTime           c.Uint64T
-	RiChildPkgIdleWkups         c.Uint64T
-	RiChildInterruptWkups       c.Uint64T
-	RiChildPageins              c.Uint64T
-	RiChildElapsedAbstime       c.Uint64T
-	RiDiskioBytesread           c.Uint64T
-	RiDiskioByteswritten        c.Uint64T
-	RiCpuTimeQosDefault         c.Uint64T
-	RiCpuTimeQosMaintenance     c.Uint64T
-	RiCpuTimeQosBackground      c.Uint64T
-	RiCpuTimeQosUtility         c.Uint64T
-	RiCpuTimeQosLegacy          c.Uint64T
-	RiCpuTimeQosUserInitiated   c.Uint64T
-	RiCpuTimeQosUserInteractive c.Uint64T
-	RiBilledSystemTime          c.Uint64T
-	RiServicedSystemTime        c.Uint64T
-}
-
-type RusageInfoV4 struct {
-	RiUuid                      [16]c.Uint8T
-	RiUserTime                  c.Uint64T
-	RiSystemTime                c.Uint64T
-	RiPkgIdleWkups              c.Uint64T
-	RiInterruptWkups            c.Uint64T
-	RiPageins                   c.Uint64T
-	RiWiredSize                 c.Uint64T
-	RiResidentSize              c.Uint64T
-	RiPhysFootprint             c.Uint64T
-	RiProcStartAbstime          c.Uint64T
-	RiProcExitAbstime           c.Uint64T
-	RiChildUserTime             c.Uint64T
-	RiChildSystemTime           c.Uint64T
-	RiChildPkgIdleWkups         c.Uint64T
-	RiChildInterruptWkups       c.Uint64T
-	RiChildPageins              c.Uint64T
-	RiChildElapsedAbstime       c.Uint64T
-	RiDiskioBytesread           c.Uint64T
-	RiDiskioByteswritten        c.Uint64T
-	RiCpuTimeQosDefault         c.Uint64T
-	RiCpuTimeQosMaintenance     c.Uint64T
-	RiCpuTimeQosBackground      c.Uint64T
-	RiCpuTimeQosUtility         c.Uint64T
-	RiCpuTimeQosLegacy          c.Uint64T
-	RiCpuTimeQosUserInitiated   c.Uint64T
-	RiCpuTimeQosUserInteractive c.Uint64T
-	RiBilledSystemTime          c.Uint64T
-	RiServicedSystemTime        c.Uint64T
-	RiLogicalWrites             c.Uint64T
-	RiLifetimeMaxPhysFootprint  c.Uint64T
-	RiInstructions              c.Uint64T
-	RiCycles                    c.Uint64T
-	RiBilledEnergy              c.Uint64T
-	RiServicedEnergy            c.Uint64T
-	RiIntervalMaxPhysFootprint  c.Uint64T
-	RiRunnableTime              c.Uint64T
-}
-
-type RusageInfoV5 struct {
-	RiUuid                      [16]c.Uint8T
-	RiUserTime                  c.Uint64T
-	RiSystemTime                c.Uint64T
-	RiPkgIdleWkups              c.Uint64T
-	RiInterruptWkups            c.Uint64T
-	RiPageins                   c.Uint64T
-	RiWiredSize                 c.Uint64T
-	RiResidentSize              c.Uint64T
-	RiPhysFootprint             c.Uint64T
-	RiProcStartAbstime          c.Uint64T
-	RiProcExitAbstime           c.Uint64T
-	RiChildUserTime             c.Uint64T
-	RiChildSystemTime           c.Uint64T
-	RiChildPkgIdleWkups         c.Uint64T
-	RiChildInterruptWkups       c.Uint64T
-	RiChildPageins              c.Uint64T
-	RiChildElapsedAbstime       c.Uint64T
-	RiDiskioBytesread           c.Uint64T
-	RiDiskioByteswritten        c.Uint64T
-	RiCpuTimeQosDefault         c.Uint64T
-	RiCpuTimeQosMaintenance     c.Uint64T
-	RiCpuTimeQosBackground      c.Uint64T
-	RiCpuTimeQosUtility         c.Uint64T
-	RiCpuTimeQosLegacy          c.Uint64T
-	RiCpuTimeQosUserInitiated   c.Uint64T
-	RiCpuTimeQosUserInteractive c.Uint64T
-	RiBilledSystemTime          c.Uint64T
-	RiServicedSystemTime        c.Uint64T
-	RiLogicalWrites             c.Uint64T
-	RiLifetimeMaxPhysFootprint  c.Uint64T
-	RiInstructions              c.Uint64T
-	RiCycles                    c.Uint64T
-	RiBilledEnergy              c.Uint64T
-	RiServicedEnergy            c.Uint64T
-	RiIntervalMaxPhysFootprint  c.Uint64T
-	RiRunnableTime              c.Uint64T
-	RiFlags                     c.Uint64T
-}
-
-type RusageInfoV6 struct {
-	RiUuid                      [16]c.Uint8T
-	RiUserTime                  c.Uint64T
-	RiSystemTime                c.Uint64T
-	RiPkgIdleWkups              c.Uint64T
-	RiInterruptWkups            c.Uint64T
-	RiPageins                   c.Uint64T
-	RiWiredSize                 c.Uint64T
-	RiResidentSize              c.Uint64T
-	RiPhysFootprint             c.Uint64T
-	RiProcStartAbstime          c.Uint64T
-	RiProcExitAbstime           c.Uint64T
-	RiChildUserTime             c.Uint64T
-	RiChildSystemTime           c.Uint64T
-	RiChildPkgIdleWkups         c.Uint64T
-	RiChildInterruptWkups       c.Uint64T
-	RiChildPageins              c.Uint64T
-	RiChildElapsedAbstime       c.Uint64T
-	RiDiskioBytesread           c.Uint64T
-	RiDiskioByteswritten        c.Uint64T
-	RiCpuTimeQosDefault         c.Uint64T
-	RiCpuTimeQosMaintenance     c.Uint64T
-	RiCpuTimeQosBackground      c.Uint64T
-	RiCpuTimeQosUtility         c.Uint64T
-	RiCpuTimeQosLegacy          c.Uint64T
-	RiCpuTimeQosUserInitiated   c.Uint64T
-	RiCpuTimeQosUserInteractive c.Uint64T
-	RiBilledSystemTime          c.Uint64T
-	RiServicedSystemTime        c.Uint64T
-	RiLogicalWrites             c.Uint64T
-	RiLifetimeMaxPhysFootprint  c.Uint64T
-	RiInstructions              c.Uint64T
-	RiCycles                    c.Uint64T
-	RiBilledEnergy              c.Uint64T
-	RiServicedEnergy            c.Uint64T
-	RiIntervalMaxPhysFootprint  c.Uint64T
-	RiRunnableTime              c.Uint64T
-	RiFlags                     c.Uint64T
-	RiUserPtime                 c.Uint64T
-	RiSystemPtime               c.Uint64T
-	RiPinstructions             c.Uint64T
-	RiPcycles                   c.Uint64T
-	RiEnergyNj                  c.Uint64T
-	RiPenergyNj                 c.Uint64T
-	RiSecureTimeInSystem        c.Uint64T
-	RiSecurePtimeInSystem       c.Uint64T
-	RiReserved                  [12]c.Uint64T
-}
-type RusageInfoCurrent RusageInfoV6
-
-type Rlimit struct {
-	RlimCur RlimT
-	RlimMax RlimT
-}
-
-type ProcRlimitControlWakeupmon struct {
-	WmFlags c.Uint32T
-	WmRate  c.Int32T
-}
-
-type X_OSUnalignedU16 struct {
-	X__val c.Uint16T
-}
-
-type X_OSUnalignedU32 struct {
-	X__val c.Uint32T
-}
-
-type X_OSUnalignedU64 struct {
-	X__val c.Uint64T
-}
-
-type Wait struct {
-	WT struct {
-		WTermsig  c.Uint
-		WCoredump c.Uint
-		WRetcode  c.Uint
-		WFiller   c.Uint
-	}
-}
-type CtRuneT X__darwinCtRuneT
-type RuneT X__darwinRuneT
-type WcharT X__darwinWcharT
 
 type DivT struct {
 	Quot c.Int
@@ -2129,14 +1283,11 @@ type LldivT struct {
 	Quot c.LongLong
 	Rem  c.LongLong
 }
-type MallocTypeIdT c.UlongLong
 
-type X_mallocZoneT struct {
-	Unused [8]uint8
-}
-type MallocZoneT X_mallocZoneT
-type DevT X__darwinDevT
-type ModeT X__darwinModeT
+// llgo:type C
+type X__comparFnT func(c.Pointer, c.Pointer) c.Int
+type FposT X_fposT
+type OffT X__offT
 type EspErrT c.Int
 
 type EspEtmChannelT struct {

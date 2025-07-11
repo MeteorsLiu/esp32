@@ -1,7 +1,7 @@
 [
   {
     "mangle": "button_enable_wakeup_calibration",
-    "c++": "button_enable_wakeup_calibration(te_button_handle_t, _Bool)",
+    "c++": "button_enable_wakeup_calibration(te_button_handle_t, bool)",
     "go": "ButtonEnableWakeupCalibration"
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "mangle": "matrix_enable_wakeup_calibration",
-    "c++": "matrix_enable_wakeup_calibration(te_matrix_handle_t, _Bool)",
+    "c++": "matrix_enable_wakeup_calibration(te_matrix_handle_t, bool)",
     "go": "MatrixEnableWakeupCalibration"
   },
   {
     "mangle": "slider_enable_wakeup_calibration",
-    "c++": "slider_enable_wakeup_calibration(te_slider_handle_t, _Bool)",
+    "c++": "slider_enable_wakeup_calibration(te_slider_handle_t, bool)",
     "go": "SliderEnableWakeupCalibration"
   },
   {
@@ -166,7 +166,7 @@
   },
   {
     "mangle": "touch_element_sleep_enable_wakeup_calibration",
-    "c++": "touch_element_sleep_enable_wakeup_calibration(touch_elem_handle_t, _Bool)",
+    "c++": "touch_element_sleep_enable_wakeup_calibration(touch_elem_handle_t, bool)",
     "go": "TouchElementSleepEnableWakeupCalibration"
   },
   {

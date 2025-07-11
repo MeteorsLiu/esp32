@@ -1,22 +1,22 @@
 [
   {
     "mangle": "esp_cache_aligned_calloc",
-    "c++": "esp_cache_aligned_calloc(size_t, size_t, uint32_t, void **, size_t *)",
+    "c++": "esp_cache_aligned_calloc(int, int, uint32_t, void **, int *)",
     "go": "EspCacheAlignedCalloc"
   },
   {
     "mangle": "esp_cache_aligned_calloc_prefer",
-    "c++": "esp_cache_aligned_calloc_prefer(size_t, size_t, void **, size_t *, size_t, ...)",
+    "c++": "esp_cache_aligned_calloc_prefer(int, int, void **, int *, int, ...)",
     "go": "EspCacheAlignedCallocPrefer"
   },
   {
     "mangle": "esp_cache_aligned_malloc",
-    "c++": "esp_cache_aligned_malloc(size_t, uint32_t, void **, size_t *)",
+    "c++": "esp_cache_aligned_malloc(int, uint32_t, void **, int *)",
     "go": "EspCacheAlignedMalloc"
   },
   {
     "mangle": "esp_cache_aligned_malloc_prefer",
-    "c++": "esp_cache_aligned_malloc_prefer(size_t, void **, size_t *, size_t, ...)",
+    "c++": "esp_cache_aligned_malloc_prefer(int, void **, int *, int, ...)",
     "go": "EspCacheAlignedMallocPrefer"
   },
   {
@@ -26,12 +26,12 @@
   },
   {
     "mangle": "esp_cache_get_alignment",
-    "c++": "esp_cache_get_alignment(uint32_t, size_t *)",
+    "c++": "esp_cache_get_alignment(uint32_t, int *)",
     "go": "EspCacheGetAlignment"
   },
   {
     "mangle": "esp_cache_msync",
-    "c++": "esp_cache_msync(void *, size_t, int)",
+    "c++": "esp_cache_msync(void *, int, int)",
     "go": "EspCacheMsync"
   },
   {
@@ -51,17 +51,17 @@
   },
   {
     "mangle": "esp_heap_adjust_alignment_to_hw",
-    "c++": "esp_heap_adjust_alignment_to_hw(size_t *, size_t *, uint32_t *)",
+    "c++": "esp_heap_adjust_alignment_to_hw(int *, int *, uint32_t *)",
     "go": "EspHeapAdjustAlignmentToHw"
   },
   {
     "mangle": "esp_mmu_map",
-    "c++": "esp_mmu_map(esp_paddr_t, size_t, mmu_target_t, mmu_mem_caps_t, int, void **)",
+    "c++": "esp_mmu_map(esp_paddr_t, int, mmu_target_t, mmu_mem_caps_t, int, void **)",
     "go": "EspPaddrT.EspMmuMap"
   },
   {
     "mangle": "esp_mmu_map_dump_mapped_blocks",
-    "c++": "esp_mmu_map_dump_mapped_blocks(FILE *)",
+    "c++": "esp_mmu_map_dump_mapped_blocks(int *)",
     "go": "EspMmuMapDumpMappedBlocks"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "mangle": "esp_mmu_map_get_max_consecutive_free_block_size",
-    "c++": "esp_mmu_map_get_max_consecutive_free_block_size(mmu_mem_caps_t, mmu_target_t, size_t *)",
+    "c++": "esp_mmu_map_get_max_consecutive_free_block_size(mmu_mem_caps_t, mmu_target_t, int *)",
     "go": "EspMmuMapGetMaxConsecutiveFreeBlockSize"
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "mangle": "esp_mmu_map_reserve_block_with_caps",
-    "c++": "esp_mmu_map_reserve_block_with_caps(size_t, mmu_mem_caps_t, mmu_target_t, const void **)",
+    "c++": "esp_mmu_map_reserve_block_with_caps(int, mmu_mem_caps_t, mmu_target_t, const void **)",
     "go": "EspMmuMapReserveBlockWithCaps"
   },
   {

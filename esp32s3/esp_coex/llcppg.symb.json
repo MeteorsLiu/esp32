@@ -21,7 +21,7 @@
   },
   {
     "mangle": "esp_coex_common_malloc_internal_wrapper",
-    "c++": "esp_coex_common_malloc_internal_wrapper(size_t)",
+    "c++": "esp_coex_common_malloc_internal_wrapper(int)",
     "go": "EspCoexCommonMallocInternalWrapper"
   },
   {

@@ -21,7 +21,7 @@
   },
   {
     "mangle": "http_parser_execute",
-    "c++": "http_parser_execute(http_parser *, const http_parser_settings *, const char *, size_t)",
+    "c++": "http_parser_execute(http_parser *, const http_parser_settings *, const char *, int)",
     "go": "(*HttpParser).HttpParserExecute"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "mangle": "http_parser_parse_url",
-    "c++": "http_parser_parse_url(const char *, size_t, int, struct http_parser_url *)",
+    "c++": "http_parser_parse_url(const char *, int, int, struct http_parser_url *)",
     "go": "HttpParserParseUrl"
   },
   {

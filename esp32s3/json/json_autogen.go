@@ -5,6 +5,10 @@ import (
 	_ "unsafe"
 )
 
-type PtrdiffT c.Long
+type PtrdiffT c.Int
 type WcharT c.Int
-type MaxAlignT c.Double
+
+type MaxAlignT struct {
+	X__clangMaxAlignNonce1 c.LongLong
+	X__clangMaxAlignNonce2 c.Double
+}

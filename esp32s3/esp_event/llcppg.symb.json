@@ -1,7 +1,7 @@
 [
   {
     "mangle": "esp_event_dump",
-    "c++": "esp_event_dump(FILE *)",
+    "c++": "esp_event_dump(int *)",
     "go": "EspEventDump"
   },
   {

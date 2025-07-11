@@ -111,7 +111,7 @@ func PhyGetModemFlag() EspPhyModemT
  *
  */
 //go:linkname PhyGetLock C.phy_get_lock
-func PhyGetLock() c.Int
+func PhyGetLock() X_lockT
 
 /**
  * @brief Call this funnction to track pll immediately.

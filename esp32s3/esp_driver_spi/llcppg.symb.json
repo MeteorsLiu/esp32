@@ -6,7 +6,7 @@
   },
   {
     "mangle": "spi_bus_dma_memory_alloc",
-    "c++": "spi_bus_dma_memory_alloc(spi_host_device_t, size_t, uint32_t)",
+    "c++": "spi_bus_dma_memory_alloc(spi_host_device_t, int, uint32_t)",
     "go": "SpiBusDmaMemoryAlloc"
   },
   {

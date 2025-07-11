@@ -24,7 +24,6 @@ const ESP_ERR_MESH_BASE = 0x4000
 const ESP_ERR_FLASH_BASE = 0x6000
 const ESP_ERR_HW_CRYPTO_BASE = 0xc000
 const ESP_ERR_MEMPROT_BASE = 0xd000
-const X__ASSERT_FUNC = "??"
 
 type EspErrT c.Int
 

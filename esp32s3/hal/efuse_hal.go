@@ -6,63 +6,49 @@ import (
 )
 
 /**
- * @brief get factory mac address
- */
-//go:linkname EfuseHalGetMac C.efuse_hal_get_mac
-func EfuseHalGetMac(mac *c.Uint8T)
-
-/**
- * @brief Returns chip version
+ * @brief set eFuse timings
  *
- * @return Chip version in format: Major * 100 + Minor
+ * @param apb_freq_hz APB frequency in Hz
  */
-//go:linkname EfuseHalChipRevision C.efuse_hal_chip_revision
-func EfuseHalChipRevision() c.Uint32T
+//go:linkname EfuseHalSetTiming C.efuse_hal_set_timing
+func EfuseHalSetTiming(apb_freq_hz c.Uint32T)
 
 /**
- * @brief Return block version
+ * @brief trigger eFuse read operation
+ */
+//go:linkname EfuseHalRead C.efuse_hal_read
+func EfuseHalRead()
+
+/**
+ * @brief clear registers for programming eFuses
+ */
+//go:linkname EfuseHalClearProgramRegisters C.efuse_hal_clear_program_registers
+func EfuseHalClearProgramRegisters()
+
+/**
+ * @brief burn eFuses written in programming registers (one block at once)
  *
- * @return Block version in format: Major * 100 + Minor
+ * @param block block number
  */
-//go:linkname EfuseHalBlkVersion C.efuse_hal_blk_version
-func EfuseHalBlkVersion() c.Uint32T
+//go:linkname EfuseHalProgram C.efuse_hal_program
+func EfuseHalProgram(block c.Uint32T)
 
 /**
- * @brief Is flash encryption currently enabled in hardware?
+ * @brief Calculate Reed-Solomon Encoding values for a block of efuse data.
  *
- * Flash encryption is enabled if the FLASH_CRYPT_CNT efuse has an odd number of bits set.
+ * @param data Pointer to data buffer (length 32 bytes)
+ * @param rs_values Pointer to write encoded data to (length 12 bytes)
+ */
+//go:linkname EfuseHalRsCalculate C.efuse_hal_rs_calculate
+func EfuseHalRsCalculate(data c.Pointer, rs_values c.Pointer)
+
+/**
+ * @brief Checks coding error in a block
  *
- * @return true if flash encryption is enabled.
- */
-//go:linkname EfuseHalFlashEncryptionEnabled C.efuse_hal_flash_encryption_enabled
-func EfuseHalFlashEncryptionEnabled() bool
-
-/**
- * @brief Returns the status of whether the bootloader (and OTA)
- *        will check the maximum chip version or not.
+ * @param block Index of efuse block
  *
- * @return true - Skip the maximum chip version check.
+ * @return True  - block has an error.
+ *         False - no error.
  */
-//go:linkname EfuseHalGetDisableWaferVersionMajor C.efuse_hal_get_disable_wafer_version_major
-func EfuseHalGetDisableWaferVersionMajor() bool
-
-/**
- * @brief Returns the status of whether the app start-up (and OTA)
- *        will check the efuse block version or not.
- *
- * @return true - Skip the efuse block version check.
- */
-//go:linkname EfuseHalGetDisableBlkVersionMajor C.efuse_hal_get_disable_blk_version_major
-func EfuseHalGetDisableBlkVersionMajor() bool
-
-/**
- * @brief Returns major chip version
- */
-//go:linkname EfuseHalGetMajorChipVersion C.efuse_hal_get_major_chip_version
-func EfuseHalGetMajorChipVersion() c.Uint32T
-
-/**
- * @brief Returns minor chip version
- */
-//go:linkname EfuseHalGetMinorChipVersion C.efuse_hal_get_minor_chip_version
-func EfuseHalGetMinorChipVersion() c.Uint32T
+//go:linkname EfuseHalIsCodingErrorInBlock C.efuse_hal_is_coding_error_in_block
+func EfuseHalIsCodingErrorInBlock(block c.Uint) bool

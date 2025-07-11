@@ -26,7 +26,7 @@
   },
   {
     "mangle": "sdmmc_card_print_info",
-    "c++": "sdmmc_card_print_info(FILE *, const sdmmc_card_t *)",
+    "c++": "sdmmc_card_print_info(int *, const sdmmc_card_t *)",
     "go": "SdmmcCardPrintInfo"
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "mangle": "sdmmc_io_print_cis_info",
-    "c++": "sdmmc_io_print_cis_info(uint8_t *, size_t, FILE *)",
+    "c++": "sdmmc_io_print_cis_info(uint8_t *, size_t, int *)",
     "go": "SdmmcIoPrintCisInfo"
   },
   {

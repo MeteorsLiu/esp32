@@ -285,44 +285,34 @@
     "go": "DsHalWritePrivateKeyParams"
   },
   {
-    "mangle": "efuse_hal_blk_version",
-    "c++": "efuse_hal_blk_version()",
-    "go": "EfuseHalBlkVersion"
+    "mangle": "efuse_hal_clear_program_registers",
+    "c++": "efuse_hal_clear_program_registers()",
+    "go": "EfuseHalClearProgramRegisters"
   },
   {
-    "mangle": "efuse_hal_chip_revision",
-    "c++": "efuse_hal_chip_revision()",
-    "go": "EfuseHalChipRevision"
+    "mangle": "efuse_hal_is_coding_error_in_block",
+    "c++": "efuse_hal_is_coding_error_in_block(unsigned int)",
+    "go": "EfuseHalIsCodingErrorInBlock"
   },
   {
-    "mangle": "efuse_hal_flash_encryption_enabled",
-    "c++": "efuse_hal_flash_encryption_enabled()",
-    "go": "EfuseHalFlashEncryptionEnabled"
+    "mangle": "efuse_hal_program",
+    "c++": "efuse_hal_program(uint32_t)",
+    "go": "EfuseHalProgram"
   },
   {
-    "mangle": "efuse_hal_get_disable_blk_version_major",
-    "c++": "efuse_hal_get_disable_blk_version_major()",
-    "go": "EfuseHalGetDisableBlkVersionMajor"
+    "mangle": "efuse_hal_read",
+    "c++": "efuse_hal_read()",
+    "go": "EfuseHalRead"
   },
   {
-    "mangle": "efuse_hal_get_disable_wafer_version_major",
-    "c++": "efuse_hal_get_disable_wafer_version_major()",
-    "go": "EfuseHalGetDisableWaferVersionMajor"
+    "mangle": "efuse_hal_rs_calculate",
+    "c++": "efuse_hal_rs_calculate(const void *, void *)",
+    "go": "EfuseHalRsCalculate"
   },
   {
-    "mangle": "efuse_hal_get_mac",
-    "c++": "efuse_hal_get_mac(uint8_t *)",
-    "go": "EfuseHalGetMac"
-  },
-  {
-    "mangle": "efuse_hal_get_major_chip_version",
-    "c++": "efuse_hal_get_major_chip_version()",
-    "go": "EfuseHalGetMajorChipVersion"
-  },
-  {
-    "mangle": "efuse_hal_get_minor_chip_version",
-    "c++": "efuse_hal_get_minor_chip_version()",
-    "go": "EfuseHalGetMinorChipVersion"
+    "mangle": "efuse_hal_set_timing",
+    "c++": "efuse_hal_set_timing(uint32_t)",
+    "go": "EfuseHalSetTiming"
   },
   {
     "mangle": "gdma_ahb_hal_append",
@@ -1473,6 +1463,71 @@
     "mangle": "timer_hal_set_counter_value",
     "c++": "timer_hal_set_counter_value(timer_hal_context_t *, uint64_t)",
     "go": "(*TimerHalContextT).TimerHalSetCounterValue"
+  },
+  {
+    "mangle": "touch_hal_denoise_enable",
+    "c++": "touch_hal_denoise_enable()",
+    "go": "TouchHalDenoiseEnable"
+  },
+  {
+    "mangle": "touch_hal_denoise_get_config",
+    "c++": "touch_hal_denoise_get_config(touch_pad_denoise_t *)",
+    "go": "(*TouchPadDenoiseT).TouchHalDenoiseGetConfig"
+  },
+  {
+    "mangle": "touch_hal_denoise_set_config",
+    "c++": "touch_hal_denoise_set_config(const touch_pad_denoise_t *)",
+    "go": "(*TouchPadDenoiseT).TouchHalDenoiseSetConfig"
+  },
+  {
+    "mangle": "touch_hal_enable_proximity",
+    "c++": "touch_hal_enable_proximity(touch_pad_t, bool)",
+    "go": "TouchPadT.TouchHalEnableProximity"
+  },
+  {
+    "mangle": "touch_hal_filter_get_config",
+    "c++": "touch_hal_filter_get_config(touch_filter_config_t *)",
+    "go": "(*TouchFilterConfigT).TouchHalFilterGetConfig"
+  },
+  {
+    "mangle": "touch_hal_filter_set_config",
+    "c++": "touch_hal_filter_set_config(const touch_filter_config_t *)",
+    "go": "(*TouchFilterConfigT).TouchHalFilterSetConfig"
+  },
+  {
+    "mangle": "touch_hal_sleep_channel_enable",
+    "c++": "touch_hal_sleep_channel_enable(touch_pad_t, bool)",
+    "go": "TouchPadT.TouchHalSleepChannelEnable"
+  },
+  {
+    "mangle": "touch_hal_sleep_channel_get_config",
+    "c++": "touch_hal_sleep_channel_get_config(touch_pad_sleep_channel_t *)",
+    "go": "(*TouchPadSleepChannelT).TouchHalSleepChannelGetConfig"
+  },
+  {
+    "mangle": "touch_hal_sleep_channel_get_work_time",
+    "c++": "touch_hal_sleep_channel_get_work_time(uint16_t *, uint16_t *)",
+    "go": "TouchHalSleepChannelGetWorkTime"
+  },
+  {
+    "mangle": "touch_hal_sleep_channel_set_work_time",
+    "c++": "touch_hal_sleep_channel_set_work_time(uint16_t, uint16_t)",
+    "go": "TouchHalSleepChannelSetWorkTime"
+  },
+  {
+    "mangle": "touch_hal_waterproof_enable",
+    "c++": "touch_hal_waterproof_enable()",
+    "go": "TouchHalWaterproofEnable"
+  },
+  {
+    "mangle": "touch_hal_waterproof_get_config",
+    "c++": "touch_hal_waterproof_get_config(touch_pad_waterproof_t *)",
+    "go": "(*TouchPadWaterproofT).TouchHalWaterproofGetConfig"
+  },
+  {
+    "mangle": "touch_hal_waterproof_set_config",
+    "c++": "touch_hal_waterproof_set_config(const touch_pad_waterproof_t *)",
+    "go": "(*TouchPadWaterproofT).TouchHalWaterproofSetConfig"
   },
   {
     "mangle": "twai_hal_configure",
