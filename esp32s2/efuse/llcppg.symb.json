@@ -1,0 +1,272 @@
+[
+  {
+    "mangle": "esp_efuse_batch_write_begin",
+    "c++": "esp_efuse_batch_write_begin()",
+    "go": "EspEfuseBatchWriteBegin"
+  },
+  {
+    "mangle": "esp_efuse_batch_write_cancel",
+    "c++": "esp_efuse_batch_write_cancel()",
+    "go": "EspEfuseBatchWriteCancel"
+  },
+  {
+    "mangle": "esp_efuse_batch_write_commit",
+    "c++": "esp_efuse_batch_write_commit()",
+    "go": "EspEfuseBatchWriteCommit"
+  },
+  {
+    "mangle": "esp_efuse_block_is_empty",
+    "c++": "esp_efuse_block_is_empty(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseBlockIsEmpty"
+  },
+  {
+    "mangle": "esp_efuse_check_errors",
+    "c++": "esp_efuse_check_errors()",
+    "go": "EspEfuseCheckErrors"
+  },
+  {
+    "mangle": "esp_efuse_check_secure_version",
+    "c++": "esp_efuse_check_secure_version(uint32_t)",
+    "go": "EspEfuseCheckSecureVersion"
+  },
+  {
+    "mangle": "esp_efuse_count_unused_key_blocks",
+    "c++": "esp_efuse_count_unused_key_blocks()",
+    "go": "EspEfuseCountUnusedKeyBlocks"
+  },
+  {
+    "mangle": "esp_efuse_destroy_block",
+    "c++": "esp_efuse_destroy_block(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseDestroyBlock"
+  },
+  {
+    "mangle": "esp_efuse_disable_rom_download_mode",
+    "c++": "esp_efuse_disable_rom_download_mode()",
+    "go": "EspEfuseDisableRomDownloadMode"
+  },
+  {
+    "mangle": "esp_efuse_enable_rom_secure_download_mode",
+    "c++": "esp_efuse_enable_rom_secure_download_mode()",
+    "go": "EspEfuseEnableRomSecureDownloadMode"
+  },
+  {
+    "mangle": "esp_efuse_find_purpose",
+    "c++": "esp_efuse_find_purpose(esp_efuse_purpose_t, esp_efuse_block_t *)",
+    "go": "EspEfusePurposeT.EspEfuseFindPurpose"
+  },
+  {
+    "mangle": "esp_efuse_find_unused_key_block",
+    "c++": "esp_efuse_find_unused_key_block()",
+    "go": "EspEfuseFindUnusedKeyBlock"
+  },
+  {
+    "mangle": "esp_efuse_get_coding_scheme",
+    "c++": "esp_efuse_get_coding_scheme(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetCodingScheme"
+  },
+  {
+    "mangle": "esp_efuse_get_digest_revoke",
+    "c++": "esp_efuse_get_digest_revoke(unsigned int)",
+    "go": "EspEfuseGetDigestRevoke"
+  },
+  {
+    "mangle": "esp_efuse_get_field_size",
+    "c++": "esp_efuse_get_field_size(const esp_efuse_desc_t **)",
+    "go": "EspEfuseGetFieldSize"
+  },
+  {
+    "mangle": "esp_efuse_get_key",
+    "c++": "esp_efuse_get_key(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetKey"
+  },
+  {
+    "mangle": "esp_efuse_get_key_dis_read",
+    "c++": "esp_efuse_get_key_dis_read(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetKeyDisRead"
+  },
+  {
+    "mangle": "esp_efuse_get_key_dis_write",
+    "c++": "esp_efuse_get_key_dis_write(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetKeyDisWrite"
+  },
+  {
+    "mangle": "esp_efuse_get_key_purpose",
+    "c++": "esp_efuse_get_key_purpose(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetKeyPurpose"
+  },
+  {
+    "mangle": "esp_efuse_get_keypurpose_dis_write",
+    "c++": "esp_efuse_get_keypurpose_dis_write(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetKeypurposeDisWrite"
+  },
+  {
+    "mangle": "esp_efuse_get_pkg_ver",
+    "c++": "esp_efuse_get_pkg_ver()",
+    "go": "EspEfuseGetPkgVer"
+  },
+  {
+    "mangle": "esp_efuse_get_purpose_field",
+    "c++": "esp_efuse_get_purpose_field(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseGetPurposeField"
+  },
+  {
+    "mangle": "esp_efuse_get_write_protect_of_digest_revoke",
+    "c++": "esp_efuse_get_write_protect_of_digest_revoke(unsigned int)",
+    "go": "EspEfuseGetWriteProtectOfDigestRevoke"
+  },
+  {
+    "mangle": "esp_efuse_key_block_unused",
+    "c++": "esp_efuse_key_block_unused(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseKeyBlockUnused"
+  },
+  {
+    "mangle": "esp_efuse_read_block",
+    "c++": "esp_efuse_read_block(esp_efuse_block_t, void *, size_t, size_t)",
+    "go": "EspEfuseBlockT.EspEfuseReadBlock"
+  },
+  {
+    "mangle": "esp_efuse_read_field_bit",
+    "c++": "esp_efuse_read_field_bit(const esp_efuse_desc_t **)",
+    "go": "EspEfuseReadFieldBit"
+  },
+  {
+    "mangle": "esp_efuse_read_field_blob",
+    "c++": "esp_efuse_read_field_blob(const esp_efuse_desc_t **, void *, size_t)",
+    "go": "EspEfuseReadFieldBlob"
+  },
+  {
+    "mangle": "esp_efuse_read_field_cnt",
+    "c++": "esp_efuse_read_field_cnt(const esp_efuse_desc_t **, size_t *)",
+    "go": "EspEfuseReadFieldCnt"
+  },
+  {
+    "mangle": "esp_efuse_read_reg",
+    "c++": "esp_efuse_read_reg(esp_efuse_block_t, unsigned int)",
+    "go": "EspEfuseBlockT.EspEfuseReadReg"
+  },
+  {
+    "mangle": "esp_efuse_read_secure_version",
+    "c++": "esp_efuse_read_secure_version()",
+    "go": "EspEfuseReadSecureVersion"
+  },
+  {
+    "mangle": "esp_efuse_reset",
+    "c++": "esp_efuse_reset()",
+    "go": "EspEfuseReset"
+  },
+  {
+    "mangle": "esp_efuse_rtc_calib_get_tsens_val",
+    "c++": "esp_efuse_rtc_calib_get_tsens_val(float *)",
+    "go": "EspEfuseRtcCalibGetTsensVal"
+  },
+  {
+    "mangle": "esp_efuse_rtc_table_get_parsed_efuse_value",
+    "c++": "esp_efuse_rtc_table_get_parsed_efuse_value(int, bool)",
+    "go": "EspEfuseRtcTableGetParsedEfuseValue"
+  },
+  {
+    "mangle": "esp_efuse_rtc_table_get_raw_efuse_value",
+    "c++": "esp_efuse_rtc_table_get_raw_efuse_value(int)",
+    "go": "EspEfuseRtcTableGetRawEfuseValue"
+  },
+  {
+    "mangle": "esp_efuse_rtc_table_get_tag",
+    "c++": "esp_efuse_rtc_table_get_tag(int, int, int, int)",
+    "go": "EspEfuseRtcTableGetTag"
+  },
+  {
+    "mangle": "esp_efuse_rtc_table_read_calib_version",
+    "c++": "esp_efuse_rtc_table_read_calib_version()",
+    "go": "EspEfuseRtcTableReadCalibVersion"
+  },
+  {
+    "mangle": "esp_efuse_set_digest_revoke",
+    "c++": "esp_efuse_set_digest_revoke(unsigned int)",
+    "go": "EspEfuseSetDigestRevoke"
+  },
+  {
+    "mangle": "esp_efuse_set_key_dis_read",
+    "c++": "esp_efuse_set_key_dis_read(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetKeyDisRead"
+  },
+  {
+    "mangle": "esp_efuse_set_key_dis_write",
+    "c++": "esp_efuse_set_key_dis_write(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetKeyDisWrite"
+  },
+  {
+    "mangle": "esp_efuse_set_key_purpose",
+    "c++": "esp_efuse_set_key_purpose(esp_efuse_block_t, esp_efuse_purpose_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetKeyPurpose"
+  },
+  {
+    "mangle": "esp_efuse_set_keypurpose_dis_write",
+    "c++": "esp_efuse_set_keypurpose_dis_write(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetKeypurposeDisWrite"
+  },
+  {
+    "mangle": "esp_efuse_set_read_protect",
+    "c++": "esp_efuse_set_read_protect(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetReadProtect"
+  },
+  {
+    "mangle": "esp_efuse_set_rom_log_scheme",
+    "c++": "esp_efuse_set_rom_log_scheme(esp_efuse_rom_log_scheme_t)",
+    "go": "EspEfuseRomLogSchemeT.EspEfuseSetRomLogScheme"
+  },
+  {
+    "mangle": "esp_efuse_set_write_protect",
+    "c++": "esp_efuse_set_write_protect(esp_efuse_block_t)",
+    "go": "EspEfuseBlockT.EspEfuseSetWriteProtect"
+  },
+  {
+    "mangle": "esp_efuse_set_write_protect_of_digest_revoke",
+    "c++": "esp_efuse_set_write_protect_of_digest_revoke(unsigned int)",
+    "go": "EspEfuseSetWriteProtectOfDigestRevoke"
+  },
+  {
+    "mangle": "esp_efuse_update_secure_version",
+    "c++": "esp_efuse_update_secure_version(uint32_t)",
+    "go": "EspEfuseUpdateSecureVersion"
+  },
+  {
+    "mangle": "esp_efuse_write_block",
+    "c++": "esp_efuse_write_block(esp_efuse_block_t, const void *, size_t, size_t)",
+    "go": "EspEfuseBlockT.EspEfuseWriteBlock"
+  },
+  {
+    "mangle": "esp_efuse_write_field_bit",
+    "c++": "esp_efuse_write_field_bit(const esp_efuse_desc_t **)",
+    "go": "EspEfuseWriteFieldBit"
+  },
+  {
+    "mangle": "esp_efuse_write_field_blob",
+    "c++": "esp_efuse_write_field_blob(const esp_efuse_desc_t **, const void *, size_t)",
+    "go": "EspEfuseWriteFieldBlob"
+  },
+  {
+    "mangle": "esp_efuse_write_field_cnt",
+    "c++": "esp_efuse_write_field_cnt(const esp_efuse_desc_t **, size_t)",
+    "go": "EspEfuseWriteFieldCnt"
+  },
+  {
+    "mangle": "esp_efuse_write_key",
+    "c++": "esp_efuse_write_key(esp_efuse_block_t, esp_efuse_purpose_t, const void *, size_t)",
+    "go": "EspEfuseBlockT.EspEfuseWriteKey"
+  },
+  {
+    "mangle": "esp_efuse_write_keys",
+    "c++": "esp_efuse_write_keys(const esp_efuse_purpose_t *, uint8_t (*)[32], unsigned int)",
+    "go": "EspEfuseWriteKeys"
+  },
+  {
+    "mangle": "esp_efuse_write_reg",
+    "c++": "esp_efuse_write_reg(esp_efuse_block_t, unsigned int, uint32_t)",
+    "go": "EspEfuseBlockT.EspEfuseWriteReg"
+  },
+  {
+    "mangle": "esp_secure_boot_read_key_digests",
+    "c++": "esp_secure_boot_read_key_digests(esp_secure_boot_key_digests_t *)",
+    "go": "(*EspSecureBootKeyDigestsT).EspSecureBootReadKeyDigests"
+  }
+]

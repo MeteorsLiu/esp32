@@ -1,0 +1,257 @@
+[
+  {
+    "mangle": "nvs_bootloader_read",
+    "c++": "nvs_bootloader_read(const char *, const size_t, nvs_bootloader_read_list_t *)",
+    "go": "NvsBootloaderRead"
+  },
+  {
+    "mangle": "nvs_close",
+    "c++": "nvs_close(nvs_handle_t)",
+    "go": "NvsHandleT.NvsClose"
+  },
+  {
+    "mangle": "nvs_commit",
+    "c++": "nvs_commit(nvs_handle_t)",
+    "go": "NvsHandleT.NvsCommit"
+  },
+  {
+    "mangle": "nvs_entry_find",
+    "c++": "nvs_entry_find(const char *, const char *, nvs_type_t, nvs_iterator_t *)",
+    "go": "NvsEntryFind"
+  },
+  {
+    "mangle": "nvs_entry_find_in_handle",
+    "c++": "nvs_entry_find_in_handle(nvs_handle_t, nvs_type_t, nvs_iterator_t *)",
+    "go": "NvsHandleT.NvsEntryFindInHandle"
+  },
+  {
+    "mangle": "nvs_entry_info",
+    "c++": "nvs_entry_info(const nvs_iterator_t, nvs_entry_info_t *)",
+    "go": "NvsEntryInfo"
+  },
+  {
+    "mangle": "nvs_entry_next",
+    "c++": "nvs_entry_next(nvs_iterator_t *)",
+    "go": "NvsEntryNext"
+  },
+  {
+    "mangle": "nvs_erase_all",
+    "c++": "nvs_erase_all(nvs_handle_t)",
+    "go": "NvsHandleT.NvsEraseAll"
+  },
+  {
+    "mangle": "nvs_erase_key",
+    "c++": "nvs_erase_key(nvs_handle_t, const char *)",
+    "go": "NvsHandleT.NvsEraseKey"
+  },
+  {
+    "mangle": "nvs_find_key",
+    "c++": "nvs_find_key(nvs_handle_t, const char *, nvs_type_t *)",
+    "go": "NvsHandleT.NvsFindKey"
+  },
+  {
+    "mangle": "nvs_flash_deinit",
+    "c++": "nvs_flash_deinit()",
+    "go": "NvsFlashDeinit"
+  },
+  {
+    "mangle": "nvs_flash_deinit_partition",
+    "c++": "nvs_flash_deinit_partition(const char *)",
+    "go": "NvsFlashDeinitPartition"
+  },
+  {
+    "mangle": "nvs_flash_erase",
+    "c++": "nvs_flash_erase()",
+    "go": "NvsFlashErase"
+  },
+  {
+    "mangle": "nvs_flash_erase_partition",
+    "c++": "nvs_flash_erase_partition(const char *)",
+    "go": "NvsFlashErasePartition"
+  },
+  {
+    "mangle": "nvs_flash_erase_partition_ptr",
+    "c++": "nvs_flash_erase_partition_ptr(const esp_partition_t *)",
+    "go": "NvsFlashErasePartitionPtr"
+  },
+  {
+    "mangle": "nvs_flash_generate_keys",
+    "c++": "nvs_flash_generate_keys(const esp_partition_t *, nvs_sec_cfg_t *)",
+    "go": "NvsFlashGenerateKeys"
+  },
+  {
+    "mangle": "nvs_flash_generate_keys_v2",
+    "c++": "nvs_flash_generate_keys_v2(nvs_sec_scheme_t *, nvs_sec_cfg_t *)",
+    "go": "(*NvsSecSchemeT).NvsFlashGenerateKeysV2"
+  },
+  {
+    "mangle": "nvs_flash_get_default_security_scheme",
+    "c++": "nvs_flash_get_default_security_scheme()",
+    "go": "NvsFlashGetDefaultSecurityScheme"
+  },
+  {
+    "mangle": "nvs_flash_init",
+    "c++": "nvs_flash_init()",
+    "go": "NvsFlashInit"
+  },
+  {
+    "mangle": "nvs_flash_init_partition",
+    "c++": "nvs_flash_init_partition(const char *)",
+    "go": "NvsFlashInitPartition"
+  },
+  {
+    "mangle": "nvs_flash_init_partition_ptr",
+    "c++": "nvs_flash_init_partition_ptr(const esp_partition_t *)",
+    "go": "NvsFlashInitPartitionPtr"
+  },
+  {
+    "mangle": "nvs_flash_read_security_cfg",
+    "c++": "nvs_flash_read_security_cfg(const esp_partition_t *, nvs_sec_cfg_t *)",
+    "go": "NvsFlashReadSecurityCfg"
+  },
+  {
+    "mangle": "nvs_flash_read_security_cfg_v2",
+    "c++": "nvs_flash_read_security_cfg_v2(nvs_sec_scheme_t *, nvs_sec_cfg_t *)",
+    "go": "(*NvsSecSchemeT).NvsFlashReadSecurityCfgV2"
+  },
+  {
+    "mangle": "nvs_flash_register_security_scheme",
+    "c++": "nvs_flash_register_security_scheme(nvs_sec_scheme_t *)",
+    "go": "(*NvsSecSchemeT).NvsFlashRegisterSecurityScheme"
+  },
+  {
+    "mangle": "nvs_flash_secure_init",
+    "c++": "nvs_flash_secure_init(nvs_sec_cfg_t *)",
+    "go": "(*NvsSecCfgT).NvsFlashSecureInit"
+  },
+  {
+    "mangle": "nvs_flash_secure_init_partition",
+    "c++": "nvs_flash_secure_init_partition(const char *, nvs_sec_cfg_t *)",
+    "go": "NvsFlashSecureInitPartition"
+  },
+  {
+    "mangle": "nvs_get_blob",
+    "c++": "nvs_get_blob(nvs_handle_t, const char *, void *, size_t *)",
+    "go": "NvsHandleT.NvsGetBlob"
+  },
+  {
+    "mangle": "nvs_get_i16",
+    "c++": "nvs_get_i16(nvs_handle_t, const char *, int16_t *)",
+    "go": "NvsHandleT.NvsGetI16"
+  },
+  {
+    "mangle": "nvs_get_i32",
+    "c++": "nvs_get_i32(nvs_handle_t, const char *, int32_t *)",
+    "go": "NvsHandleT.NvsGetI32"
+  },
+  {
+    "mangle": "nvs_get_i64",
+    "c++": "nvs_get_i64(nvs_handle_t, const char *, int64_t *)",
+    "go": "NvsHandleT.NvsGetI64"
+  },
+  {
+    "mangle": "nvs_get_i8",
+    "c++": "nvs_get_i8(nvs_handle_t, const char *, int8_t *)",
+    "go": "NvsHandleT.NvsGetI8"
+  },
+  {
+    "mangle": "nvs_get_stats",
+    "c++": "nvs_get_stats(const char *, nvs_stats_t *)",
+    "go": "NvsGetStats"
+  },
+  {
+    "mangle": "nvs_get_str",
+    "c++": "nvs_get_str(nvs_handle_t, const char *, char *, size_t *)",
+    "go": "NvsHandleT.NvsGetStr"
+  },
+  {
+    "mangle": "nvs_get_u16",
+    "c++": "nvs_get_u16(nvs_handle_t, const char *, uint16_t *)",
+    "go": "NvsHandleT.NvsGetU16"
+  },
+  {
+    "mangle": "nvs_get_u32",
+    "c++": "nvs_get_u32(nvs_handle_t, const char *, uint32_t *)",
+    "go": "NvsHandleT.NvsGetU32"
+  },
+  {
+    "mangle": "nvs_get_u64",
+    "c++": "nvs_get_u64(nvs_handle_t, const char *, uint64_t *)",
+    "go": "NvsHandleT.NvsGetU64"
+  },
+  {
+    "mangle": "nvs_get_u8",
+    "c++": "nvs_get_u8(nvs_handle_t, const char *, uint8_t *)",
+    "go": "NvsHandleT.NvsGetU8"
+  },
+  {
+    "mangle": "nvs_get_used_entry_count",
+    "c++": "nvs_get_used_entry_count(nvs_handle_t, size_t *)",
+    "go": "NvsHandleT.NvsGetUsedEntryCount"
+  },
+  {
+    "mangle": "nvs_open",
+    "c++": "nvs_open(const char *, nvs_open_mode_t, nvs_handle_t *)",
+    "go": "NvsOpen"
+  },
+  {
+    "mangle": "nvs_open_from_partition",
+    "c++": "nvs_open_from_partition(const char *, const char *, nvs_open_mode_t, nvs_handle_t *)",
+    "go": "NvsOpenFromPartition"
+  },
+  {
+    "mangle": "nvs_release_iterator",
+    "c++": "nvs_release_iterator(nvs_iterator_t)",
+    "go": "NvsReleaseIterator"
+  },
+  {
+    "mangle": "nvs_set_blob",
+    "c++": "nvs_set_blob(nvs_handle_t, const char *, const void *, size_t)",
+    "go": "NvsHandleT.NvsSetBlob"
+  },
+  {
+    "mangle": "nvs_set_i16",
+    "c++": "nvs_set_i16(nvs_handle_t, const char *, int16_t)",
+    "go": "NvsHandleT.NvsSetI16"
+  },
+  {
+    "mangle": "nvs_set_i32",
+    "c++": "nvs_set_i32(nvs_handle_t, const char *, int32_t)",
+    "go": "NvsHandleT.NvsSetI32"
+  },
+  {
+    "mangle": "nvs_set_i64",
+    "c++": "nvs_set_i64(nvs_handle_t, const char *, int64_t)",
+    "go": "NvsHandleT.NvsSetI64"
+  },
+  {
+    "mangle": "nvs_set_i8",
+    "c++": "nvs_set_i8(nvs_handle_t, const char *, int8_t)",
+    "go": "NvsHandleT.NvsSetI8"
+  },
+  {
+    "mangle": "nvs_set_str",
+    "c++": "nvs_set_str(nvs_handle_t, const char *, const char *)",
+    "go": "NvsHandleT.NvsSetStr"
+  },
+  {
+    "mangle": "nvs_set_u16",
+    "c++": "nvs_set_u16(nvs_handle_t, const char *, uint16_t)",
+    "go": "NvsHandleT.NvsSetU16"
+  },
+  {
+    "mangle": "nvs_set_u32",
+    "c++": "nvs_set_u32(nvs_handle_t, const char *, uint32_t)",
+    "go": "NvsHandleT.NvsSetU32"
+  },
+  {
+    "mangle": "nvs_set_u64",
+    "c++": "nvs_set_u64(nvs_handle_t, const char *, uint64_t)",
+    "go": "NvsHandleT.NvsSetU64"
+  },
+  {
+    "mangle": "nvs_set_u8",
+    "c++": "nvs_set_u8(nvs_handle_t, const char *, uint8_t)",
+    "go": "NvsHandleT.NvsSetU8"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "mangle": "esp_vfs_fat_create_contiguous_file",
+    "c++": "esp_vfs_fat_create_contiguous_file(const char *, const char *, uint64_t, bool)",
+    "go": "EspVfsFatCreateContiguousFile"
+  },
+  {
+    "mangle": "esp_vfs_fat_info",
+    "c++": "esp_vfs_fat_info(const char *, uint64_t *, uint64_t *)",
+    "go": "EspVfsFatInfo"
+  },
+  {
+    "mangle": "esp_vfs_fat_rawflash_mount",
+    "c++": "esp_vfs_fat_rawflash_mount(const char *, const char *, const esp_vfs_fat_mount_config_t *)",
+    "go": "EspVfsFatRawflashMount"
+  },
+  {
+    "mangle": "esp_vfs_fat_rawflash_unmount",
+    "c++": "esp_vfs_fat_rawflash_unmount(const char *, const char *)",
+    "go": "EspVfsFatRawflashUnmount"
+  },
+  {
+    "mangle": "esp_vfs_fat_register",
+    "c++": "esp_vfs_fat_register(const char *, const char *, size_t, FATFS **)",
+    "go": "EspVfsFatRegister"
+  },
+  {
+    "mangle": "esp_vfs_fat_register_cfg",
+    "c++": "esp_vfs_fat_register_cfg(const esp_vfs_fat_conf_t *, FATFS **)",
+    "go": "(*EspVfsFatConfT).EspVfsFatRegisterCfg"
+  },
+  {
+    "mangle": "esp_vfs_fat_sdcard_format",
+    "c++": "esp_vfs_fat_sdcard_format(const char *, sdmmc_card_t *)",
+    "go": "EspVfsFatSdcardFormat"
+  },
+  {
+    "mangle": "esp_vfs_fat_sdcard_format_cfg",
+    "c++": "esp_vfs_fat_sdcard_format_cfg(const char *, sdmmc_card_t *, esp_vfs_fat_mount_config_t *)",
+    "go": "EspVfsFatSdcardFormatCfg"
+  },
+  {
+    "mangle": "esp_vfs_fat_sdcard_unmount",
+    "c++": "esp_vfs_fat_sdcard_unmount(const char *, sdmmc_card_t *)",
+    "go": "EspVfsFatSdcardUnmount"
+  },
+  {
+    "mangle": "esp_vfs_fat_sdmmc_unmount",
+    "c++": "esp_vfs_fat_sdmmc_unmount()",
+    "go": "EspVfsFatSdmmcUnmount"
+  },
+  {
+    "mangle": "esp_vfs_fat_sdspi_mount",
+    "c++": "esp_vfs_fat_sdspi_mount(const char *, const sdmmc_host_t *, const sdspi_device_config_t *, const esp_vfs_fat_mount_config_t *, sdmmc_card_t **)",
+    "go": "EspVfsFatSdspiMount"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_format_cfg_rw_wl",
+    "c++": "esp_vfs_fat_spiflash_format_cfg_rw_wl(const char *, const char *, esp_vfs_fat_mount_config_t *)",
+    "go": "EspVfsFatSpiflashFormatCfgRwWl"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_format_rw_wl",
+    "c++": "esp_vfs_fat_spiflash_format_rw_wl(const char *, const char *)",
+    "go": "EspVfsFatSpiflashFormatRwWl"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_mount",
+    "c++": "esp_vfs_fat_spiflash_mount(const char *, const char *, const esp_vfs_fat_mount_config_t *, wl_handle_t *)",
+    "go": "EspVfsFatSpiflashMount"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_mount_ro",
+    "c++": "esp_vfs_fat_spiflash_mount_ro(const char *, const char *, const esp_vfs_fat_mount_config_t *)",
+    "go": "EspVfsFatSpiflashMountRo"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_mount_rw_wl",
+    "c++": "esp_vfs_fat_spiflash_mount_rw_wl(const char *, const char *, const esp_vfs_fat_mount_config_t *, wl_handle_t *)",
+    "go": "EspVfsFatSpiflashMountRwWl"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_unmount",
+    "c++": "esp_vfs_fat_spiflash_unmount(const char *, wl_handle_t)",
+    "go": "EspVfsFatSpiflashUnmount"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_unmount_ro",
+    "c++": "esp_vfs_fat_spiflash_unmount_ro(const char *, const char *)",
+    "go": "EspVfsFatSpiflashUnmountRo"
+  },
+  {
+    "mangle": "esp_vfs_fat_spiflash_unmount_rw_wl",
+    "c++": "esp_vfs_fat_spiflash_unmount_rw_wl(const char *, wl_handle_t)",
+    "go": "EspVfsFatSpiflashUnmountRwWl"
+  },
+  {
+    "mangle": "esp_vfs_fat_test_contiguous_file",
+    "c++": "esp_vfs_fat_test_contiguous_file(const char *, const char *, bool *)",
+    "go": "EspVfsFatTestContiguousFile"
+  },
+  {
+    "mangle": "esp_vfs_fat_unregister_path",
+    "c++": "esp_vfs_fat_unregister_path(const char *)",
+    "go": "EspVfsFatUnregisterPath"
+  },
+  {
+    "mangle": "f_chmod",
+    "c++": "f_chmod(const TCHAR *, BYTE, BYTE)",
+    "go": "(*TCHAR).FChmod"
+  },
+  {
+    "mangle": "f_close",
+    "c++": "f_close(FIL *)",
+    "go": "(*FIL).FClose"
+  },
+  {
+    "mangle": "f_closedir",
+    "c++": "f_closedir(FF_DIR *)",
+    "go": "(*FFDIR).FClosedir"
+  },
+  {
+    "mangle": "f_expand",
+    "c++": "f_expand(FIL *, FSIZE_t, BYTE)",
+    "go": "(*FIL).FExpand"
+  },
+  {
+    "mangle": "f_fdisk",
+    "c++": "f_fdisk(BYTE, const LBA_t *, void *)",
+    "go": "BYTE.FFdisk"
+  },
+  {
+    "mangle": "f_getfree",
+    "c++": "f_getfree(const TCHAR *, DWORD *, FATFS **)",
+    "go": "(*TCHAR).FGetfree"
+  },
+  {
+    "mangle": "f_lseek",
+    "c++": "f_lseek(FIL *, FSIZE_t)",
+    "go": "(*FIL).FLseek"
+  },
+  {
+    "mangle": "f_mkdir",
+    "c++": "f_mkdir(const TCHAR *)",
+    "go": "(*TCHAR).FMkdir"
+  },
+  {
+    "mangle": "f_mkfs",
+    "c++": "f_mkfs(const TCHAR *, const MKFS_PARM *, void *, UINT)",
+    "go": "(*TCHAR).FMkfs"
+  },
+  {
+    "mangle": "f_mount",
+    "c++": "f_mount(FATFS *, const TCHAR *, BYTE)",
+    "go": "(*FATFS).FMount"
+  },
+  {
+    "mangle": "f_open",
+    "c++": "f_open(FIL *, const TCHAR *, BYTE)",
+    "go": "(*FIL).FOpen"
+  },
+  {
+    "mangle": "f_opendir",
+    "c++": "f_opendir(FF_DIR *, const TCHAR *)",
+    "go": "(*FFDIR).FOpendir"
+  },
+  {
+    "mangle": "f_read",
+    "c++": "f_read(FIL *, void *, UINT, UINT *)",
+    "go": "(*FIL).FRead"
+  },
+  {
+    "mangle": "f_readdir",
+    "c++": "f_readdir(FF_DIR *, FILINFO *)",
+    "go": "(*FFDIR).FReaddir"
+  },
+  {
+    "mangle": "f_rename",
+    "c++": "f_rename(const TCHAR *, const TCHAR *)",
+    "go": "(*TCHAR).FRename"
+  },
+  {
+    "mangle": "f_stat",
+    "c++": "f_stat(const TCHAR *, FILINFO *)",
+    "go": "(*TCHAR).FStat"
+  },
+  {
+    "mangle": "f_sync",
+    "c++": "f_sync(FIL *)",
+    "go": "(*FIL).FSync"
+  },
+  {
+    "mangle": "f_truncate",
+    "c++": "f_truncate(FIL *)",
+    "go": "(*FIL).FTruncate"
+  },
+  {
+    "mangle": "f_unlink",
+    "c++": "f_unlink(const TCHAR *)",
+    "go": "(*TCHAR).FUnlink"
+  },
+  {
+    "mangle": "f_utime",
+    "c++": "f_utime(const TCHAR *, const FILINFO *)",
+    "go": "(*TCHAR).FUtime"
+  },
+  {
+    "mangle": "f_write",
+    "c++": "f_write(FIL *, const void *, UINT, UINT *)",
+    "go": "(*FIL).FWrite"
+  },
+  {
+    "mangle": "ff_disk_initialize",
+    "c++": "ff_disk_initialize(BYTE)",
+    "go": "BYTE.FfDiskInitialize"
+  },
+  {
+    "mangle": "ff_disk_ioctl",
+    "c++": "ff_disk_ioctl(BYTE, BYTE, void *)",
+    "go": "BYTE.FfDiskIoctl"
+  },
+  {
+    "mangle": "ff_disk_read",
+    "c++": "ff_disk_read(BYTE, BYTE *, LBA_t, UINT)",
+    "go": "BYTE.FfDiskRead"
+  },
+  {
+    "mangle": "ff_disk_status",
+    "c++": "ff_disk_status(BYTE)",
+    "go": "BYTE.FfDiskStatus"
+  },
+  {
+    "mangle": "ff_disk_write",
+    "c++": "ff_disk_write(BYTE, const BYTE *, LBA_t, UINT)",
+    "go": "BYTE.FfDiskWrite"
+  },
+  {
+    "mangle": "ff_diskio_clear_pdrv_wl",
+    "c++": "ff_diskio_clear_pdrv_wl(wl_handle_t)",
+    "go": "FfDiskioClearPdrvWl"
+  },
+  {
+    "mangle": "ff_diskio_get_drive",
+    "c++": "ff_diskio_get_drive(BYTE *)",
+    "go": "(*BYTE).FfDiskioGetDrive"
+  },
+  {
+    "mangle": "ff_diskio_get_pdrv_card",
+    "c++": "ff_diskio_get_pdrv_card(const sdmmc_card_t *)",
+    "go": "FfDiskioGetPdrvCard"
+  },
+  {
+    "mangle": "ff_diskio_get_pdrv_raw",
+    "c++": "ff_diskio_get_pdrv_raw(const esp_partition_t *)",
+    "go": "FfDiskioGetPdrvRaw"
+  },
+  {
+    "mangle": "ff_diskio_get_pdrv_wl",
+    "c++": "ff_diskio_get_pdrv_wl(wl_handle_t)",
+    "go": "FfDiskioGetPdrvWl"
+  },
+  {
+    "mangle": "ff_diskio_register",
+    "c++": "ff_diskio_register(BYTE, const ff_diskio_impl_t *)",
+    "go": "BYTE.FfDiskioRegister"
+  },
+  {
+    "mangle": "ff_diskio_register_raw_partition",
+    "c++": "ff_diskio_register_raw_partition(unsigned char, const esp_partition_t *)",
+    "go": "FfDiskioRegisterRawPartition"
+  },
+  {
+    "mangle": "ff_diskio_register_sdmmc",
+    "c++": "ff_diskio_register_sdmmc(unsigned char, sdmmc_card_t *)",
+    "go": "FfDiskioRegisterSdmmc"
+  },
+  {
+    "mangle": "ff_diskio_register_wl_partition",
+    "c++": "ff_diskio_register_wl_partition(unsigned char, wl_handle_t)",
+    "go": "FfDiskioRegisterWlPartition"
+  },
+  {
+    "mangle": "ff_memalloc",
+    "c++": "ff_memalloc(unsigned int)",
+    "go": "FfMemalloc"
+  },
+  {
+    "mangle": "ff_memfree",
+    "c++": "ff_memfree(void *)",
+    "go": "FfMemfree"
+  },
+  {
+    "mangle": "ff_mutex_create",
+    "c++": "ff_mutex_create(int)",
+    "go": "FfMutexCreate"
+  },
+  {
+    "mangle": "ff_mutex_delete",
+    "c++": "ff_mutex_delete(int)",
+    "go": "FfMutexDelete"
+  },
+  {
+    "mangle": "ff_mutex_give",
+    "c++": "ff_mutex_give(int)",
+    "go": "FfMutexGive"
+  },
+  {
+    "mangle": "ff_mutex_take",
+    "c++": "ff_mutex_take(int)",
+    "go": "FfMutexTake"
+  },
+  {
+    "mangle": "ff_sdmmc_set_disk_status_check",
+    "c++": "ff_sdmmc_set_disk_status_check(BYTE, bool)",
+    "go": "BYTE.FfSdmmcSetDiskStatusCheck"
+  },
+  {
+    "mangle": "get_fattime",
+    "c++": "get_fattime()",
+    "go": "GetFattime"
+  },
+  {
+    "mangle": "get_vfs_fat_get_sd_ctx",
+    "c++": "get_vfs_fat_get_sd_ctx(const sdmmc_card_t *)",
+    "go": "GetVfsFatGetSdCtx"
+  },
+  {
+    "mangle": "get_vfs_fat_spiflash_ctx",
+    "c++": "get_vfs_fat_spiflash_ctx(wl_handle_t)",
+    "go": "GetVfsFatSpiflashCtx"
+  }
+]

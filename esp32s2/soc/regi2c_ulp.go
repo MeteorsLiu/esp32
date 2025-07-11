@@ -1,0 +1,21 @@
+package soc
+
+import _ "unsafe"
+
+const I2C_ULP = 0x61
+const I2C_ULP_HOSTID = 1
+const I2C_ULP_IR_RESETB = 0
+const I2C_ULP_IR_RESETB_MSB = 0
+const I2C_ULP_IR_RESETB_LSB = 0
+const I2C_ULP_O_DONE_FLAG = 3
+const I2C_ULP_O_DONE_FLAG_MSB = 0
+const I2C_ULP_O_DONE_FLAG_LSB = 0
+const I2C_ULP_BG_O_DONE_FLAG = 3
+const I2C_ULP_BG_O_DONE_FLAG_MSB = 3
+const I2C_ULP_BG_O_DONE_FLAG_LSB = 3
+const I2C_ULP_IR_FORCE_CODE = 5
+const I2C_ULP_IR_FORCE_CODE_MSB = 6
+const I2C_ULP_IR_FORCE_CODE_LSB = 6
+const I2C_ULP_EXT_CODE = 6
+const I2C_ULP_EXT_CODE_MSB = 7
+const I2C_ULP_EXT_CODE_LSB = 0

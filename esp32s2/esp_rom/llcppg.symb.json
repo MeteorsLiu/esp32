@@ -1,0 +1,97 @@
+[
+  {
+    "mangle": "Cache_Count_Flash_Pages",
+    "c++": "Cache_Count_Flash_Pages(uint32_t, uint32_t *)",
+    "go": "CacheCountFlashPages"
+  },
+  {
+    "mangle": "esp_rom_crc16_be",
+    "c++": "esp_rom_crc16_be(uint16_t, const uint8_t *, uint32_t)",
+    "go": "EspRomCrc16Be"
+  },
+  {
+    "mangle": "esp_rom_crc32_be",
+    "c++": "esp_rom_crc32_be(uint32_t, const uint8_t *, uint32_t)",
+    "go": "EspRomCrc32Be"
+  },
+  {
+    "mangle": "esp_rom_crc8_be",
+    "c++": "esp_rom_crc8_be(uint8_t, const uint8_t *, uint32_t)",
+    "go": "EspRomCrc8Be"
+  },
+  {
+    "mangle": "esp_rom_gpio_connect_out_signal",
+    "c++": "esp_rom_gpio_connect_out_signal(uint32_t, uint32_t, bool, bool)",
+    "go": "EspRomGpioConnectOutSignal"
+  },
+  {
+    "mangle": "esp_rom_install_channel_putc",
+    "c++": "esp_rom_install_channel_putc(int, void (*)(char))",
+    "go": "EspRomInstallChannelPutc"
+  },
+  {
+    "mangle": "esp_rom_output_to_channels",
+    "c++": "esp_rom_output_to_channels(char)",
+    "go": "EspRomOutputToChannels"
+  },
+  {
+    "mangle": "esp_rom_regi2c_read",
+    "c++": "esp_rom_regi2c_read(uint8_t, uint8_t, uint8_t)",
+    "go": "EspRomRegi2cRead"
+  },
+  {
+    "mangle": "esp_rom_regi2c_read_mask",
+    "c++": "esp_rom_regi2c_read_mask(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "EspRomRegi2cReadMask"
+  },
+  {
+    "mangle": "esp_rom_regi2c_write",
+    "c++": "esp_rom_regi2c_write(uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "EspRomRegi2cWrite"
+  },
+  {
+    "mangle": "esp_rom_regi2c_write_mask",
+    "c++": "esp_rom_regi2c_write_mask(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "EspRomRegi2cWriteMask"
+  },
+  {
+    "mangle": "esp_rom_spiflash_write_disable",
+    "c++": "esp_rom_spiflash_write_disable()",
+    "go": "EspRomSpiflashWriteDisable"
+  },
+  {
+    "mangle": "esp_rom_vprintf",
+    "c++": "esp_rom_vprintf(const char *, va_list)",
+    "go": "EspRomVprintf"
+  },
+  {
+    "mangle": "ets_install_putc1",
+    "c++": "ets_install_putc1(void (*)(char))",
+    "go": "EtsInstallPutc1"
+  },
+  {
+    "mangle": "ets_install_putc2",
+    "c++": "ets_install_putc2(void (*)(char))",
+    "go": "EtsInstallPutc2"
+  },
+  {
+    "mangle": "ets_vprintf",
+    "c++": "ets_vprintf(void (*)(char), const char *, va_list)",
+    "go": "EtsVprintf"
+  },
+  {
+    "mangle": "rom_usb_cdc_set_descriptor_patch",
+    "c++": "rom_usb_cdc_set_descriptor_patch()",
+    "go": "RomUsbCdcSetDescriptorPatch"
+  },
+  {
+    "mangle": "usb_dev_deinit",
+    "c++": "usb_dev_deinit()",
+    "go": "UsbDevDeinit"
+  },
+  {
+    "mangle": "usb_dw_ctrl_deinit",
+    "c++": "usb_dw_ctrl_deinit()",
+    "go": "UsbDwCtrlDeinit"
+  }
+]

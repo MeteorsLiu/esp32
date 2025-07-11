@@ -1,0 +1,217 @@
+[
+  {
+    "mangle": "usb_del_phy",
+    "c++": "usb_del_phy(usb_phy_handle_t)",
+    "go": "UsbDelPhy"
+  },
+  {
+    "mangle": "usb_host_client_deregister",
+    "c++": "usb_host_client_deregister(usb_host_client_handle_t)",
+    "go": "UsbHostClientDeregister"
+  },
+  {
+    "mangle": "usb_host_client_handle_events",
+    "c++": "usb_host_client_handle_events(usb_host_client_handle_t, TickType_t)",
+    "go": "UsbHostClientHandleEvents"
+  },
+  {
+    "mangle": "usb_host_client_register",
+    "c++": "usb_host_client_register(const usb_host_client_config_t *, usb_host_client_handle_t *)",
+    "go": "(*UsbHostClientConfigT).UsbHostClientRegister"
+  },
+  {
+    "mangle": "usb_host_client_unblock",
+    "c++": "usb_host_client_unblock(usb_host_client_handle_t)",
+    "go": "UsbHostClientUnblock"
+  },
+  {
+    "mangle": "usb_host_device_addr_list_fill",
+    "c++": "usb_host_device_addr_list_fill(int, uint8_t *, int *)",
+    "go": "UsbHostDeviceAddrListFill"
+  },
+  {
+    "mangle": "usb_host_device_close",
+    "c++": "usb_host_device_close(usb_host_client_handle_t, usb_device_handle_t)",
+    "go": "UsbHostDeviceClose"
+  },
+  {
+    "mangle": "usb_host_device_free_all",
+    "c++": "usb_host_device_free_all()",
+    "go": "UsbHostDeviceFreeAll"
+  },
+  {
+    "mangle": "usb_host_device_info",
+    "c++": "usb_host_device_info(usb_device_handle_t, usb_device_info_t *)",
+    "go": "UsbHostDeviceInfo"
+  },
+  {
+    "mangle": "usb_host_device_open",
+    "c++": "usb_host_device_open(usb_host_client_handle_t, uint8_t, usb_device_handle_t *)",
+    "go": "UsbHostDeviceOpen"
+  },
+  {
+    "mangle": "usb_host_endpoint_clear",
+    "c++": "usb_host_endpoint_clear(usb_device_handle_t, uint8_t)",
+    "go": "UsbHostEndpointClear"
+  },
+  {
+    "mangle": "usb_host_endpoint_flush",
+    "c++": "usb_host_endpoint_flush(usb_device_handle_t, uint8_t)",
+    "go": "UsbHostEndpointFlush"
+  },
+  {
+    "mangle": "usb_host_endpoint_halt",
+    "c++": "usb_host_endpoint_halt(usb_device_handle_t, uint8_t)",
+    "go": "UsbHostEndpointHalt"
+  },
+  {
+    "mangle": "usb_host_free_config_desc",
+    "c++": "usb_host_free_config_desc(const usb_config_desc_t *)",
+    "go": "(*UsbConfigDescT).UsbHostFreeConfigDesc"
+  },
+  {
+    "mangle": "usb_host_get_active_config_descriptor",
+    "c++": "usb_host_get_active_config_descriptor(usb_device_handle_t, const usb_config_desc_t **)",
+    "go": "UsbHostGetActiveConfigDescriptor"
+  },
+  {
+    "mangle": "usb_host_get_config_desc",
+    "c++": "usb_host_get_config_desc(usb_host_client_handle_t, usb_device_handle_t, uint8_t, const usb_config_desc_t **)",
+    "go": "UsbHostGetConfigDesc"
+  },
+  {
+    "mangle": "usb_host_get_device_descriptor",
+    "c++": "usb_host_get_device_descriptor(usb_device_handle_t, const usb_device_desc_t **)",
+    "go": "UsbHostGetDeviceDescriptor"
+  },
+  {
+    "mangle": "usb_host_install",
+    "c++": "usb_host_install(const usb_host_config_t *)",
+    "go": "(*UsbHostConfigT).UsbHostInstall"
+  },
+  {
+    "mangle": "usb_host_interface_claim",
+    "c++": "usb_host_interface_claim(usb_host_client_handle_t, usb_device_handle_t, uint8_t, uint8_t)",
+    "go": "UsbHostInterfaceClaim"
+  },
+  {
+    "mangle": "usb_host_interface_release",
+    "c++": "usb_host_interface_release(usb_host_client_handle_t, usb_device_handle_t, uint8_t)",
+    "go": "UsbHostInterfaceRelease"
+  },
+  {
+    "mangle": "usb_host_lib_handle_events",
+    "c++": "usb_host_lib_handle_events(TickType_t, uint32_t *)",
+    "go": "UsbHostLibHandleEvents"
+  },
+  {
+    "mangle": "usb_host_lib_info",
+    "c++": "usb_host_lib_info(usb_host_lib_info_t *)",
+    "go": "(*UsbHostLibInfoT).UsbHostLibInfo"
+  },
+  {
+    "mangle": "usb_host_lib_set_root_port_power",
+    "c++": "usb_host_lib_set_root_port_power(bool)",
+    "go": "UsbHostLibSetRootPortPower"
+  },
+  {
+    "mangle": "usb_host_lib_unblock",
+    "c++": "usb_host_lib_unblock()",
+    "go": "UsbHostLibUnblock"
+  },
+  {
+    "mangle": "usb_host_transfer_alloc",
+    "c++": "usb_host_transfer_alloc(size_t, int, usb_transfer_t **)",
+    "go": "UsbHostTransferAlloc"
+  },
+  {
+    "mangle": "usb_host_transfer_free",
+    "c++": "usb_host_transfer_free(usb_transfer_t *)",
+    "go": "(*UsbTransferT).UsbHostTransferFree"
+  },
+  {
+    "mangle": "usb_host_transfer_submit",
+    "c++": "usb_host_transfer_submit(usb_transfer_t *)",
+    "go": "(*UsbTransferT).UsbHostTransferSubmit"
+  },
+  {
+    "mangle": "usb_host_transfer_submit_control",
+    "c++": "usb_host_transfer_submit_control(usb_host_client_handle_t, usb_transfer_t *)",
+    "go": "UsbHostTransferSubmitControl"
+  },
+  {
+    "mangle": "usb_host_uninstall",
+    "c++": "usb_host_uninstall()",
+    "go": "UsbHostUninstall"
+  },
+  {
+    "mangle": "usb_new_phy",
+    "c++": "usb_new_phy(const usb_phy_config_t *, usb_phy_handle_t *)",
+    "go": "(*UsbPhyConfigT).UsbNewPhy"
+  },
+  {
+    "mangle": "usb_parse_endpoint_descriptor_by_address",
+    "c++": "usb_parse_endpoint_descriptor_by_address(const usb_config_desc_t *, uint8_t, uint8_t, uint8_t, int *)",
+    "go": "(*UsbConfigDescT).UsbParseEndpointDescriptorByAddress"
+  },
+  {
+    "mangle": "usb_parse_endpoint_descriptor_by_index",
+    "c++": "usb_parse_endpoint_descriptor_by_index(const usb_intf_desc_t *, int, uint16_t, int *)",
+    "go": "(*UsbIntfDescT).UsbParseEndpointDescriptorByIndex"
+  },
+  {
+    "mangle": "usb_parse_interface_descriptor",
+    "c++": "usb_parse_interface_descriptor(const usb_config_desc_t *, uint8_t, uint8_t, int *)",
+    "go": "(*UsbConfigDescT).UsbParseInterfaceDescriptor"
+  },
+  {
+    "mangle": "usb_parse_interface_number_of_alternate",
+    "c++": "usb_parse_interface_number_of_alternate(const usb_config_desc_t *, uint8_t)",
+    "go": "(*UsbConfigDescT).UsbParseInterfaceNumberOfAlternate"
+  },
+  {
+    "mangle": "usb_parse_next_descriptor",
+    "c++": "usb_parse_next_descriptor(const usb_standard_desc_t *, uint16_t, int *)",
+    "go": "(*UsbStandardDescT).UsbParseNextDescriptor"
+  },
+  {
+    "mangle": "usb_parse_next_descriptor_of_type",
+    "c++": "usb_parse_next_descriptor_of_type(const usb_standard_desc_t *, uint16_t, uint8_t, int *)",
+    "go": "(*UsbStandardDescT).UsbParseNextDescriptorOfType"
+  },
+  {
+    "mangle": "usb_phy_action",
+    "c++": "usb_phy_action(usb_phy_handle_t, usb_phy_action_t)",
+    "go": "UsbPhyAction"
+  },
+  {
+    "mangle": "usb_phy_get_phy_status",
+    "c++": "usb_phy_get_phy_status(usb_phy_target_t, usb_phy_status_t *)",
+    "go": "UsbPhyGetPhyStatus"
+  },
+  {
+    "mangle": "usb_phy_otg_dev_set_speed",
+    "c++": "usb_phy_otg_dev_set_speed(usb_phy_handle_t, usb_phy_speed_t)",
+    "go": "UsbPhyOtgDevSetSpeed"
+  },
+  {
+    "mangle": "usb_phy_otg_set_mode",
+    "c++": "usb_phy_otg_set_mode(usb_phy_handle_t, usb_otg_mode_t)",
+    "go": "UsbPhyOtgSetMode"
+  },
+  {
+    "mangle": "usb_print_config_descriptor",
+    "c++": "usb_print_config_descriptor(const usb_config_desc_t *, print_class_descriptor_cb)",
+    "go": "(*UsbConfigDescT).UsbPrintConfigDescriptor"
+  },
+  {
+    "mangle": "usb_print_device_descriptor",
+    "c++": "usb_print_device_descriptor(const usb_device_desc_t *)",
+    "go": "(*UsbDeviceDescT).UsbPrintDeviceDescriptor"
+  },
+  {
+    "mangle": "usb_print_string_descriptor",
+    "c++": "usb_print_string_descriptor(const usb_str_desc_t *)",
+    "go": "(*UsbStrDescT).UsbPrintStringDescriptor"
+  }
+]
