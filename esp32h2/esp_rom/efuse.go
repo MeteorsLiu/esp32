@@ -1,0 +1,53 @@
+package esp_rom
+
+import (
+	"github.com/goplus/lib/c"
+	_ "unsafe"
+)
+
+const EFUSE_SPICONFIG_SPI_DEFAULTS = 0
+const EFUSE_SPICONFIG_HSPI_DEFAULTS = 1
+const EFUSE_SPICONFIG_RET_SPICLK_MASK = 0x3f
+const EFUSE_SPICONFIG_RET_SPICLK_SHIFT = 0
+const EFUSE_SPICONFIG_RET_SPIQ_MASK = 0x3f
+const EFUSE_SPICONFIG_RET_SPIQ_SHIFT = 6
+const EFUSE_SPICONFIG_RET_SPID_MASK = 0x3f
+const EFUSE_SPICONFIG_RET_SPID_SHIFT = 12
+const EFUSE_SPICONFIG_RET_SPICS0_MASK = 0x3f
+const EFUSE_SPICONFIG_RET_SPICS0_SHIFT = 18
+const EFUSE_SPICONFIG_RET_SPIHD_MASK = 0x3f
+const EFUSE_SPICONFIG_RET_SPIHD_SHIFT = 24
+
+type EtsEfusePurposeT c.Int
+
+const (
+	ETS_EFUSE_KEY_PURPOSE_USER                        EtsEfusePurposeT = 0
+	ETS_EFUSE_KEY_PURPOSE_ECDSA_KEY                   EtsEfusePurposeT = 1
+	ETS_EFUSE_KEY_PURPOSE_RESERVED                    EtsEfusePurposeT = 2
+	ETS_EFUSE_KEY_PURPOSE_XTS_AES_128_KEY             EtsEfusePurposeT = 4
+	ETS_EFUSE_KEY_PURPOSE_HMAC_DOWN_ALL               EtsEfusePurposeT = 5
+	ETS_EFUSE_KEY_PURPOSE_HMAC_DOWN_JTAG              EtsEfusePurposeT = 6
+	ETS_EFUSE_KEY_PURPOSE_HMAC_DOWN_DIGITAL_SIGNATURE EtsEfusePurposeT = 7
+	ETS_EFUSE_KEY_PURPOSE_HMAC_UP                     EtsEfusePurposeT = 8
+	ETS_EFUSE_KEY_PURPOSE_SECURE_BOOT_DIGEST0         EtsEfusePurposeT = 9
+	ETS_EFUSE_KEY_PURPOSE_SECURE_BOOT_DIGEST1         EtsEfusePurposeT = 10
+	ETS_EFUSE_KEY_PURPOSE_SECURE_BOOT_DIGEST2         EtsEfusePurposeT = 11
+	ETS_EFUSE_KEY_PURPOSE_MAX                         EtsEfusePurposeT = 12
+)
+
+type EtsEfuseBlockT c.Int
+
+const (
+	ETS_EFUSE_BLOCK0         EtsEfuseBlockT = 0
+	ETS_EFUSE_MAC_SPI_SYS_0  EtsEfuseBlockT = 1
+	ETS_EFUSE_BLOCK_SYS_DATA EtsEfuseBlockT = 2
+	ETS_EFUSE_BLOCK_USR_DATA EtsEfuseBlockT = 3
+	ETS_EFUSE_BLOCK_KEY0     EtsEfuseBlockT = 4
+	ETS_EFUSE_BLOCK_KEY1     EtsEfuseBlockT = 5
+	ETS_EFUSE_BLOCK_KEY2     EtsEfuseBlockT = 6
+	ETS_EFUSE_BLOCK_KEY3     EtsEfuseBlockT = 7
+	ETS_EFUSE_BLOCK_KEY4     EtsEfuseBlockT = 8
+	ETS_EFUSE_BLOCK_KEY5     EtsEfuseBlockT = 9
+	ETS_EFUSE_BLOCK_KEY6     EtsEfuseBlockT = 10
+	ETS_EFUSE_BLOCK_MAX      EtsEfuseBlockT = 11
+)

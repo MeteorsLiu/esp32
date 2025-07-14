@@ -1,0 +1,292 @@
+[
+  {
+    "mangle": "coex_bt_release",
+    "c++": "coex_bt_release(uint32_t)",
+    "go": "CoexBtRelease"
+  },
+  {
+    "mangle": "coex_bt_request",
+    "c++": "coex_bt_request(uint32_t, uint32_t, uint32_t)",
+    "go": "CoexBtRequest"
+  },
+  {
+    "mangle": "coex_deinit",
+    "c++": "coex_deinit()",
+    "go": "CoexDeinit"
+  },
+  {
+    "mangle": "coex_disable",
+    "c++": "coex_disable()",
+    "go": "CoexDisable"
+  },
+  {
+    "mangle": "coex_enable",
+    "c++": "coex_enable()",
+    "go": "CoexEnable"
+  },
+  {
+    "mangle": "coex_event_duration_get",
+    "c++": "coex_event_duration_get(uint32_t, uint32_t *)",
+    "go": "CoexEventDurationGet"
+  },
+  {
+    "mangle": "coex_init",
+    "c++": "coex_init()",
+    "go": "CoexInit"
+  },
+  {
+    "mangle": "coex_pre_init",
+    "c++": "coex_pre_init()",
+    "go": "CoexPreInit"
+  },
+  {
+    "mangle": "coex_preference_set",
+    "c++": "coex_preference_set(coex_prefer_t)",
+    "go": "CoexPreferT.CoexPreferenceSet"
+  },
+  {
+    "mangle": "coex_pti_get",
+    "c++": "coex_pti_get(uint32_t, uint8_t *)",
+    "go": "CoexPtiGet"
+  },
+  {
+    "mangle": "coex_register_start_cb",
+    "c++": "coex_register_start_cb(int (*)(void))",
+    "go": "CoexRegisterStartCb"
+  },
+  {
+    "mangle": "coex_register_wifi_channel_change_callback",
+    "c++": "coex_register_wifi_channel_change_callback(coex_wifi_channel_change_cb_t)",
+    "go": "CoexRegisterWifiChannelChangeCallback"
+  },
+  {
+    "mangle": "coex_schm_curr_period_get",
+    "c++": "coex_schm_curr_period_get()",
+    "go": "CoexSchmCurrPeriodGet"
+  },
+  {
+    "mangle": "coex_schm_curr_phase_get",
+    "c++": "coex_schm_curr_phase_get()",
+    "go": "CoexSchmCurrPhaseGet"
+  },
+  {
+    "mangle": "coex_schm_curr_phase_idx_get",
+    "c++": "coex_schm_curr_phase_idx_get()",
+    "go": "CoexSchmCurrPhaseIdxGet"
+  },
+  {
+    "mangle": "coex_schm_curr_phase_idx_set",
+    "c++": "coex_schm_curr_phase_idx_set(int)",
+    "go": "CoexSchmCurrPhaseIdxSet"
+  },
+  {
+    "mangle": "coex_schm_get_phase_by_idx",
+    "c++": "coex_schm_get_phase_by_idx(int)",
+    "go": "CoexSchmGetPhaseByIdx"
+  },
+  {
+    "mangle": "coex_schm_interval_get",
+    "c++": "coex_schm_interval_get()",
+    "go": "CoexSchmIntervalGet"
+  },
+  {
+    "mangle": "coex_schm_interval_set",
+    "c++": "coex_schm_interval_set(uint32_t)",
+    "go": "CoexSchmIntervalSet"
+  },
+  {
+    "mangle": "coex_schm_process_restart",
+    "c++": "coex_schm_process_restart()",
+    "go": "CoexSchmProcessRestart"
+  },
+  {
+    "mangle": "coex_schm_register_callback",
+    "c++": "coex_schm_register_callback(coex_schm_callback_type_t, void *)",
+    "go": "CoexSchmCallbackTypeT.CoexSchmRegisterCallback"
+  },
+  {
+    "mangle": "coex_schm_status_bit_clear",
+    "c++": "coex_schm_status_bit_clear(uint32_t, uint32_t)",
+    "go": "CoexSchmStatusBitClear"
+  },
+  {
+    "mangle": "coex_schm_status_bit_set",
+    "c++": "coex_schm_status_bit_set(uint32_t, uint32_t)",
+    "go": "CoexSchmStatusBitSet"
+  },
+  {
+    "mangle": "coex_status_get",
+    "c++": "coex_status_get(uint8_t)",
+    "go": "CoexStatusGet"
+  },
+  {
+    "mangle": "coex_update_lpclk_interval",
+    "c++": "coex_update_lpclk_interval()",
+    "go": "CoexUpdateLpclkInterval"
+  },
+  {
+    "mangle": "coex_version_get",
+    "c++": "coex_version_get()",
+    "go": "CoexVersionGet"
+  },
+  {
+    "mangle": "coex_version_get_value",
+    "c++": "coex_version_get_value(coex_version_t *)",
+    "go": "(*CoexVersionT).CoexVersionGetValue"
+  },
+  {
+    "mangle": "coex_wifi_channel_get",
+    "c++": "coex_wifi_channel_get(uint8_t *, uint8_t *)",
+    "go": "CoexWifiChannelGet"
+  },
+  {
+    "mangle": "coex_wifi_channel_set",
+    "c++": "coex_wifi_channel_set(uint8_t, uint8_t)",
+    "go": "CoexWifiChannelSet"
+  },
+  {
+    "mangle": "coex_wifi_register_update_lpclk_callback",
+    "c++": "coex_wifi_register_update_lpclk_callback(coex_set_lpclk_source_callback_t)",
+    "go": "CoexWifiRegisterUpdateLpclkCallback"
+  },
+  {
+    "mangle": "coex_wifi_release",
+    "c++": "coex_wifi_release(uint32_t)",
+    "go": "CoexWifiRelease"
+  },
+  {
+    "mangle": "coex_wifi_request",
+    "c++": "coex_wifi_request(uint32_t, uint32_t, uint32_t)",
+    "go": "CoexWifiRequest"
+  },
+  {
+    "mangle": "esp_coex_adapter_funcs_md5_check",
+    "c++": "esp_coex_adapter_funcs_md5_check(const char *)",
+    "go": "EspCoexAdapterFuncsMd5Check"
+  },
+  {
+    "mangle": "esp_coex_adapter_register",
+    "c++": "esp_coex_adapter_register(coex_adapter_funcs_t *)",
+    "go": "(*CoexAdapterFuncsT).EspCoexAdapterRegister"
+  },
+  {
+    "mangle": "esp_coex_common_clk_slowclk_cal_get_wrapper",
+    "c++": "esp_coex_common_clk_slowclk_cal_get_wrapper()",
+    "go": "EspCoexCommonClkSlowclkCalGetWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_env_is_chip_wrapper",
+    "c++": "esp_coex_common_env_is_chip_wrapper()",
+    "go": "EspCoexCommonEnvIsChipWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_int_disable_wrapper",
+    "c++": "esp_coex_common_int_disable_wrapper(void *)",
+    "go": "EspCoexCommonIntDisableWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_int_restore_wrapper",
+    "c++": "esp_coex_common_int_restore_wrapper(void *, uint32_t)",
+    "go": "EspCoexCommonIntRestoreWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_malloc_internal_wrapper",
+    "c++": "esp_coex_common_malloc_internal_wrapper(int)",
+    "go": "EspCoexCommonMallocInternalWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_create_wrapper",
+    "c++": "esp_coex_common_semphr_create_wrapper(uint32_t, uint32_t)",
+    "go": "EspCoexCommonSemphrCreateWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_delete_wrapper",
+    "c++": "esp_coex_common_semphr_delete_wrapper(void *)",
+    "go": "EspCoexCommonSemphrDeleteWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_give_wrapper",
+    "c++": "esp_coex_common_semphr_give_wrapper(void *)",
+    "go": "EspCoexCommonSemphrGiveWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_semphr_take_wrapper",
+    "c++": "esp_coex_common_semphr_take_wrapper(void *, uint32_t)",
+    "go": "EspCoexCommonSemphrTakeWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_spin_lock_create_wrapper",
+    "c++": "esp_coex_common_spin_lock_create_wrapper()",
+    "go": "EspCoexCommonSpinLockCreateWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_task_yield_from_isr_wrapper",
+    "c++": "esp_coex_common_task_yield_from_isr_wrapper()",
+    "go": "EspCoexCommonTaskYieldFromIsrWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_arm_us_wrapper",
+    "c++": "esp_coex_common_timer_arm_us_wrapper(void *, uint32_t, bool)",
+    "go": "EspCoexCommonTimerArmUsWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_disarm_wrapper",
+    "c++": "esp_coex_common_timer_disarm_wrapper(void *)",
+    "go": "EspCoexCommonTimerDisarmWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_done_wrapper",
+    "c++": "esp_coex_common_timer_done_wrapper(void *)",
+    "go": "EspCoexCommonTimerDoneWrapper"
+  },
+  {
+    "mangle": "esp_coex_common_timer_setfn_wrapper",
+    "c++": "esp_coex_common_timer_setfn_wrapper(void *, void *, void *)",
+    "go": "EspCoexCommonTimerSetfnWrapper"
+  },
+  {
+    "mangle": "esp_coex_ieee802154_ack_pti_set",
+    "c++": "esp_coex_ieee802154_ack_pti_set(ieee802154_coex_event_t)",
+    "go": "Ieee802154CoexEventT.EspCoexIeee802154AckPtiSet"
+  },
+  {
+    "mangle": "esp_coex_ieee802154_coex_break_notify",
+    "c++": "esp_coex_ieee802154_coex_break_notify()",
+    "go": "EspCoexIeee802154CoexBreakNotify"
+  },
+  {
+    "mangle": "esp_coex_ieee802154_extcoex_rx_stage",
+    "c++": "esp_coex_ieee802154_extcoex_rx_stage()",
+    "go": "EspCoexIeee802154ExtcoexRxStage"
+  },
+  {
+    "mangle": "esp_coex_ieee802154_extcoex_tx_stage",
+    "c++": "esp_coex_ieee802154_extcoex_tx_stage()",
+    "go": "EspCoexIeee802154ExtcoexTxStage"
+  },
+  {
+    "mangle": "esp_coex_ieee802154_txrx_pti_set",
+    "c++": "esp_coex_ieee802154_txrx_pti_set(ieee802154_coex_event_t)",
+    "go": "Ieee802154CoexEventT.EspCoexIeee802154TxrxPtiSet"
+  },
+  {
+    "mangle": "esp_coex_preference_set",
+    "c++": "esp_coex_preference_set(esp_coex_prefer_t)",
+    "go": "EspCoexPreferT.EspCoexPreferenceSet"
+  },
+  {
+    "mangle": "esp_coex_status_bit_clear",
+    "c++": "esp_coex_status_bit_clear(esp_coex_status_type_t, uint32_t)",
+    "go": "EspCoexStatusTypeT.EspCoexStatusBitClear"
+  },
+  {
+    "mangle": "esp_coex_status_bit_set",
+    "c++": "esp_coex_status_bit_set(esp_coex_status_type_t, uint32_t)",
+    "go": "EspCoexStatusTypeT.EspCoexStatusBitSet"
+  },
+  {
+    "mangle": "esp_coex_version_get",
+    "c++": "esp_coex_version_get()",
+    "go": "EspCoexVersionGet"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "mangle": "mcpwm_capture_channel_disable",
+    "c++": "mcpwm_capture_channel_disable(mcpwm_cap_channel_handle_t)",
+    "go": "McpwmCaptureChannelDisable"
+  },
+  {
+    "mangle": "mcpwm_capture_channel_enable",
+    "c++": "mcpwm_capture_channel_enable(mcpwm_cap_channel_handle_t)",
+    "go": "McpwmCaptureChannelEnable"
+  },
+  {
+    "mangle": "mcpwm_capture_channel_register_event_callbacks",
+    "c++": "mcpwm_capture_channel_register_event_callbacks(mcpwm_cap_channel_handle_t, const mcpwm_capture_event_callbacks_t *, void *)",
+    "go": "McpwmCaptureChannelRegisterEventCallbacks"
+  },
+  {
+    "mangle": "mcpwm_capture_channel_trigger_soft_catch",
+    "c++": "mcpwm_capture_channel_trigger_soft_catch(mcpwm_cap_channel_handle_t)",
+    "go": "McpwmCaptureChannelTriggerSoftCatch"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_disable",
+    "c++": "mcpwm_capture_timer_disable(mcpwm_cap_timer_handle_t)",
+    "go": "McpwmCaptureTimerDisable"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_enable",
+    "c++": "mcpwm_capture_timer_enable(mcpwm_cap_timer_handle_t)",
+    "go": "McpwmCaptureTimerEnable"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_get_resolution",
+    "c++": "mcpwm_capture_timer_get_resolution(mcpwm_cap_timer_handle_t, uint32_t *)",
+    "go": "McpwmCaptureTimerGetResolution"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_set_phase_on_sync",
+    "c++": "mcpwm_capture_timer_set_phase_on_sync(mcpwm_cap_timer_handle_t, const mcpwm_capture_timer_sync_phase_config_t *)",
+    "go": "McpwmCaptureTimerSetPhaseOnSync"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_start",
+    "c++": "mcpwm_capture_timer_start(mcpwm_cap_timer_handle_t)",
+    "go": "McpwmCaptureTimerStart"
+  },
+  {
+    "mangle": "mcpwm_capture_timer_stop",
+    "c++": "mcpwm_capture_timer_stop(mcpwm_cap_timer_handle_t)",
+    "go": "McpwmCaptureTimerStop"
+  },
+  {
+    "mangle": "mcpwm_comparator_new_etm_event",
+    "c++": "mcpwm_comparator_new_etm_event(mcpwm_cmpr_handle_t, const mcpwm_cmpr_etm_event_config_t *, esp_etm_event_handle_t *)",
+    "go": "McpwmComparatorNewEtmEvent"
+  },
+  {
+    "mangle": "mcpwm_comparator_register_event_callbacks",
+    "c++": "mcpwm_comparator_register_event_callbacks(mcpwm_cmpr_handle_t, const mcpwm_comparator_event_callbacks_t *, void *)",
+    "go": "McpwmComparatorRegisterEventCallbacks"
+  },
+  {
+    "mangle": "mcpwm_comparator_set_compare_value",
+    "c++": "mcpwm_comparator_set_compare_value(mcpwm_cmpr_handle_t, uint32_t)",
+    "go": "McpwmComparatorSetCompareValue"
+  },
+  {
+    "mangle": "mcpwm_del_capture_channel",
+    "c++": "mcpwm_del_capture_channel(mcpwm_cap_channel_handle_t)",
+    "go": "McpwmDelCaptureChannel"
+  },
+  {
+    "mangle": "mcpwm_del_capture_timer",
+    "c++": "mcpwm_del_capture_timer(mcpwm_cap_timer_handle_t)",
+    "go": "McpwmDelCaptureTimer"
+  },
+  {
+    "mangle": "mcpwm_del_comparator",
+    "c++": "mcpwm_del_comparator(mcpwm_cmpr_handle_t)",
+    "go": "McpwmDelComparator"
+  },
+  {
+    "mangle": "mcpwm_del_fault",
+    "c++": "mcpwm_del_fault(mcpwm_fault_handle_t)",
+    "go": "McpwmDelFault"
+  },
+  {
+    "mangle": "mcpwm_del_generator",
+    "c++": "mcpwm_del_generator(mcpwm_gen_handle_t)",
+    "go": "McpwmDelGenerator"
+  },
+  {
+    "mangle": "mcpwm_del_operator",
+    "c++": "mcpwm_del_operator(mcpwm_oper_handle_t)",
+    "go": "McpwmDelOperator"
+  },
+  {
+    "mangle": "mcpwm_del_sync_src",
+    "c++": "mcpwm_del_sync_src(mcpwm_sync_handle_t)",
+    "go": "McpwmDelSyncSrc"
+  },
+  {
+    "mangle": "mcpwm_del_timer",
+    "c++": "mcpwm_del_timer(mcpwm_timer_handle_t)",
+    "go": "McpwmDelTimer"
+  },
+  {
+    "mangle": "mcpwm_fault_register_event_callbacks",
+    "c++": "mcpwm_fault_register_event_callbacks(mcpwm_fault_handle_t, const mcpwm_fault_event_callbacks_t *, void *)",
+    "go": "McpwmFaultRegisterEventCallbacks"
+  },
+  {
+    "mangle": "mcpwm_generator_set_action_on_brake_event",
+    "c++": "mcpwm_generator_set_action_on_brake_event(mcpwm_gen_handle_t, mcpwm_gen_brake_event_action_t)",
+    "go": "McpwmGeneratorSetActionOnBrakeEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_action_on_compare_event",
+    "c++": "mcpwm_generator_set_action_on_compare_event(mcpwm_gen_handle_t, mcpwm_gen_compare_event_action_t)",
+    "go": "McpwmGeneratorSetActionOnCompareEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_action_on_fault_event",
+    "c++": "mcpwm_generator_set_action_on_fault_event(mcpwm_gen_handle_t, mcpwm_gen_fault_event_action_t)",
+    "go": "McpwmGeneratorSetActionOnFaultEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_action_on_sync_event",
+    "c++": "mcpwm_generator_set_action_on_sync_event(mcpwm_gen_handle_t, mcpwm_gen_sync_event_action_t)",
+    "go": "McpwmGeneratorSetActionOnSyncEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_action_on_timer_event",
+    "c++": "mcpwm_generator_set_action_on_timer_event(mcpwm_gen_handle_t, mcpwm_gen_timer_event_action_t)",
+    "go": "McpwmGeneratorSetActionOnTimerEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_actions_on_brake_event",
+    "c++": "mcpwm_generator_set_actions_on_brake_event(mcpwm_gen_handle_t, mcpwm_gen_brake_event_action_t, ...)",
+    "go": "McpwmGeneratorSetActionsOnBrakeEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_actions_on_compare_event",
+    "c++": "mcpwm_generator_set_actions_on_compare_event(mcpwm_gen_handle_t, mcpwm_gen_compare_event_action_t, ...)",
+    "go": "McpwmGeneratorSetActionsOnCompareEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_actions_on_timer_event",
+    "c++": "mcpwm_generator_set_actions_on_timer_event(mcpwm_gen_handle_t, mcpwm_gen_timer_event_action_t, ...)",
+    "go": "McpwmGeneratorSetActionsOnTimerEvent"
+  },
+  {
+    "mangle": "mcpwm_generator_set_dead_time",
+    "c++": "mcpwm_generator_set_dead_time(mcpwm_gen_handle_t, mcpwm_gen_handle_t, const mcpwm_dead_time_config_t *)",
+    "go": "McpwmGeneratorSetDeadTime"
+  },
+  {
+    "mangle": "mcpwm_generator_set_force_level",
+    "c++": "mcpwm_generator_set_force_level(mcpwm_gen_handle_t, int, bool)",
+    "go": "McpwmGeneratorSetForceLevel"
+  },
+  {
+    "mangle": "mcpwm_new_capture_channel",
+    "c++": "mcpwm_new_capture_channel(mcpwm_cap_timer_handle_t, const mcpwm_capture_channel_config_t *, mcpwm_cap_channel_handle_t *)",
+    "go": "McpwmNewCaptureChannel"
+  },
+  {
+    "mangle": "mcpwm_new_capture_timer",
+    "c++": "mcpwm_new_capture_timer(const mcpwm_capture_timer_config_t *, mcpwm_cap_timer_handle_t *)",
+    "go": "(*McpwmCaptureTimerConfigT).McpwmNewCaptureTimer"
+  },
+  {
+    "mangle": "mcpwm_new_comparator",
+    "c++": "mcpwm_new_comparator(mcpwm_oper_handle_t, const mcpwm_comparator_config_t *, mcpwm_cmpr_handle_t *)",
+    "go": "McpwmNewComparator"
+  },
+  {
+    "mangle": "mcpwm_new_generator",
+    "c++": "mcpwm_new_generator(mcpwm_oper_handle_t, const mcpwm_generator_config_t *, mcpwm_gen_handle_t *)",
+    "go": "McpwmNewGenerator"
+  },
+  {
+    "mangle": "mcpwm_new_gpio_fault",
+    "c++": "mcpwm_new_gpio_fault(const mcpwm_gpio_fault_config_t *, mcpwm_fault_handle_t *)",
+    "go": "(*McpwmGpioFaultConfigT).McpwmNewGpioFault"
+  },
+  {
+    "mangle": "mcpwm_new_gpio_sync_src",
+    "c++": "mcpwm_new_gpio_sync_src(const mcpwm_gpio_sync_src_config_t *, mcpwm_sync_handle_t *)",
+    "go": "(*McpwmGpioSyncSrcConfigT).McpwmNewGpioSyncSrc"
+  },
+  {
+    "mangle": "mcpwm_new_operator",
+    "c++": "mcpwm_new_operator(const mcpwm_operator_config_t *, mcpwm_oper_handle_t *)",
+    "go": "(*McpwmOperatorConfigT).McpwmNewOperator"
+  },
+  {
+    "mangle": "mcpwm_new_soft_fault",
+    "c++": "mcpwm_new_soft_fault(const mcpwm_soft_fault_config_t *, mcpwm_fault_handle_t *)",
+    "go": "(*McpwmSoftFaultConfigT).McpwmNewSoftFault"
+  },
+  {
+    "mangle": "mcpwm_new_soft_sync_src",
+    "c++": "mcpwm_new_soft_sync_src(const mcpwm_soft_sync_config_t *, mcpwm_sync_handle_t *)",
+    "go": "(*McpwmSoftSyncConfigT).McpwmNewSoftSyncSrc"
+  },
+  {
+    "mangle": "mcpwm_new_timer",
+    "c++": "mcpwm_new_timer(const mcpwm_timer_config_t *, mcpwm_timer_handle_t *)",
+    "go": "(*McpwmTimerConfigT).McpwmNewTimer"
+  },
+  {
+    "mangle": "mcpwm_new_timer_sync_src",
+    "c++": "mcpwm_new_timer_sync_src(mcpwm_timer_handle_t, const mcpwm_timer_sync_src_config_t *, mcpwm_sync_handle_t *)",
+    "go": "McpwmNewTimerSyncSrc"
+  },
+  {
+    "mangle": "mcpwm_operator_apply_carrier",
+    "c++": "mcpwm_operator_apply_carrier(mcpwm_oper_handle_t, const mcpwm_carrier_config_t *)",
+    "go": "McpwmOperatorApplyCarrier"
+  },
+  {
+    "mangle": "mcpwm_operator_connect_timer",
+    "c++": "mcpwm_operator_connect_timer(mcpwm_oper_handle_t, mcpwm_timer_handle_t)",
+    "go": "McpwmOperatorConnectTimer"
+  },
+  {
+    "mangle": "mcpwm_operator_recover_from_fault",
+    "c++": "mcpwm_operator_recover_from_fault(mcpwm_oper_handle_t, mcpwm_fault_handle_t)",
+    "go": "McpwmOperatorRecoverFromFault"
+  },
+  {
+    "mangle": "mcpwm_operator_register_event_callbacks",
+    "c++": "mcpwm_operator_register_event_callbacks(mcpwm_oper_handle_t, const mcpwm_operator_event_callbacks_t *, void *)",
+    "go": "McpwmOperatorRegisterEventCallbacks"
+  },
+  {
+    "mangle": "mcpwm_operator_set_brake_on_fault",
+    "c++": "mcpwm_operator_set_brake_on_fault(mcpwm_oper_handle_t, const mcpwm_brake_config_t *)",
+    "go": "McpwmOperatorSetBrakeOnFault"
+  },
+  {
+    "mangle": "mcpwm_soft_fault_activate",
+    "c++": "mcpwm_soft_fault_activate(mcpwm_fault_handle_t)",
+    "go": "McpwmSoftFaultActivate"
+  },
+  {
+    "mangle": "mcpwm_soft_sync_activate",
+    "c++": "mcpwm_soft_sync_activate(mcpwm_sync_handle_t)",
+    "go": "McpwmSoftSyncActivate"
+  },
+  {
+    "mangle": "mcpwm_timer_disable",
+    "c++": "mcpwm_timer_disable(mcpwm_timer_handle_t)",
+    "go": "McpwmTimerDisable"
+  },
+  {
+    "mangle": "mcpwm_timer_enable",
+    "c++": "mcpwm_timer_enable(mcpwm_timer_handle_t)",
+    "go": "McpwmTimerEnable"
+  },
+  {
+    "mangle": "mcpwm_timer_get_phase",
+    "c++": "mcpwm_timer_get_phase(mcpwm_timer_handle_t, uint32_t *, mcpwm_timer_direction_t *)",
+    "go": "McpwmTimerGetPhase"
+  },
+  {
+    "mangle": "mcpwm_timer_register_event_callbacks",
+    "c++": "mcpwm_timer_register_event_callbacks(mcpwm_timer_handle_t, const mcpwm_timer_event_callbacks_t *, void *)",
+    "go": "McpwmTimerRegisterEventCallbacks"
+  },
+  {
+    "mangle": "mcpwm_timer_set_period",
+    "c++": "mcpwm_timer_set_period(mcpwm_timer_handle_t, uint32_t)",
+    "go": "McpwmTimerSetPeriod"
+  },
+  {
+    "mangle": "mcpwm_timer_set_phase_on_sync",
+    "c++": "mcpwm_timer_set_phase_on_sync(mcpwm_timer_handle_t, const mcpwm_timer_sync_phase_config_t *)",
+    "go": "McpwmTimerSetPhaseOnSync"
+  },
+  {
+    "mangle": "mcpwm_timer_start_stop",
+    "c++": "mcpwm_timer_start_stop(mcpwm_timer_handle_t, mcpwm_timer_start_stop_cmd_t)",
+    "go": "McpwmTimerStartStop"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "mangle": "esp_event_dump",
+    "c++": "esp_event_dump(int *)",
+    "go": "EspEventDump"
+  },
+  {
+    "mangle": "esp_event_handler_instance_register",
+    "c++": "esp_event_handler_instance_register(esp_event_base_t, int32_t, esp_event_handler_t, void *, esp_event_handler_instance_t *)",
+    "go": "EspEventHandlerInstanceRegister"
+  },
+  {
+    "mangle": "esp_event_handler_instance_register_with",
+    "c++": "esp_event_handler_instance_register_with(esp_event_loop_handle_t, esp_event_base_t, int32_t, esp_event_handler_t, void *, esp_event_handler_instance_t *)",
+    "go": "EspEventHandlerInstanceRegisterWith"
+  },
+  {
+    "mangle": "esp_event_handler_instance_unregister",
+    "c++": "esp_event_handler_instance_unregister(esp_event_base_t, int32_t, esp_event_handler_instance_t)",
+    "go": "EspEventHandlerInstanceUnregister"
+  },
+  {
+    "mangle": "esp_event_handler_instance_unregister_with",
+    "c++": "esp_event_handler_instance_unregister_with(esp_event_loop_handle_t, esp_event_base_t, int32_t, esp_event_handler_instance_t)",
+    "go": "EspEventHandlerInstanceUnregisterWith"
+  },
+  {
+    "mangle": "esp_event_handler_register",
+    "c++": "esp_event_handler_register(esp_event_base_t, int32_t, esp_event_handler_t, void *)",
+    "go": "EspEventHandlerRegister"
+  },
+  {
+    "mangle": "esp_event_handler_register_with",
+    "c++": "esp_event_handler_register_with(esp_event_loop_handle_t, esp_event_base_t, int32_t, esp_event_handler_t, void *)",
+    "go": "EspEventHandlerRegisterWith"
+  },
+  {
+    "mangle": "esp_event_handler_unregister",
+    "c++": "esp_event_handler_unregister(esp_event_base_t, int32_t, esp_event_handler_t)",
+    "go": "EspEventHandlerUnregister"
+  },
+  {
+    "mangle": "esp_event_handler_unregister_with",
+    "c++": "esp_event_handler_unregister_with(esp_event_loop_handle_t, esp_event_base_t, int32_t, esp_event_handler_t)",
+    "go": "EspEventHandlerUnregisterWith"
+  },
+  {
+    "mangle": "esp_event_isr_post",
+    "c++": "esp_event_isr_post(esp_event_base_t, int32_t, const void *, size_t, BaseType_t *)",
+    "go": "EspEventIsrPost"
+  },
+  {
+    "mangle": "esp_event_isr_post_to",
+    "c++": "esp_event_isr_post_to(esp_event_loop_handle_t, esp_event_base_t, int32_t, const void *, size_t, BaseType_t *)",
+    "go": "EspEventIsrPostTo"
+  },
+  {
+    "mangle": "esp_event_loop_create",
+    "c++": "esp_event_loop_create(const esp_event_loop_args_t *, esp_event_loop_handle_t *)",
+    "go": "(*EspEventLoopArgsT).EspEventLoopCreate"
+  },
+  {
+    "mangle": "esp_event_loop_create_default",
+    "c++": "esp_event_loop_create_default()",
+    "go": "EspEventLoopCreateDefault"
+  },
+  {
+    "mangle": "esp_event_loop_delete",
+    "c++": "esp_event_loop_delete(esp_event_loop_handle_t)",
+    "go": "EspEventLoopDelete"
+  },
+  {
+    "mangle": "esp_event_loop_delete_default",
+    "c++": "esp_event_loop_delete_default()",
+    "go": "EspEventLoopDeleteDefault"
+  },
+  {
+    "mangle": "esp_event_loop_run",
+    "c++": "esp_event_loop_run(esp_event_loop_handle_t, TickType_t)",
+    "go": "EspEventLoopRun"
+  },
+  {
+    "mangle": "esp_event_post",
+    "c++": "esp_event_post(esp_event_base_t, int32_t, const void *, size_t, TickType_t)",
+    "go": "EspEventPost"
+  },
+  {
+    "mangle": "esp_event_post_to",
+    "c++": "esp_event_post_to(esp_event_loop_handle_t, esp_event_base_t, int32_t, const void *, size_t, TickType_t)",
+    "go": "EspEventPostTo"
+  }
+]
