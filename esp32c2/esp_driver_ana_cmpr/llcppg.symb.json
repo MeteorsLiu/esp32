@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "ana_cmpr_del_unit",
+    "c++": "ana_cmpr_del_unit(ana_cmpr_handle_t)",
+    "go": "AnaCmprDelUnit"
+  },
+  {
+    "mangle": "ana_cmpr_disable",
+    "c++": "ana_cmpr_disable(ana_cmpr_handle_t)",
+    "go": "AnaCmprDisable"
+  },
+  {
+    "mangle": "ana_cmpr_enable",
+    "c++": "ana_cmpr_enable(ana_cmpr_handle_t)",
+    "go": "AnaCmprEnable"
+  },
+  {
+    "mangle": "ana_cmpr_get_gpio",
+    "c++": "ana_cmpr_get_gpio(ana_cmpr_unit_t, ana_cmpr_channel_type_t, int *)",
+    "go": "AnaCmprUnitT.AnaCmprGetGpio"
+  },
+  {
+    "mangle": "ana_cmpr_new_unit",
+    "c++": "ana_cmpr_new_unit(const ana_cmpr_config_t *, ana_cmpr_handle_t *)",
+    "go": "(*AnaCmprConfigT).AnaCmprNewUnit"
+  },
+  {
+    "mangle": "ana_cmpr_register_event_callbacks",
+    "c++": "ana_cmpr_register_event_callbacks(ana_cmpr_handle_t, const ana_cmpr_event_callbacks_t *, void *)",
+    "go": "AnaCmprRegisterEventCallbacks"
+  },
+  {
+    "mangle": "ana_cmpr_set_cross_type",
+    "c++": "ana_cmpr_set_cross_type(ana_cmpr_handle_t, ana_cmpr_cross_type_t)",
+    "go": "AnaCmprSetCrossType"
+  },
+  {
+    "mangle": "ana_cmpr_set_debounce",
+    "c++": "ana_cmpr_set_debounce(ana_cmpr_handle_t, const ana_cmpr_debounce_config_t *)",
+    "go": "AnaCmprSetDebounce"
+  },
+  {
+    "mangle": "ana_cmpr_set_internal_reference",
+    "c++": "ana_cmpr_set_internal_reference(ana_cmpr_handle_t, const ana_cmpr_internal_ref_config_t *)",
+    "go": "AnaCmprSetInternalReference"
+  }
+]

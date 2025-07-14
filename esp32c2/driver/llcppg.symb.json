@@ -1,0 +1,362 @@
+[
+  {
+    "mangle": "adc1_config_channel_atten",
+    "c++": "adc1_config_channel_atten(adc1_channel_t, adc_atten_t)",
+    "go": "Adc1ChannelT.Adc1ConfigChannelAtten"
+  },
+  {
+    "mangle": "adc1_config_width",
+    "c++": "adc1_config_width(adc_bits_width_t)",
+    "go": "AdcBitsWidthT.Adc1ConfigWidth"
+  },
+  {
+    "mangle": "adc1_get_raw",
+    "c++": "adc1_get_raw(adc1_channel_t)",
+    "go": "Adc1ChannelT.Adc1GetRaw"
+  },
+  {
+    "mangle": "adc1_pad_get_io_num",
+    "c++": "adc1_pad_get_io_num(adc1_channel_t, gpio_num_t *)",
+    "go": "Adc1ChannelT.Adc1PadGetIoNum"
+  },
+  {
+    "mangle": "i2c_cmd_link_create",
+    "c++": "i2c_cmd_link_create()",
+    "go": "I2cCmdLinkCreate"
+  },
+  {
+    "mangle": "i2c_cmd_link_create_static",
+    "c++": "i2c_cmd_link_create_static(uint8_t *, uint32_t)",
+    "go": "I2cCmdLinkCreateStatic"
+  },
+  {
+    "mangle": "i2c_cmd_link_delete",
+    "c++": "i2c_cmd_link_delete(i2c_cmd_handle_t)",
+    "go": "I2cCmdLinkDelete"
+  },
+  {
+    "mangle": "i2c_cmd_link_delete_static",
+    "c++": "i2c_cmd_link_delete_static(i2c_cmd_handle_t)",
+    "go": "I2cCmdLinkDeleteStatic"
+  },
+  {
+    "mangle": "i2c_driver_delete",
+    "c++": "i2c_driver_delete(i2c_port_t)",
+    "go": "I2cDriverDelete"
+  },
+  {
+    "mangle": "i2c_driver_install",
+    "c++": "i2c_driver_install(i2c_port_t, i2c_mode_t, size_t, size_t, int)",
+    "go": "I2cDriverInstall"
+  },
+  {
+    "mangle": "i2c_filter_disable",
+    "c++": "i2c_filter_disable(i2c_port_t)",
+    "go": "I2cFilterDisable"
+  },
+  {
+    "mangle": "i2c_filter_enable",
+    "c++": "i2c_filter_enable(i2c_port_t, uint8_t)",
+    "go": "I2cFilterEnable"
+  },
+  {
+    "mangle": "i2c_get_data_mode",
+    "c++": "i2c_get_data_mode(i2c_port_t, i2c_trans_mode_t *, i2c_trans_mode_t *)",
+    "go": "I2cGetDataMode"
+  },
+  {
+    "mangle": "i2c_get_data_timing",
+    "c++": "i2c_get_data_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetDataTiming"
+  },
+  {
+    "mangle": "i2c_get_period",
+    "c++": "i2c_get_period(i2c_port_t, int *, int *)",
+    "go": "I2cGetPeriod"
+  },
+  {
+    "mangle": "i2c_get_start_timing",
+    "c++": "i2c_get_start_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetStartTiming"
+  },
+  {
+    "mangle": "i2c_get_stop_timing",
+    "c++": "i2c_get_stop_timing(i2c_port_t, int *, int *)",
+    "go": "I2cGetStopTiming"
+  },
+  {
+    "mangle": "i2c_get_timeout",
+    "c++": "i2c_get_timeout(i2c_port_t, int *)",
+    "go": "I2cGetTimeout"
+  },
+  {
+    "mangle": "i2c_master_cmd_begin",
+    "c++": "i2c_master_cmd_begin(i2c_port_t, i2c_cmd_handle_t, TickType_t)",
+    "go": "I2cMasterCmdBegin"
+  },
+  {
+    "mangle": "i2c_master_read",
+    "c++": "i2c_master_read(i2c_cmd_handle_t, uint8_t *, size_t, i2c_ack_type_t)",
+    "go": "I2cMasterRead"
+  },
+  {
+    "mangle": "i2c_master_read_byte",
+    "c++": "i2c_master_read_byte(i2c_cmd_handle_t, uint8_t *, i2c_ack_type_t)",
+    "go": "I2cMasterReadByte"
+  },
+  {
+    "mangle": "i2c_master_read_from_device",
+    "c++": "i2c_master_read_from_device(i2c_port_t, uint8_t, uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterReadFromDevice"
+  },
+  {
+    "mangle": "i2c_master_start",
+    "c++": "i2c_master_start(i2c_cmd_handle_t)",
+    "go": "I2cMasterStart"
+  },
+  {
+    "mangle": "i2c_master_stop",
+    "c++": "i2c_master_stop(i2c_cmd_handle_t)",
+    "go": "I2cMasterStop"
+  },
+  {
+    "mangle": "i2c_master_write",
+    "c++": "i2c_master_write(i2c_cmd_handle_t, const uint8_t *, size_t, bool)",
+    "go": "I2cMasterWrite"
+  },
+  {
+    "mangle": "i2c_master_write_byte",
+    "c++": "i2c_master_write_byte(i2c_cmd_handle_t, uint8_t, bool)",
+    "go": "I2cMasterWriteByte"
+  },
+  {
+    "mangle": "i2c_master_write_read_device",
+    "c++": "i2c_master_write_read_device(i2c_port_t, uint8_t, const uint8_t *, size_t, uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterWriteReadDevice"
+  },
+  {
+    "mangle": "i2c_master_write_to_device",
+    "c++": "i2c_master_write_to_device(i2c_port_t, uint8_t, const uint8_t *, size_t, TickType_t)",
+    "go": "I2cMasterWriteToDevice"
+  },
+  {
+    "mangle": "i2c_param_config",
+    "c++": "i2c_param_config(i2c_port_t, const i2c_config_t *)",
+    "go": "I2cParamConfig"
+  },
+  {
+    "mangle": "i2c_reset_rx_fifo",
+    "c++": "i2c_reset_rx_fifo(i2c_port_t)",
+    "go": "I2cResetRxFifo"
+  },
+  {
+    "mangle": "i2c_reset_tx_fifo",
+    "c++": "i2c_reset_tx_fifo(i2c_port_t)",
+    "go": "I2cResetTxFifo"
+  },
+  {
+    "mangle": "i2c_set_data_mode",
+    "c++": "i2c_set_data_mode(i2c_port_t, i2c_trans_mode_t, i2c_trans_mode_t)",
+    "go": "I2cSetDataMode"
+  },
+  {
+    "mangle": "i2c_set_data_timing",
+    "c++": "i2c_set_data_timing(i2c_port_t, int, int)",
+    "go": "I2cSetDataTiming"
+  },
+  {
+    "mangle": "i2c_set_period",
+    "c++": "i2c_set_period(i2c_port_t, int, int)",
+    "go": "I2cSetPeriod"
+  },
+  {
+    "mangle": "i2c_set_pin",
+    "c++": "i2c_set_pin(i2c_port_t, int, int, bool, bool, i2c_mode_t)",
+    "go": "I2cSetPin"
+  },
+  {
+    "mangle": "i2c_set_start_timing",
+    "c++": "i2c_set_start_timing(i2c_port_t, int, int)",
+    "go": "I2cSetStartTiming"
+  },
+  {
+    "mangle": "i2c_set_stop_timing",
+    "c++": "i2c_set_stop_timing(i2c_port_t, int, int)",
+    "go": "I2cSetStopTiming"
+  },
+  {
+    "mangle": "i2c_set_timeout",
+    "c++": "i2c_set_timeout(i2c_port_t, int)",
+    "go": "I2cSetTimeout"
+  },
+  {
+    "mangle": "temp_sensor_get_config",
+    "c++": "temp_sensor_get_config(temp_sensor_config_t *)",
+    "go": "(*TempSensorConfigT).TempSensorGetConfig"
+  },
+  {
+    "mangle": "temp_sensor_read_celsius",
+    "c++": "temp_sensor_read_celsius(float *)",
+    "go": "TempSensorReadCelsius"
+  },
+  {
+    "mangle": "temp_sensor_read_raw",
+    "c++": "temp_sensor_read_raw(uint32_t *)",
+    "go": "TempSensorReadRaw"
+  },
+  {
+    "mangle": "temp_sensor_set_config",
+    "c++": "temp_sensor_set_config(temp_sensor_config_t)",
+    "go": "TempSensorConfigT.TempSensorSetConfig"
+  },
+  {
+    "mangle": "temp_sensor_start",
+    "c++": "temp_sensor_start()",
+    "go": "TempSensorStart"
+  },
+  {
+    "mangle": "temp_sensor_stop",
+    "c++": "temp_sensor_stop()",
+    "go": "TempSensorStop"
+  },
+  {
+    "mangle": "timer_deinit",
+    "c++": "timer_deinit(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerDeinit"
+  },
+  {
+    "mangle": "timer_disable_intr",
+    "c++": "timer_disable_intr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerDisableIntr"
+  },
+  {
+    "mangle": "timer_enable_intr",
+    "c++": "timer_enable_intr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerEnableIntr"
+  },
+  {
+    "mangle": "timer_get_alarm_value",
+    "c++": "timer_get_alarm_value(timer_group_t, timer_idx_t, uint64_t *)",
+    "go": "TimerGroupT.TimerGetAlarmValue"
+  },
+  {
+    "mangle": "timer_get_config",
+    "c++": "timer_get_config(timer_group_t, timer_idx_t, timer_config_t *)",
+    "go": "TimerGroupT.TimerGetConfig"
+  },
+  {
+    "mangle": "timer_get_counter_time_sec",
+    "c++": "timer_get_counter_time_sec(timer_group_t, timer_idx_t, double *)",
+    "go": "TimerGroupT.TimerGetCounterTimeSec"
+  },
+  {
+    "mangle": "timer_get_counter_value",
+    "c++": "timer_get_counter_value(timer_group_t, timer_idx_t, uint64_t *)",
+    "go": "TimerGroupT.TimerGetCounterValue"
+  },
+  {
+    "mangle": "timer_group_clr_intr_status_in_isr",
+    "c++": "timer_group_clr_intr_status_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupClrIntrStatusInIsr"
+  },
+  {
+    "mangle": "timer_group_enable_alarm_in_isr",
+    "c++": "timer_group_enable_alarm_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupEnableAlarmInIsr"
+  },
+  {
+    "mangle": "timer_group_get_auto_reload_in_isr",
+    "c++": "timer_group_get_auto_reload_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupGetAutoReloadInIsr"
+  },
+  {
+    "mangle": "timer_group_get_counter_value_in_isr",
+    "c++": "timer_group_get_counter_value_in_isr(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerGroupGetCounterValueInIsr"
+  },
+  {
+    "mangle": "timer_group_get_intr_status_in_isr",
+    "c++": "timer_group_get_intr_status_in_isr(timer_group_t)",
+    "go": "TimerGroupT.TimerGroupGetIntrStatusInIsr"
+  },
+  {
+    "mangle": "timer_group_intr_disable",
+    "c++": "timer_group_intr_disable(timer_group_t, timer_intr_t)",
+    "go": "TimerGroupT.TimerGroupIntrDisable"
+  },
+  {
+    "mangle": "timer_group_intr_enable",
+    "c++": "timer_group_intr_enable(timer_group_t, timer_intr_t)",
+    "go": "TimerGroupT.TimerGroupIntrEnable"
+  },
+  {
+    "mangle": "timer_group_set_alarm_value_in_isr",
+    "c++": "timer_group_set_alarm_value_in_isr(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerGroupSetAlarmValueInIsr"
+  },
+  {
+    "mangle": "timer_group_set_counter_enable_in_isr",
+    "c++": "timer_group_set_counter_enable_in_isr(timer_group_t, timer_idx_t, timer_start_t)",
+    "go": "TimerGroupT.TimerGroupSetCounterEnableInIsr"
+  },
+  {
+    "mangle": "timer_init",
+    "c++": "timer_init(timer_group_t, timer_idx_t, const timer_config_t *)",
+    "go": "TimerGroupT.TimerInit"
+  },
+  {
+    "mangle": "timer_isr_callback_add",
+    "c++": "timer_isr_callback_add(timer_group_t, timer_idx_t, timer_isr_t, void *, int)",
+    "go": "TimerGroupT.TimerIsrCallbackAdd"
+  },
+  {
+    "mangle": "timer_isr_callback_remove",
+    "c++": "timer_isr_callback_remove(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerIsrCallbackRemove"
+  },
+  {
+    "mangle": "timer_isr_register",
+    "c++": "timer_isr_register(timer_group_t, timer_idx_t, void (*)(void *), void *, int, timer_isr_handle_t *)",
+    "go": "TimerGroupT.TimerIsrRegister"
+  },
+  {
+    "mangle": "timer_pause",
+    "c++": "timer_pause(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerPause"
+  },
+  {
+    "mangle": "timer_set_alarm",
+    "c++": "timer_set_alarm(timer_group_t, timer_idx_t, timer_alarm_t)",
+    "go": "TimerGroupT.TimerSetAlarm"
+  },
+  {
+    "mangle": "timer_set_alarm_value",
+    "c++": "timer_set_alarm_value(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerSetAlarmValue"
+  },
+  {
+    "mangle": "timer_set_auto_reload",
+    "c++": "timer_set_auto_reload(timer_group_t, timer_idx_t, timer_autoreload_t)",
+    "go": "TimerGroupT.TimerSetAutoReload"
+  },
+  {
+    "mangle": "timer_set_counter_mode",
+    "c++": "timer_set_counter_mode(timer_group_t, timer_idx_t, timer_count_dir_t)",
+    "go": "TimerGroupT.TimerSetCounterMode"
+  },
+  {
+    "mangle": "timer_set_counter_value",
+    "c++": "timer_set_counter_value(timer_group_t, timer_idx_t, uint64_t)",
+    "go": "TimerGroupT.TimerSetCounterValue"
+  },
+  {
+    "mangle": "timer_set_divider",
+    "c++": "timer_set_divider(timer_group_t, timer_idx_t, uint32_t)",
+    "go": "TimerGroupT.TimerSetDivider"
+  },
+  {
+    "mangle": "timer_start",
+    "c++": "timer_start(timer_group_t, timer_idx_t)",
+    "go": "TimerGroupT.TimerStart"
+  }
+]

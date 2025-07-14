@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "jpeg_alloc_decoder_mem",
+    "c++": "jpeg_alloc_decoder_mem(int, const jpeg_decode_memory_alloc_cfg_t *, int *)",
+    "go": "JpegAllocDecoderMem"
+  },
+  {
+    "mangle": "jpeg_alloc_encoder_mem",
+    "c++": "jpeg_alloc_encoder_mem(int, const jpeg_encode_memory_alloc_cfg_t *, int *)",
+    "go": "JpegAllocEncoderMem"
+  },
+  {
+    "mangle": "jpeg_decoder_get_info",
+    "c++": "jpeg_decoder_get_info(const uint8_t *, uint32_t, jpeg_decode_picture_info_t *)",
+    "go": "JpegDecoderGetInfo"
+  },
+  {
+    "mangle": "jpeg_decoder_process",
+    "c++": "jpeg_decoder_process(jpeg_decoder_handle_t, const jpeg_decode_cfg_t *, const uint8_t *, uint32_t, uint8_t *, uint32_t, uint32_t *)",
+    "go": "JpegDecoderProcess"
+  },
+  {
+    "mangle": "jpeg_del_decoder_engine",
+    "c++": "jpeg_del_decoder_engine(jpeg_decoder_handle_t)",
+    "go": "JpegDelDecoderEngine"
+  },
+  {
+    "mangle": "jpeg_del_encoder_engine",
+    "c++": "jpeg_del_encoder_engine(jpeg_encoder_handle_t)",
+    "go": "JpegDelEncoderEngine"
+  },
+  {
+    "mangle": "jpeg_encoder_process",
+    "c++": "jpeg_encoder_process(jpeg_encoder_handle_t, const jpeg_encode_cfg_t *, const uint8_t *, uint32_t, uint8_t *, uint32_t, uint32_t *)",
+    "go": "JpegEncoderProcess"
+  },
+  {
+    "mangle": "jpeg_new_decoder_engine",
+    "c++": "jpeg_new_decoder_engine(const jpeg_decode_engine_cfg_t *, jpeg_decoder_handle_t *)",
+    "go": "(*JpegDecodeEngineCfgT).JpegNewDecoderEngine"
+  },
+  {
+    "mangle": "jpeg_new_encoder_engine",
+    "c++": "jpeg_new_encoder_engine(const jpeg_encode_engine_cfg_t *, jpeg_encoder_handle_t *)",
+    "go": "(*JpegEncodeEngineCfgT).JpegNewEncoderEngine"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "mangle": "esp_vfs_usb_serial_jtag_get_vfs",
+    "c++": "esp_vfs_usb_serial_jtag_get_vfs()",
+    "go": "EspVfsUsbSerialJtagGetVfs"
+  },
+  {
+    "mangle": "usb_serial_jtag_driver_install",
+    "c++": "usb_serial_jtag_driver_install(usb_serial_jtag_driver_config_t *)",
+    "go": "(*UsbSerialJtagDriverConfigT).UsbSerialJtagDriverInstall"
+  },
+  {
+    "mangle": "usb_serial_jtag_driver_uninstall",
+    "c++": "usb_serial_jtag_driver_uninstall()",
+    "go": "UsbSerialJtagDriverUninstall"
+  },
+  {
+    "mangle": "usb_serial_jtag_is_connected",
+    "c++": "usb_serial_jtag_is_connected()",
+    "go": "UsbSerialJtagIsConnected"
+  },
+  {
+    "mangle": "usb_serial_jtag_is_driver_installed",
+    "c++": "usb_serial_jtag_is_driver_installed()",
+    "go": "UsbSerialJtagIsDriverInstalled"
+  },
+  {
+    "mangle": "usb_serial_jtag_read_bytes",
+    "c++": "usb_serial_jtag_read_bytes(void *, uint32_t, TickType_t)",
+    "go": "UsbSerialJtagReadBytes"
+  },
+  {
+    "mangle": "usb_serial_jtag_read_ready",
+    "c++": "usb_serial_jtag_read_ready()",
+    "go": "UsbSerialJtagReadReady"
+  },
+  {
+    "mangle": "usb_serial_jtag_set_select_notif_callback",
+    "c++": "usb_serial_jtag_set_select_notif_callback(usj_select_notif_callback_t)",
+    "go": "UsbSerialJtagSetSelectNotifCallback"
+  },
+  {
+    "mangle": "usb_serial_jtag_vfs_register",
+    "c++": "usb_serial_jtag_vfs_register()",
+    "go": "UsbSerialJtagVfsRegister"
+  },
+  {
+    "mangle": "usb_serial_jtag_vfs_set_rx_line_endings",
+    "c++": "usb_serial_jtag_vfs_set_rx_line_endings(esp_line_endings_t)",
+    "go": "UsbSerialJtagVfsSetRxLineEndings"
+  },
+  {
+    "mangle": "usb_serial_jtag_vfs_set_tx_line_endings",
+    "c++": "usb_serial_jtag_vfs_set_tx_line_endings(esp_line_endings_t)",
+    "go": "UsbSerialJtagVfsSetTxLineEndings"
+  },
+  {
+    "mangle": "usb_serial_jtag_vfs_use_driver",
+    "c++": "usb_serial_jtag_vfs_use_driver()",
+    "go": "UsbSerialJtagVfsUseDriver"
+  },
+  {
+    "mangle": "usb_serial_jtag_vfs_use_nonblocking",
+    "c++": "usb_serial_jtag_vfs_use_nonblocking()",
+    "go": "UsbSerialJtagVfsUseNonblocking"
+  },
+  {
+    "mangle": "usb_serial_jtag_wait_tx_done",
+    "c++": "usb_serial_jtag_wait_tx_done(TickType_t)",
+    "go": "UsbSerialJtagWaitTxDone"
+  },
+  {
+    "mangle": "usb_serial_jtag_write_bytes",
+    "c++": "usb_serial_jtag_write_bytes(const void *, size_t, TickType_t)",
+    "go": "UsbSerialJtagWriteBytes"
+  },
+  {
+    "mangle": "usb_serial_jtag_write_ready",
+    "c++": "usb_serial_jtag_write_ready()",
+    "go": "UsbSerialJtagWriteReady"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "mangle": "esp_local_ctrl_add_property",
+    "c++": "esp_local_ctrl_add_property(const esp_local_ctrl_prop_t *)",
+    "go": "(*EspLocalCtrlPropT).EspLocalCtrlAddProperty"
+  },
+  {
+    "mangle": "esp_local_ctrl_get_property",
+    "c++": "esp_local_ctrl_get_property(const char *)",
+    "go": "EspLocalCtrlGetProperty"
+  },
+  {
+    "mangle": "esp_local_ctrl_get_transport_httpd",
+    "c++": "esp_local_ctrl_get_transport_httpd()",
+    "go": "EspLocalCtrlGetTransportHttpd"
+  },
+  {
+    "mangle": "esp_local_ctrl_remove_property",
+    "c++": "esp_local_ctrl_remove_property(const char *)",
+    "go": "EspLocalCtrlRemoveProperty"
+  },
+  {
+    "mangle": "esp_local_ctrl_set_handler",
+    "c++": "esp_local_ctrl_set_handler(const char *, protocomm_req_handler_t, void *)",
+    "go": "EspLocalCtrlSetHandler"
+  },
+  {
+    "mangle": "esp_local_ctrl_start",
+    "c++": "esp_local_ctrl_start(const esp_local_ctrl_config_t *)",
+    "go": "(*EspLocalCtrlConfigT).EspLocalCtrlStart"
+  },
+  {
+    "mangle": "esp_local_ctrl_stop",
+    "c++": "esp_local_ctrl_stop()",
+    "go": "EspLocalCtrlStop"
+  }
+]
