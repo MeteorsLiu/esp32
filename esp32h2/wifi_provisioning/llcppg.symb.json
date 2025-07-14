@@ -1,0 +1,142 @@
+[
+  {
+    "mangle": "wifi_prov_config_data_handler",
+    "c++": "wifi_prov_config_data_handler(uint32_t, const uint8_t *, int, uint8_t **, int *, void *)",
+    "go": "WifiProvConfigDataHandler"
+  },
+  {
+    "mangle": "wifi_prov_mgr_configure_sta",
+    "c++": "wifi_prov_mgr_configure_sta(wifi_config_t *)",
+    "go": "WifiProvMgrConfigureSta"
+  },
+  {
+    "mangle": "wifi_prov_mgr_deinit",
+    "c++": "wifi_prov_mgr_deinit()",
+    "go": "WifiProvMgrDeinit"
+  },
+  {
+    "mangle": "wifi_prov_mgr_disable_auto_stop",
+    "c++": "wifi_prov_mgr_disable_auto_stop(uint32_t)",
+    "go": "WifiProvMgrDisableAutoStop"
+  },
+  {
+    "mangle": "wifi_prov_mgr_endpoint_create",
+    "c++": "wifi_prov_mgr_endpoint_create(const char *)",
+    "go": "WifiProvMgrEndpointCreate"
+  },
+  {
+    "mangle": "wifi_prov_mgr_endpoint_register",
+    "c++": "wifi_prov_mgr_endpoint_register(const char *, protocomm_req_handler_t, void *)",
+    "go": "WifiProvMgrEndpointRegister"
+  },
+  {
+    "mangle": "wifi_prov_mgr_endpoint_unregister",
+    "c++": "wifi_prov_mgr_endpoint_unregister(const char *)",
+    "go": "WifiProvMgrEndpointUnregister"
+  },
+  {
+    "mangle": "wifi_prov_mgr_get_wifi_disconnect_reason",
+    "c++": "wifi_prov_mgr_get_wifi_disconnect_reason(wifi_prov_sta_fail_reason_t *)",
+    "go": "(*WifiProvStaFailReasonT).WifiProvMgrGetWifiDisconnectReason"
+  },
+  {
+    "mangle": "wifi_prov_mgr_get_wifi_state",
+    "c++": "wifi_prov_mgr_get_wifi_state(wifi_prov_sta_state_t *)",
+    "go": "(*WifiProvStaStateT).WifiProvMgrGetWifiState"
+  },
+  {
+    "mangle": "wifi_prov_mgr_init",
+    "c++": "wifi_prov_mgr_init(wifi_prov_mgr_config_t)",
+    "go": "WifiProvMgrConfigT.WifiProvMgrInit"
+  },
+  {
+    "mangle": "wifi_prov_mgr_is_provisioned",
+    "c++": "wifi_prov_mgr_is_provisioned(bool *)",
+    "go": "WifiProvMgrIsProvisioned"
+  },
+  {
+    "mangle": "wifi_prov_mgr_is_sm_idle",
+    "c++": "wifi_prov_mgr_is_sm_idle()",
+    "go": "WifiProvMgrIsSmIdle"
+  },
+  {
+    "mangle": "wifi_prov_mgr_keep_ble_on",
+    "c++": "wifi_prov_mgr_keep_ble_on(uint8_t)",
+    "go": "WifiProvMgrKeepBleOn"
+  },
+  {
+    "mangle": "wifi_prov_mgr_reset_provisioning",
+    "c++": "wifi_prov_mgr_reset_provisioning()",
+    "go": "WifiProvMgrResetProvisioning"
+  },
+  {
+    "mangle": "wifi_prov_mgr_reset_sm_state_for_reprovision",
+    "c++": "wifi_prov_mgr_reset_sm_state_for_reprovision()",
+    "go": "WifiProvMgrResetSmStateForReprovision"
+  },
+  {
+    "mangle": "wifi_prov_mgr_reset_sm_state_on_failure",
+    "c++": "wifi_prov_mgr_reset_sm_state_on_failure()",
+    "go": "WifiProvMgrResetSmStateOnFailure"
+  },
+  {
+    "mangle": "wifi_prov_mgr_set_app_info",
+    "c++": "wifi_prov_mgr_set_app_info(const char *, const char *, const char **, size_t)",
+    "go": "WifiProvMgrSetAppInfo"
+  },
+  {
+    "mangle": "wifi_prov_mgr_start_provisioning",
+    "c++": "wifi_prov_mgr_start_provisioning(wifi_prov_security_t, const void *, const char *, const char *)",
+    "go": "WifiProvSecurityT.WifiProvMgrStartProvisioning"
+  },
+  {
+    "mangle": "wifi_prov_mgr_stop_provisioning",
+    "c++": "wifi_prov_mgr_stop_provisioning()",
+    "go": "WifiProvMgrStopProvisioning"
+  },
+  {
+    "mangle": "wifi_prov_mgr_wait",
+    "c++": "wifi_prov_mgr_wait()",
+    "go": "WifiProvMgrWait"
+  },
+  {
+    "mangle": "wifi_prov_scan_handler",
+    "c++": "wifi_prov_scan_handler(uint32_t, const uint8_t *, int, uint8_t **, int *, void *)",
+    "go": "WifiProvScanHandler"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_event_cb_free_ble",
+    "c++": "wifi_prov_scheme_ble_event_cb_free_ble(void *, wifi_prov_cb_event_t, void *)",
+    "go": "WifiProvSchemeBleEventCbFreeBle"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_event_cb_free_bt",
+    "c++": "wifi_prov_scheme_ble_event_cb_free_bt(void *, wifi_prov_cb_event_t, void *)",
+    "go": "WifiProvSchemeBleEventCbFreeBt"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_event_cb_free_btdm",
+    "c++": "wifi_prov_scheme_ble_event_cb_free_btdm(void *, wifi_prov_cb_event_t, void *)",
+    "go": "WifiProvSchemeBleEventCbFreeBtdm"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_set_mfg_data",
+    "c++": "wifi_prov_scheme_ble_set_mfg_data(uint8_t *, int)",
+    "go": "WifiProvSchemeBleSetMfgData"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_set_random_addr",
+    "c++": "wifi_prov_scheme_ble_set_random_addr(const uint8_t *)",
+    "go": "WifiProvSchemeBleSetRandomAddr"
+  },
+  {
+    "mangle": "wifi_prov_scheme_ble_set_service_uuid",
+    "c++": "wifi_prov_scheme_ble_set_service_uuid(uint8_t *)",
+    "go": "WifiProvSchemeBleSetServiceUuid"
+  },
+  {
+    "mangle": "wifi_prov_scheme_softap_set_httpd_handle",
+    "c++": "wifi_prov_scheme_softap_set_httpd_handle(void *)",
+    "go": "WifiProvSchemeSoftapSetHttpdHandle"
+  }
+]

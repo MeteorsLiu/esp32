@@ -1,0 +1,19 @@
+package soc
+
+import (
+	"github.com/goplus/lib/c"
+	_ "unsafe"
+)
+
+type TimerGroupSignalConnT struct {
+	Groups [2]struct {
+		Module     PeriphModuleT
+		TimerIrqId [1]c.Int
+	}
+}
+
+type TgTimerRegRetentionInfoT struct {
+	Module           PeriphRetentionModuleT
+	RegdmaEntryArray *RegdmaEntriesConfigT
+	ArraySize        c.Uint32T
+}

@@ -1,0 +1,21 @@
+package soc
+
+import _ "unsafe"
+
+const RSA_M_MEM_SIZE_BYTES = 16
+const RSA_Z_MEM_SIZE_BYTES = 16
+const RSA_Y_MEM_SIZE_BYTES = 16
+const RSA_X_MEM_SIZE_BYTES = 16
+const RSA_M_PRIME_S = 0
+const RSA_MODE_S = 0
+const RSA_QUERY_CLEAN_S = 0
+const RSA_SET_START_MODEXP_S = 0
+const RSA_SET_START_MODMULT_S = 0
+const RSA_SET_START_MULT_S = 0
+const RSA_QUERY_IDLE_S = 0
+const RSA_CLEAR_INTERRUPT_S = 0
+const RSA_CONSTANT_TIME_S = 0
+const RSA_SEARCH_ENABLE_S = 0
+const RSA_SEARCH_POS_S = 0
+const RSA_INT_ENA_S = 0
+const RSA_DATE_S = 0

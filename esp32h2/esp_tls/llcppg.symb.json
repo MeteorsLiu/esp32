@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "esp_crypto_base64_encode",
+    "c++": "esp_crypto_base64_encode(unsigned char *, size_t, size_t *, const unsigned char *, size_t)",
+    "go": "EspCryptoBase64Encode"
+  },
+  {
+    "mangle": "esp_crypto_sha1",
+    "c++": "esp_crypto_sha1(const unsigned char *, size_t, unsigned char *)",
+    "go": "EspCryptoSha1"
+  }
+]

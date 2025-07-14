@@ -1,0 +1,87 @@
+[
+  {
+    "mangle": "gptimer_del_timer",
+    "c++": "gptimer_del_timer(gptimer_handle_t)",
+    "go": "GptimerDelTimer"
+  },
+  {
+    "mangle": "gptimer_disable",
+    "c++": "gptimer_disable(gptimer_handle_t)",
+    "go": "GptimerDisable"
+  },
+  {
+    "mangle": "gptimer_enable",
+    "c++": "gptimer_enable(gptimer_handle_t)",
+    "go": "GptimerEnable"
+  },
+  {
+    "mangle": "gptimer_get_captured_count",
+    "c++": "gptimer_get_captured_count(gptimer_handle_t, uint64_t *)",
+    "go": "GptimerGetCapturedCount"
+  },
+  {
+    "mangle": "gptimer_get_group_id",
+    "c++": "gptimer_get_group_id(gptimer_handle_t, int *)",
+    "go": "GptimerGetGroupId"
+  },
+  {
+    "mangle": "gptimer_get_intr_handle",
+    "c++": "gptimer_get_intr_handle(gptimer_handle_t, intr_handle_t *)",
+    "go": "GptimerGetIntrHandle"
+  },
+  {
+    "mangle": "gptimer_get_pm_lock",
+    "c++": "gptimer_get_pm_lock(gptimer_handle_t, esp_pm_lock_handle_t *)",
+    "go": "GptimerGetPmLock"
+  },
+  {
+    "mangle": "gptimer_get_raw_count",
+    "c++": "gptimer_get_raw_count(gptimer_handle_t, uint64_t *)",
+    "go": "GptimerGetRawCount"
+  },
+  {
+    "mangle": "gptimer_get_resolution",
+    "c++": "gptimer_get_resolution(gptimer_handle_t, uint32_t *)",
+    "go": "GptimerGetResolution"
+  },
+  {
+    "mangle": "gptimer_new_etm_event",
+    "c++": "gptimer_new_etm_event(gptimer_handle_t, const gptimer_etm_event_config_t *, esp_etm_event_handle_t *)",
+    "go": "GptimerNewEtmEvent"
+  },
+  {
+    "mangle": "gptimer_new_etm_task",
+    "c++": "gptimer_new_etm_task(gptimer_handle_t, const gptimer_etm_task_config_t *, esp_etm_task_handle_t *)",
+    "go": "GptimerNewEtmTask"
+  },
+  {
+    "mangle": "gptimer_new_timer",
+    "c++": "gptimer_new_timer(const gptimer_config_t *, gptimer_handle_t *)",
+    "go": "(*GptimerConfigT).GptimerNewTimer"
+  },
+  {
+    "mangle": "gptimer_register_event_callbacks",
+    "c++": "gptimer_register_event_callbacks(gptimer_handle_t, const gptimer_event_callbacks_t *, void *)",
+    "go": "GptimerRegisterEventCallbacks"
+  },
+  {
+    "mangle": "gptimer_set_alarm_action",
+    "c++": "gptimer_set_alarm_action(gptimer_handle_t, const gptimer_alarm_config_t *)",
+    "go": "GptimerSetAlarmAction"
+  },
+  {
+    "mangle": "gptimer_set_raw_count",
+    "c++": "gptimer_set_raw_count(gptimer_handle_t, uint64_t)",
+    "go": "GptimerSetRawCount"
+  },
+  {
+    "mangle": "gptimer_start",
+    "c++": "gptimer_start(gptimer_handle_t)",
+    "go": "GptimerStart"
+  },
+  {
+    "mangle": "gptimer_stop",
+    "c++": "gptimer_stop(gptimer_handle_t)",
+    "go": "GptimerStop"
+  }
+]

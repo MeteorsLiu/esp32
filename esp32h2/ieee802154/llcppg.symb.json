@@ -1,0 +1,272 @@
+[
+  {
+    "mangle": "esp_ieee802154_add_pending_addr",
+    "c++": "esp_ieee802154_add_pending_addr(const uint8_t *, bool)",
+    "go": "EspIeee802154AddPendingAddr"
+  },
+  {
+    "mangle": "esp_ieee802154_clear_pending_addr",
+    "c++": "esp_ieee802154_clear_pending_addr(const uint8_t *, bool)",
+    "go": "EspIeee802154ClearPendingAddr"
+  },
+  {
+    "mangle": "esp_ieee802154_disable",
+    "c++": "esp_ieee802154_disable()",
+    "go": "EspIeee802154Disable"
+  },
+  {
+    "mangle": "esp_ieee802154_enable",
+    "c++": "esp_ieee802154_enable()",
+    "go": "EspIeee802154Enable"
+  },
+  {
+    "mangle": "esp_ieee802154_energy_detect",
+    "c++": "esp_ieee802154_energy_detect(uint32_t)",
+    "go": "EspIeee802154EnergyDetect"
+  },
+  {
+    "mangle": "esp_ieee802154_energy_detect_done",
+    "c++": "esp_ieee802154_energy_detect_done(int8_t)",
+    "go": "EspIeee802154EnergyDetectDone"
+  },
+  {
+    "mangle": "esp_ieee802154_enh_ack_generator",
+    "c++": "esp_ieee802154_enh_ack_generator(uint8_t *, esp_ieee802154_frame_info_t *, uint8_t *)",
+    "go": "EspIeee802154EnhAckGenerator"
+  },
+  {
+    "mangle": "esp_ieee802154_event_callback_list_register",
+    "c++": "esp_ieee802154_event_callback_list_register(esp_ieee802154_event_cb_list_t)",
+    "go": "EspIeee802154EventCbListT.EspIeee802154EventCallbackListRegister"
+  },
+  {
+    "mangle": "esp_ieee802154_event_callback_list_unregister",
+    "c++": "esp_ieee802154_event_callback_list_unregister()",
+    "go": "EspIeee802154EventCallbackListUnregister"
+  },
+  {
+    "mangle": "esp_ieee802154_get_ack_timeout",
+    "c++": "esp_ieee802154_get_ack_timeout()",
+    "go": "EspIeee802154GetAckTimeout"
+  },
+  {
+    "mangle": "esp_ieee802154_get_cca_mode",
+    "c++": "esp_ieee802154_get_cca_mode()",
+    "go": "EspIeee802154GetCcaMode"
+  },
+  {
+    "mangle": "esp_ieee802154_get_cca_threshold",
+    "c++": "esp_ieee802154_get_cca_threshold()",
+    "go": "EspIeee802154GetCcaThreshold"
+  },
+  {
+    "mangle": "esp_ieee802154_get_channel",
+    "c++": "esp_ieee802154_get_channel()",
+    "go": "EspIeee802154GetChannel"
+  },
+  {
+    "mangle": "esp_ieee802154_get_coordinator",
+    "c++": "esp_ieee802154_get_coordinator()",
+    "go": "EspIeee802154GetCoordinator"
+  },
+  {
+    "mangle": "esp_ieee802154_get_extended_address",
+    "c++": "esp_ieee802154_get_extended_address(uint8_t *)",
+    "go": "EspIeee802154GetExtendedAddress"
+  },
+  {
+    "mangle": "esp_ieee802154_get_panid",
+    "c++": "esp_ieee802154_get_panid()",
+    "go": "EspIeee802154GetPanid"
+  },
+  {
+    "mangle": "esp_ieee802154_get_pending_mode",
+    "c++": "esp_ieee802154_get_pending_mode()",
+    "go": "EspIeee802154GetPendingMode"
+  },
+  {
+    "mangle": "esp_ieee802154_get_power_table",
+    "c++": "esp_ieee802154_get_power_table(esp_ieee802154_txpower_table_t *)",
+    "go": "(*EspIeee802154TxpowerTableT).EspIeee802154GetPowerTable"
+  },
+  {
+    "mangle": "esp_ieee802154_get_power_with_channel",
+    "c++": "esp_ieee802154_get_power_with_channel(uint8_t, int8_t *)",
+    "go": "EspIeee802154GetPowerWithChannel"
+  },
+  {
+    "mangle": "esp_ieee802154_get_promiscuous",
+    "c++": "esp_ieee802154_get_promiscuous()",
+    "go": "EspIeee802154GetPromiscuous"
+  },
+  {
+    "mangle": "esp_ieee802154_get_recent_lqi",
+    "c++": "esp_ieee802154_get_recent_lqi()",
+    "go": "EspIeee802154GetRecentLqi"
+  },
+  {
+    "mangle": "esp_ieee802154_get_recent_rssi",
+    "c++": "esp_ieee802154_get_recent_rssi()",
+    "go": "EspIeee802154GetRecentRssi"
+  },
+  {
+    "mangle": "esp_ieee802154_get_rx_when_idle",
+    "c++": "esp_ieee802154_get_rx_when_idle()",
+    "go": "EspIeee802154GetRxWhenIdle"
+  },
+  {
+    "mangle": "esp_ieee802154_get_short_address",
+    "c++": "esp_ieee802154_get_short_address()",
+    "go": "EspIeee802154GetShortAddress"
+  },
+  {
+    "mangle": "esp_ieee802154_get_state",
+    "c++": "esp_ieee802154_get_state()",
+    "go": "EspIeee802154GetState"
+  },
+  {
+    "mangle": "esp_ieee802154_get_txpower",
+    "c++": "esp_ieee802154_get_txpower()",
+    "go": "EspIeee802154GetTxpower"
+  },
+  {
+    "mangle": "esp_ieee802154_receive",
+    "c++": "esp_ieee802154_receive()",
+    "go": "EspIeee802154Receive"
+  },
+  {
+    "mangle": "esp_ieee802154_receive_at",
+    "c++": "esp_ieee802154_receive_at(uint32_t, uint32_t)",
+    "go": "EspIeee802154ReceiveAt"
+  },
+  {
+    "mangle": "esp_ieee802154_receive_at_done",
+    "c++": "esp_ieee802154_receive_at_done()",
+    "go": "EspIeee802154ReceiveAtDone"
+  },
+  {
+    "mangle": "esp_ieee802154_receive_done",
+    "c++": "esp_ieee802154_receive_done(uint8_t *, esp_ieee802154_frame_info_t *)",
+    "go": "EspIeee802154ReceiveDone"
+  },
+  {
+    "mangle": "esp_ieee802154_receive_handle_done",
+    "c++": "esp_ieee802154_receive_handle_done(const uint8_t *)",
+    "go": "EspIeee802154ReceiveHandleDone"
+  },
+  {
+    "mangle": "esp_ieee802154_receive_sfd_done",
+    "c++": "esp_ieee802154_receive_sfd_done()",
+    "go": "EspIeee802154ReceiveSfdDone"
+  },
+  {
+    "mangle": "esp_ieee802154_reset_pending_table",
+    "c++": "esp_ieee802154_reset_pending_table(bool)",
+    "go": "EspIeee802154ResetPendingTable"
+  },
+  {
+    "mangle": "esp_ieee802154_set_ack_timeout",
+    "c++": "esp_ieee802154_set_ack_timeout(uint32_t)",
+    "go": "EspIeee802154SetAckTimeout"
+  },
+  {
+    "mangle": "esp_ieee802154_set_cca_mode",
+    "c++": "esp_ieee802154_set_cca_mode(esp_ieee802154_cca_mode_t)",
+    "go": "EspIeee802154CcaModeT.EspIeee802154SetCcaMode"
+  },
+  {
+    "mangle": "esp_ieee802154_set_cca_threshold",
+    "c++": "esp_ieee802154_set_cca_threshold(int8_t)",
+    "go": "EspIeee802154SetCcaThreshold"
+  },
+  {
+    "mangle": "esp_ieee802154_set_channel",
+    "c++": "esp_ieee802154_set_channel(uint8_t)",
+    "go": "EspIeee802154SetChannel"
+  },
+  {
+    "mangle": "esp_ieee802154_set_coordinator",
+    "c++": "esp_ieee802154_set_coordinator(bool)",
+    "go": "EspIeee802154SetCoordinator"
+  },
+  {
+    "mangle": "esp_ieee802154_set_extended_address",
+    "c++": "esp_ieee802154_set_extended_address(const uint8_t *)",
+    "go": "EspIeee802154SetExtendedAddress"
+  },
+  {
+    "mangle": "esp_ieee802154_set_panid",
+    "c++": "esp_ieee802154_set_panid(uint16_t)",
+    "go": "EspIeee802154SetPanid"
+  },
+  {
+    "mangle": "esp_ieee802154_set_pending_mode",
+    "c++": "esp_ieee802154_set_pending_mode(esp_ieee802154_pending_mode_t)",
+    "go": "EspIeee802154PendingModeT.EspIeee802154SetPendingMode"
+  },
+  {
+    "mangle": "esp_ieee802154_set_power_table",
+    "c++": "esp_ieee802154_set_power_table(esp_ieee802154_txpower_table_t)",
+    "go": "EspIeee802154TxpowerTableT.EspIeee802154SetPowerTable"
+  },
+  {
+    "mangle": "esp_ieee802154_set_power_with_channel",
+    "c++": "esp_ieee802154_set_power_with_channel(uint8_t, int8_t)",
+    "go": "EspIeee802154SetPowerWithChannel"
+  },
+  {
+    "mangle": "esp_ieee802154_set_promiscuous",
+    "c++": "esp_ieee802154_set_promiscuous(bool)",
+    "go": "EspIeee802154SetPromiscuous"
+  },
+  {
+    "mangle": "esp_ieee802154_set_rx_when_idle",
+    "c++": "esp_ieee802154_set_rx_when_idle(bool)",
+    "go": "EspIeee802154SetRxWhenIdle"
+  },
+  {
+    "mangle": "esp_ieee802154_set_short_address",
+    "c++": "esp_ieee802154_set_short_address(uint16_t)",
+    "go": "EspIeee802154SetShortAddress"
+  },
+  {
+    "mangle": "esp_ieee802154_set_transmit_security",
+    "c++": "esp_ieee802154_set_transmit_security(uint8_t *, uint8_t *, uint8_t *)",
+    "go": "EspIeee802154SetTransmitSecurity"
+  },
+  {
+    "mangle": "esp_ieee802154_set_txpower",
+    "c++": "esp_ieee802154_set_txpower(int8_t)",
+    "go": "EspIeee802154SetTxpower"
+  },
+  {
+    "mangle": "esp_ieee802154_sleep",
+    "c++": "esp_ieee802154_sleep()",
+    "go": "EspIeee802154Sleep"
+  },
+  {
+    "mangle": "esp_ieee802154_transmit",
+    "c++": "esp_ieee802154_transmit(const uint8_t *, bool)",
+    "go": "EspIeee802154Transmit"
+  },
+  {
+    "mangle": "esp_ieee802154_transmit_at",
+    "c++": "esp_ieee802154_transmit_at(const uint8_t *, bool, uint32_t)",
+    "go": "EspIeee802154TransmitAt"
+  },
+  {
+    "mangle": "esp_ieee802154_transmit_done",
+    "c++": "esp_ieee802154_transmit_done(const uint8_t *, const uint8_t *, esp_ieee802154_frame_info_t *)",
+    "go": "EspIeee802154TransmitDone"
+  },
+  {
+    "mangle": "esp_ieee802154_transmit_failed",
+    "c++": "esp_ieee802154_transmit_failed(const uint8_t *, esp_ieee802154_tx_error_t)",
+    "go": "EspIeee802154TransmitFailed"
+  },
+  {
+    "mangle": "esp_ieee802154_transmit_sfd_done",
+    "c++": "esp_ieee802154_transmit_sfd_done(uint8_t *)",
+    "go": "EspIeee802154TransmitSfdDone"
+  }
+]

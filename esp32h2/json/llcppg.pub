@@ -1,0 +1,6 @@
+cJSON CJSON
+cJSON_Hooks CJSONHooks
+cJSON_bool CJSONBool
+max_align_t MaxAlignT
+ptrdiff_t PtrdiffT
+wchar_t WcharT

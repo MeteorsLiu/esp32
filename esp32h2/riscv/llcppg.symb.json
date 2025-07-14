@@ -1,0 +1,47 @@
+[
+  {
+    "mangle": "esprv_get_interrupt_unmask",
+    "c++": "esprv_get_interrupt_unmask()",
+    "go": "EsprvGetInterruptUnmask"
+  },
+  {
+    "mangle": "esprv_int_get_priority",
+    "c++": "esprv_int_get_priority(int)",
+    "go": "EsprvIntGetPriority"
+  },
+  {
+    "mangle": "esprv_int_get_type",
+    "c++": "esprv_int_get_type(int)",
+    "go": "EsprvIntGetType"
+  },
+  {
+    "mangle": "esprv_int_is_vectored",
+    "c++": "esprv_int_is_vectored(int)",
+    "go": "EsprvIntIsVectored"
+  },
+  {
+    "mangle": "intr_handler_get",
+    "c++": "intr_handler_get(int)",
+    "go": "IntrHandlerGet"
+  },
+  {
+    "mangle": "intr_handler_get_arg",
+    "c++": "intr_handler_get_arg(int)",
+    "go": "IntrHandlerGetArg"
+  },
+  {
+    "mangle": "intr_handler_set",
+    "c++": "intr_handler_set(int, intr_handler_t, void *)",
+    "go": "IntrHandlerSet"
+  },
+  {
+    "mangle": "intr_matrix_route",
+    "c++": "intr_matrix_route(int, int)",
+    "go": "IntrMatrixRoute"
+  },
+  {
+    "mangle": "riscv_decode_offset_from_jal_instruction",
+    "c++": "riscv_decode_offset_from_jal_instruction(const intptr_t)",
+    "go": "RiscvDecodeOffsetFromJalInstruction"
+  }
+]
