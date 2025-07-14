@@ -1,0 +1,542 @@
+[
+  {
+    "mangle": "esp_srp_exchange_proofs",
+    "c++": "esp_srp_exchange_proofs(esp_srp_handle_t *, char *, uint16_t, char *, char *)",
+    "go": "(*EspSrpHandleT).EspSrpExchangeProofs"
+  },
+  {
+    "mangle": "esp_srp_free",
+    "c++": "esp_srp_free(esp_srp_handle_t *)",
+    "go": "(*EspSrpHandleT).EspSrpFree"
+  },
+  {
+    "mangle": "esp_srp_gen_salt_verifier",
+    "c++": "esp_srp_gen_salt_verifier(const char *, int, const char *, int, char **, int, char **, int *)",
+    "go": "EspSrpGenSaltVerifier"
+  },
+  {
+    "mangle": "esp_srp_get_session_key",
+    "c++": "esp_srp_get_session_key(esp_srp_handle_t *, char *, int, char **, uint16_t *)",
+    "go": "(*EspSrpHandleT).EspSrpGetSessionKey"
+  },
+  {
+    "mangle": "esp_srp_init",
+    "c++": "esp_srp_init(esp_ng_type_t)",
+    "go": "EspNgTypeT.EspSrpInit"
+  },
+  {
+    "mangle": "esp_srp_set_salt_verifier",
+    "c++": "esp_srp_set_salt_verifier(esp_srp_handle_t *, const char *, int, const char *, int)",
+    "go": "(*EspSrpHandleT).EspSrpSetSaltVerifier"
+  },
+  {
+    "mangle": "esp_srp_srv_pubkey",
+    "c++": "esp_srp_srv_pubkey(esp_srp_handle_t *, const char *, int, const char *, int, int, char **, int *, char **)",
+    "go": "(*EspSrpHandleT).EspSrpSrvPubkey"
+  },
+  {
+    "mangle": "esp_srp_srv_pubkey_from_salt_verifier",
+    "c++": "esp_srp_srv_pubkey_from_salt_verifier(esp_srp_handle_t *, char **, int *)",
+    "go": "(*EspSrpHandleT).EspSrpSrvPubkeyFromSaltVerifier"
+  },
+  {
+    "mangle": "protocomm_add_endpoint",
+    "c++": "protocomm_add_endpoint(protocomm_t *, const char *, protocomm_req_handler_t, void *)",
+    "go": "(*ProtocommT).ProtocommAddEndpoint"
+  },
+  {
+    "mangle": "protocomm_close_session",
+    "c++": "protocomm_close_session(protocomm_t *, uint32_t)",
+    "go": "(*ProtocommT).ProtocommCloseSession"
+  },
+  {
+    "mangle": "protocomm_console_start",
+    "c++": "protocomm_console_start(protocomm_t *, const protocomm_console_config_t *)",
+    "go": "(*ProtocommT).ProtocommConsoleStart"
+  },
+  {
+    "mangle": "protocomm_console_stop",
+    "c++": "protocomm_console_stop(protocomm_t *)",
+    "go": "(*ProtocommT).ProtocommConsoleStop"
+  },
+  {
+    "mangle": "protocomm_delete",
+    "c++": "protocomm_delete(protocomm_t *)",
+    "go": "(*ProtocommT).ProtocommDelete"
+  },
+  {
+    "mangle": "protocomm_get_sec_version",
+    "c++": "protocomm_get_sec_version(protocomm_t *, int *, uint8_t *)",
+    "go": "(*ProtocommT).ProtocommGetSecVersion"
+  },
+  {
+    "mangle": "protocomm_httpd_start",
+    "c++": "protocomm_httpd_start(protocomm_t *, const protocomm_httpd_config_t *)",
+    "go": "(*ProtocommT).ProtocommHttpdStart"
+  },
+  {
+    "mangle": "protocomm_httpd_stop",
+    "c++": "protocomm_httpd_stop(protocomm_t *)",
+    "go": "(*ProtocommT).ProtocommHttpdStop"
+  },
+  {
+    "mangle": "protocomm_new",
+    "c++": "protocomm_new()",
+    "go": "ProtocommNew"
+  },
+  {
+    "mangle": "protocomm_open_session",
+    "c++": "protocomm_open_session(protocomm_t *, uint32_t)",
+    "go": "(*ProtocommT).ProtocommOpenSession"
+  },
+  {
+    "mangle": "protocomm_remove_endpoint",
+    "c++": "protocomm_remove_endpoint(protocomm_t *, const char *)",
+    "go": "(*ProtocommT).ProtocommRemoveEndpoint"
+  },
+  {
+    "mangle": "protocomm_req_handle",
+    "c++": "protocomm_req_handle(protocomm_t *, const char *, uint32_t, const uint8_t *, int, uint8_t **, int *)",
+    "go": "(*ProtocommT).ProtocommReqHandle"
+  },
+  {
+    "mangle": "protocomm_set_security",
+    "c++": "protocomm_set_security(protocomm_t *, const char *, const protocomm_security_t *, const void *)",
+    "go": "(*ProtocommT).ProtocommSetSecurity"
+  },
+  {
+    "mangle": "protocomm_set_version",
+    "c++": "protocomm_set_version(protocomm_t *, const char *, const char *)",
+    "go": "(*ProtocommT).ProtocommSetVersion"
+  },
+  {
+    "mangle": "protocomm_unset_security",
+    "c++": "protocomm_unset_security(protocomm_t *, const char *)",
+    "go": "(*ProtocommT).ProtocommUnsetSecurity"
+  },
+  {
+    "mangle": "protocomm_unset_version",
+    "c++": "protocomm_unset_version(protocomm_t *, const char *)",
+    "go": "(*ProtocommT).ProtocommUnsetVersion"
+  },
+  {
+    "mangle": "s0_session_cmd__free_unpacked",
+    "c++": "s0_session_cmd__free_unpacked(S0SessionCmd *, ProtobufCAllocator *)",
+    "go": "(*S0SessionCmd).S0SessionCmdFreeUnpacked"
+  },
+  {
+    "mangle": "s0_session_cmd__get_packed_size",
+    "c++": "s0_session_cmd__get_packed_size(const S0SessionCmd *)",
+    "go": "(*S0SessionCmd).S0SessionCmdGetPackedSize"
+  },
+  {
+    "mangle": "s0_session_cmd__init",
+    "c++": "s0_session_cmd__init(S0SessionCmd *)",
+    "go": "(*S0SessionCmd).S0SessionCmdInit"
+  },
+  {
+    "mangle": "s0_session_cmd__pack",
+    "c++": "s0_session_cmd__pack(const S0SessionCmd *, uint8_t *)",
+    "go": "(*S0SessionCmd).S0SessionCmdPack"
+  },
+  {
+    "mangle": "s0_session_cmd__pack_to_buffer",
+    "c++": "s0_session_cmd__pack_to_buffer(const S0SessionCmd *, ProtobufCBuffer *)",
+    "go": "(*S0SessionCmd).S0SessionCmdPackToBuffer"
+  },
+  {
+    "mangle": "s0_session_cmd__unpack",
+    "c++": "s0_session_cmd__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S0SessionCmdUnpack"
+  },
+  {
+    "mangle": "s0_session_resp__free_unpacked",
+    "c++": "s0_session_resp__free_unpacked(S0SessionResp *, ProtobufCAllocator *)",
+    "go": "(*S0SessionResp).S0SessionRespFreeUnpacked"
+  },
+  {
+    "mangle": "s0_session_resp__get_packed_size",
+    "c++": "s0_session_resp__get_packed_size(const S0SessionResp *)",
+    "go": "(*S0SessionResp).S0SessionRespGetPackedSize"
+  },
+  {
+    "mangle": "s0_session_resp__init",
+    "c++": "s0_session_resp__init(S0SessionResp *)",
+    "go": "(*S0SessionResp).S0SessionRespInit"
+  },
+  {
+    "mangle": "s0_session_resp__pack",
+    "c++": "s0_session_resp__pack(const S0SessionResp *, uint8_t *)",
+    "go": "(*S0SessionResp).S0SessionRespPack"
+  },
+  {
+    "mangle": "s0_session_resp__pack_to_buffer",
+    "c++": "s0_session_resp__pack_to_buffer(const S0SessionResp *, ProtobufCBuffer *)",
+    "go": "(*S0SessionResp).S0SessionRespPackToBuffer"
+  },
+  {
+    "mangle": "s0_session_resp__unpack",
+    "c++": "s0_session_resp__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S0SessionRespUnpack"
+  },
+  {
+    "mangle": "s2_session_cmd0__free_unpacked",
+    "c++": "s2_session_cmd0__free_unpacked(S2SessionCmd0 *, ProtobufCAllocator *)",
+    "go": "(*S2SessionCmd0).S2SessionCmd0FreeUnpacked"
+  },
+  {
+    "mangle": "s2_session_cmd0__get_packed_size",
+    "c++": "s2_session_cmd0__get_packed_size(const S2SessionCmd0 *)",
+    "go": "(*S2SessionCmd0).S2SessionCmd0GetPackedSize"
+  },
+  {
+    "mangle": "s2_session_cmd0__init",
+    "c++": "s2_session_cmd0__init(S2SessionCmd0 *)",
+    "go": "(*S2SessionCmd0).S2SessionCmd0Init"
+  },
+  {
+    "mangle": "s2_session_cmd0__pack",
+    "c++": "s2_session_cmd0__pack(const S2SessionCmd0 *, uint8_t *)",
+    "go": "(*S2SessionCmd0).S2SessionCmd0Pack"
+  },
+  {
+    "mangle": "s2_session_cmd0__pack_to_buffer",
+    "c++": "s2_session_cmd0__pack_to_buffer(const S2SessionCmd0 *, ProtobufCBuffer *)",
+    "go": "(*S2SessionCmd0).S2SessionCmd0PackToBuffer"
+  },
+  {
+    "mangle": "s2_session_cmd0__unpack",
+    "c++": "s2_session_cmd0__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S2SessionCmd0Unpack"
+  },
+  {
+    "mangle": "s2_session_cmd1__free_unpacked",
+    "c++": "s2_session_cmd1__free_unpacked(S2SessionCmd1 *, ProtobufCAllocator *)",
+    "go": "(*S2SessionCmd1).S2SessionCmd1FreeUnpacked"
+  },
+  {
+    "mangle": "s2_session_cmd1__get_packed_size",
+    "c++": "s2_session_cmd1__get_packed_size(const S2SessionCmd1 *)",
+    "go": "(*S2SessionCmd1).S2SessionCmd1GetPackedSize"
+  },
+  {
+    "mangle": "s2_session_cmd1__init",
+    "c++": "s2_session_cmd1__init(S2SessionCmd1 *)",
+    "go": "(*S2SessionCmd1).S2SessionCmd1Init"
+  },
+  {
+    "mangle": "s2_session_cmd1__pack",
+    "c++": "s2_session_cmd1__pack(const S2SessionCmd1 *, uint8_t *)",
+    "go": "(*S2SessionCmd1).S2SessionCmd1Pack"
+  },
+  {
+    "mangle": "s2_session_cmd1__pack_to_buffer",
+    "c++": "s2_session_cmd1__pack_to_buffer(const S2SessionCmd1 *, ProtobufCBuffer *)",
+    "go": "(*S2SessionCmd1).S2SessionCmd1PackToBuffer"
+  },
+  {
+    "mangle": "s2_session_cmd1__unpack",
+    "c++": "s2_session_cmd1__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S2SessionCmd1Unpack"
+  },
+  {
+    "mangle": "s2_session_resp0__free_unpacked",
+    "c++": "s2_session_resp0__free_unpacked(S2SessionResp0 *, ProtobufCAllocator *)",
+    "go": "(*S2SessionResp0).S2SessionResp0FreeUnpacked"
+  },
+  {
+    "mangle": "s2_session_resp0__get_packed_size",
+    "c++": "s2_session_resp0__get_packed_size(const S2SessionResp0 *)",
+    "go": "(*S2SessionResp0).S2SessionResp0GetPackedSize"
+  },
+  {
+    "mangle": "s2_session_resp0__init",
+    "c++": "s2_session_resp0__init(S2SessionResp0 *)",
+    "go": "(*S2SessionResp0).S2SessionResp0Init"
+  },
+  {
+    "mangle": "s2_session_resp0__pack",
+    "c++": "s2_session_resp0__pack(const S2SessionResp0 *, uint8_t *)",
+    "go": "(*S2SessionResp0).S2SessionResp0Pack"
+  },
+  {
+    "mangle": "s2_session_resp0__pack_to_buffer",
+    "c++": "s2_session_resp0__pack_to_buffer(const S2SessionResp0 *, ProtobufCBuffer *)",
+    "go": "(*S2SessionResp0).S2SessionResp0PackToBuffer"
+  },
+  {
+    "mangle": "s2_session_resp0__unpack",
+    "c++": "s2_session_resp0__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S2SessionResp0Unpack"
+  },
+  {
+    "mangle": "s2_session_resp1__free_unpacked",
+    "c++": "s2_session_resp1__free_unpacked(S2SessionResp1 *, ProtobufCAllocator *)",
+    "go": "(*S2SessionResp1).S2SessionResp1FreeUnpacked"
+  },
+  {
+    "mangle": "s2_session_resp1__get_packed_size",
+    "c++": "s2_session_resp1__get_packed_size(const S2SessionResp1 *)",
+    "go": "(*S2SessionResp1).S2SessionResp1GetPackedSize"
+  },
+  {
+    "mangle": "s2_session_resp1__init",
+    "c++": "s2_session_resp1__init(S2SessionResp1 *)",
+    "go": "(*S2SessionResp1).S2SessionResp1Init"
+  },
+  {
+    "mangle": "s2_session_resp1__pack",
+    "c++": "s2_session_resp1__pack(const S2SessionResp1 *, uint8_t *)",
+    "go": "(*S2SessionResp1).S2SessionResp1Pack"
+  },
+  {
+    "mangle": "s2_session_resp1__pack_to_buffer",
+    "c++": "s2_session_resp1__pack_to_buffer(const S2SessionResp1 *, ProtobufCBuffer *)",
+    "go": "(*S2SessionResp1).S2SessionResp1PackToBuffer"
+  },
+  {
+    "mangle": "s2_session_resp1__unpack",
+    "c++": "s2_session_resp1__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "S2SessionResp1Unpack"
+  },
+  {
+    "mangle": "sec0_payload__free_unpacked",
+    "c++": "sec0_payload__free_unpacked(Sec0Payload *, ProtobufCAllocator *)",
+    "go": "(*Sec0Payload).Sec0PayloadFreeUnpacked"
+  },
+  {
+    "mangle": "sec0_payload__get_packed_size",
+    "c++": "sec0_payload__get_packed_size(const Sec0Payload *)",
+    "go": "(*Sec0Payload).Sec0PayloadGetPackedSize"
+  },
+  {
+    "mangle": "sec0_payload__init",
+    "c++": "sec0_payload__init(Sec0Payload *)",
+    "go": "(*Sec0Payload).Sec0PayloadInit"
+  },
+  {
+    "mangle": "sec0_payload__pack",
+    "c++": "sec0_payload__pack(const Sec0Payload *, uint8_t *)",
+    "go": "(*Sec0Payload).Sec0PayloadPack"
+  },
+  {
+    "mangle": "sec0_payload__pack_to_buffer",
+    "c++": "sec0_payload__pack_to_buffer(const Sec0Payload *, ProtobufCBuffer *)",
+    "go": "(*Sec0Payload).Sec0PayloadPackToBuffer"
+  },
+  {
+    "mangle": "sec0_payload__unpack",
+    "c++": "sec0_payload__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "Sec0PayloadUnpack"
+  },
+  {
+    "mangle": "sec1_payload__free_unpacked",
+    "c++": "sec1_payload__free_unpacked(Sec1Payload *, ProtobufCAllocator *)",
+    "go": "(*Sec1Payload).Sec1PayloadFreeUnpacked"
+  },
+  {
+    "mangle": "sec1_payload__get_packed_size",
+    "c++": "sec1_payload__get_packed_size(const Sec1Payload *)",
+    "go": "(*Sec1Payload).Sec1PayloadGetPackedSize"
+  },
+  {
+    "mangle": "sec1_payload__init",
+    "c++": "sec1_payload__init(Sec1Payload *)",
+    "go": "(*Sec1Payload).Sec1PayloadInit"
+  },
+  {
+    "mangle": "sec1_payload__pack",
+    "c++": "sec1_payload__pack(const Sec1Payload *, uint8_t *)",
+    "go": "(*Sec1Payload).Sec1PayloadPack"
+  },
+  {
+    "mangle": "sec1_payload__pack_to_buffer",
+    "c++": "sec1_payload__pack_to_buffer(const Sec1Payload *, ProtobufCBuffer *)",
+    "go": "(*Sec1Payload).Sec1PayloadPackToBuffer"
+  },
+  {
+    "mangle": "sec1_payload__unpack",
+    "c++": "sec1_payload__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "Sec1PayloadUnpack"
+  },
+  {
+    "mangle": "sec2_payload__free_unpacked",
+    "c++": "sec2_payload__free_unpacked(Sec2Payload *, ProtobufCAllocator *)",
+    "go": "(*Sec2Payload).Sec2PayloadFreeUnpacked"
+  },
+  {
+    "mangle": "sec2_payload__get_packed_size",
+    "c++": "sec2_payload__get_packed_size(const Sec2Payload *)",
+    "go": "(*Sec2Payload).Sec2PayloadGetPackedSize"
+  },
+  {
+    "mangle": "sec2_payload__init",
+    "c++": "sec2_payload__init(Sec2Payload *)",
+    "go": "(*Sec2Payload).Sec2PayloadInit"
+  },
+  {
+    "mangle": "sec2_payload__pack",
+    "c++": "sec2_payload__pack(const Sec2Payload *, uint8_t *)",
+    "go": "(*Sec2Payload).Sec2PayloadPack"
+  },
+  {
+    "mangle": "sec2_payload__pack_to_buffer",
+    "c++": "sec2_payload__pack_to_buffer(const Sec2Payload *, ProtobufCBuffer *)",
+    "go": "(*Sec2Payload).Sec2PayloadPackToBuffer"
+  },
+  {
+    "mangle": "sec2_payload__unpack",
+    "c++": "sec2_payload__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "Sec2PayloadUnpack"
+  },
+  {
+    "mangle": "session_cmd0__free_unpacked",
+    "c++": "session_cmd0__free_unpacked(SessionCmd0 *, ProtobufCAllocator *)",
+    "go": "(*SessionCmd0).SessionCmd0FreeUnpacked"
+  },
+  {
+    "mangle": "session_cmd0__get_packed_size",
+    "c++": "session_cmd0__get_packed_size(const SessionCmd0 *)",
+    "go": "(*SessionCmd0).SessionCmd0GetPackedSize"
+  },
+  {
+    "mangle": "session_cmd0__init",
+    "c++": "session_cmd0__init(SessionCmd0 *)",
+    "go": "(*SessionCmd0).SessionCmd0Init"
+  },
+  {
+    "mangle": "session_cmd0__pack",
+    "c++": "session_cmd0__pack(const SessionCmd0 *, uint8_t *)",
+    "go": "(*SessionCmd0).SessionCmd0Pack"
+  },
+  {
+    "mangle": "session_cmd0__pack_to_buffer",
+    "c++": "session_cmd0__pack_to_buffer(const SessionCmd0 *, ProtobufCBuffer *)",
+    "go": "(*SessionCmd0).SessionCmd0PackToBuffer"
+  },
+  {
+    "mangle": "session_cmd0__unpack",
+    "c++": "session_cmd0__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "SessionCmd0Unpack"
+  },
+  {
+    "mangle": "session_cmd1__free_unpacked",
+    "c++": "session_cmd1__free_unpacked(SessionCmd1 *, ProtobufCAllocator *)",
+    "go": "(*SessionCmd1).SessionCmd1FreeUnpacked"
+  },
+  {
+    "mangle": "session_cmd1__get_packed_size",
+    "c++": "session_cmd1__get_packed_size(const SessionCmd1 *)",
+    "go": "(*SessionCmd1).SessionCmd1GetPackedSize"
+  },
+  {
+    "mangle": "session_cmd1__init",
+    "c++": "session_cmd1__init(SessionCmd1 *)",
+    "go": "(*SessionCmd1).SessionCmd1Init"
+  },
+  {
+    "mangle": "session_cmd1__pack",
+    "c++": "session_cmd1__pack(const SessionCmd1 *, uint8_t *)",
+    "go": "(*SessionCmd1).SessionCmd1Pack"
+  },
+  {
+    "mangle": "session_cmd1__pack_to_buffer",
+    "c++": "session_cmd1__pack_to_buffer(const SessionCmd1 *, ProtobufCBuffer *)",
+    "go": "(*SessionCmd1).SessionCmd1PackToBuffer"
+  },
+  {
+    "mangle": "session_cmd1__unpack",
+    "c++": "session_cmd1__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "SessionCmd1Unpack"
+  },
+  {
+    "mangle": "session_data__free_unpacked",
+    "c++": "session_data__free_unpacked(SessionData *, ProtobufCAllocator *)",
+    "go": "(*SessionData).SessionDataFreeUnpacked"
+  },
+  {
+    "mangle": "session_data__get_packed_size",
+    "c++": "session_data__get_packed_size(const SessionData *)",
+    "go": "(*SessionData).SessionDataGetPackedSize"
+  },
+  {
+    "mangle": "session_data__init",
+    "c++": "session_data__init(SessionData *)",
+    "go": "(*SessionData).SessionDataInit"
+  },
+  {
+    "mangle": "session_data__pack",
+    "c++": "session_data__pack(const SessionData *, uint8_t *)",
+    "go": "(*SessionData).SessionDataPack"
+  },
+  {
+    "mangle": "session_data__pack_to_buffer",
+    "c++": "session_data__pack_to_buffer(const SessionData *, ProtobufCBuffer *)",
+    "go": "(*SessionData).SessionDataPackToBuffer"
+  },
+  {
+    "mangle": "session_data__unpack",
+    "c++": "session_data__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "SessionDataUnpack"
+  },
+  {
+    "mangle": "session_resp0__free_unpacked",
+    "c++": "session_resp0__free_unpacked(SessionResp0 *, ProtobufCAllocator *)",
+    "go": "(*SessionResp0).SessionResp0FreeUnpacked"
+  },
+  {
+    "mangle": "session_resp0__get_packed_size",
+    "c++": "session_resp0__get_packed_size(const SessionResp0 *)",
+    "go": "(*SessionResp0).SessionResp0GetPackedSize"
+  },
+  {
+    "mangle": "session_resp0__init",
+    "c++": "session_resp0__init(SessionResp0 *)",
+    "go": "(*SessionResp0).SessionResp0Init"
+  },
+  {
+    "mangle": "session_resp0__pack",
+    "c++": "session_resp0__pack(const SessionResp0 *, uint8_t *)",
+    "go": "(*SessionResp0).SessionResp0Pack"
+  },
+  {
+    "mangle": "session_resp0__pack_to_buffer",
+    "c++": "session_resp0__pack_to_buffer(const SessionResp0 *, ProtobufCBuffer *)",
+    "go": "(*SessionResp0).SessionResp0PackToBuffer"
+  },
+  {
+    "mangle": "session_resp0__unpack",
+    "c++": "session_resp0__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "SessionResp0Unpack"
+  },
+  {
+    "mangle": "session_resp1__free_unpacked",
+    "c++": "session_resp1__free_unpacked(SessionResp1 *, ProtobufCAllocator *)",
+    "go": "(*SessionResp1).SessionResp1FreeUnpacked"
+  },
+  {
+    "mangle": "session_resp1__get_packed_size",
+    "c++": "session_resp1__get_packed_size(const SessionResp1 *)",
+    "go": "(*SessionResp1).SessionResp1GetPackedSize"
+  },
+  {
+    "mangle": "session_resp1__init",
+    "c++": "session_resp1__init(SessionResp1 *)",
+    "go": "(*SessionResp1).SessionResp1Init"
+  },
+  {
+    "mangle": "session_resp1__pack",
+    "c++": "session_resp1__pack(const SessionResp1 *, uint8_t *)",
+    "go": "(*SessionResp1).SessionResp1Pack"
+  },
+  {
+    "mangle": "session_resp1__pack_to_buffer",
+    "c++": "session_resp1__pack_to_buffer(const SessionResp1 *, ProtobufCBuffer *)",
+    "go": "(*SessionResp1).SessionResp1PackToBuffer"
+  },
+  {
+    "mangle": "session_resp1__unpack",
+    "c++": "session_resp1__unpack(ProtobufCAllocator *, size_t, const uint8_t *)",
+    "go": "SessionResp1Unpack"
+  }
+]

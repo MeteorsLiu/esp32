@@ -1,0 +1,97 @@
+[
+  {
+    "mangle": "parlio_del_rx_delimiter",
+    "c++": "parlio_del_rx_delimiter(parlio_rx_delimiter_handle_t)",
+    "go": "ParlioDelRxDelimiter"
+  },
+  {
+    "mangle": "parlio_del_rx_unit",
+    "c++": "parlio_del_rx_unit(parlio_rx_unit_handle_t)",
+    "go": "ParlioDelRxUnit"
+  },
+  {
+    "mangle": "parlio_del_tx_unit",
+    "c++": "parlio_del_tx_unit(parlio_tx_unit_handle_t)",
+    "go": "ParlioDelTxUnit"
+  },
+  {
+    "mangle": "parlio_new_rx_level_delimiter",
+    "c++": "parlio_new_rx_level_delimiter(const parlio_rx_level_delimiter_config_t *, parlio_rx_delimiter_handle_t *)",
+    "go": "(*ParlioRxLevelDelimiterConfigT).ParlioNewRxLevelDelimiter"
+  },
+  {
+    "mangle": "parlio_new_rx_pulse_delimiter",
+    "c++": "parlio_new_rx_pulse_delimiter(const parlio_rx_pulse_delimiter_config_t *, parlio_rx_delimiter_handle_t *)",
+    "go": "(*ParlioRxPulseDelimiterConfigT).ParlioNewRxPulseDelimiter"
+  },
+  {
+    "mangle": "parlio_new_rx_soft_delimiter",
+    "c++": "parlio_new_rx_soft_delimiter(const parlio_rx_soft_delimiter_config_t *, parlio_rx_delimiter_handle_t *)",
+    "go": "(*ParlioRxSoftDelimiterConfigT).ParlioNewRxSoftDelimiter"
+  },
+  {
+    "mangle": "parlio_new_rx_unit",
+    "c++": "parlio_new_rx_unit(const parlio_rx_unit_config_t *, parlio_rx_unit_handle_t *)",
+    "go": "(*ParlioRxUnitConfigT).ParlioNewRxUnit"
+  },
+  {
+    "mangle": "parlio_new_tx_unit",
+    "c++": "parlio_new_tx_unit(const parlio_tx_unit_config_t *, parlio_tx_unit_handle_t *)",
+    "go": "(*ParlioTxUnitConfigT).ParlioNewTxUnit"
+  },
+  {
+    "mangle": "parlio_rx_soft_delimiter_start_stop",
+    "c++": "parlio_rx_soft_delimiter_start_stop(parlio_rx_unit_handle_t, parlio_rx_delimiter_handle_t, bool)",
+    "go": "ParlioRxSoftDelimiterStartStop"
+  },
+  {
+    "mangle": "parlio_rx_unit_disable",
+    "c++": "parlio_rx_unit_disable(parlio_rx_unit_handle_t)",
+    "go": "ParlioRxUnitDisable"
+  },
+  {
+    "mangle": "parlio_rx_unit_enable",
+    "c++": "parlio_rx_unit_enable(parlio_rx_unit_handle_t, bool)",
+    "go": "ParlioRxUnitEnable"
+  },
+  {
+    "mangle": "parlio_rx_unit_receive",
+    "c++": "parlio_rx_unit_receive(parlio_rx_unit_handle_t, void *, size_t, const parlio_receive_config_t *)",
+    "go": "ParlioRxUnitReceive"
+  },
+  {
+    "mangle": "parlio_rx_unit_register_event_callbacks",
+    "c++": "parlio_rx_unit_register_event_callbacks(parlio_rx_unit_handle_t, const parlio_rx_event_callbacks_t *, void *)",
+    "go": "ParlioRxUnitRegisterEventCallbacks"
+  },
+  {
+    "mangle": "parlio_rx_unit_wait_all_done",
+    "c++": "parlio_rx_unit_wait_all_done(parlio_rx_unit_handle_t, int)",
+    "go": "ParlioRxUnitWaitAllDone"
+  },
+  {
+    "mangle": "parlio_tx_unit_disable",
+    "c++": "parlio_tx_unit_disable(parlio_tx_unit_handle_t)",
+    "go": "ParlioTxUnitDisable"
+  },
+  {
+    "mangle": "parlio_tx_unit_enable",
+    "c++": "parlio_tx_unit_enable(parlio_tx_unit_handle_t)",
+    "go": "ParlioTxUnitEnable"
+  },
+  {
+    "mangle": "parlio_tx_unit_register_event_callbacks",
+    "c++": "parlio_tx_unit_register_event_callbacks(parlio_tx_unit_handle_t, const parlio_tx_event_callbacks_t *, void *)",
+    "go": "ParlioTxUnitRegisterEventCallbacks"
+  },
+  {
+    "mangle": "parlio_tx_unit_transmit",
+    "c++": "parlio_tx_unit_transmit(parlio_tx_unit_handle_t, const void *, size_t, const parlio_transmit_config_t *)",
+    "go": "ParlioTxUnitTransmit"
+  },
+  {
+    "mangle": "parlio_tx_unit_wait_all_done",
+    "c++": "parlio_tx_unit_wait_all_done(parlio_tx_unit_handle_t, int)",
+    "go": "ParlioTxUnitWaitAllDone"
+  }
+]

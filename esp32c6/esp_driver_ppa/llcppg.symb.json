@@ -1,0 +1,32 @@
+[
+  {
+    "mangle": "ppa_client_register_event_callbacks",
+    "c++": "ppa_client_register_event_callbacks(ppa_client_handle_t, const ppa_event_callbacks_t *)",
+    "go": "PpaClientRegisterEventCallbacks"
+  },
+  {
+    "mangle": "ppa_do_blend",
+    "c++": "ppa_do_blend(ppa_client_handle_t, const ppa_blend_oper_config_t *)",
+    "go": "PpaDoBlend"
+  },
+  {
+    "mangle": "ppa_do_fill",
+    "c++": "ppa_do_fill(ppa_client_handle_t, const ppa_fill_oper_config_t *)",
+    "go": "PpaDoFill"
+  },
+  {
+    "mangle": "ppa_do_scale_rotate_mirror",
+    "c++": "ppa_do_scale_rotate_mirror(ppa_client_handle_t, const ppa_srm_oper_config_t *)",
+    "go": "PpaDoScaleRotateMirror"
+  },
+  {
+    "mangle": "ppa_register_client",
+    "c++": "ppa_register_client(const ppa_client_config_t *, ppa_client_handle_t *)",
+    "go": "(*PpaClientConfigT).PpaRegisterClient"
+  },
+  {
+    "mangle": "ppa_unregister_client",
+    "c++": "ppa_unregister_client(ppa_client_handle_t)",
+    "go": "PpaUnregisterClient"
+  }
+]

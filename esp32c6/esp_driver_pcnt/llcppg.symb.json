@@ -1,0 +1,82 @@
+[
+  {
+    "mangle": "pcnt_channel_set_edge_action",
+    "c++": "pcnt_channel_set_edge_action(pcnt_channel_handle_t, pcnt_channel_edge_action_t, pcnt_channel_edge_action_t)",
+    "go": "PcntChannelSetEdgeAction"
+  },
+  {
+    "mangle": "pcnt_channel_set_level_action",
+    "c++": "pcnt_channel_set_level_action(pcnt_channel_handle_t, pcnt_channel_level_action_t, pcnt_channel_level_action_t)",
+    "go": "PcntChannelSetLevelAction"
+  },
+  {
+    "mangle": "pcnt_del_channel",
+    "c++": "pcnt_del_channel(pcnt_channel_handle_t)",
+    "go": "PcntDelChannel"
+  },
+  {
+    "mangle": "pcnt_del_unit",
+    "c++": "pcnt_del_unit(pcnt_unit_handle_t)",
+    "go": "PcntDelUnit"
+  },
+  {
+    "mangle": "pcnt_new_channel",
+    "c++": "pcnt_new_channel(pcnt_unit_handle_t, const pcnt_chan_config_t *, pcnt_channel_handle_t *)",
+    "go": "PcntNewChannel"
+  },
+  {
+    "mangle": "pcnt_new_unit",
+    "c++": "pcnt_new_unit(const pcnt_unit_config_t *, pcnt_unit_handle_t *)",
+    "go": "(*PcntUnitConfigT).PcntNewUnit"
+  },
+  {
+    "mangle": "pcnt_unit_add_watch_point",
+    "c++": "pcnt_unit_add_watch_point(pcnt_unit_handle_t, int)",
+    "go": "PcntUnitAddWatchPoint"
+  },
+  {
+    "mangle": "pcnt_unit_clear_count",
+    "c++": "pcnt_unit_clear_count(pcnt_unit_handle_t)",
+    "go": "PcntUnitClearCount"
+  },
+  {
+    "mangle": "pcnt_unit_disable",
+    "c++": "pcnt_unit_disable(pcnt_unit_handle_t)",
+    "go": "PcntUnitDisable"
+  },
+  {
+    "mangle": "pcnt_unit_enable",
+    "c++": "pcnt_unit_enable(pcnt_unit_handle_t)",
+    "go": "PcntUnitEnable"
+  },
+  {
+    "mangle": "pcnt_unit_get_count",
+    "c++": "pcnt_unit_get_count(pcnt_unit_handle_t, int *)",
+    "go": "PcntUnitGetCount"
+  },
+  {
+    "mangle": "pcnt_unit_register_event_callbacks",
+    "c++": "pcnt_unit_register_event_callbacks(pcnt_unit_handle_t, const pcnt_event_callbacks_t *, void *)",
+    "go": "PcntUnitRegisterEventCallbacks"
+  },
+  {
+    "mangle": "pcnt_unit_remove_watch_point",
+    "c++": "pcnt_unit_remove_watch_point(pcnt_unit_handle_t, int)",
+    "go": "PcntUnitRemoveWatchPoint"
+  },
+  {
+    "mangle": "pcnt_unit_set_glitch_filter",
+    "c++": "pcnt_unit_set_glitch_filter(pcnt_unit_handle_t, const pcnt_glitch_filter_config_t *)",
+    "go": "PcntUnitSetGlitchFilter"
+  },
+  {
+    "mangle": "pcnt_unit_start",
+    "c++": "pcnt_unit_start(pcnt_unit_handle_t)",
+    "go": "PcntUnitStart"
+  },
+  {
+    "mangle": "pcnt_unit_stop",
+    "c++": "pcnt_unit_stop(pcnt_unit_handle_t)",
+    "go": "PcntUnitStop"
+  }
+]

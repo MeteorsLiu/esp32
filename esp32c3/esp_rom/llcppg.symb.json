@@ -1,0 +1,62 @@
+[
+  {
+    "mangle": "GetUartDevice",
+    "c++": "GetUartDevice()",
+    "go": "GetUartDevice"
+  },
+  {
+    "mangle": "esp_rom_install_channel_putc",
+    "c++": "esp_rom_install_channel_putc(int, void (*)(char))",
+    "go": "EspRomInstallChannelPutc"
+  },
+  {
+    "mangle": "esp_rom_install_uart_printf",
+    "c++": "esp_rom_install_uart_printf()",
+    "go": "EspRomInstallUartPrintf"
+  },
+  {
+    "mangle": "esp_rom_output_putc",
+    "c++": "esp_rom_output_putc(char)",
+    "go": "EspRomOutputPutc"
+  },
+  {
+    "mangle": "esp_rom_output_set_as_console",
+    "c++": "esp_rom_output_set_as_console(uint8_t)",
+    "go": "EspRomOutputSetAsConsole"
+  },
+  {
+    "mangle": "esp_rom_output_switch_buffer",
+    "c++": "esp_rom_output_switch_buffer(uint8_t)",
+    "go": "EspRomOutputSwitchBuffer"
+  },
+  {
+    "mangle": "esp_rom_output_to_channels",
+    "c++": "esp_rom_output_to_channels(char)",
+    "go": "EspRomOutputToChannels"
+  },
+  {
+    "mangle": "esp_rom_output_tx_one_char",
+    "c++": "esp_rom_output_tx_one_char(uint8_t)",
+    "go": "EspRomOutputTxOneChar"
+  },
+  {
+    "mangle": "esp_rom_vprintf",
+    "c++": "esp_rom_vprintf(const char *, va_list)",
+    "go": "EspRomVprintf"
+  },
+  {
+    "mangle": "ets_install_putc1",
+    "c++": "ets_install_putc1(void (*)(char))",
+    "go": "EtsInstallPutc1"
+  },
+  {
+    "mangle": "ets_install_putc2",
+    "c++": "ets_install_putc2(void (*)(char))",
+    "go": "EtsInstallPutc2"
+  },
+  {
+    "mangle": "ets_install_uart_printf",
+    "c++": "ets_install_uart_printf()",
+    "go": "EtsInstallUartPrintf"
+  }
+]

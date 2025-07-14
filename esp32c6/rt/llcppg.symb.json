@@ -1,0 +1,52 @@
+[
+  {
+    "mangle": "mq_close",
+    "c++": "mq_close(mqd_t)",
+    "go": "MqClose"
+  },
+  {
+    "mangle": "mq_getattr",
+    "c++": "mq_getattr(mqd_t, struct mq_attr *)",
+    "go": "MqGetattr"
+  },
+  {
+    "mangle": "mq_notify",
+    "c++": "mq_notify(mqd_t, const struct sigevent *)",
+    "go": "MqNotify"
+  },
+  {
+    "mangle": "mq_open",
+    "c++": "mq_open(const char *, int, ...)",
+    "go": "MqOpen"
+  },
+  {
+    "mangle": "mq_receive",
+    "c++": "mq_receive(mqd_t, char *, int, unsigned int *)",
+    "go": "MqReceive"
+  },
+  {
+    "mangle": "mq_send",
+    "c++": "mq_send(mqd_t, const char *, int, unsigned int)",
+    "go": "MqSend"
+  },
+  {
+    "mangle": "mq_setattr",
+    "c++": "mq_setattr(mqd_t, const struct mq_attr *, struct mq_attr *)",
+    "go": "MqSetattr"
+  },
+  {
+    "mangle": "mq_timedreceive",
+    "c++": "mq_timedreceive(mqd_t, char *, int, unsigned int *, const struct timespec *)",
+    "go": "MqTimedreceive"
+  },
+  {
+    "mangle": "mq_timedsend",
+    "c++": "mq_timedsend(mqd_t, const char *, int, unsigned int, const struct timespec *)",
+    "go": "MqTimedsend"
+  },
+  {
+    "mangle": "mq_unlink",
+    "c++": "mq_unlink(const char *)",
+    "go": "MqUnlink"
+  }
+]

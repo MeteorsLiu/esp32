@@ -1,0 +1,13 @@
+package soc
+
+import _ "unsafe"
+
+const XTS_AES_PLAIN_MEM_SIZE_BYTES = 16
+const XTS_AES_LINESIZE_S = 0
+const XTS_AES_DESTINATION_S = 0
+const XTS_AES_PHYSICAL_ADDRESS_S = 0
+const XTS_AES_TRIGGER_S = 0
+const XTS_AES_RELEASE_S = 0
+const XTS_AES_DESTROY_S = 0
+const XTS_AES_STATE_S = 0
+const XTS_AES_DATE_S = 0

@@ -1,0 +1,167 @@
+[
+  {
+    "mangle": "ledc_bind_channel_timer",
+    "c++": "ledc_bind_channel_timer(ledc_mode_t, ledc_channel_t, ledc_timer_t)",
+    "go": "LedcBindChannelTimer"
+  },
+  {
+    "mangle": "ledc_cb_register",
+    "c++": "ledc_cb_register(ledc_mode_t, ledc_channel_t, ledc_cbs_t *, void *)",
+    "go": "LedcCbRegister"
+  },
+  {
+    "mangle": "ledc_channel_config",
+    "c++": "ledc_channel_config(const ledc_channel_config_t *)",
+    "go": "(*LedcChannelConfigT).LedcChannelConfig"
+  },
+  {
+    "mangle": "ledc_fade_func_install",
+    "c++": "ledc_fade_func_install(int)",
+    "go": "LedcFadeFuncInstall"
+  },
+  {
+    "mangle": "ledc_fade_func_uninstall",
+    "c++": "ledc_fade_func_uninstall()",
+    "go": "LedcFadeFuncUninstall"
+  },
+  {
+    "mangle": "ledc_fade_start",
+    "c++": "ledc_fade_start(ledc_mode_t, ledc_channel_t, ledc_fade_mode_t)",
+    "go": "LedcFadeStart"
+  },
+  {
+    "mangle": "ledc_fade_stop",
+    "c++": "ledc_fade_stop(ledc_mode_t, ledc_channel_t)",
+    "go": "LedcFadeStop"
+  },
+  {
+    "mangle": "ledc_fill_multi_fade_param_list",
+    "c++": "ledc_fill_multi_fade_param_list(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t (*)(uint32_t), uint32_t, ledc_fade_param_config_t *, uint32_t *)",
+    "go": "LedcFillMultiFadeParamList"
+  },
+  {
+    "mangle": "ledc_find_suitable_duty_resolution",
+    "c++": "ledc_find_suitable_duty_resolution(uint32_t, uint32_t)",
+    "go": "LedcFindSuitableDutyResolution"
+  },
+  {
+    "mangle": "ledc_get_duty",
+    "c++": "ledc_get_duty(ledc_mode_t, ledc_channel_t)",
+    "go": "LedcGetDuty"
+  },
+  {
+    "mangle": "ledc_get_freq",
+    "c++": "ledc_get_freq(ledc_mode_t, ledc_timer_t)",
+    "go": "LedcGetFreq"
+  },
+  {
+    "mangle": "ledc_get_hpoint",
+    "c++": "ledc_get_hpoint(ledc_mode_t, ledc_channel_t)",
+    "go": "LedcGetHpoint"
+  },
+  {
+    "mangle": "ledc_isr_register",
+    "c++": "ledc_isr_register(void (*)(void *), void *, int, ledc_isr_handle_t *)",
+    "go": "LedcIsrRegister"
+  },
+  {
+    "mangle": "ledc_read_fade_param",
+    "c++": "ledc_read_fade_param(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t *, uint32_t *, uint32_t *, uint32_t *)",
+    "go": "LedcReadFadeParam"
+  },
+  {
+    "mangle": "ledc_set_duty",
+    "c++": "ledc_set_duty(ledc_mode_t, ledc_channel_t, uint32_t)",
+    "go": "LedcSetDuty"
+  },
+  {
+    "mangle": "ledc_set_duty_and_update",
+    "c++": "ledc_set_duty_and_update(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t)",
+    "go": "LedcSetDutyAndUpdate"
+  },
+  {
+    "mangle": "ledc_set_duty_with_hpoint",
+    "c++": "ledc_set_duty_with_hpoint(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t)",
+    "go": "LedcSetDutyWithHpoint"
+  },
+  {
+    "mangle": "ledc_set_fade",
+    "c++": "ledc_set_fade(ledc_mode_t, ledc_channel_t, uint32_t, ledc_duty_direction_t, uint32_t, uint32_t, uint32_t)",
+    "go": "LedcSetFade"
+  },
+  {
+    "mangle": "ledc_set_fade_step_and_start",
+    "c++": "ledc_set_fade_step_and_start(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t, uint32_t, ledc_fade_mode_t)",
+    "go": "LedcSetFadeStepAndStart"
+  },
+  {
+    "mangle": "ledc_set_fade_time_and_start",
+    "c++": "ledc_set_fade_time_and_start(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t, ledc_fade_mode_t)",
+    "go": "LedcSetFadeTimeAndStart"
+  },
+  {
+    "mangle": "ledc_set_fade_with_step",
+    "c++": "ledc_set_fade_with_step(ledc_mode_t, ledc_channel_t, uint32_t, uint32_t, uint32_t)",
+    "go": "LedcSetFadeWithStep"
+  },
+  {
+    "mangle": "ledc_set_fade_with_time",
+    "c++": "ledc_set_fade_with_time(ledc_mode_t, ledc_channel_t, uint32_t, int)",
+    "go": "LedcSetFadeWithTime"
+  },
+  {
+    "mangle": "ledc_set_freq",
+    "c++": "ledc_set_freq(ledc_mode_t, ledc_timer_t, uint32_t)",
+    "go": "LedcSetFreq"
+  },
+  {
+    "mangle": "ledc_set_multi_fade",
+    "c++": "ledc_set_multi_fade(ledc_mode_t, ledc_channel_t, uint32_t, const ledc_fade_param_config_t *, uint32_t)",
+    "go": "LedcSetMultiFade"
+  },
+  {
+    "mangle": "ledc_set_multi_fade_and_start",
+    "c++": "ledc_set_multi_fade_and_start(ledc_mode_t, ledc_channel_t, uint32_t, const ledc_fade_param_config_t *, uint32_t, ledc_fade_mode_t)",
+    "go": "LedcSetMultiFadeAndStart"
+  },
+  {
+    "mangle": "ledc_set_pin",
+    "c++": "ledc_set_pin(int, ledc_mode_t, ledc_channel_t)",
+    "go": "LedcSetPin"
+  },
+  {
+    "mangle": "ledc_stop",
+    "c++": "ledc_stop(ledc_mode_t, ledc_channel_t, uint32_t)",
+    "go": "LedcStop"
+  },
+  {
+    "mangle": "ledc_timer_config",
+    "c++": "ledc_timer_config(const ledc_timer_config_t *)",
+    "go": "(*LedcTimerConfigT).LedcTimerConfig"
+  },
+  {
+    "mangle": "ledc_timer_pause",
+    "c++": "ledc_timer_pause(ledc_mode_t, ledc_timer_t)",
+    "go": "LedcTimerPause"
+  },
+  {
+    "mangle": "ledc_timer_resume",
+    "c++": "ledc_timer_resume(ledc_mode_t, ledc_timer_t)",
+    "go": "LedcTimerResume"
+  },
+  {
+    "mangle": "ledc_timer_rst",
+    "c++": "ledc_timer_rst(ledc_mode_t, ledc_timer_t)",
+    "go": "LedcTimerRst"
+  },
+  {
+    "mangle": "ledc_timer_set",
+    "c++": "ledc_timer_set(ledc_mode_t, ledc_timer_t, uint32_t, uint32_t, ledc_clk_src_t)",
+    "go": "LedcTimerSet"
+  },
+  {
+    "mangle": "ledc_update_duty",
+    "c++": "ledc_update_duty(ledc_mode_t, ledc_channel_t)",
+    "go": "LedcUpdateDuty"
+  }
+]

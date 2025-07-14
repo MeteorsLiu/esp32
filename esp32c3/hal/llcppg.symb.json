@@ -1,0 +1,1627 @@
+[
+  {
+    "mangle": "abort",
+    "c++": "abort()",
+    "go": "Abort"
+  },
+  {
+    "mangle": "adc_hal_arbiter_config",
+    "c++": "adc_hal_arbiter_config(adc_arbiter_t *)",
+    "go": "(*AdcArbiterT).AdcHalArbiterConfig"
+  },
+  {
+    "mangle": "adc_hal_calibration_init",
+    "c++": "adc_hal_calibration_init(adc_unit_t)",
+    "go": "AdcUnitT.AdcHalCalibrationInit"
+  },
+  {
+    "mangle": "adc_hal_digi_clr_eof",
+    "c++": "adc_hal_digi_clr_eof()",
+    "go": "AdcHalDigiClrEof"
+  },
+  {
+    "mangle": "adc_hal_digi_connect",
+    "c++": "adc_hal_digi_connect(bool)",
+    "go": "AdcHalDigiConnect"
+  },
+  {
+    "mangle": "adc_hal_digi_controller_config",
+    "c++": "adc_hal_digi_controller_config(adc_hal_dma_ctx_t *, const adc_hal_digi_ctrlr_cfg_t *)",
+    "go": "(*AdcHalDmaCtxT).AdcHalDigiControllerConfig"
+  },
+  {
+    "mangle": "adc_hal_digi_deinit",
+    "c++": "adc_hal_digi_deinit()",
+    "go": "AdcHalDigiDeinit"
+  },
+  {
+    "mangle": "adc_hal_digi_dma_link",
+    "c++": "adc_hal_digi_dma_link(adc_hal_dma_ctx_t *, uint8_t *)",
+    "go": "(*AdcHalDmaCtxT).AdcHalDigiDmaLink"
+  },
+  {
+    "mangle": "adc_hal_digi_enable",
+    "c++": "adc_hal_digi_enable(bool)",
+    "go": "AdcHalDigiEnable"
+  },
+  {
+    "mangle": "adc_hal_digi_init",
+    "c++": "adc_hal_digi_init(adc_hal_dma_ctx_t *)",
+    "go": "(*AdcHalDmaCtxT).AdcHalDigiInit"
+  },
+  {
+    "mangle": "adc_hal_digi_monitor_set_thres",
+    "c++": "adc_hal_digi_monitor_set_thres(adc_monitor_id_t, adc_unit_t, uint8_t, int32_t, int32_t)",
+    "go": "AdcMonitorIdT.AdcHalDigiMonitorSetThres"
+  },
+  {
+    "mangle": "adc_hal_digi_reset",
+    "c++": "adc_hal_digi_reset()",
+    "go": "AdcHalDigiReset"
+  },
+  {
+    "mangle": "adc_hal_dma_ctx_config",
+    "c++": "adc_hal_dma_ctx_config(adc_hal_dma_ctx_t *, const adc_hal_dma_config_t *)",
+    "go": "(*AdcHalDmaCtxT).AdcHalDmaCtxConfig"
+  },
+  {
+    "mangle": "adc_hal_get_reading_result",
+    "c++": "adc_hal_get_reading_result(adc_hal_dma_ctx_t *, const intptr_t, uint8_t **, uint32_t *)",
+    "go": "(*AdcHalDmaCtxT).AdcHalGetReadingResult"
+  },
+  {
+    "mangle": "adc_hal_self_calibration",
+    "c++": "adc_hal_self_calibration(adc_unit_t, adc_atten_t, bool)",
+    "go": "AdcUnitT.AdcHalSelfCalibration"
+  },
+  {
+    "mangle": "adc_hal_set_calibration_param",
+    "c++": "adc_hal_set_calibration_param(adc_unit_t, uint32_t)",
+    "go": "AdcUnitT.AdcHalSetCalibrationParam"
+  },
+  {
+    "mangle": "adc_hal_set_controller",
+    "c++": "adc_hal_set_controller(adc_unit_t, adc_hal_work_mode_t)",
+    "go": "AdcUnitT.AdcHalSetController"
+  },
+  {
+    "mangle": "adc_oneshot_hal_channel_config",
+    "c++": "adc_oneshot_hal_channel_config(adc_oneshot_hal_ctx_t *, const adc_oneshot_hal_chan_cfg_t *, adc_channel_t)",
+    "go": "(*AdcOneshotHalCtxT).AdcOneshotHalChannelConfig"
+  },
+  {
+    "mangle": "adc_oneshot_hal_convert",
+    "c++": "adc_oneshot_hal_convert(adc_oneshot_hal_ctx_t *, int *)",
+    "go": "(*AdcOneshotHalCtxT).AdcOneshotHalConvert"
+  },
+  {
+    "mangle": "adc_oneshot_hal_init",
+    "c++": "adc_oneshot_hal_init(adc_oneshot_hal_ctx_t *, const adc_oneshot_hal_cfg_t *)",
+    "go": "(*AdcOneshotHalCtxT).AdcOneshotHalInit"
+  },
+  {
+    "mangle": "adc_oneshot_hal_setup",
+    "c++": "adc_oneshot_hal_setup(adc_oneshot_hal_ctx_t *, adc_channel_t)",
+    "go": "(*AdcOneshotHalCtxT).AdcOneshotHalSetup"
+  },
+  {
+    "mangle": "aes_hal_mode_init",
+    "c++": "aes_hal_mode_init(esp_aes_mode_t)",
+    "go": "EspAesModeT.AesHalModeInit"
+  },
+  {
+    "mangle": "aes_hal_read_iv",
+    "c++": "aes_hal_read_iv(uint8_t *)",
+    "go": "AesHalReadIv"
+  },
+  {
+    "mangle": "aes_hal_set_iv",
+    "c++": "aes_hal_set_iv(const uint8_t *)",
+    "go": "AesHalSetIv"
+  },
+  {
+    "mangle": "aes_hal_setkey",
+    "c++": "aes_hal_setkey(const uint8_t *, size_t, int)",
+    "go": "AesHalSetkey"
+  },
+  {
+    "mangle": "aes_hal_transform_block",
+    "c++": "aes_hal_transform_block(const void *, void *)",
+    "go": "AesHalTransformBlock"
+  },
+  {
+    "mangle": "aes_hal_transform_dma_finish",
+    "c++": "aes_hal_transform_dma_finish()",
+    "go": "AesHalTransformDmaFinish"
+  },
+  {
+    "mangle": "aes_hal_transform_dma_start",
+    "c++": "aes_hal_transform_dma_start(size_t)",
+    "go": "AesHalTransformDmaStart"
+  },
+  {
+    "mangle": "aes_hal_wait_done",
+    "c++": "aes_hal_wait_done()",
+    "go": "AesHalWaitDone"
+  },
+  {
+    "mangle": "brownout_hal_config",
+    "c++": "brownout_hal_config(const brownout_hal_config_t *)",
+    "go": "(*BrownoutHalConfigT).BrownoutHalConfig"
+  },
+  {
+    "mangle": "cache_hal_disable",
+    "c++": "cache_hal_disable(uint32_t, cache_type_t)",
+    "go": "CacheHalDisable"
+  },
+  {
+    "mangle": "cache_hal_enable",
+    "c++": "cache_hal_enable(uint32_t, cache_type_t)",
+    "go": "CacheHalEnable"
+  },
+  {
+    "mangle": "cache_hal_get_cache_line_size",
+    "c++": "cache_hal_get_cache_line_size(uint32_t, cache_type_t)",
+    "go": "CacheHalGetCacheLineSize"
+  },
+  {
+    "mangle": "cache_hal_init",
+    "c++": "cache_hal_init()",
+    "go": "CacheHalInit"
+  },
+  {
+    "mangle": "cache_hal_invalidate_addr",
+    "c++": "cache_hal_invalidate_addr(uint32_t, uint32_t)",
+    "go": "CacheHalInvalidateAddr"
+  },
+  {
+    "mangle": "cache_hal_is_cache_enabled",
+    "c++": "cache_hal_is_cache_enabled(uint32_t, cache_type_t)",
+    "go": "CacheHalIsCacheEnabled"
+  },
+  {
+    "mangle": "cache_hal_resume",
+    "c++": "cache_hal_resume(uint32_t, cache_type_t)",
+    "go": "CacheHalResume"
+  },
+  {
+    "mangle": "cache_hal_suspend",
+    "c++": "cache_hal_suspend(uint32_t, cache_type_t)",
+    "go": "CacheHalSuspend"
+  },
+  {
+    "mangle": "cache_hal_vaddr_to_cache_level_id",
+    "c++": "cache_hal_vaddr_to_cache_level_id(uint32_t, uint32_t, uint32_t *, uint32_t *)",
+    "go": "CacheHalVaddrToCacheLevelId"
+  },
+  {
+    "mangle": "clk_hal_apb_get_freq_hz",
+    "c++": "clk_hal_apb_get_freq_hz()",
+    "go": "ClkHalApbGetFreqHz"
+  },
+  {
+    "mangle": "clk_hal_clock_output_setup",
+    "c++": "clk_hal_clock_output_setup(soc_clkout_sig_id_t, clock_out_channel_t)",
+    "go": "ClkHalClockOutputSetup"
+  },
+  {
+    "mangle": "clk_hal_clock_output_teardown",
+    "c++": "clk_hal_clock_output_teardown(clock_out_channel_t)",
+    "go": "ClkHalClockOutputTeardown"
+  },
+  {
+    "mangle": "clk_hal_cpu_get_freq_hz",
+    "c++": "clk_hal_cpu_get_freq_hz()",
+    "go": "ClkHalCpuGetFreqHz"
+  },
+  {
+    "mangle": "clk_hal_lp_slow_get_freq_hz",
+    "c++": "clk_hal_lp_slow_get_freq_hz()",
+    "go": "ClkHalLpSlowGetFreqHz"
+  },
+  {
+    "mangle": "clk_hal_soc_root_get_freq_mhz",
+    "c++": "clk_hal_soc_root_get_freq_mhz(soc_cpu_clk_src_t)",
+    "go": "ClkHalSocRootGetFreqMhz"
+  },
+  {
+    "mangle": "clk_hal_xtal_get_freq_mhz",
+    "c++": "clk_hal_xtal_get_freq_mhz()",
+    "go": "ClkHalXtalGetFreqMhz"
+  },
+  {
+    "mangle": "color_hal_pixel_format_get_bit_depth",
+    "c++": "color_hal_pixel_format_get_bit_depth(color_space_pixel_format_t)",
+    "go": "ColorSpacePixelFormatT.ColorHalPixelFormatGetBitDepth"
+  },
+  {
+    "mangle": "ds_hal_busy",
+    "c++": "ds_hal_busy()",
+    "go": "DsHalBusy"
+  },
+  {
+    "mangle": "ds_hal_configure_iv",
+    "c++": "ds_hal_configure_iv(const uint32_t *)",
+    "go": "DsHalConfigureIv"
+  },
+  {
+    "mangle": "ds_hal_finish",
+    "c++": "ds_hal_finish()",
+    "go": "DsHalFinish"
+  },
+  {
+    "mangle": "ds_hal_read_result",
+    "c++": "ds_hal_read_result(uint8_t *, size_t)",
+    "go": "DsHalReadResult"
+  },
+  {
+    "mangle": "ds_hal_start",
+    "c++": "ds_hal_start()",
+    "go": "DsHalStart"
+  },
+  {
+    "mangle": "ds_hal_start_sign",
+    "c++": "ds_hal_start_sign()",
+    "go": "DsHalStartSign"
+  },
+  {
+    "mangle": "ds_hal_write_message",
+    "c++": "ds_hal_write_message(const uint8_t *, size_t)",
+    "go": "DsHalWriteMessage"
+  },
+  {
+    "mangle": "ds_hal_write_private_key_params",
+    "c++": "ds_hal_write_private_key_params(const uint8_t *)",
+    "go": "DsHalWritePrivateKeyParams"
+  },
+  {
+    "mangle": "efuse_hal_clear_program_registers",
+    "c++": "efuse_hal_clear_program_registers()",
+    "go": "EfuseHalClearProgramRegisters"
+  },
+  {
+    "mangle": "efuse_hal_is_coding_error_in_block",
+    "c++": "efuse_hal_is_coding_error_in_block(unsigned int)",
+    "go": "EfuseHalIsCodingErrorInBlock"
+  },
+  {
+    "mangle": "efuse_hal_program",
+    "c++": "efuse_hal_program(uint32_t)",
+    "go": "EfuseHalProgram"
+  },
+  {
+    "mangle": "efuse_hal_read",
+    "c++": "efuse_hal_read()",
+    "go": "EfuseHalRead"
+  },
+  {
+    "mangle": "efuse_hal_rs_calculate",
+    "c++": "efuse_hal_rs_calculate(const void *, void *)",
+    "go": "EfuseHalRsCalculate"
+  },
+  {
+    "mangle": "efuse_hal_set_timing",
+    "c++": "efuse_hal_set_timing(uint32_t)",
+    "go": "EfuseHalSetTiming"
+  },
+  {
+    "mangle": "gdma_ahb_hal_append",
+    "c++": "gdma_ahb_hal_append(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalAppend"
+  },
+  {
+    "mangle": "gdma_ahb_hal_clear_intr",
+    "c++": "gdma_ahb_hal_clear_intr(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalClearIntr"
+  },
+  {
+    "mangle": "gdma_ahb_hal_connect_peri",
+    "c++": "gdma_ahb_hal_connect_peri(gdma_hal_context_t *, int, gdma_channel_direction_t, gdma_trigger_peripheral_t, int)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalConnectPeri"
+  },
+  {
+    "mangle": "gdma_ahb_hal_disconnect_peri",
+    "c++": "gdma_ahb_hal_disconnect_peri(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalDisconnectPeri"
+  },
+  {
+    "mangle": "gdma_ahb_hal_enable_burst",
+    "c++": "gdma_ahb_hal_enable_burst(gdma_hal_context_t *, int, gdma_channel_direction_t, bool, bool)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalEnableBurst"
+  },
+  {
+    "mangle": "gdma_ahb_hal_enable_intr",
+    "c++": "gdma_ahb_hal_enable_intr(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalEnableIntr"
+  },
+  {
+    "mangle": "gdma_ahb_hal_get_eof_desc_addr",
+    "c++": "gdma_ahb_hal_get_eof_desc_addr(gdma_hal_context_t *, int, gdma_channel_direction_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalGetEofDescAddr"
+  },
+  {
+    "mangle": "gdma_ahb_hal_get_intr_status_reg",
+    "c++": "gdma_ahb_hal_get_intr_status_reg(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalGetIntrStatusReg"
+  },
+  {
+    "mangle": "gdma_ahb_hal_init",
+    "c++": "gdma_ahb_hal_init(gdma_hal_context_t *, const gdma_hal_config_t *)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalInit"
+  },
+  {
+    "mangle": "gdma_ahb_hal_read_intr_status",
+    "c++": "gdma_ahb_hal_read_intr_status(gdma_hal_context_t *, int, gdma_channel_direction_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalReadIntrStatus"
+  },
+  {
+    "mangle": "gdma_ahb_hal_reset",
+    "c++": "gdma_ahb_hal_reset(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalReset"
+  },
+  {
+    "mangle": "gdma_ahb_hal_set_priority",
+    "c++": "gdma_ahb_hal_set_priority(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalSetPriority"
+  },
+  {
+    "mangle": "gdma_ahb_hal_set_strategy",
+    "c++": "gdma_ahb_hal_set_strategy(gdma_hal_context_t *, int, gdma_channel_direction_t, bool, bool, bool)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalSetStrategy"
+  },
+  {
+    "mangle": "gdma_ahb_hal_start_with_desc",
+    "c++": "gdma_ahb_hal_start_with_desc(gdma_hal_context_t *, int, gdma_channel_direction_t, intptr_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalStartWithDesc"
+  },
+  {
+    "mangle": "gdma_ahb_hal_stop",
+    "c++": "gdma_ahb_hal_stop(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaAhbHalStop"
+  },
+  {
+    "mangle": "gdma_hal_append",
+    "c++": "gdma_hal_append(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaHalAppend"
+  },
+  {
+    "mangle": "gdma_hal_clear_intr",
+    "c++": "gdma_hal_clear_intr(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t)",
+    "go": "(*GdmaHalContextT).GdmaHalClearIntr"
+  },
+  {
+    "mangle": "gdma_hal_connect_peri",
+    "c++": "gdma_hal_connect_peri(gdma_hal_context_t *, int, gdma_channel_direction_t, gdma_trigger_peripheral_t, int)",
+    "go": "(*GdmaHalContextT).GdmaHalConnectPeri"
+  },
+  {
+    "mangle": "gdma_hal_deinit",
+    "c++": "gdma_hal_deinit(gdma_hal_context_t *)",
+    "go": "(*GdmaHalContextT).GdmaHalDeinit"
+  },
+  {
+    "mangle": "gdma_hal_disconnect_peri",
+    "c++": "gdma_hal_disconnect_peri(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaHalDisconnectPeri"
+  },
+  {
+    "mangle": "gdma_hal_enable_access_encrypt_mem",
+    "c++": "gdma_hal_enable_access_encrypt_mem(gdma_hal_context_t *, int, gdma_channel_direction_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalEnableAccessEncryptMem"
+  },
+  {
+    "mangle": "gdma_hal_enable_burst",
+    "c++": "gdma_hal_enable_burst(gdma_hal_context_t *, int, gdma_channel_direction_t, bool, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalEnableBurst"
+  },
+  {
+    "mangle": "gdma_hal_enable_intr",
+    "c++": "gdma_hal_enable_intr(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalEnableIntr"
+  },
+  {
+    "mangle": "gdma_hal_get_eof_desc_addr",
+    "c++": "gdma_hal_get_eof_desc_addr(gdma_hal_context_t *, int, gdma_channel_direction_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalGetEofDescAddr"
+  },
+  {
+    "mangle": "gdma_hal_get_intr_status_reg",
+    "c++": "gdma_hal_get_intr_status_reg(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaHalGetIntrStatusReg"
+  },
+  {
+    "mangle": "gdma_hal_read_intr_status",
+    "c++": "gdma_hal_read_intr_status(gdma_hal_context_t *, int, gdma_channel_direction_t, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalReadIntrStatus"
+  },
+  {
+    "mangle": "gdma_hal_reset",
+    "c++": "gdma_hal_reset(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaHalReset"
+  },
+  {
+    "mangle": "gdma_hal_set_burst_size",
+    "c++": "gdma_hal_set_burst_size(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t)",
+    "go": "(*GdmaHalContextT).GdmaHalSetBurstSize"
+  },
+  {
+    "mangle": "gdma_hal_set_priority",
+    "c++": "gdma_hal_set_priority(gdma_hal_context_t *, int, gdma_channel_direction_t, uint32_t)",
+    "go": "(*GdmaHalContextT).GdmaHalSetPriority"
+  },
+  {
+    "mangle": "gdma_hal_set_strategy",
+    "c++": "gdma_hal_set_strategy(gdma_hal_context_t *, int, gdma_channel_direction_t, bool, bool, bool)",
+    "go": "(*GdmaHalContextT).GdmaHalSetStrategy"
+  },
+  {
+    "mangle": "gdma_hal_start_with_desc",
+    "c++": "gdma_hal_start_with_desc(gdma_hal_context_t *, int, gdma_channel_direction_t, intptr_t)",
+    "go": "(*GdmaHalContextT).GdmaHalStartWithDesc"
+  },
+  {
+    "mangle": "gdma_hal_stop",
+    "c++": "gdma_hal_stop(gdma_hal_context_t *, int, gdma_channel_direction_t)",
+    "go": "(*GdmaHalContextT).GdmaHalStop"
+  },
+  {
+    "mangle": "gpio_hal_intr_disable",
+    "c++": "gpio_hal_intr_disable(gpio_hal_context_t *, uint32_t)",
+    "go": "(*GpioHalContextT).GpioHalIntrDisable"
+  },
+  {
+    "mangle": "gpio_hal_intr_enable_on_core",
+    "c++": "gpio_hal_intr_enable_on_core(gpio_hal_context_t *, uint32_t, uint32_t)",
+    "go": "(*GpioHalContextT).GpioHalIntrEnableOnCore"
+  },
+  {
+    "mangle": "gpio_hal_isolate_in_sleep",
+    "c++": "gpio_hal_isolate_in_sleep(gpio_hal_context_t *, uint32_t)",
+    "go": "(*GpioHalContextT).GpioHalIsolateInSleep"
+  },
+  {
+    "mangle": "hal_utils_calc_clk_div_frac_accurate",
+    "c++": "hal_utils_calc_clk_div_frac_accurate(const hal_utils_clk_info_t *, hal_utils_clk_div_t *)",
+    "go": "(*HalUtilsClkInfoT).HalUtilsCalcClkDivFracAccurate"
+  },
+  {
+    "mangle": "hal_utils_calc_clk_div_frac_fast",
+    "c++": "hal_utils_calc_clk_div_frac_fast(const hal_utils_clk_info_t *, hal_utils_clk_div_t *)",
+    "go": "(*HalUtilsClkInfoT).HalUtilsCalcClkDivFracFast"
+  },
+  {
+    "mangle": "hal_utils_calc_clk_div_integer",
+    "c++": "hal_utils_calc_clk_div_integer(const hal_utils_clk_info_t *, uint32_t *)",
+    "go": "(*HalUtilsClkInfoT).HalUtilsCalcClkDivInteger"
+  },
+  {
+    "mangle": "hal_utils_float_to_fixed_point_32b",
+    "c++": "hal_utils_float_to_fixed_point_32b(float, const hal_utils_fixed_point_t *, uint32_t *)",
+    "go": "HalUtilsFloatToFixedPoint32b"
+  },
+  {
+    "mangle": "hmac_hal_clean",
+    "c++": "hmac_hal_clean()",
+    "go": "HmacHalClean"
+  },
+  {
+    "mangle": "hmac_hal_configure",
+    "c++": "hmac_hal_configure(hmac_hal_output_t, uint32_t)",
+    "go": "HmacHalOutputT.HmacHalConfigure"
+  },
+  {
+    "mangle": "hmac_hal_next_block_normal",
+    "c++": "hmac_hal_next_block_normal()",
+    "go": "HmacHalNextBlockNormal"
+  },
+  {
+    "mangle": "hmac_hal_next_block_padding",
+    "c++": "hmac_hal_next_block_padding()",
+    "go": "HmacHalNextBlockPadding"
+  },
+  {
+    "mangle": "hmac_hal_read_result_256",
+    "c++": "hmac_hal_read_result_256(void *)",
+    "go": "HmacHalReadResult256"
+  },
+  {
+    "mangle": "hmac_hal_start",
+    "c++": "hmac_hal_start()",
+    "go": "HmacHalStart"
+  },
+  {
+    "mangle": "hmac_hal_write_block_512",
+    "c++": "hmac_hal_write_block_512(const void *)",
+    "go": "HmacHalWriteBlock512"
+  },
+  {
+    "mangle": "hmac_hal_write_one_block_512",
+    "c++": "hmac_hal_write_one_block_512(const void *)",
+    "go": "HmacHalWriteOneBlock512"
+  },
+  {
+    "mangle": "i2c_hal_get_timing_config",
+    "c++": "i2c_hal_get_timing_config(i2c_hal_context_t *, i2c_hal_timing_config_t *)",
+    "go": "(*I2cHalContextT).I2cHalGetTimingConfig"
+  },
+  {
+    "mangle": "i2c_hal_master_fsm_rst",
+    "c++": "i2c_hal_master_fsm_rst(i2c_hal_context_t *)",
+    "go": "(*I2cHalContextT).I2cHalMasterFsmRst"
+  },
+  {
+    "mangle": "i2c_hal_master_handle_rx_event",
+    "c++": "i2c_hal_master_handle_rx_event(i2c_hal_context_t *, i2c_intr_event_t *)",
+    "go": "(*I2cHalContextT).I2cHalMasterHandleRxEvent"
+  },
+  {
+    "mangle": "i2c_hal_master_handle_tx_event",
+    "c++": "i2c_hal_master_handle_tx_event(i2c_hal_context_t *, i2c_intr_event_t *)",
+    "go": "(*I2cHalContextT).I2cHalMasterHandleTxEvent"
+  },
+  {
+    "mangle": "i2c_hal_master_init",
+    "c++": "i2c_hal_master_init(i2c_hal_context_t *)",
+    "go": "(*I2cHalContextT).I2cHalMasterInit"
+  },
+  {
+    "mangle": "i2c_hal_master_set_scl_timeout_val",
+    "c++": "i2c_hal_master_set_scl_timeout_val(i2c_hal_context_t *, uint32_t, uint32_t)",
+    "go": "(*I2cHalContextT).I2cHalMasterSetSclTimeoutVal"
+  },
+  {
+    "mangle": "i2c_hal_master_trans_start",
+    "c++": "i2c_hal_master_trans_start(i2c_hal_context_t *)",
+    "go": "(*I2cHalContextT).I2cHalMasterTransStart"
+  },
+  {
+    "mangle": "i2c_hal_set_timing_config",
+    "c++": "i2c_hal_set_timing_config(i2c_hal_context_t *, i2c_hal_timing_config_t *)",
+    "go": "(*I2cHalContextT).I2cHalSetTimingConfig"
+  },
+  {
+    "mangle": "i2c_hal_slave_init",
+    "c++": "i2c_hal_slave_init(i2c_hal_context_t *)",
+    "go": "(*I2cHalContextT).I2cHalSlaveInit"
+  },
+  {
+    "mangle": "i2s_hal_calc_mclk_precise_division",
+    "c++": "i2s_hal_calc_mclk_precise_division(uint32_t, uint32_t, hal_utils_clk_div_t *)",
+    "go": "I2sHalCalcMclkPreciseDivision"
+  },
+  {
+    "mangle": "i2s_hal_init",
+    "c++": "i2s_hal_init(i2s_hal_context_t *, int)",
+    "go": "(*I2sHalContextT).I2sHalInit"
+  },
+  {
+    "mangle": "i2s_hal_pdm_enable_tx_channel",
+    "c++": "i2s_hal_pdm_enable_tx_channel(i2s_hal_context_t *)",
+    "go": "(*I2sHalContextT).I2sHalPdmEnableTxChannel"
+  },
+  {
+    "mangle": "i2s_hal_pdm_set_tx_slot",
+    "c++": "i2s_hal_pdm_set_tx_slot(i2s_hal_context_t *, bool, const i2s_hal_slot_config_t *)",
+    "go": "(*I2sHalContextT).I2sHalPdmSetTxSlot"
+  },
+  {
+    "mangle": "i2s_hal_set_tx_clock",
+    "c++": "i2s_hal_set_tx_clock(i2s_hal_context_t *, const i2s_hal_clock_info_t *, i2s_clock_src_t)",
+    "go": "(*I2sHalContextT).I2sHalSetTxClock"
+  },
+  {
+    "mangle": "i2s_hal_std_enable_rx_channel",
+    "c++": "i2s_hal_std_enable_rx_channel(i2s_hal_context_t *)",
+    "go": "(*I2sHalContextT).I2sHalStdEnableRxChannel"
+  },
+  {
+    "mangle": "i2s_hal_std_enable_tx_channel",
+    "c++": "i2s_hal_std_enable_tx_channel(i2s_hal_context_t *)",
+    "go": "(*I2sHalContextT).I2sHalStdEnableTxChannel"
+  },
+  {
+    "mangle": "i2s_hal_std_set_rx_slot",
+    "c++": "i2s_hal_std_set_rx_slot(i2s_hal_context_t *, bool, const i2s_hal_slot_config_t *)",
+    "go": "(*I2sHalContextT).I2sHalStdSetRxSlot"
+  },
+  {
+    "mangle": "i2s_hal_std_set_tx_slot",
+    "c++": "i2s_hal_std_set_tx_slot(i2s_hal_context_t *, bool, const i2s_hal_slot_config_t *)",
+    "go": "(*I2sHalContextT).I2sHalStdSetTxSlot"
+  },
+  {
+    "mangle": "i2s_hal_tdm_enable_rx_channel",
+    "c++": "i2s_hal_tdm_enable_rx_channel(i2s_hal_context_t *)",
+    "go": "(*I2sHalContextT).I2sHalTdmEnableRxChannel"
+  },
+  {
+    "mangle": "i2s_hal_tdm_enable_tx_channel",
+    "c++": "i2s_hal_tdm_enable_tx_channel(i2s_hal_context_t *)",
+    "go": "(*I2sHalContextT).I2sHalTdmEnableTxChannel"
+  },
+  {
+    "mangle": "i2s_hal_tdm_set_rx_slot",
+    "c++": "i2s_hal_tdm_set_rx_slot(i2s_hal_context_t *, bool, const i2s_hal_slot_config_t *)",
+    "go": "(*I2sHalContextT).I2sHalTdmSetRxSlot"
+  },
+  {
+    "mangle": "i2s_hal_tdm_set_tx_slot",
+    "c++": "i2s_hal_tdm_set_tx_slot(i2s_hal_context_t *, bool, const i2s_hal_slot_config_t *)",
+    "go": "(*I2sHalContextT).I2sHalTdmSetTxSlot"
+  },
+  {
+    "mangle": "ledc_hal_clear_fade_end_intr_status",
+    "c++": "ledc_hal_clear_fade_end_intr_status(ledc_hal_context_t *, ledc_channel_t)",
+    "go": "(*LedcHalContextT).LedcHalClearFadeEndIntrStatus"
+  },
+  {
+    "mangle": "ledc_hal_get_clk_cfg",
+    "c++": "ledc_hal_get_clk_cfg(ledc_hal_context_t *, ledc_timer_t, ledc_clk_cfg_t *)",
+    "go": "(*LedcHalContextT).LedcHalGetClkCfg"
+  },
+  {
+    "mangle": "ledc_hal_get_duty",
+    "c++": "ledc_hal_get_duty(ledc_hal_context_t *, ledc_channel_t, uint32_t *)",
+    "go": "(*LedcHalContextT).LedcHalGetDuty"
+  },
+  {
+    "mangle": "ledc_hal_get_fade_end_intr_status",
+    "c++": "ledc_hal_get_fade_end_intr_status(ledc_hal_context_t *, uint32_t *)",
+    "go": "(*LedcHalContextT).LedcHalGetFadeEndIntrStatus"
+  },
+  {
+    "mangle": "ledc_hal_init",
+    "c++": "ledc_hal_init(ledc_hal_context_t *, ledc_mode_t)",
+    "go": "(*LedcHalContextT).LedcHalInit"
+  },
+  {
+    "mangle": "ledc_hal_ls_channel_update",
+    "c++": "ledc_hal_ls_channel_update(ledc_hal_context_t *, ledc_channel_t)",
+    "go": "(*LedcHalContextT).LedcHalLsChannelUpdate"
+  },
+  {
+    "mangle": "ledc_hal_set_duty_int_part",
+    "c++": "ledc_hal_set_duty_int_part(ledc_hal_context_t *, ledc_channel_t, uint32_t)",
+    "go": "(*LedcHalContextT).LedcHalSetDutyIntPart"
+  },
+  {
+    "mangle": "ledc_hal_set_duty_start",
+    "c++": "ledc_hal_set_duty_start(ledc_hal_context_t *, ledc_channel_t, bool)",
+    "go": "(*LedcHalContextT).LedcHalSetDutyStart"
+  },
+  {
+    "mangle": "ledc_hal_set_fade_param",
+    "c++": "ledc_hal_set_fade_param(const ledc_hal_context_t *, ledc_channel_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)",
+    "go": "(*LedcHalContextT).LedcHalSetFadeParam"
+  },
+  {
+    "mangle": "ledc_hal_set_hpoint",
+    "c++": "ledc_hal_set_hpoint(ledc_hal_context_t *, ledc_channel_t, uint32_t)",
+    "go": "(*LedcHalContextT).LedcHalSetHpoint"
+  },
+  {
+    "mangle": "mmu_hal_bytes_to_pages",
+    "c++": "mmu_hal_bytes_to_pages(uint32_t, uint32_t)",
+    "go": "MmuHalBytesToPages"
+  },
+  {
+    "mangle": "mmu_hal_check_valid_ext_vaddr_region",
+    "c++": "mmu_hal_check_valid_ext_vaddr_region(uint32_t, uint32_t, uint32_t, mmu_vaddr_t)",
+    "go": "MmuHalCheckValidExtVaddrRegion"
+  },
+  {
+    "mangle": "mmu_hal_init",
+    "c++": "mmu_hal_init()",
+    "go": "MmuHalInit"
+  },
+  {
+    "mangle": "mmu_hal_map_region",
+    "c++": "mmu_hal_map_region(uint32_t, mmu_target_t, uint32_t, uint32_t, uint32_t, uint32_t *)",
+    "go": "MmuHalMapRegion"
+  },
+  {
+    "mangle": "mmu_hal_paddr_to_vaddr",
+    "c++": "mmu_hal_paddr_to_vaddr(uint32_t, uint32_t, mmu_target_t, mmu_vaddr_t, uint32_t *)",
+    "go": "MmuHalPaddrToVaddr"
+  },
+  {
+    "mangle": "mmu_hal_pages_to_bytes",
+    "c++": "mmu_hal_pages_to_bytes(uint32_t, uint32_t)",
+    "go": "MmuHalPagesToBytes"
+  },
+  {
+    "mangle": "mmu_hal_unmap_all",
+    "c++": "mmu_hal_unmap_all()",
+    "go": "MmuHalUnmapAll"
+  },
+  {
+    "mangle": "mmu_hal_unmap_region",
+    "c++": "mmu_hal_unmap_region(uint32_t, uint32_t, uint32_t)",
+    "go": "MmuHalUnmapRegion"
+  },
+  {
+    "mangle": "mmu_hal_vaddr_to_paddr",
+    "c++": "mmu_hal_vaddr_to_paddr(uint32_t, uint32_t, uint32_t *, mmu_target_t *)",
+    "go": "MmuHalVaddrToPaddr"
+  },
+  {
+    "mangle": "mpi_hal_calc_hardware_words",
+    "c++": "mpi_hal_calc_hardware_words(size_t)",
+    "go": "MpiHalCalcHardwareWords"
+  },
+  {
+    "mangle": "mpi_hal_clear_interrupt",
+    "c++": "mpi_hal_clear_interrupt()",
+    "go": "MpiHalClearInterrupt"
+  },
+  {
+    "mangle": "mpi_hal_disable_hardware_hw_op",
+    "c++": "mpi_hal_disable_hardware_hw_op()",
+    "go": "MpiHalDisableHardwareHwOp"
+  },
+  {
+    "mangle": "mpi_hal_enable_constant_time",
+    "c++": "mpi_hal_enable_constant_time(bool)",
+    "go": "MpiHalEnableConstantTime"
+  },
+  {
+    "mangle": "mpi_hal_enable_hardware_hw_op",
+    "c++": "mpi_hal_enable_hardware_hw_op()",
+    "go": "MpiHalEnableHardwareHwOp"
+  },
+  {
+    "mangle": "mpi_hal_enable_search",
+    "c++": "mpi_hal_enable_search(bool)",
+    "go": "MpiHalEnableSearch"
+  },
+  {
+    "mangle": "mpi_hal_interrupt_enable",
+    "c++": "mpi_hal_interrupt_enable(bool)",
+    "go": "MpiHalInterruptEnable"
+  },
+  {
+    "mangle": "mpi_hal_read_result_hw_op",
+    "c++": "mpi_hal_read_result_hw_op(uint32_t *, size_t, size_t)",
+    "go": "MpiHalReadResultHwOp"
+  },
+  {
+    "mangle": "mpi_hal_set_mode",
+    "c++": "mpi_hal_set_mode(size_t)",
+    "go": "MpiHalSetMode"
+  },
+  {
+    "mangle": "mpi_hal_set_search_position",
+    "c++": "mpi_hal_set_search_position(size_t)",
+    "go": "MpiHalSetSearchPosition"
+  },
+  {
+    "mangle": "mpi_hal_start_op",
+    "c++": "mpi_hal_start_op(mpi_op_t)",
+    "go": "MpiOpT.MpiHalStartOp"
+  },
+  {
+    "mangle": "mpi_hal_wait_op_complete",
+    "c++": "mpi_hal_wait_op_complete()",
+    "go": "MpiHalWaitOpComplete"
+  },
+  {
+    "mangle": "mpi_hal_write_at_offset",
+    "c++": "mpi_hal_write_at_offset(mpi_param_t, int, uint32_t)",
+    "go": "MpiParamT.MpiHalWriteAtOffset"
+  },
+  {
+    "mangle": "mpi_hal_write_m_prime",
+    "c++": "mpi_hal_write_m_prime(uint32_t)",
+    "go": "MpiHalWriteMPrime"
+  },
+  {
+    "mangle": "mpi_hal_write_rinv",
+    "c++": "mpi_hal_write_rinv(uint32_t)",
+    "go": "MpiHalWriteRinv"
+  },
+  {
+    "mangle": "mpi_hal_write_to_mem_block",
+    "c++": "mpi_hal_write_to_mem_block(mpi_param_t, size_t, const uint32_t *, size_t, size_t)",
+    "go": "MpiParamT.MpiHalWriteToMemBlock"
+  },
+  {
+    "mangle": "rmt_hal_deinit",
+    "c++": "rmt_hal_deinit(rmt_hal_context_t *)",
+    "go": "(*RmtHalContextT).RmtHalDeinit"
+  },
+  {
+    "mangle": "rmt_hal_init",
+    "c++": "rmt_hal_init(rmt_hal_context_t *)",
+    "go": "(*RmtHalContextT).RmtHalInit"
+  },
+  {
+    "mangle": "rmt_hal_rx_channel_reset",
+    "c++": "rmt_hal_rx_channel_reset(rmt_hal_context_t *, uint32_t)",
+    "go": "(*RmtHalContextT).RmtHalRxChannelReset"
+  },
+  {
+    "mangle": "rmt_hal_tx_channel_reset",
+    "c++": "rmt_hal_tx_channel_reset(rmt_hal_context_t *, uint32_t)",
+    "go": "(*RmtHalContextT).RmtHalTxChannelReset"
+  },
+  {
+    "mangle": "rtc_cntl_hal_disable_cpu_retention",
+    "c++": "rtc_cntl_hal_disable_cpu_retention(void *)",
+    "go": "RtcCntlHalDisableCpuRetention"
+  },
+  {
+    "mangle": "rtc_cntl_hal_dma_link_init",
+    "c++": "rtc_cntl_hal_dma_link_init(void *, void *, int, void *)",
+    "go": "RtcCntlHalDmaLinkInit"
+  },
+  {
+    "mangle": "rtc_cntl_hal_enable_cpu_retention",
+    "c++": "rtc_cntl_hal_enable_cpu_retention(void *)",
+    "go": "RtcCntlHalEnableCpuRetention"
+  },
+  {
+    "mangle": "sdm_hal_init",
+    "c++": "sdm_hal_init(sdm_hal_context_t *, int)",
+    "go": "(*SdmHalContextT).SdmHalInit"
+  },
+  {
+    "mangle": "sha_hal_hash_block",
+    "c++": "sha_hal_hash_block(esp_sha_type, const void *, size_t, bool)",
+    "go": "EspShaType.ShaHalHashBlock"
+  },
+  {
+    "mangle": "sha_hal_hash_dma",
+    "c++": "sha_hal_hash_dma(esp_sha_type, size_t, bool)",
+    "go": "EspShaType.ShaHalHashDma"
+  },
+  {
+    "mangle": "sha_hal_read_digest",
+    "c++": "sha_hal_read_digest(esp_sha_type, void *)",
+    "go": "EspShaType.ShaHalReadDigest"
+  },
+  {
+    "mangle": "sha_hal_wait_idle",
+    "c++": "sha_hal_wait_idle()",
+    "go": "ShaHalWaitIdle"
+  },
+  {
+    "mangle": "sha_hal_write_digest",
+    "c++": "sha_hal_write_digest(esp_sha_type, void *)",
+    "go": "EspShaType.ShaHalWriteDigest"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_check",
+    "c++": "spi_flash_encryption_hal_check(uint32_t, uint32_t)",
+    "go": "SpiFlashEncryptionHalCheck"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_destroy",
+    "c++": "spi_flash_encryption_hal_destroy()",
+    "go": "SpiFlashEncryptionHalDestroy"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_disable",
+    "c++": "spi_flash_encryption_hal_disable()",
+    "go": "SpiFlashEncryptionHalDisable"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_done",
+    "c++": "spi_flash_encryption_hal_done()",
+    "go": "SpiFlashEncryptionHalDone"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_enable",
+    "c++": "spi_flash_encryption_hal_enable()",
+    "go": "SpiFlashEncryptionHalEnable"
+  },
+  {
+    "mangle": "spi_flash_encryption_hal_prepare",
+    "c++": "spi_flash_encryption_hal_prepare(uint32_t, const uint32_t *, uint32_t)",
+    "go": "SpiFlashEncryptionHalPrepare"
+  },
+  {
+    "mangle": "spi_flash_hal_check_status",
+    "c++": "spi_flash_hal_check_status(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalCheckStatus"
+  },
+  {
+    "mangle": "spi_flash_hal_common_command",
+    "c++": "spi_flash_hal_common_command(spi_flash_host_inst_t *, spi_flash_trans_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalCommonCommand"
+  },
+  {
+    "mangle": "spi_flash_hal_configure_host_io_mode",
+    "c++": "spi_flash_hal_configure_host_io_mode(spi_flash_host_inst_t *, uint32_t, uint32_t, int, esp_flash_io_mode_t)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalConfigureHostIoMode"
+  },
+  {
+    "mangle": "spi_flash_hal_device_config",
+    "c++": "spi_flash_hal_device_config(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalDeviceConfig"
+  },
+  {
+    "mangle": "spi_flash_hal_erase_block",
+    "c++": "spi_flash_hal_erase_block(spi_flash_host_inst_t *, uint32_t)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalEraseBlock"
+  },
+  {
+    "mangle": "spi_flash_hal_erase_chip",
+    "c++": "spi_flash_hal_erase_chip(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalEraseChip"
+  },
+  {
+    "mangle": "spi_flash_hal_erase_sector",
+    "c++": "spi_flash_hal_erase_sector(spi_flash_host_inst_t *, uint32_t)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalEraseSector"
+  },
+  {
+    "mangle": "spi_flash_hal_init",
+    "c++": "spi_flash_hal_init(spi_flash_hal_context_t *, const spi_flash_hal_config_t *)",
+    "go": "(*SpiFlashHalContextT).SpiFlashHalInit"
+  },
+  {
+    "mangle": "spi_flash_hal_poll_cmd_done",
+    "c++": "spi_flash_hal_poll_cmd_done(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalPollCmdDone"
+  },
+  {
+    "mangle": "spi_flash_hal_program_page",
+    "c++": "spi_flash_hal_program_page(spi_flash_host_inst_t *, const void *, uint32_t, uint32_t)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalProgramPage"
+  },
+  {
+    "mangle": "spi_flash_hal_read",
+    "c++": "spi_flash_hal_read(spi_flash_host_inst_t *, void *, uint32_t, uint32_t)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalRead"
+  },
+  {
+    "mangle": "spi_flash_hal_resume",
+    "c++": "spi_flash_hal_resume(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalResume"
+  },
+  {
+    "mangle": "spi_flash_hal_set_write_protect",
+    "c++": "spi_flash_hal_set_write_protect(spi_flash_host_inst_t *, bool)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalSetWriteProtect"
+  },
+  {
+    "mangle": "spi_flash_hal_setup_read_suspend",
+    "c++": "spi_flash_hal_setup_read_suspend(spi_flash_host_inst_t *, const spi_flash_sus_cmd_conf *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalSetupReadSuspend"
+  },
+  {
+    "mangle": "spi_flash_hal_supports_direct_read",
+    "c++": "spi_flash_hal_supports_direct_read(spi_flash_host_inst_t *, const void *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalSupportsDirectRead"
+  },
+  {
+    "mangle": "spi_flash_hal_supports_direct_write",
+    "c++": "spi_flash_hal_supports_direct_write(spi_flash_host_inst_t *, const void *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalSupportsDirectWrite"
+  },
+  {
+    "mangle": "spi_flash_hal_suspend",
+    "c++": "spi_flash_hal_suspend(spi_flash_host_inst_t *)",
+    "go": "(*SpiFlashHostInstT).SpiFlashHalSuspend"
+  },
+  {
+    "mangle": "spi_hal_cal_clock_conf",
+    "c++": "spi_hal_cal_clock_conf(const spi_hal_timing_param_t *, spi_hal_timing_conf_t *)",
+    "go": "(*SpiHalTimingParamT).SpiHalCalClockConf"
+  },
+  {
+    "mangle": "spi_hal_cal_timing",
+    "c++": "spi_hal_cal_timing(int, int, bool, int, int *, int *)",
+    "go": "SpiHalCalTiming"
+  },
+  {
+    "mangle": "spi_hal_clear_intr_mask",
+    "c++": "spi_hal_clear_intr_mask(spi_hal_context_t *, uint32_t)",
+    "go": "(*SpiHalContextT).SpiHalClearIntrMask"
+  },
+  {
+    "mangle": "spi_hal_config_io_default_level",
+    "c++": "spi_hal_config_io_default_level(spi_hal_context_t *, bool)",
+    "go": "(*SpiHalContextT).SpiHalConfigIoDefaultLevel"
+  },
+  {
+    "mangle": "spi_hal_deinit",
+    "c++": "spi_hal_deinit(spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalDeinit"
+  },
+  {
+    "mangle": "spi_hal_enable_data_line",
+    "c++": "spi_hal_enable_data_line(spi_dev_t *, bool, bool)",
+    "go": "SpiHalEnableDataLine"
+  },
+  {
+    "mangle": "spi_hal_fetch_result",
+    "c++": "spi_hal_fetch_result(const spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalFetchResult"
+  },
+  {
+    "mangle": "spi_hal_get_intr_mask",
+    "c++": "spi_hal_get_intr_mask(spi_hal_context_t *, uint32_t)",
+    "go": "(*SpiHalContextT).SpiHalGetIntrMask"
+  },
+  {
+    "mangle": "spi_hal_hw_prepare_rx",
+    "c++": "spi_hal_hw_prepare_rx(spi_dev_t *)",
+    "go": "SpiHalHwPrepareRx"
+  },
+  {
+    "mangle": "spi_hal_hw_prepare_tx",
+    "c++": "spi_hal_hw_prepare_tx(spi_dev_t *)",
+    "go": "SpiHalHwPrepareTx"
+  },
+  {
+    "mangle": "spi_hal_init",
+    "c++": "spi_hal_init(spi_hal_context_t *, uint32_t)",
+    "go": "(*SpiHalContextT).SpiHalInit"
+  },
+  {
+    "mangle": "spi_hal_master_cal_clock",
+    "c++": "spi_hal_master_cal_clock(int, int, int)",
+    "go": "SpiHalMasterCalClock"
+  },
+  {
+    "mangle": "spi_hal_push_tx_buffer",
+    "c++": "spi_hal_push_tx_buffer(const spi_hal_context_t *, const spi_hal_trans_config_t *)",
+    "go": "(*SpiHalContextT).SpiHalPushTxBuffer"
+  },
+  {
+    "mangle": "spi_hal_sct_deinit",
+    "c++": "spi_hal_sct_deinit(spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalSctDeinit"
+  },
+  {
+    "mangle": "spi_hal_sct_format_conf_buffer",
+    "c++": "spi_hal_sct_format_conf_buffer(spi_hal_context_t *, const spi_hal_seg_config_t *, const spi_hal_dev_config_t *, uint32_t *)",
+    "go": "(*SpiHalContextT).SpiHalSctFormatConfBuffer"
+  },
+  {
+    "mangle": "spi_hal_sct_init",
+    "c++": "spi_hal_sct_init(spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalSctInit"
+  },
+  {
+    "mangle": "spi_hal_sct_init_conf_buffer",
+    "c++": "spi_hal_sct_init_conf_buffer(spi_hal_context_t *, uint32_t *)",
+    "go": "(*SpiHalContextT).SpiHalSctInitConfBuffer"
+  },
+  {
+    "mangle": "spi_hal_sct_set_conf_bits_len",
+    "c++": "spi_hal_sct_set_conf_bits_len(spi_hal_context_t *, uint32_t)",
+    "go": "(*SpiHalContextT).SpiHalSctSetConfBitsLen"
+  },
+  {
+    "mangle": "spi_hal_setup_device",
+    "c++": "spi_hal_setup_device(spi_hal_context_t *, const spi_hal_dev_config_t *)",
+    "go": "(*SpiHalContextT).SpiHalSetupDevice"
+  },
+  {
+    "mangle": "spi_hal_setup_trans",
+    "c++": "spi_hal_setup_trans(spi_hal_context_t *, const spi_hal_dev_config_t *, const spi_hal_trans_config_t *)",
+    "go": "(*SpiHalContextT).SpiHalSetupTrans"
+  },
+  {
+    "mangle": "spi_hal_user_start",
+    "c++": "spi_hal_user_start(const spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalUserStart"
+  },
+  {
+    "mangle": "spi_hal_usr_is_done",
+    "c++": "spi_hal_usr_is_done(const spi_hal_context_t *)",
+    "go": "(*SpiHalContextT).SpiHalUsrIsDone"
+  },
+  {
+    "mangle": "spi_slave_hal_deinit",
+    "c++": "spi_slave_hal_deinit(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalDeinit"
+  },
+  {
+    "mangle": "spi_slave_hal_enable_data_line",
+    "c++": "spi_slave_hal_enable_data_line(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalEnableDataLine"
+  },
+  {
+    "mangle": "spi_slave_hal_get_rcv_bitlen",
+    "c++": "spi_slave_hal_get_rcv_bitlen(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalGetRcvBitlen"
+  },
+  {
+    "mangle": "spi_slave_hal_hw_fifo_reset",
+    "c++": "spi_slave_hal_hw_fifo_reset(spi_slave_hal_context_t *, bool, bool)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalHwFifoReset"
+  },
+  {
+    "mangle": "spi_slave_hal_hw_prepare_rx",
+    "c++": "spi_slave_hal_hw_prepare_rx(spi_dev_t *)",
+    "go": "SpiSlaveHalHwPrepareRx"
+  },
+  {
+    "mangle": "spi_slave_hal_hw_prepare_tx",
+    "c++": "spi_slave_hal_hw_prepare_tx(spi_dev_t *)",
+    "go": "SpiSlaveHalHwPrepareTx"
+  },
+  {
+    "mangle": "spi_slave_hal_hw_reset",
+    "c++": "spi_slave_hal_hw_reset(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalHwReset"
+  },
+  {
+    "mangle": "spi_slave_hal_init",
+    "c++": "spi_slave_hal_init(spi_slave_hal_context_t *, const spi_slave_hal_config_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalInit"
+  },
+  {
+    "mangle": "spi_slave_hal_push_tx_buffer",
+    "c++": "spi_slave_hal_push_tx_buffer(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalPushTxBuffer"
+  },
+  {
+    "mangle": "spi_slave_hal_set_trans_bitlen",
+    "c++": "spi_slave_hal_set_trans_bitlen(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalSetTransBitlen"
+  },
+  {
+    "mangle": "spi_slave_hal_setup_device",
+    "c++": "spi_slave_hal_setup_device(const spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalSetupDevice"
+  },
+  {
+    "mangle": "spi_slave_hal_store_result",
+    "c++": "spi_slave_hal_store_result(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalStoreResult"
+  },
+  {
+    "mangle": "spi_slave_hal_user_start",
+    "c++": "spi_slave_hal_user_start(const spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalUserStart"
+  },
+  {
+    "mangle": "spi_slave_hal_usr_is_done",
+    "c++": "spi_slave_hal_usr_is_done(spi_slave_hal_context_t *)",
+    "go": "(*SpiSlaveHalContextT).SpiSlaveHalUsrIsDone"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_check_clear_event",
+    "c++": "spi_slave_hd_hal_check_clear_event(spi_slave_hd_hal_context_t *, spi_event_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalCheckClearEvent"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_check_disable_event",
+    "c++": "spi_slave_hd_hal_check_disable_event(spi_slave_hd_hal_context_t *, spi_event_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalCheckDisableEvent"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_enable_event_intr",
+    "c++": "spi_slave_hd_hal_enable_event_intr(spi_slave_hd_hal_context_t *, spi_event_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalEnableEventIntr"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_get_last_addr",
+    "c++": "spi_slave_hd_hal_get_last_addr(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalGetLastAddr"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_get_rx_finished_trans",
+    "c++": "spi_slave_hd_hal_get_rx_finished_trans(spi_slave_hd_hal_context_t *, void **, void **, size_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalGetRxFinishedTrans"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_get_rxlen",
+    "c++": "spi_slave_hd_hal_get_rxlen(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalGetRxlen"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_get_tx_finished_trans",
+    "c++": "spi_slave_hd_hal_get_tx_finished_trans(spi_slave_hd_hal_context_t *, void **, void **)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalGetTxFinishedTrans"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_hw_prepare_rx",
+    "c++": "spi_slave_hd_hal_hw_prepare_rx(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalHwPrepareRx"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_hw_prepare_tx",
+    "c++": "spi_slave_hd_hal_hw_prepare_tx(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalHwPrepareTx"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_init",
+    "c++": "spi_slave_hd_hal_init(spi_slave_hd_hal_context_t *, const spi_slave_hd_hal_config_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalInit"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_invoke_event_intr",
+    "c++": "spi_slave_hd_hal_invoke_event_intr(spi_slave_hd_hal_context_t *, spi_event_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalInvokeEventIntr"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_read_buffer",
+    "c++": "spi_slave_hd_hal_read_buffer(spi_slave_hd_hal_context_t *, int, uint8_t *, size_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalReadBuffer"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_rxdma",
+    "c++": "spi_slave_hd_hal_rxdma(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalRxdma"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_rxdma_seg_get_len",
+    "c++": "spi_slave_hd_hal_rxdma_seg_get_len(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalRxdmaSegGetLen"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_txdma",
+    "c++": "spi_slave_hd_hal_txdma(spi_slave_hd_hal_context_t *)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalTxdma"
+  },
+  {
+    "mangle": "spi_slave_hd_hal_write_buffer",
+    "c++": "spi_slave_hd_hal_write_buffer(spi_slave_hd_hal_context_t *, int, uint8_t *, size_t)",
+    "go": "(*SpiSlaveHdHalContextT).SpiSlaveHdHalWriteBuffer"
+  },
+  {
+    "mangle": "systimer_hal_connect_alarm_counter",
+    "c++": "systimer_hal_connect_alarm_counter(systimer_hal_context_t *, uint32_t, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalConnectAlarmCounter"
+  },
+  {
+    "mangle": "systimer_hal_counter_can_stall_by_cpu",
+    "c++": "systimer_hal_counter_can_stall_by_cpu(systimer_hal_context_t *, uint32_t, uint32_t, bool)",
+    "go": "(*SystimerHalContextT).SystimerHalCounterCanStallByCpu"
+  },
+  {
+    "mangle": "systimer_hal_counter_value_advance",
+    "c++": "systimer_hal_counter_value_advance(systimer_hal_context_t *, uint32_t, int64_t)",
+    "go": "(*SystimerHalContextT).SystimerHalCounterValueAdvance"
+  },
+  {
+    "mangle": "systimer_hal_deinit",
+    "c++": "systimer_hal_deinit(systimer_hal_context_t *)",
+    "go": "(*SystimerHalContextT).SystimerHalDeinit"
+  },
+  {
+    "mangle": "systimer_hal_enable_alarm_int",
+    "c++": "systimer_hal_enable_alarm_int(systimer_hal_context_t *, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalEnableAlarmInt"
+  },
+  {
+    "mangle": "systimer_hal_enable_counter",
+    "c++": "systimer_hal_enable_counter(systimer_hal_context_t *, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalEnableCounter"
+  },
+  {
+    "mangle": "systimer_hal_get_alarm_value",
+    "c++": "systimer_hal_get_alarm_value(systimer_hal_context_t *, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalGetAlarmValue"
+  },
+  {
+    "mangle": "systimer_hal_get_clock_source",
+    "c++": "systimer_hal_get_clock_source(systimer_hal_context_t *)",
+    "go": "(*SystimerHalContextT).SystimerHalGetClockSource"
+  },
+  {
+    "mangle": "systimer_hal_get_counter_value",
+    "c++": "systimer_hal_get_counter_value(systimer_hal_context_t *, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalGetCounterValue"
+  },
+  {
+    "mangle": "systimer_hal_get_time",
+    "c++": "systimer_hal_get_time(systimer_hal_context_t *, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalGetTime"
+  },
+  {
+    "mangle": "systimer_hal_init",
+    "c++": "systimer_hal_init(systimer_hal_context_t *)",
+    "go": "(*SystimerHalContextT).SystimerHalInit"
+  },
+  {
+    "mangle": "systimer_hal_select_alarm_mode",
+    "c++": "systimer_hal_select_alarm_mode(systimer_hal_context_t *, uint32_t, systimer_alarm_mode_t)",
+    "go": "(*SystimerHalContextT).SystimerHalSelectAlarmMode"
+  },
+  {
+    "mangle": "systimer_hal_set_alarm_period",
+    "c++": "systimer_hal_set_alarm_period(systimer_hal_context_t *, uint32_t, uint32_t)",
+    "go": "(*SystimerHalContextT).SystimerHalSetAlarmPeriod"
+  },
+  {
+    "mangle": "systimer_hal_set_alarm_target",
+    "c++": "systimer_hal_set_alarm_target(systimer_hal_context_t *, uint32_t, uint64_t)",
+    "go": "(*SystimerHalContextT).SystimerHalSetAlarmTarget"
+  },
+  {
+    "mangle": "systimer_hal_set_tick_rate_ops",
+    "c++": "systimer_hal_set_tick_rate_ops(systimer_hal_context_t *, systimer_hal_tick_rate_ops_t *)",
+    "go": "(*SystimerHalContextT).SystimerHalSetTickRateOps"
+  },
+  {
+    "mangle": "timer_hal_capture_and_get_counter_value",
+    "c++": "timer_hal_capture_and_get_counter_value(timer_hal_context_t *)",
+    "go": "(*TimerHalContextT).TimerHalCaptureAndGetCounterValue"
+  },
+  {
+    "mangle": "timer_hal_deinit",
+    "c++": "timer_hal_deinit(timer_hal_context_t *)",
+    "go": "(*TimerHalContextT).TimerHalDeinit"
+  },
+  {
+    "mangle": "timer_hal_init",
+    "c++": "timer_hal_init(timer_hal_context_t *, uint32_t, uint32_t)",
+    "go": "(*TimerHalContextT).TimerHalInit"
+  },
+  {
+    "mangle": "timer_hal_set_counter_value",
+    "c++": "timer_hal_set_counter_value(timer_hal_context_t *, uint64_t)",
+    "go": "(*TimerHalContextT).TimerHalSetCounterValue"
+  },
+  {
+    "mangle": "twai_hal_configure",
+    "c++": "twai_hal_configure(twai_hal_context_t *, const twai_timing_config_t *, const twai_filter_config_t *, uint32_t, uint32_t)",
+    "go": "(*TwaiHalContextT).TwaiHalConfigure"
+  },
+  {
+    "mangle": "twai_hal_deinit",
+    "c++": "twai_hal_deinit(twai_hal_context_t *)",
+    "go": "(*TwaiHalContextT).TwaiHalDeinit"
+  },
+  {
+    "mangle": "twai_hal_get_events",
+    "c++": "twai_hal_get_events(twai_hal_context_t *)",
+    "go": "(*TwaiHalContextT).TwaiHalGetEvents"
+  },
+  {
+    "mangle": "twai_hal_init",
+    "c++": "twai_hal_init(twai_hal_context_t *, const twai_hal_config_t *)",
+    "go": "(*TwaiHalContextT).TwaiHalInit"
+  },
+  {
+    "mangle": "twai_hal_set_tx_buffer_and_transmit",
+    "c++": "twai_hal_set_tx_buffer_and_transmit(twai_hal_context_t *, twai_hal_frame_t *)",
+    "go": "(*TwaiHalContextT).TwaiHalSetTxBufferAndTransmit"
+  },
+  {
+    "mangle": "twai_hal_start",
+    "c++": "twai_hal_start(twai_hal_context_t *, twai_mode_t)",
+    "go": "(*TwaiHalContextT).TwaiHalStart"
+  },
+  {
+    "mangle": "twai_hal_stop",
+    "c++": "twai_hal_stop(twai_hal_context_t *)",
+    "go": "(*TwaiHalContextT).TwaiHalStop"
+  },
+  {
+    "mangle": "uart_hal_get_baudrate",
+    "c++": "uart_hal_get_baudrate(uart_hal_context_t *, uint32_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalGetBaudrate"
+  },
+  {
+    "mangle": "uart_hal_get_data_bit_num",
+    "c++": "uart_hal_get_data_bit_num(uart_hal_context_t *, uart_word_length_t *)",
+    "go": "(*UartHalContextT).UartHalGetDataBitNum"
+  },
+  {
+    "mangle": "uart_hal_get_hw_flow_ctrl",
+    "c++": "uart_hal_get_hw_flow_ctrl(uart_hal_context_t *, uart_hw_flowcontrol_t *)",
+    "go": "(*UartHalContextT).UartHalGetHwFlowCtrl"
+  },
+  {
+    "mangle": "uart_hal_get_max_rx_timeout_thrd",
+    "c++": "uart_hal_get_max_rx_timeout_thrd(uart_hal_context_t *)",
+    "go": "(*UartHalContextT).UartHalGetMaxRxTimeoutThrd"
+  },
+  {
+    "mangle": "uart_hal_get_parity",
+    "c++": "uart_hal_get_parity(uart_hal_context_t *, uart_parity_t *)",
+    "go": "(*UartHalContextT).UartHalGetParity"
+  },
+  {
+    "mangle": "uart_hal_get_sclk",
+    "c++": "uart_hal_get_sclk(uart_hal_context_t *, soc_module_clk_t *)",
+    "go": "(*UartHalContextT).UartHalGetSclk"
+  },
+  {
+    "mangle": "uart_hal_get_stop_bits",
+    "c++": "uart_hal_get_stop_bits(uart_hal_context_t *, uart_stop_bits_t *)",
+    "go": "(*UartHalContextT).UartHalGetStopBits"
+  },
+  {
+    "mangle": "uart_hal_get_symb_len",
+    "c++": "uart_hal_get_symb_len(uart_hal_context_t *)",
+    "go": "(*UartHalContextT).UartHalGetSymbLen"
+  },
+  {
+    "mangle": "uart_hal_get_wakeup_thrd",
+    "c++": "uart_hal_get_wakeup_thrd(uart_hal_context_t *, uint32_t *)",
+    "go": "(*UartHalContextT).UartHalGetWakeupThrd"
+  },
+  {
+    "mangle": "uart_hal_init",
+    "c++": "uart_hal_init(uart_hal_context_t *, uart_port_t)",
+    "go": "(*UartHalContextT).UartHalInit"
+  },
+  {
+    "mangle": "uart_hal_inverse_signal",
+    "c++": "uart_hal_inverse_signal(uart_hal_context_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalInverseSignal"
+  },
+  {
+    "mangle": "uart_hal_is_hw_rts_en",
+    "c++": "uart_hal_is_hw_rts_en(uart_hal_context_t *)",
+    "go": "(*UartHalContextT).UartHalIsHwRtsEn"
+  },
+  {
+    "mangle": "uart_hal_read_rxfifo",
+    "c++": "uart_hal_read_rxfifo(uart_hal_context_t *, uint8_t *, int *)",
+    "go": "(*UartHalContextT).UartHalReadRxfifo"
+  },
+  {
+    "mangle": "uart_hal_rxfifo_rst",
+    "c++": "uart_hal_rxfifo_rst(uart_hal_context_t *)",
+    "go": "(*UartHalContextT).UartHalRxfifoRst"
+  },
+  {
+    "mangle": "uart_hal_set_at_cmd_char",
+    "c++": "uart_hal_set_at_cmd_char(uart_hal_context_t *, uart_at_cmd_t *)",
+    "go": "(*UartHalContextT).UartHalSetAtCmdChar"
+  },
+  {
+    "mangle": "uart_hal_set_data_bit_num",
+    "c++": "uart_hal_set_data_bit_num(uart_hal_context_t *, uart_word_length_t)",
+    "go": "(*UartHalContextT).UartHalSetDataBitNum"
+  },
+  {
+    "mangle": "uart_hal_set_dtr",
+    "c++": "uart_hal_set_dtr(uart_hal_context_t *, int)",
+    "go": "(*UartHalContextT).UartHalSetDtr"
+  },
+  {
+    "mangle": "uart_hal_set_hw_flow_ctrl",
+    "c++": "uart_hal_set_hw_flow_ctrl(uart_hal_context_t *, uart_hw_flowcontrol_t, uint8_t)",
+    "go": "(*UartHalContextT).UartHalSetHwFlowCtrl"
+  },
+  {
+    "mangle": "uart_hal_set_loop_back",
+    "c++": "uart_hal_set_loop_back(uart_hal_context_t *, bool)",
+    "go": "(*UartHalContextT).UartHalSetLoopBack"
+  },
+  {
+    "mangle": "uart_hal_set_mode",
+    "c++": "uart_hal_set_mode(uart_hal_context_t *, uart_mode_t)",
+    "go": "(*UartHalContextT).UartHalSetMode"
+  },
+  {
+    "mangle": "uart_hal_set_parity",
+    "c++": "uart_hal_set_parity(uart_hal_context_t *, uart_parity_t)",
+    "go": "(*UartHalContextT).UartHalSetParity"
+  },
+  {
+    "mangle": "uart_hal_set_rx_timeout",
+    "c++": "uart_hal_set_rx_timeout(uart_hal_context_t *, const uint8_t)",
+    "go": "(*UartHalContextT).UartHalSetRxTimeout"
+  },
+  {
+    "mangle": "uart_hal_set_rxfifo_full_thr",
+    "c++": "uart_hal_set_rxfifo_full_thr(uart_hal_context_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalSetRxfifoFullThr"
+  },
+  {
+    "mangle": "uart_hal_set_stop_bits",
+    "c++": "uart_hal_set_stop_bits(uart_hal_context_t *, uart_stop_bits_t)",
+    "go": "(*UartHalContextT).UartHalSetStopBits"
+  },
+  {
+    "mangle": "uart_hal_set_sw_flow_ctrl",
+    "c++": "uart_hal_set_sw_flow_ctrl(uart_hal_context_t *, uart_sw_flowctrl_t *, bool)",
+    "go": "(*UartHalContextT).UartHalSetSwFlowCtrl"
+  },
+  {
+    "mangle": "uart_hal_set_tx_idle_num",
+    "c++": "uart_hal_set_tx_idle_num(uart_hal_context_t *, uint16_t)",
+    "go": "(*UartHalContextT).UartHalSetTxIdleNum"
+  },
+  {
+    "mangle": "uart_hal_set_txfifo_empty_thr",
+    "c++": "uart_hal_set_txfifo_empty_thr(uart_hal_context_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalSetTxfifoEmptyThr"
+  },
+  {
+    "mangle": "uart_hal_set_wakeup_thrd",
+    "c++": "uart_hal_set_wakeup_thrd(uart_hal_context_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalSetWakeupThrd"
+  },
+  {
+    "mangle": "uart_hal_tx_break",
+    "c++": "uart_hal_tx_break(uart_hal_context_t *, uint32_t)",
+    "go": "(*UartHalContextT).UartHalTxBreak"
+  },
+  {
+    "mangle": "uart_hal_txfifo_rst",
+    "c++": "uart_hal_txfifo_rst(uart_hal_context_t *)",
+    "go": "(*UartHalContextT).UartHalTxfifoRst"
+  },
+  {
+    "mangle": "uart_hal_write_txfifo",
+    "c++": "uart_hal_write_txfifo(uart_hal_context_t *, const uint8_t *, uint32_t, uint32_t *)",
+    "go": "(*UartHalContextT).UartHalWriteTxfifo"
+  },
+  {
+    "mangle": "usb_serial_jtag_hal_init",
+    "c++": "usb_serial_jtag_hal_init(usb_serial_jtag_hal_context_t *)",
+    "go": "(*UsbSerialJtagHalContextT).UsbSerialJtagHalInit"
+  },
+  {
+    "mangle": "wdt_hal_config_stage",
+    "c++": "wdt_hal_config_stage(wdt_hal_context_t *, wdt_stage_t, uint32_t, wdt_stage_action_t)",
+    "go": "(*WdtHalContextT).WdtHalConfigStage"
+  },
+  {
+    "mangle": "wdt_hal_deinit",
+    "c++": "wdt_hal_deinit(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalDeinit"
+  },
+  {
+    "mangle": "wdt_hal_disable",
+    "c++": "wdt_hal_disable(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalDisable"
+  },
+  {
+    "mangle": "wdt_hal_enable",
+    "c++": "wdt_hal_enable(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalEnable"
+  },
+  {
+    "mangle": "wdt_hal_feed",
+    "c++": "wdt_hal_feed(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalFeed"
+  },
+  {
+    "mangle": "wdt_hal_handle_intr",
+    "c++": "wdt_hal_handle_intr(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalHandleIntr"
+  },
+  {
+    "mangle": "wdt_hal_init",
+    "c++": "wdt_hal_init(wdt_hal_context_t *, wdt_inst_t, uint32_t, bool)",
+    "go": "(*WdtHalContextT).WdtHalInit"
+  },
+  {
+    "mangle": "wdt_hal_is_enabled",
+    "c++": "wdt_hal_is_enabled(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalIsEnabled"
+  },
+  {
+    "mangle": "wdt_hal_set_flashboot_en",
+    "c++": "wdt_hal_set_flashboot_en(wdt_hal_context_t *, bool)",
+    "go": "(*WdtHalContextT).WdtHalSetFlashbootEn"
+  },
+  {
+    "mangle": "wdt_hal_write_protect_disable",
+    "c++": "wdt_hal_write_protect_disable(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalWriteProtectDisable"
+  },
+  {
+    "mangle": "wdt_hal_write_protect_enable",
+    "c++": "wdt_hal_write_protect_enable(wdt_hal_context_t *)",
+    "go": "(*WdtHalContextT).WdtHalWriteProtectEnable"
+  },
+  {
+    "mangle": "xt_wdt_hal_enable",
+    "c++": "xt_wdt_hal_enable(xt_wdt_hal_context_t *, bool)",
+    "go": "(*XtWdtHalContextT).XtWdtHalEnable"
+  },
+  {
+    "mangle": "xt_wdt_hal_enable_backup_clk",
+    "c++": "xt_wdt_hal_enable_backup_clk(xt_wdt_hal_context_t *, uint32_t)",
+    "go": "(*XtWdtHalContextT).XtWdtHalEnableBackupClk"
+  },
+  {
+    "mangle": "xt_wdt_hal_init",
+    "c++": "xt_wdt_hal_init(xt_wdt_hal_context_t *, const xt_wdt_hal_config_t *)",
+    "go": "(*XtWdtHalContextT).XtWdtHalInit"
+  }
+]

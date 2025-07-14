@@ -1,0 +1,127 @@
+[
+  {
+    "mangle": "vRingbufferDelete",
+    "c++": "vRingbufferDelete(RingbufHandle_t)",
+    "go": "VRingbufferDelete"
+  },
+  {
+    "mangle": "vRingbufferDeleteWithCaps",
+    "c++": "vRingbufferDeleteWithCaps(RingbufHandle_t)",
+    "go": "VRingbufferDeleteWithCaps"
+  },
+  {
+    "mangle": "vRingbufferGetInfo",
+    "c++": "vRingbufferGetInfo(RingbufHandle_t, UBaseType_t *, UBaseType_t *, UBaseType_t *, UBaseType_t *, UBaseType_t *)",
+    "go": "VRingbufferGetInfo"
+  },
+  {
+    "mangle": "vRingbufferReturnItem",
+    "c++": "vRingbufferReturnItem(RingbufHandle_t, void *)",
+    "go": "VRingbufferReturnItem"
+  },
+  {
+    "mangle": "vRingbufferReturnItemFromISR",
+    "c++": "vRingbufferReturnItemFromISR(RingbufHandle_t, void *, BaseType_t *)",
+    "go": "VRingbufferReturnItemFromISR"
+  },
+  {
+    "mangle": "xRingbufferAddToQueueSetRead",
+    "c++": "xRingbufferAddToQueueSetRead(RingbufHandle_t, QueueSetHandle_t)",
+    "go": "XRingbufferAddToQueueSetRead"
+  },
+  {
+    "mangle": "xRingbufferCreate",
+    "c++": "xRingbufferCreate(size_t, RingbufferType_t)",
+    "go": "XRingbufferCreate"
+  },
+  {
+    "mangle": "xRingbufferCreateNoSplit",
+    "c++": "xRingbufferCreateNoSplit(size_t, size_t)",
+    "go": "XRingbufferCreateNoSplit"
+  },
+  {
+    "mangle": "xRingbufferCreateStatic",
+    "c++": "xRingbufferCreateStatic(size_t, RingbufferType_t, uint8_t *, StaticRingbuffer_t *)",
+    "go": "XRingbufferCreateStatic"
+  },
+  {
+    "mangle": "xRingbufferCreateWithCaps",
+    "c++": "xRingbufferCreateWithCaps(size_t, RingbufferType_t, UBaseType_t)",
+    "go": "XRingbufferCreateWithCaps"
+  },
+  {
+    "mangle": "xRingbufferGetCurFreeSize",
+    "c++": "xRingbufferGetCurFreeSize(RingbufHandle_t)",
+    "go": "XRingbufferGetCurFreeSize"
+  },
+  {
+    "mangle": "xRingbufferGetMaxItemSize",
+    "c++": "xRingbufferGetMaxItemSize(RingbufHandle_t)",
+    "go": "XRingbufferGetMaxItemSize"
+  },
+  {
+    "mangle": "xRingbufferGetStaticBuffer",
+    "c++": "xRingbufferGetStaticBuffer(RingbufHandle_t, uint8_t **, StaticRingbuffer_t **)",
+    "go": "XRingbufferGetStaticBuffer"
+  },
+  {
+    "mangle": "xRingbufferPrintInfo",
+    "c++": "xRingbufferPrintInfo(RingbufHandle_t)",
+    "go": "XRingbufferPrintInfo"
+  },
+  {
+    "mangle": "xRingbufferReceive",
+    "c++": "xRingbufferReceive(RingbufHandle_t, size_t *, TickType_t)",
+    "go": "XRingbufferReceive"
+  },
+  {
+    "mangle": "xRingbufferReceiveFromISR",
+    "c++": "xRingbufferReceiveFromISR(RingbufHandle_t, size_t *)",
+    "go": "XRingbufferReceiveFromISR"
+  },
+  {
+    "mangle": "xRingbufferReceiveSplit",
+    "c++": "xRingbufferReceiveSplit(RingbufHandle_t, void **, void **, size_t *, size_t *, TickType_t)",
+    "go": "XRingbufferReceiveSplit"
+  },
+  {
+    "mangle": "xRingbufferReceiveSplitFromISR",
+    "c++": "xRingbufferReceiveSplitFromISR(RingbufHandle_t, void **, void **, size_t *, size_t *)",
+    "go": "XRingbufferReceiveSplitFromISR"
+  },
+  {
+    "mangle": "xRingbufferReceiveUpTo",
+    "c++": "xRingbufferReceiveUpTo(RingbufHandle_t, size_t *, TickType_t, size_t)",
+    "go": "XRingbufferReceiveUpTo"
+  },
+  {
+    "mangle": "xRingbufferReceiveUpToFromISR",
+    "c++": "xRingbufferReceiveUpToFromISR(RingbufHandle_t, size_t *, size_t)",
+    "go": "XRingbufferReceiveUpToFromISR"
+  },
+  {
+    "mangle": "xRingbufferRemoveFromQueueSetRead",
+    "c++": "xRingbufferRemoveFromQueueSetRead(RingbufHandle_t, QueueSetHandle_t)",
+    "go": "XRingbufferRemoveFromQueueSetRead"
+  },
+  {
+    "mangle": "xRingbufferSend",
+    "c++": "xRingbufferSend(RingbufHandle_t, const void *, size_t, TickType_t)",
+    "go": "XRingbufferSend"
+  },
+  {
+    "mangle": "xRingbufferSendAcquire",
+    "c++": "xRingbufferSendAcquire(RingbufHandle_t, void **, size_t, TickType_t)",
+    "go": "XRingbufferSendAcquire"
+  },
+  {
+    "mangle": "xRingbufferSendComplete",
+    "c++": "xRingbufferSendComplete(RingbufHandle_t, void *)",
+    "go": "XRingbufferSendComplete"
+  },
+  {
+    "mangle": "xRingbufferSendFromISR",
+    "c++": "xRingbufferSendFromISR(RingbufHandle_t, const void *, size_t, BaseType_t *)",
+    "go": "XRingbufferSendFromISR"
+  }
+]

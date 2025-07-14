@@ -1,0 +1,112 @@
+[
+  {
+    "mangle": "esp_lcd_new_panel_io_i2c_v1",
+    "c++": "esp_lcd_new_panel_io_i2c_v1(uint32_t, const esp_lcd_panel_io_i2c_config_t *, esp_lcd_panel_io_handle_t *)",
+    "go": "EspLcdNewPanelIoI2cV1"
+  },
+  {
+    "mangle": "esp_lcd_new_panel_io_i2c_v2",
+    "c++": "esp_lcd_new_panel_io_i2c_v2(i2c_master_bus_handle_t, const esp_lcd_panel_io_i2c_config_t *, esp_lcd_panel_io_handle_t *)",
+    "go": "EspLcdNewPanelIoI2cV2"
+  },
+  {
+    "mangle": "esp_lcd_new_panel_io_spi",
+    "c++": "esp_lcd_new_panel_io_spi(esp_lcd_spi_bus_handle_t, const esp_lcd_panel_io_spi_config_t *, esp_lcd_panel_io_handle_t *)",
+    "go": "EspLcdSpiBusHandleT.EspLcdNewPanelIoSpi"
+  },
+  {
+    "mangle": "esp_lcd_new_panel_nt35510",
+    "c++": "esp_lcd_new_panel_nt35510(const esp_lcd_panel_io_handle_t, const esp_lcd_panel_dev_config_t *, esp_lcd_panel_handle_t *)",
+    "go": "EspLcdNewPanelNt35510"
+  },
+  {
+    "mangle": "esp_lcd_new_panel_ssd1306",
+    "c++": "esp_lcd_new_panel_ssd1306(const esp_lcd_panel_io_handle_t, const esp_lcd_panel_dev_config_t *, esp_lcd_panel_handle_t *)",
+    "go": "EspLcdNewPanelSsd1306"
+  },
+  {
+    "mangle": "esp_lcd_new_panel_st7789",
+    "c++": "esp_lcd_new_panel_st7789(const esp_lcd_panel_io_handle_t, const esp_lcd_panel_dev_config_t *, esp_lcd_panel_handle_t *)",
+    "go": "EspLcdNewPanelSt7789"
+  },
+  {
+    "mangle": "esp_lcd_panel_del",
+    "c++": "esp_lcd_panel_del(esp_lcd_panel_handle_t)",
+    "go": "EspLcdPanelDel"
+  },
+  {
+    "mangle": "esp_lcd_panel_disp_off",
+    "c++": "esp_lcd_panel_disp_off(esp_lcd_panel_handle_t, bool)",
+    "go": "EspLcdPanelDispOff"
+  },
+  {
+    "mangle": "esp_lcd_panel_disp_on_off",
+    "c++": "esp_lcd_panel_disp_on_off(esp_lcd_panel_handle_t, bool)",
+    "go": "EspLcdPanelDispOnOff"
+  },
+  {
+    "mangle": "esp_lcd_panel_disp_sleep",
+    "c++": "esp_lcd_panel_disp_sleep(esp_lcd_panel_handle_t, bool)",
+    "go": "EspLcdPanelDispSleep"
+  },
+  {
+    "mangle": "esp_lcd_panel_draw_bitmap",
+    "c++": "esp_lcd_panel_draw_bitmap(esp_lcd_panel_handle_t, int, int, int, int, const void *)",
+    "go": "EspLcdPanelDrawBitmap"
+  },
+  {
+    "mangle": "esp_lcd_panel_init",
+    "c++": "esp_lcd_panel_init(esp_lcd_panel_handle_t)",
+    "go": "EspLcdPanelInit"
+  },
+  {
+    "mangle": "esp_lcd_panel_invert_color",
+    "c++": "esp_lcd_panel_invert_color(esp_lcd_panel_handle_t, bool)",
+    "go": "EspLcdPanelInvertColor"
+  },
+  {
+    "mangle": "esp_lcd_panel_io_del",
+    "c++": "esp_lcd_panel_io_del(esp_lcd_panel_io_handle_t)",
+    "go": "EspLcdPanelIoDel"
+  },
+  {
+    "mangle": "esp_lcd_panel_io_register_event_callbacks",
+    "c++": "esp_lcd_panel_io_register_event_callbacks(esp_lcd_panel_io_handle_t, const esp_lcd_panel_io_callbacks_t *, void *)",
+    "go": "EspLcdPanelIoRegisterEventCallbacks"
+  },
+  {
+    "mangle": "esp_lcd_panel_io_rx_param",
+    "c++": "esp_lcd_panel_io_rx_param(esp_lcd_panel_io_handle_t, int, void *, size_t)",
+    "go": "EspLcdPanelIoRxParam"
+  },
+  {
+    "mangle": "esp_lcd_panel_io_tx_color",
+    "c++": "esp_lcd_panel_io_tx_color(esp_lcd_panel_io_handle_t, int, const void *, size_t)",
+    "go": "EspLcdPanelIoTxColor"
+  },
+  {
+    "mangle": "esp_lcd_panel_io_tx_param",
+    "c++": "esp_lcd_panel_io_tx_param(esp_lcd_panel_io_handle_t, int, const void *, size_t)",
+    "go": "EspLcdPanelIoTxParam"
+  },
+  {
+    "mangle": "esp_lcd_panel_mirror",
+    "c++": "esp_lcd_panel_mirror(esp_lcd_panel_handle_t, bool, bool)",
+    "go": "EspLcdPanelMirror"
+  },
+  {
+    "mangle": "esp_lcd_panel_reset",
+    "c++": "esp_lcd_panel_reset(esp_lcd_panel_handle_t)",
+    "go": "EspLcdPanelReset"
+  },
+  {
+    "mangle": "esp_lcd_panel_set_gap",
+    "c++": "esp_lcd_panel_set_gap(esp_lcd_panel_handle_t, int, int)",
+    "go": "EspLcdPanelSetGap"
+  },
+  {
+    "mangle": "esp_lcd_panel_swap_xy",
+    "c++": "esp_lcd_panel_swap_xy(esp_lcd_panel_handle_t, bool)",
+    "go": "EspLcdPanelSwapXy"
+  }
+]
