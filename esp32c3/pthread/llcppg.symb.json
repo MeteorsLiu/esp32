@@ -1,0 +1,22 @@
+[
+  {
+    "mangle": "esp_pthread_get_cfg",
+    "c++": "esp_pthread_get_cfg(esp_pthread_cfg_t *)",
+    "go": "(*EspPthreadCfgT).EspPthreadGetCfg"
+  },
+  {
+    "mangle": "esp_pthread_get_default_config",
+    "c++": "esp_pthread_get_default_config()",
+    "go": "EspPthreadGetDefaultConfig"
+  },
+  {
+    "mangle": "esp_pthread_init",
+    "c++": "esp_pthread_init()",
+    "go": "EspPthreadInit"
+  },
+  {
+    "mangle": "esp_pthread_set_cfg",
+    "c++": "esp_pthread_set_cfg(const esp_pthread_cfg_t *)",
+    "go": "(*EspPthreadCfgT).EspPthreadSetCfg"
+  }
+]

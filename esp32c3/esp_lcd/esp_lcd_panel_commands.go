@@ -1,0 +1,42 @@
+package esp_lcd
+
+import _ "unsafe"
+
+const LCD_CMD_NOP = 0x00
+const LCD_CMD_SWRESET = 0x01
+const LCD_CMD_RDDID = 0x04
+const LCD_CMD_RDDST = 0x09
+const LCD_CMD_RDDPM = 0x0A
+const LCD_CMD_RDD_MADCTL = 0x0B
+const LCD_CMD_RDD_COLMOD = 0x0C
+const LCD_CMD_RDDIM = 0x0D
+const LCD_CMD_RDDSM = 0x0E
+const LCD_CMD_RDDSR = 0x0F
+const LCD_CMD_SLPIN = 0x10
+const LCD_CMD_SLPOUT = 0x11
+const LCD_CMD_PTLON = 0x12
+const LCD_CMD_NORON = 0x13
+const LCD_CMD_INVOFF = 0x20
+const LCD_CMD_INVON = 0x21
+const LCD_CMD_GAMSET = 0x26
+const LCD_CMD_DISPOFF = 0x28
+const LCD_CMD_DISPON = 0x29
+const LCD_CMD_CASET = 0x2A
+const LCD_CMD_RASET = 0x2B
+const LCD_CMD_RAMWR = 0x2C
+const LCD_CMD_RAMRD = 0x2E
+const LCD_CMD_PTLAR = 0x30
+const LCD_CMD_VSCRDEF = 0x33
+const LCD_CMD_TEOFF = 0x34
+const LCD_CMD_TEON = 0x35
+const LCD_CMD_MADCTL = 0x36
+const LCD_CMD_VSCSAD = 0x37
+const LCD_CMD_IDMOFF = 0x38
+const LCD_CMD_IDMON = 0x39
+const LCD_CMD_COLMOD = 0x3A
+const LCD_CMD_RAMWRC = 0x3C
+const LCD_CMD_RAMRDC = 0x3E
+const LCD_CMD_STE = 0x44
+const LCD_CMD_GDCAN = 0x45
+const LCD_CMD_WRDISBV = 0x51
+const LCD_CMD_RDDISBV = 0x52

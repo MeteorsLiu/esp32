@@ -1,0 +1,7 @@
+[
+  {
+    "mangle": "esp_bootloader_get_description",
+    "c++": "esp_bootloader_get_description()",
+    "go": "EspBootloaderGetDescription"
+  }
+]

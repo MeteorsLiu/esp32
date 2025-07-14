@@ -1,0 +1,20 @@
+package soc
+
+import (
+	"github.com/goplus/lib/c"
+	_ "unsafe"
+)
+
+type TemperatureSensorAttributeT struct {
+	Offset   c.Int
+	RegVal   c.Int
+	RangeMin c.Int
+	RangeMax c.Int
+	ErrorMax c.Int
+}
+
+type TemperatureSensorRegCtxLinkT struct {
+	LinkList *RegdmaEntriesConfigT
+	LinkNum  c.Uint32T
+	ModuleId PeriphRetentionModuleT
+}

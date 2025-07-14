@@ -1,0 +1,412 @@
+[
+  {
+    "mangle": "dedic_gpio_bundle_read_in",
+    "c++": "dedic_gpio_bundle_read_in(dedic_gpio_bundle_handle_t)",
+    "go": "DedicGpioBundleReadIn"
+  },
+  {
+    "mangle": "dedic_gpio_bundle_read_out",
+    "c++": "dedic_gpio_bundle_read_out(dedic_gpio_bundle_handle_t)",
+    "go": "DedicGpioBundleReadOut"
+  },
+  {
+    "mangle": "dedic_gpio_bundle_write",
+    "c++": "dedic_gpio_bundle_write(dedic_gpio_bundle_handle_t, uint32_t, uint32_t)",
+    "go": "DedicGpioBundleWrite"
+  },
+  {
+    "mangle": "dedic_gpio_del_bundle",
+    "c++": "dedic_gpio_del_bundle(dedic_gpio_bundle_handle_t)",
+    "go": "DedicGpioDelBundle"
+  },
+  {
+    "mangle": "dedic_gpio_get_in_mask",
+    "c++": "dedic_gpio_get_in_mask(dedic_gpio_bundle_handle_t, uint32_t *)",
+    "go": "DedicGpioGetInMask"
+  },
+  {
+    "mangle": "dedic_gpio_get_in_offset",
+    "c++": "dedic_gpio_get_in_offset(dedic_gpio_bundle_handle_t, uint32_t *)",
+    "go": "DedicGpioGetInOffset"
+  },
+  {
+    "mangle": "dedic_gpio_get_out_mask",
+    "c++": "dedic_gpio_get_out_mask(dedic_gpio_bundle_handle_t, uint32_t *)",
+    "go": "DedicGpioGetOutMask"
+  },
+  {
+    "mangle": "dedic_gpio_get_out_offset",
+    "c++": "dedic_gpio_get_out_offset(dedic_gpio_bundle_handle_t, uint32_t *)",
+    "go": "DedicGpioGetOutOffset"
+  },
+  {
+    "mangle": "dedic_gpio_new_bundle",
+    "c++": "dedic_gpio_new_bundle(const dedic_gpio_bundle_config_t *, dedic_gpio_bundle_handle_t *)",
+    "go": "(*DedicGpioBundleConfigT).DedicGpioNewBundle"
+  },
+  {
+    "mangle": "gpio_config",
+    "c++": "gpio_config(const gpio_config_t *)",
+    "go": "(*GpioConfigT).GpioConfig"
+  },
+  {
+    "mangle": "gpio_deep_sleep_wakeup_disable",
+    "c++": "gpio_deep_sleep_wakeup_disable(gpio_num_t)",
+    "go": "GpioDeepSleepWakeupDisable"
+  },
+  {
+    "mangle": "gpio_deep_sleep_wakeup_enable",
+    "c++": "gpio_deep_sleep_wakeup_enable(gpio_num_t, gpio_int_type_t)",
+    "go": "GpioDeepSleepWakeupEnable"
+  },
+  {
+    "mangle": "gpio_del_glitch_filter",
+    "c++": "gpio_del_glitch_filter(gpio_glitch_filter_handle_t)",
+    "go": "GpioDelGlitchFilter"
+  },
+  {
+    "mangle": "gpio_dump_io_configuration",
+    "c++": "gpio_dump_io_configuration(int *, uint64_t)",
+    "go": "GpioDumpIoConfiguration"
+  },
+  {
+    "mangle": "gpio_etm_event_bind_gpio",
+    "c++": "gpio_etm_event_bind_gpio(esp_etm_event_handle_t, int)",
+    "go": "GpioEtmEventBindGpio"
+  },
+  {
+    "mangle": "gpio_etm_task_add_gpio",
+    "c++": "gpio_etm_task_add_gpio(esp_etm_task_handle_t, int)",
+    "go": "GpioEtmTaskAddGpio"
+  },
+  {
+    "mangle": "gpio_etm_task_rm_gpio",
+    "c++": "gpio_etm_task_rm_gpio(esp_etm_task_handle_t, int)",
+    "go": "GpioEtmTaskRmGpio"
+  },
+  {
+    "mangle": "gpio_force_hold_all",
+    "c++": "gpio_force_hold_all()",
+    "go": "GpioForceHoldAll"
+  },
+  {
+    "mangle": "gpio_force_unhold_all",
+    "c++": "gpio_force_unhold_all()",
+    "go": "GpioForceUnholdAll"
+  },
+  {
+    "mangle": "gpio_func_sel",
+    "c++": "gpio_func_sel(gpio_num_t, uint32_t)",
+    "go": "GpioFuncSel"
+  },
+  {
+    "mangle": "gpio_get_drive_capability",
+    "c++": "gpio_get_drive_capability(gpio_num_t, gpio_drive_cap_t *)",
+    "go": "GpioGetDriveCapability"
+  },
+  {
+    "mangle": "gpio_get_level",
+    "c++": "gpio_get_level(gpio_num_t)",
+    "go": "GpioGetLevel"
+  },
+  {
+    "mangle": "gpio_glitch_filter_disable",
+    "c++": "gpio_glitch_filter_disable(gpio_glitch_filter_handle_t)",
+    "go": "GpioGlitchFilterDisable"
+  },
+  {
+    "mangle": "gpio_glitch_filter_enable",
+    "c++": "gpio_glitch_filter_enable(gpio_glitch_filter_handle_t)",
+    "go": "GpioGlitchFilterEnable"
+  },
+  {
+    "mangle": "gpio_hold_dis",
+    "c++": "gpio_hold_dis(gpio_num_t)",
+    "go": "GpioHoldDis"
+  },
+  {
+    "mangle": "gpio_hold_en",
+    "c++": "gpio_hold_en(gpio_num_t)",
+    "go": "GpioHoldEn"
+  },
+  {
+    "mangle": "gpio_input_enable",
+    "c++": "gpio_input_enable(gpio_num_t)",
+    "go": "GpioInputEnable"
+  },
+  {
+    "mangle": "gpio_install_isr_service",
+    "c++": "gpio_install_isr_service(int)",
+    "go": "GpioInstallIsrService"
+  },
+  {
+    "mangle": "gpio_intr_disable",
+    "c++": "gpio_intr_disable(gpio_num_t)",
+    "go": "GpioIntrDisable"
+  },
+  {
+    "mangle": "gpio_intr_enable",
+    "c++": "gpio_intr_enable(gpio_num_t)",
+    "go": "GpioIntrEnable"
+  },
+  {
+    "mangle": "gpio_iomux_in",
+    "c++": "gpio_iomux_in(uint32_t, uint32_t)",
+    "go": "GpioIomuxIn"
+  },
+  {
+    "mangle": "gpio_iomux_out",
+    "c++": "gpio_iomux_out(uint8_t, int, bool)",
+    "go": "GpioIomuxOut"
+  },
+  {
+    "mangle": "gpio_isr_handler_add",
+    "c++": "gpio_isr_handler_add(gpio_num_t, gpio_isr_t, void *)",
+    "go": "GpioIsrHandlerAdd"
+  },
+  {
+    "mangle": "gpio_isr_handler_remove",
+    "c++": "gpio_isr_handler_remove(gpio_num_t)",
+    "go": "GpioIsrHandlerRemove"
+  },
+  {
+    "mangle": "gpio_isr_register",
+    "c++": "gpio_isr_register(void (*)(void *), void *, int, gpio_isr_handle_t *)",
+    "go": "GpioIsrRegister"
+  },
+  {
+    "mangle": "gpio_new_etm_event",
+    "c++": "gpio_new_etm_event(const gpio_etm_event_config_t *, esp_etm_event_handle_t *, ...)",
+    "go": "(*GpioEtmEventConfigT).GpioNewEtmEvent"
+  },
+  {
+    "mangle": "gpio_new_etm_task",
+    "c++": "gpio_new_etm_task(const gpio_etm_task_config_t *, esp_etm_task_handle_t *, ...)",
+    "go": "(*GpioEtmTaskConfigT).GpioNewEtmTask"
+  },
+  {
+    "mangle": "gpio_new_flex_glitch_filter",
+    "c++": "gpio_new_flex_glitch_filter(const gpio_flex_glitch_filter_config_t *, gpio_glitch_filter_handle_t *)",
+    "go": "(*GpioFlexGlitchFilterConfigT).GpioNewFlexGlitchFilter"
+  },
+  {
+    "mangle": "gpio_new_pin_glitch_filter",
+    "c++": "gpio_new_pin_glitch_filter(const gpio_pin_glitch_filter_config_t *, gpio_glitch_filter_handle_t *)",
+    "go": "(*GpioPinGlitchFilterConfigT).GpioNewPinGlitchFilter"
+  },
+  {
+    "mangle": "gpio_od_disable",
+    "c++": "gpio_od_disable(gpio_num_t)",
+    "go": "GpioOdDisable"
+  },
+  {
+    "mangle": "gpio_od_enable",
+    "c++": "gpio_od_enable(gpio_num_t)",
+    "go": "GpioOdEnable"
+  },
+  {
+    "mangle": "gpio_output_disable",
+    "c++": "gpio_output_disable(gpio_num_t)",
+    "go": "GpioOutputDisable"
+  },
+  {
+    "mangle": "gpio_output_enable",
+    "c++": "gpio_output_enable(gpio_num_t)",
+    "go": "GpioOutputEnable"
+  },
+  {
+    "mangle": "gpio_pulldown_dis",
+    "c++": "gpio_pulldown_dis(gpio_num_t)",
+    "go": "GpioPulldownDis"
+  },
+  {
+    "mangle": "gpio_pulldown_en",
+    "c++": "gpio_pulldown_en(gpio_num_t)",
+    "go": "GpioPulldownEn"
+  },
+  {
+    "mangle": "gpio_pullup_dis",
+    "c++": "gpio_pullup_dis(gpio_num_t)",
+    "go": "GpioPullupDis"
+  },
+  {
+    "mangle": "gpio_pullup_en",
+    "c++": "gpio_pullup_en(gpio_num_t)",
+    "go": "GpioPullupEn"
+  },
+  {
+    "mangle": "gpio_reset_pin",
+    "c++": "gpio_reset_pin(gpio_num_t)",
+    "go": "GpioResetPin"
+  },
+  {
+    "mangle": "gpio_set_direction",
+    "c++": "gpio_set_direction(gpio_num_t, gpio_mode_t)",
+    "go": "GpioSetDirection"
+  },
+  {
+    "mangle": "gpio_set_drive_capability",
+    "c++": "gpio_set_drive_capability(gpio_num_t, gpio_drive_cap_t)",
+    "go": "GpioSetDriveCapability"
+  },
+  {
+    "mangle": "gpio_set_intr_type",
+    "c++": "gpio_set_intr_type(gpio_num_t, gpio_int_type_t)",
+    "go": "GpioSetIntrType"
+  },
+  {
+    "mangle": "gpio_set_level",
+    "c++": "gpio_set_level(gpio_num_t, uint32_t)",
+    "go": "GpioSetLevel"
+  },
+  {
+    "mangle": "gpio_set_pull_mode",
+    "c++": "gpio_set_pull_mode(gpio_num_t, gpio_pull_mode_t)",
+    "go": "GpioSetPullMode"
+  },
+  {
+    "mangle": "gpio_sleep_sel_dis",
+    "c++": "gpio_sleep_sel_dis(gpio_num_t)",
+    "go": "GpioSleepSelDis"
+  },
+  {
+    "mangle": "gpio_sleep_sel_en",
+    "c++": "gpio_sleep_sel_en(gpio_num_t)",
+    "go": "GpioSleepSelEn"
+  },
+  {
+    "mangle": "gpio_sleep_set_direction",
+    "c++": "gpio_sleep_set_direction(gpio_num_t, gpio_mode_t)",
+    "go": "GpioSleepSetDirection"
+  },
+  {
+    "mangle": "gpio_sleep_set_pull_mode",
+    "c++": "gpio_sleep_set_pull_mode(gpio_num_t, gpio_pull_mode_t)",
+    "go": "GpioSleepSetPullMode"
+  },
+  {
+    "mangle": "gpio_uninstall_isr_service",
+    "c++": "gpio_uninstall_isr_service()",
+    "go": "GpioUninstallIsrService"
+  },
+  {
+    "mangle": "gpio_wakeup_disable",
+    "c++": "gpio_wakeup_disable(gpio_num_t)",
+    "go": "GpioWakeupDisable"
+  },
+  {
+    "mangle": "gpio_wakeup_enable",
+    "c++": "gpio_wakeup_enable(gpio_num_t, gpio_int_type_t)",
+    "go": "GpioWakeupEnable"
+  },
+  {
+    "mangle": "rtc_gpio_deinit",
+    "c++": "rtc_gpio_deinit(gpio_num_t)",
+    "go": "RtcGpioDeinit"
+  },
+  {
+    "mangle": "rtc_gpio_force_hold_dis_all",
+    "c++": "rtc_gpio_force_hold_dis_all()",
+    "go": "RtcGpioForceHoldDisAll"
+  },
+  {
+    "mangle": "rtc_gpio_force_hold_en_all",
+    "c++": "rtc_gpio_force_hold_en_all()",
+    "go": "RtcGpioForceHoldEnAll"
+  },
+  {
+    "mangle": "rtc_gpio_get_drive_capability",
+    "c++": "rtc_gpio_get_drive_capability(gpio_num_t, gpio_drive_cap_t *)",
+    "go": "RtcGpioGetDriveCapability"
+  },
+  {
+    "mangle": "rtc_gpio_get_level",
+    "c++": "rtc_gpio_get_level(gpio_num_t)",
+    "go": "RtcGpioGetLevel"
+  },
+  {
+    "mangle": "rtc_gpio_hold_dis",
+    "c++": "rtc_gpio_hold_dis(gpio_num_t)",
+    "go": "RtcGpioHoldDis"
+  },
+  {
+    "mangle": "rtc_gpio_hold_en",
+    "c++": "rtc_gpio_hold_en(gpio_num_t)",
+    "go": "RtcGpioHoldEn"
+  },
+  {
+    "mangle": "rtc_gpio_init",
+    "c++": "rtc_gpio_init(gpio_num_t)",
+    "go": "RtcGpioInit"
+  },
+  {
+    "mangle": "rtc_gpio_iomux_func_sel",
+    "c++": "rtc_gpio_iomux_func_sel(gpio_num_t, int)",
+    "go": "RtcGpioIomuxFuncSel"
+  },
+  {
+    "mangle": "rtc_gpio_is_valid_gpio",
+    "c++": "rtc_gpio_is_valid_gpio(gpio_num_t)",
+    "go": "RtcGpioIsValidGpio"
+  },
+  {
+    "mangle": "rtc_gpio_isolate",
+    "c++": "rtc_gpio_isolate(gpio_num_t)",
+    "go": "RtcGpioIsolate"
+  },
+  {
+    "mangle": "rtc_gpio_pulldown_dis",
+    "c++": "rtc_gpio_pulldown_dis(gpio_num_t)",
+    "go": "RtcGpioPulldownDis"
+  },
+  {
+    "mangle": "rtc_gpio_pulldown_en",
+    "c++": "rtc_gpio_pulldown_en(gpio_num_t)",
+    "go": "RtcGpioPulldownEn"
+  },
+  {
+    "mangle": "rtc_gpio_pullup_dis",
+    "c++": "rtc_gpio_pullup_dis(gpio_num_t)",
+    "go": "RtcGpioPullupDis"
+  },
+  {
+    "mangle": "rtc_gpio_pullup_en",
+    "c++": "rtc_gpio_pullup_en(gpio_num_t)",
+    "go": "RtcGpioPullupEn"
+  },
+  {
+    "mangle": "rtc_gpio_set_direction",
+    "c++": "rtc_gpio_set_direction(gpio_num_t, rtc_gpio_mode_t)",
+    "go": "RtcGpioSetDirection"
+  },
+  {
+    "mangle": "rtc_gpio_set_direction_in_sleep",
+    "c++": "rtc_gpio_set_direction_in_sleep(gpio_num_t, rtc_gpio_mode_t)",
+    "go": "RtcGpioSetDirectionInSleep"
+  },
+  {
+    "mangle": "rtc_gpio_set_drive_capability",
+    "c++": "rtc_gpio_set_drive_capability(gpio_num_t, gpio_drive_cap_t)",
+    "go": "RtcGpioSetDriveCapability"
+  },
+  {
+    "mangle": "rtc_gpio_set_level",
+    "c++": "rtc_gpio_set_level(gpio_num_t, uint32_t)",
+    "go": "RtcGpioSetLevel"
+  },
+  {
+    "mangle": "rtc_gpio_wakeup_disable",
+    "c++": "rtc_gpio_wakeup_disable(gpio_num_t)",
+    "go": "RtcGpioWakeupDisable"
+  },
+  {
+    "mangle": "rtc_gpio_wakeup_enable",
+    "c++": "rtc_gpio_wakeup_enable(gpio_num_t, gpio_int_type_t)",
+    "go": "RtcGpioWakeupEnable"
+  },
+  {
+    "mangle": "rtc_io_number_get",
+    "c++": "rtc_io_number_get(gpio_num_t)",
+    "go": "RtcIoNumberGet"
+  }
+]

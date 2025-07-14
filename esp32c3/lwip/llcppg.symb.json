@@ -1,0 +1,2352 @@
+[
+  {
+    "mangle": "acd_add",
+    "c++": "acd_add(struct netif *, struct acd *, acd_conflict_callback_t)",
+    "go": "(*Struct netif).AcdAdd"
+  },
+  {
+    "mangle": "acd_arp_reply",
+    "c++": "acd_arp_reply(struct netif *, struct etharp_hdr *)",
+    "go": "(*Struct netif).AcdArpReply"
+  },
+  {
+    "mangle": "acd_netif_ip_addr_changed",
+    "c++": "acd_netif_ip_addr_changed(struct netif *, const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*Struct netif).AcdNetifIpAddrChanged"
+  },
+  {
+    "mangle": "acd_network_changed_link_down",
+    "c++": "acd_network_changed_link_down(struct netif *)",
+    "go": "(*Struct netif).AcdNetworkChangedLinkDown"
+  },
+  {
+    "mangle": "acd_remove",
+    "c++": "acd_remove(struct netif *, struct acd *)",
+    "go": "(*Struct netif).AcdRemove"
+  },
+  {
+    "mangle": "acd_start",
+    "c++": "acd_start(struct netif *, struct acd *, ip4_addr_t)",
+    "go": "(*Struct netif).AcdStart"
+  },
+  {
+    "mangle": "bridgeif_fdb_get_dst_ports",
+    "c++": "bridgeif_fdb_get_dst_ports(void *, struct eth_addr *)",
+    "go": "BridgeifFdbGetDstPorts"
+  },
+  {
+    "mangle": "bridgeif_fdb_init",
+    "c++": "bridgeif_fdb_init(u16_t)",
+    "go": "U16T.BridgeifFdbInit"
+  },
+  {
+    "mangle": "bridgeif_fdb_update_src",
+    "c++": "bridgeif_fdb_update_src(void *, struct eth_addr *, u8_t)",
+    "go": "BridgeifFdbUpdateSrc"
+  },
+  {
+    "mangle": "dbg_lwip_tcp_pcb_show",
+    "c++": "dbg_lwip_tcp_pcb_show()",
+    "go": "DbgLwipTcpPcbShow"
+  },
+  {
+    "mangle": "dbg_lwip_tcp_rxtx_show",
+    "c++": "dbg_lwip_tcp_rxtx_show()",
+    "go": "DbgLwipTcpRxtxShow"
+  },
+  {
+    "mangle": "dbg_lwip_udp_pcb_show",
+    "c++": "dbg_lwip_udp_pcb_show()",
+    "go": "DbgLwipUdpPcbShow"
+  },
+  {
+    "mangle": "dbg_lwip_udp_rxtx_show",
+    "c++": "dbg_lwip_udp_rxtx_show()",
+    "go": "DbgLwipUdpRxtxShow"
+  },
+  {
+    "mangle": "dhcp_append_extra_opts",
+    "c++": "dhcp_append_extra_opts(struct netif *, uint8_t, struct dhcp_msg *, uint16_t *)",
+    "go": "(*Struct netif).DhcpAppendExtraOpts"
+  },
+  {
+    "mangle": "dhcp_cleanup",
+    "c++": "dhcp_cleanup(struct netif *)",
+    "go": "(*Struct netif).DhcpCleanup"
+  },
+  {
+    "mangle": "dhcp_coarse_tmr",
+    "c++": "dhcp_coarse_tmr()",
+    "go": "DhcpCoarseTmr"
+  },
+  {
+    "mangle": "dhcp_fine_timeout_cb",
+    "c++": "dhcp_fine_timeout_cb(void *)",
+    "go": "DhcpFineTimeoutCb"
+  },
+  {
+    "mangle": "dhcp_fine_tmr",
+    "c++": "dhcp_fine_tmr(struct netif *)",
+    "go": "(*Struct netif).DhcpFineTmr"
+  },
+  {
+    "mangle": "dhcp_inform",
+    "c++": "dhcp_inform(struct netif *)",
+    "go": "(*Struct netif).DhcpInform"
+  },
+  {
+    "mangle": "dhcp_network_changed_link_up",
+    "c++": "dhcp_network_changed_link_up(struct netif *)",
+    "go": "(*Struct netif).DhcpNetworkChangedLinkUp"
+  },
+  {
+    "mangle": "dhcp_parse_extra_opts",
+    "c++": "dhcp_parse_extra_opts(struct dhcp *, uint8_t, uint8_t, uint8_t, struct pbuf *, uint16_t)",
+    "go": "(*Struct dhcp).DhcpParseExtraOpts"
+  },
+  {
+    "mangle": "dhcp_release",
+    "c++": "dhcp_release(struct netif *)",
+    "go": "(*Struct netif).DhcpRelease"
+  },
+  {
+    "mangle": "dhcp_release_and_stop",
+    "c++": "dhcp_release_and_stop(struct netif *)",
+    "go": "(*Struct netif).DhcpReleaseAndStop"
+  },
+  {
+    "mangle": "dhcp_renew",
+    "c++": "dhcp_renew(struct netif *)",
+    "go": "(*Struct netif).DhcpRenew"
+  },
+  {
+    "mangle": "dhcp_search_ip_on_mac",
+    "c++": "dhcp_search_ip_on_mac(dhcps_t *, u8_t *, ip4_addr_t *)",
+    "go": "(*DhcpsT).DhcpSearchIpOnMac"
+  },
+  {
+    "mangle": "dhcp_set_struct",
+    "c++": "dhcp_set_struct(struct netif *, struct dhcp *)",
+    "go": "(*Struct netif).DhcpSetStruct"
+  },
+  {
+    "mangle": "dhcp_start",
+    "c++": "dhcp_start(struct netif *)",
+    "go": "(*Struct netif).DhcpStart"
+  },
+  {
+    "mangle": "dhcp_stop",
+    "c++": "dhcp_stop(struct netif *)",
+    "go": "(*Struct netif).DhcpStop"
+  },
+  {
+    "mangle": "dhcp_supplied_address",
+    "c++": "dhcp_supplied_address(const struct netif *)",
+    "go": "(*Struct netif).DhcpSuppliedAddress"
+  },
+  {
+    "mangle": "dhcps_delete",
+    "c++": "dhcps_delete(dhcps_t *)",
+    "go": "(*DhcpsT).DhcpsDelete"
+  },
+  {
+    "mangle": "dhcps_dns_getserver",
+    "c++": "dhcps_dns_getserver(dhcps_t *, ip4_addr_t *)",
+    "go": "(*DhcpsT).DhcpsDnsGetserver"
+  },
+  {
+    "mangle": "dhcps_dns_setserver",
+    "c++": "dhcps_dns_setserver(dhcps_t *, const ip_addr_t *)",
+    "go": "(*DhcpsT).DhcpsDnsSetserver"
+  },
+  {
+    "mangle": "dhcps_new",
+    "c++": "dhcps_new()",
+    "go": "DhcpsNew"
+  },
+  {
+    "mangle": "dhcps_option_info",
+    "c++": "dhcps_option_info(dhcps_t *, u8_t, u32_t)",
+    "go": "(*DhcpsT).DhcpsOptionInfo"
+  },
+  {
+    "mangle": "dhcps_set_new_lease_cb",
+    "c++": "dhcps_set_new_lease_cb(dhcps_t *, dhcps_cb_t, void *)",
+    "go": "(*DhcpsT).DhcpsSetNewLeaseCb"
+  },
+  {
+    "mangle": "dhcps_set_option_info",
+    "c++": "dhcps_set_option_info(dhcps_t *, u8_t, void *, u32_t)",
+    "go": "(*DhcpsT).DhcpsSetOptionInfo"
+  },
+  {
+    "mangle": "dhcps_start",
+    "c++": "dhcps_start(dhcps_t *, struct netif *, ip4_addr_t)",
+    "go": "(*DhcpsT).DhcpsStart"
+  },
+  {
+    "mangle": "dhcps_stop",
+    "c++": "dhcps_stop(dhcps_t *, struct netif *)",
+    "go": "(*DhcpsT).DhcpsStop"
+  },
+  {
+    "mangle": "dns_clear_cache",
+    "c++": "dns_clear_cache()",
+    "go": "DnsClearCache"
+  },
+  {
+    "mangle": "dns_gethostbyname",
+    "c++": "dns_gethostbyname(const char *, ip_addr_t *, dns_found_callback, void *)",
+    "go": "DnsGethostbyname"
+  },
+  {
+    "mangle": "dns_gethostbyname_addrtype",
+    "c++": "dns_gethostbyname_addrtype(const char *, ip_addr_t *, dns_found_callback, void *, u8_t)",
+    "go": "DnsGethostbynameAddrtype"
+  },
+  {
+    "mangle": "dns_getserver",
+    "c++": "dns_getserver(u8_t)",
+    "go": "U8T.DnsGetserver"
+  },
+  {
+    "mangle": "dns_init",
+    "c++": "dns_init()",
+    "go": "DnsInit"
+  },
+  {
+    "mangle": "dns_setserver",
+    "c++": "dns_setserver(u8_t, const ip_addr_t *)",
+    "go": "U8T.DnsSetserver"
+  },
+  {
+    "mangle": "dns_tmr",
+    "c++": "dns_tmr()",
+    "go": "DnsTmr"
+  },
+  {
+    "mangle": "err_to_errno",
+    "c++": "err_to_errno(err_t)",
+    "go": "ErrT.ErrToErrno"
+  },
+  {
+    "mangle": "esp_ping_delete_session",
+    "c++": "esp_ping_delete_session(esp_ping_handle_t)",
+    "go": "EspPingDeleteSession"
+  },
+  {
+    "mangle": "esp_ping_get_profile",
+    "c++": "esp_ping_get_profile(esp_ping_handle_t, esp_ping_profile_t, void *, uint32_t)",
+    "go": "EspPingGetProfile"
+  },
+  {
+    "mangle": "esp_ping_get_target",
+    "c++": "esp_ping_get_target(ping_target_id_t, void *, uint32_t)",
+    "go": "PingTargetIdT.EspPingGetTarget"
+  },
+  {
+    "mangle": "esp_ping_new_session",
+    "c++": "esp_ping_new_session(const esp_ping_config_t *, const esp_ping_callbacks_t *, esp_ping_handle_t *)",
+    "go": "(*EspPingConfigT).EspPingNewSession"
+  },
+  {
+    "mangle": "esp_ping_result",
+    "c++": "esp_ping_result(uint8_t, uint16_t, uint32_t)",
+    "go": "EspPingResult"
+  },
+  {
+    "mangle": "esp_ping_set_target",
+    "c++": "esp_ping_set_target(ping_target_id_t, void *, uint32_t)",
+    "go": "PingTargetIdT.EspPingSetTarget"
+  },
+  {
+    "mangle": "esp_ping_start",
+    "c++": "esp_ping_start(esp_ping_handle_t)",
+    "go": "EspPingStart"
+  },
+  {
+    "mangle": "esp_ping_stop",
+    "c++": "esp_ping_stop(esp_ping_handle_t)",
+    "go": "EspPingStop"
+  },
+  {
+    "mangle": "esp_sntp_enabled",
+    "c++": "esp_sntp_enabled()",
+    "go": "EspSntpEnabled"
+  },
+  {
+    "mangle": "esp_sntp_getoperatingmode",
+    "c++": "esp_sntp_getoperatingmode()",
+    "go": "EspSntpGetoperatingmode"
+  },
+  {
+    "mangle": "esp_sntp_getreachability",
+    "c++": "esp_sntp_getreachability(uint8_t)",
+    "go": "EspSntpGetreachability"
+  },
+  {
+    "mangle": "esp_sntp_getserver",
+    "c++": "esp_sntp_getserver(u8_t)",
+    "go": "U8T.EspSntpGetserver"
+  },
+  {
+    "mangle": "esp_sntp_getservername",
+    "c++": "esp_sntp_getservername(u8_t)",
+    "go": "U8T.EspSntpGetservername"
+  },
+  {
+    "mangle": "esp_sntp_init",
+    "c++": "esp_sntp_init()",
+    "go": "EspSntpInit"
+  },
+  {
+    "mangle": "esp_sntp_setoperatingmode",
+    "c++": "esp_sntp_setoperatingmode(esp_sntp_operatingmode_t)",
+    "go": "EspSntpOperatingmodeT.EspSntpSetoperatingmode"
+  },
+  {
+    "mangle": "esp_sntp_setserver",
+    "c++": "esp_sntp_setserver(u8_t, const ip_addr_t *)",
+    "go": "U8T.EspSntpSetserver"
+  },
+  {
+    "mangle": "esp_sntp_setservername",
+    "c++": "esp_sntp_setservername(u8_t, const char *)",
+    "go": "U8T.EspSntpSetservername"
+  },
+  {
+    "mangle": "esp_sntp_stop",
+    "c++": "esp_sntp_stop()",
+    "go": "EspSntpStop"
+  },
+  {
+    "mangle": "esp_vfs_lwip_sockets_register",
+    "c++": "esp_vfs_lwip_sockets_register()",
+    "go": "EspVfsLwipSocketsRegister"
+  },
+  {
+    "mangle": "etharp_acd_announce",
+    "c++": "etharp_acd_announce(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).EtharpAcdAnnounce"
+  },
+  {
+    "mangle": "etharp_acd_probe",
+    "c++": "etharp_acd_probe(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).EtharpAcdProbe"
+  },
+  {
+    "mangle": "etharp_add_static_entry",
+    "c++": "etharp_add_static_entry(const ip4_addr_t *, struct eth_addr *)",
+    "go": "(*Ip4AddrT).EtharpAddStaticEntry"
+  },
+  {
+    "mangle": "etharp_cleanup_netif",
+    "c++": "etharp_cleanup_netif(struct netif *)",
+    "go": "(*Struct netif).EtharpCleanupNetif"
+  },
+  {
+    "mangle": "etharp_find_addr",
+    "c++": "etharp_find_addr(struct netif *, const ip4_addr_t *, struct eth_addr **, const ip4_addr_t **)",
+    "go": "(*Struct netif).EtharpFindAddr"
+  },
+  {
+    "mangle": "etharp_get_entry",
+    "c++": "etharp_get_entry(size_t, ip4_addr_t **, struct netif **, struct eth_addr **)",
+    "go": "EtharpGetEntry"
+  },
+  {
+    "mangle": "etharp_input",
+    "c++": "etharp_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).EtharpInput"
+  },
+  {
+    "mangle": "etharp_output",
+    "c++": "etharp_output(struct netif *, struct pbuf *, const ip4_addr_t *)",
+    "go": "(*Struct netif).EtharpOutput"
+  },
+  {
+    "mangle": "etharp_query",
+    "c++": "etharp_query(struct netif *, const ip4_addr_t *, struct pbuf *)",
+    "go": "(*Struct netif).EtharpQuery"
+  },
+  {
+    "mangle": "etharp_remove_static_entry",
+    "c++": "etharp_remove_static_entry(const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).EtharpRemoveStaticEntry"
+  },
+  {
+    "mangle": "etharp_request",
+    "c++": "etharp_request(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).EtharpRequest"
+  },
+  {
+    "mangle": "etharp_tmr",
+    "c++": "etharp_tmr()",
+    "go": "EtharpTmr"
+  },
+  {
+    "mangle": "ethernet_input",
+    "c++": "ethernet_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).EthernetInput"
+  },
+  {
+    "mangle": "ethernet_output",
+    "c++": "ethernet_output(struct netif *, struct pbuf *, const struct eth_addr *, const struct eth_addr *, u16_t)",
+    "go": "(*Struct netif).EthernetOutput"
+  },
+  {
+    "mangle": "ethip6_output",
+    "c++": "ethip6_output(struct netif *, struct pbuf *, const ip6_addr_t *)",
+    "go": "(*Struct netif).Ethip6Output"
+  },
+  {
+    "mangle": "icmp6_dest_unreach",
+    "c++": "icmp6_dest_unreach(struct pbuf *, enum icmp6_dur_code)",
+    "go": "(*Struct pbuf).Icmp6DestUnreach"
+  },
+  {
+    "mangle": "icmp6_input",
+    "c++": "icmp6_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).Icmp6Input"
+  },
+  {
+    "mangle": "icmp6_packet_too_big",
+    "c++": "icmp6_packet_too_big(struct pbuf *, u32_t)",
+    "go": "(*Struct pbuf).Icmp6PacketTooBig"
+  },
+  {
+    "mangle": "icmp6_param_problem",
+    "c++": "icmp6_param_problem(struct pbuf *, enum icmp6_pp_code, const void *)",
+    "go": "(*Struct pbuf).Icmp6ParamProblem"
+  },
+  {
+    "mangle": "icmp6_time_exceeded",
+    "c++": "icmp6_time_exceeded(struct pbuf *, enum icmp6_te_code)",
+    "go": "(*Struct pbuf).Icmp6TimeExceeded"
+  },
+  {
+    "mangle": "icmp6_time_exceeded_with_addrs",
+    "c++": "icmp6_time_exceeded_with_addrs(struct pbuf *, enum icmp6_te_code, const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Struct pbuf).Icmp6TimeExceededWithAddrs"
+  },
+  {
+    "mangle": "icmp_dest_unreach",
+    "c++": "icmp_dest_unreach(struct pbuf *, enum icmp_dur_type)",
+    "go": "(*Struct pbuf).IcmpDestUnreach"
+  },
+  {
+    "mangle": "icmp_input",
+    "c++": "icmp_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).IcmpInput"
+  },
+  {
+    "mangle": "igmp_init",
+    "c++": "igmp_init()",
+    "go": "IgmpInit"
+  },
+  {
+    "mangle": "igmp_input",
+    "c++": "igmp_input(struct pbuf *, struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct pbuf).IgmpInput"
+  },
+  {
+    "mangle": "igmp_joingroup",
+    "c++": "igmp_joingroup(const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).IgmpJoingroup"
+  },
+  {
+    "mangle": "igmp_joingroup_netif",
+    "c++": "igmp_joingroup_netif(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).IgmpJoingroupNetif"
+  },
+  {
+    "mangle": "igmp_leavegroup",
+    "c++": "igmp_leavegroup(const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).IgmpLeavegroup"
+  },
+  {
+    "mangle": "igmp_leavegroup_netif",
+    "c++": "igmp_leavegroup_netif(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).IgmpLeavegroupNetif"
+  },
+  {
+    "mangle": "igmp_lookfor_group",
+    "c++": "igmp_lookfor_group(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).IgmpLookforGroup"
+  },
+  {
+    "mangle": "igmp_report_groups",
+    "c++": "igmp_report_groups(struct netif *)",
+    "go": "(*Struct netif).IgmpReportGroups"
+  },
+  {
+    "mangle": "igmp_start",
+    "c++": "igmp_start(struct netif *)",
+    "go": "(*Struct netif).IgmpStart"
+  },
+  {
+    "mangle": "igmp_stop",
+    "c++": "igmp_stop(struct netif *)",
+    "go": "(*Struct netif).IgmpStop"
+  },
+  {
+    "mangle": "igmp_tmr",
+    "c++": "igmp_tmr()",
+    "go": "IgmpTmr"
+  },
+  {
+    "mangle": "inet_chksum",
+    "c++": "inet_chksum(const void *, u16_t)",
+    "go": "InetChksum"
+  },
+  {
+    "mangle": "inet_chksum_pbuf",
+    "c++": "inet_chksum_pbuf(struct pbuf *)",
+    "go": "(*Struct pbuf).InetChksumPbuf"
+  },
+  {
+    "mangle": "inet_chksum_pseudo",
+    "c++": "inet_chksum_pseudo(struct pbuf *, u8_t, u16_t, const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Struct pbuf).InetChksumPseudo"
+  },
+  {
+    "mangle": "inet_chksum_pseudo_partial",
+    "c++": "inet_chksum_pseudo_partial(struct pbuf *, u8_t, u16_t, u16_t, const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Struct pbuf).InetChksumPseudoPartial"
+  },
+  {
+    "mangle": "ip4_addr_isbroadcast_u32",
+    "c++": "ip4_addr_isbroadcast_u32(u32_t, const struct netif *)",
+    "go": "U32T.Ip4AddrIsbroadcastU32"
+  },
+  {
+    "mangle": "ip4_addr_netmask_valid",
+    "c++": "ip4_addr_netmask_valid(u32_t)",
+    "go": "U32T.Ip4AddrNetmaskValid"
+  },
+  {
+    "mangle": "ip4_frag",
+    "c++": "ip4_frag(struct pbuf *, struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct pbuf).Ip4Frag"
+  },
+  {
+    "mangle": "ip4_input",
+    "c++": "ip4_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).Ip4Input"
+  },
+  {
+    "mangle": "ip4_output",
+    "c++": "ip4_output(struct pbuf *, const ip4_addr_t *, const ip4_addr_t *, u8_t, u8_t, u8_t)",
+    "go": "(*Struct pbuf).Ip4Output"
+  },
+  {
+    "mangle": "ip4_output_if",
+    "c++": "ip4_output_if(struct pbuf *, const ip4_addr_t *, const ip4_addr_t *, u8_t, u8_t, u8_t, struct netif *)",
+    "go": "(*Struct pbuf).Ip4OutputIf"
+  },
+  {
+    "mangle": "ip4_output_if_opt",
+    "c++": "ip4_output_if_opt(struct pbuf *, const ip4_addr_t *, const ip4_addr_t *, u8_t, u8_t, u8_t, struct netif *, void *, u16_t)",
+    "go": "(*Struct pbuf).Ip4OutputIfOpt"
+  },
+  {
+    "mangle": "ip4_output_if_opt_src",
+    "c++": "ip4_output_if_opt_src(struct pbuf *, const ip4_addr_t *, const ip4_addr_t *, u8_t, u8_t, u8_t, struct netif *, void *, u16_t)",
+    "go": "(*Struct pbuf).Ip4OutputIfOptSrc"
+  },
+  {
+    "mangle": "ip4_output_if_src",
+    "c++": "ip4_output_if_src(struct pbuf *, const ip4_addr_t *, const ip4_addr_t *, u8_t, u8_t, u8_t, struct netif *)",
+    "go": "(*Struct pbuf).Ip4OutputIfSrc"
+  },
+  {
+    "mangle": "ip4_route",
+    "c++": "ip4_route(const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).Ip4Route"
+  },
+  {
+    "mangle": "ip4_route_src",
+    "c++": "ip4_route_src(const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).Ip4RouteSrc"
+  },
+  {
+    "mangle": "ip4_route_src_hook",
+    "c++": "ip4_route_src_hook(const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).Ip4RouteSrcHook"
+  },
+  {
+    "mangle": "ip4_set_default_multicast_netif",
+    "c++": "ip4_set_default_multicast_netif(struct netif *)",
+    "go": "(*Struct netif).Ip4SetDefaultMulticastNetif"
+  },
+  {
+    "mangle": "ip4addr_aton",
+    "c++": "ip4addr_aton(const char *, ip4_addr_t *)",
+    "go": "Ip4addrAton"
+  },
+  {
+    "mangle": "ip4addr_ntoa",
+    "c++": "ip4addr_ntoa(const ip4_addr_t *)",
+    "go": "(*Ip4AddrT).Ip4addrNtoa"
+  },
+  {
+    "mangle": "ip4addr_ntoa_r",
+    "c++": "ip4addr_ntoa_r(const ip4_addr_t *, char *, int)",
+    "go": "(*Ip4AddrT).Ip4addrNtoaR"
+  },
+  {
+    "mangle": "ip6_chksum_pseudo",
+    "c++": "ip6_chksum_pseudo(struct pbuf *, u8_t, u16_t, const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Struct pbuf).Ip6ChksumPseudo"
+  },
+  {
+    "mangle": "ip6_chksum_pseudo_partial",
+    "c++": "ip6_chksum_pseudo_partial(struct pbuf *, u8_t, u16_t, u16_t, const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Struct pbuf).Ip6ChksumPseudoPartial"
+  },
+  {
+    "mangle": "ip6_frag",
+    "c++": "ip6_frag(struct pbuf *, struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct pbuf).Ip6Frag"
+  },
+  {
+    "mangle": "ip6_input",
+    "c++": "ip6_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).Ip6Input"
+  },
+  {
+    "mangle": "ip6_options_add_hbh_ra",
+    "c++": "ip6_options_add_hbh_ra(struct pbuf *, u8_t, u8_t)",
+    "go": "(*Struct pbuf).Ip6OptionsAddHbhRa"
+  },
+  {
+    "mangle": "ip6_output",
+    "c++": "ip6_output(struct pbuf *, const ip6_addr_t *, const ip6_addr_t *, u8_t, u8_t, u8_t)",
+    "go": "(*Struct pbuf).Ip6Output"
+  },
+  {
+    "mangle": "ip6_output_if",
+    "c++": "ip6_output_if(struct pbuf *, const ip6_addr_t *, const ip6_addr_t *, u8_t, u8_t, u8_t, struct netif *)",
+    "go": "(*Struct pbuf).Ip6OutputIf"
+  },
+  {
+    "mangle": "ip6_output_if_src",
+    "c++": "ip6_output_if_src(struct pbuf *, const ip6_addr_t *, const ip6_addr_t *, u8_t, u8_t, u8_t, struct netif *)",
+    "go": "(*Struct pbuf).Ip6OutputIfSrc"
+  },
+  {
+    "mangle": "ip6_route",
+    "c++": "ip6_route(const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Ip6Route"
+  },
+  {
+    "mangle": "ip6_select_source_address",
+    "c++": "ip6_select_source_address(struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct netif).Ip6SelectSourceAddress"
+  },
+  {
+    "mangle": "ip6addr_aton",
+    "c++": "ip6addr_aton(const char *, ip6_addr_t *)",
+    "go": "Ip6addrAton"
+  },
+  {
+    "mangle": "ip6addr_ntoa",
+    "c++": "ip6addr_ntoa(const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Ip6addrNtoa"
+  },
+  {
+    "mangle": "ip6addr_ntoa_r",
+    "c++": "ip6addr_ntoa_r(const ip6_addr_t *, char *, int)",
+    "go": "(*Ip6AddrT).Ip6addrNtoaR"
+  },
+  {
+    "mangle": "ip_chksum_pseudo",
+    "c++": "ip_chksum_pseudo(struct pbuf *, u8_t, u16_t, const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*Struct pbuf).IpChksumPseudo"
+  },
+  {
+    "mangle": "ip_chksum_pseudo_partial",
+    "c++": "ip_chksum_pseudo_partial(struct pbuf *, u8_t, u16_t, u16_t, const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*Struct pbuf).IpChksumPseudoPartial"
+  },
+  {
+    "mangle": "ip_input",
+    "c++": "ip_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).IpInput"
+  },
+  {
+    "mangle": "ipaddr_addr",
+    "c++": "ipaddr_addr(const char *)",
+    "go": "IpaddrAddr"
+  },
+  {
+    "mangle": "ipaddr_aton",
+    "c++": "ipaddr_aton(const char *, ip_addr_t *)",
+    "go": "IpaddrAton"
+  },
+  {
+    "mangle": "ipaddr_ntoa",
+    "c++": "ipaddr_ntoa(const ip_addr_t *)",
+    "go": "(*IpAddrT).IpaddrNtoa"
+  },
+  {
+    "mangle": "ipaddr_ntoa_r",
+    "c++": "ipaddr_ntoa_r(const ip_addr_t *, char *, int)",
+    "go": "(*IpAddrT).IpaddrNtoaR"
+  },
+  {
+    "mangle": "lwip_getsockopt_impl_ext",
+    "c++": "lwip_getsockopt_impl_ext(struct lwip_sock *, int, int, void *, uint32_t *, int *)",
+    "go": "(*Struct lwipSock).LwipGetsockoptImplExt"
+  },
+  {
+    "mangle": "lwip_hook_ip6_input",
+    "c++": "lwip_hook_ip6_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).LwipHookIp6Input"
+  },
+  {
+    "mangle": "lwip_hook_tcp_isn",
+    "c++": "lwip_hook_tcp_isn(const ip_addr_t *, u16_t, const ip_addr_t *, u16_t)",
+    "go": "(*IpAddrT).LwipHookTcpIsn"
+  },
+  {
+    "mangle": "lwip_htonl",
+    "c++": "lwip_htonl(u32_t)",
+    "go": "U32T.LwipHtonl"
+  },
+  {
+    "mangle": "lwip_htons",
+    "c++": "lwip_htons(u16_t)",
+    "go": "U16T.LwipHtons"
+  },
+  {
+    "mangle": "lwip_if_indextoname",
+    "c++": "lwip_if_indextoname(unsigned int, char *)",
+    "go": "LwipIfIndextoname"
+  },
+  {
+    "mangle": "lwip_if_nametoindex",
+    "c++": "lwip_if_nametoindex(const char *)",
+    "go": "LwipIfNametoindex"
+  },
+  {
+    "mangle": "lwip_init",
+    "c++": "lwip_init()",
+    "go": "LwipInit"
+  },
+  {
+    "mangle": "lwip_init_tcp_isn",
+    "c++": "lwip_init_tcp_isn(u32_t, const u8_t *)",
+    "go": "U32T.LwipInitTcpIsn"
+  },
+  {
+    "mangle": "lwip_itoa",
+    "c++": "lwip_itoa(char *, size_t, int)",
+    "go": "LwipItoa"
+  },
+  {
+    "mangle": "lwip_netconn_do_accepted",
+    "c++": "lwip_netconn_do_accepted(void *)",
+    "go": "LwipNetconnDoAccepted"
+  },
+  {
+    "mangle": "lwip_netconn_do_bind",
+    "c++": "lwip_netconn_do_bind(void *)",
+    "go": "LwipNetconnDoBind"
+  },
+  {
+    "mangle": "lwip_netconn_do_bind_if",
+    "c++": "lwip_netconn_do_bind_if(void *)",
+    "go": "LwipNetconnDoBindIf"
+  },
+  {
+    "mangle": "lwip_netconn_do_close",
+    "c++": "lwip_netconn_do_close(void *)",
+    "go": "LwipNetconnDoClose"
+  },
+  {
+    "mangle": "lwip_netconn_do_connect",
+    "c++": "lwip_netconn_do_connect(void *)",
+    "go": "LwipNetconnDoConnect"
+  },
+  {
+    "mangle": "lwip_netconn_do_delconn",
+    "c++": "lwip_netconn_do_delconn(void *)",
+    "go": "LwipNetconnDoDelconn"
+  },
+  {
+    "mangle": "lwip_netconn_do_disconnect",
+    "c++": "lwip_netconn_do_disconnect(void *)",
+    "go": "LwipNetconnDoDisconnect"
+  },
+  {
+    "mangle": "lwip_netconn_do_getaddr",
+    "c++": "lwip_netconn_do_getaddr(void *)",
+    "go": "LwipNetconnDoGetaddr"
+  },
+  {
+    "mangle": "lwip_netconn_do_gethostbyname",
+    "c++": "lwip_netconn_do_gethostbyname(void *)",
+    "go": "LwipNetconnDoGethostbyname"
+  },
+  {
+    "mangle": "lwip_netconn_do_join_leave_group",
+    "c++": "lwip_netconn_do_join_leave_group(void *)",
+    "go": "LwipNetconnDoJoinLeaveGroup"
+  },
+  {
+    "mangle": "lwip_netconn_do_join_leave_group_netif",
+    "c++": "lwip_netconn_do_join_leave_group_netif(void *)",
+    "go": "LwipNetconnDoJoinLeaveGroupNetif"
+  },
+  {
+    "mangle": "lwip_netconn_do_listen",
+    "c++": "lwip_netconn_do_listen(void *)",
+    "go": "LwipNetconnDoListen"
+  },
+  {
+    "mangle": "lwip_netconn_do_newconn",
+    "c++": "lwip_netconn_do_newconn(void *)",
+    "go": "LwipNetconnDoNewconn"
+  },
+  {
+    "mangle": "lwip_netconn_do_recv",
+    "c++": "lwip_netconn_do_recv(void *)",
+    "go": "LwipNetconnDoRecv"
+  },
+  {
+    "mangle": "lwip_netconn_do_send",
+    "c++": "lwip_netconn_do_send(void *)",
+    "go": "LwipNetconnDoSend"
+  },
+  {
+    "mangle": "lwip_netconn_do_write",
+    "c++": "lwip_netconn_do_write(void *)",
+    "go": "LwipNetconnDoWrite"
+  },
+  {
+    "mangle": "lwip_netconn_is_deallocated_msg",
+    "c++": "lwip_netconn_is_deallocated_msg(void *)",
+    "go": "LwipNetconnIsDeallocatedMsg"
+  },
+  {
+    "mangle": "lwip_netconn_is_err_msg",
+    "c++": "lwip_netconn_is_err_msg(void *, err_t *)",
+    "go": "LwipNetconnIsErrMsg"
+  },
+  {
+    "mangle": "lwip_setsockopt_impl_ext",
+    "c++": "lwip_setsockopt_impl_ext(struct lwip_sock *, int, int, const void *, uint32_t, int *)",
+    "go": "(*Struct lwipSock).LwipSetsockoptImplExt"
+  },
+  {
+    "mangle": "lwip_socket_dbg_get_socket",
+    "c++": "lwip_socket_dbg_get_socket(int)",
+    "go": "LwipSocketDbgGetSocket"
+  },
+  {
+    "mangle": "lwip_stricmp",
+    "c++": "lwip_stricmp(const char *, const char *)",
+    "go": "LwipStricmp"
+  },
+  {
+    "mangle": "lwip_strnicmp",
+    "c++": "lwip_strnicmp(const char *, const char *, size_t)",
+    "go": "LwipStrnicmp"
+  },
+  {
+    "mangle": "lwip_strnistr",
+    "c++": "lwip_strnistr(const char *, const char *, size_t)",
+    "go": "LwipStrnistr"
+  },
+  {
+    "mangle": "lwip_strnstr",
+    "c++": "lwip_strnstr(const char *, const char *, size_t)",
+    "go": "LwipStrnstr"
+  },
+  {
+    "mangle": "mem_calloc",
+    "c++": "mem_calloc(mem_size_t, mem_size_t)",
+    "go": "MemSizeT.MemCalloc"
+  },
+  {
+    "mangle": "mem_free",
+    "c++": "mem_free(void *)",
+    "go": "MemFree"
+  },
+  {
+    "mangle": "mem_free_callback",
+    "c++": "mem_free_callback(void *)",
+    "go": "MemFreeCallback"
+  },
+  {
+    "mangle": "mem_init",
+    "c++": "mem_init()",
+    "go": "MemInit"
+  },
+  {
+    "mangle": "mem_malloc",
+    "c++": "mem_malloc(mem_size_t)",
+    "go": "MemSizeT.MemMalloc"
+  },
+  {
+    "mangle": "mem_trim",
+    "c++": "mem_trim(void *, mem_size_t)",
+    "go": "MemTrim"
+  },
+  {
+    "mangle": "memp_free",
+    "c++": "memp_free(memp_t, void *)",
+    "go": "MempT.MempFree"
+  },
+  {
+    "mangle": "memp_free_pool",
+    "c++": "memp_free_pool(const struct memp_desc *, void *)",
+    "go": "(*Struct mempDesc).MempFreePool"
+  },
+  {
+    "mangle": "memp_init",
+    "c++": "memp_init()",
+    "go": "MempInit"
+  },
+  {
+    "mangle": "memp_init_pool",
+    "c++": "memp_init_pool(const struct memp_desc *)",
+    "go": "(*Struct mempDesc).MempInitPool"
+  },
+  {
+    "mangle": "memp_malloc",
+    "c++": "memp_malloc(memp_t)",
+    "go": "MempT.MempMalloc"
+  },
+  {
+    "mangle": "memp_malloc_pool",
+    "c++": "memp_malloc_pool(const struct memp_desc *)",
+    "go": "(*Struct mempDesc).MempMallocPool"
+  },
+  {
+    "mangle": "mld6_input",
+    "c++": "mld6_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).Mld6Input"
+  },
+  {
+    "mangle": "mld6_joingroup",
+    "c++": "mld6_joingroup(const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Mld6Joingroup"
+  },
+  {
+    "mangle": "mld6_joingroup_netif",
+    "c++": "mld6_joingroup_netif(struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct netif).Mld6JoingroupNetif"
+  },
+  {
+    "mangle": "mld6_leavegroup",
+    "c++": "mld6_leavegroup(const ip6_addr_t *, const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Mld6Leavegroup"
+  },
+  {
+    "mangle": "mld6_leavegroup_netif",
+    "c++": "mld6_leavegroup_netif(struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct netif).Mld6LeavegroupNetif"
+  },
+  {
+    "mangle": "mld6_lookfor_group",
+    "c++": "mld6_lookfor_group(struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct netif).Mld6LookforGroup"
+  },
+  {
+    "mangle": "mld6_report_groups",
+    "c++": "mld6_report_groups(struct netif *)",
+    "go": "(*Struct netif).Mld6ReportGroups"
+  },
+  {
+    "mangle": "mld6_stop",
+    "c++": "mld6_stop(struct netif *)",
+    "go": "(*Struct netif).Mld6Stop"
+  },
+  {
+    "mangle": "mld6_tmr",
+    "c++": "mld6_tmr()",
+    "go": "Mld6Tmr"
+  },
+  {
+    "mangle": "nd6_adjust_mld_membership",
+    "c++": "nd6_adjust_mld_membership(struct netif *, s8_t, u8_t)",
+    "go": "(*Struct netif).Nd6AdjustMldMembership"
+  },
+  {
+    "mangle": "nd6_cleanup_netif",
+    "c++": "nd6_cleanup_netif(struct netif *)",
+    "go": "(*Struct netif).Nd6CleanupNetif"
+  },
+  {
+    "mangle": "nd6_clear_destination_cache",
+    "c++": "nd6_clear_destination_cache()",
+    "go": "Nd6ClearDestinationCache"
+  },
+  {
+    "mangle": "nd6_find_route",
+    "c++": "nd6_find_route(const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Nd6FindRoute"
+  },
+  {
+    "mangle": "nd6_get_destination_mtu",
+    "c++": "nd6_get_destination_mtu(const ip6_addr_t *, struct netif *)",
+    "go": "(*Ip6AddrT).Nd6GetDestinationMtu"
+  },
+  {
+    "mangle": "nd6_get_next_hop_addr_or_queue",
+    "c++": "nd6_get_next_hop_addr_or_queue(struct netif *, struct pbuf *, const ip6_addr_t *, const u8_t **)",
+    "go": "(*Struct netif).Nd6GetNextHopAddrOrQueue"
+  },
+  {
+    "mangle": "nd6_input",
+    "c++": "nd6_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).Nd6Input"
+  },
+  {
+    "mangle": "nd6_reachability_hint",
+    "c++": "nd6_reachability_hint(const ip6_addr_t *)",
+    "go": "(*Ip6AddrT).Nd6ReachabilityHint"
+  },
+  {
+    "mangle": "nd6_restart_netif",
+    "c++": "nd6_restart_netif(struct netif *)",
+    "go": "(*Struct netif).Nd6RestartNetif"
+  },
+  {
+    "mangle": "nd6_tmr",
+    "c++": "nd6_tmr()",
+    "go": "Nd6Tmr"
+  },
+  {
+    "mangle": "netbiosns_init",
+    "c++": "netbiosns_init()",
+    "go": "NetbiosnsInit"
+  },
+  {
+    "mangle": "netbiosns_set_name",
+    "c++": "netbiosns_set_name(const char *)",
+    "go": "NetbiosnsSetName"
+  },
+  {
+    "mangle": "netbiosns_stop",
+    "c++": "netbiosns_stop()",
+    "go": "NetbiosnsStop"
+  },
+  {
+    "mangle": "netbuf_alloc",
+    "c++": "netbuf_alloc(struct netbuf *, u16_t)",
+    "go": "(*Struct netbuf).NetbufAlloc"
+  },
+  {
+    "mangle": "netbuf_chain",
+    "c++": "netbuf_chain(struct netbuf *, struct netbuf *)",
+    "go": "(*Struct netbuf).NetbufChain"
+  },
+  {
+    "mangle": "netbuf_data",
+    "c++": "netbuf_data(struct netbuf *, void **, u16_t *)",
+    "go": "(*Struct netbuf).NetbufData"
+  },
+  {
+    "mangle": "netbuf_delete",
+    "c++": "netbuf_delete(struct netbuf *)",
+    "go": "(*Struct netbuf).NetbufDelete"
+  },
+  {
+    "mangle": "netbuf_first",
+    "c++": "netbuf_first(struct netbuf *)",
+    "go": "(*Struct netbuf).NetbufFirst"
+  },
+  {
+    "mangle": "netbuf_free",
+    "c++": "netbuf_free(struct netbuf *)",
+    "go": "(*Struct netbuf).NetbufFree"
+  },
+  {
+    "mangle": "netbuf_new",
+    "c++": "netbuf_new()",
+    "go": "NetbufNew"
+  },
+  {
+    "mangle": "netbuf_next",
+    "c++": "netbuf_next(struct netbuf *)",
+    "go": "(*Struct netbuf).NetbufNext"
+  },
+  {
+    "mangle": "netbuf_ref",
+    "c++": "netbuf_ref(struct netbuf *, const void *, u16_t)",
+    "go": "(*Struct netbuf).NetbufRef"
+  },
+  {
+    "mangle": "netconn_accept",
+    "c++": "netconn_accept(struct netconn *, struct netconn **)",
+    "go": "(*Struct netconn).NetconnAccept"
+  },
+  {
+    "mangle": "netconn_alloc",
+    "c++": "netconn_alloc(enum netconn_type, netconn_callback)",
+    "go": "Enum netconnType.NetconnAlloc"
+  },
+  {
+    "mangle": "netconn_bind",
+    "c++": "netconn_bind(struct netconn *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct netconn).NetconnBind"
+  },
+  {
+    "mangle": "netconn_bind_if",
+    "c++": "netconn_bind_if(struct netconn *, u8_t)",
+    "go": "(*Struct netconn).NetconnBindIf"
+  },
+  {
+    "mangle": "netconn_close",
+    "c++": "netconn_close(struct netconn *)",
+    "go": "(*Struct netconn).NetconnClose"
+  },
+  {
+    "mangle": "netconn_connect",
+    "c++": "netconn_connect(struct netconn *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct netconn).NetconnConnect"
+  },
+  {
+    "mangle": "netconn_delete",
+    "c++": "netconn_delete(struct netconn *)",
+    "go": "(*Struct netconn).NetconnDelete"
+  },
+  {
+    "mangle": "netconn_disconnect",
+    "c++": "netconn_disconnect(struct netconn *)",
+    "go": "(*Struct netconn).NetconnDisconnect"
+  },
+  {
+    "mangle": "netconn_err",
+    "c++": "netconn_err(struct netconn *)",
+    "go": "(*Struct netconn).NetconnErr"
+  },
+  {
+    "mangle": "netconn_free",
+    "c++": "netconn_free(struct netconn *)",
+    "go": "(*Struct netconn).NetconnFree"
+  },
+  {
+    "mangle": "netconn_getaddr",
+    "c++": "netconn_getaddr(struct netconn *, ip_addr_t *, u16_t *, u8_t)",
+    "go": "(*Struct netconn).NetconnGetaddr"
+  },
+  {
+    "mangle": "netconn_gethostbyname_addrtype",
+    "c++": "netconn_gethostbyname_addrtype(const char *, ip_addr_t *, u8_t)",
+    "go": "NetconnGethostbynameAddrtype"
+  },
+  {
+    "mangle": "netconn_join_leave_group",
+    "c++": "netconn_join_leave_group(struct netconn *, const ip_addr_t *, const ip_addr_t *, enum netconn_igmp)",
+    "go": "(*Struct netconn).NetconnJoinLeaveGroup"
+  },
+  {
+    "mangle": "netconn_join_leave_group_netif",
+    "c++": "netconn_join_leave_group_netif(struct netconn *, const ip_addr_t *, u8_t, enum netconn_igmp)",
+    "go": "(*Struct netconn).NetconnJoinLeaveGroupNetif"
+  },
+  {
+    "mangle": "netconn_listen_with_backlog",
+    "c++": "netconn_listen_with_backlog(struct netconn *, u8_t)",
+    "go": "(*Struct netconn).NetconnListenWithBacklog"
+  },
+  {
+    "mangle": "netconn_new_with_proto_and_callback",
+    "c++": "netconn_new_with_proto_and_callback(enum netconn_type, u8_t, netconn_callback)",
+    "go": "Enum netconnType.NetconnNewWithProtoAndCallback"
+  },
+  {
+    "mangle": "netconn_prepare_delete",
+    "c++": "netconn_prepare_delete(struct netconn *)",
+    "go": "(*Struct netconn).NetconnPrepareDelete"
+  },
+  {
+    "mangle": "netconn_recv",
+    "c++": "netconn_recv(struct netconn *, struct netbuf **)",
+    "go": "(*Struct netconn).NetconnRecv"
+  },
+  {
+    "mangle": "netconn_recv_tcp_pbuf",
+    "c++": "netconn_recv_tcp_pbuf(struct netconn *, struct pbuf **)",
+    "go": "(*Struct netconn).NetconnRecvTcpPbuf"
+  },
+  {
+    "mangle": "netconn_recv_tcp_pbuf_flags",
+    "c++": "netconn_recv_tcp_pbuf_flags(struct netconn *, struct pbuf **, u8_t)",
+    "go": "(*Struct netconn).NetconnRecvTcpPbufFlags"
+  },
+  {
+    "mangle": "netconn_recv_udp_raw_netbuf",
+    "c++": "netconn_recv_udp_raw_netbuf(struct netconn *, struct netbuf **)",
+    "go": "(*Struct netconn).NetconnRecvUdpRawNetbuf"
+  },
+  {
+    "mangle": "netconn_recv_udp_raw_netbuf_flags",
+    "c++": "netconn_recv_udp_raw_netbuf_flags(struct netconn *, struct netbuf **, u8_t)",
+    "go": "(*Struct netconn).NetconnRecvUdpRawNetbufFlags"
+  },
+  {
+    "mangle": "netconn_send",
+    "c++": "netconn_send(struct netconn *, struct netbuf *)",
+    "go": "(*Struct netconn).NetconnSend"
+  },
+  {
+    "mangle": "netconn_sendto",
+    "c++": "netconn_sendto(struct netconn *, struct netbuf *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct netconn).NetconnSendto"
+  },
+  {
+    "mangle": "netconn_shutdown",
+    "c++": "netconn_shutdown(struct netconn *, u8_t, u8_t)",
+    "go": "(*Struct netconn).NetconnShutdown"
+  },
+  {
+    "mangle": "netconn_tcp_recvd",
+    "c++": "netconn_tcp_recvd(struct netconn *, size_t)",
+    "go": "(*Struct netconn).NetconnTcpRecvd"
+  },
+  {
+    "mangle": "netconn_thread_cleanup",
+    "c++": "netconn_thread_cleanup()",
+    "go": "NetconnThreadCleanup"
+  },
+  {
+    "mangle": "netconn_thread_init",
+    "c++": "netconn_thread_init()",
+    "go": "NetconnThreadInit"
+  },
+  {
+    "mangle": "netconn_write_partly",
+    "c++": "netconn_write_partly(struct netconn *, const void *, size_t, u8_t, size_t *)",
+    "go": "(*Struct netconn).NetconnWritePartly"
+  },
+  {
+    "mangle": "netconn_write_vectors_partly",
+    "c++": "netconn_write_vectors_partly(struct netconn *, struct netvector *, u16_t, u8_t, size_t *)",
+    "go": "(*Struct netconn).NetconnWriteVectorsPartly"
+  },
+  {
+    "mangle": "netif_add",
+    "c++": "netif_add(struct netif *, const ip4_addr_t *, const ip4_addr_t *, const ip4_addr_t *, void *, netif_init_fn, netif_input_fn)",
+    "go": "(*Struct netif).NetifAdd"
+  },
+  {
+    "mangle": "netif_add_ext_callback",
+    "c++": "netif_add_ext_callback(netif_ext_callback_t *, netif_ext_callback_fn)",
+    "go": "(*NetifExtCallbackT).NetifAddExtCallback"
+  },
+  {
+    "mangle": "netif_add_ip6_address",
+    "c++": "netif_add_ip6_address(struct netif *, const ip6_addr_t *, s8_t *)",
+    "go": "(*Struct netif).NetifAddIp6Address"
+  },
+  {
+    "mangle": "netif_add_noaddr",
+    "c++": "netif_add_noaddr(struct netif *, void *, netif_init_fn, netif_input_fn)",
+    "go": "(*Struct netif).NetifAddNoaddr"
+  },
+  {
+    "mangle": "netif_create_ip6_linklocal_address",
+    "c++": "netif_create_ip6_linklocal_address(struct netif *, u8_t)",
+    "go": "(*Struct netif).NetifCreateIp6LinklocalAddress"
+  },
+  {
+    "mangle": "netif_find",
+    "c++": "netif_find(const char *)",
+    "go": "NetifFind"
+  },
+  {
+    "mangle": "netif_get_by_index",
+    "c++": "netif_get_by_index(u8_t)",
+    "go": "U8T.NetifGetByIndex"
+  },
+  {
+    "mangle": "netif_get_ip6_addr_match",
+    "c++": "netif_get_ip6_addr_match(struct netif *, const ip6_addr_t *)",
+    "go": "(*Struct netif).NetifGetIp6AddrMatch"
+  },
+  {
+    "mangle": "netif_index_to_name",
+    "c++": "netif_index_to_name(u8_t, char *)",
+    "go": "U8T.NetifIndexToName"
+  },
+  {
+    "mangle": "netif_init",
+    "c++": "netif_init()",
+    "go": "NetifInit"
+  },
+  {
+    "mangle": "netif_input",
+    "c++": "netif_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).NetifInput"
+  },
+  {
+    "mangle": "netif_invoke_ext_callback",
+    "c++": "netif_invoke_ext_callback(struct netif *, netif_nsc_reason_t, const netif_ext_callback_args_t *)",
+    "go": "(*Struct netif).NetifInvokeExtCallback"
+  },
+  {
+    "mangle": "netif_ip6_addr_set",
+    "c++": "netif_ip6_addr_set(struct netif *, s8_t, const ip6_addr_t *)",
+    "go": "(*Struct netif).NetifIp6AddrSet"
+  },
+  {
+    "mangle": "netif_ip6_addr_set_parts",
+    "c++": "netif_ip6_addr_set_parts(struct netif *, s8_t, u32_t, u32_t, u32_t, u32_t)",
+    "go": "(*Struct netif).NetifIp6AddrSetParts"
+  },
+  {
+    "mangle": "netif_ip6_addr_set_state",
+    "c++": "netif_ip6_addr_set_state(struct netif *, s8_t, u8_t)",
+    "go": "(*Struct netif).NetifIp6AddrSetState"
+  },
+  {
+    "mangle": "netif_loop_output",
+    "c++": "netif_loop_output(struct netif *, struct pbuf *)",
+    "go": "(*Struct netif).NetifLoopOutput"
+  },
+  {
+    "mangle": "netif_name_to_index",
+    "c++": "netif_name_to_index(const char *)",
+    "go": "NetifNameToIndex"
+  },
+  {
+    "mangle": "netif_poll",
+    "c++": "netif_poll(struct netif *)",
+    "go": "(*Struct netif).NetifPoll"
+  },
+  {
+    "mangle": "netif_remove",
+    "c++": "netif_remove(struct netif *)",
+    "go": "(*Struct netif).NetifRemove"
+  },
+  {
+    "mangle": "netif_remove_ext_callback",
+    "c++": "netif_remove_ext_callback(netif_ext_callback_t *)",
+    "go": "(*NetifExtCallbackT).NetifRemoveExtCallback"
+  },
+  {
+    "mangle": "netif_set_addr",
+    "c++": "netif_set_addr(struct netif *, const ip4_addr_t *, const ip4_addr_t *, const ip4_addr_t *)",
+    "go": "(*Struct netif).NetifSetAddr"
+  },
+  {
+    "mangle": "netif_set_default",
+    "c++": "netif_set_default(struct netif *)",
+    "go": "(*Struct netif).NetifSetDefault"
+  },
+  {
+    "mangle": "netif_set_down",
+    "c++": "netif_set_down(struct netif *)",
+    "go": "(*Struct netif).NetifSetDown"
+  },
+  {
+    "mangle": "netif_set_gw",
+    "c++": "netif_set_gw(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).NetifSetGw"
+  },
+  {
+    "mangle": "netif_set_ipaddr",
+    "c++": "netif_set_ipaddr(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).NetifSetIpaddr"
+  },
+  {
+    "mangle": "netif_set_link_down",
+    "c++": "netif_set_link_down(struct netif *)",
+    "go": "(*Struct netif).NetifSetLinkDown"
+  },
+  {
+    "mangle": "netif_set_link_up",
+    "c++": "netif_set_link_up(struct netif *)",
+    "go": "(*Struct netif).NetifSetLinkUp"
+  },
+  {
+    "mangle": "netif_set_netmask",
+    "c++": "netif_set_netmask(struct netif *, const ip4_addr_t *)",
+    "go": "(*Struct netif).NetifSetNetmask"
+  },
+  {
+    "mangle": "netif_set_up",
+    "c++": "netif_set_up(struct netif *)",
+    "go": "(*Struct netif).NetifSetUp"
+  },
+  {
+    "mangle": "pbuf_add_header",
+    "c++": "pbuf_add_header(struct pbuf *, size_t)",
+    "go": "(*Struct pbuf).PbufAddHeader"
+  },
+  {
+    "mangle": "pbuf_add_header_force",
+    "c++": "pbuf_add_header_force(struct pbuf *, size_t)",
+    "go": "(*Struct pbuf).PbufAddHeaderForce"
+  },
+  {
+    "mangle": "pbuf_alloc",
+    "c++": "pbuf_alloc(pbuf_layer, u16_t, pbuf_type)",
+    "go": "PbufLayer.PbufAlloc"
+  },
+  {
+    "mangle": "pbuf_alloc_reference",
+    "c++": "pbuf_alloc_reference(void *, u16_t, pbuf_type)",
+    "go": "PbufAllocReference"
+  },
+  {
+    "mangle": "pbuf_alloced_custom",
+    "c++": "pbuf_alloced_custom(pbuf_layer, u16_t, pbuf_type, struct pbuf_custom *, void *, u16_t)",
+    "go": "PbufLayer.PbufAllocedCustom"
+  },
+  {
+    "mangle": "pbuf_cat",
+    "c++": "pbuf_cat(struct pbuf *, struct pbuf *)",
+    "go": "(*Struct pbuf).PbufCat"
+  },
+  {
+    "mangle": "pbuf_chain",
+    "c++": "pbuf_chain(struct pbuf *, struct pbuf *)",
+    "go": "(*Struct pbuf).PbufChain"
+  },
+  {
+    "mangle": "pbuf_clen",
+    "c++": "pbuf_clen(const struct pbuf *)",
+    "go": "(*Struct pbuf).PbufClen"
+  },
+  {
+    "mangle": "pbuf_clone",
+    "c++": "pbuf_clone(pbuf_layer, pbuf_type, struct pbuf *)",
+    "go": "PbufLayer.PbufClone"
+  },
+  {
+    "mangle": "pbuf_coalesce",
+    "c++": "pbuf_coalesce(struct pbuf *, pbuf_layer)",
+    "go": "(*Struct pbuf).PbufCoalesce"
+  },
+  {
+    "mangle": "pbuf_copy",
+    "c++": "pbuf_copy(struct pbuf *, const struct pbuf *)",
+    "go": "(*Struct pbuf).PbufCopy"
+  },
+  {
+    "mangle": "pbuf_copy_partial",
+    "c++": "pbuf_copy_partial(const struct pbuf *, void *, u16_t, u16_t)",
+    "go": "(*Struct pbuf).PbufCopyPartial"
+  },
+  {
+    "mangle": "pbuf_copy_partial_pbuf",
+    "c++": "pbuf_copy_partial_pbuf(struct pbuf *, const struct pbuf *, u16_t, u16_t)",
+    "go": "(*Struct pbuf).PbufCopyPartialPbuf"
+  },
+  {
+    "mangle": "pbuf_dechain",
+    "c++": "pbuf_dechain(struct pbuf *)",
+    "go": "(*Struct pbuf).PbufDechain"
+  },
+  {
+    "mangle": "pbuf_free",
+    "c++": "pbuf_free(struct pbuf *)",
+    "go": "(*Struct pbuf).PbufFree"
+  },
+  {
+    "mangle": "pbuf_free_callback",
+    "c++": "pbuf_free_callback(struct pbuf *)",
+    "go": "(*Struct pbuf).PbufFreeCallback"
+  },
+  {
+    "mangle": "pbuf_free_header",
+    "c++": "pbuf_free_header(struct pbuf *, u16_t)",
+    "go": "(*Struct pbuf).PbufFreeHeader"
+  },
+  {
+    "mangle": "pbuf_get_at",
+    "c++": "pbuf_get_at(const struct pbuf *, u16_t)",
+    "go": "(*Struct pbuf).PbufGetAt"
+  },
+  {
+    "mangle": "pbuf_get_contiguous",
+    "c++": "pbuf_get_contiguous(const struct pbuf *, void *, size_t, u16_t, u16_t)",
+    "go": "(*Struct pbuf).PbufGetContiguous"
+  },
+  {
+    "mangle": "pbuf_header",
+    "c++": "pbuf_header(struct pbuf *, s16_t)",
+    "go": "(*Struct pbuf).PbufHeader"
+  },
+  {
+    "mangle": "pbuf_header_force",
+    "c++": "pbuf_header_force(struct pbuf *, s16_t)",
+    "go": "(*Struct pbuf).PbufHeaderForce"
+  },
+  {
+    "mangle": "pbuf_memcmp",
+    "c++": "pbuf_memcmp(const struct pbuf *, u16_t, const void *, u16_t)",
+    "go": "(*Struct pbuf).PbufMemcmp"
+  },
+  {
+    "mangle": "pbuf_memfind",
+    "c++": "pbuf_memfind(const struct pbuf *, const void *, u16_t, u16_t)",
+    "go": "(*Struct pbuf).PbufMemfind"
+  },
+  {
+    "mangle": "pbuf_put_at",
+    "c++": "pbuf_put_at(struct pbuf *, u16_t, u8_t)",
+    "go": "(*Struct pbuf).PbufPutAt"
+  },
+  {
+    "mangle": "pbuf_realloc",
+    "c++": "pbuf_realloc(struct pbuf *, u16_t)",
+    "go": "(*Struct pbuf).PbufRealloc"
+  },
+  {
+    "mangle": "pbuf_ref",
+    "c++": "pbuf_ref(struct pbuf *)",
+    "go": "(*Struct pbuf).PbufRef"
+  },
+  {
+    "mangle": "pbuf_remove_header",
+    "c++": "pbuf_remove_header(struct pbuf *, size_t)",
+    "go": "(*Struct pbuf).PbufRemoveHeader"
+  },
+  {
+    "mangle": "pbuf_skip",
+    "c++": "pbuf_skip(struct pbuf *, u16_t, u16_t *)",
+    "go": "(*Struct pbuf).PbufSkip"
+  },
+  {
+    "mangle": "pbuf_strstr",
+    "c++": "pbuf_strstr(const struct pbuf *, const char *)",
+    "go": "(*Struct pbuf).PbufStrstr"
+  },
+  {
+    "mangle": "pbuf_take",
+    "c++": "pbuf_take(struct pbuf *, const void *, u16_t)",
+    "go": "(*Struct pbuf).PbufTake"
+  },
+  {
+    "mangle": "pbuf_take_at",
+    "c++": "pbuf_take_at(struct pbuf *, const void *, u16_t, u16_t)",
+    "go": "(*Struct pbuf).PbufTakeAt"
+  },
+  {
+    "mangle": "pbuf_try_get_at",
+    "c++": "pbuf_try_get_at(const struct pbuf *, u16_t)",
+    "go": "(*Struct pbuf).PbufTryGetAt"
+  },
+  {
+    "mangle": "ping_init",
+    "c++": "ping_init()",
+    "go": "PingInit"
+  },
+  {
+    "mangle": "raw_bind",
+    "c++": "raw_bind(struct raw_pcb *, const ip_addr_t *)",
+    "go": "(*Struct rawPcb).RawBind"
+  },
+  {
+    "mangle": "raw_bind_netif",
+    "c++": "raw_bind_netif(struct raw_pcb *, const struct netif *)",
+    "go": "(*Struct rawPcb).RawBindNetif"
+  },
+  {
+    "mangle": "raw_connect",
+    "c++": "raw_connect(struct raw_pcb *, const ip_addr_t *)",
+    "go": "(*Struct rawPcb).RawConnect"
+  },
+  {
+    "mangle": "raw_disconnect",
+    "c++": "raw_disconnect(struct raw_pcb *)",
+    "go": "(*Struct rawPcb).RawDisconnect"
+  },
+  {
+    "mangle": "raw_input",
+    "c++": "raw_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).RawInput"
+  },
+  {
+    "mangle": "raw_netif_ip_addr_changed",
+    "c++": "raw_netif_ip_addr_changed(const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*IpAddrT).RawNetifIpAddrChanged"
+  },
+  {
+    "mangle": "raw_new",
+    "c++": "raw_new(u8_t)",
+    "go": "U8T.RawNew"
+  },
+  {
+    "mangle": "raw_new_ip_type",
+    "c++": "raw_new_ip_type(u8_t, u8_t)",
+    "go": "U8T.RawNewIpType"
+  },
+  {
+    "mangle": "raw_recv",
+    "c++": "raw_recv(struct raw_pcb *, raw_recv_fn, void *)",
+    "go": "(*Struct rawPcb).RawRecv"
+  },
+  {
+    "mangle": "raw_remove",
+    "c++": "raw_remove(struct raw_pcb *)",
+    "go": "(*Struct rawPcb).RawRemove"
+  },
+  {
+    "mangle": "raw_send",
+    "c++": "raw_send(struct raw_pcb *, struct pbuf *)",
+    "go": "(*Struct rawPcb).RawSend"
+  },
+  {
+    "mangle": "raw_sendto",
+    "c++": "raw_sendto(struct raw_pcb *, struct pbuf *, const ip_addr_t *)",
+    "go": "(*Struct rawPcb).RawSendto"
+  },
+  {
+    "mangle": "raw_sendto_if_src",
+    "c++": "raw_sendto_if_src(struct raw_pcb *, struct pbuf *, const ip_addr_t *, struct netif *, const ip_addr_t *)",
+    "go": "(*Struct rawPcb).RawSendtoIfSrc"
+  },
+  {
+    "mangle": "sio_open",
+    "c++": "sio_open(u8_t)",
+    "go": "U8T.SioOpen"
+  },
+  {
+    "mangle": "sio_read",
+    "c++": "sio_read(sio_fd_t, u8_t *, u32_t)",
+    "go": "SioRead"
+  },
+  {
+    "mangle": "sio_send",
+    "c++": "sio_send(u8_t, sio_fd_t)",
+    "go": "U8T.SioSend"
+  },
+  {
+    "mangle": "sio_tryread",
+    "c++": "sio_tryread(sio_fd_t, u8_t *, u32_t)",
+    "go": "SioTryread"
+  },
+  {
+    "mangle": "slipif_init",
+    "c++": "slipif_init(struct netif *)",
+    "go": "(*Struct netif).SlipifInit"
+  },
+  {
+    "mangle": "slipif_poll",
+    "c++": "slipif_poll(struct netif *)",
+    "go": "(*Struct netif).SlipifPoll"
+  },
+  {
+    "mangle": "sntp_enabled",
+    "c++": "sntp_enabled()",
+    "go": "SntpEnabled"
+  },
+  {
+    "mangle": "sntp_get_sync_interval",
+    "c++": "sntp_get_sync_interval()",
+    "go": "SntpGetSyncInterval"
+  },
+  {
+    "mangle": "sntp_get_sync_mode",
+    "c++": "sntp_get_sync_mode()",
+    "go": "SntpGetSyncMode"
+  },
+  {
+    "mangle": "sntp_get_sync_status",
+    "c++": "sntp_get_sync_status()",
+    "go": "SntpGetSyncStatus"
+  },
+  {
+    "mangle": "sntp_get_system_time",
+    "c++": "sntp_get_system_time(uint32_t *, uint32_t *)",
+    "go": "SntpGetSystemTime"
+  },
+  {
+    "mangle": "sntp_getkodreceived",
+    "c++": "sntp_getkodreceived(u8_t)",
+    "go": "U8T.SntpGetkodreceived"
+  },
+  {
+    "mangle": "sntp_getoperatingmode",
+    "c++": "sntp_getoperatingmode()",
+    "go": "SntpGetoperatingmode"
+  },
+  {
+    "mangle": "sntp_getreachability",
+    "c++": "sntp_getreachability(u8_t)",
+    "go": "U8T.SntpGetreachability"
+  },
+  {
+    "mangle": "sntp_getserver",
+    "c++": "sntp_getserver(u8_t)",
+    "go": "U8T.SntpGetserver"
+  },
+  {
+    "mangle": "sntp_getservername",
+    "c++": "sntp_getservername(u8_t)",
+    "go": "U8T.SntpGetservername"
+  },
+  {
+    "mangle": "sntp_init",
+    "c++": "sntp_init()",
+    "go": "SntpInit"
+  },
+  {
+    "mangle": "sntp_restart",
+    "c++": "sntp_restart()",
+    "go": "SntpRestart"
+  },
+  {
+    "mangle": "sntp_set_sync_interval",
+    "c++": "sntp_set_sync_interval(uint32_t)",
+    "go": "SntpSetSyncInterval"
+  },
+  {
+    "mangle": "sntp_set_sync_mode",
+    "c++": "sntp_set_sync_mode(sntp_sync_mode_t)",
+    "go": "SntpSyncModeT.SntpSetSyncMode"
+  },
+  {
+    "mangle": "sntp_set_sync_status",
+    "c++": "sntp_set_sync_status(sntp_sync_status_t)",
+    "go": "SntpSyncStatusT.SntpSetSyncStatus"
+  },
+  {
+    "mangle": "sntp_set_system_time",
+    "c++": "sntp_set_system_time(uint32_t, uint32_t)",
+    "go": "SntpSetSystemTime"
+  },
+  {
+    "mangle": "sntp_set_time_sync_notification_cb",
+    "c++": "sntp_set_time_sync_notification_cb(sntp_sync_time_cb_t)",
+    "go": "SntpSetTimeSyncNotificationCb"
+  },
+  {
+    "mangle": "sntp_setoperatingmode",
+    "c++": "sntp_setoperatingmode(u8_t)",
+    "go": "U8T.SntpSetoperatingmode"
+  },
+  {
+    "mangle": "sntp_setserver",
+    "c++": "sntp_setserver(u8_t, const ip_addr_t *)",
+    "go": "U8T.SntpSetserver"
+  },
+  {
+    "mangle": "sntp_setservername",
+    "c++": "sntp_setservername(u8_t, const char *)",
+    "go": "U8T.SntpSetservername"
+  },
+  {
+    "mangle": "sntp_stop",
+    "c++": "sntp_stop()",
+    "go": "SntpStop"
+  },
+  {
+    "mangle": "sntp_sync_time",
+    "c++": "sntp_sync_time(struct timeval *)",
+    "go": "(*Struct timeval).SntpSyncTime"
+  },
+  {
+    "mangle": "sys_arch_mbox_fetch",
+    "c++": "sys_arch_mbox_fetch(sys_mbox_t *, void **, u32_t)",
+    "go": "SysArchMboxFetch"
+  },
+  {
+    "mangle": "sys_arch_mbox_tryfetch",
+    "c++": "sys_arch_mbox_tryfetch(sys_mbox_t *, void **)",
+    "go": "SysArchMboxTryfetch"
+  },
+  {
+    "mangle": "sys_arch_protect",
+    "c++": "sys_arch_protect()",
+    "go": "SysArchProtect"
+  },
+  {
+    "mangle": "sys_arch_sem_wait",
+    "c++": "sys_arch_sem_wait(sys_sem_t *, u32_t)",
+    "go": "SysArchSemWait"
+  },
+  {
+    "mangle": "sys_arch_unprotect",
+    "c++": "sys_arch_unprotect(sys_prot_t)",
+    "go": "SysProtT.SysArchUnprotect"
+  },
+  {
+    "mangle": "sys_check_timeouts",
+    "c++": "sys_check_timeouts()",
+    "go": "SysCheckTimeouts"
+  },
+  {
+    "mangle": "sys_delay_ms",
+    "c++": "sys_delay_ms(uint32_t)",
+    "go": "SysDelayMs"
+  },
+  {
+    "mangle": "sys_init",
+    "c++": "sys_init()",
+    "go": "SysInit"
+  },
+  {
+    "mangle": "sys_jiffies",
+    "c++": "sys_jiffies()",
+    "go": "SysJiffies"
+  },
+  {
+    "mangle": "sys_mbox_free",
+    "c++": "sys_mbox_free(sys_mbox_t *)",
+    "go": "SysMboxFree"
+  },
+  {
+    "mangle": "sys_mbox_new",
+    "c++": "sys_mbox_new(sys_mbox_t *, int)",
+    "go": "SysMboxNew"
+  },
+  {
+    "mangle": "sys_mbox_post",
+    "c++": "sys_mbox_post(sys_mbox_t *, void *)",
+    "go": "SysMboxPost"
+  },
+  {
+    "mangle": "sys_mbox_trypost",
+    "c++": "sys_mbox_trypost(sys_mbox_t *, void *)",
+    "go": "SysMboxTrypost"
+  },
+  {
+    "mangle": "sys_mbox_trypost_fromisr",
+    "c++": "sys_mbox_trypost_fromisr(sys_mbox_t *, void *)",
+    "go": "SysMboxTrypostFromisr"
+  },
+  {
+    "mangle": "sys_mutex_free",
+    "c++": "sys_mutex_free(sys_mutex_t *)",
+    "go": "SysMutexFree"
+  },
+  {
+    "mangle": "sys_mutex_lock",
+    "c++": "sys_mutex_lock(sys_mutex_t *)",
+    "go": "SysMutexLock"
+  },
+  {
+    "mangle": "sys_mutex_new",
+    "c++": "sys_mutex_new(sys_mutex_t *)",
+    "go": "SysMutexNew"
+  },
+  {
+    "mangle": "sys_mutex_unlock",
+    "c++": "sys_mutex_unlock(sys_mutex_t *)",
+    "go": "SysMutexUnlock"
+  },
+  {
+    "mangle": "sys_now",
+    "c++": "sys_now()",
+    "go": "SysNow"
+  },
+  {
+    "mangle": "sys_restart_timeouts",
+    "c++": "sys_restart_timeouts()",
+    "go": "SysRestartTimeouts"
+  },
+  {
+    "mangle": "sys_sem_free",
+    "c++": "sys_sem_free(sys_sem_t *)",
+    "go": "SysSemFree"
+  },
+  {
+    "mangle": "sys_sem_new",
+    "c++": "sys_sem_new(sys_sem_t *, u8_t)",
+    "go": "SysSemNew"
+  },
+  {
+    "mangle": "sys_sem_signal",
+    "c++": "sys_sem_signal(sys_sem_t *)",
+    "go": "SysSemSignal"
+  },
+  {
+    "mangle": "sys_thread_new",
+    "c++": "sys_thread_new(const char *, lwip_thread_fn, void *, int, int)",
+    "go": "SysThreadNew"
+  },
+  {
+    "mangle": "sys_thread_sem_deinit",
+    "c++": "sys_thread_sem_deinit()",
+    "go": "SysThreadSemDeinit"
+  },
+  {
+    "mangle": "sys_thread_sem_get",
+    "c++": "sys_thread_sem_get()",
+    "go": "SysThreadSemGet"
+  },
+  {
+    "mangle": "sys_thread_sem_init",
+    "c++": "sys_thread_sem_init()",
+    "go": "SysThreadSemInit"
+  },
+  {
+    "mangle": "sys_thread_tcpip",
+    "c++": "sys_thread_tcpip(sys_thread_core_lock_t)",
+    "go": "SysThreadCoreLockT.SysThreadTcpip"
+  },
+  {
+    "mangle": "sys_timeout",
+    "c++": "sys_timeout(u32_t, sys_timeout_handler, void *)",
+    "go": "U32T.SysTimeout"
+  },
+  {
+    "mangle": "sys_timeouts_deinit",
+    "c++": "sys_timeouts_deinit()",
+    "go": "SysTimeoutsDeinit"
+  },
+  {
+    "mangle": "sys_timeouts_init",
+    "c++": "sys_timeouts_init()",
+    "go": "SysTimeoutsInit"
+  },
+  {
+    "mangle": "sys_timeouts_sleeptime",
+    "c++": "sys_timeouts_sleeptime()",
+    "go": "SysTimeoutsSleeptime"
+  },
+  {
+    "mangle": "sys_untimeout",
+    "c++": "sys_untimeout(sys_timeout_handler, void *)",
+    "go": "SysUntimeout"
+  },
+  {
+    "mangle": "tcp_abandon",
+    "c++": "tcp_abandon(struct tcp_pcb *, int)",
+    "go": "(*Struct tcpPcb).TcpAbandon"
+  },
+  {
+    "mangle": "tcp_abort",
+    "c++": "tcp_abort(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpAbort"
+  },
+  {
+    "mangle": "tcp_accept",
+    "c++": "tcp_accept(struct tcp_pcb *, tcp_accept_fn)",
+    "go": "(*Struct tcpPcb).TcpAccept"
+  },
+  {
+    "mangle": "tcp_alloc",
+    "c++": "tcp_alloc(u8_t)",
+    "go": "U8T.TcpAlloc"
+  },
+  {
+    "mangle": "tcp_arg",
+    "c++": "tcp_arg(struct tcp_pcb *, void *)",
+    "go": "(*Struct tcpPcb).TcpArg"
+  },
+  {
+    "mangle": "tcp_backlog_accepted",
+    "c++": "tcp_backlog_accepted(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpBacklogAccepted"
+  },
+  {
+    "mangle": "tcp_backlog_delayed",
+    "c++": "tcp_backlog_delayed(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpBacklogDelayed"
+  },
+  {
+    "mangle": "tcp_bind",
+    "c++": "tcp_bind(struct tcp_pcb *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct tcpPcb).TcpBind"
+  },
+  {
+    "mangle": "tcp_bind_netif",
+    "c++": "tcp_bind_netif(struct tcp_pcb *, const struct netif *)",
+    "go": "(*Struct tcpPcb).TcpBindNetif"
+  },
+  {
+    "mangle": "tcp_close",
+    "c++": "tcp_close(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpClose"
+  },
+  {
+    "mangle": "tcp_close_ext",
+    "c++": "tcp_close_ext(struct tcp_pcb *, u8_t)",
+    "go": "(*Struct tcpPcb).TcpCloseExt"
+  },
+  {
+    "mangle": "tcp_connect",
+    "c++": "tcp_connect(struct tcp_pcb *, const ip_addr_t *, u16_t, tcp_connected_fn)",
+    "go": "(*Struct tcpPcb).TcpConnect"
+  },
+  {
+    "mangle": "tcp_debug_state_str",
+    "c++": "tcp_debug_state_str(enum tcp_state)",
+    "go": "Enum tcpState.TcpDebugStateStr"
+  },
+  {
+    "mangle": "tcp_eff_send_mss_netif",
+    "c++": "tcp_eff_send_mss_netif(u16_t, struct netif *, const ip_addr_t *)",
+    "go": "U16T.TcpEffSendMssNetif"
+  },
+  {
+    "mangle": "tcp_enqueue_flags",
+    "c++": "tcp_enqueue_flags(struct tcp_pcb *, u8_t)",
+    "go": "(*Struct tcpPcb).TcpEnqueueFlags"
+  },
+  {
+    "mangle": "tcp_err",
+    "c++": "tcp_err(struct tcp_pcb *, tcp_err_fn)",
+    "go": "(*Struct tcpPcb).TcpErr"
+  },
+  {
+    "mangle": "tcp_fasttmr",
+    "c++": "tcp_fasttmr()",
+    "go": "TcpFasttmr"
+  },
+  {
+    "mangle": "tcp_free",
+    "c++": "tcp_free(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpFree"
+  },
+  {
+    "mangle": "tcp_free_ooseq",
+    "c++": "tcp_free_ooseq(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpFreeOoseq"
+  },
+  {
+    "mangle": "tcp_init",
+    "c++": "tcp_init()",
+    "go": "TcpInit"
+  },
+  {
+    "mangle": "tcp_input",
+    "c++": "tcp_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).TcpInput"
+  },
+  {
+    "mangle": "tcp_keepalive",
+    "c++": "tcp_keepalive(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpKeepalive"
+  },
+  {
+    "mangle": "tcp_listen_with_backlog",
+    "c++": "tcp_listen_with_backlog(struct tcp_pcb *, u8_t)",
+    "go": "(*Struct tcpPcb).TcpListenWithBacklog"
+  },
+  {
+    "mangle": "tcp_listen_with_backlog_and_err",
+    "c++": "tcp_listen_with_backlog_and_err(struct tcp_pcb *, u8_t, err_t *)",
+    "go": "(*Struct tcpPcb).TcpListenWithBacklogAndErr"
+  },
+  {
+    "mangle": "tcp_netif_ip_addr_changed",
+    "c++": "tcp_netif_ip_addr_changed(const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*IpAddrT).TcpNetifIpAddrChanged"
+  },
+  {
+    "mangle": "tcp_new",
+    "c++": "tcp_new()",
+    "go": "TcpNew"
+  },
+  {
+    "mangle": "tcp_new_ip_type",
+    "c++": "tcp_new_ip_type(u8_t)",
+    "go": "U8T.TcpNewIpType"
+  },
+  {
+    "mangle": "tcp_next_iss",
+    "c++": "tcp_next_iss(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpNextIss"
+  },
+  {
+    "mangle": "tcp_output",
+    "c++": "tcp_output(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpOutput"
+  },
+  {
+    "mangle": "tcp_pcb_purge",
+    "c++": "tcp_pcb_purge(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpPcbPurge"
+  },
+  {
+    "mangle": "tcp_pcb_remove",
+    "c++": "tcp_pcb_remove(struct tcp_pcb **, struct tcp_pcb *)",
+    "go": "TcpPcbRemove"
+  },
+  {
+    "mangle": "tcp_poll",
+    "c++": "tcp_poll(struct tcp_pcb *, tcp_poll_fn, u8_t)",
+    "go": "(*Struct tcpPcb).TcpPoll"
+  },
+  {
+    "mangle": "tcp_process_refused_data",
+    "c++": "tcp_process_refused_data(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpProcessRefusedData"
+  },
+  {
+    "mangle": "tcp_recv",
+    "c++": "tcp_recv(struct tcp_pcb *, tcp_recv_fn)",
+    "go": "(*Struct tcpPcb).TcpRecv"
+  },
+  {
+    "mangle": "tcp_recv_null",
+    "c++": "tcp_recv_null(void *, struct tcp_pcb *, struct pbuf *, err_t)",
+    "go": "TcpRecvNull"
+  },
+  {
+    "mangle": "tcp_recved",
+    "c++": "tcp_recved(struct tcp_pcb *, u16_t)",
+    "go": "(*Struct tcpPcb).TcpRecved"
+  },
+  {
+    "mangle": "tcp_rexmit",
+    "c++": "tcp_rexmit(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpRexmit"
+  },
+  {
+    "mangle": "tcp_rexmit_fast",
+    "c++": "tcp_rexmit_fast(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpRexmitFast"
+  },
+  {
+    "mangle": "tcp_rexmit_rto",
+    "c++": "tcp_rexmit_rto(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpRexmitRto"
+  },
+  {
+    "mangle": "tcp_rexmit_rto_commit",
+    "c++": "tcp_rexmit_rto_commit(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpRexmitRtoCommit"
+  },
+  {
+    "mangle": "tcp_rexmit_rto_prepare",
+    "c++": "tcp_rexmit_rto_prepare(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpRexmitRtoPrepare"
+  },
+  {
+    "mangle": "tcp_rst",
+    "c++": "tcp_rst(const struct tcp_pcb *, u32_t, u32_t, const ip_addr_t *, const ip_addr_t *, u16_t, u16_t)",
+    "go": "(*Struct tcpPcb).TcpRst"
+  },
+  {
+    "mangle": "tcp_rst_netif",
+    "c++": "tcp_rst_netif(struct netif *, u32_t, u32_t, const ip_addr_t *, const ip_addr_t *, u16_t, u16_t)",
+    "go": "(*Struct netif).TcpRstNetif"
+  },
+  {
+    "mangle": "tcp_seg_copy",
+    "c++": "tcp_seg_copy(struct tcp_seg *)",
+    "go": "(*Struct tcpSeg).TcpSegCopy"
+  },
+  {
+    "mangle": "tcp_seg_free",
+    "c++": "tcp_seg_free(struct tcp_seg *)",
+    "go": "(*Struct tcpSeg).TcpSegFree"
+  },
+  {
+    "mangle": "tcp_segs_free",
+    "c++": "tcp_segs_free(struct tcp_seg *)",
+    "go": "(*Struct tcpSeg).TcpSegsFree"
+  },
+  {
+    "mangle": "tcp_send_empty_ack",
+    "c++": "tcp_send_empty_ack(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpSendEmptyAck"
+  },
+  {
+    "mangle": "tcp_send_fin",
+    "c++": "tcp_send_fin(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpSendFin"
+  },
+  {
+    "mangle": "tcp_sent",
+    "c++": "tcp_sent(struct tcp_pcb *, tcp_sent_fn)",
+    "go": "(*Struct tcpPcb).TcpSent"
+  },
+  {
+    "mangle": "tcp_setprio",
+    "c++": "tcp_setprio(struct tcp_pcb *, u8_t)",
+    "go": "(*Struct tcpPcb).TcpSetprio"
+  },
+  {
+    "mangle": "tcp_shutdown",
+    "c++": "tcp_shutdown(struct tcp_pcb *, int, int)",
+    "go": "(*Struct tcpPcb).TcpShutdown"
+  },
+  {
+    "mangle": "tcp_slowtmr",
+    "c++": "tcp_slowtmr()",
+    "go": "TcpSlowtmr"
+  },
+  {
+    "mangle": "tcp_split_unsent_seg",
+    "c++": "tcp_split_unsent_seg(struct tcp_pcb *, u16_t)",
+    "go": "(*Struct tcpPcb).TcpSplitUnsentSeg"
+  },
+  {
+    "mangle": "tcp_tcp_get_tcp_addrinfo",
+    "c++": "tcp_tcp_get_tcp_addrinfo(struct tcp_pcb *, int, ip_addr_t *, u16_t *)",
+    "go": "(*Struct tcpPcb).TcpTcpGetTcpAddrinfo"
+  },
+  {
+    "mangle": "tcp_timer_needed",
+    "c++": "tcp_timer_needed()",
+    "go": "TcpTimerNeeded"
+  },
+  {
+    "mangle": "tcp_tmr",
+    "c++": "tcp_tmr()",
+    "go": "TcpTmr"
+  },
+  {
+    "mangle": "tcp_trigger_input_pcb_close",
+    "c++": "tcp_trigger_input_pcb_close()",
+    "go": "TcpTriggerInputPcbClose"
+  },
+  {
+    "mangle": "tcp_txnow",
+    "c++": "tcp_txnow()",
+    "go": "TcpTxnow"
+  },
+  {
+    "mangle": "tcp_update_rcv_ann_wnd",
+    "c++": "tcp_update_rcv_ann_wnd(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpUpdateRcvAnnWnd"
+  },
+  {
+    "mangle": "tcp_write",
+    "c++": "tcp_write(struct tcp_pcb *, const void *, u16_t, u8_t)",
+    "go": "(*Struct tcpPcb).TcpWrite"
+  },
+  {
+    "mangle": "tcp_zero_window_probe",
+    "c++": "tcp_zero_window_probe(struct tcp_pcb *)",
+    "go": "(*Struct tcpPcb).TcpZeroWindowProbe"
+  },
+  {
+    "mangle": "tcpip_api_call",
+    "c++": "tcpip_api_call(tcpip_api_call_fn, struct tcpip_api_call_data *)",
+    "go": "TcpipApiCall"
+  },
+  {
+    "mangle": "tcpip_callback",
+    "c++": "tcpip_callback(tcpip_callback_fn, void *)",
+    "go": "TcpipCallback"
+  },
+  {
+    "mangle": "tcpip_callback_wait",
+    "c++": "tcpip_callback_wait(tcpip_callback_fn, void *)",
+    "go": "TcpipCallbackWait"
+  },
+  {
+    "mangle": "tcpip_callbackmsg_delete",
+    "c++": "tcpip_callbackmsg_delete(struct tcpip_callback_msg *)",
+    "go": "(*Struct tcpipCallbackMsg).TcpipCallbackmsgDelete"
+  },
+  {
+    "mangle": "tcpip_callbackmsg_new",
+    "c++": "tcpip_callbackmsg_new(tcpip_callback_fn, void *)",
+    "go": "TcpipCallbackmsgNew"
+  },
+  {
+    "mangle": "tcpip_callbackmsg_trycallback",
+    "c++": "tcpip_callbackmsg_trycallback(struct tcpip_callback_msg *)",
+    "go": "(*Struct tcpipCallbackMsg).TcpipCallbackmsgTrycallback"
+  },
+  {
+    "mangle": "tcpip_callbackmsg_trycallback_fromisr",
+    "c++": "tcpip_callbackmsg_trycallback_fromisr(struct tcpip_callback_msg *)",
+    "go": "(*Struct tcpipCallbackMsg).TcpipCallbackmsgTrycallbackFromisr"
+  },
+  {
+    "mangle": "tcpip_init",
+    "c++": "tcpip_init(tcpip_init_done_fn, void *)",
+    "go": "TcpipInit"
+  },
+  {
+    "mangle": "tcpip_inpkt",
+    "c++": "tcpip_inpkt(struct pbuf *, struct netif *, netif_input_fn)",
+    "go": "(*Struct pbuf).TcpipInpkt"
+  },
+  {
+    "mangle": "tcpip_input",
+    "c++": "tcpip_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).TcpipInput"
+  },
+  {
+    "mangle": "tcpip_send_msg_wait_sem",
+    "c++": "tcpip_send_msg_wait_sem(tcpip_callback_fn, void *, sys_sem_t *)",
+    "go": "TcpipSendMsgWaitSem"
+  },
+  {
+    "mangle": "tcpip_try_callback",
+    "c++": "tcpip_try_callback(tcpip_callback_fn, void *)",
+    "go": "TcpipTryCallback"
+  },
+  {
+    "mangle": "udp_bind",
+    "c++": "udp_bind(struct udp_pcb *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct udpPcb).UdpBind"
+  },
+  {
+    "mangle": "udp_bind_netif",
+    "c++": "udp_bind_netif(struct udp_pcb *, const struct netif *)",
+    "go": "(*Struct udpPcb).UdpBindNetif"
+  },
+  {
+    "mangle": "udp_connect",
+    "c++": "udp_connect(struct udp_pcb *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct udpPcb).UdpConnect"
+  },
+  {
+    "mangle": "udp_disconnect",
+    "c++": "udp_disconnect(struct udp_pcb *)",
+    "go": "(*Struct udpPcb).UdpDisconnect"
+  },
+  {
+    "mangle": "udp_init",
+    "c++": "udp_init()",
+    "go": "UdpInit"
+  },
+  {
+    "mangle": "udp_input",
+    "c++": "udp_input(struct pbuf *, struct netif *)",
+    "go": "(*Struct pbuf).UdpInput"
+  },
+  {
+    "mangle": "udp_netif_ip_addr_changed",
+    "c++": "udp_netif_ip_addr_changed(const ip_addr_t *, const ip_addr_t *)",
+    "go": "(*IpAddrT).UdpNetifIpAddrChanged"
+  },
+  {
+    "mangle": "udp_new",
+    "c++": "udp_new()",
+    "go": "UdpNew"
+  },
+  {
+    "mangle": "udp_new_ip_type",
+    "c++": "udp_new_ip_type(u8_t)",
+    "go": "U8T.UdpNewIpType"
+  },
+  {
+    "mangle": "udp_recv",
+    "c++": "udp_recv(struct udp_pcb *, udp_recv_fn, void *)",
+    "go": "(*Struct udpPcb).UdpRecv"
+  },
+  {
+    "mangle": "udp_remove",
+    "c++": "udp_remove(struct udp_pcb *)",
+    "go": "(*Struct udpPcb).UdpRemove"
+  },
+  {
+    "mangle": "udp_send",
+    "c++": "udp_send(struct udp_pcb *, struct pbuf *)",
+    "go": "(*Struct udpPcb).UdpSend"
+  },
+  {
+    "mangle": "udp_sendto",
+    "c++": "udp_sendto(struct udp_pcb *, struct pbuf *, const ip_addr_t *, u16_t)",
+    "go": "(*Struct udpPcb).UdpSendto"
+  },
+  {
+    "mangle": "udp_sendto_if",
+    "c++": "udp_sendto_if(struct udp_pcb *, struct pbuf *, const ip_addr_t *, u16_t, struct netif *)",
+    "go": "(*Struct udpPcb).UdpSendtoIf"
+  },
+  {
+    "mangle": "udp_sendto_if_src",
+    "c++": "udp_sendto_if_src(struct udp_pcb *, struct pbuf *, const ip_addr_t *, u16_t, struct netif *, const ip_addr_t *)",
+    "go": "(*Struct udpPcb).UdpSendtoIfSrc"
+  }
+]

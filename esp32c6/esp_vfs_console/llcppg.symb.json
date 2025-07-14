@@ -1,0 +1,7 @@
+[
+  {
+    "mangle": "esp_vfs_console_register",
+    "c++": "esp_vfs_console_register()",
+    "go": "EspVfsConsoleRegister"
+  }
+]

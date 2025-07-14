@@ -1,0 +1,7 @@
+[
+  {
+    "mangle": "esp_gdbstub_panic_handler",
+    "c++": "esp_gdbstub_panic_handler(void *)",
+    "go": "EspGdbstubPanicHandler"
+  }
+]

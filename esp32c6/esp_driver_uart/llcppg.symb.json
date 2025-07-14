@@ -1,0 +1,307 @@
+[
+  {
+    "mangle": "esp_vfs_uart_get_vfs",
+    "c++": "esp_vfs_uart_get_vfs()",
+    "go": "EspVfsUartGetVfs"
+  },
+  {
+    "mangle": "uart_clear_intr_status",
+    "c++": "uart_clear_intr_status(uart_port_t, uint32_t)",
+    "go": "UartClearIntrStatus"
+  },
+  {
+    "mangle": "uart_disable_intr_mask",
+    "c++": "uart_disable_intr_mask(uart_port_t, uint32_t)",
+    "go": "UartDisableIntrMask"
+  },
+  {
+    "mangle": "uart_disable_pattern_det_intr",
+    "c++": "uart_disable_pattern_det_intr(uart_port_t)",
+    "go": "UartDisablePatternDetIntr"
+  },
+  {
+    "mangle": "uart_disable_rx_intr",
+    "c++": "uart_disable_rx_intr(uart_port_t)",
+    "go": "UartDisableRxIntr"
+  },
+  {
+    "mangle": "uart_disable_tx_intr",
+    "c++": "uart_disable_tx_intr(uart_port_t)",
+    "go": "UartDisableTxIntr"
+  },
+  {
+    "mangle": "uart_driver_delete",
+    "c++": "uart_driver_delete(uart_port_t)",
+    "go": "UartDriverDelete"
+  },
+  {
+    "mangle": "uart_driver_install",
+    "c++": "uart_driver_install(uart_port_t, int, int, int, QueueHandle_t *, int)",
+    "go": "UartDriverInstall"
+  },
+  {
+    "mangle": "uart_enable_intr_mask",
+    "c++": "uart_enable_intr_mask(uart_port_t, uint32_t)",
+    "go": "UartEnableIntrMask"
+  },
+  {
+    "mangle": "uart_enable_pattern_det_baud_intr",
+    "c++": "uart_enable_pattern_det_baud_intr(uart_port_t, char, uint8_t, int, int, int)",
+    "go": "UartEnablePatternDetBaudIntr"
+  },
+  {
+    "mangle": "uart_enable_rx_intr",
+    "c++": "uart_enable_rx_intr(uart_port_t)",
+    "go": "UartEnableRxIntr"
+  },
+  {
+    "mangle": "uart_enable_tx_intr",
+    "c++": "uart_enable_tx_intr(uart_port_t, int, int)",
+    "go": "UartEnableTxIntr"
+  },
+  {
+    "mangle": "uart_flush",
+    "c++": "uart_flush(uart_port_t)",
+    "go": "UartFlush"
+  },
+  {
+    "mangle": "uart_flush_input",
+    "c++": "uart_flush_input(uart_port_t)",
+    "go": "UartFlushInput"
+  },
+  {
+    "mangle": "uart_get_baudrate",
+    "c++": "uart_get_baudrate(uart_port_t, uint32_t *)",
+    "go": "UartGetBaudrate"
+  },
+  {
+    "mangle": "uart_get_buffered_data_len",
+    "c++": "uart_get_buffered_data_len(uart_port_t, size_t *)",
+    "go": "UartGetBufferedDataLen"
+  },
+  {
+    "mangle": "uart_get_collision_flag",
+    "c++": "uart_get_collision_flag(uart_port_t, bool *)",
+    "go": "UartGetCollisionFlag"
+  },
+  {
+    "mangle": "uart_get_hw_flow_ctrl",
+    "c++": "uart_get_hw_flow_ctrl(uart_port_t, uart_hw_flowcontrol_t *)",
+    "go": "UartGetHwFlowCtrl"
+  },
+  {
+    "mangle": "uart_get_parity",
+    "c++": "uart_get_parity(uart_port_t, uart_parity_t *)",
+    "go": "UartGetParity"
+  },
+  {
+    "mangle": "uart_get_sclk_freq",
+    "c++": "uart_get_sclk_freq(uart_sclk_t, uint32_t *)",
+    "go": "UartGetSclkFreq"
+  },
+  {
+    "mangle": "uart_get_selectlock",
+    "c++": "uart_get_selectlock()",
+    "go": "UartGetSelectlock"
+  },
+  {
+    "mangle": "uart_get_stop_bits",
+    "c++": "uart_get_stop_bits(uart_port_t, uart_stop_bits_t *)",
+    "go": "UartGetStopBits"
+  },
+  {
+    "mangle": "uart_get_tx_buffer_free_size",
+    "c++": "uart_get_tx_buffer_free_size(uart_port_t, size_t *)",
+    "go": "UartGetTxBufferFreeSize"
+  },
+  {
+    "mangle": "uart_get_wakeup_threshold",
+    "c++": "uart_get_wakeup_threshold(uart_port_t, int *)",
+    "go": "UartGetWakeupThreshold"
+  },
+  {
+    "mangle": "uart_get_word_length",
+    "c++": "uart_get_word_length(uart_port_t, uart_word_length_t *)",
+    "go": "UartGetWordLength"
+  },
+  {
+    "mangle": "uart_intr_config",
+    "c++": "uart_intr_config(uart_port_t, const uart_intr_config_t *)",
+    "go": "UartIntrConfig"
+  },
+  {
+    "mangle": "uart_is_driver_installed",
+    "c++": "uart_is_driver_installed(uart_port_t)",
+    "go": "UartIsDriverInstalled"
+  },
+  {
+    "mangle": "uart_param_config",
+    "c++": "uart_param_config(uart_port_t, const uart_config_t *)",
+    "go": "UartParamConfig"
+  },
+  {
+    "mangle": "uart_pattern_get_pos",
+    "c++": "uart_pattern_get_pos(uart_port_t)",
+    "go": "UartPatternGetPos"
+  },
+  {
+    "mangle": "uart_pattern_pop_pos",
+    "c++": "uart_pattern_pop_pos(uart_port_t)",
+    "go": "UartPatternPopPos"
+  },
+  {
+    "mangle": "uart_pattern_queue_reset",
+    "c++": "uart_pattern_queue_reset(uart_port_t, int)",
+    "go": "UartPatternQueueReset"
+  },
+  {
+    "mangle": "uart_read_bytes",
+    "c++": "uart_read_bytes(uart_port_t, void *, uint32_t, TickType_t)",
+    "go": "UartReadBytes"
+  },
+  {
+    "mangle": "uart_set_always_rx_timeout",
+    "c++": "uart_set_always_rx_timeout(uart_port_t, bool)",
+    "go": "UartSetAlwaysRxTimeout"
+  },
+  {
+    "mangle": "uart_set_baudrate",
+    "c++": "uart_set_baudrate(uart_port_t, uint32_t)",
+    "go": "UartSetBaudrate"
+  },
+  {
+    "mangle": "uart_set_dtr",
+    "c++": "uart_set_dtr(uart_port_t, int)",
+    "go": "UartSetDtr"
+  },
+  {
+    "mangle": "uart_set_hw_flow_ctrl",
+    "c++": "uart_set_hw_flow_ctrl(uart_port_t, uart_hw_flowcontrol_t, uint8_t)",
+    "go": "UartSetHwFlowCtrl"
+  },
+  {
+    "mangle": "uart_set_line_inverse",
+    "c++": "uart_set_line_inverse(uart_port_t, uint32_t)",
+    "go": "UartSetLineInverse"
+  },
+  {
+    "mangle": "uart_set_loop_back",
+    "c++": "uart_set_loop_back(uart_port_t, bool)",
+    "go": "UartSetLoopBack"
+  },
+  {
+    "mangle": "uart_set_mode",
+    "c++": "uart_set_mode(uart_port_t, uart_mode_t)",
+    "go": "UartSetMode"
+  },
+  {
+    "mangle": "uart_set_parity",
+    "c++": "uart_set_parity(uart_port_t, uart_parity_t)",
+    "go": "UartSetParity"
+  },
+  {
+    "mangle": "uart_set_pin",
+    "c++": "uart_set_pin(uart_port_t, int, int, int, int)",
+    "go": "UartSetPin"
+  },
+  {
+    "mangle": "uart_set_rts",
+    "c++": "uart_set_rts(uart_port_t, int)",
+    "go": "UartSetRts"
+  },
+  {
+    "mangle": "uart_set_rx_full_threshold",
+    "c++": "uart_set_rx_full_threshold(uart_port_t, int)",
+    "go": "UartSetRxFullThreshold"
+  },
+  {
+    "mangle": "uart_set_rx_timeout",
+    "c++": "uart_set_rx_timeout(uart_port_t, const uint8_t)",
+    "go": "UartSetRxTimeout"
+  },
+  {
+    "mangle": "uart_set_select_notif_callback",
+    "c++": "uart_set_select_notif_callback(uart_port_t, uart_select_notif_callback_t)",
+    "go": "UartSetSelectNotifCallback"
+  },
+  {
+    "mangle": "uart_set_stop_bits",
+    "c++": "uart_set_stop_bits(uart_port_t, uart_stop_bits_t)",
+    "go": "UartSetStopBits"
+  },
+  {
+    "mangle": "uart_set_sw_flow_ctrl",
+    "c++": "uart_set_sw_flow_ctrl(uart_port_t, bool, uint8_t, uint8_t)",
+    "go": "UartSetSwFlowCtrl"
+  },
+  {
+    "mangle": "uart_set_tx_empty_threshold",
+    "c++": "uart_set_tx_empty_threshold(uart_port_t, int)",
+    "go": "UartSetTxEmptyThreshold"
+  },
+  {
+    "mangle": "uart_set_tx_idle_num",
+    "c++": "uart_set_tx_idle_num(uart_port_t, uint16_t)",
+    "go": "UartSetTxIdleNum"
+  },
+  {
+    "mangle": "uart_set_wakeup_threshold",
+    "c++": "uart_set_wakeup_threshold(uart_port_t, int)",
+    "go": "UartSetWakeupThreshold"
+  },
+  {
+    "mangle": "uart_set_word_length",
+    "c++": "uart_set_word_length(uart_port_t, uart_word_length_t)",
+    "go": "UartSetWordLength"
+  },
+  {
+    "mangle": "uart_tx_chars",
+    "c++": "uart_tx_chars(uart_port_t, const char *, uint32_t)",
+    "go": "UartTxChars"
+  },
+  {
+    "mangle": "uart_vfs_dev_port_set_rx_line_endings",
+    "c++": "uart_vfs_dev_port_set_rx_line_endings(int, esp_line_endings_t)",
+    "go": "UartVfsDevPortSetRxLineEndings"
+  },
+  {
+    "mangle": "uart_vfs_dev_port_set_tx_line_endings",
+    "c++": "uart_vfs_dev_port_set_tx_line_endings(int, esp_line_endings_t)",
+    "go": "UartVfsDevPortSetTxLineEndings"
+  },
+  {
+    "mangle": "uart_vfs_dev_register",
+    "c++": "uart_vfs_dev_register()",
+    "go": "UartVfsDevRegister"
+  },
+  {
+    "mangle": "uart_vfs_dev_use_driver",
+    "c++": "uart_vfs_dev_use_driver(int)",
+    "go": "UartVfsDevUseDriver"
+  },
+  {
+    "mangle": "uart_vfs_dev_use_nonblocking",
+    "c++": "uart_vfs_dev_use_nonblocking(int)",
+    "go": "UartVfsDevUseNonblocking"
+  },
+  {
+    "mangle": "uart_wait_tx_done",
+    "c++": "uart_wait_tx_done(uart_port_t, TickType_t)",
+    "go": "UartWaitTxDone"
+  },
+  {
+    "mangle": "uart_wait_tx_idle_polling",
+    "c++": "uart_wait_tx_idle_polling(uart_port_t)",
+    "go": "UartWaitTxIdlePolling"
+  },
+  {
+    "mangle": "uart_write_bytes",
+    "c++": "uart_write_bytes(uart_port_t, const void *, size_t)",
+    "go": "UartWriteBytes"
+  },
+  {
+    "mangle": "uart_write_bytes_with_break",
+    "c++": "uart_write_bytes_with_break(uart_port_t, const void *, size_t, int)",
+    "go": "UartWriteBytesWithBreak"
+  }
+]

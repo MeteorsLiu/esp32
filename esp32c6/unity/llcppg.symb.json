@@ -1,0 +1,217 @@
+[
+  {
+    "mangle": "UnityAssertBits",
+    "c++": "UnityAssertBits(const UNITY_INT, const UNITY_INT, const UNITY_INT, const char *, const UNITY_UINT)",
+    "go": "UNITYINT.UnityAssertBits"
+  },
+  {
+    "mangle": "UnityAssertEqualIntArray",
+    "c++": "UnityAssertEqualIntArray(const void *, const void *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T, const UNITY_FLAGS_T)",
+    "go": "UnityAssertEqualIntArray"
+  },
+  {
+    "mangle": "UnityAssertEqualMemory",
+    "c++": "UnityAssertEqualMemory(const void *, const void *, const UNITY_UINT32, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_FLAGS_T)",
+    "go": "UnityAssertEqualMemory"
+  },
+  {
+    "mangle": "UnityAssertEqualNumber",
+    "c++": "UnityAssertEqualNumber(const UNITY_INT, const UNITY_INT, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T)",
+    "go": "UNITYINT.UnityAssertEqualNumber"
+  },
+  {
+    "mangle": "UnityAssertEqualString",
+    "c++": "UnityAssertEqualString(const char *, const char *, const char *, const UNITY_UINT)",
+    "go": "UnityAssertEqualString"
+  },
+  {
+    "mangle": "UnityAssertEqualStringArray",
+    "c++": "UnityAssertEqualStringArray(const void *, const char **, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_FLAGS_T)",
+    "go": "UnityAssertEqualStringArray"
+  },
+  {
+    "mangle": "UnityAssertEqualStringLen",
+    "c++": "UnityAssertEqualStringLen(const char *, const char *, const UNITY_UINT32, const char *, const UNITY_UINT)",
+    "go": "UnityAssertEqualStringLen"
+  },
+  {
+    "mangle": "UnityAssertFloatSpecial",
+    "c++": "UnityAssertFloatSpecial(const UNITY_FLOAT, const char *, const UNITY_UINT, const UNITY_FLOAT_TRAIT_T)",
+    "go": "UNITYFLOAT.UnityAssertFloatSpecial"
+  },
+  {
+    "mangle": "UnityAssertFloatsNotWithin",
+    "c++": "UnityAssertFloatsNotWithin(const UNITY_FLOAT, const UNITY_FLOAT, const UNITY_FLOAT, const char *, const UNITY_UINT)",
+    "go": "UNITYFLOAT.UnityAssertFloatsNotWithin"
+  },
+  {
+    "mangle": "UnityAssertFloatsWithin",
+    "c++": "UnityAssertFloatsWithin(const UNITY_FLOAT, const UNITY_FLOAT, const UNITY_FLOAT, const char *, const UNITY_UINT)",
+    "go": "UNITYFLOAT.UnityAssertFloatsWithin"
+  },
+  {
+    "mangle": "UnityAssertGreaterOrLessFloat",
+    "c++": "UnityAssertGreaterOrLessFloat(const UNITY_FLOAT, const UNITY_FLOAT, const UNITY_COMPARISON_T, const char *, const UNITY_UINT)",
+    "go": "UNITYFLOAT.UnityAssertGreaterOrLessFloat"
+  },
+  {
+    "mangle": "UnityAssertGreaterOrLessOrEqualNumber",
+    "c++": "UnityAssertGreaterOrLessOrEqualNumber(const UNITY_INT, const UNITY_INT, const UNITY_COMPARISON_T, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T)",
+    "go": "UNITYINT.UnityAssertGreaterOrLessOrEqualNumber"
+  },
+  {
+    "mangle": "UnityAssertNumbersArrayWithin",
+    "c++": "UnityAssertNumbersArrayWithin(const UNITY_UINT, const void *, const void *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T, const UNITY_FLAGS_T)",
+    "go": "UNITYUINT.UnityAssertNumbersArrayWithin"
+  },
+  {
+    "mangle": "UnityAssertNumbersWithin",
+    "c++": "UnityAssertNumbersWithin(const UNITY_UINT, const UNITY_INT, const UNITY_INT, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T)",
+    "go": "UNITYUINT.UnityAssertNumbersWithin"
+  },
+  {
+    "mangle": "UnityAssertWithinFloatArray",
+    "c++": "UnityAssertWithinFloatArray(const UNITY_FLOAT, const UNITY_FLOAT *, const UNITY_FLOAT *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_FLAGS_T)",
+    "go": "UNITYFLOAT.UnityAssertWithinFloatArray"
+  },
+  {
+    "mangle": "UnityBegin",
+    "c++": "UnityBegin(const char *)",
+    "go": "UnityBegin"
+  },
+  {
+    "mangle": "UnityConcludeTest",
+    "c++": "UnityConcludeTest()",
+    "go": "UnityConcludeTest"
+  },
+  {
+    "mangle": "UnityDefaultTestRun",
+    "c++": "UnityDefaultTestRun(UnityTestFunction, const char *, const int)",
+    "go": "UnityDefaultTestRun"
+  },
+  {
+    "mangle": "UnityEnd",
+    "c++": "UnityEnd()",
+    "go": "UnityEnd"
+  },
+  {
+    "mangle": "UnityFail",
+    "c++": "UnityFail(const char *, const UNITY_UINT)",
+    "go": "UnityFail"
+  },
+  {
+    "mangle": "UnityFloatToPtr",
+    "c++": "UnityFloatToPtr(const float)",
+    "go": "UnityFloatToPtr"
+  },
+  {
+    "mangle": "UnityIgnore",
+    "c++": "UnityIgnore(const char *, const UNITY_UINT)",
+    "go": "UnityIgnore"
+  },
+  {
+    "mangle": "UnityMessage",
+    "c++": "UnityMessage(const char *, const UNITY_UINT)",
+    "go": "UnityMessage"
+  },
+  {
+    "mangle": "UnityNumToPtr",
+    "c++": "UnityNumToPtr(const UNITY_INT, const UNITY_UINT8)",
+    "go": "UNITYINT.UnityNumToPtr"
+  },
+  {
+    "mangle": "UnityPrint",
+    "c++": "UnityPrint(const char *)",
+    "go": "UnityPrint"
+  },
+  {
+    "mangle": "UnityPrintFloat",
+    "c++": "UnityPrintFloat(const UNITY_DOUBLE)",
+    "go": "UNITYDOUBLE.UnityPrintFloat"
+  },
+  {
+    "mangle": "UnityPrintLen",
+    "c++": "UnityPrintLen(const char *, const UNITY_UINT32)",
+    "go": "UnityPrintLen"
+  },
+  {
+    "mangle": "UnityPrintMask",
+    "c++": "UnityPrintMask(const UNITY_UINT, const UNITY_UINT)",
+    "go": "UNITYUINT.UnityPrintMask"
+  },
+  {
+    "mangle": "UnityPrintNumber",
+    "c++": "UnityPrintNumber(const UNITY_INT)",
+    "go": "UNITYINT.UnityPrintNumber"
+  },
+  {
+    "mangle": "UnityPrintNumberByStyle",
+    "c++": "UnityPrintNumberByStyle(const UNITY_INT, const UNITY_DISPLAY_STYLE_T)",
+    "go": "UNITYINT.UnityPrintNumberByStyle"
+  },
+  {
+    "mangle": "UnityPrintNumberHex",
+    "c++": "UnityPrintNumberHex(const UNITY_UINT, const char)",
+    "go": "UNITYUINT.UnityPrintNumberHex"
+  },
+  {
+    "mangle": "UnityPrintNumberUnsigned",
+    "c++": "UnityPrintNumberUnsigned(const UNITY_UINT)",
+    "go": "UNITYUINT.UnityPrintNumberUnsigned"
+  },
+  {
+    "mangle": "UnitySetTestFile",
+    "c++": "UnitySetTestFile(const char *)",
+    "go": "UnitySetTestFile"
+  },
+  {
+    "mangle": "setUp",
+    "c++": "setUp()",
+    "go": "SetUp"
+  },
+  {
+    "mangle": "suiteSetUp",
+    "c++": "suiteSetUp()",
+    "go": "SuiteSetUp"
+  },
+  {
+    "mangle": "suiteTearDown",
+    "c++": "suiteTearDown(int)",
+    "go": "SuiteTearDown"
+  },
+  {
+    "mangle": "tearDown",
+    "c++": "tearDown()",
+    "go": "TearDown"
+  },
+  {
+    "mangle": "unity_exec_time_get_ms",
+    "c++": "unity_exec_time_get_ms()",
+    "go": "UnityExecTimeGetMs"
+  },
+  {
+    "mangle": "unity_exec_time_start",
+    "c++": "unity_exec_time_start()",
+    "go": "UnityExecTimeStart"
+  },
+  {
+    "mangle": "unity_exec_time_stop",
+    "c++": "unity_exec_time_stop()",
+    "go": "UnityExecTimeStop"
+  },
+  {
+    "mangle": "unity_flush",
+    "c++": "unity_flush()",
+    "go": "UnityFlush"
+  },
+  {
+    "mangle": "unity_gets",
+    "c++": "unity_gets(char *, size_t)",
+    "go": "UnityGets"
+  },
+  {
+    "mangle": "unity_putc",
+    "c++": "unity_putc(int)",
+    "go": "UnityPutc"
+  }
+]

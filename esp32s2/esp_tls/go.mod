@@ -1,4 +1,4 @@
-module esp-tls
+module esp_tls
 
 go 1.23.4
 

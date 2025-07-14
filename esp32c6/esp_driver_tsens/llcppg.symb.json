@@ -1,0 +1,52 @@
+[
+  {
+    "mangle": "temperature_sensor_disable",
+    "c++": "temperature_sensor_disable(temperature_sensor_handle_t)",
+    "go": "TemperatureSensorDisable"
+  },
+  {
+    "mangle": "temperature_sensor_enable",
+    "c++": "temperature_sensor_enable(temperature_sensor_handle_t)",
+    "go": "TemperatureSensorEnable"
+  },
+  {
+    "mangle": "temperature_sensor_get_celsius",
+    "c++": "temperature_sensor_get_celsius(temperature_sensor_handle_t, float *)",
+    "go": "TemperatureSensorGetCelsius"
+  },
+  {
+    "mangle": "temperature_sensor_install",
+    "c++": "temperature_sensor_install(const temperature_sensor_config_t *, temperature_sensor_handle_t *)",
+    "go": "(*TemperatureSensorConfigT).TemperatureSensorInstall"
+  },
+  {
+    "mangle": "temperature_sensor_new_etm_event",
+    "c++": "temperature_sensor_new_etm_event(temperature_sensor_handle_t, const temperature_sensor_etm_event_config_t *, esp_etm_event_handle_t *)",
+    "go": "TemperatureSensorNewEtmEvent"
+  },
+  {
+    "mangle": "temperature_sensor_new_etm_task",
+    "c++": "temperature_sensor_new_etm_task(temperature_sensor_handle_t, const temperature_sensor_etm_task_config_t *, esp_etm_task_handle_t *)",
+    "go": "TemperatureSensorNewEtmTask"
+  },
+  {
+    "mangle": "temperature_sensor_register_callbacks",
+    "c++": "temperature_sensor_register_callbacks(temperature_sensor_handle_t, const temperature_sensor_event_callbacks_t *, void *)",
+    "go": "TemperatureSensorRegisterCallbacks"
+  },
+  {
+    "mangle": "temperature_sensor_set_absolute_threshold",
+    "c++": "temperature_sensor_set_absolute_threshold(temperature_sensor_handle_t, const temperature_sensor_abs_threshold_config_t *)",
+    "go": "TemperatureSensorSetAbsoluteThreshold"
+  },
+  {
+    "mangle": "temperature_sensor_set_delta_threshold",
+    "c++": "temperature_sensor_set_delta_threshold(temperature_sensor_handle_t, const temperature_sensor_delta_threshold_config_t *)",
+    "go": "TemperatureSensorSetDeltaThreshold"
+  },
+  {
+    "mangle": "temperature_sensor_uninstall",
+    "c++": "temperature_sensor_uninstall(temperature_sensor_handle_t)",
+    "go": "TemperatureSensorUninstall"
+  }
+]

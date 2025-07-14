@@ -1,0 +1,132 @@
+[
+  {
+    "mangle": "i2s_channel_disable",
+    "c++": "i2s_channel_disable(i2s_chan_handle_t)",
+    "go": "I2sChannelDisable"
+  },
+  {
+    "mangle": "i2s_channel_enable",
+    "c++": "i2s_channel_enable(i2s_chan_handle_t)",
+    "go": "I2sChannelEnable"
+  },
+  {
+    "mangle": "i2s_channel_get_info",
+    "c++": "i2s_channel_get_info(i2s_chan_handle_t, i2s_chan_info_t *)",
+    "go": "I2sChannelGetInfo"
+  },
+  {
+    "mangle": "i2s_channel_init_pdm_tx_mode",
+    "c++": "i2s_channel_init_pdm_tx_mode(i2s_chan_handle_t, const i2s_pdm_tx_config_t *)",
+    "go": "I2sChannelInitPdmTxMode"
+  },
+  {
+    "mangle": "i2s_channel_init_std_mode",
+    "c++": "i2s_channel_init_std_mode(i2s_chan_handle_t, const i2s_std_config_t *)",
+    "go": "I2sChannelInitStdMode"
+  },
+  {
+    "mangle": "i2s_channel_init_tdm_mode",
+    "c++": "i2s_channel_init_tdm_mode(i2s_chan_handle_t, const i2s_tdm_config_t *)",
+    "go": "I2sChannelInitTdmMode"
+  },
+  {
+    "mangle": "i2s_channel_preload_data",
+    "c++": "i2s_channel_preload_data(i2s_chan_handle_t, const void *, size_t, size_t *)",
+    "go": "I2sChannelPreloadData"
+  },
+  {
+    "mangle": "i2s_channel_read",
+    "c++": "i2s_channel_read(i2s_chan_handle_t, void *, size_t, size_t *, uint32_t)",
+    "go": "I2sChannelRead"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_pdm_tx_clock",
+    "c++": "i2s_channel_reconfig_pdm_tx_clock(i2s_chan_handle_t, const i2s_pdm_tx_clk_config_t *)",
+    "go": "I2sChannelReconfigPdmTxClock"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_pdm_tx_gpio",
+    "c++": "i2s_channel_reconfig_pdm_tx_gpio(i2s_chan_handle_t, const i2s_pdm_tx_gpio_config_t *)",
+    "go": "I2sChannelReconfigPdmTxGpio"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_pdm_tx_slot",
+    "c++": "i2s_channel_reconfig_pdm_tx_slot(i2s_chan_handle_t, const i2s_pdm_tx_slot_config_t *)",
+    "go": "I2sChannelReconfigPdmTxSlot"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_std_clock",
+    "c++": "i2s_channel_reconfig_std_clock(i2s_chan_handle_t, const i2s_std_clk_config_t *)",
+    "go": "I2sChannelReconfigStdClock"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_std_gpio",
+    "c++": "i2s_channel_reconfig_std_gpio(i2s_chan_handle_t, const i2s_std_gpio_config_t *)",
+    "go": "I2sChannelReconfigStdGpio"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_std_slot",
+    "c++": "i2s_channel_reconfig_std_slot(i2s_chan_handle_t, const i2s_std_slot_config_t *)",
+    "go": "I2sChannelReconfigStdSlot"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_tdm_clock",
+    "c++": "i2s_channel_reconfig_tdm_clock(i2s_chan_handle_t, const i2s_tdm_clk_config_t *)",
+    "go": "I2sChannelReconfigTdmClock"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_tdm_gpio",
+    "c++": "i2s_channel_reconfig_tdm_gpio(i2s_chan_handle_t, const i2s_tdm_gpio_config_t *)",
+    "go": "I2sChannelReconfigTdmGpio"
+  },
+  {
+    "mangle": "i2s_channel_reconfig_tdm_slot",
+    "c++": "i2s_channel_reconfig_tdm_slot(i2s_chan_handle_t, const i2s_tdm_slot_config_t *)",
+    "go": "I2sChannelReconfigTdmSlot"
+  },
+  {
+    "mangle": "i2s_channel_register_event_callback",
+    "c++": "i2s_channel_register_event_callback(i2s_chan_handle_t, const i2s_event_callbacks_t *, void *)",
+    "go": "I2sChannelRegisterEventCallback"
+  },
+  {
+    "mangle": "i2s_channel_write",
+    "c++": "i2s_channel_write(i2s_chan_handle_t, const void *, size_t, size_t *, uint32_t)",
+    "go": "I2sChannelWrite"
+  },
+  {
+    "mangle": "i2s_del_channel",
+    "c++": "i2s_del_channel(i2s_chan_handle_t)",
+    "go": "I2sDelChannel"
+  },
+  {
+    "mangle": "i2s_new_channel",
+    "c++": "i2s_new_channel(const i2s_chan_config_t *, i2s_chan_handle_t *, i2s_chan_handle_t *)",
+    "go": "(*I2sChanConfigT).I2sNewChannel"
+  },
+  {
+    "mangle": "i2s_new_etm_event",
+    "c++": "i2s_new_etm_event(i2s_chan_handle_t, const i2s_etm_event_config_t *, esp_etm_event_handle_t *)",
+    "go": "I2sNewEtmEvent"
+  },
+  {
+    "mangle": "i2s_new_etm_task",
+    "c++": "i2s_new_etm_task(i2s_chan_handle_t, const i2s_etm_task_config_t *, esp_etm_task_handle_t *)",
+    "go": "I2sNewEtmTask"
+  },
+  {
+    "mangle": "i2s_platform_acquire_occupation",
+    "c++": "i2s_platform_acquire_occupation(i2s_ctlr_t, int, const char *)",
+    "go": "I2sCtlrT.I2sPlatformAcquireOccupation"
+  },
+  {
+    "mangle": "i2s_platform_get_dma_buffer_offset",
+    "c++": "i2s_platform_get_dma_buffer_offset()",
+    "go": "I2sPlatformGetDmaBufferOffset"
+  },
+  {
+    "mangle": "i2s_platform_release_occupation",
+    "c++": "i2s_platform_release_occupation(i2s_ctlr_t, int)",
+    "go": "I2sCtlrT.I2sPlatformReleaseOccupation"
+  }
+]
