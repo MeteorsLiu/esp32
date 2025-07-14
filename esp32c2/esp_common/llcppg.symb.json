@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "esp_err_to_name",
+    "c++": "esp_err_to_name(esp_err_t)",
+    "go": "EspErrT.EspErrToName"
+  },
+  {
+    "mangle": "esp_err_to_name_r",
+    "c++": "esp_err_to_name_r(esp_err_t, char *, size_t)",
+    "go": "EspErrT.EspErrToNameR"
+  }
+]

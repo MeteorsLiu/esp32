@@ -1,0 +1,7 @@
+[
+  {
+    "mangle": "nvs_sec_provider_deregister",
+    "c++": "nvs_sec_provider_deregister(nvs_sec_scheme_t *)",
+    "go": "NvsSecProviderDeregister"
+  }
+]

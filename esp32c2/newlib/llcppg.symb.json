@@ -1,0 +1,117 @@
+[
+  {
+    "mangle": "alphasort",
+    "c++": "alphasort(const struct dirent **, const struct dirent **)",
+    "go": "Alphasort"
+  },
+  {
+    "mangle": "cfgetispeed",
+    "c++": "cfgetispeed(const struct termios *)",
+    "go": "(*Struct termios).Cfgetispeed"
+  },
+  {
+    "mangle": "cfgetospeed",
+    "c++": "cfgetospeed(const struct termios *)",
+    "go": "(*Struct termios).Cfgetospeed"
+  },
+  {
+    "mangle": "cfsetispeed",
+    "c++": "cfsetispeed(struct termios *, speed_t)",
+    "go": "(*Struct termios).Cfsetispeed"
+  },
+  {
+    "mangle": "cfsetospeed",
+    "c++": "cfsetospeed(struct termios *, speed_t)",
+    "go": "(*Struct termios).Cfsetospeed"
+  },
+  {
+    "mangle": "clock_getres",
+    "c++": "clock_getres(int, struct timespec *)",
+    "go": "ClockGetres"
+  },
+  {
+    "mangle": "clock_gettime",
+    "c++": "clock_gettime(int, struct timespec *)",
+    "go": "ClockGettime"
+  },
+  {
+    "mangle": "clock_settime",
+    "c++": "clock_settime(int, const struct timespec *)",
+    "go": "ClockSettime"
+  },
+  {
+    "mangle": "closedir",
+    "c++": "closedir(DIR *)",
+    "go": "(*DIR).Closedir"
+  },
+  {
+    "mangle": "esp_newlib_init",
+    "c++": "esp_newlib_init()",
+    "go": "EspNewlibInit"
+  },
+  {
+    "mangle": "esp_newlib_init_global_stdio",
+    "c++": "esp_newlib_init_global_stdio(const char *)",
+    "go": "EspNewlibInitGlobalStdio"
+  },
+  {
+    "mangle": "esp_newlib_locks_init",
+    "c++": "esp_newlib_locks_init()",
+    "go": "EspNewlibLocksInit"
+  },
+  {
+    "mangle": "esp_newlib_time_init",
+    "c++": "esp_newlib_time_init()",
+    "go": "EspNewlibTimeInit"
+  },
+  {
+    "mangle": "esp_reent_cleanup",
+    "c++": "esp_reent_cleanup()",
+    "go": "EspReentCleanup"
+  },
+  {
+    "mangle": "esp_reent_init",
+    "c++": "esp_reent_init(struct _reent *)",
+    "go": "(*Struct Reent).EspReentInit"
+  },
+  {
+    "mangle": "esp_set_time_from_rtc",
+    "c++": "esp_set_time_from_rtc()",
+    "go": "EspSetTimeFromRtc"
+  },
+  {
+    "mangle": "esp_sync_timekeeping_timers",
+    "c++": "esp_sync_timekeeping_timers()",
+    "go": "EspSyncTimekeepingTimers"
+  },
+  {
+    "mangle": "getentropy",
+    "c++": "getentropy(void *, size_t)",
+    "go": "Getentropy"
+  },
+  {
+    "mangle": "getrandom",
+    "c++": "getrandom(void *, size_t, unsigned int)",
+    "go": "Getrandom"
+  },
+  {
+    "mangle": "opendir",
+    "c++": "opendir(const char *)",
+    "go": "Opendir"
+  },
+  {
+    "mangle": "poll",
+    "c++": "poll(struct pollfd *, nfds_t, int)",
+    "go": "(*Struct pollfd).Poll"
+  },
+  {
+    "mangle": "readdir",
+    "c++": "readdir(DIR *)",
+    "go": "(*DIR).Readdir"
+  },
+  {
+    "mangle": "scandir",
+    "c++": "scandir(const char *, struct dirent ***, int (*)(const struct dirent *), int (*)(const struct dirent **, const struct dirent **))",
+    "go": "Scandir"
+  }
+]

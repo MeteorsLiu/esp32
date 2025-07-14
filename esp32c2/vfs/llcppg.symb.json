@@ -1,0 +1,187 @@
+[
+  {
+    "mangle": "esp_vfs_close",
+    "c++": "esp_vfs_close(struct _reent *, int)",
+    "go": "EspVfsClose"
+  },
+  {
+    "mangle": "esp_vfs_dump_fds",
+    "c++": "esp_vfs_dump_fds(int *)",
+    "go": "EspVfsDumpFds"
+  },
+  {
+    "mangle": "esp_vfs_dump_registered_paths",
+    "c++": "esp_vfs_dump_registered_paths(int *)",
+    "go": "EspVfsDumpRegisteredPaths"
+  },
+  {
+    "mangle": "esp_vfs_eventfd_register",
+    "c++": "esp_vfs_eventfd_register(const esp_vfs_eventfd_config_t *)",
+    "go": "(*EspVfsEventfdConfigT).EspVfsEventfdRegister"
+  },
+  {
+    "mangle": "esp_vfs_eventfd_unregister",
+    "c++": "esp_vfs_eventfd_unregister()",
+    "go": "EspVfsEventfdUnregister"
+  },
+  {
+    "mangle": "esp_vfs_fstat",
+    "c++": "esp_vfs_fstat(struct _reent *, int, struct stat *)",
+    "go": "EspVfsFstat"
+  },
+  {
+    "mangle": "esp_vfs_link",
+    "c++": "esp_vfs_link(struct _reent *, const char *, const char *)",
+    "go": "EspVfsLink"
+  },
+  {
+    "mangle": "esp_vfs_lseek",
+    "c++": "esp_vfs_lseek(struct _reent *, int, off_t *, int)",
+    "go": "EspVfsLseek"
+  },
+  {
+    "mangle": "esp_vfs_null_get_vfs",
+    "c++": "esp_vfs_null_get_vfs()",
+    "go": "EspVfsNullGetVfs"
+  },
+  {
+    "mangle": "esp_vfs_null_register",
+    "c++": "esp_vfs_null_register()",
+    "go": "EspVfsNullRegister"
+  },
+  {
+    "mangle": "esp_vfs_open",
+    "c++": "esp_vfs_open(struct _reent *, const char *, int, int)",
+    "go": "EspVfsOpen"
+  },
+  {
+    "mangle": "esp_vfs_pread",
+    "c++": "esp_vfs_pread(int, void *, size_t, off_t *)",
+    "go": "EspVfsPread"
+  },
+  {
+    "mangle": "esp_vfs_pwrite",
+    "c++": "esp_vfs_pwrite(int, const void *, size_t, off_t *)",
+    "go": "EspVfsPwrite"
+  },
+  {
+    "mangle": "esp_vfs_read",
+    "c++": "esp_vfs_read(struct _reent *, int, void *, size_t)",
+    "go": "EspVfsRead"
+  },
+  {
+    "mangle": "esp_vfs_register",
+    "c++": "esp_vfs_register(const char *, const esp_vfs_t *, void *)",
+    "go": "EspVfsRegister"
+  },
+  {
+    "mangle": "esp_vfs_register_fd",
+    "c++": "esp_vfs_register_fd(esp_vfs_id_t, int *)",
+    "go": "EspVfsIdT.EspVfsRegisterFd"
+  },
+  {
+    "mangle": "esp_vfs_register_fd_range",
+    "c++": "esp_vfs_register_fd_range(const esp_vfs_t *, void *, int, int)",
+    "go": "(*EspVfsT).EspVfsRegisterFdRange"
+  },
+  {
+    "mangle": "esp_vfs_register_fd_with_local_fd",
+    "c++": "esp_vfs_register_fd_with_local_fd(esp_vfs_id_t, int, bool, int *)",
+    "go": "EspVfsIdT.EspVfsRegisterFdWithLocalFd"
+  },
+  {
+    "mangle": "esp_vfs_register_fs",
+    "c++": "esp_vfs_register_fs(const char *, const esp_vfs_fs_ops_t *, int, void *)",
+    "go": "EspVfsRegisterFs"
+  },
+  {
+    "mangle": "esp_vfs_register_fs_with_id",
+    "c++": "esp_vfs_register_fs_with_id(const esp_vfs_fs_ops_t *, int, void *, esp_vfs_id_t *)",
+    "go": "(*EspVfsFsOpsT).EspVfsRegisterFsWithId"
+  },
+  {
+    "mangle": "esp_vfs_register_with_id",
+    "c++": "esp_vfs_register_with_id(const esp_vfs_t *, void *, esp_vfs_id_t *)",
+    "go": "(*EspVfsT).EspVfsRegisterWithId"
+  },
+  {
+    "mangle": "esp_vfs_rename",
+    "c++": "esp_vfs_rename(struct _reent *, const char *, const char *)",
+    "go": "EspVfsRename"
+  },
+  {
+    "mangle": "esp_vfs_select",
+    "c++": "esp_vfs_select(int, int *, int *, int *, struct timeval *)",
+    "go": "EspVfsSelect"
+  },
+  {
+    "mangle": "esp_vfs_select_triggered",
+    "c++": "esp_vfs_select_triggered(esp_vfs_select_sem_t)",
+    "go": "EspVfsSelectSemT.EspVfsSelectTriggered"
+  },
+  {
+    "mangle": "esp_vfs_select_triggered_isr",
+    "c++": "esp_vfs_select_triggered_isr(esp_vfs_select_sem_t, BaseType_t *)",
+    "go": "EspVfsSelectSemT.EspVfsSelectTriggeredIsr"
+  },
+  {
+    "mangle": "esp_vfs_semihost_register",
+    "c++": "esp_vfs_semihost_register(const char *)",
+    "go": "EspVfsSemihostRegister"
+  },
+  {
+    "mangle": "esp_vfs_semihost_unregister",
+    "c++": "esp_vfs_semihost_unregister(const char *)",
+    "go": "EspVfsSemihostUnregister"
+  },
+  {
+    "mangle": "esp_vfs_stat",
+    "c++": "esp_vfs_stat(struct _reent *, const char *, struct stat *)",
+    "go": "EspVfsStat"
+  },
+  {
+    "mangle": "esp_vfs_unlink",
+    "c++": "esp_vfs_unlink(struct _reent *, const char *)",
+    "go": "EspVfsUnlink"
+  },
+  {
+    "mangle": "esp_vfs_unregister",
+    "c++": "esp_vfs_unregister(const char *)",
+    "go": "EspVfsUnregister"
+  },
+  {
+    "mangle": "esp_vfs_unregister_fd",
+    "c++": "esp_vfs_unregister_fd(esp_vfs_id_t, int)",
+    "go": "EspVfsIdT.EspVfsUnregisterFd"
+  },
+  {
+    "mangle": "esp_vfs_unregister_fs",
+    "c++": "esp_vfs_unregister_fs(const char *)",
+    "go": "EspVfsUnregisterFs"
+  },
+  {
+    "mangle": "esp_vfs_unregister_fs_with_id",
+    "c++": "esp_vfs_unregister_fs_with_id(esp_vfs_id_t)",
+    "go": "EspVfsIdT.EspVfsUnregisterFsWithId"
+  },
+  {
+    "mangle": "esp_vfs_unregister_with_id",
+    "c++": "esp_vfs_unregister_with_id(esp_vfs_id_t)",
+    "go": "EspVfsIdT.EspVfsUnregisterWithId"
+  },
+  {
+    "mangle": "esp_vfs_utime",
+    "c++": "esp_vfs_utime(const char *, const struct utimbuf *)",
+    "go": "EspVfsUtime"
+  },
+  {
+    "mangle": "esp_vfs_write",
+    "c++": "esp_vfs_write(struct _reent *, int, const void *, size_t)",
+    "go": "EspVfsWrite"
+  },
+  {
+    "mangle": "eventfd",
+    "c++": "eventfd(unsigned int, int)",
+    "go": "Eventfd"
+  }
+]

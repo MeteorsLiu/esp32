@@ -1,0 +1,107 @@
+[
+  {
+    "mangle": "sdio_slave_clear_host_int",
+    "c++": "sdio_slave_clear_host_int(sdio_slave_hostint_t)",
+    "go": "SdioSlaveClearHostInt"
+  },
+  {
+    "mangle": "sdio_slave_deinit",
+    "c++": "sdio_slave_deinit()",
+    "go": "SdioSlaveDeinit"
+  },
+  {
+    "mangle": "sdio_slave_get_host_intena",
+    "c++": "sdio_slave_get_host_intena()",
+    "go": "SdioSlaveGetHostIntena"
+  },
+  {
+    "mangle": "sdio_slave_initialize",
+    "c++": "sdio_slave_initialize(sdio_slave_config_t *)",
+    "go": "(*SdioSlaveConfigT).SdioSlaveInitialize"
+  },
+  {
+    "mangle": "sdio_slave_read_reg",
+    "c++": "sdio_slave_read_reg(int)",
+    "go": "SdioSlaveReadReg"
+  },
+  {
+    "mangle": "sdio_slave_recv",
+    "c++": "sdio_slave_recv(sdio_slave_buf_handle_t *, uint8_t **, size_t *, TickType_t)",
+    "go": "SdioSlaveRecv"
+  },
+  {
+    "mangle": "sdio_slave_recv_get_buf",
+    "c++": "sdio_slave_recv_get_buf(sdio_slave_buf_handle_t, size_t *)",
+    "go": "SdioSlaveRecvGetBuf"
+  },
+  {
+    "mangle": "sdio_slave_recv_load_buf",
+    "c++": "sdio_slave_recv_load_buf(sdio_slave_buf_handle_t)",
+    "go": "SdioSlaveRecvLoadBuf"
+  },
+  {
+    "mangle": "sdio_slave_recv_packet",
+    "c++": "sdio_slave_recv_packet(sdio_slave_buf_handle_t *, TickType_t)",
+    "go": "SdioSlaveRecvPacket"
+  },
+  {
+    "mangle": "sdio_slave_recv_register_buf",
+    "c++": "sdio_slave_recv_register_buf(uint8_t *)",
+    "go": "SdioSlaveRecvRegisterBuf"
+  },
+  {
+    "mangle": "sdio_slave_recv_unregister_buf",
+    "c++": "sdio_slave_recv_unregister_buf(sdio_slave_buf_handle_t)",
+    "go": "SdioSlaveRecvUnregisterBuf"
+  },
+  {
+    "mangle": "sdio_slave_reset",
+    "c++": "sdio_slave_reset()",
+    "go": "SdioSlaveReset"
+  },
+  {
+    "mangle": "sdio_slave_send_get_finished",
+    "c++": "sdio_slave_send_get_finished(void **, TickType_t)",
+    "go": "SdioSlaveSendGetFinished"
+  },
+  {
+    "mangle": "sdio_slave_send_host_int",
+    "c++": "sdio_slave_send_host_int(uint8_t)",
+    "go": "SdioSlaveSendHostInt"
+  },
+  {
+    "mangle": "sdio_slave_send_queue",
+    "c++": "sdio_slave_send_queue(uint8_t *, size_t, void *, TickType_t)",
+    "go": "SdioSlaveSendQueue"
+  },
+  {
+    "mangle": "sdio_slave_set_host_intena",
+    "c++": "sdio_slave_set_host_intena(sdio_slave_hostint_t)",
+    "go": "SdioSlaveSetHostIntena"
+  },
+  {
+    "mangle": "sdio_slave_start",
+    "c++": "sdio_slave_start()",
+    "go": "SdioSlaveStart"
+  },
+  {
+    "mangle": "sdio_slave_stop",
+    "c++": "sdio_slave_stop()",
+    "go": "SdioSlaveStop"
+  },
+  {
+    "mangle": "sdio_slave_transmit",
+    "c++": "sdio_slave_transmit(uint8_t *, size_t)",
+    "go": "SdioSlaveTransmit"
+  },
+  {
+    "mangle": "sdio_slave_wait_int",
+    "c++": "sdio_slave_wait_int(int, TickType_t)",
+    "go": "SdioSlaveWaitInt"
+  },
+  {
+    "mangle": "sdio_slave_write_reg",
+    "c++": "sdio_slave_write_reg(int, uint8_t)",
+    "go": "SdioSlaveWriteReg"
+  }
+]

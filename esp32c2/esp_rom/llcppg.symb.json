@@ -1,0 +1,57 @@
+[
+  {
+    "mangle": "GetUartDevice",
+    "c++": "GetUartDevice()",
+    "go": "GetUartDevice"
+  },
+  {
+    "mangle": "esp_rom_install_channel_putc",
+    "c++": "esp_rom_install_channel_putc(int, void (*)(char))",
+    "go": "EspRomInstallChannelPutc"
+  },
+  {
+    "mangle": "esp_rom_output_putc",
+    "c++": "esp_rom_output_putc(char)",
+    "go": "EspRomOutputPutc"
+  },
+  {
+    "mangle": "esp_rom_output_switch_buffer",
+    "c++": "esp_rom_output_switch_buffer(uint8_t)",
+    "go": "EspRomOutputSwitchBuffer"
+  },
+  {
+    "mangle": "esp_rom_output_to_channels",
+    "c++": "esp_rom_output_to_channels(char)",
+    "go": "EspRomOutputToChannels"
+  },
+  {
+    "mangle": "esp_rom_vprintf",
+    "c++": "esp_rom_vprintf(const char *, va_list)",
+    "go": "EspRomVprintf"
+  },
+  {
+    "mangle": "ets_install_putc1",
+    "c++": "ets_install_putc1(void (*)(char))",
+    "go": "EtsInstallPutc1"
+  },
+  {
+    "mangle": "ets_install_putc2",
+    "c++": "ets_install_putc2(void (*)(char))",
+    "go": "EtsInstallPutc2"
+  },
+  {
+    "mangle": "ets_vprintf",
+    "c++": "ets_vprintf(void (*)(char), const char *, va_list)",
+    "go": "EtsVprintf"
+  },
+  {
+    "mangle": "multi_heap_walk",
+    "c++": "multi_heap_walk(multi_heap_handle_t, multi_heap_walker_cb_t, void *)",
+    "go": "MultiHeapWalk"
+  },
+  {
+    "mangle": "tlsf_poison_check_pfunc_set",
+    "c++": "tlsf_poison_check_pfunc_set(poison_check_pfunc_t)",
+    "go": "TlsfPoisonCheckPfuncSet"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "mangle": "CMock_Guts_GetAddressFor",
+    "c++": "CMock_Guts_GetAddressFor(size_t)",
+    "go": "CMockGutsGetAddressFor"
+  },
+  {
+    "mangle": "CMock_Guts_MemBytesCapacity",
+    "c++": "CMock_Guts_MemBytesCapacity()",
+    "go": "CMockGutsMemBytesCapacity"
+  },
+  {
+    "mangle": "CMock_Guts_MemBytesFree",
+    "c++": "CMock_Guts_MemBytesFree()",
+    "go": "CMockGutsMemBytesFree"
+  },
+  {
+    "mangle": "CMock_Guts_MemBytesUsed",
+    "c++": "CMock_Guts_MemBytesUsed()",
+    "go": "CMockGutsMemBytesUsed"
+  },
+  {
+    "mangle": "CMock_Guts_MemChain",
+    "c++": "CMock_Guts_MemChain(size_t, size_t)",
+    "go": "CMockGutsMemChain"
+  },
+  {
+    "mangle": "CMock_Guts_MemEndOfChain",
+    "c++": "CMock_Guts_MemEndOfChain(size_t)",
+    "go": "CMockGutsMemEndOfChain"
+  },
+  {
+    "mangle": "CMock_Guts_MemFreeAll",
+    "c++": "CMock_Guts_MemFreeAll()",
+    "go": "CMockGutsMemFreeAll"
+  },
+  {
+    "mangle": "CMock_Guts_MemFreeFinal",
+    "c++": "CMock_Guts_MemFreeFinal()",
+    "go": "CMockGutsMemFreeFinal"
+  },
+  {
+    "mangle": "CMock_Guts_MemNew",
+    "c++": "CMock_Guts_MemNew(size_t)",
+    "go": "CMockGutsMemNew"
+  },
+  {
+    "mangle": "CMock_Guts_MemNext",
+    "c++": "CMock_Guts_MemNext(size_t)",
+    "go": "CMockGutsMemNext"
+  }
+]
