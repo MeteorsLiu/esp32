@@ -1,4 +1,4 @@
-module esp_driver_ledc
+module github.com/MeteorsLiu/esp32/esp32s3/esp_driver_ledc
 
 go 1.23.4
 

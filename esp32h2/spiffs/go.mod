@@ -1,4 +1,4 @@
-module spiffs
+module github.com/MeteorsLiu/esp32/esp32h2/spiffs
 
 go 1.23.4
 

@@ -1,4 +1,4 @@
-module esp_vfs_console
+module github.com/MeteorsLiu/esp32/esp32h2/esp_vfs_console
 
 go 1.23.4
 

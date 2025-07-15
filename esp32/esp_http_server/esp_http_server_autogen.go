@@ -30,18 +30,22 @@ const X_WANT_REENT_BACKWARD_BINARY_COMPAT = 1
 const X_WANT_REENT_SMALL = 1
 const X_WANT_USE_GDTOA = 1
 const X__OBSOLETE_MATH_DEFAULT = 1
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
 const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
 const X__ATFILE_VISIBLE = 1
 const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
+const X__GNU_VISIBLE = 1
 const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
+const X__LARGEFILE_VISIBLE = 1
 const X__MISC_VISIBLE = 1
 const X__POSIX_VISIBLE = 200809
 const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
+const X__XSI_VISIBLE = 700
 const X__SSP_FORTIFY_LEVEL = 0
 const X_POSIX_THREADS = 1
 const X_POSIX_TIMEOUTS = 1
@@ -866,6 +870,7 @@ const SEEK_SET = 0
 const SEEK_CUR = 1
 const SEEK_END = 2
 const TMP_MAX = 26
+const L_cuserid = 9
 const L_ctermid = 16
 const STACK_OVERHEAD_CHECKER = 0
 const STACK_OVERHEAD_OPTIMIZATION = 0
@@ -2939,6 +2944,25 @@ type FposT X_fposT
 type OffT X__offT
 
 // llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
+
+// llgo:type C
 type XtHalVoidFunc func()
 
 /*
@@ -3709,6 +3733,71 @@ const (
 	ENoTasksWaitingTimeout ESleepModeStatus = 2
 )
 
+/**
+ * Type by which queues are referenced.  For example, a call to xQueueCreate()
+ * returns an QueueHandle_t variable that can then be used as a parameter to
+ * xQueueSend(), xQueueReceive(), etc.
+ */
+
+type QueueDefinition struct {
+	Unused [8]uint8
+}
+type QueueHandleT *QueueDefinition
+type QueueSetHandleT *QueueDefinition
+type QueueSetMemberHandleT *QueueDefinition
+type SemaphoreHandleT QueueHandleT
+
+/**
+ * Type by which stream buffers are referenced.  For example, a call to
+ * xStreamBufferCreate() returns an StreamBufferHandle_t variable that can
+ * then be used as a parameter to xStreamBufferSend(), xStreamBufferReceive(),
+ * etc.
+ */
+
+type StreamBufferDefT struct {
+	Unused [8]uint8
+}
+type StreamBufferHandleT *StreamBufferDefT
+
+// llgo:type C
+type StreamBufferCallbackFunctionT func(StreamBufferHandleT, BaseTypeT, *BaseTypeT)
+type MessageBufferHandleT StreamBufferHandleT
+
+/**
+ * Type by which software timers are referenced.  For example, a call to
+ * xTimerCreate() returns an TimerHandle_t variable that can then be used to
+ * reference the subject timer in calls to other software timer API functions
+ * (for example, xTimerStart(), xTimerReset(), etc.).
+ */
+
+type TmrTimerControl struct {
+	Unused [8]uint8
+}
+type TimerHandleT *TmrTimerControl
+
+// llgo:type C
+type TimerCallbackFunctionT func(TimerHandleT)
+
+// llgo:type C
+type PendedFunctionT func(c.Pointer, c.Uint32T)
+
+/**
+ *
+ * Type by which event groups are referenced.  For example, a call to
+ * xEventGroupCreate() returns an EventGroupHandle_t variable that can then
+ * be used as a parameter to other event group functions.
+ *
+ * \ingroup EventGroup
+ */
+
+type EventGroupDefT struct {
+	Unused [8]uint8
+}
+type EventGroupHandleT *EventGroupDefT
+type EventBitsT TickTypeT
+
+// llgo:type C
+type TlsDeleteCallbackFunctionT func(c.Int, c.Pointer)
 type UInt8T X__uint8T
 type UInt16T X__uint16T
 type UInt32T X__uint32T
@@ -3944,20 +4033,6 @@ type HttpParserUrl struct {
 		Len c.Uint16T
 	}
 }
-
-/**
- * Type by which queues are referenced.  For example, a call to xQueueCreate()
- * returns an QueueHandle_t variable that can then be used as a parameter to
- * xQueueSend(), xQueueReceive(), etc.
- */
-
-type QueueDefinition struct {
-	Unused [8]uint8
-}
-type QueueHandleT *QueueDefinition
-type QueueSetHandleT *QueueDefinition
-type QueueSetMemberHandleT *QueueDefinition
-type SemaphoreHandleT QueueHandleT
 type EspEventBaseT *c.Char
 type EspEventLoopHandleT c.Pointer
 

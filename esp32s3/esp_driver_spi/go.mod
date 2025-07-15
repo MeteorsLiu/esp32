@@ -1,4 +1,4 @@
-module esp_driver_spi
+module github.com/MeteorsLiu/esp32/esp32s3/esp_driver_spi
 
 go 1.23.4
 

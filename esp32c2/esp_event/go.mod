@@ -1,4 +1,4 @@
-module esp_event
+module github.com/MeteorsLiu/esp32/esp32c2/esp_event
 
 go 1.23.4
 

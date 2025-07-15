@@ -1,4 +1,4 @@
-module wear_levelling
+module github.com/MeteorsLiu/esp32/esp32s2/wear_levelling
 
 go 1.23.4
 

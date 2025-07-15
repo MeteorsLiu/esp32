@@ -1,4 +1,4 @@
-module esp_driver_uart
+module github.com/MeteorsLiu/esp32/esp32c2/esp_driver_uart
 
 go 1.23.4
 

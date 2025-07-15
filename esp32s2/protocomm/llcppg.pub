@@ -1,4 +1,7 @@
 BaseType_t BaseTypeT
+EventBits_t EventBitsT
+EventGroupDef_t EventGroupDefT
+EventGroupHandle_t EventGroupHandleT
 HeapRegion
 HeapRegion_t HeapRegionT
 HeapStats_t HeapStatsT
@@ -6,7 +9,9 @@ KernelFrame
 ListItem_t ListItemT
 List_t ListT
 MemoryRegion_t MemoryRegionT
+MessageBufferHandle_t MessageBufferHandleT
 MiniListItem_t MiniListItemT
+PendedFunction_t PendedFunctionT
 ProtobufCAllocator
 ProtobufCBinaryData
 ProtobufCBuffer
@@ -82,6 +87,9 @@ StaticStreamBuffer_t StaticStreamBufferT
 StaticTask_t StaticTaskT
 StaticTimer_t StaticTimerT
 Status
+StreamBufferCallbackFunction_t StreamBufferCallbackFunctionT
+StreamBufferDef_t StreamBufferDefT
+StreamBufferHandle_t StreamBufferHandleT
 TaskFunction_t TaskFunctionT
 TaskHandle_t TaskHandleT
 TaskHookFunction_t TaskHookFunctionT
@@ -89,12 +97,20 @@ TaskParameters_t TaskParametersT
 TaskStatus_t TaskStatusT
 TickType_t TickTypeT
 TimeOut_t TimeOutT
+TimerCallbackFunction_t TimerCallbackFunctionT
+TimerHandle_t TimerHandleT
+TlsDeleteCallbackFunction_t TlsDeleteCallbackFunctionT
 UBaseType_t UBaseTypeT
 UserFrame
 XtExcFrame
 XtHalVoidFunc
 XtSolFrame
 XtosCoreState
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 div_t DivT
 eNotifyAction ENotifyAction
 eSleepModeStatus ESleepModeStatus
@@ -169,6 +185,7 @@ spinlock_t SpinlockT
 stat Stat
 timeval Timeval
 timezone Timezone
+tmrTimerControl TmrTimerControl
 tms Tms
 tskTaskControlBlock TskTaskControlBlock
 uint_fast16_t UintFast16T

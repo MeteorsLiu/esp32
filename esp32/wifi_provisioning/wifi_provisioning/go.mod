@@ -1,4 +1,4 @@
-module wifi_provisioning
+module github.com/MeteorsLiu/esp32/esp32/wifi_provisioning
 
 go 1.23.4
 

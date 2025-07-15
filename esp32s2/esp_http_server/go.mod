@@ -1,4 +1,4 @@
-module esp_http_server
+module github.com/MeteorsLiu/esp32/esp32s2/esp_http_server
 
 go 1.23.4
 

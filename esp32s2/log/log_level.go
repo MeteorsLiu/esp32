@@ -4,6 +4,7 @@ import (
 	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
+
 /**
  * @brief Set the default log level.
  *
@@ -19,6 +20,7 @@ import (
 // llgo:link EspLogLevelT.EspLogSetDefaultLevel C.esp_log_set_default_level
 func (recv_ EspLogLevelT) EspLogSetDefaultLevel() {
 }
+
 /**
  * @brief Get log level for a given tag, can be used to avoid expensive log statements
  *

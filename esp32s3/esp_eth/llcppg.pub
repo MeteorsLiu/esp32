@@ -1,8 +1,22 @@
 BaseType_t BaseTypeT
+EventBits_t EventBitsT
+EventGroupDef_t EventGroupDefT
+EventGroupHandle_t EventGroupHandleT
 HeapRegion
 HeapRegion_t HeapRegionT
 HeapStats_t HeapStatsT
 KernelFrame
+ListItem_t ListItemT
+List_t ListT
+MemoryRegion_t MemoryRegionT
+MessageBufferHandle_t MessageBufferHandleT
+MiniListItem_t MiniListItemT
+PendedFunction_t PendedFunctionT
+QueueDefinition
+QueueHandle_t QueueHandleT
+QueueSetHandle_t QueueSetHandleT
+QueueSetMemberHandle_t QueueSetMemberHandleT
+SemaphoreHandle_t SemaphoreHandleT
 StackType_t StackTypeT
 StaticEventGroup_t StaticEventGroupT
 StaticListItem_t StaticListItemT
@@ -14,8 +28,19 @@ StaticSemaphore_t StaticSemaphoreT
 StaticStreamBuffer_t StaticStreamBufferT
 StaticTask_t StaticTaskT
 StaticTimer_t StaticTimerT
+StreamBufferCallbackFunction_t StreamBufferCallbackFunctionT
+StreamBufferDef_t StreamBufferDefT
+StreamBufferHandle_t StreamBufferHandleT
 TaskFunction_t TaskFunctionT
+TaskHandle_t TaskHandleT
+TaskHookFunction_t TaskHookFunctionT
+TaskParameters_t TaskParametersT
+TaskStatus_t TaskStatusT
 TickType_t TickTypeT
+TimeOut_t TimeOutT
+TimerCallbackFunction_t TimerCallbackFunctionT
+TimerHandle_t TimerHandleT
+TlsDeleteCallbackFunction_t TlsDeleteCallbackFunctionT
 UBaseType_t UBaseTypeT
 UserFrame
 XtExcFrame
@@ -27,7 +52,15 @@ aner_reg_t AnerRegT
 anlpar_reg_t AnlparRegT
 bmcr_reg_t BmcrRegT
 bmsr_reg_t BmsrRegT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 div_t DivT
+eNotifyAction ENotifyAction
+eSleepModeStatus ESleepModeStatus
+eTaskState ETaskState
 emac_esp_dma_config_t EmacEspDmaConfigT
 emac_esp_dma_handle_t EmacEspDmaHandleT
 emac_esp_dma_t EmacEspDmaT
@@ -148,8 +181,10 @@ spinlock_t SpinlockT
 stat Stat
 timeval Timeval
 timezone Timezone
+tmrTimerControl TmrTimerControl
 tms Tms
 transaction_cb_t TransactionCbT
+tskTaskControlBlock TskTaskControlBlock
 uint_fast16_t UintFast16T
 uint_fast32_t UintFast32T
 uint_fast64_t UintFast64T
@@ -165,6 +200,10 @@ walker_heap_into_t WalkerHeapIntoT
 wchar_t WcharT
 wint_t WintT
 xHeapStats XHeapStats
+xLIST XLIST
+xLIST_ITEM XLISTITEM
+xMEMORY_REGION XMEMORYREGION
+xMINI_LIST_ITEM XMINILISTITEM
 xSTATIC_EVENT_GROUP XSTATICEVENTGROUP
 xSTATIC_LIST XSTATICLIST
 xSTATIC_LIST_ITEM XSTATICLISTITEM
@@ -173,6 +212,9 @@ xSTATIC_QUEUE XSTATICQUEUE
 xSTATIC_STREAM_BUFFER XSTATICSTREAMBUFFER
 xSTATIC_TCB XSTATICTCB
 xSTATIC_TIMER XSTATICTIMER
+xTASK_PARAMETERS XTASKPARAMETERS
+xTASK_STATUS XTASKSTATUS
+xTIME_OUT XTIMEOUT
 xt_exc_handler XtExcHandler
 xt_handler XtHandler
 xthal_MPU_entry XthalMPUEntry

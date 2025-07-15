@@ -1,0 +1,237 @@
+[
+  {
+    "mangle": "esp_netif_attach_wifi_ap",
+    "c++": "esp_netif_attach_wifi_ap(esp_netif_t *)",
+    "go": "EspNetifAttachWifiAp"
+  },
+  {
+    "mangle": "esp_netif_attach_wifi_station",
+    "c++": "esp_netif_attach_wifi_station(esp_netif_t *)",
+    "go": "EspNetifAttachWifiStation"
+  },
+  {
+    "mangle": "esp_netif_create_default_wifi_ap",
+    "c++": "esp_netif_create_default_wifi_ap()",
+    "go": "EspNetifCreateDefaultWifiAp"
+  },
+  {
+    "mangle": "esp_netif_create_default_wifi_mesh_netifs",
+    "c++": "esp_netif_create_default_wifi_mesh_netifs(esp_netif_t **, esp_netif_t **)",
+    "go": "EspNetifCreateDefaultWifiMeshNetifs"
+  },
+  {
+    "mangle": "esp_netif_create_default_wifi_sta",
+    "c++": "esp_netif_create_default_wifi_sta()",
+    "go": "EspNetifCreateDefaultWifiSta"
+  },
+  {
+    "mangle": "esp_netif_create_wifi",
+    "c++": "esp_netif_create_wifi(wifi_interface_t, const esp_netif_inherent_config_t *)",
+    "go": "WifiInterfaceT.EspNetifCreateWifi"
+  },
+  {
+    "mangle": "esp_netif_destroy_default_wifi",
+    "c++": "esp_netif_destroy_default_wifi(void *)",
+    "go": "EspNetifDestroyDefaultWifi"
+  },
+  {
+    "mangle": "esp_smartconfig_internal_start",
+    "c++": "esp_smartconfig_internal_start(const smartconfig_start_config_t *)",
+    "go": "(*SmartconfigStartConfigT).EspSmartconfigInternalStart"
+  },
+  {
+    "mangle": "esp_smartconfig_internal_stop",
+    "c++": "esp_smartconfig_internal_stop()",
+    "go": "EspSmartconfigInternalStop"
+  },
+  {
+    "mangle": "esp_smartconfig_start",
+    "c++": "esp_smartconfig_start(const smartconfig_start_config_t *)",
+    "go": "(*SmartconfigStartConfigT).EspSmartconfigStart"
+  },
+  {
+    "mangle": "esp_smartconfig_stop",
+    "c++": "esp_smartconfig_stop()",
+    "go": "EspSmartconfigStop"
+  },
+  {
+    "mangle": "esp_wifi_ap_get_sta_list_with_ip",
+    "c++": "esp_wifi_ap_get_sta_list_with_ip(const wifi_sta_list_t *, wifi_sta_mac_ip_list_t *)",
+    "go": "(*WifiStaListT).EspWifiApGetStaListWithIp"
+  },
+  {
+    "mangle": "esp_wifi_clear_default_wifi_driver_and_handlers",
+    "c++": "esp_wifi_clear_default_wifi_driver_and_handlers(void *)",
+    "go": "EspWifiClearDefaultWifiDriverAndHandlers"
+  },
+  {
+    "mangle": "esp_wifi_connect",
+    "c++": "esp_wifi_connect()",
+    "go": "EspWifiConnect"
+  },
+  {
+    "mangle": "esp_wifi_connect_internal",
+    "c++": "esp_wifi_connect_internal()",
+    "go": "EspWifiConnectInternal"
+  },
+  {
+    "mangle": "esp_wifi_create_if_driver",
+    "c++": "esp_wifi_create_if_driver(wifi_interface_t)",
+    "go": "WifiInterfaceT.EspWifiCreateIfDriver"
+  },
+  {
+    "mangle": "esp_wifi_deinit",
+    "c++": "esp_wifi_deinit()",
+    "go": "EspWifiDeinit"
+  },
+  {
+    "mangle": "esp_wifi_deinit_internal",
+    "c++": "esp_wifi_deinit_internal()",
+    "go": "EspWifiDeinitInternal"
+  },
+  {
+    "mangle": "esp_wifi_destroy_if_driver",
+    "c++": "esp_wifi_destroy_if_driver(wifi_netif_driver_t)",
+    "go": "EspWifiDestroyIfDriver"
+  },
+  {
+    "mangle": "esp_wifi_disconnect",
+    "c++": "esp_wifi_disconnect()",
+    "go": "EspWifiDisconnect"
+  },
+  {
+    "mangle": "esp_wifi_disconnect_internal",
+    "c++": "esp_wifi_disconnect_internal()",
+    "go": "EspWifiDisconnectInternal"
+  },
+  {
+    "mangle": "esp_wifi_get_if_mac",
+    "c++": "esp_wifi_get_if_mac(wifi_netif_driver_t, uint8_t *)",
+    "go": "EspWifiGetIfMac"
+  },
+  {
+    "mangle": "esp_wifi_get_mac",
+    "c++": "esp_wifi_get_mac(wifi_interface_t, uint8_t *)",
+    "go": "WifiInterfaceT.EspWifiGetMac"
+  },
+  {
+    "mangle": "esp_wifi_init",
+    "c++": "esp_wifi_init(const wifi_init_config_t *)",
+    "go": "(*WifiInitConfigT).EspWifiInit"
+  },
+  {
+    "mangle": "esp_wifi_init_internal",
+    "c++": "esp_wifi_init_internal(const wifi_init_config_t *)",
+    "go": "(*WifiInitConfigT).EspWifiInitInternal"
+  },
+  {
+    "mangle": "esp_wifi_internal_free_rx_buffer",
+    "c++": "esp_wifi_internal_free_rx_buffer(void *)",
+    "go": "EspWifiInternalFreeRxBuffer"
+  },
+  {
+    "mangle": "esp_wifi_internal_reg_netstack_buf_cb",
+    "c++": "esp_wifi_internal_reg_netstack_buf_cb(wifi_netstack_buf_ref_cb_t, wifi_netstack_buf_free_cb_t)",
+    "go": "EspWifiInternalRegNetstackBufCb"
+  },
+  {
+    "mangle": "esp_wifi_internal_reg_rxcb",
+    "c++": "esp_wifi_internal_reg_rxcb(wifi_interface_t, wifi_rxcb_t)",
+    "go": "WifiInterfaceT.EspWifiInternalRegRxcb"
+  },
+  {
+    "mangle": "esp_wifi_internal_set_log_level",
+    "c++": "esp_wifi_internal_set_log_level(wifi_log_level_t)",
+    "go": "WifiLogLevelT.EspWifiInternalSetLogLevel"
+  },
+  {
+    "mangle": "esp_wifi_internal_set_sta_ip",
+    "c++": "esp_wifi_internal_set_sta_ip()",
+    "go": "EspWifiInternalSetStaIp"
+  },
+  {
+    "mangle": "esp_wifi_internal_tx",
+    "c++": "esp_wifi_internal_tx(wifi_interface_t, void *, uint16_t)",
+    "go": "WifiInterfaceT.EspWifiInternalTx"
+  },
+  {
+    "mangle": "esp_wifi_is_if_ready_when_started",
+    "c++": "esp_wifi_is_if_ready_when_started(wifi_netif_driver_t)",
+    "go": "EspWifiIsIfReadyWhenStarted"
+  },
+  {
+    "mangle": "esp_wifi_power_domain_off",
+    "c++": "esp_wifi_power_domain_off()",
+    "go": "EspWifiPowerDomainOff"
+  },
+  {
+    "mangle": "esp_wifi_power_domain_on",
+    "c++": "esp_wifi_power_domain_on()",
+    "go": "EspWifiPowerDomainOn"
+  },
+  {
+    "mangle": "esp_wifi_register_if_rxcb",
+    "c++": "esp_wifi_register_if_rxcb(wifi_netif_driver_t, esp_netif_receive_t, void *)",
+    "go": "EspWifiRegisterIfRxcb"
+  },
+  {
+    "mangle": "esp_wifi_set_default_wifi_ap_handlers",
+    "c++": "esp_wifi_set_default_wifi_ap_handlers()",
+    "go": "EspWifiSetDefaultWifiApHandlers"
+  },
+  {
+    "mangle": "esp_wifi_set_default_wifi_nan_handlers",
+    "c++": "esp_wifi_set_default_wifi_nan_handlers()",
+    "go": "EspWifiSetDefaultWifiNanHandlers"
+  },
+  {
+    "mangle": "esp_wifi_set_default_wifi_sta_handlers",
+    "c++": "esp_wifi_set_default_wifi_sta_handlers()",
+    "go": "EspWifiSetDefaultWifiStaHandlers"
+  },
+  {
+    "mangle": "esp_wifi_set_keep_alive_time",
+    "c++": "esp_wifi_set_keep_alive_time(uint32_t)",
+    "go": "EspWifiSetKeepAliveTime"
+  },
+  {
+    "mangle": "esp_wifi_set_sleep_min_active_time",
+    "c++": "esp_wifi_set_sleep_min_active_time(uint32_t)",
+    "go": "EspWifiSetSleepMinActiveTime"
+  },
+  {
+    "mangle": "esp_wifi_set_sleep_wait_broadcast_data_time",
+    "c++": "esp_wifi_set_sleep_wait_broadcast_data_time(uint32_t)",
+    "go": "EspWifiSetSleepWaitBroadcastDataTime"
+  },
+  {
+    "mangle": "esp_wifi_stop",
+    "c++": "esp_wifi_stop()",
+    "go": "EspWifiStop"
+  },
+  {
+    "mangle": "sc_send_ack_start",
+    "c++": "sc_send_ack_start(smartconfig_type_t, uint8_t, uint8_t *)",
+    "go": "SmartconfigTypeT.ScSendAckStart"
+  },
+  {
+    "mangle": "sc_send_ack_stop",
+    "c++": "sc_send_ack_stop()",
+    "go": "ScSendAckStop"
+  },
+  {
+    "mangle": "wifi_calloc",
+    "c++": "wifi_calloc(size_t, size_t)",
+    "go": "WifiCalloc"
+  },
+  {
+    "mangle": "wifi_malloc",
+    "c++": "wifi_malloc(size_t)",
+    "go": "WifiMalloc"
+  },
+  {
+    "mangle": "wifi_realloc",
+    "c++": "wifi_realloc(void *, size_t)",
+    "go": "WifiRealloc"
+  }
+]

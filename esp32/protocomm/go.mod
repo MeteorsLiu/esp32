@@ -1,4 +1,4 @@
-module protocomm
+module github.com/MeteorsLiu/esp32/esp32/protocomm
 
 go 1.23.4
 

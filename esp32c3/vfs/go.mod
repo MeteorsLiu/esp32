@@ -1,4 +1,4 @@
-module vfs
+module github.com/MeteorsLiu/esp32/esp32c3/vfs
 
 go 1.23.4
 

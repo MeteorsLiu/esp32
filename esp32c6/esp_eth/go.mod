@@ -1,4 +1,4 @@
-module esp_eth
+module github.com/MeteorsLiu/esp32/esp32c6/esp_eth
 
 go 1.23.4
 

@@ -1,4 +1,4 @@
-module esp_bootloader_format
+module github.com/MeteorsLiu/esp32/esp32/esp_bootloader_format
 
 go 1.23.4
 

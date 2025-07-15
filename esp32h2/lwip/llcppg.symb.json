@@ -695,66 +695,6 @@
     "go": "(*IpAddrT).IpaddrNtoaR"
   },
   {
-    "mangle": "lwip_accept",
-    "c++": "lwip_accept(int, struct sockaddr *, socklen_t *)",
-    "go": "LwipAccept"
-  },
-  {
-    "mangle": "lwip_bind",
-    "c++": "lwip_bind(int, const struct sockaddr *, socklen_t)",
-    "go": "LwipBind"
-  },
-  {
-    "mangle": "lwip_close",
-    "c++": "lwip_close(int)",
-    "go": "LwipClose"
-  },
-  {
-    "mangle": "lwip_connect",
-    "c++": "lwip_connect(int, const struct sockaddr *, socklen_t)",
-    "go": "LwipConnect"
-  },
-  {
-    "mangle": "lwip_fcntl",
-    "c++": "lwip_fcntl(int, int, int)",
-    "go": "LwipFcntl"
-  },
-  {
-    "mangle": "lwip_freeaddrinfo",
-    "c++": "lwip_freeaddrinfo(struct addrinfo *)",
-    "go": "(*Struct addrinfo).LwipFreeaddrinfo"
-  },
-  {
-    "mangle": "lwip_getaddrinfo",
-    "c++": "lwip_getaddrinfo(const char *, const char *, const struct addrinfo *, struct addrinfo **)",
-    "go": "LwipGetaddrinfo"
-  },
-  {
-    "mangle": "lwip_gethostbyname",
-    "c++": "lwip_gethostbyname(const char *)",
-    "go": "LwipGethostbyname"
-  },
-  {
-    "mangle": "lwip_gethostbyname_r",
-    "c++": "lwip_gethostbyname_r(const char *, struct hostent *, char *, size_t, struct hostent **, int *)",
-    "go": "LwipGethostbynameR"
-  },
-  {
-    "mangle": "lwip_getpeername",
-    "c++": "lwip_getpeername(int, struct sockaddr *, socklen_t *)",
-    "go": "LwipGetpeername"
-  },
-  {
-    "mangle": "lwip_getsockname",
-    "c++": "lwip_getsockname(int, struct sockaddr *, socklen_t *)",
-    "go": "LwipGetsockname"
-  },
-  {
-    "mangle": "lwip_getsockopt",
-    "c++": "lwip_getsockopt(int, int, int, void *, socklen_t *)",
-    "go": "LwipGetsockopt"
-  },
-  {
     "mangle": "lwip_getsockopt_impl_ext",
     "c++": "lwip_getsockopt_impl_ext(struct lwip_sock *, int, int, void *, uint32_t *, int *)",
     "go": "(*Struct lwipSock).LwipGetsockoptImplExt"
@@ -790,16 +730,6 @@
     "go": "LwipIfNametoindex"
   },
   {
-    "mangle": "lwip_inet_ntop",
-    "c++": "lwip_inet_ntop(int, const void *, char *, socklen_t)",
-    "go": "LwipInetNtop"
-  },
-  {
-    "mangle": "lwip_inet_pton",
-    "c++": "lwip_inet_pton(int, const char *, void *)",
-    "go": "LwipInetPton"
-  },
-  {
     "mangle": "lwip_init",
     "c++": "lwip_init()",
     "go": "LwipInit"
@@ -810,19 +740,9 @@
     "go": "U32T.LwipInitTcpIsn"
   },
   {
-    "mangle": "lwip_ioctl",
-    "c++": "lwip_ioctl(int, long, void *)",
-    "go": "LwipIoctl"
-  },
-  {
     "mangle": "lwip_itoa",
     "c++": "lwip_itoa(char *, size_t, int)",
     "go": "LwipItoa"
-  },
-  {
-    "mangle": "lwip_listen",
-    "c++": "lwip_listen(int, int)",
-    "go": "LwipListen"
   },
   {
     "mangle": "lwip_netconn_do_accepted",
@@ -915,89 +835,14 @@
     "go": "LwipNetconnIsErrMsg"
   },
   {
-    "mangle": "lwip_poll",
-    "c++": "lwip_poll(struct pollfd *, nfds_t, int)",
-    "go": "LwipPoll"
-  },
-  {
-    "mangle": "lwip_read",
-    "c++": "lwip_read(int, void *, size_t)",
-    "go": "LwipRead"
-  },
-  {
-    "mangle": "lwip_readv",
-    "c++": "lwip_readv(int, const struct iovec *, int)",
-    "go": "LwipReadv"
-  },
-  {
-    "mangle": "lwip_recv",
-    "c++": "lwip_recv(int, void *, size_t, int)",
-    "go": "LwipRecv"
-  },
-  {
-    "mangle": "lwip_recvfrom",
-    "c++": "lwip_recvfrom(int, void *, size_t, int, struct sockaddr *, socklen_t *)",
-    "go": "LwipRecvfrom"
-  },
-  {
-    "mangle": "lwip_recvmsg",
-    "c++": "lwip_recvmsg(int, struct msghdr *, int)",
-    "go": "LwipRecvmsg"
-  },
-  {
-    "mangle": "lwip_select",
-    "c++": "lwip_select(int, fd_set *, fd_set *, fd_set *, struct timeval *)",
-    "go": "LwipSelect"
-  },
-  {
-    "mangle": "lwip_send",
-    "c++": "lwip_send(int, const void *, size_t, int)",
-    "go": "LwipSend"
-  },
-  {
-    "mangle": "lwip_sendmsg",
-    "c++": "lwip_sendmsg(int, const struct msghdr *, int)",
-    "go": "LwipSendmsg"
-  },
-  {
-    "mangle": "lwip_sendto",
-    "c++": "lwip_sendto(int, const void *, size_t, int, const struct sockaddr *, socklen_t)",
-    "go": "LwipSendto"
-  },
-  {
-    "mangle": "lwip_setsockopt",
-    "c++": "lwip_setsockopt(int, int, int, const void *, socklen_t)",
-    "go": "LwipSetsockopt"
-  },
-  {
     "mangle": "lwip_setsockopt_impl_ext",
     "c++": "lwip_setsockopt_impl_ext(struct lwip_sock *, int, int, const void *, uint32_t, int *)",
     "go": "(*Struct lwipSock).LwipSetsockoptImplExt"
   },
   {
-    "mangle": "lwip_shutdown",
-    "c++": "lwip_shutdown(int, int)",
-    "go": "LwipShutdown"
-  },
-  {
-    "mangle": "lwip_socket",
-    "c++": "lwip_socket(int, int, int)",
-    "go": "LwipSocket"
-  },
-  {
     "mangle": "lwip_socket_dbg_get_socket",
     "c++": "lwip_socket_dbg_get_socket(int)",
     "go": "LwipSocketDbgGetSocket"
-  },
-  {
-    "mangle": "lwip_socket_thread_cleanup",
-    "c++": "lwip_socket_thread_cleanup()",
-    "go": "LwipSocketThreadCleanup"
-  },
-  {
-    "mangle": "lwip_socket_thread_init",
-    "c++": "lwip_socket_thread_init()",
-    "go": "LwipSocketThreadInit"
   },
   {
     "mangle": "lwip_stricmp",
@@ -1018,16 +863,6 @@
     "mangle": "lwip_strnstr",
     "c++": "lwip_strnstr(const char *, const char *, size_t)",
     "go": "LwipStrnstr"
-  },
-  {
-    "mangle": "lwip_write",
-    "c++": "lwip_write(int, const void *, size_t)",
-    "go": "LwipWrite"
-  },
-  {
-    "mangle": "lwip_writev",
-    "c++": "lwip_writev(int, const struct iovec *, int)",
-    "go": "LwipWritev"
   },
   {
     "mangle": "mem_calloc",

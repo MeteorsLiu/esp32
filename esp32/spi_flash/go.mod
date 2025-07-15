@@ -1,4 +1,4 @@
-module spi_flash
+module github.com/MeteorsLiu/esp32/esp32/spi_flash
 
 go 1.23.4
 

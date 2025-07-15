@@ -1,4 +1,4 @@
-module esp_local_ctrl
+module github.com/MeteorsLiu/esp32/esp32/esp_local_ctrl
 
 go 1.23.4
 

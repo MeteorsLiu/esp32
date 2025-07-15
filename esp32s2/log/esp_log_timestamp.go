@@ -4,6 +4,7 @@ import (
 	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
+
 /**
  * @brief Function which returns timestamp to be used in log output
  *
@@ -18,6 +19,7 @@ import (
  */
 //go:linkname EspLogTimestamp C.esp_log_timestamp
 func EspLogTimestamp() c.Uint32T
+
 /**
  * @brief Function which returns system timestamp to be used in log output
  *
@@ -33,6 +35,7 @@ func EspLogTimestamp() c.Uint32T
  */
 //go:linkname EspLogSystemTimestamp C.esp_log_system_timestamp
 func EspLogSystemTimestamp() *c.Char
+
 /**
  * @brief Function which returns timestamp to be used in log output
  *

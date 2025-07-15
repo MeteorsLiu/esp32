@@ -1,4 +1,4 @@
-module nvs_flash
+module github.com/MeteorsLiu/esp32/esp32h2/nvs_flash
 
 go 1.23.4
 

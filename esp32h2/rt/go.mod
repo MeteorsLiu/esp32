@@ -1,4 +1,4 @@
-module rt
+module github.com/MeteorsLiu/esp32/esp32h2/rt
 
 go 1.23.4
 

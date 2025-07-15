@@ -1,4 +1,4 @@
-module esp_driver_ana_cmpr
+module github.com/MeteorsLiu/esp32/esp32/esp_driver_ana_cmpr
 
 go 1.23.4
 

@@ -1,4 +1,4 @@
-module esp_driver_rmt
+module github.com/MeteorsLiu/esp32/esp32c6/esp_driver_rmt
 
 go 1.23.4
 

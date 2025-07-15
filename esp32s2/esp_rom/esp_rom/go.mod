@@ -1,4 +1,4 @@
-module esp_rom
+module github.com/MeteorsLiu/esp32/esp32s2/esp_rom
 
 go 1.23.4
 

@@ -16,6 +16,7 @@ const (
 	ESP_LOG_VERBOSE EspLogLevelT = 5
 	ESP_LOG_MAX     EspLogLevelT = 6
 )
+
 /**
  * @brief Set log level for given tag
  *
@@ -38,6 +39,7 @@ const (
  */
 //go:linkname EspLogLevelSet C.esp_log_level_set
 func EspLogLevelSet(tag *c.Char, level EspLogLevelT)
+
 /**
  * @brief Get log level for a given tag, can be used to avoid expensive log statements
  *

@@ -390,44 +390,34 @@
     "go": "EccHalWriteVerifyParam"
   },
   {
-    "mangle": "efuse_hal_blk_version",
-    "c++": "efuse_hal_blk_version()",
-    "go": "EfuseHalBlkVersion"
+    "mangle": "efuse_hal_clear_program_registers",
+    "c++": "efuse_hal_clear_program_registers()",
+    "go": "EfuseHalClearProgramRegisters"
   },
   {
-    "mangle": "efuse_hal_chip_revision",
-    "c++": "efuse_hal_chip_revision()",
-    "go": "EfuseHalChipRevision"
+    "mangle": "efuse_hal_is_coding_error_in_block",
+    "c++": "efuse_hal_is_coding_error_in_block(unsigned int)",
+    "go": "EfuseHalIsCodingErrorInBlock"
   },
   {
-    "mangle": "efuse_hal_flash_encryption_enabled",
-    "c++": "efuse_hal_flash_encryption_enabled()",
-    "go": "EfuseHalFlashEncryptionEnabled"
+    "mangle": "efuse_hal_program",
+    "c++": "efuse_hal_program(uint32_t)",
+    "go": "EfuseHalProgram"
   },
   {
-    "mangle": "efuse_hal_get_disable_blk_version_major",
-    "c++": "efuse_hal_get_disable_blk_version_major()",
-    "go": "EfuseHalGetDisableBlkVersionMajor"
+    "mangle": "efuse_hal_read",
+    "c++": "efuse_hal_read()",
+    "go": "EfuseHalRead"
   },
   {
-    "mangle": "efuse_hal_get_disable_wafer_version_major",
-    "c++": "efuse_hal_get_disable_wafer_version_major()",
-    "go": "EfuseHalGetDisableWaferVersionMajor"
+    "mangle": "efuse_hal_rs_calculate",
+    "c++": "efuse_hal_rs_calculate(const void *, void *)",
+    "go": "EfuseHalRsCalculate"
   },
   {
-    "mangle": "efuse_hal_get_mac",
-    "c++": "efuse_hal_get_mac(uint8_t *)",
-    "go": "EfuseHalGetMac"
-  },
-  {
-    "mangle": "efuse_hal_get_major_chip_version",
-    "c++": "efuse_hal_get_major_chip_version()",
-    "go": "EfuseHalGetMajorChipVersion"
-  },
-  {
-    "mangle": "efuse_hal_get_minor_chip_version",
-    "c++": "efuse_hal_get_minor_chip_version()",
-    "go": "EfuseHalGetMinorChipVersion"
+    "mangle": "efuse_hal_set_timing",
+    "c++": "efuse_hal_set_timing(uint32_t)",
+    "go": "EfuseHalSetTiming"
   },
   {
     "mangle": "etm_hal_deinit",

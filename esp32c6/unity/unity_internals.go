@@ -17,7 +17,7 @@ type UNITYINT32 c.Int
 type UNITYUINT UNITYUINT32
 type UNITYINT UNITYINT32
 type UNITYFLOAT c.Float
-type UNITYDOUBLE UNITYFLOAT
+type UNITYDOUBLE c.Double
 
 // llgo:type C
 type UnityTestFunction func()
@@ -211,6 +211,26 @@ func (recv_ UNITYFLOAT) UnityAssertWithinFloatArray(expected *UNITYFLOAT, actual
 func (recv_ UNITYFLOAT) UnityAssertFloatSpecial(msg *c.Char, lineNumber UNITYUINT, style UNITYFLOATTRAITT) {
 }
 
+// llgo:link UNITYDOUBLE.UnityAssertDoublesWithin C.UnityAssertDoublesWithin
+func (recv_ UNITYDOUBLE) UnityAssertDoublesWithin(expected UNITYDOUBLE, actual UNITYDOUBLE, msg *c.Char, lineNumber UNITYUINT) {
+}
+
+// llgo:link UNITYDOUBLE.UnityAssertDoublesNotWithin C.UnityAssertDoublesNotWithin
+func (recv_ UNITYDOUBLE) UnityAssertDoublesNotWithin(expected UNITYDOUBLE, actual UNITYDOUBLE, msg *c.Char, lineNumber UNITYUINT) {
+}
+
+// llgo:link UNITYDOUBLE.UnityAssertGreaterOrLessDouble C.UnityAssertGreaterOrLessDouble
+func (recv_ UNITYDOUBLE) UnityAssertGreaterOrLessDouble(actual UNITYDOUBLE, compare UNITYCOMPARISONT, msg *c.Char, linenumber UNITYUINT) {
+}
+
+// llgo:link UNITYDOUBLE.UnityAssertWithinDoubleArray C.UnityAssertWithinDoubleArray
+func (recv_ UNITYDOUBLE) UnityAssertWithinDoubleArray(expected *UNITYDOUBLE, actual *UNITYDOUBLE, num_elements UNITYUINT32, msg *c.Char, lineNumber UNITYUINT, flags UNITYFLAGST) {
+}
+
+// llgo:link UNITYDOUBLE.UnityAssertDoubleSpecial C.UnityAssertDoubleSpecial
+func (recv_ UNITYDOUBLE) UnityAssertDoubleSpecial(msg *c.Char, lineNumber UNITYUINT, style UNITYFLOATTRAITT) {
+}
+
 /*-------------------------------------------------------
  * Helpers
  *-------------------------------------------------------*/
@@ -221,3 +241,6 @@ func (recv_ UNITYINT) UnityNumToPtr(size UNITYUINT8) c.Pointer {
 
 //go:linkname UnityFloatToPtr C.UnityFloatToPtr
 func UnityFloatToPtr(num c.Float) c.Pointer
+
+//go:linkname UnityDoubleToPtr C.UnityDoubleToPtr
+func UnityDoubleToPtr(num c.Double) c.Pointer

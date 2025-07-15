@@ -29,18 +29,22 @@ const X_WANT_REENT_BACKWARD_BINARY_COMPAT = 1
 const X_WANT_REENT_SMALL = 1
 const X_WANT_USE_GDTOA = 1
 const X__OBSOLETE_MATH_DEFAULT = 1
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
 const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
 const X__ATFILE_VISIBLE = 1
 const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
+const X__GNU_VISIBLE = 1
 const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
+const X__LARGEFILE_VISIBLE = 1
 const X__MISC_VISIBLE = 1
 const X__POSIX_VISIBLE = 200809
 const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
+const X__XSI_VISIBLE = 700
 const X__SSP_FORTIFY_LEVEL = 0
 const X_POSIX_THREADS = 1
 const X_POSIX_TIMEOUTS = 1
@@ -1244,3 +1248,4 @@ type Sigaltstack struct {
 type StackT Sigaltstack
 type SigAtomicT c.Int
 type SigT X_sigFuncPtr
+type SighandlerT X_sigFuncPtr

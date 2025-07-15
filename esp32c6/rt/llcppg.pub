@@ -53,6 +53,7 @@ sig_t SigT
 sigaction Sigaction
 sigaltstack Sigaltstack
 sigevent Sigevent
+sighandler_t SighandlerT
 siginfo_t SiginfoT
 sigset_t SigsetT
 sigval Sigval

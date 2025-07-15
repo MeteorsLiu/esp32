@@ -1,4 +1,4 @@
-module esp_netif
+module github.com/MeteorsLiu/esp32/esp32/esp_netif
 
 go 1.23.4
 

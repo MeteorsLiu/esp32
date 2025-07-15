@@ -1,4 +1,4 @@
-module esp_psram
+module github.com/MeteorsLiu/esp32/esp32/esp_psram
 
 go 1.23.4
 

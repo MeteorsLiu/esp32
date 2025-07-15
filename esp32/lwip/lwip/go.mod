@@ -1,4 +1,4 @@
-module lwip
+module github.com/MeteorsLiu/esp32/esp32/lwip
 
 go 1.23.4
 

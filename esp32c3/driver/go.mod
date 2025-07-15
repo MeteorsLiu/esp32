@@ -1,4 +1,4 @@
-module driver
+module github.com/MeteorsLiu/esp32/esp32c3/driver
 
 go 1.23.4
 

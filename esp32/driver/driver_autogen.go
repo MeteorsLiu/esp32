@@ -10,18 +10,22 @@ const X_NEWLIB_VERSION = "4.3.0"
 const X__NEWLIB__ = 4
 const X__NEWLIB_MINOR__ = 3
 const X__NEWLIB_PATCHLEVEL__ = 0
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
 const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
 const X__ATFILE_VISIBLE = 1
 const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
+const X__GNU_VISIBLE = 1
 const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
+const X__LARGEFILE_VISIBLE = 1
 const X__MISC_VISIBLE = 1
 const X__POSIX_VISIBLE = 200809
 const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
+const X__XSI_VISIBLE = 700
 const X__SSP_FORTIFY_LEVEL = 0
 const X_POSIX_THREADS = 1
 const X_POSIX_TIMEOUTS = 1
@@ -869,6 +873,7 @@ const SEEK_SET = 0
 const SEEK_CUR = 1
 const SEEK_END = 2
 const TMP_MAX = 26
+const L_cuserid = 9
 const L_ctermid = 16
 const ESP_OK = 0
 const ESP_ERR_NO_MEM = 0x101
@@ -2690,6 +2695,10 @@ const ConfigENABLE_MVE = 0
 const ConfigENABLE_TRUSTZONE = 1
 const ConfigRUN_FREERTOS_SECURE_ONLY = 0
 const ConfigRUN_ADDITIONAL_TESTS = 0
+const TskKERNEL_VERSION_NUMBER = "V10.5.1"
+const TskKERNEL_VERSION_MAJOR = 10
+const TskKERNEL_VERSION_MINOR = 5
+const TskKERNEL_VERSION_BUILD = 1
 const TWAI_EXTD_ID_MASK = 0x1FFFFFFF
 const TWAI_STD_ID_MASK = 0x7FF
 const TWAI_FRAME_MAX_DLC = 8
@@ -2702,10 +2711,6 @@ const TWAI_MSG_FLAG_RTR = 0x02
 const TWAI_MSG_FLAG_SS = 0x04
 const TWAI_MSG_FLAG_SELF = 0x08
 const TWAI_MSG_FLAG_DLC_NON_COMP = 0x10
-const TskKERNEL_VERSION_NUMBER = "V10.5.1"
-const TskKERNEL_VERSION_MAJOR = 10
-const TskKERNEL_VERSION_MINOR = 5
-const TskKERNEL_VERSION_BUILD = 1
 
 type X__int8T c.Char
 type X__uint8T c.Char
@@ -2997,6 +3002,25 @@ const (
 type X__gnucVaList c.Pointer
 type FposT X_fposT
 type OffT X__offT
+
+// llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
 type EspErrT c.Int
 type SocRootClkT c.Int
 
@@ -4560,54 +4584,6 @@ type XSTATICSTREAMBUFFER struct {
 }
 type StaticStreamBufferT XSTATICSTREAMBUFFER
 type StaticMessageBufferT StaticStreamBufferT
-type TwaiModeT c.Int
-
-const (
-	TWAI_MODE_NORMAL      TwaiModeT = 0
-	TWAI_MODE_NO_ACK      TwaiModeT = 1
-	TWAI_MODE_LISTEN_ONLY TwaiModeT = 2
-)
-
-/**
- * @brief   Structure to store a TWAI message
- *
- * @note    The flags member is deprecated
- */
-
-type TwaiMessageT struct {
-	Identifier     c.Uint32T
-	DataLengthCode c.Uint8T
-	Data           [8]c.Uint8T
-}
-type TwaiClockSourceT SocPeriphTwaiClkSrcT
-
-/**
- * @brief   Structure for bit timing configuration of the TWAI driver
- *
- * @note    Macro initializers are available for this structure
- */
-
-type TwaiTimingConfigT struct {
-	ClkSrc             TwaiClockSourceT
-	QuantaResolutionHz c.Uint32T
-	Brp                c.Uint32T
-	Tseg1              c.Uint8T
-	Tseg2              c.Uint8T
-	Sjw                c.Uint8T
-	TripleSampling     bool
-}
-
-/**
- * @brief   Structure for acceptance filter configuration of the TWAI driver (see documentation)
- *
- * @note    Macro initializers are available for this structure
- */
-
-type TwaiFilterConfigT struct {
-	AcceptanceCode c.Uint32T
-	AcceptanceMask c.Uint32T
-	SingleFilter   bool
-}
 
 /*
  * Definition of the only type of object that a list can contain.
@@ -4742,6 +4718,59 @@ type QueueDefinition struct {
 type QueueHandleT *QueueDefinition
 type QueueSetHandleT *QueueDefinition
 type QueueSetMemberHandleT *QueueDefinition
+type SemaphoreHandleT QueueHandleT
+
+/**
+ * Type by which stream buffers are referenced.  For example, a call to
+ * xStreamBufferCreate() returns an StreamBufferHandle_t variable that can
+ * then be used as a parameter to xStreamBufferSend(), xStreamBufferReceive(),
+ * etc.
+ */
+
+type StreamBufferDefT struct {
+	Unused [8]uint8
+}
+type StreamBufferHandleT *StreamBufferDefT
+
+// llgo:type C
+type StreamBufferCallbackFunctionT func(StreamBufferHandleT, BaseTypeT, *BaseTypeT)
+type MessageBufferHandleT StreamBufferHandleT
+
+/**
+ * Type by which software timers are referenced.  For example, a call to
+ * xTimerCreate() returns an TimerHandle_t variable that can then be used to
+ * reference the subject timer in calls to other software timer API functions
+ * (for example, xTimerStart(), xTimerReset(), etc.).
+ */
+
+type TmrTimerControl struct {
+	Unused [8]uint8
+}
+type TimerHandleT *TmrTimerControl
+
+// llgo:type C
+type TimerCallbackFunctionT func(TimerHandleT)
+
+// llgo:type C
+type PendedFunctionT func(c.Pointer, c.Uint32T)
+
+/**
+ *
+ * Type by which event groups are referenced.  For example, a call to
+ * xEventGroupCreate() returns an EventGroupHandle_t variable that can then
+ * be used as a parameter to other event group functions.
+ *
+ * \ingroup EventGroup
+ */
+
+type EventGroupDefT struct {
+	Unused [8]uint8
+}
+type EventGroupHandleT *EventGroupDefT
+type EventBitsT TickTypeT
+
+// llgo:type C
+type TlsDeleteCallbackFunctionT func(c.Int, c.Pointer)
 type RingbufHandleT c.Pointer
 type RingbufferTypeT c.Int
 
@@ -4772,7 +4801,54 @@ type XSTATICRINGBUFFER struct {
 	MuxDummy PortMUXTYPE
 }
 type StaticRingbufferT XSTATICRINGBUFFER
-type SemaphoreHandleT QueueHandleT
+type TwaiModeT c.Int
+
+const (
+	TWAI_MODE_NORMAL      TwaiModeT = 0
+	TWAI_MODE_NO_ACK      TwaiModeT = 1
+	TWAI_MODE_LISTEN_ONLY TwaiModeT = 2
+)
+
+/**
+ * @brief   Structure to store a TWAI message
+ *
+ * @note    The flags member is deprecated
+ */
+
+type TwaiMessageT struct {
+	Identifier     c.Uint32T
+	DataLengthCode c.Uint8T
+	Data           [8]c.Uint8T
+}
+type TwaiClockSourceT SocPeriphTwaiClkSrcT
+
+/**
+ * @brief   Structure for bit timing configuration of the TWAI driver
+ *
+ * @note    Macro initializers are available for this structure
+ */
+
+type TwaiTimingConfigT struct {
+	ClkSrc             TwaiClockSourceT
+	QuantaResolutionHz c.Uint32T
+	Brp                c.Uint32T
+	Tseg1              c.Uint8T
+	Tseg2              c.Uint8T
+	Sjw                c.Uint8T
+	TripleSampling     bool
+}
+
+/**
+ * @brief   Structure for acceptance filter configuration of the TWAI driver (see documentation)
+ *
+ * @note    Macro initializers are available for this structure
+ */
+
+type TwaiFilterConfigT struct {
+	AcceptanceCode c.Uint32T
+	AcceptanceMask c.Uint32T
+	SingleFilter   bool
+}
 type HalUtilsDivRoundOptT c.Int
 
 const (

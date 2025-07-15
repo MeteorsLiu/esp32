@@ -1,4 +1,4 @@
-module esp_security
+module github.com/MeteorsLiu/esp32/esp32c6/esp_security
 
 go 1.23.4
 

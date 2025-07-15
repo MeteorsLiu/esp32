@@ -4,8 +4,10 @@ import (
 	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
+
 // llgo:type C
 type VprintfLikeT func(*c.Char, c.VaList) c.Int
+
 /**
  * @brief Set function used to output log entries
  *
@@ -22,6 +24,7 @@ type VprintfLikeT func(*c.Char, c.VaList) c.Int
  */
 //go:linkname EspLogSetVprintf C.esp_log_set_vprintf
 func EspLogSetVprintf(func_ VprintfLikeT) VprintfLikeT
+
 /**
  * @brief Write message into the log
  *
@@ -33,6 +36,7 @@ func EspLogSetVprintf(func_ VprintfLikeT) VprintfLikeT
 // llgo:link EspLogLevelT.EspLogWrite C.esp_log_write
 func (recv_ EspLogLevelT) EspLogWrite(tag *c.Char, format *c.Char, __llgo_va_list ...interface{}) {
 }
+
 /**
  * @brief Write message into the log, va_list variant
  * @see esp_log_write()

@@ -1,0 +1,297 @@
+[
+  {
+    "mangle": "esp_transport_close",
+    "c++": "esp_transport_close(esp_transport_handle_t)",
+    "go": "EspTransportClose"
+  },
+  {
+    "mangle": "esp_transport_connect",
+    "c++": "esp_transport_connect(esp_transport_handle_t, const char *, int, int)",
+    "go": "EspTransportConnect"
+  },
+  {
+    "mangle": "esp_transport_connect_async",
+    "c++": "esp_transport_connect_async(esp_transport_handle_t, const char *, int, int)",
+    "go": "EspTransportConnectAsync"
+  },
+  {
+    "mangle": "esp_transport_destroy",
+    "c++": "esp_transport_destroy(esp_transport_handle_t)",
+    "go": "EspTransportDestroy"
+  },
+  {
+    "mangle": "esp_transport_get_context_data",
+    "c++": "esp_transport_get_context_data(esp_transport_handle_t)",
+    "go": "EspTransportGetContextData"
+  },
+  {
+    "mangle": "esp_transport_get_default_port",
+    "c++": "esp_transport_get_default_port(esp_transport_handle_t)",
+    "go": "EspTransportGetDefaultPort"
+  },
+  {
+    "mangle": "esp_transport_get_errno",
+    "c++": "esp_transport_get_errno(esp_transport_handle_t)",
+    "go": "EspTransportGetErrno"
+  },
+  {
+    "mangle": "esp_transport_get_error_handle",
+    "c++": "esp_transport_get_error_handle(esp_transport_handle_t)",
+    "go": "EspTransportGetErrorHandle"
+  },
+  {
+    "mangle": "esp_transport_get_payload_transport_handle",
+    "c++": "esp_transport_get_payload_transport_handle(esp_transport_handle_t)",
+    "go": "EspTransportGetPayloadTransportHandle"
+  },
+  {
+    "mangle": "esp_transport_init",
+    "c++": "esp_transport_init()",
+    "go": "EspTransportInit"
+  },
+  {
+    "mangle": "esp_transport_list_add",
+    "c++": "esp_transport_list_add(esp_transport_list_handle_t, esp_transport_handle_t, const char *)",
+    "go": "EspTransportListAdd"
+  },
+  {
+    "mangle": "esp_transport_list_clean",
+    "c++": "esp_transport_list_clean(esp_transport_list_handle_t)",
+    "go": "EspTransportListClean"
+  },
+  {
+    "mangle": "esp_transport_list_destroy",
+    "c++": "esp_transport_list_destroy(esp_transport_list_handle_t)",
+    "go": "EspTransportListDestroy"
+  },
+  {
+    "mangle": "esp_transport_list_get_transport",
+    "c++": "esp_transport_list_get_transport(esp_transport_list_handle_t, const char *)",
+    "go": "EspTransportListGetTransport"
+  },
+  {
+    "mangle": "esp_transport_list_init",
+    "c++": "esp_transport_list_init()",
+    "go": "EspTransportListInit"
+  },
+  {
+    "mangle": "esp_transport_poll_read",
+    "c++": "esp_transport_poll_read(esp_transport_handle_t, int)",
+    "go": "EspTransportPollRead"
+  },
+  {
+    "mangle": "esp_transport_poll_write",
+    "c++": "esp_transport_poll_write(esp_transport_handle_t, int)",
+    "go": "EspTransportPollWrite"
+  },
+  {
+    "mangle": "esp_transport_read",
+    "c++": "esp_transport_read(esp_transport_handle_t, char *, int, int)",
+    "go": "EspTransportRead"
+  },
+  {
+    "mangle": "esp_transport_set_async_connect_func",
+    "c++": "esp_transport_set_async_connect_func(esp_transport_handle_t, connect_async_func)",
+    "go": "EspTransportSetAsyncConnectFunc"
+  },
+  {
+    "mangle": "esp_transport_set_context_data",
+    "c++": "esp_transport_set_context_data(esp_transport_handle_t, void *)",
+    "go": "EspTransportSetContextData"
+  },
+  {
+    "mangle": "esp_transport_set_default_port",
+    "c++": "esp_transport_set_default_port(esp_transport_handle_t, int)",
+    "go": "EspTransportSetDefaultPort"
+  },
+  {
+    "mangle": "esp_transport_set_func",
+    "c++": "esp_transport_set_func(esp_transport_handle_t, connect_func, io_read_func, io_func, trans_func, poll_func, poll_func, trans_func)",
+    "go": "EspTransportSetFunc"
+  },
+  {
+    "mangle": "esp_transport_set_parent_transport_func",
+    "c++": "esp_transport_set_parent_transport_func(esp_transport_handle_t, payload_transfer_func)",
+    "go": "EspTransportSetParentTransportFunc"
+  },
+  {
+    "mangle": "esp_transport_socks_proxy_init",
+    "c++": "esp_transport_socks_proxy_init(esp_transport_handle_t, const esp_transport_socks_proxy_config_t *)",
+    "go": "EspTransportSocksProxyInit"
+  },
+  {
+    "mangle": "esp_transport_ssl_crt_bundle_attach",
+    "c++": "esp_transport_ssl_crt_bundle_attach(esp_transport_handle_t, esp_err_t ((*)(void *)))",
+    "go": "EspTransportSslCrtBundleAttach"
+  },
+  {
+    "mangle": "esp_transport_ssl_enable_global_ca_store",
+    "c++": "esp_transport_ssl_enable_global_ca_store(esp_transport_handle_t)",
+    "go": "EspTransportSslEnableGlobalCaStore"
+  },
+  {
+    "mangle": "esp_transport_ssl_init",
+    "c++": "esp_transport_ssl_init()",
+    "go": "EspTransportSslInit"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_addr_family",
+    "c++": "esp_transport_ssl_set_addr_family(esp_transport_handle_t, esp_tls_addr_family_t)",
+    "go": "EspTransportSslSetAddrFamily"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_alpn_protocol",
+    "c++": "esp_transport_ssl_set_alpn_protocol(esp_transport_handle_t, const char **)",
+    "go": "EspTransportSslSetAlpnProtocol"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_cert_data",
+    "c++": "esp_transport_ssl_set_cert_data(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetCertData"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_cert_data_der",
+    "c++": "esp_transport_ssl_set_cert_data_der(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetCertDataDer"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_client_cert_data",
+    "c++": "esp_transport_ssl_set_client_cert_data(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetClientCertData"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_client_cert_data_der",
+    "c++": "esp_transport_ssl_set_client_cert_data_der(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetClientCertDataDer"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_client_key_data",
+    "c++": "esp_transport_ssl_set_client_key_data(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetClientKeyData"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_client_key_data_der",
+    "c++": "esp_transport_ssl_set_client_key_data_der(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetClientKeyDataDer"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_client_key_password",
+    "c++": "esp_transport_ssl_set_client_key_password(esp_transport_handle_t, const char *, int)",
+    "go": "EspTransportSslSetClientKeyPassword"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_common_name",
+    "c++": "esp_transport_ssl_set_common_name(esp_transport_handle_t, const char *)",
+    "go": "EspTransportSslSetCommonName"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_interface_name",
+    "c++": "esp_transport_ssl_set_interface_name(esp_transport_handle_t, struct ifreq *)",
+    "go": "EspTransportSslSetInterfaceName"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_keep_alive",
+    "c++": "esp_transport_ssl_set_keep_alive(esp_transport_handle_t, esp_transport_keep_alive_t *)",
+    "go": "EspTransportSslSetKeepAlive"
+  },
+  {
+    "mangle": "esp_transport_ssl_set_tls_version",
+    "c++": "esp_transport_ssl_set_tls_version(esp_transport_handle_t, esp_tls_proto_ver_t)",
+    "go": "EspTransportSslSetTlsVersion"
+  },
+  {
+    "mangle": "esp_transport_ssl_skip_common_name_check",
+    "c++": "esp_transport_ssl_skip_common_name_check(esp_transport_handle_t)",
+    "go": "EspTransportSslSkipCommonNameCheck"
+  },
+  {
+    "mangle": "esp_transport_tcp_init",
+    "c++": "esp_transport_tcp_init()",
+    "go": "EspTransportTcpInit"
+  },
+  {
+    "mangle": "esp_transport_tcp_set_interface_name",
+    "c++": "esp_transport_tcp_set_interface_name(esp_transport_handle_t, struct ifreq *)",
+    "go": "EspTransportTcpSetInterfaceName"
+  },
+  {
+    "mangle": "esp_transport_tcp_set_keep_alive",
+    "c++": "esp_transport_tcp_set_keep_alive(esp_transport_handle_t, esp_transport_keep_alive_t *)",
+    "go": "EspTransportTcpSetKeepAlive"
+  },
+  {
+    "mangle": "esp_transport_translate_error",
+    "c++": "esp_transport_translate_error(enum esp_tcp_transport_err_t)",
+    "go": "Enum espTcpTransportErrT.EspTransportTranslateError"
+  },
+  {
+    "mangle": "esp_transport_write",
+    "c++": "esp_transport_write(esp_transport_handle_t, const char *, int, int)",
+    "go": "EspTransportWrite"
+  },
+  {
+    "mangle": "esp_transport_ws_get_fin_flag",
+    "c++": "esp_transport_ws_get_fin_flag(esp_transport_handle_t)",
+    "go": "EspTransportWsGetFinFlag"
+  },
+  {
+    "mangle": "esp_transport_ws_get_read_opcode",
+    "c++": "esp_transport_ws_get_read_opcode(esp_transport_handle_t)",
+    "go": "EspTransportWsGetReadOpcode"
+  },
+  {
+    "mangle": "esp_transport_ws_get_read_payload_len",
+    "c++": "esp_transport_ws_get_read_payload_len(esp_transport_handle_t)",
+    "go": "EspTransportWsGetReadPayloadLen"
+  },
+  {
+    "mangle": "esp_transport_ws_get_upgrade_request_status",
+    "c++": "esp_transport_ws_get_upgrade_request_status(esp_transport_handle_t)",
+    "go": "EspTransportWsGetUpgradeRequestStatus"
+  },
+  {
+    "mangle": "esp_transport_ws_init",
+    "c++": "esp_transport_ws_init(esp_transport_handle_t)",
+    "go": "EspTransportWsInit"
+  },
+  {
+    "mangle": "esp_transport_ws_poll_connection_closed",
+    "c++": "esp_transport_ws_poll_connection_closed(esp_transport_handle_t, int)",
+    "go": "EspTransportWsPollConnectionClosed"
+  },
+  {
+    "mangle": "esp_transport_ws_send_raw",
+    "c++": "esp_transport_ws_send_raw(esp_transport_handle_t, ws_transport_opcodes_t, const char *, int, int)",
+    "go": "EspTransportWsSendRaw"
+  },
+  {
+    "mangle": "esp_transport_ws_set_auth",
+    "c++": "esp_transport_ws_set_auth(esp_transport_handle_t, const char *)",
+    "go": "EspTransportWsSetAuth"
+  },
+  {
+    "mangle": "esp_transport_ws_set_config",
+    "c++": "esp_transport_ws_set_config(esp_transport_handle_t, const esp_transport_ws_config_t *)",
+    "go": "EspTransportWsSetConfig"
+  },
+  {
+    "mangle": "esp_transport_ws_set_headers",
+    "c++": "esp_transport_ws_set_headers(esp_transport_handle_t, const char *)",
+    "go": "EspTransportWsSetHeaders"
+  },
+  {
+    "mangle": "esp_transport_ws_set_path",
+    "c++": "esp_transport_ws_set_path(esp_transport_handle_t, const char *)",
+    "go": "EspTransportWsSetPath"
+  },
+  {
+    "mangle": "esp_transport_ws_set_subprotocol",
+    "c++": "esp_transport_ws_set_subprotocol(esp_transport_handle_t, const char *)",
+    "go": "EspTransportWsSetSubprotocol"
+  },
+  {
+    "mangle": "esp_transport_ws_set_user_agent",
+    "c++": "esp_transport_ws_set_user_agent(esp_transport_handle_t, const char *)",
+    "go": "EspTransportWsSetUserAgent"
+  }
+]

@@ -13,18 +13,22 @@ const X_NEWLIB_VERSION = "4.3.0"
 const X__NEWLIB__ = 4
 const X__NEWLIB_MINOR__ = 3
 const X__NEWLIB_PATCHLEVEL__ = 0
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
 const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
 const X__ATFILE_VISIBLE = 1
 const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
+const X__GNU_VISIBLE = 1
 const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
+const X__LARGEFILE_VISIBLE = 1
 const X__MISC_VISIBLE = 1
 const X__POSIX_VISIBLE = 200809
 const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
+const X__XSI_VISIBLE = 700
 const X__SSP_FORTIFY_LEVEL = 0
 const X_POSIX_THREADS = 1
 const X_POSIX_TIMEOUTS = 1
@@ -1206,6 +1210,7 @@ const SEEK_SET = 0
 const SEEK_CUR = 1
 const SEEK_END = 2
 const TMP_MAX = 26
+const L_cuserid = 9
 const L_ctermid = 16
 const ESP_OK = 0
 const ESP_ERR_NO_MEM = 0x101
@@ -2024,7 +2029,6 @@ const TskKERNEL_VERSION_NUMBER = "V10.5.1"
 const TskKERNEL_VERSION_MAJOR = 10
 const TskKERNEL_VERSION_MINOR = 5
 const TskKERNEL_VERSION_BUILD = 1
-const SOC_MMU_PAGE_SIZE = 0x10000
 const SOC_IRAM0_CACHE_ADDRESS_LOW = 0x42000000
 const SOC_MMU_ACCESS_FLASH = 0
 const SOC_MMU_INVALID = 0
@@ -2033,7 +2037,7 @@ const SOC_MMU_MAX_PADDR_PAGE_NUM = 256
 const SOC_MMU_ENTRY_NUM = 256
 const SOC_MMU_DBUS_VADDR_BASE = 0x42000000
 const SOC_MMU_IBUS_VADDR_BASE = 0x42000000
-const SOC_MMU_LINEAR_ADDR_MASK = 0x7FFFFF
+const SOC_MMU_LINEAR_ADDR_MASK = 0x3FFFFF
 const CACHE_IROM_MMU_START = 0
 const CACHE_DROM_MMU_MAX_END = 0x400
 const ICACHE_MMU_SIZE = 0x200
@@ -4073,6 +4077,25 @@ type LldivT struct {
 type X__comparFnT func(c.Pointer, c.Pointer) c.Int
 type FposT X_fposT
 type OffT X__offT
+
+// llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
 type EspErrT c.Int
 
 // llgo:type C
@@ -4581,6 +4604,58 @@ type QueueHandleT *QueueDefinition
 type QueueSetHandleT *QueueDefinition
 type QueueSetMemberHandleT *QueueDefinition
 type SemaphoreHandleT QueueHandleT
+
+/**
+ * Type by which stream buffers are referenced.  For example, a call to
+ * xStreamBufferCreate() returns an StreamBufferHandle_t variable that can
+ * then be used as a parameter to xStreamBufferSend(), xStreamBufferReceive(),
+ * etc.
+ */
+
+type StreamBufferDefT struct {
+	Unused [8]uint8
+}
+type StreamBufferHandleT *StreamBufferDefT
+
+// llgo:type C
+type StreamBufferCallbackFunctionT func(StreamBufferHandleT, BaseTypeT, *BaseTypeT)
+type MessageBufferHandleT StreamBufferHandleT
+
+/**
+ * Type by which software timers are referenced.  For example, a call to
+ * xTimerCreate() returns an TimerHandle_t variable that can then be used to
+ * reference the subject timer in calls to other software timer API functions
+ * (for example, xTimerStart(), xTimerReset(), etc.).
+ */
+
+type TmrTimerControl struct {
+	Unused [8]uint8
+}
+type TimerHandleT *TmrTimerControl
+
+// llgo:type C
+type TimerCallbackFunctionT func(TimerHandleT)
+
+// llgo:type C
+type PendedFunctionT func(c.Pointer, c.Uint32T)
+
+/**
+ *
+ * Type by which event groups are referenced.  For example, a call to
+ * xEventGroupCreate() returns an EventGroupHandle_t variable that can then
+ * be used as a parameter to other event group functions.
+ *
+ * \ingroup EventGroup
+ */
+
+type EventGroupDefT struct {
+	Unused [8]uint8
+}
+type EventGroupHandleT *EventGroupDefT
+type EventBitsT TickTypeT
+
+// llgo:type C
+type TlsDeleteCallbackFunctionT func(c.Int, c.Pointer)
 
 type DmaDescriptorS struct {
 	Unused [8]uint8

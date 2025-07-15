@@ -1,4 +1,4 @@
-module esp_driver_usb_serial_jtag
+module github.com/MeteorsLiu/esp32/esp32s2/esp_driver_usb_serial_jtag
 
 go 1.23.4
 

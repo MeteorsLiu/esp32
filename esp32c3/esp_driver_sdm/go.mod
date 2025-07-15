@@ -1,4 +1,4 @@
-module esp_driver_sdm
+module github.com/MeteorsLiu/esp32/esp32c3/esp_driver_sdm
 
 go 1.23.4
 

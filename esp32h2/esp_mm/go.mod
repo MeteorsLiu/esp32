@@ -1,4 +1,4 @@
-module esp_mm
+module github.com/MeteorsLiu/esp32/esp32h2/esp_mm
 
 go 1.23.4
 

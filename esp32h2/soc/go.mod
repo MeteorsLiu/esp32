@@ -1,4 +1,4 @@
-module soc
+module github.com/MeteorsLiu/esp32/esp32h2/soc
 
 go 1.23.4
 

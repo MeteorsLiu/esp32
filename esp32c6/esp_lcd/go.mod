@@ -1,4 +1,4 @@
-module esp_lcd
+module github.com/MeteorsLiu/esp32/esp32c6/esp_lcd
 
 go 1.23.4
 

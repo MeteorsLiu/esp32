@@ -1,4 +1,4 @@
-module esp_driver_i2s
+module github.com/MeteorsLiu/esp32/esp32/esp_driver_i2s
 
 go 1.23.4
 

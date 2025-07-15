@@ -1,0 +1,12 @@
+[
+  {
+    "mangle": "httpd_ssl_start",
+    "c++": "httpd_ssl_start(httpd_handle_t *, httpd_ssl_config_t *)",
+    "go": "HttpdSslStart"
+  },
+  {
+    "mangle": "httpd_ssl_stop",
+    "c++": "httpd_ssl_stop(httpd_handle_t)",
+    "go": "HttpdSslStop"
+  }
+]

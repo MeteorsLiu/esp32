@@ -1,4 +1,4 @@
-module esp_coex
+module github.com/MeteorsLiu/esp32/esp32c2/esp_coex
 
 go 1.23.4
 

@@ -1,4 +1,4 @@
-module esp_gdbstub
+module github.com/MeteorsLiu/esp32/esp32c3/esp_gdbstub
 
 go 1.23.4
 
