@@ -1,4 +1,4 @@
-module esp_driver_dac
+module github.com/MeteorsLiu/esp32/esp32c3/esp_driver_dac
 
 go 1.23.4
 

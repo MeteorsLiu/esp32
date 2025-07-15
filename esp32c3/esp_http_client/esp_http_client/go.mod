@@ -1,4 +1,4 @@
-module esp_http_client
+module github.com/MeteorsLiu/esp32/esp32c3/esp_http_client
 
 go 1.23.4
 

@@ -4,6 +4,7 @@ import (
 	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
+
 /**
  * @brief Get the timestamp in milliseconds for logging.
  *
@@ -22,6 +23,7 @@ import (
  */
 //go:linkname EspLogTimestamp64 C.esp_log_timestamp64
 func EspLogTimestamp64(critical bool) c.Uint64T
+
 /**
  * @brief Convert the uint64 timestamp to a string representation.
  *

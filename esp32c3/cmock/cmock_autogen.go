@@ -8,12 +8,64 @@ import (
 const UNITY_VERSION_MAJOR = 2
 const UNITY_VERSION_MINOR = 6
 const UNITY_VERSION_BUILD = 0
-const X__NEWLIB_H__ = 1
 const X_NEWLIB_VERSION_H__ = 1
 const X_NEWLIB_VERSION = "4.3.0"
 const X__NEWLIB__ = 4
 const X__NEWLIB_MINOR__ = 3
 const X__NEWLIB_PATCHLEVEL__ = 0
+const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
+const X__ATFILE_VISIBLE = 1
+const X__BSD_VISIBLE = 1
+const X__GNU_VISIBLE = 1
+const X__ISO_C_VISIBLE = 2011
+const X__LARGEFILE_VISIBLE = 1
+const X__MISC_VISIBLE = 1
+const X__POSIX_VISIBLE = 200809
+const X__SVID_VISIBLE = 1
+const X__XSI_VISIBLE = 700
+const X__SSP_FORTIFY_LEVEL = 0
+const X_POSIX_THREADS = 1
+const X_POSIX_TIMEOUTS = 1
+const X_POSIX_TIMERS = 1
+const X_UNIX98_THREAD_MUTEX_ATTRIBUTES = 1
+const X__have_longlong64 = 1
+const X__have_long32 = 1
+const X___int8_t_defined = 1
+const X___int16_t_defined = 1
+const X___int32_t_defined = 1
+const X___int64_t_defined = 1
+const X___int_least8_t_defined = 1
+const X___int_least16_t_defined = 1
+const X___int_least32_t_defined = 1
+const X___int_least64_t_defined = 1
+const X__INT8 = "hh"
+const X__INT16 = "h"
+const X__INT64 = "ll"
+const X__FAST8 = "hh"
+const X__FAST16 = "h"
+const X__FAST64 = "ll"
+const X__LEAST8 = "hh"
+const X__LEAST16 = "h"
+const X__LEAST64 = "ll"
+const X__int8_t_defined = 1
+const X__int16_t_defined = 1
+const X__int32_t_defined = 1
+const X__int64_t_defined = 1
+const X__int_least8_t_defined = 1
+const X__int_least16_t_defined = 1
+const X__int_least32_t_defined = 1
+const X__int_least64_t_defined = 1
+const X__int_fast8_t_defined = 1
+const X__int_fast16_t_defined = 1
+const X__int_fast32_t_defined = 1
+const X__int_fast64_t_defined = 1
+const X__NEWLIB_H__ = 1
 const X_ATEXIT_DYNAMIC_ALLOC = 1
 const X_FSEEK_OPTIMIZATION = 1
 const X_FVWRITE_IN_STREAMIO = 1
@@ -32,35 +84,26 @@ const X_WANT_REENT_BACKWARD_BINARY_COMPAT = 1
 const X_WANT_REENT_SMALL = 1
 const X_WANT_USE_GDTOA = 1
 const X__OBSOLETE_MATH_DEFAULT = 1
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
-const X_ATFILE_SOURCE = 1
-const X__ATFILE_VISIBLE = 1
-const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
-const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
-const X__MISC_VISIBLE = 1
-const X__POSIX_VISIBLE = 200809
-const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
-const X__SSP_FORTIFY_LEVEL = 0
-const X_POSIX_THREADS = 1
-const X_POSIX_TIMEOUTS = 1
-const X_POSIX_TIMERS = 1
-const X_UNIX98_THREAD_MUTEX_ATTRIBUTES = 1
 const X__BUFSIZ__ = 128
 const X__RAND_MAX = 0x7fffffff
-const X__have_longlong64 = 1
-const X__have_long32 = 1
-const X___int8_t_defined = 1
-const X___int16_t_defined = 1
-const X___int32_t_defined = 1
-const X___int64_t_defined = 1
-const X___int_least8_t_defined = 1
-const X___int_least16_t_defined = 1
-const X___int_least32_t_defined = 1
-const X___int_least64_t_defined = 1
+const X__GNUCLIKE_ASM = 3
+const X__GNUCLIKE___TYPEOF = 1
+const X__GNUCLIKE___SECTION = 1
+const X__GNUCLIKE_CTOR_SECTION_HANDLING = 1
+const X__GNUCLIKE_BUILTIN_CONSTANT_P = 1
+const X__GNUCLIKE_BUILTIN_VARARGS = 1
+const X__GNUCLIKE_BUILTIN_STDARG = 1
+const X__GNUCLIKE_BUILTIN_VAALIST = 1
+const X__GNUC_VA_LIST_COMPATIBILITY = 1
+const X__GNUCLIKE_BUILTIN_NEXT_ARG = 1
+const X__GNUCLIKE_BUILTIN_MEMCPY = 1
+const X__CC_SUPPORTS_INLINE = 1
+const X__CC_SUPPORTS___INLINE = 1
+const X__CC_SUPPORTS___INLINE__ = 1
+const X__CC_SUPPORTS___FUNC__ = 1
+const X__CC_SUPPORTS_WARNING = 1
+const X__CC_SUPPORTS_VARADIC_XXX = 1
+const X__CC_SUPPORTS_DYNAMIC_ARRAY_INIT = 1
 const X_NULL = 0
 const CONFIG_SOC_ADC_SUPPORTED = 1
 const CONFIG_SOC_DEDICATED_GPIO_SUPPORTED = 1
@@ -852,47 +895,56 @@ const X_ATEXIT_SIZE = 32
 const X_REENT_EMERGENCY_SIZE = 25
 const X_REENT_ASCTIME_SIZE = 26
 const X_REENT_SIGNAL_SIZE = 24
-const X__GNUCLIKE_ASM = 3
-const X__GNUCLIKE___TYPEOF = 1
-const X__GNUCLIKE___SECTION = 1
-const X__GNUCLIKE_CTOR_SECTION_HANDLING = 1
-const X__GNUCLIKE_BUILTIN_CONSTANT_P = 1
-const X__GNUCLIKE_BUILTIN_VARARGS = 1
-const X__GNUCLIKE_BUILTIN_STDARG = 1
-const X__GNUCLIKE_BUILTIN_VAALIST = 1
-const X__GNUC_VA_LIST_COMPATIBILITY = 1
-const X__GNUCLIKE_BUILTIN_NEXT_ARG = 1
-const X__GNUCLIKE_BUILTIN_MEMCPY = 1
-const X__CC_SUPPORTS_INLINE = 1
-const X__CC_SUPPORTS___INLINE = 1
-const X__CC_SUPPORTS___INLINE__ = 1
-const X__CC_SUPPORTS___FUNC__ = 1
-const X__CC_SUPPORTS_WARNING = 1
-const X__CC_SUPPORTS_VARADIC_XXX = 1
-const X__CC_SUPPORTS_DYNAMIC_ARRAY_INIT = 1
 const EXIT_FAILURE = 1
 const EXIT_SUCCESS = 0
-const X__INT8 = "hh"
-const X__INT16 = "h"
-const X__INT64 = "ll"
-const X__FAST8 = "hh"
-const X__FAST16 = "h"
-const X__FAST64 = "ll"
-const X__LEAST8 = "hh"
-const X__LEAST16 = "h"
-const X__LEAST64 = "ll"
-const X__int8_t_defined = 1
-const X__int16_t_defined = 1
-const X__int32_t_defined = 1
-const X__int64_t_defined = 1
-const X__int_least8_t_defined = 1
-const X__int_least16_t_defined = 1
-const X__int_least32_t_defined = 1
-const X__int_least64_t_defined = 1
-const X__int_fast8_t_defined = 1
-const X__int_fast16_t_defined = 1
-const X__int_fast32_t_defined = 1
-const X__int_fast64_t_defined = 1
+const X__SLBF = 0x0001
+const X__SNBF = 0x0002
+const X__SRD = 0x0004
+const X__SWR = 0x0008
+const X__SRW = 0x0010
+const X__SEOF = 0x0020
+const X__SERR = 0x0040
+const X__SMBF = 0x0080
+const X__SAPP = 0x0100
+const X__SSTR = 0x0200
+const X__SOPT = 0x0400
+const X__SNPT = 0x0800
+const X__SOFF = 0x1000
+const X__SORD = 0x2000
+const X__SL64 = 0x8000
+const X__SNLK = 0x0001
+const X__SWID = 0x2000
+const X_IOFBF = 0
+const X_IOLBF = 1
+const X_IONBF = 2
+const FOPEN_MAX = 20
+const FILENAME_MAX = 1024
+const P_tmpdir = "/tmp"
+const SEEK_SET = 0
+const SEEK_CUR = 1
+const SEEK_END = 2
+const TMP_MAX = 26
+const L_cuserid = 9
+const L_ctermid = 16
+const ESP_OK = 0
+const ESP_ERR_NO_MEM = 0x101
+const ESP_ERR_INVALID_ARG = 0x102
+const ESP_ERR_INVALID_STATE = 0x103
+const ESP_ERR_INVALID_SIZE = 0x104
+const ESP_ERR_NOT_FOUND = 0x105
+const ESP_ERR_NOT_SUPPORTED = 0x106
+const ESP_ERR_TIMEOUT = 0x107
+const ESP_ERR_INVALID_RESPONSE = 0x108
+const ESP_ERR_INVALID_CRC = 0x109
+const ESP_ERR_INVALID_VERSION = 0x10A
+const ESP_ERR_INVALID_MAC = 0x10B
+const ESP_ERR_NOT_FINISHED = 0x10C
+const ESP_ERR_NOT_ALLOWED = 0x10D
+const ESP_ERR_WIFI_BASE = 0x3000
+const ESP_ERR_MESH_BASE = 0x4000
+const ESP_ERR_FLASH_BASE = 0x6000
+const ESP_ERR_HW_CRYPTO_BASE = 0xc000
+const ESP_ERR_MEMPROT_BASE = 0xd000
 const X_M_LN2 = 0.693147180559945309417
 const FP_NAN = 0
 const FP_INFINITE = 1
@@ -921,6 +973,10 @@ const M_LN2HI = 6.9314718036912381649e-1
 const M_SQRT3 = 1.73205080756887719000
 const M_IVLN10 = 0.43429448190325182765
 const M_INVLN2 = 1.4426950408889633870e0
+const X__bool_true_false_are_defined = 1
+const True = 1
+const False = 0
+const CONFIG_IDF_TARGET_NA = 0
 const X_LIBC_LIMITS_H_ = 1
 const ARG_MAX = 65536
 const CHILD_MAX = 40
@@ -944,47 +1000,9 @@ const RE_DUP_MAX = 255
 const NL_ARGMAX = 32
 const X_POSIX2_RE_DUP_MAX = 255
 const CHAR_MIN = 0
-const X__noreturn_is_defined = 1
-const X__SLBF = 0x0001
-const X__SNBF = 0x0002
-const X__SRD = 0x0004
-const X__SWR = 0x0008
-const X__SRW = 0x0010
-const X__SEOF = 0x0020
-const X__SERR = 0x0040
-const X__SMBF = 0x0080
-const X__SAPP = 0x0100
-const X__SSTR = 0x0200
-const X__SOPT = 0x0400
-const X__SNPT = 0x0800
-const X__SOFF = 0x1000
-const X__SORD = 0x2000
-const X__SL64 = 0x8000
-const X__SNLK = 0x0001
-const X__SWID = 0x2000
-const X_IOFBF = 0
-const X_IOLBF = 1
-const X_IONBF = 2
-const FOPEN_MAX = 20
-const FILENAME_MAX = 1024
-const P_tmpdir = "/tmp"
-const SEEK_SET = 0
-const SEEK_CUR = 1
-const SEEK_END = 2
-const TMP_MAX = 26
-const L_ctermid = 16
 const UNITY_DETAIL1_NAME = "Function"
 const UNITY_DETAIL2_NAME = "Argument"
 
-type JmpBuf [26]c.LongLong
-type PtrdiffT c.Int
-type WcharT c.Int
-
-type MaxAlignT struct {
-	X__clangMaxAlignNonce1 c.LongLong
-	X__clangMaxAlignNonce2 c.Double
-}
-type WintT c.Uint
 type X__int8T c.Char
 type X__uint8T c.Char
 type X__int16T int16
@@ -1005,6 +1023,31 @@ type X__intmaxT c.LongLong
 type X__uintmaxT c.UlongLong
 type X__intptrT c.Int
 type X__uintptrT c.Uint
+type IntLeast8T X__intLeast8T
+type UintLeast8T X__uintLeast8T
+type IntLeast16T X__intLeast16T
+type UintLeast16T X__uintLeast16T
+type IntLeast32T X__intLeast32T
+type UintLeast32T X__uintLeast32T
+type IntLeast64T X__intLeast64T
+type UintLeast64T X__uintLeast64T
+type IntFast8T c.Char
+type UintFast8T c.Char
+type IntFast16T int16
+type UintFast16T uint16
+type IntFast32T c.Int
+type UintFast32T c.Uint
+type IntFast64T c.LongLong
+type UintFast64T c.UlongLong
+type PtrdiffT c.Int
+type WcharT c.Int
+
+type MaxAlignT struct {
+	X__clangMaxAlignNonce1 c.LongLong
+	X__clangMaxAlignNonce2 c.Double
+}
+type X__gnucVaList c.Pointer
+type WintT c.Uint
 type X__blkcntT c.Long
 type X__blksizeT c.Long
 type X__fsblkcntT X__uint64T
@@ -1181,24 +1224,45 @@ type LldivT struct {
 
 // llgo:type C
 type X__comparFnT func(c.Pointer, c.Pointer) c.Int
-type IntLeast8T X__intLeast8T
-type UintLeast8T X__uintLeast8T
-type IntLeast16T X__intLeast16T
-type UintLeast16T X__uintLeast16T
-type IntLeast32T X__intLeast32T
-type UintLeast32T X__uintLeast32T
-type IntLeast64T X__intLeast64T
-type UintLeast64T X__uintLeast64T
-type IntFast8T c.Char
-type UintFast8T c.Char
-type IntFast16T int16
-type UintFast16T uint16
-type IntFast32T c.Int
-type UintFast32T c.Uint
-type IntFast64T c.LongLong
-type UintFast64T c.UlongLong
+type FposT X_fposT
+type OffT X__offT
+
+// llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
+type EspErrT c.Int
 type FloatT c.Float
 type DoubleT c.Double
+
+// llgo:type C
+type TestFunc func()
+
+type TestDescT struct {
+	Name        *c.Char
+	Desc        *c.Char
+	Fn          *TestFunc
+	File        *c.Char
+	Line        c.Int
+	TestFnCount c.Uint8T
+	TestFnName  **c.Char
+	Next        *TestDescT
+}
+type JmpBuf [26]c.LongLong
 type UNITYUINT8 c.Char
 type UNITYUINT16 uint16
 type UNITYUINT32 c.Uint
@@ -1208,10 +1272,7 @@ type UNITYINT32 c.Int
 type UNITYUINT UNITYUINT32
 type UNITYINT UNITYINT32
 type UNITYFLOAT c.Float
-type UNITYDOUBLE UNITYFLOAT
-type X__gnucVaList c.Pointer
-type FposT X_fposT
-type OffT X__offT
+type UNITYDOUBLE c.Double
 
 // llgo:type C
 type UnityTestFunction func()

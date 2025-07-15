@@ -1,4 +1,4 @@
-module ieee802154
+module github.com/MeteorsLiu/esp32/esp32/ieee802154
 
 go 1.23.4
 

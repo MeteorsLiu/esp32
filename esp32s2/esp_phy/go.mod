@@ -1,4 +1,4 @@
-module esp_phy
+module github.com/MeteorsLiu/esp32/esp32s2/esp_phy
 
 go 1.23.4
 

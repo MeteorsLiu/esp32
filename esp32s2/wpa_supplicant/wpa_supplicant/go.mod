@@ -1,4 +1,4 @@
-module wpa_supplicant
+module github.com/MeteorsLiu/esp32/esp32s2/wpa_supplicant
 
 go 1.23.4
 

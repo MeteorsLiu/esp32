@@ -4,6 +4,7 @@ import (
 	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
+
 /**
  * @brief Convert an unsigned integer value to a string representation in the specified radix.
  *
@@ -32,6 +33,7 @@ import (
  */
 //go:linkname EspLogUtilCvt C.esp_log_util_cvt
 func EspLogUtilCvt(val c.UlongLong, radix c.Long, pad c.Int, digits *c.Char, buf *c.Char) c.Int
+
 /**
  * @brief Convert an unsigned integer to a hexadecimal string with optional padding.
  *
@@ -45,6 +47,7 @@ func EspLogUtilCvt(val c.UlongLong, radix c.Long, pad c.Int, digits *c.Char, buf
  */
 //go:linkname EspLogUtilCvtHex C.esp_log_util_cvt_hex
 func EspLogUtilCvtHex(val c.UlongLong, pad c.Int, buf *c.Char) c.Int
+
 /**
  * @brief Convert an unsigned integer to a decimal string with optional padding.
  *

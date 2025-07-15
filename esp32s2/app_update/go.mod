@@ -1,4 +1,4 @@
-module app_update
+module github.com/MeteorsLiu/esp32/esp32s2/app_update
 
 go 1.23.4
 

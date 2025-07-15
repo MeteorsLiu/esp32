@@ -1,4 +1,4 @@
-module hal
+module github.com/MeteorsLiu/esp32/esp32s3/hal
 
 go 1.23.4
 

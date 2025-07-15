@@ -1,4 +1,4 @@
-module esp_hid
+module github.com/MeteorsLiu/esp32/esp32s3/esp_hid
 
 go 1.23.4
 

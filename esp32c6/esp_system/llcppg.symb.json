@@ -1,0 +1,332 @@
+[
+  {
+    "mangle": "esp_backtrace_print",
+    "c++": "esp_backtrace_print(int)",
+    "go": "EspBacktracePrint"
+  },
+  {
+    "mangle": "esp_crosscore_int_init",
+    "c++": "esp_crosscore_int_init()",
+    "go": "EspCrosscoreIntInit"
+  },
+  {
+    "mangle": "esp_crosscore_int_send_freq_switch",
+    "c++": "esp_crosscore_int_send_freq_switch(int)",
+    "go": "EspCrosscoreIntSendFreqSwitch"
+  },
+  {
+    "mangle": "esp_crosscore_int_send_gdb_call",
+    "c++": "esp_crosscore_int_send_gdb_call(int)",
+    "go": "EspCrosscoreIntSendGdbCall"
+  },
+  {
+    "mangle": "esp_crosscore_int_send_yield",
+    "c++": "esp_crosscore_int_send_yield(int)",
+    "go": "EspCrosscoreIntSendYield"
+  },
+  {
+    "mangle": "esp_deregister_freertos_idle_hook",
+    "c++": "esp_deregister_freertos_idle_hook(esp_freertos_idle_cb_t)",
+    "go": "EspDeregisterFreertosIdleHook"
+  },
+  {
+    "mangle": "esp_deregister_freertos_idle_hook_for_cpu",
+    "c++": "esp_deregister_freertos_idle_hook_for_cpu(esp_freertos_idle_cb_t, UBaseType_t)",
+    "go": "EspDeregisterFreertosIdleHookForCpu"
+  },
+  {
+    "mangle": "esp_deregister_freertos_tick_hook",
+    "c++": "esp_deregister_freertos_tick_hook(esp_freertos_tick_cb_t)",
+    "go": "EspDeregisterFreertosTickHook"
+  },
+  {
+    "mangle": "esp_deregister_freertos_tick_hook_for_cpu",
+    "c++": "esp_deregister_freertos_tick_hook_for_cpu(esp_freertos_tick_cb_t, UBaseType_t)",
+    "go": "EspDeregisterFreertosTickHookForCpu"
+  },
+  {
+    "mangle": "esp_execute_shared_stack_function",
+    "c++": "esp_execute_shared_stack_function(SemaphoreHandle_t, void *, size_t, shared_stack_function)",
+    "go": "EspExecuteSharedStackFunction"
+  },
+  {
+    "mangle": "esp_get_free_heap_size",
+    "c++": "esp_get_free_heap_size()",
+    "go": "EspGetFreeHeapSize"
+  },
+  {
+    "mangle": "esp_get_free_internal_heap_size",
+    "c++": "esp_get_free_internal_heap_size()",
+    "go": "EspGetFreeInternalHeapSize"
+  },
+  {
+    "mangle": "esp_get_minimum_free_heap_size",
+    "c++": "esp_get_minimum_free_heap_size()",
+    "go": "EspGetMinimumFreeHeapSize"
+  },
+  {
+    "mangle": "esp_int_wdt_cpu_init",
+    "c++": "esp_int_wdt_cpu_init()",
+    "go": "EspIntWdtCpuInit"
+  },
+  {
+    "mangle": "esp_int_wdt_init",
+    "c++": "esp_int_wdt_init()",
+    "go": "EspIntWdtInit"
+  },
+  {
+    "mangle": "esp_register_freertos_idle_hook",
+    "c++": "esp_register_freertos_idle_hook(esp_freertos_idle_cb_t)",
+    "go": "EspRegisterFreertosIdleHook"
+  },
+  {
+    "mangle": "esp_register_freertos_idle_hook_for_cpu",
+    "c++": "esp_register_freertos_idle_hook_for_cpu(esp_freertos_idle_cb_t, UBaseType_t)",
+    "go": "EspRegisterFreertosIdleHookForCpu"
+  },
+  {
+    "mangle": "esp_register_freertos_tick_hook",
+    "c++": "esp_register_freertos_tick_hook(esp_freertos_tick_cb_t)",
+    "go": "EspRegisterFreertosTickHook"
+  },
+  {
+    "mangle": "esp_register_freertos_tick_hook_for_cpu",
+    "c++": "esp_register_freertos_tick_hook_for_cpu(esp_freertos_tick_cb_t, UBaseType_t)",
+    "go": "EspRegisterFreertosTickHookForCpu"
+  },
+  {
+    "mangle": "esp_register_shutdown_handler",
+    "c++": "esp_register_shutdown_handler(shutdown_handler_t)",
+    "go": "EspRegisterShutdownHandler"
+  },
+  {
+    "mangle": "esp_reset_reason",
+    "c++": "esp_reset_reason()",
+    "go": "EspResetReason"
+  },
+  {
+    "mangle": "esp_reset_reason_get_hint",
+    "c++": "esp_reset_reason_get_hint()",
+    "go": "EspResetReasonGetHint"
+  },
+  {
+    "mangle": "esp_reset_reason_set_hint",
+    "c++": "esp_reset_reason_set_hint(esp_reset_reason_t)",
+    "go": "EspResetReasonT.EspResetReasonSetHint"
+  },
+  {
+    "mangle": "esp_restart",
+    "c++": "esp_restart()",
+    "go": "EspRestart"
+  },
+  {
+    "mangle": "esp_restart_noos",
+    "c++": "esp_restart_noos()",
+    "go": "EspRestartNoos"
+  },
+  {
+    "mangle": "esp_system_abort",
+    "c++": "esp_system_abort(const char *)",
+    "go": "EspSystemAbort"
+  },
+  {
+    "mangle": "esp_system_get_time",
+    "c++": "esp_system_get_time()",
+    "go": "EspSystemGetTime"
+  },
+  {
+    "mangle": "esp_system_get_time_resolution",
+    "c++": "esp_system_get_time_resolution()",
+    "go": "EspSystemGetTimeResolution"
+  },
+  {
+    "mangle": "esp_system_reset_modules_on_exit",
+    "c++": "esp_system_reset_modules_on_exit()",
+    "go": "EspSystemResetModulesOnExit"
+  },
+  {
+    "mangle": "esp_systick_new_etm_alarm_event",
+    "c++": "esp_systick_new_etm_alarm_event(int, esp_etm_event_handle_t *)",
+    "go": "EspSystickNewEtmAlarmEvent"
+  },
+  {
+    "mangle": "esp_task_wdt_add",
+    "c++": "esp_task_wdt_add(TaskHandle_t)",
+    "go": "EspTaskWdtAdd"
+  },
+  {
+    "mangle": "esp_task_wdt_add_user",
+    "c++": "esp_task_wdt_add_user(const char *, esp_task_wdt_user_handle_t *)",
+    "go": "EspTaskWdtAddUser"
+  },
+  {
+    "mangle": "esp_task_wdt_deinit",
+    "c++": "esp_task_wdt_deinit()",
+    "go": "EspTaskWdtDeinit"
+  },
+  {
+    "mangle": "esp_task_wdt_delete",
+    "c++": "esp_task_wdt_delete(TaskHandle_t)",
+    "go": "EspTaskWdtDelete"
+  },
+  {
+    "mangle": "esp_task_wdt_delete_user",
+    "c++": "esp_task_wdt_delete_user(esp_task_wdt_user_handle_t)",
+    "go": "EspTaskWdtDeleteUser"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timeout_triggered",
+    "c++": "esp_task_wdt_impl_timeout_triggered(twdt_ctx_t)",
+    "go": "EspTaskWdtImplTimeoutTriggered"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_allocate",
+    "c++": "esp_task_wdt_impl_timer_allocate(const esp_task_wdt_config_t *, twdt_isr_callback, twdt_ctx_t *)",
+    "go": "(*EspTaskWdtConfigT).EspTaskWdtImplTimerAllocate"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_feed",
+    "c++": "esp_task_wdt_impl_timer_feed(twdt_ctx_t)",
+    "go": "EspTaskWdtImplTimerFeed"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_free",
+    "c++": "esp_task_wdt_impl_timer_free(twdt_ctx_t)",
+    "go": "EspTaskWdtImplTimerFree"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_reconfigure",
+    "c++": "esp_task_wdt_impl_timer_reconfigure(twdt_ctx_t, const esp_task_wdt_config_t *)",
+    "go": "EspTaskWdtImplTimerReconfigure"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_restart",
+    "c++": "esp_task_wdt_impl_timer_restart(twdt_ctx_t)",
+    "go": "EspTaskWdtImplTimerRestart"
+  },
+  {
+    "mangle": "esp_task_wdt_impl_timer_stop",
+    "c++": "esp_task_wdt_impl_timer_stop(twdt_ctx_t)",
+    "go": "EspTaskWdtImplTimerStop"
+  },
+  {
+    "mangle": "esp_task_wdt_init",
+    "c++": "esp_task_wdt_init(const esp_task_wdt_config_t *)",
+    "go": "(*EspTaskWdtConfigT).EspTaskWdtInit"
+  },
+  {
+    "mangle": "esp_task_wdt_isr_user_handler",
+    "c++": "esp_task_wdt_isr_user_handler()",
+    "go": "EspTaskWdtIsrUserHandler"
+  },
+  {
+    "mangle": "esp_task_wdt_print_triggered_tasks",
+    "c++": "esp_task_wdt_print_triggered_tasks(task_wdt_msg_handler, void *, int *)",
+    "go": "EspTaskWdtPrintTriggeredTasks"
+  },
+  {
+    "mangle": "esp_task_wdt_reconfigure",
+    "c++": "esp_task_wdt_reconfigure(const esp_task_wdt_config_t *)",
+    "go": "(*EspTaskWdtConfigT).EspTaskWdtReconfigure"
+  },
+  {
+    "mangle": "esp_task_wdt_reset",
+    "c++": "esp_task_wdt_reset()",
+    "go": "EspTaskWdtReset"
+  },
+  {
+    "mangle": "esp_task_wdt_reset_user",
+    "c++": "esp_task_wdt_reset_user(esp_task_wdt_user_handle_t)",
+    "go": "EspTaskWdtResetUser"
+  },
+  {
+    "mangle": "esp_task_wdt_restart",
+    "c++": "esp_task_wdt_restart()",
+    "go": "EspTaskWdtRestart"
+  },
+  {
+    "mangle": "esp_task_wdt_status",
+    "c++": "esp_task_wdt_status(TaskHandle_t)",
+    "go": "EspTaskWdtStatus"
+  },
+  {
+    "mangle": "esp_task_wdt_stop",
+    "c++": "esp_task_wdt_stop()",
+    "go": "EspTaskWdtStop"
+  },
+  {
+    "mangle": "esp_unregister_shutdown_handler",
+    "c++": "esp_unregister_shutdown_handler(shutdown_handler_t)",
+    "go": "EspUnregisterShutdownHandler"
+  },
+  {
+    "mangle": "panic_abort",
+    "c++": "panic_abort(const char *)",
+    "go": "PanicAbort"
+  },
+  {
+    "mangle": "panic_arch_fill_info",
+    "c++": "panic_arch_fill_info(void *, panic_info_t *)",
+    "go": "PanicArchFillInfo"
+  },
+  {
+    "mangle": "panic_get_address",
+    "c++": "panic_get_address(const void *)",
+    "go": "PanicGetAddress"
+  },
+  {
+    "mangle": "panic_get_cause",
+    "c++": "panic_get_cause(const void *)",
+    "go": "PanicGetCause"
+  },
+  {
+    "mangle": "panic_prepare_frame_from_ctx",
+    "c++": "panic_prepare_frame_from_ctx(void *)",
+    "go": "PanicPrepareFrameFromCtx"
+  },
+  {
+    "mangle": "panic_print_backtrace",
+    "c++": "panic_print_backtrace(const void *, int)",
+    "go": "PanicPrintBacktrace"
+  },
+  {
+    "mangle": "panic_print_char",
+    "c++": "panic_print_char(char)",
+    "go": "PanicPrintChar"
+  },
+  {
+    "mangle": "panic_print_dec",
+    "c++": "panic_print_dec(int)",
+    "go": "PanicPrintDec"
+  },
+  {
+    "mangle": "panic_print_hex",
+    "c++": "panic_print_hex(int)",
+    "go": "PanicPrintHex"
+  },
+  {
+    "mangle": "panic_print_registers",
+    "c++": "panic_print_registers(const void *, int)",
+    "go": "PanicPrintRegisters"
+  },
+  {
+    "mangle": "panic_print_str",
+    "c++": "panic_print_str(const char *)",
+    "go": "PanicPrintStr"
+  },
+  {
+    "mangle": "panic_set_address",
+    "c++": "panic_set_address(void *, uint32_t)",
+    "go": "PanicSetAddress"
+  },
+  {
+    "mangle": "panic_soc_check_pseudo_cause",
+    "c++": "panic_soc_check_pseudo_cause(void *, panic_info_t *)",
+    "go": "PanicSocCheckPseudoCause"
+  },
+  {
+    "mangle": "panic_soc_fill_info",
+    "c++": "panic_soc_fill_info(void *, panic_info_t *)",
+    "go": "PanicSocFillInfo"
+  }
+]

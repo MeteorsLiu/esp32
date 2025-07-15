@@ -1,4 +1,4 @@
-module riscv
+module github.com/MeteorsLiu/esp32/esp32h2/riscv
 
 go 1.23.4
 

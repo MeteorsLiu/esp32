@@ -1,4 +1,4 @@
-module esp_ringbuf
+module github.com/MeteorsLiu/esp32/esp32s2/esp_ringbuf
 
 go 1.23.4
 

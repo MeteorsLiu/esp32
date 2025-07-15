@@ -1,4 +1,4 @@
-module esp_wifi
+module github.com/MeteorsLiu/esp32/esp32c6/esp_wifi
 
 go 1.23.4
 

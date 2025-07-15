@@ -1,4 +1,4 @@
-module perfmon
+module github.com/MeteorsLiu/esp32/esp32s2/perfmon
 
 go 1.23.4
 

@@ -1,4 +1,7 @@
 BaseType_t BaseTypeT
+EventBits_t EventBitsT
+EventGroupDef_t EventGroupDefT
+EventGroupHandle_t EventGroupHandleT
 HeapRegion
 HeapRegion_t HeapRegionT
 HeapStats_t HeapStatsT
@@ -6,7 +9,9 @@ KernelFrame
 ListItem_t ListItemT
 List_t ListT
 MemoryRegion_t MemoryRegionT
+MessageBufferHandle_t MessageBufferHandleT
 MiniListItem_t MiniListItemT
+PendedFunction_t PendedFunctionT
 QueueDefinition
 QueueHandle_t QueueHandleT
 QueueSetHandle_t QueueSetHandleT
@@ -23,6 +28,9 @@ StaticSemaphore_t StaticSemaphoreT
 StaticStreamBuffer_t StaticStreamBufferT
 StaticTask_t StaticTaskT
 StaticTimer_t StaticTimerT
+StreamBufferCallbackFunction_t StreamBufferCallbackFunctionT
+StreamBufferDef_t StreamBufferDefT
+StreamBufferHandle_t StreamBufferHandleT
 TaskFunction_t TaskFunctionT
 TaskHandle_t TaskHandleT
 TaskHookFunction_t TaskHookFunctionT
@@ -30,6 +38,9 @@ TaskParameters_t TaskParametersT
 TaskStatus_t TaskStatusT
 TickType_t TickTypeT
 TimeOut_t TimeOutT
+TimerCallbackFunction_t TimerCallbackFunctionT
+TimerHandle_t TimerHandleT
+TlsDeleteCallbackFunction_t TlsDeleteCallbackFunctionT
 UBaseType_t UBaseTypeT
 UserFrame
 XtExcFrame
@@ -41,6 +52,11 @@ blksize_t BlksizeT
 caddr_t CaddrT
 clock_t ClockT
 clockid_t ClockidT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 daddr_t DaddrT
 dev_t DevT
 div_t DivT
@@ -153,6 +169,7 @@ timer_t TimerT
 timespec Timespec
 timeval Timeval
 timezone Timezone
+tmrTimerControl TmrTimerControl
 tms Tms
 tskTaskControlBlock TskTaskControlBlock
 u_char UChar

@@ -1,5 +1,5 @@
-module log
+module github.com/MeteorsLiu/esp32/esp32c2/log
 
 go 1.23.4
 
-require github.com/goplus/lib v0.2.0 // indirect
+require github.com/goplus/lib v0.2.0

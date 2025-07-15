@@ -1,0 +1,1427 @@
+[
+  {
+    "mangle": "adc2_cal_include",
+    "c++": "adc2_cal_include()",
+    "go": "Adc2CalInclude"
+  },
+  {
+    "mangle": "adc2_wifi_acquire",
+    "c++": "adc2_wifi_acquire()",
+    "go": "Adc2WifiAcquire"
+  },
+  {
+    "mangle": "adc2_wifi_release",
+    "c++": "adc2_wifi_release()",
+    "go": "Adc2WifiRelease"
+  },
+  {
+    "mangle": "adc_apb_periph_claim",
+    "c++": "adc_apb_periph_claim()",
+    "go": "AdcApbPeriphClaim"
+  },
+  {
+    "mangle": "adc_apb_periph_free",
+    "c++": "adc_apb_periph_free()",
+    "go": "AdcApbPeriphFree"
+  },
+  {
+    "mangle": "adc_calc_hw_calibration_code",
+    "c++": "adc_calc_hw_calibration_code(adc_unit_t, adc_atten_t)",
+    "go": "AdcCalcHwCalibrationCode"
+  },
+  {
+    "mangle": "adc_lock_acquire",
+    "c++": "adc_lock_acquire(adc_unit_t)",
+    "go": "AdcLockAcquire"
+  },
+  {
+    "mangle": "adc_lock_release",
+    "c++": "adc_lock_release(adc_unit_t)",
+    "go": "AdcLockRelease"
+  },
+  {
+    "mangle": "adc_lock_try_acquire",
+    "c++": "adc_lock_try_acquire(adc_unit_t)",
+    "go": "AdcLockTryAcquire"
+  },
+  {
+    "mangle": "adc_set_hw_calibration_code",
+    "c++": "adc_set_hw_calibration_code(adc_unit_t, adc_atten_t)",
+    "go": "AdcSetHwCalibrationCode"
+  },
+  {
+    "mangle": "esp_async_memcpy",
+    "c++": "esp_async_memcpy(async_memcpy_handle_t, void *, void *, size_t, async_memcpy_isr_cb_t, void *)",
+    "go": "EspAsyncMemcpy"
+  },
+  {
+    "mangle": "esp_async_memcpy_install",
+    "c++": "esp_async_memcpy_install(const async_memcpy_config_t *, async_memcpy_handle_t *)",
+    "go": "(*AsyncMemcpyConfigT).EspAsyncMemcpyInstall"
+  },
+  {
+    "mangle": "esp_async_memcpy_install_cpdma",
+    "c++": "esp_async_memcpy_install_cpdma(const async_memcpy_config_t *, async_memcpy_handle_t *)",
+    "go": "(*AsyncMemcpyConfigT).EspAsyncMemcpyInstallCpdma"
+  },
+  {
+    "mangle": "esp_async_memcpy_uninstall",
+    "c++": "esp_async_memcpy_uninstall(async_memcpy_handle_t)",
+    "go": "EspAsyncMemcpyUninstall"
+  },
+  {
+    "mangle": "esp_base_mac_addr_get",
+    "c++": "esp_base_mac_addr_get(uint8_t *)",
+    "go": "EspBaseMacAddrGet"
+  },
+  {
+    "mangle": "esp_base_mac_addr_set",
+    "c++": "esp_base_mac_addr_set(const uint8_t *)",
+    "go": "EspBaseMacAddrSet"
+  },
+  {
+    "mangle": "esp_chip_info",
+    "c++": "esp_chip_info(esp_chip_info_t *)",
+    "go": "(*EspChipInfoT).EspChipInfo"
+  },
+  {
+    "mangle": "esp_clk_apb_freq",
+    "c++": "esp_clk_apb_freq()",
+    "go": "EspClkApbFreq"
+  },
+  {
+    "mangle": "esp_clk_cpu_freq",
+    "c++": "esp_clk_cpu_freq()",
+    "go": "EspClkCpuFreq"
+  },
+  {
+    "mangle": "esp_clk_private_lock",
+    "c++": "esp_clk_private_lock()",
+    "go": "EspClkPrivateLock"
+  },
+  {
+    "mangle": "esp_clk_private_unlock",
+    "c++": "esp_clk_private_unlock()",
+    "go": "EspClkPrivateUnlock"
+  },
+  {
+    "mangle": "esp_clk_rtc_time",
+    "c++": "esp_clk_rtc_time()",
+    "go": "EspClkRtcTime"
+  },
+  {
+    "mangle": "esp_clk_slowclk_cal_get",
+    "c++": "esp_clk_slowclk_cal_get()",
+    "go": "EspClkSlowclkCalGet"
+  },
+  {
+    "mangle": "esp_clk_slowclk_cal_set",
+    "c++": "esp_clk_slowclk_cal_set(uint32_t)",
+    "go": "EspClkSlowclkCalSet"
+  },
+  {
+    "mangle": "esp_clk_tree_enable_src",
+    "c++": "esp_clk_tree_enable_src(soc_module_clk_t, bool)",
+    "go": "EspClkTreeEnableSrc"
+  },
+  {
+    "mangle": "esp_clk_tree_lp_fast_get_freq_hz",
+    "c++": "esp_clk_tree_lp_fast_get_freq_hz(esp_clk_tree_src_freq_precision_t)",
+    "go": "EspClkTreeSrcFreqPrecisionT.EspClkTreeLpFastGetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_tree_lp_slow_get_freq_hz",
+    "c++": "esp_clk_tree_lp_slow_get_freq_hz(esp_clk_tree_src_freq_precision_t)",
+    "go": "EspClkTreeSrcFreqPrecisionT.EspClkTreeLpSlowGetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_tree_rc_fast_d256_get_freq_hz",
+    "c++": "esp_clk_tree_rc_fast_d256_get_freq_hz(esp_clk_tree_src_freq_precision_t)",
+    "go": "EspClkTreeSrcFreqPrecisionT.EspClkTreeRcFastD256GetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_tree_rc_fast_get_freq_hz",
+    "c++": "esp_clk_tree_rc_fast_get_freq_hz(esp_clk_tree_src_freq_precision_t)",
+    "go": "EspClkTreeSrcFreqPrecisionT.EspClkTreeRcFastGetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_tree_src_get_freq_hz",
+    "c++": "esp_clk_tree_src_get_freq_hz(soc_module_clk_t, esp_clk_tree_src_freq_precision_t, uint32_t *)",
+    "go": "EspClkTreeSrcGetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_tree_xtal32k_get_freq_hz",
+    "c++": "esp_clk_tree_xtal32k_get_freq_hz(esp_clk_tree_src_freq_precision_t)",
+    "go": "EspClkTreeSrcFreqPrecisionT.EspClkTreeXtal32kGetFreqHz"
+  },
+  {
+    "mangle": "esp_clk_utils_mspi_speed_mode_sync_after_cpu_freq_switching",
+    "c++": "esp_clk_utils_mspi_speed_mode_sync_after_cpu_freq_switching(uint32_t, uint32_t)",
+    "go": "EspClkUtilsMspiSpeedModeSyncAfterCpuFreqSwitching"
+  },
+  {
+    "mangle": "esp_clk_utils_mspi_speed_mode_sync_before_cpu_freq_switching",
+    "c++": "esp_clk_utils_mspi_speed_mode_sync_before_cpu_freq_switching(uint32_t, uint32_t)",
+    "go": "EspClkUtilsMspiSpeedModeSyncBeforeCpuFreqSwitching"
+  },
+  {
+    "mangle": "esp_clk_xtal_freq",
+    "c++": "esp_clk_xtal_freq()",
+    "go": "EspClkXtalFreq"
+  },
+  {
+    "mangle": "esp_clock_output_start",
+    "c++": "esp_clock_output_start(soc_clkout_sig_id_t, gpio_num_t, esp_clock_output_mapping_handle_t *)",
+    "go": "EspClockOutputStart"
+  },
+  {
+    "mangle": "esp_clock_output_stop",
+    "c++": "esp_clock_output_stop(esp_clock_output_mapping_handle_t)",
+    "go": "EspClockOutputStop"
+  },
+  {
+    "mangle": "esp_cpu_clear_breakpoint",
+    "c++": "esp_cpu_clear_breakpoint(int)",
+    "go": "EspCpuClearBreakpoint"
+  },
+  {
+    "mangle": "esp_cpu_clear_watchpoint",
+    "c++": "esp_cpu_clear_watchpoint(int)",
+    "go": "EspCpuClearWatchpoint"
+  },
+  {
+    "mangle": "esp_cpu_compare_and_set",
+    "c++": "esp_cpu_compare_and_set(volatile uint32_t *, uint32_t, uint32_t)",
+    "go": "EspCpuCompareAndSet"
+  },
+  {
+    "mangle": "esp_cpu_configure_region_protection",
+    "c++": "esp_cpu_configure_region_protection()",
+    "go": "EspCpuConfigureRegionProtection"
+  },
+  {
+    "mangle": "esp_cpu_intr_get_desc",
+    "c++": "esp_cpu_intr_get_desc(int, int, esp_cpu_intr_desc_t *)",
+    "go": "EspCpuIntrGetDesc"
+  },
+  {
+    "mangle": "esp_cpu_reset",
+    "c++": "esp_cpu_reset(int)",
+    "go": "EspCpuReset"
+  },
+  {
+    "mangle": "esp_cpu_set_breakpoint",
+    "c++": "esp_cpu_set_breakpoint(int, const void *)",
+    "go": "EspCpuSetBreakpoint"
+  },
+  {
+    "mangle": "esp_cpu_set_watchpoint",
+    "c++": "esp_cpu_set_watchpoint(int, const void *, size_t, esp_cpu_watchpoint_trigger_t)",
+    "go": "EspCpuSetWatchpoint"
+  },
+  {
+    "mangle": "esp_cpu_stall",
+    "c++": "esp_cpu_stall(int)",
+    "go": "EspCpuStall"
+  },
+  {
+    "mangle": "esp_cpu_unstall",
+    "c++": "esp_cpu_unstall(int)",
+    "go": "EspCpuUnstall"
+  },
+  {
+    "mangle": "esp_cpu_wait_for_intr",
+    "c++": "esp_cpu_wait_for_intr()",
+    "go": "EspCpuWaitForIntr"
+  },
+  {
+    "mangle": "esp_deep_sleep",
+    "c++": "esp_deep_sleep(uint64_t)",
+    "go": "EspDeepSleep"
+  },
+  {
+    "mangle": "esp_deep_sleep_deregister_hook",
+    "c++": "esp_deep_sleep_deregister_hook(esp_deep_sleep_cb_t)",
+    "go": "EspDeepSleepDeregisterHook"
+  },
+  {
+    "mangle": "esp_deep_sleep_deregister_phy_hook",
+    "c++": "esp_deep_sleep_deregister_phy_hook(esp_deep_sleep_cb_t)",
+    "go": "EspDeepSleepDeregisterPhyHook"
+  },
+  {
+    "mangle": "esp_deep_sleep_disable_rom_logging",
+    "c++": "esp_deep_sleep_disable_rom_logging()",
+    "go": "EspDeepSleepDisableRomLogging"
+  },
+  {
+    "mangle": "esp_deep_sleep_register_hook",
+    "c++": "esp_deep_sleep_register_hook(esp_deep_sleep_cb_t)",
+    "go": "EspDeepSleepRegisterHook"
+  },
+  {
+    "mangle": "esp_deep_sleep_register_phy_hook",
+    "c++": "esp_deep_sleep_register_phy_hook(esp_deep_sleep_cb_t)",
+    "go": "EspDeepSleepRegisterPhyHook"
+  },
+  {
+    "mangle": "esp_deep_sleep_start",
+    "c++": "esp_deep_sleep_start()",
+    "go": "EspDeepSleepStart"
+  },
+  {
+    "mangle": "esp_deep_sleep_try",
+    "c++": "esp_deep_sleep_try(uint64_t)",
+    "go": "EspDeepSleepTry"
+  },
+  {
+    "mangle": "esp_deep_sleep_try_to_start",
+    "c++": "esp_deep_sleep_try_to_start()",
+    "go": "EspDeepSleepTryToStart"
+  },
+  {
+    "mangle": "esp_deep_sleep_wakeup_io_reset",
+    "c++": "esp_deep_sleep_wakeup_io_reset()",
+    "go": "EspDeepSleepWakeupIoReset"
+  },
+  {
+    "mangle": "esp_default_wake_deep_sleep",
+    "c++": "esp_default_wake_deep_sleep()",
+    "go": "EspDefaultWakeDeepSleep"
+  },
+  {
+    "mangle": "esp_derive_local_mac",
+    "c++": "esp_derive_local_mac(uint8_t *, const uint8_t *)",
+    "go": "EspDeriveLocalMac"
+  },
+  {
+    "mangle": "esp_dma_calculate_node_count",
+    "c++": "esp_dma_calculate_node_count(size_t, size_t, size_t)",
+    "go": "EspDmaCalculateNodeCount"
+  },
+  {
+    "mangle": "esp_dma_calloc",
+    "c++": "esp_dma_calloc(size_t, size_t, uint32_t, void **, size_t *)",
+    "go": "EspDmaCalloc"
+  },
+  {
+    "mangle": "esp_dma_capable_calloc",
+    "c++": "esp_dma_capable_calloc(size_t, size_t, const esp_dma_mem_info_t *, void **, size_t *)",
+    "go": "EspDmaCapableCalloc"
+  },
+  {
+    "mangle": "esp_dma_capable_malloc",
+    "c++": "esp_dma_capable_malloc(size_t, const esp_dma_mem_info_t *, void **, size_t *)",
+    "go": "EspDmaCapableMalloc"
+  },
+  {
+    "mangle": "esp_dma_is_buffer_aligned",
+    "c++": "esp_dma_is_buffer_aligned(const void *, size_t, esp_dma_buf_location_t)",
+    "go": "EspDmaIsBufferAligned"
+  },
+  {
+    "mangle": "esp_dma_is_buffer_alignment_satisfied",
+    "c++": "esp_dma_is_buffer_alignment_satisfied(const void *, size_t, esp_dma_mem_info_t)",
+    "go": "EspDmaIsBufferAlignmentSatisfied"
+  },
+  {
+    "mangle": "esp_dma_malloc",
+    "c++": "esp_dma_malloc(size_t, uint32_t, void **, size_t *)",
+    "go": "EspDmaMalloc"
+  },
+  {
+    "mangle": "esp_dma_merge_aligned_rx_buffers",
+    "c++": "esp_dma_merge_aligned_rx_buffers(dma_buffer_split_array_t *)",
+    "go": "(*DmaBufferSplitArrayT).EspDmaMergeAlignedRxBuffers"
+  },
+  {
+    "mangle": "esp_dma_split_rx_buffer_to_cache_aligned",
+    "c++": "esp_dma_split_rx_buffer_to_cache_aligned(void *, size_t, dma_buffer_split_array_t *, uint8_t **)",
+    "go": "EspDmaSplitRxBufferToCacheAligned"
+  },
+  {
+    "mangle": "esp_efuse_mac_get_custom",
+    "c++": "esp_efuse_mac_get_custom(uint8_t *)",
+    "go": "EspEfuseMacGetCustom"
+  },
+  {
+    "mangle": "esp_efuse_mac_get_default",
+    "c++": "esp_efuse_mac_get_default(uint8_t *)",
+    "go": "EspEfuseMacGetDefault"
+  },
+  {
+    "mangle": "esp_fill_random",
+    "c++": "esp_fill_random(void *, size_t)",
+    "go": "EspFillRandom"
+  },
+  {
+    "mangle": "esp_get_deep_sleep_wake_stub",
+    "c++": "esp_get_deep_sleep_wake_stub()",
+    "go": "EspGetDeepSleepWakeStub"
+  },
+  {
+    "mangle": "esp_gpio_is_reserved",
+    "c++": "esp_gpio_is_reserved(uint64_t)",
+    "go": "EspGpioIsReserved"
+  },
+  {
+    "mangle": "esp_gpio_reserve",
+    "c++": "esp_gpio_reserve(uint64_t)",
+    "go": "EspGpioReserve"
+  },
+  {
+    "mangle": "esp_gpio_revoke",
+    "c++": "esp_gpio_revoke(uint64_t)",
+    "go": "EspGpioRevoke"
+  },
+  {
+    "mangle": "esp_iface_mac_addr_set",
+    "c++": "esp_iface_mac_addr_set(const uint8_t *, esp_mac_type_t)",
+    "go": "EspIfaceMacAddrSet"
+  },
+  {
+    "mangle": "esp_intr_alloc",
+    "c++": "esp_intr_alloc(int, int, intr_handler_t, void *, intr_handle_t *)",
+    "go": "EspIntrAlloc"
+  },
+  {
+    "mangle": "esp_intr_alloc_intrstatus",
+    "c++": "esp_intr_alloc_intrstatus(int, int, uint32_t, uint32_t, intr_handler_t, void *, intr_handle_t *)",
+    "go": "EspIntrAllocIntrstatus"
+  },
+  {
+    "mangle": "esp_intr_disable",
+    "c++": "esp_intr_disable(intr_handle_t)",
+    "go": "EspIntrDisable"
+  },
+  {
+    "mangle": "esp_intr_disable_source",
+    "c++": "esp_intr_disable_source(int)",
+    "go": "EspIntrDisableSource"
+  },
+  {
+    "mangle": "esp_intr_dump",
+    "c++": "esp_intr_dump(int *)",
+    "go": "EspIntrDump"
+  },
+  {
+    "mangle": "esp_intr_enable",
+    "c++": "esp_intr_enable(intr_handle_t)",
+    "go": "EspIntrEnable"
+  },
+  {
+    "mangle": "esp_intr_enable_source",
+    "c++": "esp_intr_enable_source(int)",
+    "go": "EspIntrEnableSource"
+  },
+  {
+    "mangle": "esp_intr_free",
+    "c++": "esp_intr_free(intr_handle_t)",
+    "go": "EspIntrFree"
+  },
+  {
+    "mangle": "esp_intr_get_cpu",
+    "c++": "esp_intr_get_cpu(intr_handle_t)",
+    "go": "EspIntrGetCpu"
+  },
+  {
+    "mangle": "esp_intr_get_intno",
+    "c++": "esp_intr_get_intno(intr_handle_t)",
+    "go": "EspIntrGetIntno"
+  },
+  {
+    "mangle": "esp_intr_mark_shared",
+    "c++": "esp_intr_mark_shared(int, int, bool)",
+    "go": "EspIntrMarkShared"
+  },
+  {
+    "mangle": "esp_intr_noniram_disable",
+    "c++": "esp_intr_noniram_disable()",
+    "go": "EspIntrNoniramDisable"
+  },
+  {
+    "mangle": "esp_intr_noniram_enable",
+    "c++": "esp_intr_noniram_enable()",
+    "go": "EspIntrNoniramEnable"
+  },
+  {
+    "mangle": "esp_intr_ptr_in_isr_region",
+    "c++": "esp_intr_ptr_in_isr_region(void *)",
+    "go": "EspIntrPtrInIsrRegion"
+  },
+  {
+    "mangle": "esp_intr_reserve",
+    "c++": "esp_intr_reserve(int, int)",
+    "go": "EspIntrReserve"
+  },
+  {
+    "mangle": "esp_intr_set_in_iram",
+    "c++": "esp_intr_set_in_iram(intr_handle_t, bool)",
+    "go": "EspIntrSetInIram"
+  },
+  {
+    "mangle": "esp_light_sleep_start",
+    "c++": "esp_light_sleep_start()",
+    "go": "EspLightSleepStart"
+  },
+  {
+    "mangle": "esp_mac_addr_len_get",
+    "c++": "esp_mac_addr_len_get(esp_mac_type_t)",
+    "go": "EspMacTypeT.EspMacAddrLenGet"
+  },
+  {
+    "mangle": "esp_memprot_clear_intr",
+    "c++": "esp_memprot_clear_intr(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotClearIntr"
+  },
+  {
+    "mangle": "esp_memprot_get_active_intr_memtype",
+    "c++": "esp_memprot_get_active_intr_memtype()",
+    "go": "EspMemprotGetActiveIntrMemtype"
+  },
+  {
+    "mangle": "esp_memprot_get_conf_reg",
+    "c++": "esp_memprot_get_conf_reg(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetConfReg"
+  },
+  {
+    "mangle": "esp_memprot_get_fault_reg",
+    "c++": "esp_memprot_get_fault_reg(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetFaultReg"
+  },
+  {
+    "mangle": "esp_memprot_get_fault_status",
+    "c++": "esp_memprot_get_fault_status(mem_type_prot_t, uint32_t **, uint32_t *, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetFaultStatus"
+  },
+  {
+    "mangle": "esp_memprot_get_high_limit",
+    "c++": "esp_memprot_get_high_limit(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotGetHighLimit"
+  },
+  {
+    "mangle": "esp_memprot_get_intr_clr_bit",
+    "c++": "esp_memprot_get_intr_clr_bit(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetIntrClrBit"
+  },
+  {
+    "mangle": "esp_memprot_get_intr_ena_bit",
+    "c++": "esp_memprot_get_intr_ena_bit(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetIntrEnaBit"
+  },
+  {
+    "mangle": "esp_memprot_get_intr_on_bit",
+    "c++": "esp_memprot_get_intr_on_bit(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetIntrOnBit"
+  },
+  {
+    "mangle": "esp_memprot_get_lock",
+    "c++": "esp_memprot_get_lock(mem_type_prot_t, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetLock"
+  },
+  {
+    "mangle": "esp_memprot_get_low_limit",
+    "c++": "esp_memprot_get_low_limit(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotGetLowLimit"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_exec",
+    "c++": "esp_memprot_get_perm_exec(mem_type_prot_t, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermExec"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_read",
+    "c++": "esp_memprot_get_perm_read(mem_type_prot_t, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermRead"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_split_bits_dram",
+    "c++": "esp_memprot_get_perm_split_bits_dram(mem_type_prot_t, bool *, bool *, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermSplitBitsDram"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_split_bits_iram",
+    "c++": "esp_memprot_get_perm_split_bits_iram(mem_type_prot_t, bool *, bool *, bool *, bool *, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermSplitBitsIram"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_split_bits_peri1",
+    "c++": "esp_memprot_get_perm_split_bits_peri1(mem_type_prot_t, bool *, bool *, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermSplitBitsPeri1"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_split_bits_peri2",
+    "c++": "esp_memprot_get_perm_split_bits_peri2(mem_type_prot_t, bool *, bool *, bool *, bool *, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermSplitBitsPeri2"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_split_reg",
+    "c++": "esp_memprot_get_perm_split_reg(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetPermSplitReg"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_uni_reg",
+    "c++": "esp_memprot_get_perm_uni_reg(mem_type_prot_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetPermUniReg"
+  },
+  {
+    "mangle": "esp_memprot_get_perm_write",
+    "c++": "esp_memprot_get_perm_write(mem_type_prot_t, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermWrite"
+  },
+  {
+    "mangle": "esp_memprot_get_permissions",
+    "c++": "esp_memprot_get_permissions(mem_type_prot_t, bool *, bool *, bool *, bool *, bool *, bool *)",
+    "go": "MemTypeProtT.EspMemprotGetPermissions"
+  },
+  {
+    "mangle": "esp_memprot_get_split_addr",
+    "c++": "esp_memprot_get_split_addr(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotGetSplitAddr"
+  },
+  {
+    "mangle": "esp_memprot_get_uni_block_exec_bit",
+    "c++": "esp_memprot_get_uni_block_exec_bit(mem_type_prot_t, uint32_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetUniBlockExecBit"
+  },
+  {
+    "mangle": "esp_memprot_get_uni_block_read_bit",
+    "c++": "esp_memprot_get_uni_block_read_bit(mem_type_prot_t, uint32_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetUniBlockReadBit"
+  },
+  {
+    "mangle": "esp_memprot_get_uni_block_write_bit",
+    "c++": "esp_memprot_get_uni_block_write_bit(mem_type_prot_t, uint32_t, uint32_t *)",
+    "go": "MemTypeProtT.EspMemprotGetUniBlockWriteBit"
+  },
+  {
+    "mangle": "esp_memprot_intr_ena",
+    "c++": "esp_memprot_intr_ena(mem_type_prot_t, bool)",
+    "go": "MemTypeProtT.EspMemprotIntrEna"
+  },
+  {
+    "mangle": "esp_memprot_intr_init",
+    "c++": "esp_memprot_intr_init(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotIntrInit"
+  },
+  {
+    "mangle": "esp_memprot_is_intr_ena_any",
+    "c++": "esp_memprot_is_intr_ena_any()",
+    "go": "EspMemprotIsIntrEnaAny"
+  },
+  {
+    "mangle": "esp_memprot_is_locked_any",
+    "c++": "esp_memprot_is_locked_any()",
+    "go": "EspMemprotIsLockedAny"
+  },
+  {
+    "mangle": "esp_memprot_set_exec_perm",
+    "c++": "esp_memprot_set_exec_perm(mem_type_prot_t, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetExecPerm"
+  },
+  {
+    "mangle": "esp_memprot_set_lock",
+    "c++": "esp_memprot_set_lock(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotSetLock"
+  },
+  {
+    "mangle": "esp_memprot_set_prot",
+    "c++": "esp_memprot_set_prot(bool, bool, uint32_t *)",
+    "go": "EspMemprotSetProt"
+  },
+  {
+    "mangle": "esp_memprot_set_prot_dram",
+    "c++": "esp_memprot_set_prot_dram(mem_type_prot_t, uint32_t *, bool, bool, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetProtDram"
+  },
+  {
+    "mangle": "esp_memprot_set_prot_iram",
+    "c++": "esp_memprot_set_prot_iram(mem_type_prot_t, uint32_t *, bool, bool, bool, bool, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetProtIram"
+  },
+  {
+    "mangle": "esp_memprot_set_prot_peri1",
+    "c++": "esp_memprot_set_prot_peri1(mem_type_prot_t, uint32_t *, bool, bool, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetProtPeri1"
+  },
+  {
+    "mangle": "esp_memprot_set_prot_peri2",
+    "c++": "esp_memprot_set_prot_peri2(mem_type_prot_t, uint32_t *, bool, bool, bool, bool, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetProtPeri2"
+  },
+  {
+    "mangle": "esp_memprot_set_read_perm",
+    "c++": "esp_memprot_set_read_perm(mem_type_prot_t, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetReadPerm"
+  },
+  {
+    "mangle": "esp_memprot_set_uni_block_perm_dram",
+    "c++": "esp_memprot_set_uni_block_perm_dram(mem_type_prot_t, uint32_t, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetUniBlockPermDram"
+  },
+  {
+    "mangle": "esp_memprot_set_uni_block_perm_iram",
+    "c++": "esp_memprot_set_uni_block_perm_iram(mem_type_prot_t, uint32_t, bool, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetUniBlockPermIram"
+  },
+  {
+    "mangle": "esp_memprot_set_write_perm",
+    "c++": "esp_memprot_set_write_perm(mem_type_prot_t, bool, bool)",
+    "go": "MemTypeProtT.EspMemprotSetWritePerm"
+  },
+  {
+    "mangle": "esp_memprot_type_to_str",
+    "c++": "esp_memprot_type_to_str(mem_type_prot_t)",
+    "go": "MemTypeProtT.EspMemprotTypeToStr"
+  },
+  {
+    "mangle": "esp_pm_register_inform_out_light_sleep_overhead_callback",
+    "c++": "esp_pm_register_inform_out_light_sleep_overhead_callback(inform_out_light_sleep_overhead_cb_t)",
+    "go": "EspPmRegisterInformOutLightSleepOverheadCallback"
+  },
+  {
+    "mangle": "esp_pm_register_light_sleep_default_params_config_callback",
+    "c++": "esp_pm_register_light_sleep_default_params_config_callback(update_light_sleep_default_params_config_cb_t)",
+    "go": "EspPmRegisterLightSleepDefaultParamsConfigCallback"
+  },
+  {
+    "mangle": "esp_pm_unregister_inform_out_light_sleep_overhead_callback",
+    "c++": "esp_pm_unregister_inform_out_light_sleep_overhead_callback(inform_out_light_sleep_overhead_cb_t)",
+    "go": "EspPmUnregisterInformOutLightSleepOverheadCallback"
+  },
+  {
+    "mangle": "esp_pm_unregister_light_sleep_default_params_config_callback",
+    "c++": "esp_pm_unregister_light_sleep_default_params_config_callback()",
+    "go": "EspPmUnregisterLightSleepDefaultParamsConfigCallback"
+  },
+  {
+    "mangle": "esp_ptr_byte_accessible",
+    "c++": "esp_ptr_byte_accessible(const void *)",
+    "go": "EspPtrByteAccessible"
+  },
+  {
+    "mangle": "esp_ptr_dma_ext_capable",
+    "c++": "esp_ptr_dma_ext_capable(const void *)",
+    "go": "EspPtrDmaExtCapable"
+  },
+  {
+    "mangle": "esp_ptr_executable",
+    "c++": "esp_ptr_executable(const void *)",
+    "go": "EspPtrExecutable"
+  },
+  {
+    "mangle": "esp_ptr_external_ram",
+    "c++": "esp_ptr_external_ram(const void *)",
+    "go": "EspPtrExternalRam"
+  },
+  {
+    "mangle": "esp_random",
+    "c++": "esp_random()",
+    "go": "EspRandom"
+  },
+  {
+    "mangle": "esp_read_mac",
+    "c++": "esp_read_mac(uint8_t *, esp_mac_type_t)",
+    "go": "EspReadMac"
+  },
+  {
+    "mangle": "esp_rtc_get_time_us",
+    "c++": "esp_rtc_get_time_us()",
+    "go": "EspRtcGetTimeUs"
+  },
+  {
+    "mangle": "esp_set_deep_sleep_wake_stub",
+    "c++": "esp_set_deep_sleep_wake_stub(esp_deep_sleep_wake_stub_fn_t)",
+    "go": "EspSetDeepSleepWakeStub"
+  },
+  {
+    "mangle": "esp_sleep_config_gpio_isolate",
+    "c++": "esp_sleep_config_gpio_isolate()",
+    "go": "EspSleepConfigGpioIsolate"
+  },
+  {
+    "mangle": "esp_sleep_disable_bt_wakeup",
+    "c++": "esp_sleep_disable_bt_wakeup()",
+    "go": "EspSleepDisableBtWakeup"
+  },
+  {
+    "mangle": "esp_sleep_disable_ext1_wakeup_io",
+    "c++": "esp_sleep_disable_ext1_wakeup_io(uint64_t)",
+    "go": "EspSleepDisableExt1WakeupIo"
+  },
+  {
+    "mangle": "esp_sleep_disable_wakeup_source",
+    "c++": "esp_sleep_disable_wakeup_source(esp_sleep_source_t)",
+    "go": "EspSleepSourceT.EspSleepDisableWakeupSource"
+  },
+  {
+    "mangle": "esp_sleep_disable_wifi_beacon_wakeup",
+    "c++": "esp_sleep_disable_wifi_beacon_wakeup()",
+    "go": "EspSleepDisableWifiBeaconWakeup"
+  },
+  {
+    "mangle": "esp_sleep_disable_wifi_wakeup",
+    "c++": "esp_sleep_disable_wifi_wakeup()",
+    "go": "EspSleepDisableWifiWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_bt_wakeup",
+    "c++": "esp_sleep_enable_bt_wakeup()",
+    "go": "EspSleepEnableBtWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_ext0_wakeup",
+    "c++": "esp_sleep_enable_ext0_wakeup(gpio_num_t, int)",
+    "go": "EspSleepEnableExt0Wakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_ext1_wakeup",
+    "c++": "esp_sleep_enable_ext1_wakeup(uint64_t, esp_sleep_ext1_wakeup_mode_t)",
+    "go": "EspSleepEnableExt1Wakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_ext1_wakeup_io",
+    "c++": "esp_sleep_enable_ext1_wakeup_io(uint64_t, esp_sleep_ext1_wakeup_mode_t)",
+    "go": "EspSleepEnableExt1WakeupIo"
+  },
+  {
+    "mangle": "esp_sleep_enable_gpio_switch",
+    "c++": "esp_sleep_enable_gpio_switch(bool)",
+    "go": "EspSleepEnableGpioSwitch"
+  },
+  {
+    "mangle": "esp_sleep_enable_gpio_wakeup",
+    "c++": "esp_sleep_enable_gpio_wakeup()",
+    "go": "EspSleepEnableGpioWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_timer_wakeup",
+    "c++": "esp_sleep_enable_timer_wakeup(uint64_t)",
+    "go": "EspSleepEnableTimerWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_touchpad_wakeup",
+    "c++": "esp_sleep_enable_touchpad_wakeup()",
+    "go": "EspSleepEnableTouchpadWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_uart_wakeup",
+    "c++": "esp_sleep_enable_uart_wakeup(int)",
+    "go": "EspSleepEnableUartWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_ulp_wakeup",
+    "c++": "esp_sleep_enable_ulp_wakeup()",
+    "go": "EspSleepEnableUlpWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_wifi_beacon_wakeup",
+    "c++": "esp_sleep_enable_wifi_beacon_wakeup()",
+    "go": "EspSleepEnableWifiBeaconWakeup"
+  },
+  {
+    "mangle": "esp_sleep_enable_wifi_wakeup",
+    "c++": "esp_sleep_enable_wifi_wakeup()",
+    "go": "EspSleepEnableWifiWakeup"
+  },
+  {
+    "mangle": "esp_sleep_execute_event_callbacks",
+    "c++": "esp_sleep_execute_event_callbacks(esp_sleep_event_cb_index_t, void *)",
+    "go": "EspSleepEventCbIndexT.EspSleepExecuteEventCallbacks"
+  },
+  {
+    "mangle": "esp_sleep_get_ext1_wakeup_status",
+    "c++": "esp_sleep_get_ext1_wakeup_status()",
+    "go": "EspSleepGetExt1WakeupStatus"
+  },
+  {
+    "mangle": "esp_sleep_get_touchpad_wakeup_status",
+    "c++": "esp_sleep_get_touchpad_wakeup_status()",
+    "go": "EspSleepGetTouchpadWakeupStatus"
+  },
+  {
+    "mangle": "esp_sleep_get_wakeup_cause",
+    "c++": "esp_sleep_get_wakeup_cause()",
+    "go": "EspSleepGetWakeupCause"
+  },
+  {
+    "mangle": "esp_sleep_is_valid_wakeup_gpio",
+    "c++": "esp_sleep_is_valid_wakeup_gpio(gpio_num_t)",
+    "go": "EspSleepIsValidWakeupGpio"
+  },
+  {
+    "mangle": "esp_sleep_isolate_digital_gpio",
+    "c++": "esp_sleep_isolate_digital_gpio()",
+    "go": "EspSleepIsolateDigitalGpio"
+  },
+  {
+    "mangle": "esp_sleep_overhead_out_time_refresh",
+    "c++": "esp_sleep_overhead_out_time_refresh()",
+    "go": "EspSleepOverheadOutTimeRefresh"
+  },
+  {
+    "mangle": "esp_sleep_pd_config",
+    "c++": "esp_sleep_pd_config(esp_sleep_pd_domain_t, esp_sleep_pd_option_t)",
+    "go": "EspSleepPdDomainT.EspSleepPdConfig"
+  },
+  {
+    "mangle": "esp_sleep_sub_mode_config",
+    "c++": "esp_sleep_sub_mode_config(esp_sleep_sub_mode_t, bool)",
+    "go": "EspSleepSubModeT.EspSleepSubModeConfig"
+  },
+  {
+    "mangle": "esp_sleep_sub_mode_dump_config",
+    "c++": "esp_sleep_sub_mode_dump_config(int *)",
+    "go": "EspSleepSubModeDumpConfig"
+  },
+  {
+    "mangle": "esp_sleep_sub_mode_force_disable",
+    "c++": "esp_sleep_sub_mode_force_disable(esp_sleep_sub_mode_t)",
+    "go": "EspSleepSubModeT.EspSleepSubModeForceDisable"
+  },
+  {
+    "mangle": "esp_wake_deep_sleep",
+    "c++": "esp_wake_deep_sleep()",
+    "go": "EspWakeDeepSleep"
+  },
+  {
+    "mangle": "esp_wake_stub_get_wakeup_cause",
+    "c++": "esp_wake_stub_get_wakeup_cause()",
+    "go": "EspWakeStubGetWakeupCause"
+  },
+  {
+    "mangle": "esp_wake_stub_set_wakeup_time",
+    "c++": "esp_wake_stub_set_wakeup_time(uint64_t)",
+    "go": "EspWakeStubSetWakeupTime"
+  },
+  {
+    "mangle": "esp_wake_stub_sleep",
+    "c++": "esp_wake_stub_sleep(esp_deep_sleep_wake_stub_fn_t)",
+    "go": "EspWakeStubSleep"
+  },
+  {
+    "mangle": "esp_wake_stub_uart_tx_wait_idle",
+    "c++": "esp_wake_stub_uart_tx_wait_idle(uint8_t)",
+    "go": "EspWakeStubUartTxWaitIdle"
+  },
+  {
+    "mangle": "gdma_del_link_list",
+    "c++": "gdma_del_link_list(gdma_link_list_handle_t)",
+    "go": "GdmaDelLinkList"
+  },
+  {
+    "mangle": "gdma_link_concat",
+    "c++": "gdma_link_concat(gdma_link_list_handle_t, int, gdma_link_list_handle_t, int)",
+    "go": "GdmaLinkConcat"
+  },
+  {
+    "mangle": "gdma_link_count_buffer_size_till_eof",
+    "c++": "gdma_link_count_buffer_size_till_eof(gdma_link_list_handle_t, int)",
+    "go": "GdmaLinkCountBufferSizeTillEof"
+  },
+  {
+    "mangle": "gdma_link_get_head_addr",
+    "c++": "gdma_link_get_head_addr(gdma_link_list_handle_t)",
+    "go": "GdmaLinkGetHeadAddr"
+  },
+  {
+    "mangle": "gdma_link_get_owner",
+    "c++": "gdma_link_get_owner(gdma_link_list_handle_t, int, gdma_lli_owner_t *)",
+    "go": "GdmaLinkGetOwner"
+  },
+  {
+    "mangle": "gdma_link_mount_buffers",
+    "c++": "gdma_link_mount_buffers(gdma_link_list_handle_t, int, const gdma_buffer_mount_config_t *, size_t, int *)",
+    "go": "GdmaLinkMountBuffers"
+  },
+  {
+    "mangle": "gdma_link_set_owner",
+    "c++": "gdma_link_set_owner(gdma_link_list_handle_t, int, gdma_lli_owner_t)",
+    "go": "GdmaLinkSetOwner"
+  },
+  {
+    "mangle": "gdma_new_link_list",
+    "c++": "gdma_new_link_list(const gdma_link_list_config_t *, gdma_link_list_handle_t *)",
+    "go": "(*GdmaLinkListConfigT).GdmaNewLinkList"
+  },
+  {
+    "mangle": "io_mux_enable_lp_io_clock",
+    "c++": "io_mux_enable_lp_io_clock(gpio_num_t, bool)",
+    "go": "IoMuxEnableLpIoClock"
+  },
+  {
+    "mangle": "io_mux_force_disable_lp_io_clock",
+    "c++": "io_mux_force_disable_lp_io_clock(gpio_num_t)",
+    "go": "IoMuxForceDisableLpIoClock"
+  },
+  {
+    "mangle": "io_mux_set_clock_source",
+    "c++": "io_mux_set_clock_source(soc_module_clk_t)",
+    "go": "IoMuxSetClockSource"
+  },
+  {
+    "mangle": "modem_domain_pd_allowed",
+    "c++": "modem_domain_pd_allowed()",
+    "go": "ModemDomainPdAllowed"
+  },
+  {
+    "mangle": "mspi_timing_change_speed_mode_cache_safe",
+    "c++": "mspi_timing_change_speed_mode_cache_safe(bool)",
+    "go": "MspiTimingChangeSpeedModeCacheSafe"
+  },
+  {
+    "mangle": "mspi_timing_enter_high_speed_mode",
+    "c++": "mspi_timing_enter_high_speed_mode(bool)",
+    "go": "MspiTimingEnterHighSpeedMode"
+  },
+  {
+    "mangle": "mspi_timing_enter_low_speed_mode",
+    "c++": "mspi_timing_enter_low_speed_mode(bool)",
+    "go": "MspiTimingEnterLowSpeedMode"
+  },
+  {
+    "mangle": "mspi_timing_flash_tuning",
+    "c++": "mspi_timing_flash_tuning()",
+    "go": "MspiTimingFlashTuning"
+  },
+  {
+    "mangle": "mspi_timing_psram_tuning",
+    "c++": "mspi_timing_psram_tuning()",
+    "go": "MspiTimingPsramTuning"
+  },
+  {
+    "mangle": "mspi_timing_set_pin_drive_strength",
+    "c++": "mspi_timing_set_pin_drive_strength()",
+    "go": "MspiTimingSetPinDriveStrength"
+  },
+  {
+    "mangle": "periph_inform_out_light_sleep_overhead",
+    "c++": "periph_inform_out_light_sleep_overhead(uint32_t)",
+    "go": "PeriphInformOutLightSleepOverhead"
+  },
+  {
+    "mangle": "periph_module_disable",
+    "c++": "periph_module_disable(periph_module_t)",
+    "go": "PeriphModuleDisable"
+  },
+  {
+    "mangle": "periph_module_enable",
+    "c++": "periph_module_enable(periph_module_t)",
+    "go": "PeriphModuleEnable"
+  },
+  {
+    "mangle": "periph_module_reset",
+    "c++": "periph_module_reset(periph_module_t)",
+    "go": "PeriphModuleReset"
+  },
+  {
+    "mangle": "periph_rcc_acquire_enter",
+    "c++": "periph_rcc_acquire_enter(periph_module_t)",
+    "go": "PeriphRccAcquireEnter"
+  },
+  {
+    "mangle": "periph_rcc_acquire_exit",
+    "c++": "periph_rcc_acquire_exit(periph_module_t, uint8_t)",
+    "go": "PeriphRccAcquireExit"
+  },
+  {
+    "mangle": "periph_rcc_enter",
+    "c++": "periph_rcc_enter()",
+    "go": "PeriphRccEnter"
+  },
+  {
+    "mangle": "periph_rcc_exit",
+    "c++": "periph_rcc_exit()",
+    "go": "PeriphRccExit"
+  },
+  {
+    "mangle": "periph_rcc_release_enter",
+    "c++": "periph_rcc_release_enter(periph_module_t)",
+    "go": "PeriphRccReleaseEnter"
+  },
+  {
+    "mangle": "periph_rcc_release_exit",
+    "c++": "periph_rcc_release_exit(periph_module_t, uint8_t)",
+    "go": "PeriphRccReleaseExit"
+  },
+  {
+    "mangle": "periph_rtc_apll_acquire",
+    "c++": "periph_rtc_apll_acquire()",
+    "go": "PeriphRtcApllAcquire"
+  },
+  {
+    "mangle": "periph_rtc_apll_freq_set",
+    "c++": "periph_rtc_apll_freq_set(uint32_t, uint32_t *)",
+    "go": "PeriphRtcApllFreqSet"
+  },
+  {
+    "mangle": "periph_rtc_apll_release",
+    "c++": "periph_rtc_apll_release()",
+    "go": "PeriphRtcApllRelease"
+  },
+  {
+    "mangle": "periph_rtc_dig_clk8m_disable",
+    "c++": "periph_rtc_dig_clk8m_disable()",
+    "go": "PeriphRtcDigClk8mDisable"
+  },
+  {
+    "mangle": "periph_rtc_dig_clk8m_enable",
+    "c++": "periph_rtc_dig_clk8m_enable()",
+    "go": "PeriphRtcDigClk8mEnable"
+  },
+  {
+    "mangle": "periph_rtc_dig_clk8m_get_freq",
+    "c++": "periph_rtc_dig_clk8m_get_freq()",
+    "go": "PeriphRtcDigClk8mGetFreq"
+  },
+  {
+    "mangle": "regi2c_analog_cali_reg_read",
+    "c++": "regi2c_analog_cali_reg_read()",
+    "go": "Regi2cAnalogCaliRegRead"
+  },
+  {
+    "mangle": "regi2c_analog_cali_reg_write",
+    "c++": "regi2c_analog_cali_reg_write()",
+    "go": "Regi2cAnalogCaliRegWrite"
+  },
+  {
+    "mangle": "regi2c_ctrl_read_reg",
+    "c++": "regi2c_ctrl_read_reg(uint8_t, uint8_t, uint8_t)",
+    "go": "Regi2cCtrlReadReg"
+  },
+  {
+    "mangle": "regi2c_ctrl_read_reg_mask",
+    "c++": "regi2c_ctrl_read_reg_mask(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "Regi2cCtrlReadRegMask"
+  },
+  {
+    "mangle": "regi2c_ctrl_write_reg",
+    "c++": "regi2c_ctrl_write_reg(uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "Regi2cCtrlWriteReg"
+  },
+  {
+    "mangle": "regi2c_ctrl_write_reg_mask",
+    "c++": "regi2c_ctrl_write_reg_mask(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)",
+    "go": "Regi2cCtrlWriteRegMask"
+  },
+  {
+    "mangle": "regi2c_enter_critical",
+    "c++": "regi2c_enter_critical()",
+    "go": "Regi2cEnterCritical"
+  },
+  {
+    "mangle": "regi2c_exit_critical",
+    "c++": "regi2c_exit_critical()",
+    "go": "Regi2cExitCritical"
+  },
+  {
+    "mangle": "regi2c_saradc_disable",
+    "c++": "regi2c_saradc_disable()",
+    "go": "Regi2cSaradcDisable"
+  },
+  {
+    "mangle": "regi2c_saradc_enable",
+    "c++": "regi2c_saradc_enable()",
+    "go": "Regi2cSaradcEnable"
+  },
+  {
+    "mangle": "rtc_clk_cpu_freq_set_xtal_for_sleep",
+    "c++": "rtc_clk_cpu_freq_set_xtal_for_sleep()",
+    "go": "RtcClkCpuFreqSetXtalForSleep"
+  },
+  {
+    "mangle": "rtc_clk_cpu_set_to_default_config",
+    "c++": "rtc_clk_cpu_set_to_default_config()",
+    "go": "RtcClkCpuSetToDefaultConfig"
+  },
+  {
+    "mangle": "rtc_isr_deregister",
+    "c++": "rtc_isr_deregister(intr_handler_t, void *)",
+    "go": "RtcIsrDeregister"
+  },
+  {
+    "mangle": "rtc_isr_noniram_disable",
+    "c++": "rtc_isr_noniram_disable(uint32_t)",
+    "go": "RtcIsrNoniramDisable"
+  },
+  {
+    "mangle": "rtc_isr_noniram_enable",
+    "c++": "rtc_isr_noniram_enable(uint32_t)",
+    "go": "RtcIsrNoniramEnable"
+  },
+  {
+    "mangle": "rtc_isr_register",
+    "c++": "rtc_isr_register(intr_handler_t, void *, uint32_t, uint32_t)",
+    "go": "RtcIsrRegister"
+  },
+  {
+    "mangle": "rtc_wdt_disable",
+    "c++": "rtc_wdt_disable()",
+    "go": "RtcWdtDisable"
+  },
+  {
+    "mangle": "rtc_wdt_enable",
+    "c++": "rtc_wdt_enable()",
+    "go": "RtcWdtEnable"
+  },
+  {
+    "mangle": "rtc_wdt_feed",
+    "c++": "rtc_wdt_feed()",
+    "go": "RtcWdtFeed"
+  },
+  {
+    "mangle": "rtc_wdt_flashboot_mode_enable",
+    "c++": "rtc_wdt_flashboot_mode_enable()",
+    "go": "RtcWdtFlashbootModeEnable"
+  },
+  {
+    "mangle": "rtc_wdt_get_protect_status",
+    "c++": "rtc_wdt_get_protect_status()",
+    "go": "RtcWdtGetProtectStatus"
+  },
+  {
+    "mangle": "rtc_wdt_get_timeout",
+    "c++": "rtc_wdt_get_timeout(rtc_wdt_stage_t, unsigned int *)",
+    "go": "RtcWdtStageT.RtcWdtGetTimeout"
+  },
+  {
+    "mangle": "rtc_wdt_is_on",
+    "c++": "rtc_wdt_is_on()",
+    "go": "RtcWdtIsOn"
+  },
+  {
+    "mangle": "rtc_wdt_protect_off",
+    "c++": "rtc_wdt_protect_off()",
+    "go": "RtcWdtProtectOff"
+  },
+  {
+    "mangle": "rtc_wdt_protect_on",
+    "c++": "rtc_wdt_protect_on()",
+    "go": "RtcWdtProtectOn"
+  },
+  {
+    "mangle": "rtc_wdt_set_length_of_reset_signal",
+    "c++": "rtc_wdt_set_length_of_reset_signal(rtc_wdt_reset_sig_t, rtc_wdt_length_sig_t)",
+    "go": "RtcWdtResetSigT.RtcWdtSetLengthOfResetSignal"
+  },
+  {
+    "mangle": "rtc_wdt_set_stage",
+    "c++": "rtc_wdt_set_stage(rtc_wdt_stage_t, rtc_wdt_stage_action_t)",
+    "go": "RtcWdtStageT.RtcWdtSetStage"
+  },
+  {
+    "mangle": "rtc_wdt_set_time",
+    "c++": "rtc_wdt_set_time(rtc_wdt_stage_t, unsigned int)",
+    "go": "RtcWdtStageT.RtcWdtSetTime"
+  },
+  {
+    "mangle": "sar_periph_ctrl_adc_continuous_power_acquire",
+    "c++": "sar_periph_ctrl_adc_continuous_power_acquire()",
+    "go": "SarPeriphCtrlAdcContinuousPowerAcquire"
+  },
+  {
+    "mangle": "sar_periph_ctrl_adc_continuous_power_release",
+    "c++": "sar_periph_ctrl_adc_continuous_power_release()",
+    "go": "SarPeriphCtrlAdcContinuousPowerRelease"
+  },
+  {
+    "mangle": "sar_periph_ctrl_adc_oneshot_power_acquire",
+    "c++": "sar_periph_ctrl_adc_oneshot_power_acquire()",
+    "go": "SarPeriphCtrlAdcOneshotPowerAcquire"
+  },
+  {
+    "mangle": "sar_periph_ctrl_adc_oneshot_power_release",
+    "c++": "sar_periph_ctrl_adc_oneshot_power_release()",
+    "go": "SarPeriphCtrlAdcOneshotPowerRelease"
+  },
+  {
+    "mangle": "sar_periph_ctrl_init",
+    "c++": "sar_periph_ctrl_init()",
+    "go": "SarPeriphCtrlInit"
+  },
+  {
+    "mangle": "sar_periph_ctrl_power_disable",
+    "c++": "sar_periph_ctrl_power_disable()",
+    "go": "SarPeriphCtrlPowerDisable"
+  },
+  {
+    "mangle": "sar_periph_ctrl_power_enable",
+    "c++": "sar_periph_ctrl_power_enable()",
+    "go": "SarPeriphCtrlPowerEnable"
+  },
+  {
+    "mangle": "sar_periph_ctrl_pwdet_power_acquire",
+    "c++": "sar_periph_ctrl_pwdet_power_acquire()",
+    "go": "SarPeriphCtrlPwdetPowerAcquire"
+  },
+  {
+    "mangle": "sar_periph_ctrl_pwdet_power_release",
+    "c++": "sar_periph_ctrl_pwdet_power_release()",
+    "go": "SarPeriphCtrlPwdetPowerRelease"
+  },
+  {
+    "mangle": "sleep_modem_configure",
+    "c++": "sleep_modem_configure(int, int, bool)",
+    "go": "SleepModemConfigure"
+  },
+  {
+    "mangle": "sleep_modem_reject_triggers",
+    "c++": "sleep_modem_reject_triggers()",
+    "go": "SleepModemRejectTriggers"
+  },
+  {
+    "mangle": "spi_bus_deinit_lock",
+    "c++": "spi_bus_deinit_lock(spi_bus_lock_handle_t)",
+    "go": "SpiBusDeinitLock"
+  },
+  {
+    "mangle": "spi_bus_init_lock",
+    "c++": "spi_bus_init_lock(spi_bus_lock_handle_t *, const spi_bus_lock_config_t *)",
+    "go": "SpiBusInitLock"
+  },
+  {
+    "mangle": "spi_bus_lock_acquire_end",
+    "c++": "spi_bus_lock_acquire_end(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockAcquireEnd"
+  },
+  {
+    "mangle": "spi_bus_lock_acquire_start",
+    "c++": "spi_bus_lock_acquire_start(spi_bus_lock_dev_handle_t, TickType_t)",
+    "go": "SpiBusLockAcquireStart"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_check_dev_acq",
+    "c++": "spi_bus_lock_bg_check_dev_acq(spi_bus_lock_handle_t, spi_bus_lock_dev_handle_t *)",
+    "go": "SpiBusLockBgCheckDevAcq"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_check_dev_req",
+    "c++": "spi_bus_lock_bg_check_dev_req(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockBgCheckDevReq"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_clear_req",
+    "c++": "spi_bus_lock_bg_clear_req(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockBgClearReq"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_entry",
+    "c++": "spi_bus_lock_bg_entry(spi_bus_lock_handle_t)",
+    "go": "SpiBusLockBgEntry"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_exit",
+    "c++": "spi_bus_lock_bg_exit(spi_bus_lock_handle_t, bool, BaseType_t *)",
+    "go": "SpiBusLockBgExit"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_req_exist",
+    "c++": "spi_bus_lock_bg_req_exist(spi_bus_lock_handle_t)",
+    "go": "SpiBusLockBgReqExist"
+  },
+  {
+    "mangle": "spi_bus_lock_bg_request",
+    "c++": "spi_bus_lock_bg_request(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockBgRequest"
+  },
+  {
+    "mangle": "spi_bus_lock_get_acquiring_dev",
+    "c++": "spi_bus_lock_get_acquiring_dev(spi_bus_lock_handle_t)",
+    "go": "SpiBusLockGetAcquiringDev"
+  },
+  {
+    "mangle": "spi_bus_lock_get_dev_id",
+    "c++": "spi_bus_lock_get_dev_id(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockGetDevId"
+  },
+  {
+    "mangle": "spi_bus_lock_register_dev",
+    "c++": "spi_bus_lock_register_dev(spi_bus_lock_handle_t, spi_bus_lock_dev_config_t *, spi_bus_lock_dev_handle_t *)",
+    "go": "SpiBusLockRegisterDev"
+  },
+  {
+    "mangle": "spi_bus_lock_set_bg_control",
+    "c++": "spi_bus_lock_set_bg_control(spi_bus_lock_handle_t, bg_ctrl_func_t, bg_ctrl_func_t, void *)",
+    "go": "SpiBusLockSetBgControl"
+  },
+  {
+    "mangle": "spi_bus_lock_touch",
+    "c++": "spi_bus_lock_touch(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockTouch"
+  },
+  {
+    "mangle": "spi_bus_lock_unregister_dev",
+    "c++": "spi_bus_lock_unregister_dev(spi_bus_lock_dev_handle_t)",
+    "go": "SpiBusLockUnregisterDev"
+  },
+  {
+    "mangle": "spi_bus_lock_wait_bg_done",
+    "c++": "spi_bus_lock_wait_bg_done(spi_bus_lock_dev_handle_t, TickType_t)",
+    "go": "SpiBusLockWaitBgDone"
+  },
+  {
+    "mangle": "spicommon_periph_claim",
+    "c++": "spicommon_periph_claim(spi_host_device_t, const char *)",
+    "go": "SpicommonPeriphClaim"
+  },
+  {
+    "mangle": "spicommon_periph_free",
+    "c++": "spicommon_periph_free(spi_host_device_t)",
+    "go": "SpicommonPeriphFree"
+  },
+  {
+    "mangle": "spicommon_periph_in_use",
+    "c++": "spicommon_periph_in_use(spi_host_device_t)",
+    "go": "SpicommonPeriphInUse"
+  },
+  {
+    "mangle": "systimer_ticks_to_us",
+    "c++": "systimer_ticks_to_us(uint64_t)",
+    "go": "SystimerTicksToUs"
+  },
+  {
+    "mangle": "systimer_us_to_ticks",
+    "c++": "systimer_us_to_ticks(uint64_t)",
+    "go": "SystimerUsToTicks"
+  },
+  {
+    "mangle": "temp_sensor_get_raw_value",
+    "c++": "temp_sensor_get_raw_value(bool *)",
+    "go": "TempSensorGetRawValue"
+  },
+  {
+    "mangle": "temp_sensor_sync_tsens_idx",
+    "c++": "temp_sensor_sync_tsens_idx(int)",
+    "go": "TempSensorSyncTsensIdx"
+  },
+  {
+    "mangle": "temperature_sensor_power_acquire",
+    "c++": "temperature_sensor_power_acquire()",
+    "go": "TemperatureSensorPowerAcquire"
+  },
+  {
+    "mangle": "temperature_sensor_power_release",
+    "c++": "temperature_sensor_power_release()",
+    "go": "TemperatureSensorPowerRelease"
+  },
+  {
+    "mangle": "wifi_bt_common_module_disable",
+    "c++": "wifi_bt_common_module_disable()",
+    "go": "WifiBtCommonModuleDisable"
+  },
+  {
+    "mangle": "wifi_bt_common_module_enable",
+    "c++": "wifi_bt_common_module_enable()",
+    "go": "WifiBtCommonModuleEnable"
+  },
+  {
+    "mangle": "wifi_module_disable",
+    "c++": "wifi_module_disable()",
+    "go": "WifiModuleDisable"
+  },
+  {
+    "mangle": "wifi_module_enable",
+    "c++": "wifi_module_enable()",
+    "go": "WifiModuleEnable"
+  }
+]

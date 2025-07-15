@@ -1,4 +1,4 @@
-module sdmmc
+module github.com/MeteorsLiu/esp32/esp32s2/sdmmc
 
 go 1.23.4
 

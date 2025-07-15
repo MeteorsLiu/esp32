@@ -11,6 +11,7 @@ SHAContext
 SHA_CTX SHACTX
 SHA_TYPE SHATYPE
 SLEEP_MODE SLEEPMODE
+STATUS
 WAKEUP_ENABLE WAKEUPENABLE
 WAKEUP_REASON WAKEUPREASON
 acceptance_filter_reg_t AcceptanceFilterRegT
@@ -126,6 +127,11 @@ color_rgb_element_order_t ColorRgbElementOrderT
 color_space_pixel_format_t ColorSpacePixelFormatT
 color_space_t ColorSpaceT
 color_yuv422_pack_order_t ColorYuv422PackOrderT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 csi_brg_dev_t CsiBrgDevT
 csi_host_dev_t CsiHostDevT
 dac_channel_t DacChannelT

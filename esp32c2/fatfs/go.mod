@@ -1,4 +1,4 @@
-module fatfs
+module github.com/MeteorsLiu/esp32/esp32c2/fatfs
 
 go 1.23.4
 

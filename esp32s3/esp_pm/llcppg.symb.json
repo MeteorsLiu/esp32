@@ -1,0 +1,87 @@
+[
+  {
+    "mangle": "esp_pm_configure",
+    "c++": "esp_pm_configure(const void *)",
+    "go": "EspPmConfigure"
+  },
+  {
+    "mangle": "esp_pm_dump_locks",
+    "c++": "esp_pm_dump_locks(int *)",
+    "go": "EspPmDumpLocks"
+  },
+  {
+    "mangle": "esp_pm_get_configuration",
+    "c++": "esp_pm_get_configuration(void *)",
+    "go": "EspPmGetConfiguration"
+  },
+  {
+    "mangle": "esp_pm_impl_get_cpu_freq",
+    "c++": "esp_pm_impl_get_cpu_freq(pm_mode_t)",
+    "go": "PmModeT.EspPmImplGetCpuFreq"
+  },
+  {
+    "mangle": "esp_pm_impl_get_mode",
+    "c++": "esp_pm_impl_get_mode(esp_pm_lock_type_t, int)",
+    "go": "EspPmLockTypeT.EspPmImplGetMode"
+  },
+  {
+    "mangle": "esp_pm_impl_idle_hook",
+    "c++": "esp_pm_impl_idle_hook()",
+    "go": "EspPmImplIdleHook"
+  },
+  {
+    "mangle": "esp_pm_impl_init",
+    "c++": "esp_pm_impl_init()",
+    "go": "EspPmImplInit"
+  },
+  {
+    "mangle": "esp_pm_impl_isr_hook",
+    "c++": "esp_pm_impl_isr_hook()",
+    "go": "EspPmImplIsrHook"
+  },
+  {
+    "mangle": "esp_pm_impl_switch_mode",
+    "c++": "esp_pm_impl_switch_mode(pm_mode_t, pm_mode_switch_t, pm_time_t)",
+    "go": "PmModeT.EspPmImplSwitchMode"
+  },
+  {
+    "mangle": "esp_pm_impl_waiti",
+    "c++": "esp_pm_impl_waiti()",
+    "go": "EspPmImplWaiti"
+  },
+  {
+    "mangle": "esp_pm_lock_acquire",
+    "c++": "esp_pm_lock_acquire(esp_pm_lock_handle_t)",
+    "go": "EspPmLockAcquire"
+  },
+  {
+    "mangle": "esp_pm_lock_create",
+    "c++": "esp_pm_lock_create(esp_pm_lock_type_t, int, const char *, esp_pm_lock_handle_t *)",
+    "go": "EspPmLockTypeT.EspPmLockCreate"
+  },
+  {
+    "mangle": "esp_pm_lock_delete",
+    "c++": "esp_pm_lock_delete(esp_pm_lock_handle_t)",
+    "go": "EspPmLockDelete"
+  },
+  {
+    "mangle": "esp_pm_lock_release",
+    "c++": "esp_pm_lock_release(esp_pm_lock_handle_t)",
+    "go": "EspPmLockRelease"
+  },
+  {
+    "mangle": "esp_pm_trace_enter",
+    "c++": "esp_pm_trace_enter(esp_pm_trace_event_t, int)",
+    "go": "EspPmTraceEventT.EspPmTraceEnter"
+  },
+  {
+    "mangle": "esp_pm_trace_exit",
+    "c++": "esp_pm_trace_exit(esp_pm_trace_event_t, int)",
+    "go": "EspPmTraceEventT.EspPmTraceExit"
+  },
+  {
+    "mangle": "esp_pm_trace_init",
+    "c++": "esp_pm_trace_init()",
+    "go": "EspPmTraceInit"
+  }
+]

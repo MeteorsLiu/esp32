@@ -1,4 +1,4 @@
-module esp_https_ota
+module github.com/MeteorsLiu/esp32/esp32h2/esp_https_ota
 
 go 1.23.4
 

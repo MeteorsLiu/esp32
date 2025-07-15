@@ -1,4 +1,4 @@
-module unity
+module github.com/MeteorsLiu/esp32/esp32c2/unity
 
 go 1.23.4
 

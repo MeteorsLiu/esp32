@@ -1,4 +1,4 @@
-module esp_driver_sdio
+module github.com/MeteorsLiu/esp32/esp32c3/esp_driver_sdio
 
 go 1.23.4
 

@@ -12,6 +12,11 @@ ana_cmpr_ref_source_t AnaCmprRefSourceT
 ana_cmpr_ref_voltage_t AnaCmprRefVoltageT
 ana_cmpr_t AnaCmprT
 ana_cmpr_unit_t AnaCmprUnitT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 div_t DivT
 esp_err_t EspErrT
 esp_etm_channel_config_t EspEtmChannelConfigT

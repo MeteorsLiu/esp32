@@ -1,4 +1,4 @@
-module esp_system
+module github.com/MeteorsLiu/esp32/esp32s2/esp_system
 
 go 1.23.4
 

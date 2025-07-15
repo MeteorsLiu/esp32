@@ -1,4 +1,4 @@
-module http_parser
+module github.com/MeteorsLiu/esp32/esp32/http_parser
 
 go 1.23.4
 

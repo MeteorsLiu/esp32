@@ -1,4 +1,4 @@
-module bootloader_support
+module github.com/MeteorsLiu/esp32/esp32/bootloader_support
 
 go 1.23.4
 

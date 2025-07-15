@@ -1,4 +1,4 @@
-module usb
+module github.com/MeteorsLiu/esp32/esp32s2/usb
 
 go 1.23.4
 

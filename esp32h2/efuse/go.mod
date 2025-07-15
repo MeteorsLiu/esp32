@@ -1,4 +1,4 @@
-module efuse
+module github.com/MeteorsLiu/esp32/esp32h2/efuse
 
 go 1.23.4
 

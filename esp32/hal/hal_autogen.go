@@ -10,18 +10,22 @@ const X_NEWLIB_VERSION = "4.3.0"
 const X__NEWLIB__ = 4
 const X__NEWLIB_MINOR__ = 3
 const X__NEWLIB_PATCHLEVEL__ = 0
-const X_DEFAULT_SOURCE = 1
-const X_POSIX_SOURCE = 1
 const X_ATFILE_SOURCE = 1
+const X_DEFAULT_SOURCE = 1
+const X_ISOC99_SOURCE = 1
+const X_ISOC11_SOURCE = 1
+const X_POSIX_SOURCE = 1
+const X_XOPEN_SOURCE = 700
+const X_XOPEN_SOURCE_EXTENDED = 1
 const X__ATFILE_VISIBLE = 1
 const X__BSD_VISIBLE = 1
-const X__GNU_VISIBLE = 0
+const X__GNU_VISIBLE = 1
 const X__ISO_C_VISIBLE = 2011
-const X__LARGEFILE_VISIBLE = 0
+const X__LARGEFILE_VISIBLE = 1
 const X__MISC_VISIBLE = 1
 const X__POSIX_VISIBLE = 200809
 const X__SVID_VISIBLE = 1
-const X__XSI_VISIBLE = 0
+const X__XSI_VISIBLE = 700
 const X__SSP_FORTIFY_LEVEL = 0
 const X_POSIX_THREADS = 1
 const X_POSIX_TIMEOUTS = 1
@@ -842,63 +846,6 @@ const X__CC_SUPPORTS_VARADIC_XXX = 1
 const X__CC_SUPPORTS_DYNAMIC_ARRAY_INIT = 1
 const EXIT_FAILURE = 1
 const EXIT_SUCCESS = 0
-const BIT31 = 0x80000000
-const BIT30 = 0x40000000
-const BIT29 = 0x20000000
-const BIT28 = 0x10000000
-const BIT27 = 0x08000000
-const BIT26 = 0x04000000
-const BIT25 = 0x02000000
-const BIT24 = 0x01000000
-const BIT23 = 0x00800000
-const BIT22 = 0x00400000
-const BIT21 = 0x00200000
-const BIT20 = 0x00100000
-const BIT19 = 0x00080000
-const BIT18 = 0x00040000
-const BIT17 = 0x00020000
-const BIT16 = 0x00010000
-const BIT15 = 0x00008000
-const BIT14 = 0x00004000
-const BIT13 = 0x00002000
-const BIT12 = 0x00001000
-const BIT11 = 0x00000800
-const BIT10 = 0x00000400
-const BIT9 = 0x00000200
-const BIT8 = 0x00000100
-const BIT7 = 0x00000080
-const BIT6 = 0x00000040
-const BIT5 = 0x00000020
-const BIT4 = 0x00000010
-const BIT3 = 0x00000008
-const BIT2 = 0x00000004
-const BIT1 = 0x00000002
-const BIT0 = 0x00000001
-const ARG_MAX = 65536
-const CHILD_MAX = 40
-const LINK_MAX = 32767
-const MAX_CANON = 255
-const MAX_INPUT = 255
-const NAME_MAX = 255
-const NGROUPS_MAX = 16
-const OPEN_MAX = 64
-const PATH_MAX = 1024
-const PIPE_BUF = 512
-const IOV_MAX = 1024
-const BC_BASE_MAX = 99
-const BC_DIM_MAX = 2048
-const BC_SCALE_MAX = 99
-const BC_STRING_MAX = 1000
-const COLL_WEIGHTS_MAX = 0
-const EXPR_NEST_MAX = 32
-const LINE_MAX = 2048
-const RE_DUP_MAX = 255
-const X_LITTLE_ENDIAN = 1234
-const X_BIG_ENDIAN = 4321
-const X_PDP_ENDIAN = 3412
-const X_QUAD_HIGHWORD = 1
-const X_QUAD_LOWWORD = 0
-const NBBY = 8
 const SOC_CAPS_ECO_VER_MAX = 301
 const SOC_ADC_SUPPORTED = 1
 const SOC_DAC_SUPPORTED = 1
@@ -1008,85 +955,66 @@ const SOC_SECURE_BOOT_V1 = 1
 const SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS = 1
 const SOC_SDMMC_USE_IOMUX = 1
 const SOC_SDMMC_NUM_SLOTS = 2
+const BIT31 = 0x80000000
+const BIT30 = 0x40000000
+const BIT29 = 0x20000000
+const BIT28 = 0x10000000
+const BIT27 = 0x08000000
+const BIT26 = 0x04000000
+const BIT25 = 0x02000000
+const BIT24 = 0x01000000
+const BIT23 = 0x00800000
+const BIT22 = 0x00400000
+const BIT21 = 0x00200000
+const BIT20 = 0x00100000
+const BIT19 = 0x00080000
+const BIT18 = 0x00040000
+const BIT17 = 0x00020000
+const BIT16 = 0x00010000
+const BIT15 = 0x00008000
+const BIT14 = 0x00004000
+const BIT13 = 0x00002000
+const BIT12 = 0x00001000
+const BIT11 = 0x00000800
+const BIT10 = 0x00000400
+const BIT9 = 0x00000200
+const BIT8 = 0x00000100
+const BIT7 = 0x00000080
+const BIT6 = 0x00000040
+const BIT5 = 0x00000020
+const BIT4 = 0x00000010
+const BIT3 = 0x00000008
+const BIT2 = 0x00000004
+const BIT1 = 0x00000002
+const BIT0 = 0x00000001
+const ARG_MAX = 65536
+const CHILD_MAX = 40
+const LINK_MAX = 32767
+const MAX_CANON = 255
+const MAX_INPUT = 255
+const NAME_MAX = 255
+const NGROUPS_MAX = 16
+const OPEN_MAX = 64
+const PATH_MAX = 1024
+const PIPE_BUF = 512
+const IOV_MAX = 1024
+const BC_BASE_MAX = 99
+const BC_DIM_MAX = 2048
+const BC_SCALE_MAX = 99
+const BC_STRING_MAX = 1000
+const COLL_WEIGHTS_MAX = 0
+const EXPR_NEST_MAX = 32
+const LINE_MAX = 2048
+const RE_DUP_MAX = 255
+const X_LITTLE_ENDIAN = 1234
+const X_BIG_ENDIAN = 4321
+const X_PDP_ENDIAN = 3412
+const X_QUAD_HIGHWORD = 1
+const X_QUAD_LOWWORD = 0
+const NBBY = 8
 const SOC_CLK_RC_FAST_FREQ_APPROX = 8500000
 const SOC_CLK_RC_SLOW_FREQ_APPROX = 150000
 const SOC_CLK_XTAL32K_FREQ_APPROX = 32768
-const X__SLBF = 0x0001
-const X__SNBF = 0x0002
-const X__SRD = 0x0004
-const X__SWR = 0x0008
-const X__SRW = 0x0010
-const X__SEOF = 0x0020
-const X__SERR = 0x0040
-const X__SMBF = 0x0080
-const X__SAPP = 0x0100
-const X__SSTR = 0x0200
-const X__SOPT = 0x0400
-const X__SNPT = 0x0800
-const X__SOFF = 0x1000
-const X__SORD = 0x2000
-const X__SL64 = 0x8000
-const X__SNLK = 0x0001
-const X__SWID = 0x2000
-const X_IOFBF = 0
-const X_IOLBF = 1
-const X_IONBF = 2
-const FOPEN_MAX = 20
-const FILENAME_MAX = 1024
-const P_tmpdir = "/tmp"
-const SEEK_SET = 0
-const SEEK_CUR = 1
-const SEEK_END = 2
-const TMP_MAX = 26
-const L_ctermid = 16
-const ESP_OK = 0
-const ESP_ERR_NO_MEM = 0x101
-const ESP_ERR_INVALID_ARG = 0x102
-const ESP_ERR_INVALID_STATE = 0x103
-const ESP_ERR_INVALID_SIZE = 0x104
-const ESP_ERR_NOT_FOUND = 0x105
-const ESP_ERR_NOT_SUPPORTED = 0x106
-const ESP_ERR_TIMEOUT = 0x107
-const ESP_ERR_INVALID_RESPONSE = 0x108
-const ESP_ERR_INVALID_CRC = 0x109
-const ESP_ERR_INVALID_VERSION = 0x10A
-const ESP_ERR_INVALID_MAC = 0x10B
-const ESP_ERR_NOT_FINISHED = 0x10C
-const ESP_ERR_NOT_ALLOWED = 0x10D
-const ESP_ERR_WIFI_BASE = 0x3000
-const ESP_ERR_MESH_BASE = 0x4000
-const ESP_ERR_FLASH_BASE = 0x6000
-const ESP_ERR_HW_CRYPTO_BASE = 0xc000
-const ESP_ERR_MEMPROT_BASE = 0xd000
-const ANA_CONFIG_REG = 0x6000E044
-const LOG_ANSI_COLOR_BLACK = "30"
-const LOG_ANSI_COLOR_RED = "31"
-const LOG_ANSI_COLOR_GREEN = "32"
-const LOG_ANSI_COLOR_YELLOW = "33"
-const LOG_ANSI_COLOR_BLUE = "34"
-const LOG_ANSI_COLOR_MAGENTA = "35"
-const LOG_ANSI_COLOR_CYAN = "36"
-const LOG_ANSI_COLOR_WHITE = "37"
-const LOG_ANSI_COLOR_DEFAULT = "39"
-const LOG_ANSI_COLOR_BG_BLACK = "40"
-const LOG_ANSI_COLOR_BG_RED = "41"
-const LOG_ANSI_COLOR_BG_GREEN = "42"
-const LOG_ANSI_COLOR_BG_YELLOW = "43"
-const LOG_ANSI_COLOR_BG_BLUE = "44"
-const LOG_ANSI_COLOR_BG_MAGENTA = "45"
-const LOG_ANSI_COLOR_BG_CYAN = "46"
-const LOG_ANSI_COLOR_BG_WHITE = "47"
-const LOG_ANSI_COLOR_BG_DEFAULT = "49"
-const LOG_ANSI_COLOR_STYLE_RESET = "0"
-const LOG_ANSI_COLOR_STYLE_BOLD = "1"
-const LOG_ANSI_COLOR_STYLE_ITALIC = "3"
-const LOG_ANSI_COLOR_STYLE_UNDERLINE = "4"
-const LOG_RESET_COLOR = ""
-const LOG_COLOR_E = ""
-const LOG_COLOR_W = ""
-const LOG_COLOR_I = ""
-const LOG_COLOR_D = ""
-const LOG_COLOR_V = ""
 const DR_REG_DPORT_BASE = 0x3ff00000
 const DR_REG_AES_BASE = 0x3ff01000
 const DR_REG_RSA_BASE = 0x3ff02000
@@ -1187,6 +1115,264 @@ const ETS_SLC_INUM = 1
 const ETS_UART0_INUM = 5
 const ETS_UART1_INUM = 5
 const ETS_INVALID_INUM = 6
+const EFUSE_WRITE_OP_CODE = 0x5a5a
+const EFUSE_READ_OP_CODE = 0x5aa5
+const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDQ6 = 0
+const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDQ5 = 1
+const EFUSE_RD_CHIP_VER_PKG_ESP32D2WDQ5 = 2
+const EFUSE_RD_CHIP_VER_PKG_ESP32PICOD2 = 4
+const EFUSE_RD_CHIP_VER_PKG_ESP32U4WDH = 4
+const EFUSE_RD_CHIP_VER_PKG_ESP32PICOD4 = 5
+const EFUSE_RD_CHIP_VER_PKG_ESP32PICOV302 = 6
+const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDR2V3 = 7
+const EFUSE_CODING_SCHEME_VAL_NONE = 0x0
+const EFUSE_CODING_SCHEME_VAL_34 = 0x1
+const EFUSE_CODING_SCHEME_VAL_REPEAT = 0x2
+const EFUSE_RD_EFUSE_WR_DIS_S = 0
+const EFUSE_RD_EFUSE_RD_DIS_S = 16
+const EFUSE_RD_FLASH_CRYPT_CNT_S = 20
+const EFUSE_RD_UART_DOWNLOAD_DIS_S = 27
+const EFUSE_RESERVED_0_28_S = 28
+const EFUSE_RD_MAC_S = 0
+const EFUSE_RD_MAC_1_S = 0
+const EFUSE_RD_MAC_CRC_S = 16
+const EFUSE_RD_RESERVE_0_88_S = 24
+const EFUSE_RD_DISABLE_APP_CPU_S = 0
+const EFUSE_RD_DISABLE_BT_S = 1
+const EFUSE_RD_CHIP_PACKAGE_4BIT_S = 2
+const EFUSE_RD_DIS_CACHE_S = 3
+const EFUSE_RD_SPI_PAD_CONFIG_HD_S = 4
+const EFUSE_RD_CHIP_PACKAGE_S = 9
+const EFUSE_RD_CHIP_CPU_FREQ_LOW_S = 12
+const EFUSE_RD_CHIP_CPU_FREQ_RATED_S = 13
+const EFUSE_RD_BLK3_PART_RESERVE_S = 14
+const EFUSE_RD_CHIP_VER_REV1_S = 15
+const EFUSE_RD_RESERVE_0_112_S = 16
+const EFUSE_RD_CLK8M_FREQ_S = 0
+const EFUSE_RD_ADC_VREF_S = 8
+const EFUSE_RD_RESERVE_0_141_S = 13
+const EFUSE_RD_XPD_SDIO_REG_S = 14
+const EFUSE_RD_XPD_SDIO_TIEH_S = 15
+const EFUSE_RD_XPD_SDIO_FORCE_S = 16
+const EFUSE_RD_RESERVE_0_145_S = 17
+const EFUSE_RD_SPI_PAD_CONFIG_CLK_S = 0
+const EFUSE_RD_SPI_PAD_CONFIG_Q_S = 5
+const EFUSE_RD_SPI_PAD_CONFIG_D_S = 10
+const EFUSE_RD_SPI_PAD_CONFIG_CS0_S = 15
+const EFUSE_RD_CHIP_VER_REV2_S = 20
+const EFUSE_RD_RESERVE_0_181_S = 21
+const EFUSE_RD_VOL_LEVEL_HP_INV_S = 22
+const EFUSE_RD_WAFER_VERSION_MINOR_S = 24
+const EFUSE_RD_RESERVE_0_186_S = 26
+const EFUSE_RD_FLASH_CRYPT_CONFIG_S = 28
+const EFUSE_RD_CODING_SCHEME_S = 0
+const EFUSE_RD_CONSOLE_DEBUG_DISABLE_S = 2
+const EFUSE_RD_DISABLE_SDIO_HOST_S = 3
+const EFUSE_RD_ABS_DONE_0_S = 4
+const EFUSE_RD_ABS_DONE_1_S = 5
+const EFUSE_RD_JTAG_DISABLE_S = 6
+const EFUSE_RD_DISABLE_DL_ENCRYPT_S = 7
+const EFUSE_RD_DISABLE_DL_DECRYPT_S = 8
+const EFUSE_RD_DISABLE_DL_CACHE_S = 9
+const EFUSE_RD_KEY_STATUS_S = 10
+const EFUSE_RD_RESERVE_0_203_S = 11
+const EFUSE_WR_DIS_S = 0
+const EFUSE_RD_DIS_S = 16
+const EFUSE_FLASH_CRYPT_CNT_S = 20
+const EFUSE_WIFI_MAC_CRC_LOW_S = 0
+const EFUSE_WIFI_MAC_CRC_HIGH_S = 0
+const EFUSE_DISABLE_APP_CPU_S = 0
+const EFUSE_DISABLE_BT_S = 1
+const EFUSE_CHIP_PACKAGE_4BIT_S = 2
+const EFUSE_DIS_CACHE_S = 3
+const EFUSE_SPI_PAD_CONFIG_HD_S = 4
+const EFUSE_CHIP_PACKAGE_S = 9
+const EFUSE_CHIP_CPU_FREQ_LOW_S = 12
+const EFUSE_CHIP_CPU_FREQ_RATED_S = 13
+const EFUSE_BLK3_PART_RESERVE_S = 14
+const EFUSE_CHIP_VER_REV1_S = 15
+const EFUSE_RESERVE_0_112_S = 16
+const EFUSE_CLK8M_FREQ_S = 0
+const EFUSE_ADC_VREF_S = 8
+const EFUSE_RESERVE_0_141_S = 13
+const EFUSE_XPD_SDIO_REG_S = 14
+const EFUSE_XPD_SDIO_TIEH_S = 15
+const EFUSE_XPD_SDIO_FORCE_S = 16
+const EFUSE_RESERVE_0_145_S = 17
+const EFUSE_SPI_PAD_CONFIG_CLK_S = 0
+const EFUSE_SPI_PAD_CONFIG_Q_S = 5
+const EFUSE_SPI_PAD_CONFIG_D_S = 10
+const EFUSE_SPI_PAD_CONFIG_CS0_S = 15
+const EFUSE_CHIP_VER_REV2_S = 20
+const EFUSE_RESERVE_0_181_S = 21
+const EFUSE_VOL_LEVEL_HP_INV_S = 22
+const EFUSE_WAFER_VERSION_MINOR_S = 24
+const EFUSE_RESERVE_0_186_S = 26
+const EFUSE_FLASH_CRYPT_CONFIG_S = 28
+const EFUSE_CODING_SCHEME_S = 0
+const EFUSE_CONSOLE_DEBUG_DISABLE_S = 2
+const EFUSE_DISABLE_SDIO_HOST_S = 3
+const EFUSE_ABS_DONE_0_S = 4
+const EFUSE_ABS_DONE_1_S = 5
+const EFUSE_DISABLE_JTAG_S = 6
+const EFUSE_DISABLE_DL_ENCRYPT_S = 7
+const EFUSE_DISABLE_DL_DECRYPT_S = 8
+const EFUSE_DISABLE_DL_CACHE_S = 9
+const EFUSE_KEY_STATUS_S = 10
+const EFUSE_RD_BLOCK1_S = 0
+const EFUSE_RD_BLOCK1_1_S = 0
+const EFUSE_RD_BLOCK1_2_S = 0
+const EFUSE_RD_BLOCK1_3_S = 0
+const EFUSE_RD_BLOCK1_4_S = 0
+const EFUSE_RD_BLOCK1_5_S = 0
+const EFUSE_RD_BLOCK1_6_S = 0
+const EFUSE_RD_BLOCK1_7_S = 0
+const EFUSE_RD_BLOCK2_S = 0
+const EFUSE_RD_BLOCK2_1_S = 0
+const EFUSE_RD_BLOCK2_2_S = 0
+const EFUSE_RD_BLOCK2_3_S = 0
+const EFUSE_RD_BLOCK2_4_S = 0
+const EFUSE_RD_BLOCK2_5_S = 0
+const EFUSE_RD_BLOCK2_6_S = 0
+const EFUSE_RD_BLOCK2_7_S = 0
+const EFUSE_RD_CUSTOM_MAC_CRC_S = 0
+const EFUSE_RD_CUSTOM_MAC_S = 8
+const EFUSE_RD_CUSTOM_MAC_1_S = 0
+const EFUSE_RESERVED_3_56_S = 24
+const EFUSE_RD_BLK3_RESERVED_2_S = 0
+const EFUSE_RD_ADC1_TP_LOW_S = 0
+const EFUSE_RD_ADC1_TP_HIGH_S = 7
+const EFUSE_RD_ADC2_TP_LOW_S = 16
+const EFUSE_RD_ADC2_TP_HIGH_S = 23
+const EFUSE_RD_SECURE_VERSION_S = 0
+const EFUSE_RESERVED_3_160_S = 0
+const EFUSE_RD_MAC_VERSION_S = 24
+const EFUSE_RD_BLK3_RESERVED_6_S = 0
+const EFUSE_RD_BLK3_RESERVED_7_S = 0
+const EFUSE_BLK1_DIN0_S = 0
+const EFUSE_BLK1_DIN1_S = 0
+const EFUSE_BLK1_DIN2_S = 0
+const EFUSE_BLK1_DIN3_S = 0
+const EFUSE_BLK1_DIN4_S = 0
+const EFUSE_BLK1_DIN5_S = 0
+const EFUSE_BLK1_DIN6_S = 0
+const EFUSE_BLK1_DIN7_S = 0
+const EFUSE_BLK2_DIN0_S = 0
+const EFUSE_BLK2_DIN1_S = 0
+const EFUSE_BLK2_DIN2_S = 0
+const EFUSE_BLK2_DIN3_S = 0
+const EFUSE_BLK2_DIN4_S = 0
+const EFUSE_BLK2_DIN5_S = 0
+const EFUSE_BLK2_DIN6_S = 0
+const EFUSE_BLK2_DIN7_S = 0
+const EFUSE_BLK3_DIN0_S = 0
+const EFUSE_BLK3_DIN1_S = 0
+const EFUSE_BLK3_DIN2_S = 0
+const EFUSE_ADC1_TP_LOW_S = 0
+const EFUSE_ADC1_TP_HIGH_S = 7
+const EFUSE_ADC2_TP_LOW_S = 16
+const EFUSE_ADC2_TP_HIGH_S = 23
+const EFUSE_SECURE_VERSION_S = 0
+const EFUSE_BLK3_DIN5_S = 0
+const EFUSE_BLK3_DIN6_S = 0
+const EFUSE_BLK3_DIN7_S = 0
+const EFUSE_CLK_SEL0_S = 0
+const EFUSE_CLK_SEL1_S = 8
+const EFUSE_CLK_EN_S = 16
+const EFUSE_OP_CODE_S = 0
+const EFUSE_FORCE_NO_WR_RD_DIS_S = 16
+const EFUSE_DEBUG_S = 0
+const EFUSE_READ_CMD_S = 0
+const EFUSE_PGM_CMD_S = 1
+const EFUSE_READ_DONE_INT_RAW_S = 0
+const EFUSE_PGM_DONE_INT_RAW_S = 1
+const EFUSE_READ_DONE_INT_ST_S = 0
+const EFUSE_PGM_DONE_INT_ST_S = 1
+const EFUSE_READ_DONE_INT_ENA_S = 0
+const EFUSE_PGM_DONE_INT_ENA_S = 1
+const EFUSE_READ_DONE_INT_CLR_S = 0
+const EFUSE_PGM_DONE_INT_CLR_S = 1
+const EFUSE_DAC_CLK_DIV_S = 0
+const EFUSE_DAC_CLK_PAD_SEL_S = 8
+const EFUSE_DEC_WARNINGS_S = 0
+const EFUSE_DATE_S = 0
+const X__SLBF = 0x0001
+const X__SNBF = 0x0002
+const X__SRD = 0x0004
+const X__SWR = 0x0008
+const X__SRW = 0x0010
+const X__SEOF = 0x0020
+const X__SERR = 0x0040
+const X__SMBF = 0x0080
+const X__SAPP = 0x0100
+const X__SSTR = 0x0200
+const X__SOPT = 0x0400
+const X__SNPT = 0x0800
+const X__SOFF = 0x1000
+const X__SORD = 0x2000
+const X__SL64 = 0x8000
+const X__SNLK = 0x0001
+const X__SWID = 0x2000
+const X_IOFBF = 0
+const X_IOLBF = 1
+const X_IONBF = 2
+const FOPEN_MAX = 20
+const FILENAME_MAX = 1024
+const P_tmpdir = "/tmp"
+const SEEK_SET = 0
+const SEEK_CUR = 1
+const SEEK_END = 2
+const TMP_MAX = 26
+const L_cuserid = 9
+const L_ctermid = 16
+const ESP_OK = 0
+const ESP_ERR_NO_MEM = 0x101
+const ESP_ERR_INVALID_ARG = 0x102
+const ESP_ERR_INVALID_STATE = 0x103
+const ESP_ERR_INVALID_SIZE = 0x104
+const ESP_ERR_NOT_FOUND = 0x105
+const ESP_ERR_NOT_SUPPORTED = 0x106
+const ESP_ERR_TIMEOUT = 0x107
+const ESP_ERR_INVALID_RESPONSE = 0x108
+const ESP_ERR_INVALID_CRC = 0x109
+const ESP_ERR_INVALID_VERSION = 0x10A
+const ESP_ERR_INVALID_MAC = 0x10B
+const ESP_ERR_NOT_FINISHED = 0x10C
+const ESP_ERR_NOT_ALLOWED = 0x10D
+const ESP_ERR_WIFI_BASE = 0x3000
+const ESP_ERR_MESH_BASE = 0x4000
+const ESP_ERR_FLASH_BASE = 0x6000
+const ESP_ERR_HW_CRYPTO_BASE = 0xc000
+const ESP_ERR_MEMPROT_BASE = 0xd000
+const ANA_CONFIG_REG = 0x6000E044
+const LOG_ANSI_COLOR_BLACK = "30"
+const LOG_ANSI_COLOR_RED = "31"
+const LOG_ANSI_COLOR_GREEN = "32"
+const LOG_ANSI_COLOR_YELLOW = "33"
+const LOG_ANSI_COLOR_BLUE = "34"
+const LOG_ANSI_COLOR_MAGENTA = "35"
+const LOG_ANSI_COLOR_CYAN = "36"
+const LOG_ANSI_COLOR_WHITE = "37"
+const LOG_ANSI_COLOR_DEFAULT = "39"
+const LOG_ANSI_COLOR_BG_BLACK = "40"
+const LOG_ANSI_COLOR_BG_RED = "41"
+const LOG_ANSI_COLOR_BG_GREEN = "42"
+const LOG_ANSI_COLOR_BG_YELLOW = "43"
+const LOG_ANSI_COLOR_BG_BLUE = "44"
+const LOG_ANSI_COLOR_BG_MAGENTA = "45"
+const LOG_ANSI_COLOR_BG_CYAN = "46"
+const LOG_ANSI_COLOR_BG_WHITE = "47"
+const LOG_ANSI_COLOR_BG_DEFAULT = "49"
+const LOG_ANSI_COLOR_STYLE_RESET = "0"
+const LOG_ANSI_COLOR_STYLE_BOLD = "1"
+const LOG_ANSI_COLOR_STYLE_ITALIC = "3"
+const LOG_ANSI_COLOR_STYLE_UNDERLINE = "4"
+const LOG_RESET_COLOR = ""
+const LOG_COLOR_E = ""
+const LOG_COLOR_W = ""
+const LOG_COLOR_I = ""
+const LOG_COLOR_D = ""
+const LOG_COLOR_V = ""
 const DPORT_PRO_BOOT_REMAP_V = 0x1
 const DPORT_PRO_BOOT_REMAP_S = 0
 const DPORT_APP_BOOT_REMAP_V = 0x1
@@ -4053,187 +4239,6 @@ const SOC_MMU_ENTRY_NUM = 384
 const SOC_MMU_DBUS_VADDR_BASE = 0x3E000000
 const SOC_MMU_IBUS_VADDR_BASE = 0x40000000
 const SOC_MMU_LINEAR_ADDR_MASK = 0x1FFFFFF
-const EFUSE_WRITE_OP_CODE = 0x5a5a
-const EFUSE_READ_OP_CODE = 0x5aa5
-const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDQ6 = 0
-const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDQ5 = 1
-const EFUSE_RD_CHIP_VER_PKG_ESP32D2WDQ5 = 2
-const EFUSE_RD_CHIP_VER_PKG_ESP32PICOD2 = 4
-const EFUSE_RD_CHIP_VER_PKG_ESP32U4WDH = 4
-const EFUSE_RD_CHIP_VER_PKG_ESP32PICOD4 = 5
-const EFUSE_RD_CHIP_VER_PKG_ESP32PICOV302 = 6
-const EFUSE_RD_CHIP_VER_PKG_ESP32D0WDR2V3 = 7
-const EFUSE_CODING_SCHEME_VAL_NONE = 0x0
-const EFUSE_CODING_SCHEME_VAL_34 = 0x1
-const EFUSE_CODING_SCHEME_VAL_REPEAT = 0x2
-const EFUSE_RD_EFUSE_WR_DIS_S = 0
-const EFUSE_RD_EFUSE_RD_DIS_S = 16
-const EFUSE_RD_FLASH_CRYPT_CNT_S = 20
-const EFUSE_RD_UART_DOWNLOAD_DIS_S = 27
-const EFUSE_RESERVED_0_28_S = 28
-const EFUSE_RD_MAC_S = 0
-const EFUSE_RD_MAC_1_S = 0
-const EFUSE_RD_MAC_CRC_S = 16
-const EFUSE_RD_RESERVE_0_88_S = 24
-const EFUSE_RD_DISABLE_APP_CPU_S = 0
-const EFUSE_RD_DISABLE_BT_S = 1
-const EFUSE_RD_CHIP_PACKAGE_4BIT_S = 2
-const EFUSE_RD_DIS_CACHE_S = 3
-const EFUSE_RD_SPI_PAD_CONFIG_HD_S = 4
-const EFUSE_RD_CHIP_PACKAGE_S = 9
-const EFUSE_RD_CHIP_CPU_FREQ_LOW_S = 12
-const EFUSE_RD_CHIP_CPU_FREQ_RATED_S = 13
-const EFUSE_RD_BLK3_PART_RESERVE_S = 14
-const EFUSE_RD_CHIP_VER_REV1_S = 15
-const EFUSE_RD_RESERVE_0_112_S = 16
-const EFUSE_RD_CLK8M_FREQ_S = 0
-const EFUSE_RD_ADC_VREF_S = 8
-const EFUSE_RD_RESERVE_0_141_S = 13
-const EFUSE_RD_XPD_SDIO_REG_S = 14
-const EFUSE_RD_XPD_SDIO_TIEH_S = 15
-const EFUSE_RD_XPD_SDIO_FORCE_S = 16
-const EFUSE_RD_RESERVE_0_145_S = 17
-const EFUSE_RD_SPI_PAD_CONFIG_CLK_S = 0
-const EFUSE_RD_SPI_PAD_CONFIG_Q_S = 5
-const EFUSE_RD_SPI_PAD_CONFIG_D_S = 10
-const EFUSE_RD_SPI_PAD_CONFIG_CS0_S = 15
-const EFUSE_RD_CHIP_VER_REV2_S = 20
-const EFUSE_RD_RESERVE_0_181_S = 21
-const EFUSE_RD_VOL_LEVEL_HP_INV_S = 22
-const EFUSE_RD_WAFER_VERSION_MINOR_S = 24
-const EFUSE_RD_RESERVE_0_186_S = 26
-const EFUSE_RD_FLASH_CRYPT_CONFIG_S = 28
-const EFUSE_RD_CODING_SCHEME_S = 0
-const EFUSE_RD_CONSOLE_DEBUG_DISABLE_S = 2
-const EFUSE_RD_DISABLE_SDIO_HOST_S = 3
-const EFUSE_RD_ABS_DONE_0_S = 4
-const EFUSE_RD_ABS_DONE_1_S = 5
-const EFUSE_RD_JTAG_DISABLE_S = 6
-const EFUSE_RD_DISABLE_DL_ENCRYPT_S = 7
-const EFUSE_RD_DISABLE_DL_DECRYPT_S = 8
-const EFUSE_RD_DISABLE_DL_CACHE_S = 9
-const EFUSE_RD_KEY_STATUS_S = 10
-const EFUSE_RD_RESERVE_0_203_S = 11
-const EFUSE_WR_DIS_S = 0
-const EFUSE_RD_DIS_S = 16
-const EFUSE_FLASH_CRYPT_CNT_S = 20
-const EFUSE_WIFI_MAC_CRC_LOW_S = 0
-const EFUSE_WIFI_MAC_CRC_HIGH_S = 0
-const EFUSE_DISABLE_APP_CPU_S = 0
-const EFUSE_DISABLE_BT_S = 1
-const EFUSE_CHIP_PACKAGE_4BIT_S = 2
-const EFUSE_DIS_CACHE_S = 3
-const EFUSE_SPI_PAD_CONFIG_HD_S = 4
-const EFUSE_CHIP_PACKAGE_S = 9
-const EFUSE_CHIP_CPU_FREQ_LOW_S = 12
-const EFUSE_CHIP_CPU_FREQ_RATED_S = 13
-const EFUSE_BLK3_PART_RESERVE_S = 14
-const EFUSE_CHIP_VER_REV1_S = 15
-const EFUSE_RESERVE_0_112_S = 16
-const EFUSE_CLK8M_FREQ_S = 0
-const EFUSE_ADC_VREF_S = 8
-const EFUSE_RESERVE_0_141_S = 13
-const EFUSE_XPD_SDIO_REG_S = 14
-const EFUSE_XPD_SDIO_TIEH_S = 15
-const EFUSE_XPD_SDIO_FORCE_S = 16
-const EFUSE_RESERVE_0_145_S = 17
-const EFUSE_SPI_PAD_CONFIG_CLK_S = 0
-const EFUSE_SPI_PAD_CONFIG_Q_S = 5
-const EFUSE_SPI_PAD_CONFIG_D_S = 10
-const EFUSE_SPI_PAD_CONFIG_CS0_S = 15
-const EFUSE_CHIP_VER_REV2_S = 20
-const EFUSE_RESERVE_0_181_S = 21
-const EFUSE_VOL_LEVEL_HP_INV_S = 22
-const EFUSE_WAFER_VERSION_MINOR_S = 24
-const EFUSE_RESERVE_0_186_S = 26
-const EFUSE_FLASH_CRYPT_CONFIG_S = 28
-const EFUSE_CODING_SCHEME_S = 0
-const EFUSE_CONSOLE_DEBUG_DISABLE_S = 2
-const EFUSE_DISABLE_SDIO_HOST_S = 3
-const EFUSE_ABS_DONE_0_S = 4
-const EFUSE_ABS_DONE_1_S = 5
-const EFUSE_DISABLE_JTAG_S = 6
-const EFUSE_DISABLE_DL_ENCRYPT_S = 7
-const EFUSE_DISABLE_DL_DECRYPT_S = 8
-const EFUSE_DISABLE_DL_CACHE_S = 9
-const EFUSE_KEY_STATUS_S = 10
-const EFUSE_RD_BLOCK1_S = 0
-const EFUSE_RD_BLOCK1_1_S = 0
-const EFUSE_RD_BLOCK1_2_S = 0
-const EFUSE_RD_BLOCK1_3_S = 0
-const EFUSE_RD_BLOCK1_4_S = 0
-const EFUSE_RD_BLOCK1_5_S = 0
-const EFUSE_RD_BLOCK1_6_S = 0
-const EFUSE_RD_BLOCK1_7_S = 0
-const EFUSE_RD_BLOCK2_S = 0
-const EFUSE_RD_BLOCK2_1_S = 0
-const EFUSE_RD_BLOCK2_2_S = 0
-const EFUSE_RD_BLOCK2_3_S = 0
-const EFUSE_RD_BLOCK2_4_S = 0
-const EFUSE_RD_BLOCK2_5_S = 0
-const EFUSE_RD_BLOCK2_6_S = 0
-const EFUSE_RD_BLOCK2_7_S = 0
-const EFUSE_RD_CUSTOM_MAC_CRC_S = 0
-const EFUSE_RD_CUSTOM_MAC_S = 8
-const EFUSE_RD_CUSTOM_MAC_1_S = 0
-const EFUSE_RESERVED_3_56_S = 24
-const EFUSE_RD_BLK3_RESERVED_2_S = 0
-const EFUSE_RD_ADC1_TP_LOW_S = 0
-const EFUSE_RD_ADC1_TP_HIGH_S = 7
-const EFUSE_RD_ADC2_TP_LOW_S = 16
-const EFUSE_RD_ADC2_TP_HIGH_S = 23
-const EFUSE_RD_SECURE_VERSION_S = 0
-const EFUSE_RESERVED_3_160_S = 0
-const EFUSE_RD_MAC_VERSION_S = 24
-const EFUSE_RD_BLK3_RESERVED_6_S = 0
-const EFUSE_RD_BLK3_RESERVED_7_S = 0
-const EFUSE_BLK1_DIN0_S = 0
-const EFUSE_BLK1_DIN1_S = 0
-const EFUSE_BLK1_DIN2_S = 0
-const EFUSE_BLK1_DIN3_S = 0
-const EFUSE_BLK1_DIN4_S = 0
-const EFUSE_BLK1_DIN5_S = 0
-const EFUSE_BLK1_DIN6_S = 0
-const EFUSE_BLK1_DIN7_S = 0
-const EFUSE_BLK2_DIN0_S = 0
-const EFUSE_BLK2_DIN1_S = 0
-const EFUSE_BLK2_DIN2_S = 0
-const EFUSE_BLK2_DIN3_S = 0
-const EFUSE_BLK2_DIN4_S = 0
-const EFUSE_BLK2_DIN5_S = 0
-const EFUSE_BLK2_DIN6_S = 0
-const EFUSE_BLK2_DIN7_S = 0
-const EFUSE_BLK3_DIN0_S = 0
-const EFUSE_BLK3_DIN1_S = 0
-const EFUSE_BLK3_DIN2_S = 0
-const EFUSE_ADC1_TP_LOW_S = 0
-const EFUSE_ADC1_TP_HIGH_S = 7
-const EFUSE_ADC2_TP_LOW_S = 16
-const EFUSE_ADC2_TP_HIGH_S = 23
-const EFUSE_SECURE_VERSION_S = 0
-const EFUSE_BLK3_DIN5_S = 0
-const EFUSE_BLK3_DIN6_S = 0
-const EFUSE_BLK3_DIN7_S = 0
-const EFUSE_CLK_SEL0_S = 0
-const EFUSE_CLK_SEL1_S = 8
-const EFUSE_CLK_EN_S = 16
-const EFUSE_OP_CODE_S = 0
-const EFUSE_FORCE_NO_WR_RD_DIS_S = 16
-const EFUSE_DEBUG_S = 0
-const EFUSE_READ_CMD_S = 0
-const EFUSE_PGM_CMD_S = 1
-const EFUSE_READ_DONE_INT_RAW_S = 0
-const EFUSE_PGM_DONE_INT_RAW_S = 1
-const EFUSE_READ_DONE_INT_ST_S = 0
-const EFUSE_PGM_DONE_INT_ST_S = 1
-const EFUSE_READ_DONE_INT_ENA_S = 0
-const EFUSE_PGM_DONE_INT_ENA_S = 1
-const EFUSE_READ_DONE_INT_CLR_S = 0
-const EFUSE_PGM_DONE_INT_CLR_S = 1
-const EFUSE_DAC_CLK_DIV_S = 0
-const EFUSE_DAC_CLK_PAD_SEL_S = 8
-const EFUSE_DEC_WARNINGS_S = 0
-const EFUSE_DATE_S = 0
 const XTHAL_RELEASE_MAJOR = 12000
 const XTHAL_RELEASE_MINOR = 9
 const XTHAL_RELEASE_NAME = "12.0.9"
@@ -15242,6 +15247,232 @@ type SensDevS struct {
 	}
 }
 type SensDevT SensDevS
+
+type RtcIoDevS struct {
+	Out struct {
+		Val c.Uint32T
+	}
+	OutW1ts struct {
+		Val c.Uint32T
+	}
+	OutW1tc struct {
+		Val c.Uint32T
+	}
+	Enable struct {
+		Val c.Uint32T
+	}
+	EnableW1ts struct {
+		Val c.Uint32T
+	}
+	EnableW1tc struct {
+		Val c.Uint32T
+	}
+	Status struct {
+		Val c.Uint32T
+	}
+	StatusW1ts struct {
+		Val c.Uint32T
+	}
+	StatusW1tc struct {
+		Val c.Uint32T
+	}
+	InVal struct {
+		Val c.Uint32T
+	}
+	Pin [18]struct {
+		Val c.Uint32T
+	}
+	DebugSel struct {
+		Val c.Uint32T
+	}
+	DigPadHold c.Uint32T
+	HallSens   struct {
+		Val c.Uint32T
+	}
+	SensorPads struct {
+		Val c.Uint32T
+	}
+	AdcPad struct {
+		Val c.Uint32T
+	}
+	PadDac [2]struct {
+		Val c.Uint32T
+	}
+	Xtal32kPad struct {
+		Val c.Uint32T
+	}
+	TouchCfg struct {
+		Val c.Uint32T
+	}
+	TouchPad [10]struct {
+		Val c.Uint32T
+	}
+	ExtWakeup0 struct {
+		Val c.Uint32T
+	}
+	XtlExtCtr struct {
+		Val c.Uint32T
+	}
+	SarI2cIo struct {
+		Val c.Uint32T
+	}
+	Date struct {
+		Val c.Uint32T
+	}
+}
+type RtcIoDevT RtcIoDevS
+
+type RtcCntlDevS struct {
+	Options0 struct {
+		Val c.Uint32T
+	}
+	SlpTimer0 c.Uint32T
+	SlpTimer1 struct {
+		Val c.Uint32T
+	}
+	TimeUpdate struct {
+		Val c.Uint32T
+	}
+	Time0 c.Uint32T
+	Time1 struct {
+		Val c.Uint32T
+	}
+	State0 struct {
+		Val c.Uint32T
+	}
+	Timer1 struct {
+		Val c.Uint32T
+	}
+	Timer2 struct {
+		Val c.Uint32T
+	}
+	Timer3 struct {
+		Val c.Uint32T
+	}
+	Timer4 struct {
+		Val c.Uint32T
+	}
+	Timer5 struct {
+		Val c.Uint32T
+	}
+	AnaConf struct {
+		Val c.Uint32T
+	}
+	ResetState struct {
+		Val c.Uint32T
+	}
+	WakeupState struct {
+		Val c.Uint32T
+	}
+	IntEna struct {
+		Val c.Uint32T
+	}
+	IntRaw struct {
+		Val c.Uint32T
+	}
+	IntSt struct {
+		Val c.Uint32T
+	}
+	IntClr struct {
+		Val c.Uint32T
+	}
+	RtcStore0  c.Uint32T
+	RtcStore1  c.Uint32T
+	RtcStore2  c.Uint32T
+	RtcStore3  c.Uint32T
+	ExtXtlConf struct {
+		Val c.Uint32T
+	}
+	ExtWakeupConf struct {
+		Val c.Uint32T
+	}
+	SlpRejectConf struct {
+		Val c.Uint32T
+	}
+	CpuPeriodConf struct {
+		Val c.Uint32T
+	}
+	SdioActConf struct {
+		Val c.Uint32T
+	}
+	ClkConf struct {
+		Val c.Uint32T
+	}
+	SdioConf struct {
+		Val c.Uint32T
+	}
+	BiasConf struct {
+		Val c.Uint32T
+	}
+	Rtc struct {
+		Val c.Uint32T
+	}
+	RtcPwc struct {
+		Val c.Uint32T
+	}
+	DigPwc struct {
+		Val c.Uint32T
+	}
+	DigIso struct {
+		Val c.Uint32T
+	}
+	WdtConfig0 struct {
+		Val c.Uint32T
+	}
+	WdtConfig1 c.Uint32T
+	WdtConfig2 c.Uint32T
+	WdtConfig3 c.Uint32T
+	WdtConfig4 c.Uint32T
+	WdtFeed    struct {
+		Val c.Uint32T
+	}
+	WdtWprotect c.Uint32T
+	TestMux     struct {
+		Val c.Uint32T
+	}
+	SwCpuStall struct {
+		Val c.Uint32T
+	}
+	Store4    c.Uint32T
+	Store5    c.Uint32T
+	Store6    c.Uint32T
+	Store7    c.Uint32T
+	Diag0     c.Uint32T
+	Diag1     c.Uint32T
+	HoldForce struct {
+		Val c.Uint32T
+	}
+	ExtWakeup1 struct {
+		Val c.Uint32T
+	}
+	ExtWakeup1Status struct {
+		Val c.Uint32T
+	}
+	BrownOut struct {
+		Val c.Uint32T
+	}
+	Reserved39 c.Uint32T
+	Reserved3d c.Uint32T
+	Reserved41 c.Uint32T
+	Reserved45 c.Uint32T
+	Reserved49 c.Uint32T
+	Reserved4d c.Uint32T
+	Date       struct {
+		Val c.Uint32T
+	}
+}
+type RtcCntlDevT RtcCntlDevS
+
+type TouchHalVoltT struct {
+	Refh  TouchHighVoltT
+	Refl  TouchLowVoltT
+	Atten TouchVoltAttenT
+}
+
+type TouchHalMeasModeT struct {
+	Slope  TouchCntSlopeT
+	TieOpt TouchTieOptT
+}
 type SocRootClkT c.Int
 
 const (
@@ -15484,147 +15715,6 @@ const (
 	CLKOUT_SIG_INVALID  SocClkoutSigIdT = 255
 )
 
-type RtcCntlDevS struct {
-	Options0 struct {
-		Val c.Uint32T
-	}
-	SlpTimer0 c.Uint32T
-	SlpTimer1 struct {
-		Val c.Uint32T
-	}
-	TimeUpdate struct {
-		Val c.Uint32T
-	}
-	Time0 c.Uint32T
-	Time1 struct {
-		Val c.Uint32T
-	}
-	State0 struct {
-		Val c.Uint32T
-	}
-	Timer1 struct {
-		Val c.Uint32T
-	}
-	Timer2 struct {
-		Val c.Uint32T
-	}
-	Timer3 struct {
-		Val c.Uint32T
-	}
-	Timer4 struct {
-		Val c.Uint32T
-	}
-	Timer5 struct {
-		Val c.Uint32T
-	}
-	AnaConf struct {
-		Val c.Uint32T
-	}
-	ResetState struct {
-		Val c.Uint32T
-	}
-	WakeupState struct {
-		Val c.Uint32T
-	}
-	IntEna struct {
-		Val c.Uint32T
-	}
-	IntRaw struct {
-		Val c.Uint32T
-	}
-	IntSt struct {
-		Val c.Uint32T
-	}
-	IntClr struct {
-		Val c.Uint32T
-	}
-	RtcStore0  c.Uint32T
-	RtcStore1  c.Uint32T
-	RtcStore2  c.Uint32T
-	RtcStore3  c.Uint32T
-	ExtXtlConf struct {
-		Val c.Uint32T
-	}
-	ExtWakeupConf struct {
-		Val c.Uint32T
-	}
-	SlpRejectConf struct {
-		Val c.Uint32T
-	}
-	CpuPeriodConf struct {
-		Val c.Uint32T
-	}
-	SdioActConf struct {
-		Val c.Uint32T
-	}
-	ClkConf struct {
-		Val c.Uint32T
-	}
-	SdioConf struct {
-		Val c.Uint32T
-	}
-	BiasConf struct {
-		Val c.Uint32T
-	}
-	Rtc struct {
-		Val c.Uint32T
-	}
-	RtcPwc struct {
-		Val c.Uint32T
-	}
-	DigPwc struct {
-		Val c.Uint32T
-	}
-	DigIso struct {
-		Val c.Uint32T
-	}
-	WdtConfig0 struct {
-		Val c.Uint32T
-	}
-	WdtConfig1 c.Uint32T
-	WdtConfig2 c.Uint32T
-	WdtConfig3 c.Uint32T
-	WdtConfig4 c.Uint32T
-	WdtFeed    struct {
-		Val c.Uint32T
-	}
-	WdtWprotect c.Uint32T
-	TestMux     struct {
-		Val c.Uint32T
-	}
-	SwCpuStall struct {
-		Val c.Uint32T
-	}
-	Store4    c.Uint32T
-	Store5    c.Uint32T
-	Store6    c.Uint32T
-	Store7    c.Uint32T
-	Diag0     c.Uint32T
-	Diag1     c.Uint32T
-	HoldForce struct {
-		Val c.Uint32T
-	}
-	ExtWakeup1 struct {
-		Val c.Uint32T
-	}
-	ExtWakeup1Status struct {
-		Val c.Uint32T
-	}
-	BrownOut struct {
-		Val c.Uint32T
-	}
-	Reserved39 c.Uint32T
-	Reserved3d c.Uint32T
-	Reserved41 c.Uint32T
-	Reserved45 c.Uint32T
-	Reserved49 c.Uint32T
-	Reserved4d c.Uint32T
-	Date       struct {
-		Val c.Uint32T
-	}
-}
-type RtcCntlDevT RtcCntlDevS
-
 type SHAContext struct {
 	Start          bool
 	TotalInputBits [4]c.Uint32T
@@ -15640,187 +15730,6 @@ const (
 	SHA_INVALID SHATYPE = -1
 )
 
-type GpioNumT c.Int
-
-const (
-	GPIO_NUM_NC  GpioNumT = -1
-	GPIO_NUM_0   GpioNumT = 0
-	GPIO_NUM_1   GpioNumT = 1
-	GPIO_NUM_2   GpioNumT = 2
-	GPIO_NUM_3   GpioNumT = 3
-	GPIO_NUM_4   GpioNumT = 4
-	GPIO_NUM_5   GpioNumT = 5
-	GPIO_NUM_6   GpioNumT = 6
-	GPIO_NUM_7   GpioNumT = 7
-	GPIO_NUM_8   GpioNumT = 8
-	GPIO_NUM_9   GpioNumT = 9
-	GPIO_NUM_10  GpioNumT = 10
-	GPIO_NUM_11  GpioNumT = 11
-	GPIO_NUM_12  GpioNumT = 12
-	GPIO_NUM_13  GpioNumT = 13
-	GPIO_NUM_14  GpioNumT = 14
-	GPIO_NUM_15  GpioNumT = 15
-	GPIO_NUM_16  GpioNumT = 16
-	GPIO_NUM_17  GpioNumT = 17
-	GPIO_NUM_18  GpioNumT = 18
-	GPIO_NUM_19  GpioNumT = 19
-	GPIO_NUM_20  GpioNumT = 20
-	GPIO_NUM_21  GpioNumT = 21
-	GPIO_NUM_22  GpioNumT = 22
-	GPIO_NUM_23  GpioNumT = 23
-	GPIO_NUM_25  GpioNumT = 25
-	GPIO_NUM_26  GpioNumT = 26
-	GPIO_NUM_27  GpioNumT = 27
-	GPIO_NUM_28  GpioNumT = 28
-	GPIO_NUM_29  GpioNumT = 29
-	GPIO_NUM_30  GpioNumT = 30
-	GPIO_NUM_31  GpioNumT = 31
-	GPIO_NUM_32  GpioNumT = 32
-	GPIO_NUM_33  GpioNumT = 33
-	GPIO_NUM_34  GpioNumT = 34
-	GPIO_NUM_35  GpioNumT = 35
-	GPIO_NUM_36  GpioNumT = 36
-	GPIO_NUM_37  GpioNumT = 37
-	GPIO_NUM_38  GpioNumT = 38
-	GPIO_NUM_39  GpioNumT = 39
-	GPIO_NUM_MAX GpioNumT = 40
-)
-
-type X__gnucVaList c.Pointer
-type FposT X_fposT
-type OffT X__offT
-type EspErrT c.Int
-
-/* this bitfield is start from the LSB!!! */
-
-type LldescS struct {
-	Size   c.Uint32T
-	Length c.Uint32T
-	Offset c.Uint32T
-	Sosf   c.Uint32T
-	Eof    c.Uint32T
-	Owner  c.Uint32T
-	Buf    *c.Uint8T
-}
-type LldescT LldescS
-
-type DacSignalConnT struct {
-	DacChannelIoNum [2]c.Uint8T
-}
-
-type RtcIoDevS struct {
-	Out struct {
-		Val c.Uint32T
-	}
-	OutW1ts struct {
-		Val c.Uint32T
-	}
-	OutW1tc struct {
-		Val c.Uint32T
-	}
-	Enable struct {
-		Val c.Uint32T
-	}
-	EnableW1ts struct {
-		Val c.Uint32T
-	}
-	EnableW1tc struct {
-		Val c.Uint32T
-	}
-	Status struct {
-		Val c.Uint32T
-	}
-	StatusW1ts struct {
-		Val c.Uint32T
-	}
-	StatusW1tc struct {
-		Val c.Uint32T
-	}
-	InVal struct {
-		Val c.Uint32T
-	}
-	Pin [18]struct {
-		Val c.Uint32T
-	}
-	DebugSel struct {
-		Val c.Uint32T
-	}
-	DigPadHold c.Uint32T
-	HallSens   struct {
-		Val c.Uint32T
-	}
-	SensorPads struct {
-		Val c.Uint32T
-	}
-	AdcPad struct {
-		Val c.Uint32T
-	}
-	PadDac [2]struct {
-		Val c.Uint32T
-	}
-	Xtal32kPad struct {
-		Val c.Uint32T
-	}
-	TouchCfg struct {
-		Val c.Uint32T
-	}
-	TouchPad [10]struct {
-		Val c.Uint32T
-	}
-	ExtWakeup0 struct {
-		Val c.Uint32T
-	}
-	XtlExtCtr struct {
-		Val c.Uint32T
-	}
-	SarI2cIo struct {
-		Val c.Uint32T
-	}
-	Date struct {
-		Val c.Uint32T
-	}
-}
-type RtcIoDevT RtcIoDevS
-
-type ImaxdivT struct {
-	Quot c.IntmaxT
-	Rem  c.IntmaxT
-}
-type SocResetReasonT c.Int
-
-const (
-	RESET_REASON_CHIP_POWER_ON   SocResetReasonT = 1
-	RESET_REASON_CORE_SW         SocResetReasonT = 3
-	RESET_REASON_CORE_DEEP_SLEEP SocResetReasonT = 5
-	RESET_REASON_CORE_SDIO       SocResetReasonT = 6
-	RESET_REASON_CORE_MWDT0      SocResetReasonT = 7
-	RESET_REASON_CORE_MWDT1      SocResetReasonT = 8
-	RESET_REASON_CORE_RTC_WDT    SocResetReasonT = 9
-	RESET_REASON_CPU0_MWDT0      SocResetReasonT = 11
-	RESET_REASON_CPU1_MWDT1      SocResetReasonT = 11
-	RESET_REASON_CPU0_SW         SocResetReasonT = 12
-	RESET_REASON_CPU1_SW         SocResetReasonT = 12
-	RESET_REASON_CPU0_RTC_WDT    SocResetReasonT = 13
-	RESET_REASON_CPU1_RTC_WDT    SocResetReasonT = 13
-	RESET_REASON_CPU1_CPU0       SocResetReasonT = 14
-	RESET_REASON_SYS_BROWN_OUT   SocResetReasonT = 15
-	RESET_REASON_SYS_RTC_WDT     SocResetReasonT = 16
-)
-
-type EspLogLevelT c.Int
-
-const (
-	ESP_LOG_NONE    EspLogLevelT = 0
-	ESP_LOG_ERROR   EspLogLevelT = 1
-	ESP_LOG_WARN    EspLogLevelT = 2
-	ESP_LOG_INFO    EspLogLevelT = 3
-	ESP_LOG_DEBUG   EspLogLevelT = 4
-	ESP_LOG_VERBOSE EspLogLevelT = 5
-	ESP_LOG_MAX     EspLogLevelT = 6
-)
-
-// llgo:type C
-type VprintfLikeT func(*c.Char, c.VaList) c.Int
 type PeriphInterrputT c.Int
 
 const (
@@ -15892,156 +15801,6 @@ const (
 	ETS_MPU_IA_INTR_SOURCE         PeriphInterrputT = 67
 	ETS_CACHE_IA_INTR_SOURCE       PeriphInterrputT = 68
 	ETS_MAX_INTR_SOURCE            PeriphInterrputT = 69
-)
-
-type ClockOutChannel c.Int
-
-const (
-	CLKOUT_CHANNEL_1   ClockOutChannel = 0
-	CLKOUT_CHANNEL_2   ClockOutChannel = 1
-	CLKOUT_CHANNEL_3   ClockOutChannel = 2
-	CLKOUT_CHANNEL_MAX ClockOutChannel = 3
-)
-
-type ClockOutChannelT ClockOutChannel
-
-type UhciDevS struct {
-	Conf0 struct {
-		Val c.Uint32T
-	}
-	IntRaw struct {
-		Val c.Uint32T
-	}
-	IntSt struct {
-		Val c.Uint32T
-	}
-	IntEna struct {
-		Val c.Uint32T
-	}
-	IntClr struct {
-		Val c.Uint32T
-	}
-	DmaOutStatus struct {
-		Val c.Uint32T
-	}
-	DmaOutPush struct {
-		Val c.Uint32T
-	}
-	DmaInStatus struct {
-		Val c.Uint32T
-	}
-	DmaInPop struct {
-		Val c.Uint32T
-	}
-	DmaOutLink struct {
-		Val c.Uint32T
-	}
-	DmaInLink struct {
-		Val c.Uint32T
-	}
-	Conf1 struct {
-		Val c.Uint32T
-	}
-	State0              c.Uint32T
-	State1              c.Uint32T
-	DmaOutEofDesAddr    c.Uint32T
-	DmaInSucEofDesAddr  c.Uint32T
-	DmaInErrEofDesAddr  c.Uint32T
-	DmaOutEofBfrDesAddr c.Uint32T
-	AhbTest             struct {
-		Val c.Uint32T
-	}
-	DmaInDscr     c.Uint32T
-	DmaInDscrBf0  c.Uint32T
-	DmaInDscrBf1  c.Uint32T
-	DmaOutDscr    c.Uint32T
-	DmaOutDscrBf0 c.Uint32T
-	DmaOutDscrBf1 c.Uint32T
-	EscapeConf    struct {
-		Val c.Uint32T
-	}
-	HungConf struct {
-		Val c.Uint32T
-	}
-	AckNum    c.Uint32T
-	RxHead    c.Uint32T
-	QuickSent struct {
-		Val c.Uint32T
-	}
-	QData [7]struct {
-		WData [2]c.Uint32T
-	}
-	EscConf0 struct {
-		Val c.Uint32T
-	}
-	EscConf1 struct {
-		Val c.Uint32T
-	}
-	EscConf2 struct {
-		Val c.Uint32T
-	}
-	EscConf3 struct {
-		Val c.Uint32T
-	}
-	PktThres struct {
-		Val c.Uint32T
-	}
-	ReservedC4 c.Uint32T
-	ReservedC8 c.Uint32T
-	ReservedCc c.Uint32T
-	ReservedD0 c.Uint32T
-	ReservedD4 c.Uint32T
-	ReservedD8 c.Uint32T
-	ReservedDc c.Uint32T
-	ReservedE0 c.Uint32T
-	ReservedE4 c.Uint32T
-	ReservedE8 c.Uint32T
-	ReservedEc c.Uint32T
-	ReservedF0 c.Uint32T
-	ReservedF4 c.Uint32T
-	ReservedF8 c.Uint32T
-	Date       c.Uint32T
-}
-type UhciDevT UhciDevS
-type PeriphModuleT c.Int
-
-const (
-	PERIPH_LEDC_MODULE           PeriphModuleT = 0
-	PERIPH_UART0_MODULE          PeriphModuleT = 1
-	PERIPH_UART1_MODULE          PeriphModuleT = 2
-	PERIPH_UART2_MODULE          PeriphModuleT = 3
-	PERIPH_I2C0_MODULE           PeriphModuleT = 4
-	PERIPH_I2C1_MODULE           PeriphModuleT = 5
-	PERIPH_I2S0_MODULE           PeriphModuleT = 6
-	PERIPH_I2S1_MODULE           PeriphModuleT = 7
-	PERIPH_TIMG0_MODULE          PeriphModuleT = 8
-	PERIPH_TIMG1_MODULE          PeriphModuleT = 9
-	PERIPH_PWM0_MODULE           PeriphModuleT = 10
-	PERIPH_PWM1_MODULE           PeriphModuleT = 11
-	PERIPH_UHCI0_MODULE          PeriphModuleT = 12
-	PERIPH_UHCI1_MODULE          PeriphModuleT = 13
-	PERIPH_RMT_MODULE            PeriphModuleT = 14
-	PERIPH_PCNT_MODULE           PeriphModuleT = 15
-	PERIPH_SPI_MODULE            PeriphModuleT = 16
-	PERIPH_HSPI_MODULE           PeriphModuleT = 17
-	PERIPH_VSPI_MODULE           PeriphModuleT = 18
-	PERIPH_SPI_DMA_MODULE        PeriphModuleT = 19
-	PERIPH_SDMMC_MODULE          PeriphModuleT = 20
-	PERIPH_SDIO_SLAVE_MODULE     PeriphModuleT = 21
-	PERIPH_TWAI_MODULE           PeriphModuleT = 22
-	PERIPH_CAN_MODULE            PeriphModuleT = 22
-	PERIPH_EMAC_MODULE           PeriphModuleT = 23
-	PERIPH_RNG_MODULE            PeriphModuleT = 24
-	PERIPH_WIFI_MODULE           PeriphModuleT = 25
-	PERIPH_BT_MODULE             PeriphModuleT = 26
-	PERIPH_WIFI_BT_COMMON_MODULE PeriphModuleT = 27
-	PERIPH_BT_BASEBAND_MODULE    PeriphModuleT = 28
-	PERIPH_BT_LC_MODULE          PeriphModuleT = 29
-	PERIPH_AES_MODULE            PeriphModuleT = 30
-	PERIPH_SHA_MODULE            PeriphModuleT = 31
-	PERIPH_RSA_MODULE            PeriphModuleT = 32
-	PERIPH_SARADC_MODULE         PeriphModuleT = 33
-	PERIPH_MODULE_MAX            PeriphModuleT = 34
 )
 
 /** Type of blk0_rdata0 register */
@@ -16558,6 +16317,281 @@ type EfuseDevT struct {
 	Reserved120 [55]c.Uint32T
 	Date        EfuseDateRegT
 }
+type GpioNumT c.Int
+
+const (
+	GPIO_NUM_NC  GpioNumT = -1
+	GPIO_NUM_0   GpioNumT = 0
+	GPIO_NUM_1   GpioNumT = 1
+	GPIO_NUM_2   GpioNumT = 2
+	GPIO_NUM_3   GpioNumT = 3
+	GPIO_NUM_4   GpioNumT = 4
+	GPIO_NUM_5   GpioNumT = 5
+	GPIO_NUM_6   GpioNumT = 6
+	GPIO_NUM_7   GpioNumT = 7
+	GPIO_NUM_8   GpioNumT = 8
+	GPIO_NUM_9   GpioNumT = 9
+	GPIO_NUM_10  GpioNumT = 10
+	GPIO_NUM_11  GpioNumT = 11
+	GPIO_NUM_12  GpioNumT = 12
+	GPIO_NUM_13  GpioNumT = 13
+	GPIO_NUM_14  GpioNumT = 14
+	GPIO_NUM_15  GpioNumT = 15
+	GPIO_NUM_16  GpioNumT = 16
+	GPIO_NUM_17  GpioNumT = 17
+	GPIO_NUM_18  GpioNumT = 18
+	GPIO_NUM_19  GpioNumT = 19
+	GPIO_NUM_20  GpioNumT = 20
+	GPIO_NUM_21  GpioNumT = 21
+	GPIO_NUM_22  GpioNumT = 22
+	GPIO_NUM_23  GpioNumT = 23
+	GPIO_NUM_25  GpioNumT = 25
+	GPIO_NUM_26  GpioNumT = 26
+	GPIO_NUM_27  GpioNumT = 27
+	GPIO_NUM_28  GpioNumT = 28
+	GPIO_NUM_29  GpioNumT = 29
+	GPIO_NUM_30  GpioNumT = 30
+	GPIO_NUM_31  GpioNumT = 31
+	GPIO_NUM_32  GpioNumT = 32
+	GPIO_NUM_33  GpioNumT = 33
+	GPIO_NUM_34  GpioNumT = 34
+	GPIO_NUM_35  GpioNumT = 35
+	GPIO_NUM_36  GpioNumT = 36
+	GPIO_NUM_37  GpioNumT = 37
+	GPIO_NUM_38  GpioNumT = 38
+	GPIO_NUM_39  GpioNumT = 39
+	GPIO_NUM_MAX GpioNumT = 40
+)
+
+type X__gnucVaList c.Pointer
+type FposT X_fposT
+type OffT X__offT
+
+// llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
+type EspErrT c.Int
+
+/* this bitfield is start from the LSB!!! */
+
+type LldescS struct {
+	Size   c.Uint32T
+	Length c.Uint32T
+	Offset c.Uint32T
+	Sosf   c.Uint32T
+	Eof    c.Uint32T
+	Owner  c.Uint32T
+	Buf    *c.Uint8T
+}
+type LldescT LldescS
+
+type DacSignalConnT struct {
+	DacChannelIoNum [2]c.Uint8T
+}
+
+type ImaxdivT struct {
+	Quot c.IntmaxT
+	Rem  c.IntmaxT
+}
+type SocResetReasonT c.Int
+
+const (
+	RESET_REASON_CHIP_POWER_ON   SocResetReasonT = 1
+	RESET_REASON_CORE_SW         SocResetReasonT = 3
+	RESET_REASON_CORE_DEEP_SLEEP SocResetReasonT = 5
+	RESET_REASON_CORE_SDIO       SocResetReasonT = 6
+	RESET_REASON_CORE_MWDT0      SocResetReasonT = 7
+	RESET_REASON_CORE_MWDT1      SocResetReasonT = 8
+	RESET_REASON_CORE_RTC_WDT    SocResetReasonT = 9
+	RESET_REASON_CPU0_MWDT0      SocResetReasonT = 11
+	RESET_REASON_CPU1_MWDT1      SocResetReasonT = 11
+	RESET_REASON_CPU0_SW         SocResetReasonT = 12
+	RESET_REASON_CPU1_SW         SocResetReasonT = 12
+	RESET_REASON_CPU0_RTC_WDT    SocResetReasonT = 13
+	RESET_REASON_CPU1_RTC_WDT    SocResetReasonT = 13
+	RESET_REASON_CPU1_CPU0       SocResetReasonT = 14
+	RESET_REASON_SYS_BROWN_OUT   SocResetReasonT = 15
+	RESET_REASON_SYS_RTC_WDT     SocResetReasonT = 16
+)
+
+type EspLogLevelT c.Int
+
+const (
+	ESP_LOG_NONE    EspLogLevelT = 0
+	ESP_LOG_ERROR   EspLogLevelT = 1
+	ESP_LOG_WARN    EspLogLevelT = 2
+	ESP_LOG_INFO    EspLogLevelT = 3
+	ESP_LOG_DEBUG   EspLogLevelT = 4
+	ESP_LOG_VERBOSE EspLogLevelT = 5
+	ESP_LOG_MAX     EspLogLevelT = 6
+)
+
+// llgo:type C
+type VprintfLikeT func(*c.Char, c.VaList) c.Int
+type ClockOutChannel c.Int
+
+const (
+	CLKOUT_CHANNEL_1   ClockOutChannel = 0
+	CLKOUT_CHANNEL_2   ClockOutChannel = 1
+	CLKOUT_CHANNEL_3   ClockOutChannel = 2
+	CLKOUT_CHANNEL_MAX ClockOutChannel = 3
+)
+
+type ClockOutChannelT ClockOutChannel
+
+type UhciDevS struct {
+	Conf0 struct {
+		Val c.Uint32T
+	}
+	IntRaw struct {
+		Val c.Uint32T
+	}
+	IntSt struct {
+		Val c.Uint32T
+	}
+	IntEna struct {
+		Val c.Uint32T
+	}
+	IntClr struct {
+		Val c.Uint32T
+	}
+	DmaOutStatus struct {
+		Val c.Uint32T
+	}
+	DmaOutPush struct {
+		Val c.Uint32T
+	}
+	DmaInStatus struct {
+		Val c.Uint32T
+	}
+	DmaInPop struct {
+		Val c.Uint32T
+	}
+	DmaOutLink struct {
+		Val c.Uint32T
+	}
+	DmaInLink struct {
+		Val c.Uint32T
+	}
+	Conf1 struct {
+		Val c.Uint32T
+	}
+	State0              c.Uint32T
+	State1              c.Uint32T
+	DmaOutEofDesAddr    c.Uint32T
+	DmaInSucEofDesAddr  c.Uint32T
+	DmaInErrEofDesAddr  c.Uint32T
+	DmaOutEofBfrDesAddr c.Uint32T
+	AhbTest             struct {
+		Val c.Uint32T
+	}
+	DmaInDscr     c.Uint32T
+	DmaInDscrBf0  c.Uint32T
+	DmaInDscrBf1  c.Uint32T
+	DmaOutDscr    c.Uint32T
+	DmaOutDscrBf0 c.Uint32T
+	DmaOutDscrBf1 c.Uint32T
+	EscapeConf    struct {
+		Val c.Uint32T
+	}
+	HungConf struct {
+		Val c.Uint32T
+	}
+	AckNum    c.Uint32T
+	RxHead    c.Uint32T
+	QuickSent struct {
+		Val c.Uint32T
+	}
+	QData [7]struct {
+		WData [2]c.Uint32T
+	}
+	EscConf0 struct {
+		Val c.Uint32T
+	}
+	EscConf1 struct {
+		Val c.Uint32T
+	}
+	EscConf2 struct {
+		Val c.Uint32T
+	}
+	EscConf3 struct {
+		Val c.Uint32T
+	}
+	PktThres struct {
+		Val c.Uint32T
+	}
+	ReservedC4 c.Uint32T
+	ReservedC8 c.Uint32T
+	ReservedCc c.Uint32T
+	ReservedD0 c.Uint32T
+	ReservedD4 c.Uint32T
+	ReservedD8 c.Uint32T
+	ReservedDc c.Uint32T
+	ReservedE0 c.Uint32T
+	ReservedE4 c.Uint32T
+	ReservedE8 c.Uint32T
+	ReservedEc c.Uint32T
+	ReservedF0 c.Uint32T
+	ReservedF4 c.Uint32T
+	ReservedF8 c.Uint32T
+	Date       c.Uint32T
+}
+type UhciDevT UhciDevS
+type PeriphModuleT c.Int
+
+const (
+	PERIPH_LEDC_MODULE           PeriphModuleT = 0
+	PERIPH_UART0_MODULE          PeriphModuleT = 1
+	PERIPH_UART1_MODULE          PeriphModuleT = 2
+	PERIPH_UART2_MODULE          PeriphModuleT = 3
+	PERIPH_I2C0_MODULE           PeriphModuleT = 4
+	PERIPH_I2C1_MODULE           PeriphModuleT = 5
+	PERIPH_I2S0_MODULE           PeriphModuleT = 6
+	PERIPH_I2S1_MODULE           PeriphModuleT = 7
+	PERIPH_TIMG0_MODULE          PeriphModuleT = 8
+	PERIPH_TIMG1_MODULE          PeriphModuleT = 9
+	PERIPH_PWM0_MODULE           PeriphModuleT = 10
+	PERIPH_PWM1_MODULE           PeriphModuleT = 11
+	PERIPH_UHCI0_MODULE          PeriphModuleT = 12
+	PERIPH_UHCI1_MODULE          PeriphModuleT = 13
+	PERIPH_RMT_MODULE            PeriphModuleT = 14
+	PERIPH_PCNT_MODULE           PeriphModuleT = 15
+	PERIPH_SPI_MODULE            PeriphModuleT = 16
+	PERIPH_HSPI_MODULE           PeriphModuleT = 17
+	PERIPH_VSPI_MODULE           PeriphModuleT = 18
+	PERIPH_SPI_DMA_MODULE        PeriphModuleT = 19
+	PERIPH_SDMMC_MODULE          PeriphModuleT = 20
+	PERIPH_SDIO_SLAVE_MODULE     PeriphModuleT = 21
+	PERIPH_TWAI_MODULE           PeriphModuleT = 22
+	PERIPH_CAN_MODULE            PeriphModuleT = 22
+	PERIPH_EMAC_MODULE           PeriphModuleT = 23
+	PERIPH_RNG_MODULE            PeriphModuleT = 24
+	PERIPH_WIFI_MODULE           PeriphModuleT = 25
+	PERIPH_BT_MODULE             PeriphModuleT = 26
+	PERIPH_WIFI_BT_COMMON_MODULE PeriphModuleT = 27
+	PERIPH_BT_BASEBAND_MODULE    PeriphModuleT = 28
+	PERIPH_BT_LC_MODULE          PeriphModuleT = 29
+	PERIPH_AES_MODULE            PeriphModuleT = 30
+	PERIPH_SHA_MODULE            PeriphModuleT = 31
+	PERIPH_RSA_MODULE            PeriphModuleT = 32
+	PERIPH_SARADC_MODULE         PeriphModuleT = 33
+	PERIPH_MODULE_MAX            PeriphModuleT = 34
+)
 
 // llgo:type C
 type XtHalVoidFunc func()
@@ -18924,6 +18958,16 @@ type ETSTimer X_ETSTIMER_
 
 // llgo:type C
 type EtsIsrT func(c.Pointer)
+type STATUS c.Int
+
+const (
+	OK      STATUS = 0
+	FAIL    STATUS = 1
+	PENDING STATUS = 2
+	BUSY    STATUS = 3
+	CANCEL  STATUS = 4
+)
+
 type SLEEPMODE c.Int
 
 const (

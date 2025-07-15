@@ -83,3 +83,12 @@ type ETSTimer X_ETSTIMER_
 
 // llgo:type C
 type EtsIsrT func(c.Pointer)
+type STATUS c.Int
+
+const (
+	OK      STATUS = 0
+	FAIL    STATUS = 1
+	PENDING STATUS = 2
+	BUSY    STATUS = 3
+	CANCEL  STATUS = 4
+)

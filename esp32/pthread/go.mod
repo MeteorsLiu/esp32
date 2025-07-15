@@ -1,4 +1,4 @@
-module pthread
+module github.com/MeteorsLiu/esp32/esp32/pthread
 
 go 1.23.4
 

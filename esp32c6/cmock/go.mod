@@ -1,4 +1,4 @@
-module cmock
+module github.com/MeteorsLiu/esp32/esp32c6/cmock
 
 go 1.23.4
 

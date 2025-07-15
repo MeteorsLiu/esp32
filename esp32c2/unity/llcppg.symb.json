@@ -5,6 +5,21 @@
     "go": "UNITYINT.UnityAssertBits"
   },
   {
+    "mangle": "UnityAssertDoubleSpecial",
+    "c++": "UnityAssertDoubleSpecial(const UNITY_DOUBLE, const char *, const UNITY_UINT, const UNITY_FLOAT_TRAIT_T)",
+    "go": "UNITYDOUBLE.UnityAssertDoubleSpecial"
+  },
+  {
+    "mangle": "UnityAssertDoublesNotWithin",
+    "c++": "UnityAssertDoublesNotWithin(const UNITY_DOUBLE, const UNITY_DOUBLE, const UNITY_DOUBLE, const char *, const UNITY_UINT)",
+    "go": "UNITYDOUBLE.UnityAssertDoublesNotWithin"
+  },
+  {
+    "mangle": "UnityAssertDoublesWithin",
+    "c++": "UnityAssertDoublesWithin(const UNITY_DOUBLE, const UNITY_DOUBLE, const UNITY_DOUBLE, const char *, const UNITY_UINT)",
+    "go": "UNITYDOUBLE.UnityAssertDoublesWithin"
+  },
+  {
     "mangle": "UnityAssertEqualIntArray",
     "c++": "UnityAssertEqualIntArray(const void *, const void *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_DISPLAY_STYLE_T, const UNITY_FLAGS_T)",
     "go": "UnityAssertEqualIntArray"
@@ -50,6 +65,11 @@
     "go": "UNITYFLOAT.UnityAssertFloatsWithin"
   },
   {
+    "mangle": "UnityAssertGreaterOrLessDouble",
+    "c++": "UnityAssertGreaterOrLessDouble(const UNITY_DOUBLE, const UNITY_DOUBLE, const UNITY_COMPARISON_T, const char *, const UNITY_UINT)",
+    "go": "UNITYDOUBLE.UnityAssertGreaterOrLessDouble"
+  },
+  {
     "mangle": "UnityAssertGreaterOrLessFloat",
     "c++": "UnityAssertGreaterOrLessFloat(const UNITY_FLOAT, const UNITY_FLOAT, const UNITY_COMPARISON_T, const char *, const UNITY_UINT)",
     "go": "UNITYFLOAT.UnityAssertGreaterOrLessFloat"
@@ -70,6 +90,11 @@
     "go": "UNITYUINT.UnityAssertNumbersWithin"
   },
   {
+    "mangle": "UnityAssertWithinDoubleArray",
+    "c++": "UnityAssertWithinDoubleArray(const UNITY_DOUBLE, const UNITY_DOUBLE *, const UNITY_DOUBLE *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_FLAGS_T)",
+    "go": "UNITYDOUBLE.UnityAssertWithinDoubleArray"
+  },
+  {
     "mangle": "UnityAssertWithinFloatArray",
     "c++": "UnityAssertWithinFloatArray(const UNITY_FLOAT, const UNITY_FLOAT *, const UNITY_FLOAT *, const UNITY_UINT32, const char *, const UNITY_UINT, const UNITY_FLAGS_T)",
     "go": "UNITYFLOAT.UnityAssertWithinFloatArray"
@@ -88,6 +113,11 @@
     "mangle": "UnityDefaultTestRun",
     "c++": "UnityDefaultTestRun(UnityTestFunction, const char *, const int)",
     "go": "UnityDefaultTestRun"
+  },
+  {
+    "mangle": "UnityDoubleToPtr",
+    "c++": "UnityDoubleToPtr(const double)",
+    "go": "UnityDoubleToPtr"
   },
   {
     "mangle": "UnityEnd",

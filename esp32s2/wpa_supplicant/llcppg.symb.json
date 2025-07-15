@@ -275,6 +275,11 @@
     "go": "Enum btmQueryReason.EspWnmSendBssTransitionMgmtQuery"
   },
   {
+    "mangle": "forced_memzero",
+    "c++": "forced_memzero(void *, size_t)",
+    "go": "ForcedMemzero"
+  },
+  {
     "mangle": "os_get_random",
     "c++": "os_get_random(unsigned char *, size_t)",
     "go": "OsGetRandom"

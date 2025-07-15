@@ -7,9 +7,15 @@ ETSTask
 ETSTimer
 ETSTimerFunc
 ETS_STATUS ETSSTATUS
+STATUS
 bootloader_flash_read_status_fn_t BootloaderFlashReadStatusFnT
 bootloader_flash_write_status_fn_t BootloaderFlashWriteStatusFnT
 bootloader_qio_info_t BootloaderQioInfoT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 div_t DivT
 efuse_clk_reg_t EfuseClkRegT
 efuse_cmd_reg_t EfuseCmdRegT

@@ -1,0 +1,112 @@
+[
+  {
+    "mangle": "Cache_Count_Flash_Pages",
+    "c++": "Cache_Count_Flash_Pages(uint32_t, uint32_t *)",
+    "go": "CacheCountFlashPages"
+  },
+  {
+    "mangle": "Cache_Freeze_DCache_Enable",
+    "c++": "Cache_Freeze_DCache_Enable(cache_freeze_mode_t)",
+    "go": "CacheFreezeModeT.CacheFreezeDCacheEnable"
+  },
+  {
+    "mangle": "Cache_Freeze_ICache_Enable",
+    "c++": "Cache_Freeze_ICache_Enable(cache_freeze_mode_t)",
+    "go": "CacheFreezeModeT.CacheFreezeICacheEnable"
+  },
+  {
+    "mangle": "Cache_Get_DCache_Line_Size",
+    "c++": "Cache_Get_DCache_Line_Size()",
+    "go": "CacheGetDCacheLineSize"
+  },
+  {
+    "mangle": "Cache_Resume_DCache_Autoload",
+    "c++": "Cache_Resume_DCache_Autoload(uint32_t)",
+    "go": "CacheResumeDCacheAutoload"
+  },
+  {
+    "mangle": "Cache_Suspend_DCache",
+    "c++": "Cache_Suspend_DCache()",
+    "go": "CacheSuspendDCache"
+  },
+  {
+    "mangle": "Cache_Suspend_DCache_Autoload",
+    "c++": "Cache_Suspend_DCache_Autoload()",
+    "go": "CacheSuspendDCacheAutoload"
+  },
+  {
+    "mangle": "Cache_Suspend_ICache",
+    "c++": "Cache_Suspend_ICache()",
+    "go": "CacheSuspendICache"
+  },
+  {
+    "mangle": "Cache_WriteBack_Addr",
+    "c++": "Cache_WriteBack_Addr(uint32_t, uint32_t)",
+    "go": "CacheWriteBackAddr"
+  },
+  {
+    "mangle": "GetUartDevice",
+    "c++": "GetUartDevice()",
+    "go": "GetUartDevice"
+  },
+  {
+    "mangle": "esp_rom_efuse_get_opiconfig",
+    "c++": "esp_rom_efuse_get_opiconfig()",
+    "go": "EspRomEfuseGetOpiconfig"
+  },
+  {
+    "mangle": "esp_rom_install_channel_putc",
+    "c++": "esp_rom_install_channel_putc(int, void (*)(char))",
+    "go": "EspRomInstallChannelPutc"
+  },
+  {
+    "mangle": "esp_rom_install_uart_printf",
+    "c++": "esp_rom_install_uart_printf()",
+    "go": "EspRomInstallUartPrintf"
+  },
+  {
+    "mangle": "esp_rom_opiflash_cache_mode_config",
+    "c++": "esp_rom_opiflash_cache_mode_config(esp_rom_spiflash_read_mode_t, const esp_rom_opiflash_spi0rd_t *)",
+    "go": "EspRomSpiflashReadModeT.EspRomOpiflashCacheModeConfig"
+  },
+  {
+    "mangle": "esp_rom_output_putc",
+    "c++": "esp_rom_output_putc(char)",
+    "go": "EspRomOutputPutc"
+  },
+  {
+    "mangle": "esp_rom_output_switch_buffer",
+    "c++": "esp_rom_output_switch_buffer(uint8_t)",
+    "go": "EspRomOutputSwitchBuffer"
+  },
+  {
+    "mangle": "esp_rom_output_to_channels",
+    "c++": "esp_rom_output_to_channels(char)",
+    "go": "EspRomOutputToChannels"
+  },
+  {
+    "mangle": "esp_rom_spi_set_op_mode",
+    "c++": "esp_rom_spi_set_op_mode(int, esp_rom_spiflash_read_mode_t)",
+    "go": "EspRomSpiSetOpMode"
+  },
+  {
+    "mangle": "esp_rom_vprintf",
+    "c++": "esp_rom_vprintf(const char *, va_list)",
+    "go": "EspRomVprintf"
+  },
+  {
+    "mangle": "ets_install_putc1",
+    "c++": "ets_install_putc1(void (*)(char))",
+    "go": "EtsInstallPutc1"
+  },
+  {
+    "mangle": "ets_install_putc2",
+    "c++": "ets_install_putc2(void (*)(char))",
+    "go": "EtsInstallPutc2"
+  },
+  {
+    "mangle": "ets_install_uart_printf",
+    "c++": "ets_install_uart_printf()",
+    "go": "EtsInstallUartPrintf"
+  }
+]

@@ -1,4 +1,4 @@
-module esp_partition
+module github.com/MeteorsLiu/esp32/esp32/esp_partition
 
 go 1.23.4
 

@@ -1,4 +1,4 @@
-module nvs_sec_provider
+module github.com/MeteorsLiu/esp32/esp32s2/nvs_sec_provider
 
 go 1.23.4
 

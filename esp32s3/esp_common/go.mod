@@ -1,4 +1,4 @@
-module esp_common
+module github.com/MeteorsLiu/esp32/esp32s3/esp_common
 
 go 1.23.4
 

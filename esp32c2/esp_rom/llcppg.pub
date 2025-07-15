@@ -16,6 +16,7 @@ SHAContext
 SHA_CTX SHACTX
 SHA_TYPE SHATYPE
 SLEEP_MODE SLEEPMODE
+STATUS
 TrxMsgBuff
 UartBautRate
 UartBitsNum4Char
@@ -47,6 +48,11 @@ cache_ways_t CacheWaysT
 caddr_t CaddrT
 clock_t ClockT
 clockid_t ClockidT
+cookie_close_function_t CookieCloseFunctionT
+cookie_io_functions_t CookieIoFunctionsT
+cookie_read_function_t CookieReadFunctionT
+cookie_seek_function_t CookieSeekFunctionT
+cookie_write_function_t CookieWriteFunctionT
 daddr_t DaddrT
 dev_t DevT
 div_t DivT
@@ -142,6 +148,7 @@ sig_t SigT
 sigaction Sigaction
 sigaltstack Sigaltstack
 sigevent Sigevent
+sighandler_t SighandlerT
 siginfo_t SiginfoT
 sigset_t SigsetT
 sigval Sigval

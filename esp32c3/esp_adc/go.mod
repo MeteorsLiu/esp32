@@ -1,4 +1,4 @@
-module esp_adc
+module github.com/MeteorsLiu/esp32/esp32c3/esp_adc
 
 go 1.23.4
 
