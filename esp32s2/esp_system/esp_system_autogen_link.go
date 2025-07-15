@@ -2,4 +2,4 @@ package esp_system
 
 import _ "github.com/goplus/lib/c"
 
-const LLGoPackage string = "link: -L/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_system -lesp_system;"
+const LLGoPackage string = "link"

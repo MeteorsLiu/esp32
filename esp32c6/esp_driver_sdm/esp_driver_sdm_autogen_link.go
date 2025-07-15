@@ -2,4 +2,4 @@ package esp_driver_sdm
 
 import _ "github.com/goplus/lib/c"
 
-const LLGoPackage string = "link: -L/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_driver_sdm -lesp_driver_sdm;"
+const LLGoPackage string = "link"
