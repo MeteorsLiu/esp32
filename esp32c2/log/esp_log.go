@@ -33,9 +33,8 @@ func EspLogSetVprintf(func_ VprintfLikeT) VprintfLikeT
  *
  * This function or these macros should not be used from an interrupt.
  */
-// llgo:link EspLogLevelT.EspLogWrite C.esp_log_write
-func (recv_ EspLogLevelT) EspLogWrite(tag *c.Char, format *c.Char, __llgo_va_list ...interface{}) {
-}
+//go:linkname EspLogWrite C.esp_log_write
+func EspLogWrite(level EspLogLevelT, tag *c.Char, format *c.Char, __llgo_va_list ...interface{})
 
 /**
  * @brief Write message into the log, va_list variant
