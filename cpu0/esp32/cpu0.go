@@ -1,8 +1,6 @@
 package esp32
 
 import (
-	"unsafe"
-
 	_ "github.com/MeteorsLiu/esp32/esp32/newlib"
 
 	system "github.com/MeteorsLiu/esp32/esp32/esp_system"
@@ -22,8 +20,7 @@ func esp_startup_start_app() {
 	system.EspIntWdtCpuInit()
 	system.EspCrosscoreIntInit()
 
-	fn := main_task
-	freertos.XTaskCreatePinnedToCore(c.Int(uintptr(unsafe.Pointer(&fn))), c.Str("main"), ESP_TASK_MAIN_STACK, nil, 1, nil, freertos.BaseTypeT(nil))
+	freertos.XTaskCreatePinnedToCore(main_task, c.Str("main"), ESP_TASK_MAIN_STACK, nil, 1, nil, freertos.BaseTypeT(nil))
 
 	freertos.XPortStartScheduler()
 }

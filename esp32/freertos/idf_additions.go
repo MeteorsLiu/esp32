@@ -6,6 +6,9 @@ import (
 	"github.com/goplus/lib/c"
 )
 
+// llgo:type C
+type CallFn func()
+
 /**
  * @brief Create a new task that is pinned to a particular core
  *
@@ -31,7 +34,7 @@ import (
  * list, otherwise an error code defined in the file projdefs.h
  */
 //go:linkname XTaskCreatePinnedToCore C.xTaskCreatePinnedToCore
-func XTaskCreatePinnedToCore(pxTaskCode c.Int, pcName *c.Char, ulStackDepth c.Uint32T, pvParameters c.Pointer, uxPriority UBaseTypeT, pxCreatedTask *TaskHandleT, xCoreID BaseTypeT) c.Int
+func XTaskCreatePinnedToCore(pxTaskCode CallFn, pcName *c.Char, ulStackDepth c.Uint32T, pvParameters c.Pointer, uxPriority UBaseTypeT, pxCreatedTask *TaskHandleT, xCoreID BaseTypeT) c.Int
 
 /**
  * @brief Create a new static task that is pinned to a particular core
