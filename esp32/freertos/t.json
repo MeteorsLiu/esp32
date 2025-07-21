@@ -1,0 +1,618 @@
+Config From Stdin
+Name: freertos
+CFlags: -DINC_FREERTOS_H -I/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/config -DESP_PLATFORM -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/config -I/Users/haolan/esp/esp-idf/components/freertos/config/include -I/Users/haolan/esp/esp-idf/components/freertos/config/include/freertos -I/Users/haolan/esp/esp-idf/components/freertos/config/xtensa/include -I/Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/haolan/esp/esp-idf/components/freertos/esp_additions/include -I/Users/haolan/esp/esp-idf/components/freertos -I/Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos -I/Users/haolan/esp/esp-idf/components/freertos/esp_additions -I/Users/haolan/esp/esp-idf/components/newlib/platform_include -I/Users/haolan/esp/esp-idf/components/esp_hw_support/include -I/Users/haolan/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/haolan/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/Users/haolan/esp/esp-idf/components/esp_hw_support/dma/include -I/Users/haolan/esp/esp-idf/components/esp_hw_support/ldo/include -I/Users/haolan/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/Users/haolan/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/Users/haolan/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/Users/haolan/esp/esp-idf/components/heap/include -I/Users/haolan/esp/esp-idf/components/heap/tlsf -I/Users/haolan/esp/esp-idf/components/log/include -I/Users/haolan/esp/esp-idf/components/soc/include -I/Users/haolan/esp/esp-idf/components/soc/esp32 -I/Users/haolan/esp/esp-idf/components/soc/esp32/include -I/Users/haolan/esp/esp-idf/components/soc/esp32/register -I/Users/haolan/esp/esp-idf/components/hal/platform_port/include -I/Users/haolan/esp/esp-idf/components/hal/esp32/include -I/Users/haolan/esp/esp-idf/components/hal/include -I/Users/haolan/esp/esp-idf/components/esp_rom/include -I/Users/haolan/esp/esp-idf/components/esp_rom/esp32/include -I/Users/haolan/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/Users/haolan/esp/esp-idf/components/esp_rom/esp32 -I/Users/haolan/esp/esp-idf/components/esp_common/include -I/Users/haolan/esp/esp-idf/components/esp_system/include -I/Users/haolan/esp/esp-idf/components/esp_system/port/soc -I/Users/haolan/esp/esp-idf/components/esp_system/port/include/private -I/Users/haolan/esp/esp-idf/components/xtensa/esp32/include -I/Users/haolan/esp/esp-idf/components/xtensa/include -I/Users/haolan/esp/esp-idf/components/xtensa/deprecated_include -I/Users/haolan/esp/esp-idf/components/lwip/include -I/Users/haolan/esp/esp-idf/components/lwip/include/apps -I/Users/haolan/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/haolan/esp/esp-idf/components/lwip/lwip/src/include -I/Users/haolan/esp/esp-idf/components/lwip/port/include -I/Users/haolan/esp/esp-idf/components/lwip/port/freertos/include -I/Users/haolan/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/haolan/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/haolan/esp/esp-idf/components/lwip/port/esp32xx/include/sys
+Libs: -L/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/freertos -lfreertos
+Include: [freertos/FreeRTOS.h freertos/idf_additions.h esp_private/freertos_debug.h esp_private/freertos_idf_additions_priv.h freertos/task_snapshot.h portmacro.h freertos/portmacro.h freertos/portable.h freertos/atomic.h freertos/list.h freertos/stack_macros.h freertos/stream_buffer.h freertos/mpu_prototypes.h freertos/portbenchmark.h freertos/mpu_wrappers.h portbenchmark.h freertos/deprecated_definitions.h freertos/projdefs.h freertos/message_buffer.h freertos/task.h freertos/timers.h freertos/queue.h freertos/event_groups.h freertos/semphr.h freertos/FreeRTOSConfig_arch.h FreeRTOSConfig.h freertos/FreeRTOSConfig.h freertos/xtensa_rtos.h xtensa_rtos.h]
+TrimPrefixes: []
+Cplusplus: false
+SymMap: map[]
+interfaces [/Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h /Users/haolan/esp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h /Users/haolan/esp/esp-idf/components/freertos/esp_additions/include/esp_private/freertos_debug.h /Users/haolan/esp/esp-idf/components/freertos/esp_additions/include/esp_private/freertos_idf_additions_priv.h /Users/haolan/esp/esp-idf/components/freertos/esp_additions/include/freertos/task_snapshot.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/atomic.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stack_macros.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_prototypes.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/message_buffer.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h /Users/haolan/esp/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h /Users/haolan/esp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h /Users/haolan/esp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/xtensa_rtos.h /Users/haolan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/xtensa_rtos.h]
+implements []
+thirdhfile [/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/config/sdkconfig.h /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdint.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/stdint.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/machine/_default_types.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/features.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/_newlib_version.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/_intsup.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/_stdint.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/stdlib.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/machine/ieeefp.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/_ansi.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/newlib.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/config.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/machine/ieeefp.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wchar_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_null.h /Users/haolan/esp/esp-idf/components/newlib/platform_include/sys/reent.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/reent.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_header_macro.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_ptrdiff_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wchar_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_null.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_max_align_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_offsetof.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/_types.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wint_t.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/machine/_types.h /Users/haolan/esp/esp-idf/components/newlib/platform_include/sys/lock.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/lock.h /Users/haolan/esp/esp-idf/components/newlib/platform_include/assert.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/stdlib.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/assert.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/cdefs.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_ptrdiff_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wchar_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_offsetof.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/machine/stdlib.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/alloca.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/_locale.h /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdbool.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_err.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/stdio.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_null.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdarg.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg___gnuc_va_list.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/stdio.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_compiler.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_attr.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdarg.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg_header_macro.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg_va_list.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg_va_arg.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg___va_copy.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stdarg_va_copy.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_ptrdiff_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wchar_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_offsetof.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/corebits.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h /Users/haolan/esp/esp-idf/components/xtensa/include/xt_instr_macros.h /Users/haolan/esp/esp-idf/components/esp_hw_support/include/spinlock.h /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h /Users/haolan/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_context.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h /Users/haolan/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_bit_defs.h /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_types.h /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_macros.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_assert.h /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h /Users/haolan/esp/esp-idf/components/soc/esp32/include/soc/soc.h /Users/haolan/esp/esp-idf/components/soc/esp32/include/soc/interrupts.h /Users/haolan/esp/esp-idf/components/soc/esp32/register/soc/reg_base.h /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/inttypes.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/inttypes.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stddef.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_wchar_t.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdarg.h /Users/haolan/esp/esp-idf/components/soc/esp32/include/soc/reset_reasons.h /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h /Users/haolan/esp/esp-idf/components/esp_common/include/esp_idf_version.h /Users/haolan/Downloads/esp-clang/lib/clang/19/include/limits.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/limits.h /Users/haolan/Downloads/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/sys/syslimits.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_config.h /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_timer.h]
+collectFuncInfo: _xQueueCRSendFromISR xQueueCRSendFromISR
+collectFuncInfo: _xQueueCRReceiveFromISR xQueueCRReceiveFromISR
+collectFuncInfo: _xQueueCRSend xQueueCRSend
+collectFuncInfo: _xQueueCRReceive xQueueCRReceive
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/multi_heap.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_common/include/esp_err.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_common/include/esp_err.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_common/include/esp_err.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_common/include/esp_err.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+not in file:  /Users/haolan/esp/esp-idf/components/heap/include/esp_heap_caps.h
+collectFuncInfo: _xTaskGetCoreID xTaskGetCoreID
+collectFuncInfo: _pxTaskGetStackStart pxTaskGetStackStart
+collectFuncInfo: _vTaskSetThreadLocalStoragePointerAndDelCallback vTaskSetThreadLocalStoragePointerAndDelCallback
+collectFuncInfo: _xSemaphoreCreateGenericWithCaps xSemaphoreCreateGenericWithCaps
+collectFuncInfo: _xStreamBufferGenericCreateWithCaps xStreamBufferGenericCreateWithCaps
+collectFuncInfo: _vStreamBufferGenericDeleteWithCaps vStreamBufferGenericDeleteWithCaps
+collectFuncInfo: _xTaskGetNext xTaskGetNext
+collectFuncInfo: _vTaskGetSnapshot vTaskGetSnapshot
+collectFuncInfo: _uxTaskGetSnapshotAll uxTaskGetSnapshotAll
+collectFuncInfo: _pvTaskGetCurrentTCBForCore pvTaskGetCurrentTCBForCore
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_api.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xt_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/spinlock.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/spinlock.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/spinlock.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/sys/reent.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_common/include/esp_idf_version.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+not in file:  /Users/haolan/esp/esp-idf/components/esp_system/include/esp_system.h
+collectFuncInfo: _xPortInIsrContext xPortInIsrContext
+collectFuncInfo: _vPortAssertIfInISR vPortAssertIfInISR
+collectFuncInfo: _xPortInterruptedFromISRContext xPortInterruptedFromISRContext
+collectFuncInfo: _xPortEnterCriticalTimeout xPortEnterCriticalTimeout
+collectFuncInfo: _vPortExitCritical vPortExitCritical
+collectFuncInfo: _xPortEnterCriticalTimeoutCompliance xPortEnterCriticalTimeoutCompliance
+collectFuncInfo: _vPortExitCriticalCompliance vPortExitCriticalCompliance
+collectFuncInfo: _vPortYield vPortYield
+collectFuncInfo: _vPortYieldOtherCore vPortYieldOtherCore
+collectFuncInfo: _vApplicationSleep vApplicationSleep
+collectFuncInfo: _xPortGetTickRateHz xPortGetTickRateHz
+collectFuncInfo: _vPortSetStackWatchpoint vPortSetStackWatchpoint
+collectFuncInfo: _vPortTCBPreDeleteHook vPortTCBPreDeleteHook
+collectFuncInfo: __frxt_setup_switch _frxt_setup_switch
+collectFuncInfo: _xPortCheckValidListMem xPortCheckValidListMem
+collectFuncInfo: _xPortCheckValidTCBMem xPortCheckValidTCBMem
+collectFuncInfo: _xPortcheckValidStackMem xPortcheckValidStackMem
+collectFuncInfo: _pxPortInitialiseStack pxPortInitialiseStack
+collectFuncInfo: _vPortDefineHeapRegions vPortDefineHeapRegions
+collectFuncInfo: _vPortGetHeapStats vPortGetHeapStats
+collectFuncInfo: _pvPortMalloc pvPortMalloc
+collectFuncInfo: _pvPortCalloc pvPortCalloc
+collectFuncInfo: _vPortFree vPortFree
+collectFuncInfo: _vPortInitialiseBlocks vPortInitialiseBlocks
+collectFuncInfo: _xPortGetFreeHeapSize xPortGetFreeHeapSize
+collectFuncInfo: _xPortGetMinimumEverFreeHeapSize xPortGetMinimumEverFreeHeapSize
+collectFuncInfo: _xPortStartScheduler xPortStartScheduler
+collectFuncInfo: _vPortEndScheduler vPortEndScheduler
+collectFuncInfo: _MPU_xTaskCreate MPU_xTaskCreate
+collectFuncInfo: _MPU_xTaskCreateStatic MPU_xTaskCreateStatic
+collectFuncInfo: _MPU_vTaskDelete MPU_vTaskDelete
+collectFuncInfo: _MPU_vTaskDelay MPU_vTaskDelay
+collectFuncInfo: _MPU_xTaskDelayUntil MPU_xTaskDelayUntil
+collectFuncInfo: _MPU_xTaskAbortDelay MPU_xTaskAbortDelay
+collectFuncInfo: _MPU_uxTaskPriorityGet MPU_uxTaskPriorityGet
+collectFuncInfo: _MPU_eTaskGetState MPU_eTaskGetState
+collectFuncInfo: _MPU_vTaskGetInfo MPU_vTaskGetInfo
+collectFuncInfo: _MPU_vTaskPrioritySet MPU_vTaskPrioritySet
+collectFuncInfo: _MPU_vTaskSuspend MPU_vTaskSuspend
+collectFuncInfo: _MPU_vTaskResume MPU_vTaskResume
+collectFuncInfo: _MPU_vTaskStartScheduler MPU_vTaskStartScheduler
+collectFuncInfo: _MPU_vTaskSuspendAll MPU_vTaskSuspendAll
+collectFuncInfo: _MPU_xTaskResumeAll MPU_xTaskResumeAll
+collectFuncInfo: _MPU_xTaskGetTickCount MPU_xTaskGetTickCount
+collectFuncInfo: _MPU_uxTaskGetNumberOfTasks MPU_uxTaskGetNumberOfTasks
+collectFuncInfo: _MPU_pcTaskGetName MPU_pcTaskGetName
+collectFuncInfo: _MPU_xTaskGetHandle MPU_xTaskGetHandle
+collectFuncInfo: _MPU_uxTaskGetStackHighWaterMark MPU_uxTaskGetStackHighWaterMark
+collectFuncInfo: _MPU_uxTaskGetStackHighWaterMark2 MPU_uxTaskGetStackHighWaterMark2
+collectFuncInfo: _MPU_vTaskSetApplicationTaskTag MPU_vTaskSetApplicationTaskTag
+collectFuncInfo: _MPU_xTaskGetApplicationTaskTag MPU_xTaskGetApplicationTaskTag
+collectFuncInfo: _MPU_vTaskSetThreadLocalStoragePointer MPU_vTaskSetThreadLocalStoragePointer
+collectFuncInfo: _MPU_pvTaskGetThreadLocalStoragePointer MPU_pvTaskGetThreadLocalStoragePointer
+collectFuncInfo: _MPU_xTaskCallApplicationTaskHook MPU_xTaskCallApplicationTaskHook
+collectFuncInfo: _MPU_xTaskGetIdleTaskHandle MPU_xTaskGetIdleTaskHandle
+collectFuncInfo: _MPU_uxTaskGetSystemState MPU_uxTaskGetSystemState
+collectFuncInfo: _MPU_ulTaskGetIdleRunTimeCounter MPU_ulTaskGetIdleRunTimeCounter
+collectFuncInfo: _MPU_ulTaskGetIdleRunTimePercent MPU_ulTaskGetIdleRunTimePercent
+collectFuncInfo: _MPU_vTaskList MPU_vTaskList
+collectFuncInfo: _MPU_vTaskGetRunTimeStats MPU_vTaskGetRunTimeStats
+collectFuncInfo: _MPU_xTaskGenericNotify MPU_xTaskGenericNotify
+collectFuncInfo: _MPU_xTaskGenericNotifyWait MPU_xTaskGenericNotifyWait
+collectFuncInfo: _MPU_ulTaskGenericNotifyTake MPU_ulTaskGenericNotifyTake
+collectFuncInfo: _MPU_xTaskGenericNotifyStateClear MPU_xTaskGenericNotifyStateClear
+collectFuncInfo: _MPU_ulTaskGenericNotifyValueClear MPU_ulTaskGenericNotifyValueClear
+collectFuncInfo: _MPU_xTaskIncrementTick MPU_xTaskIncrementTick
+collectFuncInfo: _MPU_xTaskGetCurrentTaskHandle MPU_xTaskGetCurrentTaskHandle
+collectFuncInfo: _MPU_vTaskSetTimeOutState MPU_vTaskSetTimeOutState
+collectFuncInfo: _MPU_xTaskCheckForTimeOut MPU_xTaskCheckForTimeOut
+collectFuncInfo: _MPU_vTaskMissedYield MPU_vTaskMissedYield
+collectFuncInfo: _MPU_xTaskGetSchedulerState MPU_xTaskGetSchedulerState
+collectFuncInfo: _MPU_xTaskCatchUpTicks MPU_xTaskCatchUpTicks
+collectFuncInfo: _MPU_xQueueGenericSend MPU_xQueueGenericSend
+collectFuncInfo: _MPU_xQueueReceive MPU_xQueueReceive
+collectFuncInfo: _MPU_xQueuePeek MPU_xQueuePeek
+collectFuncInfo: _MPU_xQueueSemaphoreTake MPU_xQueueSemaphoreTake
+collectFuncInfo: _MPU_uxQueueMessagesWaiting MPU_uxQueueMessagesWaiting
+collectFuncInfo: _MPU_uxQueueSpacesAvailable MPU_uxQueueSpacesAvailable
+collectFuncInfo: _MPU_vQueueDelete MPU_vQueueDelete
+collectFuncInfo: _MPU_xQueueCreateMutex MPU_xQueueCreateMutex
+collectFuncInfo: _MPU_xQueueCreateMutexStatic MPU_xQueueCreateMutexStatic
+collectFuncInfo: _MPU_xQueueCreateCountingSemaphore MPU_xQueueCreateCountingSemaphore
+collectFuncInfo: _MPU_xQueueCreateCountingSemaphoreStatic MPU_xQueueCreateCountingSemaphoreStatic
+collectFuncInfo: _MPU_xQueueGetMutexHolder MPU_xQueueGetMutexHolder
+collectFuncInfo: _MPU_xQueueTakeMutexRecursive MPU_xQueueTakeMutexRecursive
+collectFuncInfo: _MPU_xQueueGiveMutexRecursive MPU_xQueueGiveMutexRecursive
+collectFuncInfo: _MPU_vQueueAddToRegistry MPU_vQueueAddToRegistry
+collectFuncInfo: _MPU_vQueueUnregisterQueue MPU_vQueueUnregisterQueue
+collectFuncInfo: _MPU_pcQueueGetName MPU_pcQueueGetName
+collectFuncInfo: _MPU_xQueueGenericCreate MPU_xQueueGenericCreate
+collectFuncInfo: _MPU_xQueueGenericCreateStatic MPU_xQueueGenericCreateStatic
+collectFuncInfo: _MPU_xQueueCreateSet MPU_xQueueCreateSet
+collectFuncInfo: _MPU_xQueueAddToSet MPU_xQueueAddToSet
+collectFuncInfo: _MPU_xQueueRemoveFromSet MPU_xQueueRemoveFromSet
+collectFuncInfo: _MPU_xQueueSelectFromSet MPU_xQueueSelectFromSet
+collectFuncInfo: _MPU_xQueueGenericReset MPU_xQueueGenericReset
+collectFuncInfo: _MPU_vQueueSetQueueNumber MPU_vQueueSetQueueNumber
+collectFuncInfo: _MPU_uxQueueGetQueueNumber MPU_uxQueueGetQueueNumber
+collectFuncInfo: _MPU_ucQueueGetQueueType MPU_ucQueueGetQueueType
+collectFuncInfo: _MPU_xTimerCreate MPU_xTimerCreate
+collectFuncInfo: _MPU_xTimerCreateStatic MPU_xTimerCreateStatic
+collectFuncInfo: _MPU_pvTimerGetTimerID MPU_pvTimerGetTimerID
+collectFuncInfo: _MPU_vTimerSetTimerID MPU_vTimerSetTimerID
+collectFuncInfo: _MPU_xTimerIsTimerActive MPU_xTimerIsTimerActive
+collectFuncInfo: _MPU_xTimerGetTimerDaemonTaskHandle MPU_xTimerGetTimerDaemonTaskHandle
+collectFuncInfo: _MPU_xTimerPendFunctionCall MPU_xTimerPendFunctionCall
+collectFuncInfo: _MPU_pcTimerGetName MPU_pcTimerGetName
+collectFuncInfo: _MPU_vTimerSetReloadMode MPU_vTimerSetReloadMode
+collectFuncInfo: _MPU_uxTimerGetReloadMode MPU_uxTimerGetReloadMode
+collectFuncInfo: _MPU_xTimerGetPeriod MPU_xTimerGetPeriod
+collectFuncInfo: _MPU_xTimerGetExpiryTime MPU_xTimerGetExpiryTime
+collectFuncInfo: _MPU_xTimerCreateTimerTask MPU_xTimerCreateTimerTask
+collectFuncInfo: _MPU_xTimerGenericCommand MPU_xTimerGenericCommand
+collectFuncInfo: _MPU_xEventGroupCreate MPU_xEventGroupCreate
+collectFuncInfo: _MPU_xEventGroupCreateStatic MPU_xEventGroupCreateStatic
+collectFuncInfo: _MPU_xEventGroupWaitBits MPU_xEventGroupWaitBits
+collectFuncInfo: _MPU_xEventGroupClearBits MPU_xEventGroupClearBits
+collectFuncInfo: _MPU_xEventGroupSetBits MPU_xEventGroupSetBits
+collectFuncInfo: _MPU_xEventGroupSync MPU_xEventGroupSync
+collectFuncInfo: _MPU_vEventGroupDelete MPU_vEventGroupDelete
+collectFuncInfo: _MPU_uxEventGroupGetNumber MPU_uxEventGroupGetNumber
+collectFuncInfo: _MPU_xStreamBufferSend MPU_xStreamBufferSend
+collectFuncInfo: _MPU_xStreamBufferReceive MPU_xStreamBufferReceive
+collectFuncInfo: _MPU_xStreamBufferNextMessageLengthBytes MPU_xStreamBufferNextMessageLengthBytes
+collectFuncInfo: _MPU_vStreamBufferDelete MPU_vStreamBufferDelete
+collectFuncInfo: _MPU_xStreamBufferIsFull MPU_xStreamBufferIsFull
+collectFuncInfo: _MPU_xStreamBufferIsEmpty MPU_xStreamBufferIsEmpty
+collectFuncInfo: _MPU_xStreamBufferReset MPU_xStreamBufferReset
+collectFuncInfo: _MPU_xStreamBufferSpacesAvailable MPU_xStreamBufferSpacesAvailable
+collectFuncInfo: _MPU_xStreamBufferBytesAvailable MPU_xStreamBufferBytesAvailable
+collectFuncInfo: _MPU_xStreamBufferSetTriggerLevel MPU_xStreamBufferSetTriggerLevel
+collectFuncInfo: _MPU_xStreamBufferGenericCreate MPU_xStreamBufferGenericCreate
+collectFuncInfo: _MPU_xStreamBufferGenericCreateStatic MPU_xStreamBufferGenericCreateStatic
+not in file:  /Users/haolan/esp/esp-idf/components/xtensa/include/xtensa_timer.h
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdint.h
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/stdint.h
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  .
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h
+not in file:  /Users/haolan/Downloads/esp-clang/lib/clang/19/include/__stddef_size_t.h
+fetchSymbols:from -L/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/freertos -lfreertos
+fetchSymbols:sysPaths []
+fetchSymbols:LibConfig Parse To
+libs.Names:  [freertos]
+libs.Paths:  [/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/freertos]
+fetchSymbols:libFiles [/Users/haolan/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/freertos/libfreertos.a]
+fetchSymbols:every library is found
+fetchSymbols: 389 symbols
+event_groups.go
+freertos_autogen.go
+freertos_debug.go
+idf_additions.go
+list.go
+portable.go
+portmacro.go
+projdefs.go
+queue.go
+stream_buffer.go
+task.go
+timers.go
+xtensa_rtos.go

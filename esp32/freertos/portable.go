@@ -46,18 +46,12 @@ func PvPortMalloc(xSize c.SizeT) c.Pointer
 //go:linkname VPortFree C.vPortFree
 func VPortFree(pv c.Pointer)
 
-//go:linkname XPortGetFreeHeapSize C.xPortGetFreeHeapSize
-func XPortGetFreeHeapSize() c.SizeT
-
-//go:linkname XPortGetMinimumEverFreeHeapSize C.xPortGetMinimumEverFreeHeapSize
-func XPortGetMinimumEverFreeHeapSize() c.SizeT
-
 /*
  * Setup the hardware ready for the scheduler to take control.  This generally
  * sets up a tick interrupt and sets timers for the correct tick frequency.
  */
 //go:linkname XPortStartScheduler C.xPortStartScheduler
-func XPortStartScheduler() BaseTypeT
+func XPortStartScheduler() c.Int
 
 /*
  * Undo any hardware/ISR setup that was performed by xPortStartScheduler() so

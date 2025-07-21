@@ -1,38 +1,13 @@
 [
   {
-    "mangle": "eTaskGetState",
-    "c++": "eTaskGetState(TaskHandle_t)",
-    "go": "ETaskGetState"
-  },
-  {
-    "mangle": "pcTaskGetName",
-    "c++": "pcTaskGetName(TaskHandle_t)",
-    "go": "PcTaskGetName"
-  },
-  {
-    "mangle": "pcTimerGetName",
-    "c++": "pcTimerGetName(TimerHandle_t)",
-    "go": "PcTimerGetName"
-  },
-  {
     "mangle": "pvPortMalloc",
     "c++": "pvPortMalloc(size_t)",
     "go": "PvPortMalloc"
   },
   {
     "mangle": "pvTaskGetCurrentTCBForCore",
-    "c++": "pvTaskGetCurrentTCBForCore(BaseType_t)",
+    "c++": "pvTaskGetCurrentTCBForCore(BaseType_t *)",
     "go": "BaseTypeT.PvTaskGetCurrentTCBForCore"
-  },
-  {
-    "mangle": "pvTaskIncrementMutexHeldCount",
-    "c++": "pvTaskIncrementMutexHeldCount()",
-    "go": "PvTaskIncrementMutexHeldCount"
-  },
-  {
-    "mangle": "pvTimerGetTimerID",
-    "c++": "pvTimerGetTimerID(const TimerHandle_t)",
-    "go": "PvTimerGetTimerID"
   },
   {
     "mangle": "pxPortInitialiseStack",
@@ -45,109 +20,9 @@
     "go": "PxTaskGetStackStart"
   },
   {
-    "mangle": "ulTaskGenericNotifyTake",
-    "c++": "ulTaskGenericNotifyTake(UBaseType_t, BaseType_t, TickType_t)",
-    "go": "UBaseTypeT.UlTaskGenericNotifyTake"
-  },
-  {
-    "mangle": "ulTaskGenericNotifyValueClear",
-    "c++": "ulTaskGenericNotifyValueClear(TaskHandle_t, UBaseType_t, uint32_t)",
-    "go": "UlTaskGenericNotifyValueClear"
-  },
-  {
-    "mangle": "uxListRemove",
-    "c++": "uxListRemove(ListItem_t *const)",
-    "go": "(*ListItemT).UxListRemove"
-  },
-  {
-    "mangle": "uxQueueMessagesWaiting",
-    "c++": "uxQueueMessagesWaiting(const QueueHandle_t)",
-    "go": "UxQueueMessagesWaiting"
-  },
-  {
-    "mangle": "uxQueueMessagesWaitingFromISR",
-    "c++": "uxQueueMessagesWaitingFromISR(const QueueHandle_t)",
-    "go": "UxQueueMessagesWaitingFromISR"
-  },
-  {
-    "mangle": "uxQueueSpacesAvailable",
-    "c++": "uxQueueSpacesAvailable(const QueueHandle_t)",
-    "go": "UxQueueSpacesAvailable"
-  },
-  {
-    "mangle": "uxTaskGetNumberOfTasks",
-    "c++": "uxTaskGetNumberOfTasks()",
-    "go": "UxTaskGetNumberOfTasks"
-  },
-  {
     "mangle": "uxTaskGetSnapshotAll",
-    "c++": "uxTaskGetSnapshotAll(TaskSnapshot_t *const, const UBaseType_t, UBaseType_t *const)",
+    "c++": "uxTaskGetSnapshotAll(TaskSnapshot_t *const, const int, int *const)",
     "go": "(*TaskSnapshotT).UxTaskGetSnapshotAll"
-  },
-  {
-    "mangle": "uxTaskGetStackHighWaterMark",
-    "c++": "uxTaskGetStackHighWaterMark(TaskHandle_t)",
-    "go": "UxTaskGetStackHighWaterMark"
-  },
-  {
-    "mangle": "uxTaskGetStackHighWaterMark2",
-    "c++": "uxTaskGetStackHighWaterMark2(TaskHandle_t)",
-    "go": "UxTaskGetStackHighWaterMark2"
-  },
-  {
-    "mangle": "uxTaskPriorityGet",
-    "c++": "uxTaskPriorityGet(const TaskHandle_t)",
-    "go": "UxTaskPriorityGet"
-  },
-  {
-    "mangle": "uxTaskPriorityGetFromISR",
-    "c++": "uxTaskPriorityGetFromISR(const TaskHandle_t)",
-    "go": "UxTaskPriorityGetFromISR"
-  },
-  {
-    "mangle": "uxTaskResetEventItemValue",
-    "c++": "uxTaskResetEventItemValue()",
-    "go": "UxTaskResetEventItemValue"
-  },
-  {
-    "mangle": "uxTimerGetReloadMode",
-    "c++": "uxTimerGetReloadMode(TimerHandle_t)",
-    "go": "UxTimerGetReloadMode"
-  },
-  {
-    "mangle": "vEventGroupClearBitsCallback",
-    "c++": "vEventGroupClearBitsCallback(void *, const uint32_t)",
-    "go": "VEventGroupClearBitsCallback"
-  },
-  {
-    "mangle": "vEventGroupDelete",
-    "c++": "vEventGroupDelete(EventGroupHandle_t)",
-    "go": "VEventGroupDelete"
-  },
-  {
-    "mangle": "vEventGroupSetBitsCallback",
-    "c++": "vEventGroupSetBitsCallback(void *, const uint32_t)",
-    "go": "VEventGroupSetBitsCallback"
-  },
-  {
-    "mangle": "vListInitialise",
-    "c++": "vListInitialise(List_t *const)",
-    "go": "(*ListT).VListInitialise"
-  },
-  {
-    "mangle": "vListInitialiseItem",
-    "c++": "vListInitialiseItem(ListItem_t *const)",
-    "go": "(*ListItemT).VListInitialiseItem"
-  },
-  {
-    "mangle": "vListInsert",
-    "c++": "vListInsert(List_t *const, ListItem_t *const)",
-    "go": "(*ListT).VListInsert"
-  },
-  {
-    "mangle": "vListInsertEnd",
-    "c++": "vListInsertEnd(List_t *const, ListItem_t *const)",
-    "go": "(*ListT).VListInsertEnd"
   },
   {
     "mangle": "vPortAssertIfInISR",
@@ -191,48 +66,13 @@
   },
   {
     "mangle": "vPortYieldOtherCore",
-    "c++": "vPortYieldOtherCore(BaseType_t)",
+    "c++": "vPortYieldOtherCore(BaseType_t *)",
     "go": "BaseTypeT.VPortYieldOtherCore"
   },
   {
-    "mangle": "vQueueDelete",
-    "c++": "vQueueDelete(QueueHandle_t)",
-    "go": "VQueueDelete"
-  },
-  {
-    "mangle": "vQueueWaitForMessageRestricted",
-    "c++": "vQueueWaitForMessageRestricted(QueueHandle_t, TickType_t, const BaseType_t)",
-    "go": "VQueueWaitForMessageRestricted"
-  },
-  {
-    "mangle": "vStreamBufferDelete",
-    "c++": "vStreamBufferDelete(StreamBufferHandle_t)",
-    "go": "VStreamBufferDelete"
-  },
-  {
     "mangle": "vStreamBufferGenericDeleteWithCaps",
-    "c++": "vStreamBufferGenericDeleteWithCaps(StreamBufferHandle_t, BaseType_t)",
+    "c++": "vStreamBufferGenericDeleteWithCaps(StreamBufferHandle_t, BaseType_t *)",
     "go": "VStreamBufferGenericDeleteWithCaps"
-  },
-  {
-    "mangle": "vTaskDelay",
-    "c++": "vTaskDelay(const TickType_t)",
-    "go": "TickTypeT.VTaskDelay"
-  },
-  {
-    "mangle": "vTaskDelete",
-    "c++": "vTaskDelete(TaskHandle_t)",
-    "go": "VTaskDelete"
-  },
-  {
-    "mangle": "vTaskEndScheduler",
-    "c++": "vTaskEndScheduler()",
-    "go": "VTaskEndScheduler"
-  },
-  {
-    "mangle": "vTaskGenericNotifyGiveFromISR",
-    "c++": "vTaskGenericNotifyGiveFromISR(TaskHandle_t, UBaseType_t, BaseType_t *)",
-    "go": "VTaskGenericNotifyGiveFromISR"
   },
   {
     "mangle": "vTaskGetSnapshot",
@@ -240,114 +80,9 @@
     "go": "VTaskGetSnapshot"
   },
   {
-    "mangle": "vTaskInternalSetTimeOutState",
-    "c++": "vTaskInternalSetTimeOutState(TimeOut_t *const)",
-    "go": "(*TimeOutT).VTaskInternalSetTimeOutState"
-  },
-  {
-    "mangle": "vTaskMissedYield",
-    "c++": "vTaskMissedYield()",
-    "go": "VTaskMissedYield"
-  },
-  {
-    "mangle": "vTaskPlaceOnEventList",
-    "c++": "vTaskPlaceOnEventList(List_t *const, const TickType_t)",
-    "go": "(*ListT).VTaskPlaceOnEventList"
-  },
-  {
-    "mangle": "vTaskPlaceOnEventListRestricted",
-    "c++": "vTaskPlaceOnEventListRestricted(List_t *const, TickType_t, const BaseType_t)",
-    "go": "(*ListT).VTaskPlaceOnEventListRestricted"
-  },
-  {
-    "mangle": "vTaskPlaceOnUnorderedEventList",
-    "c++": "vTaskPlaceOnUnorderedEventList(List_t *, const TickType_t, const TickType_t)",
-    "go": "(*ListT).VTaskPlaceOnUnorderedEventList"
-  },
-  {
-    "mangle": "vTaskPriorityDisinheritAfterTimeout",
-    "c++": "vTaskPriorityDisinheritAfterTimeout(const TaskHandle_t, UBaseType_t)",
-    "go": "VTaskPriorityDisinheritAfterTimeout"
-  },
-  {
-    "mangle": "vTaskPrioritySet",
-    "c++": "vTaskPrioritySet(TaskHandle_t, UBaseType_t)",
-    "go": "VTaskPrioritySet"
-  },
-  {
-    "mangle": "vTaskRemoveFromUnorderedEventList",
-    "c++": "vTaskRemoveFromUnorderedEventList(ListItem_t *, const TickType_t)",
-    "go": "(*ListItemT).VTaskRemoveFromUnorderedEventList"
-  },
-  {
-    "mangle": "vTaskResume",
-    "c++": "vTaskResume(TaskHandle_t)",
-    "go": "VTaskResume"
-  },
-  {
     "mangle": "vTaskSetThreadLocalStoragePointerAndDelCallback",
-    "c++": "vTaskSetThreadLocalStoragePointerAndDelCallback(TaskHandle_t, BaseType_t, void *, TlsDeleteCallbackFunction_t)",
+    "c++": "vTaskSetThreadLocalStoragePointerAndDelCallback(TaskHandle_t, BaseType_t *, void *, TlsDeleteCallbackFunction_t)",
     "go": "VTaskSetThreadLocalStoragePointerAndDelCallback"
-  },
-  {
-    "mangle": "vTaskSetTimeOutState",
-    "c++": "vTaskSetTimeOutState(TimeOut_t *const)",
-    "go": "(*TimeOutT).VTaskSetTimeOutState"
-  },
-  {
-    "mangle": "vTaskStartScheduler",
-    "c++": "vTaskStartScheduler()",
-    "go": "VTaskStartScheduler"
-  },
-  {
-    "mangle": "vTaskSuspend",
-    "c++": "vTaskSuspend(TaskHandle_t)",
-    "go": "VTaskSuspend"
-  },
-  {
-    "mangle": "vTaskSuspendAll",
-    "c++": "vTaskSuspendAll()",
-    "go": "VTaskSuspendAll"
-  },
-  {
-    "mangle": "vTaskSwitchContext",
-    "c++": "vTaskSwitchContext()",
-    "go": "VTaskSwitchContext"
-  },
-  {
-    "mangle": "vTimerSetReloadMode",
-    "c++": "vTimerSetReloadMode(TimerHandle_t, const BaseType_t)",
-    "go": "VTimerSetReloadMode"
-  },
-  {
-    "mangle": "vTimerSetTimerID",
-    "c++": "vTimerSetTimerID(TimerHandle_t, void *)",
-    "go": "VTimerSetTimerID"
-  },
-  {
-    "mangle": "xEventGroupClearBits",
-    "c++": "xEventGroupClearBits(EventGroupHandle_t, const EventBits_t)",
-    "go": "XEventGroupClearBits"
-  },
-  {
-    "mangle": "xEventGroupGetBitsFromISR",
-    "c++": "xEventGroupGetBitsFromISR(EventGroupHandle_t)",
-    "go": "XEventGroupGetBitsFromISR"
-  },
-  {
-    "mangle": "xEventGroupSetBits",
-    "c++": "xEventGroupSetBits(EventGroupHandle_t, const EventBits_t)",
-    "go": "XEventGroupSetBits"
-  },
-  {
-    "mangle": "xEventGroupSync",
-    "c++": "xEventGroupSync(EventGroupHandle_t, const EventBits_t, const EventBits_t, TickType_t)",
-    "go": "XEventGroupSync"
-  },
-  {
-    "mangle": "xEventGroupWaitBits",
-    "c++": "xEventGroupWaitBits(EventGroupHandle_t, const EventBits_t, const BaseType_t, const BaseType_t, TickType_t)",
-    "go": "XEventGroupWaitBits"
   },
   {
     "mangle": "xPortCheckValidListMem",
@@ -361,23 +96,13 @@
   },
   {
     "mangle": "xPortEnterCriticalTimeout",
-    "c++": "xPortEnterCriticalTimeout(portMUX_TYPE *, BaseType_t)",
+    "c++": "xPortEnterCriticalTimeout(portMUX_TYPE *, BaseType_t *)",
     "go": "(*PortMUXTYPE).XPortEnterCriticalTimeout"
   },
   {
     "mangle": "xPortEnterCriticalTimeoutCompliance",
-    "c++": "xPortEnterCriticalTimeoutCompliance(portMUX_TYPE *, BaseType_t)",
+    "c++": "xPortEnterCriticalTimeoutCompliance(portMUX_TYPE *, BaseType_t *)",
     "go": "(*PortMUXTYPE).XPortEnterCriticalTimeoutCompliance"
-  },
-  {
-    "mangle": "xPortGetFreeHeapSize",
-    "c++": "xPortGetFreeHeapSize()",
-    "go": "XPortGetFreeHeapSize"
-  },
-  {
-    "mangle": "xPortGetMinimumEverFreeHeapSize",
-    "c++": "xPortGetMinimumEverFreeHeapSize()",
-    "go": "XPortGetMinimumEverFreeHeapSize"
   },
   {
     "mangle": "xPortGetTickRateHz",
@@ -405,249 +130,14 @@
     "go": "XPortcheckValidStackMem"
   },
   {
-    "mangle": "xQueueAddToSet",
-    "c++": "xQueueAddToSet(QueueSetMemberHandle_t, QueueSetHandle_t)",
-    "go": "XQueueAddToSet"
-  },
-  {
-    "mangle": "xQueueCreateCountingSemaphore",
-    "c++": "xQueueCreateCountingSemaphore(const UBaseType_t, const UBaseType_t)",
-    "go": "UBaseTypeT.XQueueCreateCountingSemaphore"
-  },
-  {
-    "mangle": "xQueueCreateCountingSemaphoreStatic",
-    "c++": "xQueueCreateCountingSemaphoreStatic(const UBaseType_t, const UBaseType_t, int *)",
-    "go": "UBaseTypeT.XQueueCreateCountingSemaphoreStatic"
-  },
-  {
-    "mangle": "xQueueCreateMutex",
-    "c++": "xQueueCreateMutex(const uint8_t)",
-    "go": "XQueueCreateMutex"
-  },
-  {
-    "mangle": "xQueueCreateMutexStatic",
-    "c++": "xQueueCreateMutexStatic(const uint8_t, int *)",
-    "go": "XQueueCreateMutexStatic"
-  },
-  {
-    "mangle": "xQueueCreateSet",
-    "c++": "xQueueCreateSet(const UBaseType_t)",
-    "go": "UBaseTypeT.XQueueCreateSet"
-  },
-  {
-    "mangle": "xQueueGenericReset",
-    "c++": "xQueueGenericReset(QueueHandle_t, BaseType_t)",
-    "go": "XQueueGenericReset"
-  },
-  {
-    "mangle": "xQueueGenericSend",
-    "c++": "xQueueGenericSend(QueueHandle_t, const void *const, TickType_t, const BaseType_t)",
-    "go": "XQueueGenericSend"
-  },
-  {
-    "mangle": "xQueueGenericSendFromISR",
-    "c++": "xQueueGenericSendFromISR(QueueHandle_t, const void *const, BaseType_t *const, const BaseType_t)",
-    "go": "XQueueGenericSendFromISR"
-  },
-  {
-    "mangle": "xQueueGetMutexHolder",
-    "c++": "xQueueGetMutexHolder(QueueHandle_t)",
-    "go": "XQueueGetMutexHolder"
-  },
-  {
-    "mangle": "xQueueGetMutexHolderFromISR",
-    "c++": "xQueueGetMutexHolderFromISR(QueueHandle_t)",
-    "go": "XQueueGetMutexHolderFromISR"
-  },
-  {
-    "mangle": "xQueueGiveFromISR",
-    "c++": "xQueueGiveFromISR(QueueHandle_t, BaseType_t *const)",
-    "go": "XQueueGiveFromISR"
-  },
-  {
-    "mangle": "xQueueGiveMutexRecursive",
-    "c++": "xQueueGiveMutexRecursive(QueueHandle_t)",
-    "go": "XQueueGiveMutexRecursive"
-  },
-  {
-    "mangle": "xQueueIsQueueEmptyFromISR",
-    "c++": "xQueueIsQueueEmptyFromISR(const QueueHandle_t)",
-    "go": "XQueueIsQueueEmptyFromISR"
-  },
-  {
-    "mangle": "xQueueIsQueueFullFromISR",
-    "c++": "xQueueIsQueueFullFromISR(const QueueHandle_t)",
-    "go": "XQueueIsQueueFullFromISR"
-  },
-  {
-    "mangle": "xQueuePeek",
-    "c++": "xQueuePeek(QueueHandle_t, void *const, TickType_t)",
-    "go": "XQueuePeek"
-  },
-  {
-    "mangle": "xQueuePeekFromISR",
-    "c++": "xQueuePeekFromISR(QueueHandle_t, void *const)",
-    "go": "XQueuePeekFromISR"
-  },
-  {
-    "mangle": "xQueueReceive",
-    "c++": "xQueueReceive(QueueHandle_t, void *const, TickType_t)",
-    "go": "XQueueReceive"
-  },
-  {
-    "mangle": "xQueueReceiveFromISR",
-    "c++": "xQueueReceiveFromISR(QueueHandle_t, void *const, BaseType_t *const)",
-    "go": "XQueueReceiveFromISR"
-  },
-  {
-    "mangle": "xQueueRemoveFromSet",
-    "c++": "xQueueRemoveFromSet(QueueSetMemberHandle_t, QueueSetHandle_t)",
-    "go": "XQueueRemoveFromSet"
-  },
-  {
-    "mangle": "xQueueSelectFromSet",
-    "c++": "xQueueSelectFromSet(QueueSetHandle_t, const TickType_t)",
-    "go": "XQueueSelectFromSet"
-  },
-  {
-    "mangle": "xQueueSelectFromSetFromISR",
-    "c++": "xQueueSelectFromSetFromISR(QueueSetHandle_t)",
-    "go": "XQueueSelectFromSetFromISR"
-  },
-  {
-    "mangle": "xQueueSemaphoreTake",
-    "c++": "xQueueSemaphoreTake(QueueHandle_t, TickType_t)",
-    "go": "XQueueSemaphoreTake"
-  },
-  {
-    "mangle": "xQueueTakeMutexRecursive",
-    "c++": "xQueueTakeMutexRecursive(QueueHandle_t, TickType_t)",
-    "go": "XQueueTakeMutexRecursive"
-  },
-  {
     "mangle": "xSemaphoreCreateGenericWithCaps",
-    "c++": "xSemaphoreCreateGenericWithCaps(UBaseType_t, UBaseType_t, const uint8_t, UBaseType_t)",
-    "go": "UBaseTypeT.XSemaphoreCreateGenericWithCaps"
-  },
-  {
-    "mangle": "xStreamBufferBytesAvailable",
-    "c++": "xStreamBufferBytesAvailable(StreamBufferHandle_t)",
-    "go": "XStreamBufferBytesAvailable"
-  },
-  {
-    "mangle": "xStreamBufferGenericCreate",
-    "c++": "xStreamBufferGenericCreate(size_t, size_t, BaseType_t, StreamBufferCallbackFunction_t, StreamBufferCallbackFunction_t)",
-    "go": "XStreamBufferGenericCreate"
-  },
-  {
-    "mangle": "xStreamBufferGenericCreateStatic",
-    "c++": "xStreamBufferGenericCreateStatic(size_t, size_t, BaseType_t, uint8_t *const, int *const, StreamBufferCallbackFunction_t, StreamBufferCallbackFunction_t)",
-    "go": "XStreamBufferGenericCreateStatic"
+    "c++": "xSemaphoreCreateGenericWithCaps(int, int, const uint8_t, int)",
+    "go": "XSemaphoreCreateGenericWithCaps"
   },
   {
     "mangle": "xStreamBufferGenericCreateWithCaps",
-    "c++": "xStreamBufferGenericCreateWithCaps(size_t, size_t, BaseType_t, UBaseType_t)",
+    "c++": "xStreamBufferGenericCreateWithCaps(int, int, BaseType_t *, int)",
     "go": "XStreamBufferGenericCreateWithCaps"
-  },
-  {
-    "mangle": "xStreamBufferIsEmpty",
-    "c++": "xStreamBufferIsEmpty(StreamBufferHandle_t)",
-    "go": "XStreamBufferIsEmpty"
-  },
-  {
-    "mangle": "xStreamBufferIsFull",
-    "c++": "xStreamBufferIsFull(StreamBufferHandle_t)",
-    "go": "XStreamBufferIsFull"
-  },
-  {
-    "mangle": "xStreamBufferNextMessageLengthBytes",
-    "c++": "xStreamBufferNextMessageLengthBytes(StreamBufferHandle_t)",
-    "go": "XStreamBufferNextMessageLengthBytes"
-  },
-  {
-    "mangle": "xStreamBufferReceive",
-    "c++": "xStreamBufferReceive(StreamBufferHandle_t, void *, size_t, TickType_t)",
-    "go": "XStreamBufferReceive"
-  },
-  {
-    "mangle": "xStreamBufferReceiveCompletedFromISR",
-    "c++": "xStreamBufferReceiveCompletedFromISR(StreamBufferHandle_t, BaseType_t *)",
-    "go": "XStreamBufferReceiveCompletedFromISR"
-  },
-  {
-    "mangle": "xStreamBufferReceiveFromISR",
-    "c++": "xStreamBufferReceiveFromISR(StreamBufferHandle_t, void *, size_t, BaseType_t *const)",
-    "go": "XStreamBufferReceiveFromISR"
-  },
-  {
-    "mangle": "xStreamBufferReset",
-    "c++": "xStreamBufferReset(StreamBufferHandle_t)",
-    "go": "XStreamBufferReset"
-  },
-  {
-    "mangle": "xStreamBufferSend",
-    "c++": "xStreamBufferSend(StreamBufferHandle_t, const void *, size_t, TickType_t)",
-    "go": "XStreamBufferSend"
-  },
-  {
-    "mangle": "xStreamBufferSendCompletedFromISR",
-    "c++": "xStreamBufferSendCompletedFromISR(StreamBufferHandle_t, BaseType_t *)",
-    "go": "XStreamBufferSendCompletedFromISR"
-  },
-  {
-    "mangle": "xStreamBufferSendFromISR",
-    "c++": "xStreamBufferSendFromISR(StreamBufferHandle_t, const void *, size_t, BaseType_t *const)",
-    "go": "XStreamBufferSendFromISR"
-  },
-  {
-    "mangle": "xStreamBufferSetTriggerLevel",
-    "c++": "xStreamBufferSetTriggerLevel(StreamBufferHandle_t, size_t)",
-    "go": "XStreamBufferSetTriggerLevel"
-  },
-  {
-    "mangle": "xStreamBufferSpacesAvailable",
-    "c++": "xStreamBufferSpacesAvailable(StreamBufferHandle_t)",
-    "go": "XStreamBufferSpacesAvailable"
-  },
-  {
-    "mangle": "xTaskAbortDelay",
-    "c++": "xTaskAbortDelay(TaskHandle_t)",
-    "go": "XTaskAbortDelay"
-  },
-  {
-    "mangle": "xTaskCatchUpTicks",
-    "c++": "xTaskCatchUpTicks(TickType_t)",
-    "go": "TickTypeT.XTaskCatchUpTicks"
-  },
-  {
-    "mangle": "xTaskCheckForTimeOut",
-    "c++": "xTaskCheckForTimeOut(TimeOut_t *const, TickType_t *const)",
-    "go": "(*TimeOutT).XTaskCheckForTimeOut"
-  },
-  {
-    "mangle": "xTaskDelayUntil",
-    "c++": "xTaskDelayUntil(TickType_t *const, const TickType_t)",
-    "go": "(*TickTypeT).XTaskDelayUntil"
-  },
-  {
-    "mangle": "xTaskGenericNotify",
-    "c++": "xTaskGenericNotify(TaskHandle_t, UBaseType_t, uint32_t, eNotifyAction, uint32_t *)",
-    "go": "XTaskGenericNotify"
-  },
-  {
-    "mangle": "xTaskGenericNotifyFromISR",
-    "c++": "xTaskGenericNotifyFromISR(TaskHandle_t, UBaseType_t, uint32_t, eNotifyAction, uint32_t *, BaseType_t *)",
-    "go": "XTaskGenericNotifyFromISR"
-  },
-  {
-    "mangle": "xTaskGenericNotifyStateClear",
-    "c++": "xTaskGenericNotifyStateClear(TaskHandle_t, UBaseType_t)",
-    "go": "XTaskGenericNotifyStateClear"
-  },
-  {
-    "mangle": "xTaskGenericNotifyWait",
-    "c++": "xTaskGenericNotifyWait(UBaseType_t, uint32_t, uint32_t, uint32_t *, TickType_t)",
-    "go": "UBaseTypeT.XTaskGenericNotifyWait"
   },
   {
     "mangle": "xTaskGetCoreID",
@@ -655,113 +145,8 @@
     "go": "XTaskGetCoreID"
   },
   {
-    "mangle": "xTaskGetCurrentTaskHandle",
-    "c++": "xTaskGetCurrentTaskHandle()",
-    "go": "XTaskGetCurrentTaskHandle"
-  },
-  {
-    "mangle": "xTaskGetHandle",
-    "c++": "xTaskGetHandle(const char *)",
-    "go": "XTaskGetHandle"
-  },
-  {
-    "mangle": "xTaskGetIdleTaskHandle",
-    "c++": "xTaskGetIdleTaskHandle()",
-    "go": "XTaskGetIdleTaskHandle"
-  },
-  {
     "mangle": "xTaskGetNext",
     "c++": "xTaskGetNext(TaskIterator_t *)",
     "go": "(*TaskIteratorT).XTaskGetNext"
-  },
-  {
-    "mangle": "xTaskGetSchedulerState",
-    "c++": "xTaskGetSchedulerState()",
-    "go": "XTaskGetSchedulerState"
-  },
-  {
-    "mangle": "xTaskGetTickCount",
-    "c++": "xTaskGetTickCount()",
-    "go": "XTaskGetTickCount"
-  },
-  {
-    "mangle": "xTaskGetTickCountFromISR",
-    "c++": "xTaskGetTickCountFromISR()",
-    "go": "XTaskGetTickCountFromISR"
-  },
-  {
-    "mangle": "xTaskIncrementTick",
-    "c++": "xTaskIncrementTick()",
-    "go": "XTaskIncrementTick"
-  },
-  {
-    "mangle": "xTaskPriorityDisinherit",
-    "c++": "xTaskPriorityDisinherit(const TaskHandle_t)",
-    "go": "XTaskPriorityDisinherit"
-  },
-  {
-    "mangle": "xTaskPriorityInherit",
-    "c++": "xTaskPriorityInherit(const TaskHandle_t)",
-    "go": "XTaskPriorityInherit"
-  },
-  {
-    "mangle": "xTaskRemoveFromEventList",
-    "c++": "xTaskRemoveFromEventList(const List_t *const)",
-    "go": "(*ListT).XTaskRemoveFromEventList"
-  },
-  {
-    "mangle": "xTaskResumeAll",
-    "c++": "xTaskResumeAll()",
-    "go": "XTaskResumeAll"
-  },
-  {
-    "mangle": "xTaskResumeFromISR",
-    "c++": "xTaskResumeFromISR(TaskHandle_t)",
-    "go": "XTaskResumeFromISR"
-  },
-  {
-    "mangle": "xTimerCreateTimerTask",
-    "c++": "xTimerCreateTimerTask()",
-    "go": "XTimerCreateTimerTask"
-  },
-  {
-    "mangle": "xTimerGenericCommand",
-    "c++": "xTimerGenericCommand(TimerHandle_t, const BaseType_t, const TickType_t, BaseType_t *const, const TickType_t)",
-    "go": "XTimerGenericCommand"
-  },
-  {
-    "mangle": "xTimerGetExpiryTime",
-    "c++": "xTimerGetExpiryTime(TimerHandle_t)",
-    "go": "XTimerGetExpiryTime"
-  },
-  {
-    "mangle": "xTimerGetPeriod",
-    "c++": "xTimerGetPeriod(TimerHandle_t)",
-    "go": "XTimerGetPeriod"
-  },
-  {
-    "mangle": "xTimerGetReloadMode",
-    "c++": "xTimerGetReloadMode(TimerHandle_t)",
-    "go": "XTimerGetReloadMode"
-  },
-  {
-    "mangle": "xTimerGetTimerDaemonTaskHandle",
-    "c++": "xTimerGetTimerDaemonTaskHandle()",
-    "go": "XTimerGetTimerDaemonTaskHandle"
-  },
-  {
-    "mangle": "xTimerIsTimerActive",
-    "c++": "xTimerIsTimerActive(TimerHandle_t)",
-    "go": "XTimerIsTimerActive"
-  },
-  {
-    "mangle": "xTimerPendFunctionCall",
-    "c++": "xTimerPendFunctionCall(PendedFunction_t, void *, uint32_t, TickType_t)",
-    "go": "XTimerPendFunctionCall"
-  },
-  {
-    "mangle": "xTimerPendFunctionCallFromISR",
-    "c++": "xTimerPendFunctionCallFromISR(PendedFunction_t, void *, uint32_t, BaseType_t *)",
-    "go": "XTimerPendFunctionCallFromISR"
   }
 ]
