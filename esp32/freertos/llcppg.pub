@@ -23,7 +23,6 @@ StreamBufferDef_t StreamBufferDefT
 StreamBufferHandle_t StreamBufferHandleT
 TaskFunction_t TaskFunctionT
 TaskHandle_t TaskHandleT
-TaskHookFunction_t TaskHookFunctionT
 TaskIterator
 TaskIterator_t TaskIteratorT
 TaskParameters_t TaskParametersT

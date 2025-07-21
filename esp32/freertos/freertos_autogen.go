@@ -846,6 +846,54 @@ const EXIT_SUCCESS = 0
 const X__bool_true_false_are_defined = 1
 const True = 1
 const False = 0
+const X__SLBF = 0x0001
+const X__SNBF = 0x0002
+const X__SRD = 0x0004
+const X__SWR = 0x0008
+const X__SRW = 0x0010
+const X__SEOF = 0x0020
+const X__SERR = 0x0040
+const X__SMBF = 0x0080
+const X__SAPP = 0x0100
+const X__SSTR = 0x0200
+const X__SOPT = 0x0400
+const X__SNPT = 0x0800
+const X__SOFF = 0x1000
+const X__SORD = 0x2000
+const X__SL64 = 0x8000
+const X__SNLK = 0x0001
+const X__SWID = 0x2000
+const X_IOFBF = 0
+const X_IOLBF = 1
+const X_IONBF = 2
+const FOPEN_MAX = 20
+const FILENAME_MAX = 1024
+const P_tmpdir = "/tmp"
+const SEEK_SET = 0
+const SEEK_CUR = 1
+const SEEK_END = 2
+const TMP_MAX = 26
+const L_cuserid = 9
+const L_ctermid = 16
+const ESP_OK = 0
+const ESP_ERR_NO_MEM = 0x101
+const ESP_ERR_INVALID_ARG = 0x102
+const ESP_ERR_INVALID_STATE = 0x103
+const ESP_ERR_INVALID_SIZE = 0x104
+const ESP_ERR_NOT_FOUND = 0x105
+const ESP_ERR_NOT_SUPPORTED = 0x106
+const ESP_ERR_TIMEOUT = 0x107
+const ESP_ERR_INVALID_RESPONSE = 0x108
+const ESP_ERR_INVALID_CRC = 0x109
+const ESP_ERR_INVALID_VERSION = 0x10A
+const ESP_ERR_INVALID_MAC = 0x10B
+const ESP_ERR_NOT_FINISHED = 0x10C
+const ESP_ERR_NOT_ALLOWED = 0x10D
+const ESP_ERR_WIFI_BASE = 0x3000
+const ESP_ERR_MESH_BASE = 0x4000
+const ESP_ERR_FLASH_BASE = 0x6000
+const ESP_ERR_HW_CRYPTO_BASE = 0xc000
+const ESP_ERR_MEMPROT_BASE = 0xd000
 const XTHAL_RELEASE_MAJOR = 12000
 const XTHAL_RELEASE_MINOR = 9
 const XTHAL_RELEASE_NAME = "12.0.9"
@@ -2380,54 +2428,6 @@ const BIT3 = 0x00000008
 const BIT2 = 0x00000004
 const BIT1 = 0x00000002
 const BIT0 = 0x00000001
-const X__SLBF = 0x0001
-const X__SNBF = 0x0002
-const X__SRD = 0x0004
-const X__SWR = 0x0008
-const X__SRW = 0x0010
-const X__SEOF = 0x0020
-const X__SERR = 0x0040
-const X__SMBF = 0x0080
-const X__SAPP = 0x0100
-const X__SSTR = 0x0200
-const X__SOPT = 0x0400
-const X__SNPT = 0x0800
-const X__SOFF = 0x1000
-const X__SORD = 0x2000
-const X__SL64 = 0x8000
-const X__SNLK = 0x0001
-const X__SWID = 0x2000
-const X_IOFBF = 0
-const X_IOLBF = 1
-const X_IONBF = 2
-const FOPEN_MAX = 20
-const FILENAME_MAX = 1024
-const P_tmpdir = "/tmp"
-const SEEK_SET = 0
-const SEEK_CUR = 1
-const SEEK_END = 2
-const TMP_MAX = 26
-const L_cuserid = 9
-const L_ctermid = 16
-const ESP_OK = 0
-const ESP_ERR_NO_MEM = 0x101
-const ESP_ERR_INVALID_ARG = 0x102
-const ESP_ERR_INVALID_STATE = 0x103
-const ESP_ERR_INVALID_SIZE = 0x104
-const ESP_ERR_NOT_FOUND = 0x105
-const ESP_ERR_NOT_SUPPORTED = 0x106
-const ESP_ERR_TIMEOUT = 0x107
-const ESP_ERR_INVALID_RESPONSE = 0x108
-const ESP_ERR_INVALID_CRC = 0x109
-const ESP_ERR_INVALID_VERSION = 0x10A
-const ESP_ERR_INVALID_MAC = 0x10B
-const ESP_ERR_NOT_FINISHED = 0x10C
-const ESP_ERR_NOT_ALLOWED = 0x10D
-const ESP_ERR_WIFI_BASE = 0x3000
-const ESP_ERR_MESH_BASE = 0x4000
-const ESP_ERR_FLASH_BASE = 0x6000
-const ESP_ERR_HW_CRYPTO_BASE = 0xc000
-const ESP_ERR_MEMPROT_BASE = 0xd000
 const ESP_CPU_INTR_DESC_FLAG_SPECIAL = 0x01
 const ESP_CPU_INTR_DESC_FLAG_RESVD = 0x02
 const SPINLOCK_FREE = 0xB33FFFFF
@@ -2785,7 +2785,78 @@ type LldivT struct {
 
 // llgo:type C
 type X__comparFnT func(c.Pointer, c.Pointer) c.Int
+
+type MultiHeapInfo struct {
+	Unused [8]uint8
+}
+type MultiHeapHandleT *MultiHeapInfo
+
+/** @brief Structure to access heap metadata via multi_heap_get_info */
+
+type MultiHeapInfoT struct {
+	TotalFreeBytes      c.SizeT
+	TotalAllocatedBytes c.SizeT
+	LargestFreeBlock    c.SizeT
+	MinimumFreeBytes    c.SizeT
+	AllocatedBlocks     c.SizeT
+	FreeBlocks          c.SizeT
+	TotalBlocks         c.SizeT
+}
+
+// llgo:type C
+type MultiHeapWalkerCbT func(c.Pointer, c.SizeT, c.Int, c.Pointer) bool
 type X__gnucVaList c.Pointer
+type FposT X_fposT
+type OffT X__offT
+
+// llgo:type C
+type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
+
+// llgo:type C
+type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
+
+// llgo:type C
+type CookieCloseFunctionT func(c.Pointer) c.Int
+
+type CookieIoFunctionsT struct {
+	Read  *CookieReadFunctionT
+	Write *CookieWriteFunctionT
+	Seek  *CookieSeekFunctionT
+	Close *CookieCloseFunctionT
+}
+type EspErrT c.Int
+
+// llgo:type C
+type EspAllocFailedHookT func(c.SizeT, c.Uint32T, *c.Char)
+
+/**
+ * @brief Structure used to store heap related data passed to
+ * the walker callback function
+ */
+
+type WalkerHeapInfo struct {
+	Start c.IntptrT
+	End   c.IntptrT
+}
+type WalkerHeapIntoT WalkerHeapInfo
+
+/**
+ * @brief Structure used to store block related data passed to
+ * the walker callback function
+ */
+
+type WalkerBlockInfo struct {
+	Ptr  c.Pointer
+	Size c.SizeT
+	Used bool
+}
+type WalkerBlockInfoT WalkerBlockInfo
+
+// llgo:type C
+type HeapCapsWalkerCbT func(WalkerHeapIntoT, WalkerBlockInfoT, c.Pointer) bool
 
 // llgo:type C
 type XtHalVoidFunc func()
@@ -2998,28 +3069,6 @@ type XtHandler func(c.Pointer)
 
 // llgo:type C
 type XtExcHandler func(*XtExcFrame)
-type FposT X_fposT
-type OffT X__offT
-
-// llgo:type C
-type CookieReadFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
-
-// llgo:type C
-type CookieWriteFunctionT func(c.Pointer, *c.Char, c.SizeT) c.SsizeT
-
-// llgo:type C
-type CookieSeekFunctionT func(c.Pointer, *OffT, c.Int) c.Int
-
-// llgo:type C
-type CookieCloseFunctionT func(c.Pointer) c.Int
-
-type CookieIoFunctionsT struct {
-	Read  *CookieReadFunctionT
-	Write *CookieWriteFunctionT
-	Seek  *CookieSeekFunctionT
-	Close *CookieCloseFunctionT
-}
-type EspErrT c.Int
 
 // llgo:type C
 type IntrHandlerT func(c.Pointer)
@@ -3145,55 +3194,6 @@ const (
 	ETS_CACHE_IA_INTR_SOURCE       PeriphInterrputT = 68
 	ETS_MAX_INTR_SOURCE            PeriphInterrputT = 69
 )
-
-type MultiHeapInfo struct {
-	Unused [8]uint8
-}
-type MultiHeapHandleT *MultiHeapInfo
-
-/** @brief Structure to access heap metadata via multi_heap_get_info */
-
-type MultiHeapInfoT struct {
-	TotalFreeBytes      c.SizeT
-	TotalAllocatedBytes c.SizeT
-	LargestFreeBlock    c.SizeT
-	MinimumFreeBytes    c.SizeT
-	AllocatedBlocks     c.SizeT
-	FreeBlocks          c.SizeT
-	TotalBlocks         c.SizeT
-}
-
-// llgo:type C
-type MultiHeapWalkerCbT func(c.Pointer, c.SizeT, c.Int, c.Pointer) bool
-
-// llgo:type C
-type EspAllocFailedHookT func(c.SizeT, c.Uint32T, *c.Char)
-
-/**
- * @brief Structure used to store heap related data passed to
- * the walker callback function
- */
-
-type WalkerHeapInfo struct {
-	Start c.IntptrT
-	End   c.IntptrT
-}
-type WalkerHeapIntoT WalkerHeapInfo
-
-/**
- * @brief Structure used to store block related data passed to
- * the walker callback function
- */
-
-type WalkerBlockInfo struct {
-	Ptr  c.Pointer
-	Size c.SizeT
-	Used bool
-}
-type WalkerBlockInfoT WalkerBlockInfo
-
-// llgo:type C
-type HeapCapsWalkerCbT func(WalkerHeapIntoT, WalkerBlockInfoT, c.Pointer) bool
 
 type ImaxdivT struct {
 	Quot c.IntmaxT

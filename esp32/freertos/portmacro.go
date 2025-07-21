@@ -10,7 +10,6 @@ const PortBYTE_ALIGNMENT = 16
 const PortTICK_TYPE_IS_ATOMIC = 1
 
 type StackTypeT c.Uint8T
-type BaseTypeT c.Int
 type UBaseTypeT c.Uint
 type TickTypeT c.Uint32T
 
@@ -26,7 +25,7 @@ type TickTypeT c.Uint32T
  *  - pdFALSE otherwise
  */
 //go:linkname XPortInIsrContext C.xPortInIsrContext
-func XPortInIsrContext() BaseTypeT
+func XPortInIsrContext() c.Int
 
 /**
  * @brief Assert if in ISR context
@@ -48,7 +47,7 @@ func VPortAssertIfInISR()
  *  - pdFALSE otherwise
  */
 //go:linkname XPortInterruptedFromISRContext C.xPortInterruptedFromISRContext
-func XPortInterruptedFromISRContext() BaseTypeT
+func XPortInterruptedFromISRContext() c.Int
 
 type PortMUXTYPE SpinlockT
 
@@ -69,7 +68,7 @@ type PortMUXTYPE SpinlockT
  * @retval pdFAIL If timed out waiting for spinlock (will not occur if using portMUX_NO_TIMEOUT)
  */
 // llgo:link (*PortMUXTYPE).XPortEnterCriticalTimeout C.xPortEnterCriticalTimeout
-func (recv_ *PortMUXTYPE) XPortEnterCriticalTimeout(timeout BaseTypeT) BaseTypeT {
+func (recv_ *PortMUXTYPE) XPortEnterCriticalTimeout(timeout BaseTypeT) c.Int {
 	return 0
 }
 
@@ -103,7 +102,7 @@ func (recv_ *PortMUXTYPE) VPortExitCritical() {
  * @return BaseType_t
  */
 // llgo:link (*PortMUXTYPE).XPortEnterCriticalTimeoutCompliance C.xPortEnterCriticalTimeoutCompliance
-func (recv_ *PortMUXTYPE) XPortEnterCriticalTimeoutCompliance(timeout BaseTypeT) BaseTypeT {
+func (recv_ *PortMUXTYPE) XPortEnterCriticalTimeoutCompliance(timeout BaseTypeT) c.Int {
 	return 0
 }
 

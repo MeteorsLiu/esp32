@@ -14,8 +14,8 @@ import (
 
 type XTASKSNAPSHOT struct {
 	PxTCB        c.Pointer
-	PxTopOfStack *StackTypeT
-	PxEndOfStack *StackTypeT
+	PxTopOfStack *c.Int
+	PxEndOfStack *c.Int
 }
 type TaskSnapshotT XTASKSNAPSHOT
 
@@ -26,7 +26,7 @@ type TaskSnapshotT XTASKSNAPSHOT
  */
 
 type TaskIterator struct {
-	UxCurrentListIndex UBaseTypeT
+	UxCurrentListIndex c.Int
 	PxNextListItem     *ListItemT
 	PxTaskHandle       TaskHandleT
 }
@@ -64,7 +64,7 @@ func (recv_ *TaskIteratorT) XTaskGetNext() c.Int {
  * @return pdTRUE if operation was successful else pdFALSE
  */
 //go:linkname VTaskGetSnapshot C.vTaskGetSnapshot
-func VTaskGetSnapshot(pxTask TaskHandleT, pxTaskSnapshot *TaskSnapshotT) BaseTypeT
+func VTaskGetSnapshot(pxTask TaskHandleT, pxTaskSnapshot *TaskSnapshotT) c.Int
 
 /**
  * @brief Fill an array of TaskSnapshot_t structures for every task in the system
@@ -79,7 +79,7 @@ func VTaskGetSnapshot(pxTask TaskHandleT, pxTaskSnapshot *TaskSnapshotT) BaseTyp
  * @return UBaseType_t
  */
 // llgo:link (*TaskSnapshotT).UxTaskGetSnapshotAll C.uxTaskGetSnapshotAll
-func (recv_ *TaskSnapshotT) UxTaskGetSnapshotAll(uxArrayLength UBaseTypeT, pxTCBSize *UBaseTypeT) UBaseTypeT {
+func (recv_ *TaskSnapshotT) UxTaskGetSnapshotAll(uxArrayLength c.Int, pxTCBSize *c.Int) c.Int {
 	return 0
 }
 
