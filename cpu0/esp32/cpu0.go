@@ -1,8 +1,9 @@
 package esp32
 
 import (
-	_ "github.com/MeteorsLiu/esp32/esp32/newlib"
+	_ "unsafe"
 
+	rom "github.com/MeteorsLiu/esp32/esp32/esp_rom"
 	system "github.com/MeteorsLiu/esp32/esp32/esp_system"
 	freertos "github.com/MeteorsLiu/esp32/esp32/freertos"
 
@@ -14,16 +15,23 @@ const (
 	ESP_TASK_MAIN_STACK = system.CONFIG_ESP_MAIN_TASK_STACK_SIZE + 512
 )
 
+//go:linkname main main.main
+func main()
+
 //export esp_startup_start_app
 func esp_startup_start_app() {
 	system.EspIntWdtInit()
 	system.EspIntWdtCpuInit()
 	system.EspCrosscoreIntInit()
 
+	rom.EspRomVprintf(c.Str("hello"), nil)
 	freertos.XTaskCreatePinnedToCore(main_task, c.Str("main"), ESP_TASK_MAIN_STACK, nil, 1, nil, freertos.BaseTypeT(nil))
 
 	freertos.XPortStartScheduler()
 }
+
+//export esp_startup_start_app_other_cores_default
+func esp_startup_start_app_other_cores_default() {}
 
 func main_task() {
 	heap.HeapCapsEnableNonosStackHeaps()
@@ -38,13 +46,7 @@ func main_task() {
 
 	cfg.EspTaskWdtInit()
 
-	c.Printf(c.Str("start main task"))
-
 	main()
 
 	freertos.VTaskDelete(nil)
-}
-
-func main() {
-	c.Printf(c.Str("start main"))
 }
