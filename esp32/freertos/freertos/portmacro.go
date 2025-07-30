@@ -1,9 +1,8 @@
 package freertos
 
 import (
-	_ "unsafe"
-
 	"github.com/goplus/lib/c"
+	_ "unsafe"
 )
 
 const PortCRITICAL_NESTING_IN_TCB = 0
@@ -163,6 +162,9 @@ func XPortGetTickRateHz() c.Uint32T
 //go:linkname VPortSetStackWatchpoint C.vPortSetStackWatchpoint
 func VPortSetStackWatchpoint(pxStackStart c.Pointer)
 
+//go:linkname XPortGetCoreIDLLGoWrapper C.xPortGetCoreIDLLGoWrapper
+func XPortGetCoreIDLLGoWrapper() c.Int
+
 /**
  * @brief TCB cleanup hook
  *
@@ -211,6 +213,3 @@ func XPortCheckValidTCBMem(ptr c.Pointer) bool
  */
 //go:linkname XPortcheckValidStackMem C.xPortcheckValidStackMem
 func XPortcheckValidStackMem(ptr c.Pointer) bool
-
-//go:linkname XPortGetCoreIDLLGoWrapper C.xPortGetCoreIDLLGoWrapper
-func XPortGetCoreIDLLGoWrapper() c.Int
