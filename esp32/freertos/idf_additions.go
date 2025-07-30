@@ -7,7 +7,7 @@ import (
 )
 
 // llgo:type C
-type CallFn func()
+type CallFn func(args *c.Void)
 
 /**
  * @brief Create a new task that is pinned to a particular core
@@ -34,7 +34,10 @@ type CallFn func()
  * list, otherwise an error code defined in the file projdefs.h
  */
 //go:linkname XTaskCreatePinnedToCore C.xTaskCreatePinnedToCore
-func XTaskCreatePinnedToCore(pxTaskCode CallFn, pcName *c.Char, ulStackDepth c.Uint32T, pvParameters c.Pointer, uxPriority UBaseTypeT, pxCreatedTask *TaskHandleT, xCoreID BaseTypeT) c.Int
+func XTaskCreatePinnedToCore(pxTaskCode CallFn, pcName *c.Char, ulStackDepth c.Uint32T, pvParameters c.Pointer, uxPriority UBaseTypeT, pxCreatedTask *TaskHandleT, xCoreID c.Int) c.Int
+
+//go:linkname VTaskStartScheduler C.vTaskStartScheduler
+func VTaskStartScheduler()
 
 /**
  * @brief Create a new static task that is pinned to a particular core
